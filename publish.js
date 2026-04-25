@@ -26,23 +26,40 @@ function run(cmd, opts = {}) {
 console.log('=== [1/3] Build site ===');
 run('node build.js');
 
-// ========== 2. 清理超过7天的旧数据 ==========
-console.log('\n=== [2/3] Cleanup old data (keep latest 7 days) ===');
+// ========== 2. 清理超过7天的旧数据（以最新日期为锚，保留7天窗口） ==========
+console.log('\n=== [2/3] Cleanup old data (keep latest 7-day window) ===');
 const files = fs.readdirSync(dataDir)
   .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
   .sort()
   .reverse();
-const toKeep = files.slice(0, 7);
-const toDelete = files.slice(7);
-if (toDelete.length === 0) {
-  console.log('No old files to remove.');
+
+if (files.length === 0) {
+  console.log('No data files found.');
 } else {
-  for (const f of toDelete) {
-    fs.unlinkSync(path.join(dataDir, f));
-    console.log(`Deleted: ${f}`);
+  // 以"最新数据日期"为锚点，保留它及往前6天（共7天窗口）
+  const latestDateStr = files[0].replace('.json', '');
+  const latestDate = new Date(latestDateStr + 'T00:00:00');
+  const cutoff = new Date(latestDate);
+  cutoff.setDate(cutoff.getDate() - 6); // 7天窗口 = [latest-6, latest]
+
+  const toKeep = [];
+  const toDelete = [];
+  for (const f of files) {
+    const d = new Date(f.replace('.json', '') + 'T00:00:00');
+    if (d >= cutoff) toKeep.push(f);
+    else toDelete.push(f);
   }
+
+  if (toDelete.length === 0) {
+    console.log('No old files to remove.');
+  } else {
+    for (const f of toDelete) {
+      fs.unlinkSync(path.join(dataDir, f));
+      console.log(`Deleted: ${f}`);
+    }
+  }
+  console.log(`Kept ${toKeep.length} files (window ${cutoff.toISOString().slice(0,10)} ~ ${latestDateStr}): ${toKeep.join(', ')}`);
 }
-console.log(`Kept ${toKeep.length} files: ${toKeep.join(', ')}`);
 
 // ========== 3. Git 提交并推送 ==========
 console.log('\n=== [3/3] Git commit & push ===');
