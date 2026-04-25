@@ -1,0 +1,368 @@
+{
+  "2026-04-20": {
+    "update_time": "2026-04-20T18:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "GPT-6正式发布: 5万亿参数+200万Token上下文, OpenAI称\"AGI最后一公里\"",
+        "source": "OpenAI官方/科技日报",
+        "url": "https://aiproducthub.cn/wpnote/gpt-6-release-2026-april-breakthrough/",
+        "summary": "4月14日OpenAI正式发布代号\"Spud(土豆)\"的GPT-6, 采用全新Symphony架构实现原生多模态统一处理, 5万亿参数MoE规模, 上下文窗口达200万Token(约100万字), 性能较GPT-5系列提升40%. 耗时18个月研发, 投入20亿美元, 动用10万张H100 GPU训练. CEO Sam Altman称其为\"AGI完成70%-80%的里程碑\".",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "title": "Claude Opus 4.7发布: 编码能力登顶全球, SWE-bench Pro得分64.3%超越GPT-5.4",
+        "source": "Anthropic/IT之家",
+        "url": "https://www.ithome.com/0/940/099.htm",
+        "summary": "4月16日Anthropic发布旗舰模型Claude Opus 4.7, 在SWE-bench Pro基准测试中得分64.3%, 超越GPT-5.4和Gemini 3.1 Pro. 新模型引入自我验证机制, 能在长时间运行的复杂编码任务中保持严谨一致. 编码能力提升13%, 视觉理解提升3倍. 同时推出Cyber Verification Program供安全研究人员使用.",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "title": "DeepSeek启动首轮外部融资: 估值超100亿美元, V4将纯国产算力训练",
+        "source": "路透社/The Information",
+        "url": "https://finance.sina.com.cn/jjxw/2026-04-19/doc-inhuyzxh1560371.shtml",
+        "summary": "4月17日多家外媒证实DeepSeek正启动成立以来首次外部股权融资, 以超100亿美元估值计划募集至少3亿美元. 此前该公司长期依托幻方量化自给自足. 同时DeepSeek V4已完成华为昇腾950P全链路适配, 成为国内首个摆脱英伟达依赖的万亿级大模型, 采用MoE架构推理速度提升35倍, 预计近期发布.",
+        "category": "重要企业动态",
+        "rating": 5
+      },
+      {
+        "title": "人形机器人半马冠军50分26秒超人类世界纪录, 央视焦点访谈专题报道",
+        "source": "央视焦点访谈/新华网",
+        "url": "https://news.cctv.cn/2026/04/19/ARTIJJMaYxjN9cBZ2J9ct0Uz260419.shtml",
+        "summary": "4月19日2026北京亦庄人形机器人半程马拉松举行, 荣耀齐天大圣队\"闪电\"机器人以50分26秒夺冠, 超越人类半马世界纪录(57分31秒)约7分钟. 超百支队伍参赛, 自主导航与遥控机器人同台竞技. 央视焦点访谈专题报道称这场赛事折射出中国机器人产业加速奔跑的轨迹.",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "title": "它石智航4.55亿美元Pre-A轮融资创中国具身智能最高纪录, 估值180亿",
+        "source": "人民政协网/21世纪经济报道",
+        "url": "https://www.rmzxw.com.cn/c/2026-04-17/3902982.shtml",
+        "summary": "4月16日它石智航(TARS AI)宣布完成超4.55亿美元Pre-A轮融资, 刷新中国具身智能有史以来最高单轮融资纪录. 该公司从天使轮2.42亿美元到Pre-A仅一年, 估值从50亿跃至180亿. 2026年Q1国内具身智能赛道披露融资超50起, 累计约200亿元, 百亿估值企业阵营持续扩容.",
+        "category": "重要企业动态",
+        "rating": 5
+      },
+      {
+        "title": "智元APC2026大会: GO-2具身基座大模型+精灵G2产线\"转正\"8小时零失误",
+        "source": "智元机器人/上海证券报",
+        "url": "https://news.qq.com/rain/a/20260418A04VUZ00",
+        "summary": "4月17日APC2026大会在上海举行, 智元发布GO-2具身基座大模型(首创\"动作思维链\")及4款本体新品, 宣布2026年为\"部署元年\". 此前4月14日, 精灵G2在龙旗科技南昌工厂完成8小时全球直播产线作业, 以20秒节拍执行取料/测试/放回全闭环操作, 实现全球首个具身智能3C精密制造产线规模化落地.",
+        "category": "重要企业动态",
+        "rating": 5
+      },
+      {
+        "title": "斯坦福AI指数报告2026: 中美差距仅2.7%, 全球顶尖模型性能格局剧变",
+        "source": "Stanford HAI/36氪",
+        "url": "https://www.36kr.com/p/3766127480718087",
+        "summary": "4月13日斯坦福大学HAI发布423页《AI指数报告2026》, 指出全球顶尖AI模型性能格局正经历前所未有的变化. 中美AI综合指数差距收窄至2.7%, 阿里巴巴位列全球顶级模型贡献前三. 报告覆盖技术进展/经济影响/政策法规等九大维度, 成为观察全球AI发展态势的重要参考.",
+        "category": "算法突破",
+        "rating": 4
+      }
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "它石智航(TARS AI)",
+          "field": "具身智能整机",
+          "route": "全栈人形机器人+通用操作",
+          "funding": "Pre-A轮4.55亿美元, 估值180亿, 一年内从天使轮翻3.6倍",
+          "verdict": "头部集聚效应明显, 但超高估值意味着后续融资压力大, 适合有大厂或头部VC资源背景的候选人"
+        },
+        {
+          "name": "DeepSeek",
+          "field": "大模型",
+          "route": "MoE架构+纯国产算力训练",
+          "funding": "首轮外部融资, 估值超100亿美元(约680亿元), 募集3亿美元",
+          "verdict": "技术实力顶尖但核心人才流失严重(字节亿元年薪挖人), 融资后组织稳定性是关键变量"
+        },
+        {
+          "name": "智元机器人(AGIBOT)",
+          "field": "具身智能",
+          "route": "具身基座大模型+全栈整机+行业解决方案",
+          "funding": "营收目标5亿/3年增20倍, APC2026大会2500+合作伙伴",
+          "verdict": "产线落地验证充分(龙旗8小时零失误), 进入\"部署元年\", 是具身赛道最有确定性的选择之一"
+        },
+        {
+          "name": "PIA Automation",
+          "field": "工业自动化+具身AI",
+          "route": "Embodied AI & Humanoid Robotics新业务线",
+          "funding": "全球自动化巨头新设具身AI部门",
+          "verdict": "传统自动化龙头入局, 代表产业端对人形机器人的真实需求确认, 适合有制造业背景的从业者"
+        }
+      ],
+      "trend": "2026年Q1具身智能赛道百日融资345亿元, 15起超10亿大单, 百亿估值俱乐部加速扩容, 头部格局正在固化, 窗口期明显收窄."
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "从\"能做\"到\"能用\": 具身智能产品进入工业场景PMF验证期",
+          "content": "智元G2在龙旗南昌工厂8小时直播零失误, 场景标定15分钟完成, 换型重训不超4小时, 已具备初步的产品化能力. 产品经理需关注的不再是\"能不能动\", 而是\"能不能替代人工\"的经济账--设备复用率/换型成本/良率对比是核心评估维度."
+        },
+        {
+          "title": "200万Token时代: AI产品的交互范式即将重构",
+          "content": "GPT-6将上下文窗口推至200万Token(约100万字), 意味着整本书/整个代码库/数小时会议记录可一次性输入. 产品形态将从\"对话式\"向\"工作流式\"迁移, 长任务Agent/全文档理解/跨文件推理成为新的产品机会区."
+        },
+        {
+          "title": "开源模型Apache 2.0化: 商业模式需要重新设计",
+          "content": "Google Gemma 4从受限许可切换至Apache 2.0, 腾讯HY-Embodied-0.5也开源. 当基座模型免费化加速, 产品壁垒从\"模型能力\"转向\"数据飞轮+场景深度\". PM需思考如何在开源生态中构建不可替代的产品价值."
+        }
+      ],
+      "focus": [
+        "具身智能产品的工业客户POC转化率和复购指标",
+        "200万Token长上下文场景下的用户体验设计",
+        "多模型调度层产品化(GPT-6/Claude/DeepSeek并行调用)"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "三巨头模型同期发布: 技术路线分化加剧",
+          "content": "GPT-6(Symphony架构/200万Token/5万亿参数)、Claude Opus 4.7(编码+自我验证/SWE-bench 64.3%)、DeepSeek V4(纯国产算力/MoE万亿参数)三大模型在4月密集发布. GPT-6走\"大力出奇迹\"路线, Claude走\"深度推理+可靠性\"路线, DeepSeek走\"开源+自主可控\"路线. 工程师需根据场景选型, 不存在万能解."
+        },
+        {
+          "title": "VLA模型进入实用期: 腾讯HY-Embodied-0.5开源验证",
+          "content": "腾讯Robotics X发布HY-Embodied-0.5, 基于MoT(混合Transformer)架构, 2B参数, 22项评测中16项最佳. 引入动态奖励强化学习和同策略知识蒸馏. 该模型在真实机器人臂上pick-and-place准确率达91%, 已在GitHub/HuggingFace开源, 可直接用于VLA流水线."
+        },
+        {
+          "title": "国产算力全链路适配突破: DeepSeek V4+昇腾950P",
+          "content": "DeepSeek V4成为国内首个全程纯国产算力训练的万亿级大模型, 完成与华为昇腾950P全链路深度适配, 推理速度提升35倍. 这意味着\"去英伟达\"技术路径已初步跑通, 对算法工程师而言需关注昇腾/CANN工具链的适配能力建设."
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "MoE/MoT超大参数架构",
+          "status": "成长期",
+          "advice": "GPT-6和DeepSeek V4均采用MoE, 腾讯HY-Embodied用MoT, 已成为大模型主流范式, 建议深入掌握稀疏激活和专家路由机制"
+        },
+        {
+          "direction": "VLA(视觉-语言-动作)模型",
+          "status": "验证期",
+          "advice": "HY-Embodied-0.5和智元GO-2验证了VLA在真实场景的可行性, 但泛化能力仍受限, 建议跟踪开源实现并在自有场景复现"
+        },
+        {
+          "direction": "200万+Token长上下文",
+          "status": "成长期",
+          "advice": "GPT-6原生支持200万Token, 长文本处理能力质变, 建议研究KV-cache优化和长序列注意力机制"
+        },
+        {
+          "direction": "纯国产算力训练链路",
+          "status": "验证期",
+          "advice": "DeepSeek+昇腾950P跑通全链路, 但工具链成熟度仍低于CUDA生态, 建议提前布局昇腾/CANN开发能力"
+        },
+        {
+          "direction": "模型自我验证/安全对齐",
+          "status": "早期",
+          "advice": "Claude Opus 4.7引入自我验证机制和Cyber Verification Program, Anthropic同时发布Mythos Preview限量模型, 安全AI是长期方向"
+        }
+      ],
+      "focus": [
+        "GPT-6 Symphony架构的技术细节和多模态统一方案",
+        "DeepSeek V4开源后的微调和部署实践",
+        "HY-Embodied-0.5在自有机器人平台的复现"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "多模型并行时代的项目管理: 调度层成为新基建",
+          "content": "GPT-6/Claude Opus 4.7/DeepSeek V4同期上线, 项目团队面临\"用哪个模型\"的选型决策. 建议建设统一调度层, 按场景路由(编码用Claude, 长文本用GPT-6, 成本敏感用DeepSeek), 避免单一供应商锁定. 调度层的稳定性和切换成本是项目风险点."
+        },
+        {
+          "title": "具身智能项目从实验室到产线: 交付节奏参考",
+          "content": "智元G2从副产线实习到正式并线用了4个月, 场景标定15分钟, 换型重训4小时. 这为具身智能项目提供了可参考的里程碑节奏: POC(2周) -> 副线验证(2-3月) -> 正式并线(1-2月) -> 规模复制. 项目经理需将\"机器人培训期\"纳入项目计划."
+        },
+        {
+          "title": "AI人才争夺白热化: DeepSeek核心团队流失敲响警钟",
+          "content": "字节跳动以亿元年薪挖角DeepSeek核心人才, 直接导致DeepSeek被迫开启首轮融资. AI项目的最大风险不是技术而是人. 项目经理需将关键人员留存计划纳入风险管理, 同时建设知识沉淀机制降低个人依赖."
+        }
+      ],
+      "focus": [
+        "多模型供应商管理和成本控制策略",
+        "具身智能项目的产线验证里程碑设计",
+        "AI核心人才的留存与知识沉淀机制"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "编码/软件工程场景优先选用Claude Opus 4.7(SWE-bench 64.3%), 长文本/多模态场景选GPT-6(200万Token), 成本敏感/国产化场景等DeepSeek V4开源",
+        "具身智能VLA模型优先评估开源的HY-Embodied-0.5(MoT架构/2B参数/Apache 2.0), 配合智元GO-2的动作思维链方案对比",
+        "通用开源模型关注Google Gemma 4(Apache 2.0), 覆盖边缘到数据中心全场景",
+        "国产算力方面开始评估昇腾950P+CANN工具链, 为去英伟达做技术储备"
+      ],
+      "track_judgment": [
+        "具身智能赛道: Q1融资345亿元/百亿估值企业密集涌现, 头部格局加速固化, 窗口期收窄, 建议尽早卡位",
+        "大模型赛道: GPT-6/Claude/DeepSeek三足鼎立, 竞争进入\"深水区\", 纯模型创业机会减少, 应用层和垂直场景仍有空间",
+        "工业机器人落地: 智元G2产线验证成功+PIA Automation新设具身AI部门, 信号明确, 3C制造是最先落地的场景"
+      ],
+      "watch_list": [
+        "DeepSeek V4正式发布日期及开源计划(预计4月下旬)",
+        "GPT-6 API开放时间和定价策略",
+        "2026北京亦庄机器人半马赛后技术白皮书",
+        "具身智能Q2融资动态和二级市场反应(极智嘉等)",
+        "Anthropic Mythos Preview模型的安全测试结果"
+      ]
+    },
+    "raw_articles": [
+      {
+        "id": "20260420-001",
+        "title": "GPT-6正式发布: 代号Spud, 5万亿参数+200万Token上下文+Symphony架构",
+        "source": "OpenAI/凤凰科技",
+        "url": "https://aiproducthub.cn/wpnote/gpt-6-release-2026-april-breakthrough/",
+        "publish_time": "2026-04-14",
+        "summary": "OpenAI发布GPT-6, 代号\"土豆\", 采用Symphony架构实现原生多模态统一处理, 5万亿MoE参数, 200万Token上下文窗口, 性能提升40%, 耗资20亿美元训练, 被定位为\"AGI最后一公里\".",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "id": "20260420-002",
+        "title": "Claude Opus 4.7发布: SWE-bench Pro 64.3%登顶, 编码能力提升13%",
+        "source": "Anthropic/IT之家",
+        "url": "https://www.ithome.com/0/940/099.htm",
+        "publish_time": "2026-04-16",
+        "summary": "Anthropic发布Claude Opus 4.7, SWE-bench Pro得分64.3%超越GPT-5.4, 编码提升13%, 视觉理解提升3倍, 引入自我验证机制和Cyber Verification Program, 定价与Opus 4.6一致但新分词器增加Token消耗.",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "id": "20260420-003",
+        "title": "DeepSeek启动首轮外部融资, 估值超100亿美元",
+        "source": "路透社/The Information",
+        "url": "https://finance.sina.com.cn/jjxw/2026-04-19/doc-inhuyzxh1560371.shtml",
+        "publish_time": "2026-04-19",
+        "summary": "DeepSeek正与投资者洽谈首轮外部股权融资, 计划以超100亿美元估值募集至少3亿美元. 此前长期依托幻方量化自给自足, 此次融资或与核心人才流失及V4研发压力有关.",
+        "category": "重要企业动态",
+        "rating": 5
+      },
+      {
+        "id": "20260420-004",
+        "title": "DeepSeek V4完成华为昇腾950P全链路适配, 纯国产算力训练万亿级模型",
+        "source": "DeepSeek官方/科技日报",
+        "url": "https://aiproducthub.cn/newsflash/deepseek-v4-pure-domestic-computing-power-training/",
+        "publish_time": "2026-04-18",
+        "summary": "DeepSeek V4全程采用纯国产算力完成训练, 完成与华为昇腾950P全链路适配, 万亿参数MoE架构, 推理激活约370亿参数, 推理速度提升35倍, 预计4月下旬发布.",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "id": "20260420-005",
+        "title": "人形机器人半马冠军50分26秒超人类世界纪录, 央视焦点访谈专题报道",
+        "source": "央视焦点访谈/经济观察网",
+        "url": "https://news.cctv.cn/2026/04/19/ARTIJJMaYxjN9cBZ2J9ct0Uz260419.shtml",
+        "publish_time": "2026-04-19",
+        "summary": "2026北京亦庄人形机器人半马举行, 荣耀\"闪电\"以50分26秒夺冠, 超人类世界纪录(57分31秒). 超百支队伍参赛, 央视焦点访谈专题报道中国机器人产业加速奔跑.",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "id": "20260420-006",
+        "title": "它石智航4.55亿美元Pre-A轮融资, 创中国具身智能最高纪录",
+        "source": "人民政协网/21世纪经济报道",
+        "url": "https://www.rmzxw.com.cn/c/2026-04-17/3902982.shtml",
+        "publish_time": "2026-04-16",
+        "summary": "它石智航完成超4.55亿美元Pre-A轮融资, 刷新中国具身智能最高单轮融资纪录, 估值从50亿跃至180亿. 2026年Q1国内具身智能赛道融资超50起, 累计约200亿元.",
+        "category": "融资",
+        "rating": 5
+      },
+      {
+        "id": "20260420-007",
+        "title": "智元APC2026大会: GO-2基座大模型+4款新本体+7行业解决方案",
+        "source": "智元机器人/PRNewswire",
+        "url": "https://www.prnewswire.com/news-releases/agibot-unveils-new-generation-of-embodied-ai-robots-and-models-accelerating-real-world-deployment-of-physical-ai-302746174.html",
+        "publish_time": "2026-04-17",
+        "summary": "APC2026大会在上海举行, 2500余名合作伙伴参会. 智元发布GO-2具身基座大模型(首创动作思维链)、4款本体新品及7个行业解决方案, 宣布2026年为\"部署元年\", 营收目标5亿.",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "id": "20260420-008",
+        "title": "智元精灵G2龙旗南昌工厂8小时直播: 全球首个具身智能3C产线规模化落地",
+        "source": "上海证券报/证券日报",
+        "url": "https://paper.cnstock.com/html/2026-04/16/content_2200111.htm",
+        "publish_time": "2026-04-14",
+        "summary": "智元精灵G2在龙旗科技南昌平板工厂开启8小时全球直播, 以20秒节拍完成取料/测试/放回全闭环操作. 场景标定15分钟, 换型重训不超4小时, 实现全球首个具身智能3C精密制造产线规模化落地.",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "id": "20260420-009",
+        "title": "斯坦福AI指数报告2026: 423页报告显示中美差距收窄至2.7%",
+        "source": "Stanford HAI/36氪",
+        "url": "https://www.36kr.com/p/3766127480718087",
+        "publish_time": "2026-04-13",
+        "summary": "斯坦福HAI发布423页AI指数报告2026, 全球顶尖AI模型性能格局剧变, 中美差距收窄至2.7%. 阿里巴巴位列全球顶级模型贡献前三, 报告覆盖技术/经济/政策等九大维度.",
+        "category": "行业报告",
+        "rating": 4
+      },
+      {
+        "id": "20260420-010",
+        "title": "腾讯HY-Embodied-0.5开源: MoT架构具身基座模型, 22项评测16项最佳",
+        "source": "腾讯Robotics X/arXiv",
+        "url": "https://github.com/Tencent-Hunyuan/HY-Embodied",
+        "publish_time": "2026-04-10",
+        "summary": "腾讯发布具身智能基座模型HY-Embodied-0.5, 基于MoT架构, 2B参数, 22项评测中16项最佳. 引入动态奖励RL和同策略知识蒸馏, 机器人臂pick-and-place准确率91%. 已在GitHub/HuggingFace开源.",
+        "category": "开源",
+        "rating": 4
+      },
+      {
+        "id": "20260420-011",
+        "title": "Google Gemma 4开源: 8款模型切换Apache 2.0, 从手机到数据中心全覆盖",
+        "source": "Google DeepMind/知乎",
+        "url": "https://gemma4.cn/",
+        "publish_time": "2026-04-02",
+        "summary": "Google DeepMind发布Gemma 4, 基于Gemini 3同源研究, 8款模型全部采用Apache 2.0许可证, 支持文本/图像/视频/音频多模态, 覆盖边缘设备到数据中心全场景部署.",
+        "category": "开源",
+        "rating": 4
+      },
+      {
+        "id": "20260420-012",
+        "title": "新华网\"机器人+\"具身智能产业赋能行动正式启动",
+        "source": "新华网",
+        "url": "https://www.xinhuanet.com/info/20260415/b5d4a9f1cf0d4a3a9fc180064d8bb031/c.html",
+        "publish_time": "2026-04-15",
+        "summary": "新华网联合产学研用资多方机构发起\"机器人+\"具身智能产业赋能行动, 搭建具身智能交流协作平台, 推动中国制造向中国智造转型. WBBA董事会主席李正茂出席.",
+        "category": "政策信号",
+        "rating": 4
+      },
+      {
+        "id": "20260420-013",
+        "title": "2026中国人形机器人生态大会在上海成功举办",
+        "source": "上海市政府/腾讯新闻",
+        "url": "https://www.shanghai.gov.cn/nw17239/20260417/2b4b4f61b92b476a94b5f6df96da6d2b.html",
+        "publish_time": "2026-04-17",
+        "summary": "4月17-19日2026中国人形机器人生态大会在上海汽车会展中心举行, 观众可亲触前沿具身智能技术, 机器人界\"全明星\"阵容亮相, 覆盖家庭伴侣/工业生产/服务等多场景.",
+        "category": "行业活动",
+        "rating": 3
+      },
+      {
+        "id": "20260420-014",
+        "title": "PIA Automation新设Embodied AI & Humanoid Robotics业务线",
+        "source": "PIA Group",
+        "url": "https://www.piagroup.com/en/news/2026-04-14-new-business-segment-for-the-factory-of-the-future/",
+        "publish_time": "2026-04-14",
+        "summary": "全球自动化龙头PIA Automation宣布新设Embodied AI & Humanoid Robotics业务线, 将传统自动化专长与人形机器人技术结合, 面向\"未来工厂\"场景, 标志着传统制造业对具身智能的需求确认.",
+        "category": "重要企业动态",
+        "rating": 4
+      },
+      {
+        "id": "20260420-015",
+        "title": "具身智能Q1融资狂飙: 百日345亿元, 15起超10亿大单",
+        "source": "雪球/21世纪经济报道",
+        "url": "https://xueqiu.com/7178387990/384696450",
+        "publish_time": "2026-04-20",
+        "summary": "2026年4月具身智能迎来史上最热开局, Q1百日融资345亿元, 15起超10亿大单, 国家队/大厂/顶级VC集体押注. 一级市场狂热的同时, 二级市场已开始向有落地验证的企业倾斜.",
+        "category": "融资",
+        "rating": 4
+      },
+      {
+        "id": "20260420-016",
+        "title": "OpenClaw 2026 v2026.4.5发布: AI Agent框架16大核心功能更新",
+        "source": "OpenClaw社区",
+        "url": "https://clawd.org.cn/forum/post?id=9913",
+        "publish_time": "2026-04-19",
+        "summary": "开源AI Agent框架OpenClaw连续发布v2026.4.1和v2026.4.5两个版本, 带来16大核心功能更新, 重新定义AI智能体从对话工具到自主代理的跨越, 推动Agent从概念走向生产级应用.",
+        "category": "开源",
+        "rating": 3
+      }
+    ]
+  }
+}
