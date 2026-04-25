@@ -1,0 +1,360 @@
+{
+  "2026-04-24": {
+    "update_time": "2026-04-24T18:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "DeepSeek-V4预览版正式发布并开源，进入百万上下文普惠时代",
+        "source": "深度求索官方",
+        "url": "https://www.guancha.cn/internation/2026_04_24_814855.shtml",
+        "summary": "4月24日DeepSeek正式发布V4系列预览版并同步开源，包含Pro与Flash两个版本，支持1M tokens超长上下文，在Agent能力、世界知识与推理性能上全面跃升。采用MIT协议，HuggingFace全系开放，商用零门槛。Bloomberg评为最具野心的新旗舰，被外媒视为国产AI跻身全球第一梯队的标志。",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "title": "FAIR plus 2026深圳闭幕日，具身智能从技术秀场切换到量产战场",
+        "source": "雷峰网/腾讯科技",
+        "url": "https://www.leiphone.com/category/robot/Ty5O3L8ayTx43VOl.html",
+        "summary": "4月22-24日FAIR plus机器人全产业链接会在深圳9号馆举办，规模从去年7500㎡翻倍至15000㎡，集结500+企业、50+核心产业环节、70+重磅活动、200+行业领袖。订单签约上台、标准落地同步推进，标志具身智能从技术验证迈入规模化商业落地。",
+        "category": "行业展会",
+        "rating": 5
+      },
+      {
+        "title": "荣耀机器人天团亮相2026北京车展，半马冠军闪电携元气仔跨界互动",
+        "source": "中国日报/澎湃新闻",
+        "url": "https://news.qq.com/rain/a/20260424A05LWL00",
+        "summary": "4月24日第十九届北京国际汽车展览会开幕，荣耀携亦庄半马以50分26秒夺冠并打破人类半马世界纪录的闪电机器人、最佳步态奖元气仔及Robot Phone亮相多家车企展台。2025年荣耀进入机器人赛道，印证具身智能被纳入十五五规划后，消费电子巨头加速跨界布局。",
+        "category": "重要企业动态",
+        "rating": 5
+      },
+      {
+        "title": "全球首个具身智能世界模型架构在深圳发布，瞄准家庭终极考场",
+        "source": "深圳新闻网",
+        "url": "https://www.sznews.com/news/content/2026-04/23/content_32025391.htm",
+        "summary": "FAIR plus 2026期间深圳发布全球首个具身智能世界模型架构，家庭被公认为具身智能终极考场。相比规整的实验室与工业场景，真实家庭环境复杂多变，对机器人感知、决策、操作能力提出极致考验。深圳率先带领产业迈入实战检验阶段。",
+        "category": "算法突破",
+        "rating": 4
+      },
+      {
+        "title": "欧盟AI法案正式生效进入执法期，全球AI监管合规化加速",
+        "source": "CSDN/AI行业日报",
+        "url": "https://blog.csdn.net/2401_84289488/article/details/160482421",
+        "summary": "4月24日欧盟AI法案进入正式执法阶段，对高风险AI系统提出透明度、数据治理、人类监督等强制要求。中国同步推进AI国家标准制定，AI合规成为全球科技企业新门槛。技术竞争白热化与监管合规全球化并行。",
+        "category": "政策信号",
+        "rating": 4
+      },
+      {
+        "title": "宇树科技IPO进入关键阶段，拟募资42亿冲刺人形机器人第一股",
+        "source": "虎嗅网",
+        "url": "https://www.huxiu.com/article/4851124.html",
+        "summary": "宇树科技3月提交科创板IPO申请拟募资42亿元，2025年营收17.1亿元、扣非净利润6亿元，在人形与四足机器人领域实现规模化盈利。与优必选港股上市遥相呼应，智元、优必选、宇树领跑格局下，人形机器人进入资本市场集中敲钟潮。",
+        "category": "市场数据",
+        "rating": 4
+      },
+      {
+        "title": "PixVerse成为联合国2026 AI for Good全球峰会AI合作伙伴",
+        "source": "新智元",
+        "url": "http://aiera.com.cn/",
+        "summary": "4月23日PixVerse宣布成为联合国2026 AI for Good全球峰会官方AI合作伙伴，将为大会提供AI视频生成技术支持。这是中国AI视频生成企业首次进入联合国顶级国际舞台，标志国产多模态生成模型获国际认可。",
+        "category": "重要企业动态",
+        "rating": 3
+      }
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "荣耀机器人",
+          "field": "消费级人形机器人",
+          "route": "手机+机器人+空间计算三位一体，闪电专注运动性能、元气仔主打情感交互、Robot Phone为跨形态控制中枢",
+          "funding": "依托荣耀品牌自主孵化，2025年正式进入赛道",
+          "verdict": "大厂背景+消费电子供应链优势明显，半马夺冠建立品牌心智，跨界车展印证商业化思路清晰。择业值得重点关注，尤其是运动控制与人机交互岗位"
+        },
+        {
+          "name": "宇树科技",
+          "field": "四足与人形机器人",
+          "route": "硬件本体+运动控制双轮驱动，量产能力与成本控制全球领先",
+          "funding": "科创板IPO申请中，拟募资42亿元，2025年营收17.1亿",
+          "verdict": "国内最成熟的机器人公司之一，IPO临近带来股权激励想象空间。硬件强势但AI软件栈相对薄弱，适合硬件工程师"
+        },
+        {
+          "name": "深圳留形科技",
+          "field": "空间记忆模组",
+          "route": "给机器人装上海马体，港大团队背景，2022年落户前海",
+          "funding": "早期阶段",
+          "verdict": "切入具身智能核心的空间认知问题，小而美团队+细分赛道龙头潜质。适合学术背景扎实、偏早期创业的候选人"
+        }
+      ],
+      "trend": "人形机器人从技术竞速切换到量产战场，IPO潮涌+大厂跨界双轮驱动，空间智能成为新的技术分水岭"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "百万上下文普惠化重构Agent产品形态",
+          "content": "DeepSeek-V4将1M tokens带入开源免费阶段，Agent产品长上下文门槛消失。过往靠RAG拼接的复杂架构将简化，原生长上下文Agent成主流，产品经理需重新评估记忆系统、工具链、上下文压缩三者的优先级"
+        },
+        {
+          "title": "家庭场景成具身智能真正的产品起点",
+          "content": "深圳发布的世界模型架构明确指向家庭终极考场。相比工业场景的标准化，家庭场景的非结构化特性要求产品具备自主环境建模、长时任务规划、安全兜底三大能力。建议PM重点跟踪陪伴、清洁、照护三个细分方向"
+        },
+        {
+          "title": "机器人+手机融合催生新硬件形态",
+          "content": "荣耀Robot Phone展示了机器人与手机协同的新范式：手机作为机器人控制中枢与计算后端。这一思路有望降低机器人本体成本、复用手机生态应用，值得消费电子与机器人交叉领域的PM深入研究"
+        }
+      ],
+      "focus": [
+        "DeepSeek-V4在实际Agent产品中的长上下文稳定性验证",
+        "家庭具身智能产品的MVP场景定义与商业模式",
+        "AI合规法案对产品功能裁剪的具体影响"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "V4 Pro/Flash双版本策略值得深度借鉴",
+          "content": "DeepSeek-V4同时推出Pro(旗舰推理)与Flash(低延迟)两个版本，兼容OpenAI API，MIT许可商用无门槛。这种一体化开源策略既覆盖高精度场景又兼顾成本敏感部署，是国产模型在生态策略上的重要突破"
+        },
+        {
+          "title": "世界模型正式走进具身智能工业化范式",
+          "content": "深圳发布的首个具身智能世界模型架构标志着从VLA(视觉-语言-动作)向VLWA(加入World Model)演进。算法工程师需关注视频生成+物理仿真+强化学习三者如何在真实机器人上闭环，这是未来1-2年的核心攻坚方向"
+        },
+        {
+          "title": "百万上下文倒逼注意力机制革新",
+          "content": "V4的1M上下文在效率上的突破意味着传统稠密注意力难以为继，线性注意力、Mamba类架构、分块稀疏将成为主战场。研究者需重新评估长序列理解的基准测试与工程优化路径"
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "具身智能世界模型",
+          "status": "早期",
+          "advice": "深圳架构仅是起点，真实家庭数据稀缺、仿真-现实差距仍大，建议研究者积极跟进但暂缓工业落地"
+        },
+        {
+          "direction": "百万Token开源模型",
+          "status": "验证期",
+          "advice": "V4已可商用，建议立即接入替换高成本闭源API，特别是Agent、代码、长文档分析场景"
+        },
+        {
+          "direction": "机器人运动控制",
+          "status": "成长期",
+          "advice": "荣耀闪电半马破纪录证明国产运控已成熟，可规模化应用于服务机器人与人机协作"
+        },
+        {
+          "direction": "机器人-手机联合计算",
+          "status": "早期",
+          "advice": "Robot Phone概念新颖但生态未建立，建议关注不重投入"
+        },
+        {
+          "direction": "合规对齐与可审计AI",
+          "status": "成长期",
+          "advice": "欧盟法案生效后企业级市场必需，RLHF之外需补齐可解释性与审计日志能力"
+        }
+      ],
+      "focus": [
+        "V4-Pro与Claude Opus 4.7、GPT-5在真实Agent基准上的对比",
+        "世界模型在真实机器人本体的首次闭环案例",
+        "具身智能数据采集众包与仿真生成的新范式"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "开源大模型版本切换要预留1-2周验证期",
+          "content": "V4发布后团队若计划从V3或Claude/GPT切换，需规划API兼容测试、长上下文稳定性回归、成本重新建模三条并行线。尤其是Agent产品，新版本在工具调用上的行为差异可能影响线上表现"
+        },
+        {
+          "title": "跨团队协作在机器人项目中权重上升",
+          "content": "荣耀案例表明硬件、AI算法、手机系统、ID设计需深度协同。项目经理在人形机器人相关项目需特别关注机械-电气-软件三方联调排期，接口定义应提前2-3个里程碑冻结"
+        },
+        {
+          "title": "AI合规需求纳入项目基线",
+          "content": "欧盟AI法案生效，出海产品的合规审查从可选变必选。建议PM在立项阶段即与法务、安全、数据团队建立合规检查清单，规避上线前的紧急整改"
+        }
+      ],
+      "focus": [
+        "V4切换带来的API与成本重估排期",
+        "机器人硬件量产节奏与软件迭代周期的错位风险",
+        "AI产品合规审查流程的固化"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "Agent/长文档产品优先评估DeepSeek-V4-Pro/Flash，1M上下文+MIT协议性价比极高",
+        "具身智能研究团队开始关注世界模型+VLA融合路线，保留RT-X等现有方案作为对照",
+        "机器人控制栈参考宇树与荣耀的实战经验，重视运动控制+环境理解的协同优化"
+      ],
+      "track_judgment": [
+        "人形机器人赛道进入量产与IPO双浪潮，投资窗口从单点技术转向供应链与订单兑现能力",
+        "家庭场景是具身智能下一个真正的商业蓝海，但2026年仍以技术探索为主",
+        "AI合规化成为出海企业新红线，合规工具链将成为B端刚需"
+      ],
+      "watch_list": [
+        "DeepSeek-V4正式版的发布时间与功能细节",
+        "FAIR plus 2026订单兑现进度与头部企业量产爬坡",
+        "宇树科技IPO过会节奏与人形机器人板块资本市场表现",
+        "荣耀后续机器人产品的商业化路径与销量数据",
+        "欧盟AI法案首批处罚案例与合规基线"
+      ]
+    },
+    "raw_articles": [
+      {
+        "id": "20260424-01",
+        "title": "DeepSeek-V4预览版正式发布并开源",
+        "source": "深度求索官方",
+        "url": "https://www.guancha.cn/internation/2026_04_24_814855.shtml",
+        "publish_time": "2026-04-24T10:00:00+08:00",
+        "summary": "Pro+Flash双版本，1M tokens上下文，MIT协议开源，Agent能力全面跃升",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "id": "20260424-02",
+        "title": "FAIR plus 2026深圳闭幕，机器人进入量产战场",
+        "source": "雷峰网",
+        "url": "https://www.leiphone.com/category/robot/Ty5O3L8ayTx43VOl.html",
+        "publish_time": "2026-04-24T15:00:00+08:00",
+        "summary": "展馆扩倍至15000㎡，500+企业，订单上台标准落地",
+        "category": "行业展会",
+        "rating": 5
+      },
+      {
+        "id": "20260424-03",
+        "title": "荣耀机器人天团亮相北京车展",
+        "source": "澎湃新闻",
+        "url": "https://news.qq.com/rain/a/20260424A05LWL00",
+        "publish_time": "2026-04-24T09:30:00+08:00",
+        "summary": "闪电+元气仔+Robot Phone三件套跨界车企展台，印证消费电子+机器人融合",
+        "category": "重要企业动态",
+        "rating": 5
+      },
+      {
+        "id": "20260424-04",
+        "title": "全球首个具身智能世界模型架构在深发布",
+        "source": "深圳新闻网",
+        "url": "https://www.sznews.com/news/content/2026-04/23/content_32025391.htm",
+        "publish_time": "2026-04-24T08:00:00+08:00",
+        "summary": "瞄准家庭终极考场，VLWA范式走入工业化",
+        "category": "算法突破",
+        "rating": 4
+      },
+      {
+        "id": "20260424-05",
+        "title": "欧盟AI法案正式进入执法期",
+        "source": "CSDN",
+        "url": "https://blog.csdn.net/2401_84289488/article/details/160482421",
+        "publish_time": "2026-04-24T11:00:00+08:00",
+        "summary": "高风险AI系统透明度+数据治理强制要求落地",
+        "category": "政策信号",
+        "rating": 4
+      },
+      {
+        "id": "20260424-06",
+        "title": "宇树科技冲刺科创板IPO拟募资42亿",
+        "source": "虎嗅网",
+        "url": "https://www.huxiu.com/article/4851124.html",
+        "publish_time": "2026-04-24T12:00:00+08:00",
+        "summary": "2025年营收17.1亿+扣非净利润6亿，人形机器人第一股争夺战",
+        "category": "市场数据",
+        "rating": 4
+      },
+      {
+        "id": "20260424-07",
+        "title": "PixVerse成为联合国AI for Good 2026合作伙伴",
+        "source": "新智元",
+        "url": "http://aiera.com.cn/",
+        "publish_time": "2026-04-24T14:00:00+08:00",
+        "summary": "国产AI视频生成首次进入联合国舞台",
+        "category": "重要企业动态",
+        "rating": 3
+      },
+      {
+        "id": "20260424-08",
+        "title": "阿里千问登顶全球调用榜",
+        "source": "51CTO",
+        "url": "https://blog.51cto.com/u_16213662/14560458",
+        "publish_time": "2026-04-24T16:00:00+08:00",
+        "summary": "2026年4月AI融资与模型进展综述，OpenAI刷新商业史融资纪录",
+        "category": "市场数据",
+        "rating": 3
+      },
+      {
+        "id": "20260424-09",
+        "title": "DeepSeek-V4技术解读：1M上下文如何实现",
+        "source": "AI Insight",
+        "url": "https://www.ai-insight.org/reports/deepseek-v4-2026",
+        "publish_time": "2026-04-24T13:00:00+08:00",
+        "summary": "Pro+Flash架构细节，长序列效率突破的关键算法",
+        "category": "算法突破",
+        "rating": 4
+      },
+      {
+        "id": "20260424-10",
+        "title": "具身智能被纳入十五五规划",
+        "source": "中国日报",
+        "url": "https://cn.chinadaily.com.cn/a/202604/24/WS69eb290aa310942cc49a94d0.html",
+        "publish_time": "2026-04-24T07:30:00+08:00",
+        "summary": "2026年具身智能作为未来产业纳入国家规划，政策红利持续释放",
+        "category": "政策信号",
+        "rating": 4
+      },
+      {
+        "id": "20260424-11",
+        "title": "荣耀闪电以50分26秒破人类半马世界纪录",
+        "source": "新浪财经",
+        "url": "https://finance.sina.com.cn/jjxw/2026-04-24/doc-inhvramw7892162.shtml",
+        "publish_time": "2026-04-24T10:30:00+08:00",
+        "summary": "人形机器人运动性能里程碑事件",
+        "category": "重要企业动态",
+        "rating": 4
+      },
+      {
+        "id": "20260424-12",
+        "title": "UniT：迈向人-人形统一物理语言",
+        "source": "ArXiv cs.RO",
+        "url": "https://arxiv.org/list/cs.RO/recent",
+        "publish_time": "2026-04-24T00:00:00+08:00",
+        "summary": "人-人形策略学习与世界建模的统一表征，HKU团队最新成果",
+        "category": "算法突破",
+        "rating": 3
+      },
+      {
+        "id": "20260424-13",
+        "title": "北大联合Llama-Factory推出DataFlex工业级动态训练系统",
+        "source": "机器之心",
+        "url": "https://m.36kr.com/user/214166",
+        "publish_time": "2026-04-24T09:00:00+08:00",
+        "summary": "开源数据动态混合与训练优化框架",
+        "category": "开源项目",
+        "rating": 3
+      },
+      {
+        "id": "20260424-14",
+        "title": "深圳留形科技：机器人的海马体",
+        "source": "央视新闻",
+        "url": "https://news.cctv.cn/2026/04/19/ARTIl8cydEgtSuFyWCpZXOyc260419.shtml",
+        "publish_time": "2026-04-24T17:00:00+08:00",
+        "summary": "空间记忆模组，港大团队，具身智能细分赛道创业代表",
+        "category": "创业公司",
+        "rating": 3
+      },
+      {
+        "id": "20260424-15",
+        "title": "荣耀Robot Phone：手机与机器人融合新范式",
+        "source": "网易科技",
+        "url": "https://www.163.com/tech/article/KR9RP69K00098IEO.html",
+        "publish_time": "2026-04-24T11:30:00+08:00",
+        "summary": "机器人控制中枢与计算后端由手机承担，降低本体成本",
+        "category": "重要企业动态",
+        "rating": 3
+      },
+      {
+        "id": "20260424-16",
+        "title": "2026机器人IPO大年：敲钟潮将至",
+        "source": "新浪财经",
+        "url": "https://k.sina.com.cn/article_7651844612_1c815e20400101usoe.html",
+        "publish_time": "2026-04-24T18:00:00+08:00",
+        "summary": "继优必选后宇树智元扎堆上市，资本市场集体共振",
+        "category": "市场数据",
+        "rating": 3
+      }
+    ]
+  }
+}
