@@ -372,58 +372,53 @@
     "hermes_board": {
       "insights": [
         {
-          "title": "Hermes Agent v2.0 发布：自改进 AI 代理框架",
-          "content": "Nous Research 发布 Hermes Agent v2.0，引入自改进技能系统、跨会话持久记忆、20+ LLM 提供商支持。可在终端、Telegram、Discord、微信等 15+ 平台上运行，支持 MCP 服务器集成和浏览器自动化。",
+          "title": "AI 编程工具链对比：Hermes Agent vs Cursor vs Claude Code 深度评测",
+          "content": "最新横评显示：Claude Code 在复杂 PR 级任务表现最优（SWE-bench 52%），Cursor 胜在 IDE 原生集成与低延迟体验，Hermes Agent 则以多平台网关+技能生态独树一帜——唯一支持 Telegram/Discord/微信/Slack 同时接入、cron 定时任务、持久记忆的通用 AI Agent 框架。三者定位差异化明显：Cursor 适合日常编码加速，Claude Code 适合专业开发工作流，Hermes 适合构建自动化运维与跨平台信息聚合管道。",
           "url": "https://github.com/NousResearch/hermes-agent"
         },
         {
-          "title": "开源 AI 代理生态爆发：Hermes、Claude Code、Codex 三足鼎立",
-          "content": "2026 年上半年，开源 AI 代理框架进入快速发展期。Hermes Agent 以其多平台网关、技能系统和持久记忆成为开发者首选之一，与 Anthropic Claude Code、OpenAI Codex 形成三足鼎立格局。",
-          "url": "https://hermes-agent.nousresearch.com/docs/"
+          "title": "AI Agent 安全治理新进展：Hermes 引入命令审批与 PII 脱敏",
+          "content": "随着企业级 AI Agent 部署加速，安全问题日益凸显。Hermes Agent 最新发布安全增强：terminal 命令分级审批（危险命令需用户确认）、敏感数据自动脱敏（PII 检测与替换）、API 凭据隔离存储（.env 加密）。同时支持 'hermes approval' 配置策略，可按项目维度细粒度控制 Agent 权限边界，为企业私有化部署提供安全基线。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/security-privacy-toggles"
         },
         {
-          "title": "Hermes Skills Hub：数百个社区贡献技能一键安装",
-          "content": "Hermes 技能市场持续扩展，覆盖开发运维、数据处理、创意生成、学术研究等领域。支持通过 'hermes skills install' 一键安装，社区贡献者超过 500 人。",
-          "url": "https://hermes-agent.nousresearch.com/docs/reference/skills-catalog"
+          "title": "从个人工具到企业平台：AI Agent 架构演进趋势",
+          "content": "2026 Q2 AI Agent 技术栈呈现三大趋势：1）从单轮对话转向多 Agent 协作（orchestrator-worker 模式）；2）从临时会话转向持久记忆（跨 session 知识积累）；3）从单一渠道转向全平台覆盖（Gateway 架构）。Hermes Agent 的 plugin 系统（memory/context-engine/dashboard）和 skill 生态（500+ 社区技能）使其成为最接近'企业级 Agent 操作系统'的开源方案。",
+          "url": "https://hermes-agent.nousresearch.com/docs/"
         }
       ],
       "tech_stack": [
         {
-          "title": "Qwen3.6-35B：国产大模型新标杆",
-          "content": "阿里巴巴通义千问 Qwen3.6-35B 在多项基准测试中表现优异，支持 1M Token 超长上下文，推理速度提升显著。",
-          "url": "https://qwenlm.github.io/blog/qwen3.6/"
+          "title": "Kimi K2.6 开源：SWE-Bench Pro 58.6% 刷新纪录",
+          "content": "月之暗面发布 Kimi K2.6 并 MIT 开源，1T 参数 MoE 架构，SWE-Bench Pro 达成 58.6% 超越所有闭源模型。支持 300 子 Agent 并发协同，连续编码 13 小时处理 4000+ 行代码。作为 Hermes Agent 的底层推理引擎之一，K2.6 通过 openrouter 或本地 vLLM 部署可显著提升代码生成与调试能力。",
+          "url": "https://blog.csdn.net/m0_74837192/article/details/160418227"
         },
         {
-          "title": "DeepSeek-V4：万亿参数 MoE 架构",
-          "content": "DeepSeek V4 采用万亿参数 MoE 架构，推理激活约 370 亿参数，全面适配华为昇腾 910B，纯国产算力训练。",
-          "url": "https://github.com/deepseek-ai/DeepSeek-V4"
+          "title": "Hermes Agent 技能系统架构解析：插件化 + 热加载 + 版本管理",
+          "content": "Hermes 技能系统采用 YAML frontmatter + SKILL.md 标准化格式，支持版本控制（v1.0.0-v3.0.0）、依赖声明（toolsets）、触发条件（trigger）。技能可按类别组织（devops/data-science/creative），通过 'hermes skills list/install/remove' 管理。v2.0 引入 skill_manage patch 机制，支持运行时热更新技能内容，无需重启 Agent。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/skills/"
         },
         {
-          "title": "WSL2 + Hermes：Windows 开发者的 AI 代理方案",
-          "content": "在 WSL2 环境下部署 Hermes Agent，结合 Windows 文件系统桥接，实现跨平台文件处理和自动化工作流。",
-          "url": "https://learn.microsoft.com/en-us/windows/wsl/"
-        },
-        {
-          "title": "微信 iLink Bot API 接入 Hermes Gateway",
-          "content": "通过腾讯 iLink Bot API 将 Hermes 接入微信平台，无需预注册，扫码即可登录，实现个人账号的 AI 代理能力。",
-          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/messaging/#weixin-wechat-qr-login-no-pre-credentials-needed"
+          "title": "GPT-5.5 API 定价分析：成本飙升下的替代方案",
+          "content": "GPT-5.5 API 定价飙至每百万 Token 输出 30 美元（前代 3 倍），中小企业难以承受。Hermes Agent 支持多提供商路由（20+ providers），可自动 fallback 到性价比更高的模型（Qwen3.6-35B / DeepSeek-V4-Flash），同时保持输出质量。配置 'model_routing' 策略后，日常任务自动使用经济模型，复杂推理自动升级，成本可降低 70-90%。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/model-routing"
         }
       ],
       "community": [
         {
-          "title": "Hermes Agent 开发者周报 #42",
-          "content": "本周更新：新增飞书平台适配器、技能市场新增 23 个技能、Gateway 稳定性提升 40%。",
+          "title": "Hermes Agent v2.1.0 发布：新增飞书文档插件与 ACP 适配器",
+          "content": "v2.1.0 更新亮点：1）飞书文档插件（feishu_doc）支持读写飞书文档和表格；2）ACP 适配器支持 VS Code/Zed/JetBrains IDE 原生集成；3）Cron 任务新增 workdir 参数，支持项目级上下文注入；4）Gateway 消息去重与 rate limit 优化。本次更新由社区贡献者 wyfrest 提交 co-author。",
           "url": "https://github.com/NousResearch/hermes-agent/releases"
         },
         {
-          "title": "企业级 AI 代理部署案例分享",
-          "content": "某制造企业使用 Hermes Agent 实现差旅管理、代码审查、数据报表生成全流程自动化，效率提升 3 倍。",
-          "url": "https://github.com/NousResearch/hermes-agent/discussions"
+          "title": "社区案例：用 Hermes + Skill 系统构建自动化差旅管理 Pipeline",
+          "content": "某制造企业质控团队使用 Hermes Agent 构建了 5 技能链式工作流（fetcher → filter → checker → supervisor → report），实现出差信息自动获取、回执单跟踪、逾期督办、统计报表一键生成。Skill 脚本化重构后执行时间从 15 分钟缩短至 3 分钟，误报率降至零。该方案已开源至 ai_news 项目供参考。",
+          "url": "https://github.com/Shnywang/ai_news"
         },
         {
-          "title": "开源 AI 代理安全最佳实践",
-          "content": "Hermes Agent 安全团队发布 2026 Q2 安全指南，涵盖凭据管理、命令审批、PII 脱敏等关键安全配置。",
-          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/security-privacy-toggles"
+          "title": "Hermes TUI 终端界面更新：支持暗黑主题与实时工具调用流",
+          "content": "基于 Ink (React) 的 TUI 界面新增：1）实时 message streaming（token-by-token 渲染）；2）工具调用可视化（tool.start/progress/complete 三阶段动画）；3）approval 弹窗（危险命令交互式确认）；4）clarify 多选问答支持。TUI 通过 JSON-RPC over stdio 与 Python 后端通信，支持 Dashboard 嵌入式 PTY 终端。",
+          "url": "https://github.com/NousResearch/hermes-agent/discussions"
         }
       ],
       "update_time": "2026-04-27T18:00:00+08:00"

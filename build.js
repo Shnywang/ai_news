@@ -66,9 +66,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .htcard:hover{box-shadow:var(--shadow2);transform:translateY(-1px)}
 .htcard .num{font-size:1.4rem;font-weight:800;color:var(--accent);min-width:2rem;text-align:center}
 .htcard .body{flex:1}.htcard .body h4{font-size:.92rem;font-weight:600;margin-bottom:.3rem}
-.htcard .body h4 a{color:var(--text);text-decoration:none}.htcard .body h4 a:hover{color:var(--accent)}
+.htcard .body h4 a{color:var(--text);text-decoration:none;transition:color .2s}.htcard .body h4 a:hover{color:var(--accent)}
+.bcard h3 a,.bcard h3>a{color:var(--text);text-decoration:none;transition:color .2s}.bcard h3 a:hover,.bcard h3>a:hover{color:var(--accent);text-decoration:underline}
 .htcard .body p{font-size:.82rem;color:var(--t2);line-height:1.6}
 .htcard .meta{font-size:.75rem;color:var(--t3);margin-top:.3rem}
+a{color:inherit}
 .stars{color:var(--star);font-size:.8rem;letter-spacing:1px}
 /* Startup table */
 .stable{width:100%;border-collapse:collapse;font-size:.84rem;margin-bottom:1rem}
@@ -91,7 +93,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 /* News list */
 .ncard{background:var(--card);border-radius:10px;padding:.8rem 1rem;margin-bottom:.6rem;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;gap:.8rem}
 .ncard .left{flex:1}.ncard .left h4{font-size:.88rem;font-weight:600}
-.ncard .left h4 a{color:var(--text);text-decoration:none}.ncard .left h4 a:hover{color:var(--accent)}
+.ncard .left h4 a{color:var(--text);text-decoration:none;transition:color .2s}.ncard .left h4 a:hover{color:var(--accent)}
 .ncard .left .nm{font-size:.75rem;color:var(--t3);margin-top:.2rem}
 .ncard .right{text-align:right;flex-shrink:0}
 .ncard .cat{font-size:.72rem;padding:.15rem .5rem;border-radius:8px;background:var(--accent);color:#fff;display:inline-block}
