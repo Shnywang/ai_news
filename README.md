@@ -176,4 +176,5 @@ https://<用户名>.github.io/ai_news/
 
 ## 十、作者
 
-**Shnywang** — [GitHub](https://github.com/Shnywang)
+- **Shnywang** — [GitHub](https://github.com/Shnywang)
+- **王翼飞 (wyfrest)** — [GitHub](https://github.com/wyfrest)
