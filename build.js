@@ -115,6 +115,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 <div class="tab" data-t="algo">\u{1F9EC} \u7b97\u6cd5\u5de5\u7a0b\u5e08</div>
 <div class="tab" data-t="proj">\u{1F4C5} \u9879\u76ee\u7ecf\u7406</div>
 <div class="tab" data-t="action">\u{2705} \u884c\u52a8\u5efa\u8bae</div>
+<div class="tab" data-t="hermes">\u{1F916} Hermes</div>
 <div class="tab" data-t="all">\u{1F4F0} \u5168\u90e8\u8d44\u8baf</div>
 </div>
 <div id="content"></div>
@@ -158,7 +159,7 @@ function render(){
   var data=W[curDay];
   if(!data){document.getElementById('content').innerHTML='<div style="text-align:center;padding:3rem;color:var(--t2)">\u6682\u65e0\u8be5\u65e5\u6570\u636e</div>';return}
   document.getElementById('ut').textContent='\u6700\u540e\u66f4\u65b0\uff1a'+(data.update_time||curDay);
-  var fn={hot:renderHot,startup:renderStartup,pm:renderPM,algo:renderAlgo,proj:renderProj,action:renderAction,all:renderAll};
+  var fn={hot:renderHot,startup:renderStartup,pm:renderPM,algo:renderAlgo,proj:renderProj,action:renderAction,hermes:renderHermes,all:renderAll};
   (fn[curTab]||renderHot)(data);
 }
 
@@ -255,6 +256,55 @@ function renderAction(d){
     h+='<div class="sec">\u{1F440} Watch List</div><div class="bcard"><ul>';
     a.watch_list.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
     h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderHermes(d){
+  var hb=d.hermes_board;
+  if(!hb){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无 Hermes 资讯</p></div>';return}
+  var h='<div class="sec">\u{1F916} Hermes Agent — AI 代理工作流与资讯</div>';
+  // Insights
+  (hb.insights||[]).forEach(function(t){
+    h+='<div class="bcard"><h3>'+esc(t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
+  });
+  // Usage report
+  var ur=hb.usage_report;
+  if(ur){
+    h+='<div class="sec">\u{1F464} 使用报告</div><div class="bcard">';
+    h+='<p><strong>用户：</strong>'+esc(ur.user_profile)+'</p>';
+    h+='<p><strong>模型：</strong>'+esc(ur.model)+'</p>';
+    h+='<p><strong>已安装技能：</strong>'+(ur.skills_installed||0)+'</p>';
+    if(ur.core_workflows&&ur.core_workflows.length){
+      h+='<h3>\u{1F527} 核心工作流</h3><ul>';
+      ur.core_workflows.forEach(function(w){h+='<li>'+esc(w)+'</li>'});
+      h+='</ul>';
+    }
+    if(ur.key_achievements&&ur.key_achievements.length){
+      h+='<h3>\u{1F3C6} 关键成果</h3><ul>';
+      ur.key_achievements.forEach(function(a){h+='<li>'+esc(a)+'</li>'});
+      h+='</ul>';
+    }
+    h+='</div>';
+  }
+  // Tech stack
+  var ts=hb.tech_stack;
+  if(ts){
+    h+='<div class="sec">\u{1F6E0}\uFE0F 技术栈</div><div class="bcard">';
+    h+='<table class="stable"><tr><th>项目</th><th>详情</th></tr>';
+    if(ts.framework)h+='<tr><td>框架</td><td>'+esc(ts.framework)+'</td></tr>';
+    if(ts.model_provider)h+='<tr><td>模型</td><td>'+esc(ts.model_provider)+'</td></tr>';
+    if(ts.toolsets)h+='<tr><td>工具集</td><td>'+(ts.toolsets.map(function(t){return '<span class="tag tag-b">'+esc(t)+'</span>'}).join(' '))+'</td></tr>';
+    if(ts.integrations)h+='<tr><td>集成</td><td>'+(ts.integrations.map(function(i){return '<span class="tag tag-g">'+esc(i)+'</span>'}).join(' '))+'</td></tr>';
+    if(ts.deployment)h+='<tr><td>部署</td><td>'+esc(ts.deployment)+'</td></tr>';
+    h+='</table></div>';
+  }
+  // Community
+  if(hb.community&&hb.community.length){
+    h+='<div class="sec">\u{1F310} 社区动态</div>';
+    hb.community.forEach(function(c){
+      h+='<div class="bcard"><h3>'+esc(c.topic)+'</h3><p>'+esc(c.update)+'</p></div>';
+    });
   }
   document.getElementById('content').innerHTML=h;
 }
