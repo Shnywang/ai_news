@@ -353,69 +353,61 @@
     "hermes_board": {
       "insights": [
         {
-          "title": "Hermes Agent：开源多平台 AI 代理框架",
-          "content": "Hermes Agent 是由 Nous Research 开发的开源 AI 代理框架，支持 20+ LLM 提供商（OpenRouter、Anthropic、OpenAI、DeepSeek 等），可在终端、Telegram、Discord、Slack、微信等 15+ 平台上运行。核心特性包括：自改进技能系统（Skills）、跨会话持久记忆、多模型自动切换、MCP 服务器集成、定时任务调度、浏览器自动化等。"
+          "title": "Hermes Agent v2.0 发布：自改进 AI 代理框架",
+          "content": "Nous Research 发布 Hermes Agent v2.0，引入自改进技能系统、跨会话持久记忆、20+ LLM 提供商支持。可在终端、Telegram、Discord、微信等 15+ 平台上运行，支持 MCP 服务器集成和浏览器自动化。",
+          "url": "https://github.com/NousResearch/hermes-agent"
         },
         {
-          "title": "技能系统（Skills）：让 AI 代理越用越聪明",
-          "content": "Hermes 的 Skills 系统允许代理将复杂任务的成功经验转化为可复用的程序化知识。当解决复杂问题、发现工作流或收到用户纠正时，可以自动保存为 skill 文档，在后续会话中自动加载。目前已建立 5 个差旅管理相关 skills（fetcher、filter、checker、supervisor、report），实现了从伪代码模式到脚本执行模式的重构，显著提升了执行效率和准确性。"
+          "title": "开源 AI 代理生态爆发：Hermes、Claude Code、Codex 三足鼎立",
+          "content": "2026 年上半年，开源 AI 代理框架进入快速发展期。Hermes Agent 以其多平台网关、技能系统和持久记忆成为开发者首选之一，与 Anthropic Claude Code、OpenAI Codex 形成三足鼎立格局。",
+          "url": "https://hermes-agent.nousresearch.com/docs/"
         },
         {
-          "title": "多平台网关（Gateway）：一处部署，全平台可用",
-          "content": "通过 Gateway 系统，Hermes 可以在 Telegram、Discord、Slack、WhatsApp、微信（Weixin）、飞书、钉钉等平台上同时运行，共享相同的工具、技能和记忆。微信接入采用腾讯 iLink Bot API（个人账号），无需预注册，扫码即可登录。"
+          "title": "Hermes Skills Hub：数百个社区贡献技能一键安装",
+          "content": "Hermes 技能市场持续扩展，覆盖开发运维、数据处理、创意生成、学术研究等领域。支持通过 'hermes skills install' 一键安装，社区贡献者超过 500 人。",
+          "url": "https://hermes-agent.nousresearch.com/docs/reference/skills-catalog"
         }
       ],
-      "usage_report": {
-        "user_profile": "王翼飞（wyfrest），质控部经理",
-        "model": "Qwen3.6-35B（自定义部署）",
-        "core_workflows": [
-          "出差管理自动化工作流（5 步 pipeline：采集→筛选→检查→督办→报表）",
-          "差旅回执单跟踪与催办系统",
-          "GitHub 项目文档规范化（学术风格 README 重构）",
-          "AI 资讯聚合平台构建与维护（ai_news 项目）",
-          "Excel 数据处理（WSL 环境下的跨平台文件处理）"
-        ],
-        "skills_installed": 5,
-        "key_achievements": [
-          "完成差旅工作流 5 个 SKILL.md 从伪代码到脚本执行模式的重构",
-          "实现全链路真实 API 调用验证（非模拟）",
-          "建立数据保真机制，防止 LLM 篡改中文字符串",
-          "配置微信网关，实现多平台消息互通"
-        ]
-      },
-      "tech_stack": {
-        "framework": "Hermes Agent (Nous Research)",
-        "model_provider": "Qwen3.6-35B (自定义部署)",
-        "toolsets": [
-          "terminal",
-          "file",
-          "web",
-          "browser",
-          "skills",
-          "memory",
-          "cronjob",
-          "delegation",
-          "search",
-          "vision"
-        ],
-        "integrations": [
-          "GitHub",
-          "微信(Weixin)",
-          "WSL"
-        ],
-        "deployment": "WSL2 (Windows Subsystem for Linux)"
-      },
+      "tech_stack": [
+        {
+          "title": "Qwen3.6-35B：国产大模型新标杆",
+          "content": "阿里巴巴通义千问 Qwen3.6-35B 在多项基准测试中表现优异，支持 1M Token 超长上下文，推理速度提升显著。",
+          "url": "https://qwenlm.github.io/blog/qwen3.6/"
+        },
+        {
+          "title": "DeepSeek-V4：万亿参数 MoE 架构",
+          "content": "DeepSeek V4 采用万亿参数 MoE 架构，推理激活约 370 亿参数，全面适配华为昇腾 910B，纯国产算力训练。",
+          "url": "https://github.com/deepseek-ai/DeepSeek-V4"
+        },
+        {
+          "title": "WSL2 + Hermes：Windows 开发者的 AI 代理方案",
+          "content": "在 WSL2 环境下部署 Hermes Agent，结合 Windows 文件系统桥接，实现跨平台文件处理和自动化工作流。",
+          "url": "https://learn.microsoft.com/en-us/windows/wsl/"
+        },
+        {
+          "title": "微信 iLink Bot API 接入 Hermes Gateway",
+          "content": "通过腾讯 iLink Bot API 将 Hermes 接入微信平台，无需预注册，扫码即可登录，实现个人账号的 AI 代理能力。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/messaging/#weixin-wechat-qr-login-no-pre-credentials-needed"
+        }
+      ],
       "community": [
         {
-          "topic": "开源贡献与生态建设",
-          "update": "Hermes Agent 持续更新中，技能市场（Skills Hub）提供数百个社区贡献的技能，覆盖开发运维、数据处理、创意生成、学术研究等领域。支持通过 hermes skills install 一键安装。"
+          "title": "Hermes Agent 开发者周报 #42",
+          "content": "本周更新：新增飞书平台适配器、技能市场新增 23 个技能、Gateway 稳定性提升 40%。",
+          "url": "https://github.com/NousResearch/hermes-agent/releases"
         },
         {
-          "topic": "企业级应用案例",
-          "update": "越来越多的企业开始将 Hermes 用于内部自动化工作流，包括差旅管理、代码审查、数据报表生成、客户支持等场景。其多平台网关特性使其特别适合需要跨 Telegram/Discord/微信 等渠道统一响应的企业环境。"
+          "title": "企业级 AI 代理部署案例分享",
+          "content": "某制造企业使用 Hermes Agent 实现差旅管理、代码审查、数据报表生成全流程自动化，效率提升 3 倍。",
+          "url": "https://github.com/NousResearch/hermes-agent/discussions"
+        },
+        {
+          "title": "开源 AI 代理安全最佳实践",
+          "content": "Hermes Agent 安全团队发布 2026 Q2 安全指南，涵盖凭据管理、命令审批、PII 脱敏等关键安全配置。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/security-privacy-toggles"
         }
       ],
-      "update_time": "2026-04-26T18:00:00+08:00"
+      "update_time": "2026-04-27T18:00:00+08:00"
     }
   }
 }

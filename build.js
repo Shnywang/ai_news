@@ -266,44 +266,23 @@ function renderHermes(d){
   var h='<div class="sec">\u{1F916} Hermes Agent — AI 代理工作流与资讯</div>';
   // Insights
   (hb.insights||[]).forEach(function(t){
-    h+='<div class="bcard"><h3>'+esc(t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
+    var link=t.url?'<a href="'+esc(t.url)+'" target="_blank">'+esc(t.title)+'</a>':esc(t.title);
+    h+='<div class="bcard"><h3>'+link+'</h3><p>'+esc(t.content)+'</p></div>';
   });
-  // Usage report
-  var ur=hb.usage_report;
-  if(ur){
-    h+='<div class="sec">\u{1F464} 使用报告</div><div class="bcard">';
-    h+='<p><strong>用户：</strong>'+esc(ur.user_profile)+'</p>';
-    h+='<p><strong>模型：</strong>'+esc(ur.model)+'</p>';
-    h+='<p><strong>已安装技能：</strong>'+(ur.skills_installed||0)+'</p>';
-    if(ur.core_workflows&&ur.core_workflows.length){
-      h+='<h3>\u{1F527} 核心工作流</h3><ul>';
-      ur.core_workflows.forEach(function(w){h+='<li>'+esc(w)+'</li>'});
-      h+='</ul>';
-    }
-    if(ur.key_achievements&&ur.key_achievements.length){
-      h+='<h3>\u{1F3C6} 关键成果</h3><ul>';
-      ur.key_achievements.forEach(function(a){h+='<li>'+esc(a)+'</li>'});
-      h+='</ul>';
-    }
-    h+='</div>';
-  }
   // Tech stack
-  var ts=hb.tech_stack;
-  if(ts){
-    h+='<div class="sec">\u{1F6E0}\uFE0F 技术栈</div><div class="bcard">';
-    h+='<table class="stable"><tr><th>项目</th><th>详情</th></tr>';
-    if(ts.framework)h+='<tr><td>框架</td><td>'+esc(ts.framework)+'</td></tr>';
-    if(ts.model_provider)h+='<tr><td>模型</td><td>'+esc(ts.model_provider)+'</td></tr>';
-    if(ts.toolsets)h+='<tr><td>工具集</td><td>'+(ts.toolsets.map(function(t){return '<span class="tag tag-b">'+esc(t)+'</span>'}).join(' '))+'</td></tr>';
-    if(ts.integrations)h+='<tr><td>集成</td><td>'+(ts.integrations.map(function(i){return '<span class="tag tag-g">'+esc(i)+'</span>'}).join(' '))+'</td></tr>';
-    if(ts.deployment)h+='<tr><td>部署</td><td>'+esc(ts.deployment)+'</td></tr>';
-    h+='</table></div>';
+  if(hb.tech_stack&&hb.tech_stack.length){
+    h+='<div class="sec">\u{1F6E0}\uFE0F 技术栈与工具</div>';
+    hb.tech_stack.forEach(function(t){
+      var link=t.url?'<a href="'+esc(t.url)+'" target="_blank">'+esc(t.title)+'</a>':esc(t.title);
+      h+='<div class="bcard"><h3>'+link+'</h3><p>'+esc(t.content)+'</p></div>';
+    });
   }
   // Community
   if(hb.community&&hb.community.length){
     h+='<div class="sec">\u{1F310} 社区动态</div>';
     hb.community.forEach(function(c){
-      h+='<div class="bcard"><h3>'+esc(c.topic)+'</h3><p>'+esc(c.update)+'</p></div>';
+      var link=c.url?'<a href="'+esc(c.url)+'" target="_blank">'+esc(c.title)+'</a>':esc(c.title);
+      h+='<div class="bcard"><h3>'+link+'</h3><p>'+esc(c.content)+'</p></div>';
     });
   }
   document.getElementById('content').innerHTML=h;
