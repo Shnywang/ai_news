@@ -96,7 +96,11 @@
           "content": "ChatGPT未达10亿周活目标，核心原因是用户从\"尝鲜\"转为\"实用\"后留存率下降。产品侧启示：通用对话型AI需向垂直场景（编程、企业协作）深耕才能提升ARPU和黏性，Anthropic凭Claude Code在开发者市场的成功印证了这一路径。"
         }
       ],
-      "focus": ["AI+政策落地节奏跟踪", "具身智能商业化元年的场景选择", "AI应用留存率优化方法论"]
+      "focus": [
+        "AI+政策落地节奏跟踪",
+        "具身智能商业化元年的场景选择",
+        "AI应用留存率优化方法论"
+      ]
     },
     "algo_board": {
       "insights": [
@@ -110,12 +114,32 @@
         }
       ],
       "tech_radar": [
-        {"direction": "具身专用多模态模型", "status": "快速成熟", "advice": "关注MoT架构在端侧部署的效率优势"},
-        {"direction": "大小脑分离架构", "status": "产业验证中", "advice": "适合算力受限的商用场景落地"},
-        {"direction": "灵巧操作(Dexterous Manipulation)", "status": "万台量产", "advice": "灵心巧手验证了硬件可制造性，算法侧需跟进"},
-        {"direction": "AI Agent编程能力", "status": "商业竞争白热化", "advice": "Anthropic Claude Code路线已被市场验证"}
+        {
+          "direction": "具身专用多模态模型",
+          "status": "快速成熟",
+          "advice": "关注MoT架构在端侧部署的效率优势"
+        },
+        {
+          "direction": "大小脑分离架构",
+          "status": "产业验证中",
+          "advice": "适合算力受限的商用场景落地"
+        },
+        {
+          "direction": "灵巧操作(Dexterous Manipulation)",
+          "status": "万台量产",
+          "advice": "灵心巧手验证了硬件可制造性，算法侧需跟进"
+        },
+        {
+          "direction": "AI Agent编程能力",
+          "status": "商业竞争白热化",
+          "advice": "Anthropic Claude Code路线已被市场验证"
+        }
       ],
-      "focus": ["端侧具身模型部署优化", "MoT vs MoE架构对比", "具身长期记忆机制"]
+      "focus": [
+        "端侧具身模型部署优化",
+        "MoT vs MoE架构对比",
+        "具身长期记忆机制"
+      ]
     },
     "projmgr_board": {
       "insights": [
@@ -128,7 +152,11 @@
           "content": "首例外商投资安全审查否决案意味着AI企业跨境并购需前置合规评估。涉及核心AI技术的项目，无论买方还是卖方，都需要将安全审查纳入项目里程碑规划。"
         }
       ],
-      "focus": ["具身智能量产交付管理", "AI跨境项目合规风控", "六张网新基建项目机会"]
+      "focus": [
+        "具身智能量产交付管理",
+        "AI跨境项目合规风控",
+        "六张网新基建项目机会"
+      ]
     },
     "action_items": {
       "tech_selection": "具身智能端侧模型首选MoT架构(如HY-Embodied)；AI Agent开发关注Claude Code生态；大模型选型需评估百万上下文实际表现",
@@ -136,22 +164,225 @@
       "watch_list": "Anthropic IPO进展(10月预期)、DeepSeek-V4正式版发布时间、六张网基建细则出台节奏、具身智能万台级订单交付情况"
     },
     "raw_articles": [
-      {"id": 1, "title": "中央政治局会议：全面实施\"人工智能+\"行动", "source": "新华社", "url": "https://finance.sina.com.cn/wm/2026-04-28/doc-inhvzsha8563174.shtml", "publish_time": "2026-04-28", "summary": "4月28日政治局会议强调全面实施AI+行动，发展智能经济新形态，完善AI治理，加强算力网等六张网建设", "category": "政策信号", "rating": 5},
-      {"id": 2, "title": "第三届中国具身智能与人形机器人产业大会北京开幕", "source": "新京报", "url": "https://www.bjnews.com.cn/detail/1777358495129912.html", "publish_time": "2026-04-28", "summary": "大会在中关村开幕，超千位人士参会，成立人形机器人产业链协同工作组，灵心巧手万台量产全球市占80%+", "category": "具身智能", "rating": 5},
-      {"id": 3, "title": "国家发改委正式禁止Meta收购Manus AI并购案", "source": "财新网", "url": "https://news.qq.com/rain/a/20260428A001KU00", "publish_time": "2026-04-28", "summary": "首例外商投资安全审查否决，要求Meta立即撤销约20亿美元收购Manus交易，央视称禁的是\"洗澡式出海\"", "category": "政策信号", "rating": 5},
-      {"id": 4, "title": "OpenAI多月未达营收目标，Anthropic编程市场逆势增长", "source": "华尔街日报", "url": "https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in/", "publish_time": "2026-04-28", "summary": "OpenAI 2026 Q1多月未达营收和用户目标，ChatGPT未触10亿周活。Anthropic在编程和企业工具市场蚕食份额，估值突破1万亿", "category": "大模型", "rating": 5},
-      {"id": 5, "title": "腾讯开源HY-Embodied-0.5-X具身多模态大模型", "source": "腾讯RoboticsX", "url": "https://github.com/Tencent-Hunyuan/HY-Embodied", "publish_time": "2026-04-28", "summary": "专为机器人具身任务优化，MoT-2B端侧版+MoE-32B大参数版，10个benchmark取得6项第一3项第二", "category": "算法突破", "rating": 5},
-      {"id": 6, "title": "苏州具身智能产业大会：十大新产品发布，签约160亿", "source": "苏州市政府", "url": "https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxxww9006479.shtml", "publish_time": "2026-04-28", "summary": "发布十大新产品/技术/场景和十二项标准，签约160亿元，年内推出200+新场景，具身智能列为苏州十大重点产业", "category": "具身智能", "rating": 4},
-      {"id": 7, "title": "从\"能动\"到\"能干\"：海淀企业定义具身智能商业化标准", "source": "人民网", "url": "https://bj.people.com.cn/n2/2026/0429/c14540-41566689.html", "publish_time": "2026-04-28", "summary": "灵心巧手实现穿针引线级精度万台量产，启物科技大小脑长记忆系统突破端侧算力瓶颈，海淀按下商业化加速键", "category": "具身智能", "rating": 4},
-      {"id": 8, "title": "微软Copilot北美大面积宕机", "source": "钛媒体", "url": "https://www.tmtpost.com/7969276.html", "publish_time": "2026-04-28", "summary": "4月28日Copilot服务突发异常，Web端响应延迟超30秒，Windows客户端闪退，暴露AI助手基础设施可靠性问题", "category": "AI应用", "rating": 3},
-      {"id": 9, "title": "北京车展从\"造车\"到\"造人\"：中国车企集体押注人形机器人", "source": "腾讯新闻", "url": "https://news.qq.com/rain/a/20260427A02VTS00", "publish_time": "2026-04-28", "summary": "荣耀机器人夺半马冠军、小鹏IRON公布量产时间表、一汽自研机器人首秀，车企从造车向造机器人延伸成趋势", "category": "具身智能", "rating": 4},
-      {"id": 10, "title": "4月国内AI大模型呈\"日更\"节奏，竞争进入白热化", "source": "经济观察网", "url": "https://www.eeo.com.cn/2026/0429/856541.shtml", "publish_time": "2026-04-28", "summary": "月之暗面、阿里、腾讯、DeepSeek、字节等9家企业4月内密集发布或升级旗舰模型，一周内数款旗舰接连亮相", "category": "大模型", "rating": 4},
-      {"id": 11, "title": "DeepSeek多位核心骨干离职，V4技术报告致谢近300人", "source": "投中网", "url": "https://finance.sina.com.cn/stock/wbstock/2026-04-27/doc-inhvxtqy9037351.shtml", "publish_time": "2026-04-28", "summary": "V4技术报告近300人作者名单中有10位已离职骨干流向大厂，但DeepSeek研究团队阵容依旧庞大，人才流动属行业常态", "category": "大模型", "rating": 3},
-      {"id": 12, "title": "高通与OpenAI合作研发AI智能手机，立讯精密参与", "source": "新浪财经", "url": "https://k.sina.cn/article_7857201856_1d45362c001904sisc.html", "publish_time": "2026-04-28", "summary": "知名分析师透露高通与OpenAI合作开发AI原生智能手机，立讯精密参与硬件制造，高通股价应声上涨", "category": "AI应用", "rating": 3},
-      {"id": 13, "title": "陈天桥：Manus事件迫使中美AI业务独立运营", "source": "搜狐科技", "url": "https://www.sohu.com/a/1015936691_553580", "publish_time": "2026-04-28", "summary": "MiroMind创始人陈天桥指出Manus收购失败使中美AI业务形成隔离墙，AI企业别无选择只能独立运营", "category": "市场动态", "rating": 3},
-      {"id": 14, "title": "中信建投解读政治局会议：五大核心聚焦，AI+迎升级信号", "source": "中信建投", "url": "https://news.qq.com/rain/a/20260429A01VOS00", "publish_time": "2026-04-28", "summary": "政策取向与市场预期高度契合，产业政策迎升级信号，\"全面实施AI+\"较此前表述明显提级，新基建六张网形成投资框架", "category": "政策信号", "rating": 3},
-      {"id": 15, "title": "爱迪斯通携多款机器人训练设备亮相北京产业大会", "source": "搜狐科技", "url": "https://www.sohu.com/a/1015754624_120773383", "publish_time": "2026-04-28", "summary": "EdisonTech携先进机器人训练设备参展第三届人形机器人大会，展示感知、交互与操作领域创新应用", "category": "具身智能", "rating": 3},
-      {"id": 16, "title": "Anthropic估值突破1万亿美元，计划10月启动IPO", "source": "Fortune", "url": "https://fortune.com/2026/04/28/markets-openai-revenue-oracle-softbank-coreweave-sam-altman-trial-elon-musk/", "publish_time": "2026-04-28", "summary": "谷歌向Anthropic投资400亿美元后，其估值超越OpenAI突破1万亿美元大关，计划2026年10月上市，成为AI赛道最大IPO", "category": "市场动态", "rating": 4}
-    ]
+      {
+        "id": 1,
+        "title": "中央政治局会议：全面实施\"人工智能+\"行动",
+        "source": "新华社",
+        "url": "https://finance.sina.com.cn/wm/2026-04-28/doc-inhvzsha8563174.shtml",
+        "publish_time": "2026-04-28",
+        "summary": "4月28日政治局会议强调全面实施AI+行动，发展智能经济新形态，完善AI治理，加强算力网等六张网建设",
+        "category": "政策信号",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "title": "第三届中国具身智能与人形机器人产业大会北京开幕",
+        "source": "新京报",
+        "url": "https://www.bjnews.com.cn/detail/1777358495129912.html",
+        "publish_time": "2026-04-28",
+        "summary": "大会在中关村开幕，超千位人士参会，成立人形机器人产业链协同工作组，灵心巧手万台量产全球市占80%+",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "title": "国家发改委正式禁止Meta收购Manus AI并购案",
+        "source": "财新网",
+        "url": "https://news.qq.com/rain/a/20260428A001KU00",
+        "publish_time": "2026-04-28",
+        "summary": "首例外商投资安全审查否决，要求Meta立即撤销约20亿美元收购Manus交易，央视称禁的是\"洗澡式出海\"",
+        "category": "政策信号",
+        "rating": 5
+      },
+      {
+        "id": 4,
+        "title": "OpenAI多月未达营收目标，Anthropic编程市场逆势增长",
+        "source": "华尔街日报",
+        "url": "https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in/",
+        "publish_time": "2026-04-28",
+        "summary": "OpenAI 2026 Q1多月未达营收和用户目标，ChatGPT未触10亿周活。Anthropic在编程和企业工具市场蚕食份额，估值突破1万亿",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "id": 5,
+        "title": "腾讯开源HY-Embodied-0.5-X具身多模态大模型",
+        "source": "腾讯RoboticsX",
+        "url": "https://github.com/Tencent-Hunyuan/HY-Embodied",
+        "publish_time": "2026-04-28",
+        "summary": "专为机器人具身任务优化，MoT-2B端侧版+MoE-32B大参数版，10个benchmark取得6项第一3项第二",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "id": 6,
+        "title": "苏州具身智能产业大会：十大新产品发布，签约160亿",
+        "source": "苏州市政府",
+        "url": "https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxxww9006479.shtml",
+        "publish_time": "2026-04-28",
+        "summary": "发布十大新产品/技术/场景和十二项标准，签约160亿元，年内推出200+新场景，具身智能列为苏州十大重点产业",
+        "category": "具身智能",
+        "rating": 4
+      },
+      {
+        "id": 7,
+        "title": "从\"能动\"到\"能干\"：海淀企业定义具身智能商业化标准",
+        "source": "人民网",
+        "url": "https://bj.people.com.cn/n2/2026/0429/c14540-41566689.html",
+        "publish_time": "2026-04-28",
+        "summary": "灵心巧手实现穿针引线级精度万台量产，启物科技大小脑长记忆系统突破端侧算力瓶颈，海淀按下商业化加速键",
+        "category": "具身智能",
+        "rating": 4
+      },
+      {
+        "id": 8,
+        "title": "微软Copilot北美大面积宕机",
+        "source": "钛媒体",
+        "url": "https://www.tmtpost.com/7969276.html",
+        "publish_time": "2026-04-28",
+        "summary": "4月28日Copilot服务突发异常，Web端响应延迟超30秒，Windows客户端闪退，暴露AI助手基础设施可靠性问题",
+        "category": "AI应用",
+        "rating": 3
+      },
+      {
+        "id": 9,
+        "title": "北京车展从\"造车\"到\"造人\"：中国车企集体押注人形机器人",
+        "source": "腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20260427A02VTS00",
+        "publish_time": "2026-04-28",
+        "summary": "荣耀机器人夺半马冠军、小鹏IRON公布量产时间表、一汽自研机器人首秀，车企从造车向造机器人延伸成趋势",
+        "category": "具身智能",
+        "rating": 4
+      },
+      {
+        "id": 10,
+        "title": "4月国内AI大模型呈\"日更\"节奏，竞争进入白热化",
+        "source": "经济观察网",
+        "url": "https://www.eeo.com.cn/2026/0429/856541.shtml",
+        "publish_time": "2026-04-28",
+        "summary": "月之暗面、阿里、腾讯、DeepSeek、字节等9家企业4月内密集发布或升级旗舰模型，一周内数款旗舰接连亮相",
+        "category": "大模型",
+        "rating": 4
+      },
+      {
+        "id": 11,
+        "title": "DeepSeek多位核心骨干离职，V4技术报告致谢近300人",
+        "source": "投中网",
+        "url": "https://finance.sina.com.cn/stock/wbstock/2026-04-27/doc-inhvxtqy9037351.shtml",
+        "publish_time": "2026-04-28",
+        "summary": "V4技术报告近300人作者名单中有10位已离职骨干流向大厂，但DeepSeek研究团队阵容依旧庞大，人才流动属行业常态",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "id": 12,
+        "title": "高通与OpenAI合作研发AI智能手机，立讯精密参与",
+        "source": "新浪财经",
+        "url": "https://k.sina.cn/article_7857201856_1d45362c001904sisc.html",
+        "publish_time": "2026-04-28",
+        "summary": "知名分析师透露高通与OpenAI合作开发AI原生智能手机，立讯精密参与硬件制造，高通股价应声上涨",
+        "category": "AI应用",
+        "rating": 3
+      },
+      {
+        "id": 13,
+        "title": "陈天桥：Manus事件迫使中美AI业务独立运营",
+        "source": "搜狐科技",
+        "url": "https://www.sohu.com/a/1015936691_553580",
+        "publish_time": "2026-04-28",
+        "summary": "MiroMind创始人陈天桥指出Manus收购失败使中美AI业务形成隔离墙，AI企业别无选择只能独立运营",
+        "category": "市场动态",
+        "rating": 3
+      },
+      {
+        "id": 14,
+        "title": "中信建投解读政治局会议：五大核心聚焦，AI+迎升级信号",
+        "source": "中信建投",
+        "url": "https://news.qq.com/rain/a/20260429A01VOS00",
+        "publish_time": "2026-04-28",
+        "summary": "政策取向与市场预期高度契合，产业政策迎升级信号，\"全面实施AI+\"较此前表述明显提级，新基建六张网形成投资框架",
+        "category": "政策信号",
+        "rating": 3
+      },
+      {
+        "id": 15,
+        "title": "爱迪斯通携多款机器人训练设备亮相北京产业大会",
+        "source": "搜狐科技",
+        "url": "https://www.sohu.com/a/1015754624_120773383",
+        "publish_time": "2026-04-28",
+        "summary": "EdisonTech携先进机器人训练设备参展第三届人形机器人大会，展示感知、交互与操作领域创新应用",
+        "category": "具身智能",
+        "rating": 3
+      },
+      {
+        "id": 16,
+        "title": "Anthropic估值突破1万亿美元，计划10月启动IPO",
+        "source": "Fortune",
+        "url": "https://fortune.com/2026/04/28/markets-openai-revenue-oracle-softbank-coreweave-sam-altman-trial-elon-musk/",
+        "publish_time": "2026-04-28",
+        "summary": "谷歌向Anthropic投资400亿美元后，其估值超越OpenAI突破1万亿美元大关，计划2026年10月上市，成为AI赛道最大IPO",
+        "category": "市场动态",
+        "rating": 4
+      }
+    ],
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "Hermes TUI 长会话性能革命：PR #15926 合并",
+          "content": "Hermes Agent 合并了 bb/tui-long-session-perf 分支，完成对 TUI 终端界面的全面性能重构。核心改进：1) 增量 Markdown 渲染——流式输出时按 token 渲染而非全量刷新，大幅降低重绘开销；2) Ink 缓存统一淘汰机制——内存压力下自动清理过期缓存，长会话不再 OOM；3) stringWidth/wrapText/sliceAnsi 三级缓存，避免重复 ANSI 解析；4) 逐行滚动（每 wheel event 只滚动一行），替代整页跳动；5) Live Todo Panel——任务面板锚定最新用户消息行，回合结束自动归档；6) 生产模式默认启用——内置 TUI 使用 production React 而非开发模式。PR 包含 80+ commits，由 Copilot review 逐行审查。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/15926"
+        },
+        {
+          "title": "Azure Foundry 集成：企业级 AI 代理的新部署路径",
+          "content": "Hermes Agent 新增 Azure Foundry 提供商支持，支持 OpenAI 和 Anthropic 双 API 模式。自动检测 transport、可用模型和上下文长度，智能路由 gpt-5.x/codex/o-series 到 Responses API。关键解决企业痛点：1) Azure Anthropic 端点专用处理，避免 OAuth token 与 Azure API key 冲突；2) API version 参数标准化，SDK 不再生成畸形 URL；3) 自定义端点凭据持久化。配合多提供商路由策略，Azure Foundry 成为企业私有化部署的首选路径。",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "title": "从个人工具到企业 Agent OS：Hermes 架构成熟度分析",
+          "content": "近期 Hermes Agent 的 300+ commits 反映其架构成熟度跃升：1) 多平台 Gateway 完善（Slack 原生 slash 命令注册、Telegram bot menu 命令、Yuanbao 平台适配、WhatsApp 安全加固）；2) Cron 定时任务支持 job 链式调用（context_from 字段）、项目级工作目录（workdir）；3) 安全体系分层——browser SSRF 防护、命令审批黑名单、终端输出泄漏修复；4) Session 生命周期管理——自动清理过期 shadow repo、FIFO /queue 排队系统、session-scoped reasoning。Hermes 从'个人 AI 助手'正式迈入'企业级 Agent 操作系统'阶段。",
+          "url": "https://hermes-agent.nousresearch.com/docs/"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "Hermes Skills 系统重大更新：URL 安装 + 技能生态扩展",
+          "content": "Skills 系统新增三项能力：1) HTTP(S) URL 直装（hermes skills install https://...），无需先 clone 仓库；2) claude-design HTML 产物生成技能加入内置生态，与 popular-web-designs、design-md 形成设计三件套；3) Airtable 生产力技能作为 bundled skill 内置，支持 .env 凭据模式；4) 74 个内置技能描述压缩至 <=60 字符，优化技能列表可读性；5) trigger 内容从 frontmatter 迁移至 skill body，修复内容丢失问题。当前内置技能已超过 150 个，社区贡献者 500+。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/16323"
+        },
+        {
+          "title": "模型路由与推理引擎增强",
+          "content": "底层推理能力同步升级：1) DeepSeek V4 上下文窗口扩展至 1M tokens，支持超长代码库分析；2) DeepSeek/Kimi thinking 模式修复——所有 assistant 消息强制注入 reasoning_content，工具调用不再中断推理链；3) 跨提供商推理隔离——复制 reasoning_content 时严格区分 Anthropic vs 非 Anthropic 格式；4) /model 切换时自动重算 token 预算和上下文压缩阈值；5) Codex Responses API 消息格式修复（output_text 替代 content）；6) 远程模型目录清单（OpenRouter + Nous Portal）热更新。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/model-routing"
+        },
+        {
+          "title": "Dashboard 插件系统：页面级插件插槽",
+          "content": "Hermes Dashboard 新增页面级插件插槽（page-scoped plugin slots），内置页面可嵌入自定义 React 组件。配合 PTY 桥接技术，Dashboard 中的 /chat 页面直接运行 hermes --tui（完整 Ink + xterm.js + WebGL 渲染器），而非 React 重写。这意味着：1) TUI 的任何更新自动同步到 Dashboard；2) 插件只负责侧边栏/仪表盘/辅助面板，不重复实现聊天界面；3) 前端与后端通过 WebSocket + PTY 分离，架构清晰。",
+          "url": "https://hermes-agent.nousresearch.com/docs/"
+        }
+      ],
+      "community": [
+        {
+          "title": "Slack 平台深度集成：原生命令 + 频道技能绑定",
+          "content": "Slack 适配层重大更新：1) 每个 Gateway 命令注册为 Slack 原生 slash command，与 Discord/Telegram 对齐；2) channel_skill_bindings 支持——按频道绑定不同技能集，实现'#dev 频道自动加载 devops 技能，#design 频道加载设计技能'；3) 严格 @mention 门控（slack.strict_mention），避免非定向消息触发 Agent；4) 富文本解析增强（quotes/lists）、attachment 诊断、Slack Connect 跨组织频道文件下载。企业 Slack 部署体验显著提升。",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "title": "Cron 定时任务增强：Job 链式调用 + 项目上下文",
+          "content": "Cron 系统新增两项企业级能力：1) context_from 字段——Job B 可将 Job A 的最新输出注入 prompt，实现'数据采集→分析→报告'链式流水线；2) workdir 参数——Job 在指定项目目录运行，自动加载 AGENTS.md/CLAUDE.md/.cursorrules 项目上下文。配合已有的 enabled_toolsets 限制（web/terminal/file/delegation），Cron 成为真正的自主 Agent 调度器。",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "title": "安全加固：三层终端命令审批 + SSRF 防护",
+          "content": "安全体系持续完善：1) 不可恢复命令硬编码黑名单（rm -rf、格式化等）自动拦截；2) Browser SSRF 防护增强——引用形式的 'false' 严格解析为布尔值，防止绕过；3) WhatsApp 身份标识 ASCII 锁定 + 路径遍历防护；4) key_env 解析的凭据不持久化到 providers 配置；5) Terminal 输出泄漏修复——macOS declare-x 环境变量转储、bracketed-paste 包装器自动剥离。企业安全合规基线进一步提升。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/security-privacy-toggles"
+        },
+        {
+          "title": "Hermes CLI 新特性：一键执行 + 编辑器集成",
+          "content": "CLI 体验优化：1) 新增 hermes -z <prompt> 一键执行模式——无需进入交互界面，单条命令完成推理并返回结果，适合 CI/CD 集成；2) Ctrl+G 编辑器接管（$EDITOR 优先 vim > nvim > nano），支持 Alt+G 作为 VSCode/Cursor 终端的备用快捷键；3) hermes update --check 仅检查不执行；4) /stop 立即中断流式重试循环；5) 剪贴板三重方案（OSC52 / native / tmux），解决 WSL/Docker 远程环境复制问题。",
+          "url": "https://github.com/NousResearch/hermes-agent/releases"
+        }
+      ],
+      "update_time": "2026-04-28T18:00:00+08:00"
+    }
   }
 }
