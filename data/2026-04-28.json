@@ -1,0 +1,157 @@
+{
+  "2026-04-28": {
+    "update_time": "2026-04-28T18:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "中央政治局会议：全面实施\"人工智能+\"行动，发展智能经济新形态",
+        "source": "新华社",
+        "url": "https://finance.sina.com.cn/wm/2026-04-28/doc-inhvzsha8563174.shtml",
+        "summary": "4月28日中央政治局会议强调加快建设现代化产业体系，全面实施\"人工智能+\"行动，发展智能经济新形态，完善人工智能治理，同时深入整治\"内卷式\"竞争，加强算力网等六张网规划建设。",
+        "category": "政策信号",
+        "rating": 5
+      },
+      {
+        "title": "第三届中国具身智能与人形机器人产业大会北京开幕，从\"能动\"迈向\"能干\"",
+        "source": "新京报",
+        "url": "https://www.bjnews.com.cn/detail/1777358495129912.html",
+        "summary": "大会以\"具身智能新纪元·人形机器人新未来\"为主题在中关村开幕，超千位政产研学金人士参会。北京市机器人产业协会成立\"人形机器人产业链协同发展推进工作组\"，灵心巧手全球市占率80%+实现万台量产，启物科技\"大小脑长记忆系统\"突破端侧算力瓶颈。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "国家发改委正式禁止Meta收购Manus：首例外商投资安全审查否决案",
+        "source": "财新网",
+        "url": "https://news.qq.com/rain/a/20260428A001KU00",
+        "summary": "4月27日国家发改委发布公告，依法禁止Meta以约20亿美元收购AI公司Manus并购案，要求立即撤销交易。央视解读称禁的是企业\"洗澡式出海\"，这是《外商投资安全审查办法》实施以来首个公开否决案例，引发AI行业中美业务独立运营讨论。",
+        "category": "政策信号",
+        "rating": 5
+      },
+      {
+        "title": "OpenAI多月未达营收目标，Anthropic在编程和企业市场逆势增长",
+        "source": "华尔街日报",
+        "url": "https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in/",
+        "summary": "WSJ报道OpenAI 2026年Q1多个月度营收和用户增长目标未达成，ChatGPT未能触及10亿周活目标。主因是Anthropic在编程和企业工具市场大幅蚕食份额，后者估值已突破1万亿美元，计划10月上市。AI概念股应声全线大跌。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "腾讯开源HY-Embodied-0.5-X：具身多模态大模型刷新10项Benchmark",
+        "source": "腾讯RoboticsX",
+        "url": "https://github.com/Tencent-Hunyuan/HY-Embodied",
+        "summary": "腾讯RoboticsX与混元团队联合开源HY-Embodied-0.5-X，专为机器人具身任务优化，提供MoT-2B端侧版和MoE-32B大参数版。在规划、空间推理、具身问答等10个评测中取得6项第一3项第二，打造机器人\"看懂、想清、做到\"全链路。",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "title": "苏州具身智能产业大会：十大新产品发布，签约160亿元",
+        "source": "苏州市政府",
+        "url": "https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxxww9006479.shtml",
+        "summary": "2026苏州市具身智能机器人产业生态大会在吴中区举行，发布十大新产品、十大新技术、十大新应用场景和十二项新标准，签约项目160亿元。苏州将具身智能列为十大重点新兴产业，年内力争推出200个以上新场景。",
+        "category": "具身智能",
+        "rating": 4
+      },
+      {
+        "title": "微软Copilot全球大面积宕机，北美用户功能无响应超30秒",
+        "source": "钛媒体",
+        "url": "https://www.tmtpost.com/7969276.html",
+        "summary": "4月28日早间微软Copilot服务在北美突发运行异常，Web端加载迟缓且指令响应延迟超30秒，Windows客户端插件出现闪退。事件暴露AI助手基础设施可靠性问题，凸显企业级AI服务的稳定性挑战。",
+        "category": "AI应用",
+        "rating": 3
+      }
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "灵心巧手(LinkerHand)",
+          "field": "灵巧手/具身智能",
+          "route": "全球唯一万台量产高自由度灵巧手，市占率80%+",
+          "funding": "已完成多轮融资",
+          "verdict": "从\"能做\"走向\"好用\"和\"能造\"，斯坦福/剑桥/清华/富士康均已采用"
+        },
+        {
+          "name": "启物科技",
+          "field": "具身智能大脑",
+          "route": "大小脑长记忆系统，端侧有限算力下兼顾泛化与精度",
+          "funding": "未披露",
+          "verdict": "为商业场景低成本落地开辟新路径"
+        },
+        {
+          "name": "Manus",
+          "field": "AI Agent",
+          "route": "被Meta以20亿美元收购→遭中国发改委禁止",
+          "funding": "20亿美元(交易告吹)",
+          "verdict": "首例外商投资安全审查否决，AI出海模式面临重新审视"
+        }
+      ],
+      "trend": "具身智能从实验室走向量产商用，政策层面对AI跨境并购收紧信号明确"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "\"人工智能+\"从口号升级为国家级全面行动",
+          "content": "政治局会议首次以\"全面实施\"定调AI+行动，配合算力网、新型电网等六张网基建规划，AI产品经理应关注政策红利窗口期的场景优先级——政务、医疗、教育、制造四大领域将率先获得政策资源倾斜。"
+        },
+        {
+          "title": "OpenAI增长失速折射AI应用的留存困局",
+          "content": "ChatGPT未达10亿周活目标，核心原因是用户从\"尝鲜\"转为\"实用\"后留存率下降。产品侧启示：通用对话型AI需向垂直场景（编程、企业协作）深耕才能提升ARPU和黏性，Anthropic凭Claude Code在开发者市场的成功印证了这一路径。"
+        }
+      ],
+      "focus": ["AI+政策落地节奏跟踪", "具身智能商业化元年的场景选择", "AI应用留存率优化方法论"]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "腾讯HY-Embodied开创具身多模态专用架构",
+          "content": "不同于通用VLM直接适配机器人，HY-Embodied-0.5-X从底层架构重新设计，将MoT(Mixture-of-Thought)引入端侧2B参数模型，在规划和空间推理上超越10B+通用模型。端侧部署+多阶段迭代训练是核心创新。"
+        },
+        {
+          "title": "启物科技\"大小脑长记忆\"架构的工程启示",
+          "content": "大脑(云端大模型)负责高层规划和知识检索，小脑(端侧轻量模型)负责实时控制，长记忆模块连接历史经验。这种分层记忆架构在有限算力下平衡了泛化性与精度，是具身智能商业落地的可行范式。"
+        }
+      ],
+      "tech_radar": [
+        {"direction": "具身专用多模态模型", "status": "快速成熟", "advice": "关注MoT架构在端侧部署的效率优势"},
+        {"direction": "大小脑分离架构", "status": "产业验证中", "advice": "适合算力受限的商用场景落地"},
+        {"direction": "灵巧操作(Dexterous Manipulation)", "status": "万台量产", "advice": "灵心巧手验证了硬件可制造性，算法侧需跟进"},
+        {"direction": "AI Agent编程能力", "status": "商业竞争白热化", "advice": "Anthropic Claude Code路线已被市场验证"}
+      ],
+      "focus": ["端侧具身模型部署优化", "MoT vs MoE架构对比", "具身长期记忆机制"]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "具身智能产业大会释放明确信号：2026是商业化元年",
+          "content": "北京+苏州两场大会密集举办，苏州签约160亿、年内200+新场景目标、灵心巧手万台量产——产业从\"demo展示\"进入\"订单交付\"阶段。项目管理需关注供应链协同和量产交付节奏。"
+        },
+        {
+          "title": "Manus禁令重塑AI出海项目的合规框架",
+          "content": "首例外商投资安全审查否决案意味着AI企业跨境并购需前置合规评估。涉及核心AI技术的项目，无论买方还是卖方，都需要将安全审查纳入项目里程碑规划。"
+        }
+      ],
+      "focus": ["具身智能量产交付管理", "AI跨境项目合规风控", "六张网新基建项目机会"]
+    },
+    "action_items": {
+      "tech_selection": "具身智能端侧模型首选MoT架构(如HY-Embodied)；AI Agent开发关注Claude Code生态；大模型选型需评估百万上下文实际表现",
+      "track_judgment": "具身智能商业化确认进入加速期(政策+资本+量产三重验证)；OpenAI增长放缓但不影响AI大趋势，竞争格局从一超走向多强",
+      "watch_list": "Anthropic IPO进展(10月预期)、DeepSeek-V4正式版发布时间、六张网基建细则出台节奏、具身智能万台级订单交付情况"
+    },
+    "raw_articles": [
+      {"id": 1, "title": "中央政治局会议：全面实施\"人工智能+\"行动", "source": "新华社", "url": "https://finance.sina.com.cn/wm/2026-04-28/doc-inhvzsha8563174.shtml", "publish_time": "2026-04-28", "summary": "4月28日政治局会议强调全面实施AI+行动，发展智能经济新形态，完善AI治理，加强算力网等六张网建设", "category": "政策信号", "rating": 5},
+      {"id": 2, "title": "第三届中国具身智能与人形机器人产业大会北京开幕", "source": "新京报", "url": "https://www.bjnews.com.cn/detail/1777358495129912.html", "publish_time": "2026-04-28", "summary": "大会在中关村开幕，超千位人士参会，成立人形机器人产业链协同工作组，灵心巧手万台量产全球市占80%+", "category": "具身智能", "rating": 5},
+      {"id": 3, "title": "国家发改委正式禁止Meta收购Manus AI并购案", "source": "财新网", "url": "https://news.qq.com/rain/a/20260428A001KU00", "publish_time": "2026-04-28", "summary": "首例外商投资安全审查否决，要求Meta立即撤销约20亿美元收购Manus交易，央视称禁的是\"洗澡式出海\"", "category": "政策信号", "rating": 5},
+      {"id": 4, "title": "OpenAI多月未达营收目标，Anthropic编程市场逆势增长", "source": "华尔街日报", "url": "https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in/", "publish_time": "2026-04-28", "summary": "OpenAI 2026 Q1多月未达营收和用户目标，ChatGPT未触10亿周活。Anthropic在编程和企业工具市场蚕食份额，估值突破1万亿", "category": "大模型", "rating": 5},
+      {"id": 5, "title": "腾讯开源HY-Embodied-0.5-X具身多模态大模型", "source": "腾讯RoboticsX", "url": "https://github.com/Tencent-Hunyuan/HY-Embodied", "publish_time": "2026-04-28", "summary": "专为机器人具身任务优化，MoT-2B端侧版+MoE-32B大参数版，10个benchmark取得6项第一3项第二", "category": "算法突破", "rating": 5},
+      {"id": 6, "title": "苏州具身智能产业大会：十大新产品发布，签约160亿", "source": "苏州市政府", "url": "https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxxww9006479.shtml", "publish_time": "2026-04-28", "summary": "发布十大新产品/技术/场景和十二项标准，签约160亿元，年内推出200+新场景，具身智能列为苏州十大重点产业", "category": "具身智能", "rating": 4},
+      {"id": 7, "title": "从\"能动\"到\"能干\"：海淀企业定义具身智能商业化标准", "source": "人民网", "url": "https://bj.people.com.cn/n2/2026/0429/c14540-41566689.html", "publish_time": "2026-04-28", "summary": "灵心巧手实现穿针引线级精度万台量产，启物科技大小脑长记忆系统突破端侧算力瓶颈，海淀按下商业化加速键", "category": "具身智能", "rating": 4},
+      {"id": 8, "title": "微软Copilot北美大面积宕机", "source": "钛媒体", "url": "https://www.tmtpost.com/7969276.html", "publish_time": "2026-04-28", "summary": "4月28日Copilot服务突发异常，Web端响应延迟超30秒，Windows客户端闪退，暴露AI助手基础设施可靠性问题", "category": "AI应用", "rating": 3},
+      {"id": 9, "title": "北京车展从\"造车\"到\"造人\"：中国车企集体押注人形机器人", "source": "腾讯新闻", "url": "https://news.qq.com/rain/a/20260427A02VTS00", "publish_time": "2026-04-28", "summary": "荣耀机器人夺半马冠军、小鹏IRON公布量产时间表、一汽自研机器人首秀，车企从造车向造机器人延伸成趋势", "category": "具身智能", "rating": 4},
+      {"id": 10, "title": "4月国内AI大模型呈\"日更\"节奏，竞争进入白热化", "source": "经济观察网", "url": "https://www.eeo.com.cn/2026/0429/856541.shtml", "publish_time": "2026-04-28", "summary": "月之暗面、阿里、腾讯、DeepSeek、字节等9家企业4月内密集发布或升级旗舰模型，一周内数款旗舰接连亮相", "category": "大模型", "rating": 4},
+      {"id": 11, "title": "DeepSeek多位核心骨干离职，V4技术报告致谢近300人", "source": "投中网", "url": "https://finance.sina.com.cn/stock/wbstock/2026-04-27/doc-inhvxtqy9037351.shtml", "publish_time": "2026-04-28", "summary": "V4技术报告近300人作者名单中有10位已离职骨干流向大厂，但DeepSeek研究团队阵容依旧庞大，人才流动属行业常态", "category": "大模型", "rating": 3},
+      {"id": 12, "title": "高通与OpenAI合作研发AI智能手机，立讯精密参与", "source": "新浪财经", "url": "https://k.sina.cn/article_7857201856_1d45362c001904sisc.html", "publish_time": "2026-04-28", "summary": "知名分析师透露高通与OpenAI合作开发AI原生智能手机，立讯精密参与硬件制造，高通股价应声上涨", "category": "AI应用", "rating": 3},
+      {"id": 13, "title": "陈天桥：Manus事件迫使中美AI业务独立运营", "source": "搜狐科技", "url": "https://www.sohu.com/a/1015936691_553580", "publish_time": "2026-04-28", "summary": "MiroMind创始人陈天桥指出Manus收购失败使中美AI业务形成隔离墙，AI企业别无选择只能独立运营", "category": "市场动态", "rating": 3},
+      {"id": 14, "title": "中信建投解读政治局会议：五大核心聚焦，AI+迎升级信号", "source": "中信建投", "url": "https://news.qq.com/rain/a/20260429A01VOS00", "publish_time": "2026-04-28", "summary": "政策取向与市场预期高度契合，产业政策迎升级信号，\"全面实施AI+\"较此前表述明显提级，新基建六张网形成投资框架", "category": "政策信号", "rating": 3},
+      {"id": 15, "title": "爱迪斯通携多款机器人训练设备亮相北京产业大会", "source": "搜狐科技", "url": "https://www.sohu.com/a/1015754624_120773383", "publish_time": "2026-04-28", "summary": "EdisonTech携先进机器人训练设备参展第三届人形机器人大会，展示感知、交互与操作领域创新应用", "category": "具身智能", "rating": 3},
+      {"id": 16, "title": "Anthropic估值突破1万亿美元，计划10月启动IPO", "source": "Fortune", "url": "https://fortune.com/2026/04/28/markets-openai-revenue-oracle-softbank-coreweave-sam-altman-trial-elon-musk/", "publish_time": "2026-04-28", "summary": "谷歌向Anthropic投资400亿美元后，其估值超越OpenAI突破1万亿美元大关，计划2026年10月上市，成为AI赛道最大IPO", "category": "市场动态", "rating": 4}
+    ]
+  }
+}
