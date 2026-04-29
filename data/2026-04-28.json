@@ -159,9 +159,21 @@
       ]
     },
     "action_items": {
-      "tech_selection": "具身智能端侧模型首选MoT架构(如HY-Embodied)；AI Agent开发关注Claude Code生态；大模型选型需评估百万上下文实际表现",
-      "track_judgment": "具身智能商业化确认进入加速期(政策+资本+量产三重验证)；OpenAI增长放缓但不影响AI大趋势，竞争格局从一超走向多强",
-      "watch_list": "Anthropic IPO进展(10月预期)、DeepSeek-V4正式版发布时间、六张网基建细则出台节奏、具身智能万台级订单交付情况"
+      "tech_selection": [
+        "具身智能端侧模型首选MoT架构(如HY-Embodied)",
+        "AI Agent开发关注Claude Code生态",
+        "大模型选型需评估百万上下文实际表现"
+      ],
+      "track_judgment": [
+        "具身智能商业化确认进入加速期(政策+资本+量产三重验证)",
+        "OpenAI增长放缓但不影响AI大趋势，竞争格局从一超走向多强"
+      ],
+      "watch_list": [
+        "Anthropic IPO进展(10月预期)",
+        "DeepSeek-V4正式版发布时间",
+        "六张网基建细则出台节奏",
+        "具身智能万台级订单交付情况"
+      ]
     },
     "raw_articles": [
       {
