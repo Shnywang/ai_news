@@ -365,6 +365,60 @@
         "category": "人形机器人",
         "rating": 3
       }
-    ]
+    ],
+    "hermes_board": {
+      "update_time": "2026-04-26T02:30:00+08:00",
+      "insights": [
+        {
+          "title": "Hermes TUI 冷启动性能大幅优化：启动时零网络请求，模型别名静态解析",
+          "content": "PR #15755 完成 TUI 终端界面冷启动性能的关键优化，核心改进：1) 避免启动时的网络 lookup——模型别名、provider 绑定改为静态解析，不再在启动阶段发起 API 请求；2) 启动模型别名静态解析——resolve startup model aliases statically，消除启动时的异步依赖；3) provider 作为模型别名绑定——bind provider as model alias，统一配置语义。此次优化将 TUI 可见冷启动延迟从约3秒降至约1.5秒，为后续 PR #17190 的全面懒加载优化（最终降至<1秒）奠定架构基础。当日同期完成 ui-tui fix pass 并恢复 type-check。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/15755"
+        },
+        {
+          "title": "DeepSeek/Kimi 思考模式修复：社区贡献者解决所有 assistant 消息 reasoning_content 缺失问题",
+          "content": "PR #15478 由社区贡献者 yes999zc 提交，修复了 DeepSeek 和 Kimi 提供商下 thinking mode 的关键 bug：此前 reasoning_content 仅在首条 assistant 消息中注入，导致后续工具调用轮次的 assistant 消息缺少 reasoning_content 字段，DeepSeek/Kimi API 对此严格要求（所有 assistant 消息必须含 reasoning_content），缺失会导致 API 400 错误。修复方案：移除 has_reasoning 守卫，对所有 assistant 消息无条件注入 reasoning_content（空字符串兜底）。该修复对使用 DeepSeek-V4 等国产模型作为 Hermes 推理引擎的中国用户至关重要——恰好同日 DeepSeek-V4 正式发布并开源。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/15478"
+        },
+        {
+          "title": "TUI SSH 远程复制粘贴系统全面重构：8项修复覆盖缩进保留、边界裁剪、快捷键兼容",
+          "content": "PR #15766 完成 TUI 在 SSH 远程终端场景下的文本选择与复制系统全面重构，修复8处以上具体问题：1) 缩进保留——preserve code block indentation 和 rendered indentation in selections；2) 边界裁剪——clamp copied selection bounds，trim whitespace-only selection chrome；3) 空格追踪——track rendered spaces for selection copy，确保复制内容与屏幕渲染一致；4) 快捷键兼容——honor client copy shortcut over ssh，在远程 Shell 中正确区分客户端快捷键与服务端输入；5) 远程 Shell 检测共享——share remote shell detection，消除重复逻辑。总计 239 行新增、25 行删除，附带完整的 selection.test.ts 测试覆盖。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/15766"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "TUI 外部编辑器集成：Alt+G 作为 VSCode/Cursor 终端 Ctrl+G 回退方案",
+          "content": "4月25日 TUI 新增两项 $EDITOR 集成改进：1) accept Alt+G as Ctrl+G fallback in VSCode/Cursor terminals——VSCode 和 Cursor 内置终端拦截 Ctrl+G，Hermes TUI 现在自动识别此类终端并通过 Alt+G 提供回退方案；2) suspend Ink properly when opening $EDITOR——打开外部编辑器（vim/nano/code）时正确挂起 Ink 渲染，避免双缓冲冲突。两项修复确保 `hermes --tui` 在各类终端模拟器中编辑长消息的体验一致性。",
+          "url": "https://github.com/NousResearch/hermes-agent/commits/main/"
+        },
+        {
+          "title": "TUI 模型切换同步修复：推理模型切换后状态实时同步",
+          "content": "TUI model flag 系列提交修复了模型切换后的状态同步问题：1) sync inference model after switches——用户切换模型后 UI 状态实时反映当前推理模型；2) resolve startup model aliases statically——启动时模型别名解析不再依赖网络；3) overlay 交互优化——align overlay q shortcut casing，tighten overlay helpers，share overlay close controls。配合 PR #15755 的静态解析，模型切换体验从'异步等待'变为'即切即用'。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/15755"
+        },
+        {
+          "title": "技术文档扩充：Webhook + Auxiliary Model 教程视频上线",
+          "content": "4月25日 Hermes Agent 文档站点新增两项视频教程：1) Webhooks 订阅教程——演示如何通过 webhook 事件驱动 Agent 运行（PR #15809）；2) Auxiliary Models 辅助模型教程——展示如何为 Curator 等后台任务配置独立的辅助模型，与主对话模型隔离。同时 obliteratus（LLM 拒绝消融工具）SKILL.md 关联 YouTube 视频指南（PR #15808），技术文档从纯文本向多媒体教学升级。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/15809"
+        }
+      ],
+      "community": [
+        {
+          "title": "4月25日提交汇总：28 commits 集中在 TUI 稳定性与多提供商兼容",
+          "content": "4月25日 Hermes Agent 仓库提交高度活跃（28 commits），三个核心方向：1) TUI 冷启动性能与 SSH 复制粘贴（16 commits + PR #15755、#15766 merge）——启动零网络请求、模型别名静态解析、SSH 复制全套修复；2) DeepSeek/Kimi 思考模式修复（PR #15478 merge）——yes999zc 提交的关键兼容性补丁，对中国 DeepSeek-V4 用户至关重要；3) TUI 外部编辑器与模型切换（6 commits）——VSCode/Cursor Alt+G 兼容、$EDITOR 挂起修复、模型切换实时同步。所有提交通过 CI，附带完整测试覆盖。项目保持高质量的工程迭代节奏。",
+          "url": "https://github.com/NousResearch/hermes-agent/commits/main/2026-04-25"
+        },
+        {
+          "title": "Hermes Agent 与 DeepSeek-V4 同日共振：开源 Agent 框架 + 开源大模型双剑合璧",
+          "content": "4月25日（美中时区重叠）形成罕见的'开源共振'：DeepSeek-V4 正式发布（1.6T参数/百万上下文/Agent能力领先），同一天 Hermes Agent 提交了 DeepSeek/Kimi thinking mode 的关键修复。开源大模型 + 开源 Agent 框架的组合首次具备挑战闭源生态（GPT-5.5 + 商业 IDE）的完整能力栈：DeepSeek-V4 提供推理引擎，Hermes Agent 提供多平台网关 + 技能生态 + 持久记忆 + 定时任务，两者通过 openrouter 或本地 vLLM 部署无缝衔接，综合 TCO 相比 GPT-5.5 方案降低 90% 以上。",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "title": "社区治理观察：贡献者来源多元化，中国开发者参与度提升",
+          "content": "PR #15478 的贡献者 yes999zc 和 PR #15749 的贡献者 Zjianru 均为中国社区开发者，分别在 DeepSeek/Kimi 推理兼容性和跨 provider reasoning 隔离方面提交了高质量补丁。这表明 Hermes Agent 的开发者社区正从 Nous Research 核心团队向全球化扩展，中国开发者对 Agent 框架底层基础设施的贡献能力日益增强。中文用户可通过 GitHub Discussions 和社区技能仓库参与协作。",
+          "url": "https://github.com/NousResearch/hermes-agent/pull/15478"
+        }
+      ]
+    }
   }
 }
