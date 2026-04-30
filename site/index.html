@@ -6,7 +6,7 @@
 <meta name="description" content="AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理">
 <meta property="og:title" content="AI+具身智能资讯聚合">
 <meta property="og:description" content="多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理">
-<title>AI+\u5177\u8eab\u667a\u80fd\u8d44\u8baf\u805a\u5408</title>
+<title>AI+具身智能资讯聚合</title>
 <style>
 :root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
 [data-theme=dark]{--bg:#0f0f23;--card:#1a1a2e;--text:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--accent:#818cf8;--accent2:#a5b4fc;--border:#334155;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow2:0 8px 24px rgba(0,0,0,.4);--star0:#475569;--ftbg:#0a0a1a}
@@ -111,36 +111,36 @@ a{color:inherit}
 </head>
 <body>
 <header class="hd">
-<button class="search-toggle" onclick="openSearch()" title="\u641c\u7d22 (Ctrl+K)">\uD83D\uDD0D</button>
-<button class="tbtn" onclick="toggleTheme()" title="\u5207\u6362\u4e3b\u9898">&#x1F319;</button>
-<h1>&#x1F916; AI+\u5177\u8eab\u667a\u80fd\u8d44\u8baf\u805a\u5408</h1>
-<p class="sub">\u591a\u89d2\u8272\u89c6\u89d2 \u00b7 \u6bcf\u65e5\u66f4\u65b0 \u00b7 \u521b\u4e1a / \u4ea7\u54c1 / \u7b97\u6cd5 / \u9879\u76ee\u7ba1\u7406</p>
+<button class="search-toggle" onclick="openSearch()" title="搜索 (Ctrl+K)">🔍</button>
+<button class="tbtn" onclick="toggleTheme()" title="切换主题">&#x1F319;</button>
+<h1>🤖 AI+具身智能资讯聚合</h1>
+<p class="sub">多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</p>
 <p class="ut" id="ut"></p>
 </header>
 <div class="ct">
 <div class="days" id="dayPicker"></div>
 <div class="tabs" id="tabs">
-<div class="tab a" data-t="hot">\u{1F525} \u4eca\u65e5\u70ed\u70b9</div>
-<div class="tab" data-t="startup">\u{1F680} \u521b\u4e1a\u677f\u5757</div>
-<div class="tab" data-t="pm">\u{1F4CB} \u4ea7\u54c1\u7ecf\u7406</div>
-<div class="tab" data-t="algo">\u{1F9EC} \u7b97\u6cd5\u5de5\u7a0b\u5e08</div>
-<div class="tab" data-t="proj">\u{1F4C5} \u9879\u76ee\u7ecf\u7406</div>
-<div class="tab" data-t="action">\u{2705} \u884c\u52a8\u5efa\u8bae</div>
-<div class="tab" data-t="hermes">\u{1F916} Hermes</div>
-<div class="tab" data-t="all">\u{1F4F0} \u5168\u90e8\u8d44\u8baf</div>
+<div class="tab a" data-t="hot">🔥 今日热点</div>
+<div class="tab" data-t="startup">🚀 创业板块</div>
+<div class="tab" data-t="pm">📋 产品经理</div>
+<div class="tab" data-t="algo">🧬 算法工程师</div>
+<div class="tab" data-t="proj">📅 项目经理</div>
+<div class="tab" data-t="action">✅ 行动建议</div>
+<div class="tab" data-t="hermes">🤖 Hermes</div>
+<div class="tab" data-t="all">📰 全部资讯</div>
 </div>
 <div id="content"></div>
 </div>
 <!-- Search overlay -->
 <div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
 <div class="search-box">
-<input id="gSearchInput" placeholder="\u641c\u7d22\u6240\u6709\u8d44\u8baf... (Ctrl+K)" oninput="globalSearch()">
+<input id="gSearchInput" placeholder="搜索所有资讯... (Ctrl+K)" oninput="globalSearch()">
 <div class="search-results" id="gSearchResults"></div>
 </div>
 </div>
 <!-- Toast -->
 <div class="toast" id="toast"></div>
-<footer class="ftr">\u7531 WorkBuddy \u81ea\u52a8\u751f\u6210 \u00b7 \u6570\u636e\u6bcf\u65e5\u66f4\u65b0 \u00b7 \u4ec5\u4fdd\u7559\u8fd1\u4e00\u5468\u6570\u636e \u00b7 \u95ee\u9898\u53cd\u9988: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> \u00b7 &copy; 2026</footer>
+<footer class="ftr">由 WorkBuddy 自动生成 · 数据每日更新 · 仅保留近一周数据 · 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> · © 2026</footer>
 <script>
 var days=["2026-04-29","2026-04-28","2026-04-27","2026-04-26","2026-04-25","2026-04-24","2026-04-23"];
 var curDay=days[0]||'';
@@ -150,8 +150,8 @@ var loaded=new Set(); // days that have been fetched
 
 function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
 function link(url,title){return '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(title)+'</a>'}
-function stars(r){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<r?'var(--star)':'var(--star0)')+'">\u2605</span>';return s}
-function starsStr(r){var s='';for(var i=0;i<5;i++)s+=(i<r?'\u2605':'\u2606');return s}
+function stars(r){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<r?'var(--star)':'var(--star0)')+'">'+(i<r?'★':'☆')+'</span>';return s}
+function starsStr(r){var s='';for(var i=0;i<5;i++)s+=(i<r?'★':'☆');return s}
 
 /* --- Data loading (on-demand from /data/JSON files) --- */
 async function loadData(day){
@@ -203,45 +203,45 @@ function initTabs(){
 async function render(){
   var data=await loadData(curDay);
   if(!data){
-    document.getElementById('content').innerHTML='<div class="loading">\u52a0\u8f7d\u4e2d</div>';
+    document.getElementById('content').innerHTML='<div class="loading">加载中</div>';
     return;
   }
-  document.getElementById('ut').textContent='\u6700\u540e\u66f4\u65b0\uff1a'+(data.update_time||curDay);
+  document.getElementById('ut').textContent='最后更新：'+(data.update_time||curDay);
   var fn={hot:renderHot,startup:renderStartup,pm:renderPM,algo:renderAlgo,proj:renderProj,action:renderAction,hermes:renderHermes,all:renderAll};
   (fn[curTab]||renderHot)(data);
 }
 
 function renderHot(d){
-  var h='<div class="sec">\u{1F525} \u4eca\u65e5\u70ed\u70b9 ('+(d.hot_topics||[]).length+'\u6761)</div>';
+  var h='<div class="sec">🔥 今日热点 ('+(d.hot_topics||[]).length+'条)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta">'+esc(t.source)+' \u00b7 '+esc(t.category)+' \u00b7 <span class="stars">'+starsStr(t.rating)+'</span></div></div></div>';
+    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta">'+esc(t.source)+' · '+esc(t.category)+' · <span class="stars">'+starsStr(t.rating)+'</span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
 
 function renderStartup(d){
   var s=d.startup_board;
-  if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>\u{1F680} \u521b\u4e1a\u677f\u5757</h3><p>\u6682\u65e0\u65b0\u52a8\u6001</p></div>';return}
-  var h='<div class="sec">\u{1F680} \u521b\u4e1a\u677f\u5757 \u2014 \u91cd\u70b9\u4f01\u4e1a\u8ddf\u8e2a</div>';
-  h+='<div class="stable-wrap"><table class="stable"><tr><th>\u4f01\u4e1a</th><th>\u8d5b\u9053</th><th>\u6280\u672f\u8def\u7ebf</th><th>\u878d\u8d44/\u8ba2\u5355</th><th>\u62e9\u4e1a\u5224\u65ad</th></tr>';
+  if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>🚀 创业板块</h3><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">🚀 创业板块 — 重点企业跟踪</div>';
+  h+='<div class="stable-wrap"><table class="stable"><tr><th>企业</th><th>赛道</th><th>技术路线</th><th>融资/订单</th><th>择业判断</th></tr>';
   (s.companies||[]).forEach(function(c){
     h+='<tr><td><strong>'+esc(c.name)+'</strong></td><td>'+esc(c.field)+'</td><td>'+esc(c.route)+'</td><td>'+esc(c.funding)+'</td><td>'+esc(c.verdict)+'</td></tr>';
   });
   h+='</table></div>';
-  if(s.trend)h+='<div class="bcard"><h3>\u{1F4C8} \u8d5b\u9053\u8d8b\u52bf</h3><p>'+esc(s.trend)+'</p></div>';
+  if(s.trend)h+='<div class="bcard"><h3>📈 赛道趋势</h3><p>'+esc(s.trend)+'</p></div>';
   document.getElementById('content').innerHTML=h;
 }
 
 function renderPM(d){
   var b=d.pm_board;
-  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>\u6682\u65e0\u65b0\u52a8\u6001</p></div>';return}
-  var h='<div class="sec">\u{1F4CB} \u4ea7\u54c1\u7ecf\u7406\u677f\u5757</div>';
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">📋 产品经理板块</div>';
   (b.insights||[]).forEach(function(t){
     var ln=t.url?link(t.url,t.title):esc(t.title);
     h+='<div class="bcard"><h3>'+ln+'</h3><p>'+esc(t.content)+'</p></div>';
   });
   if(b.focus&&b.focus.length){
-    h+='<div class="sec">\u{1F4CC} \u672a\u6765\u5173\u6ce8\u91cd\u70b9</div><div class="bcard"><ul>';
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
     b.focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'});
     h+='</ul></div>';
   }
@@ -250,22 +250,22 @@ function renderPM(d){
 
 function renderAlgo(d){
   var b=d.algo_board;
-  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>\u6682\u65e0\u65b0\u52a8\u6001</p></div>';return}
-  var h='<div class="sec">\u{1F9EC} \u7b97\u6cd5\u5de5\u7a0b\u5e08\u677f\u5757</div>';
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">🧬 算法工程师板块</div>';
   (b.insights||[]).forEach(function(t){
     var ln=t.url?link(t.url,t.title):esc(t.title);
     h+='<div class="bcard"><h3>'+ln+'</h3><p>'+esc(t.content)+'</p></div>';
   });
   if(b.tech_radar&&b.tech_radar.length){
-    h+='<div class="sec">\u{1F6F0}\uFE0F \u6280\u672f\u96f7\u8fbe</div><div class="bcard">';
+    h+='<div class="sec">🛰️ 技术雷达</div><div class="bcard">';
     b.tech_radar.forEach(function(r){
-      var dot=r.status.indexOf('\u9a8c\u8bc1')!==-1?'dot-green':r.status.indexOf('\u6210\u957f')!==-1?'dot-blue':r.status.indexOf('\u89c2\u671b')!==-1?'dot-yellow':'dot-red';
+      var dot=r.status.indexOf('验证')!==-1?'dot-green':r.status.indexOf('成长')!==-1?'dot-blue':r.status.indexOf('观望')!==-1?'dot-yellow':'dot-red';
       h+='<div class="radar-item"><span class="radar-dot '+dot+'"></span><span class="radar-name">'+esc(r.direction)+'</span><span class="radar-status">'+esc(r.status)+'</span><span class="radar-advice">'+esc(r.advice)+'</span></div>';
     });
     h+='</div>';
   }
   if(b.focus&&b.focus.length){
-    h+='<div class="sec">\u{1F4CC} \u672a\u6765\u5173\u6ce8\u91cd\u70b9</div><div class="bcard"><ul>';
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
     b.focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'});
     h+='</ul></div>';
   }
@@ -274,13 +274,13 @@ function renderAlgo(d){
 
 function renderProj(d){
   var b=d.projmgr_board;
-  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>\u6682\u65e0\u65b0\u52a8\u6001</p></div>';return}
-  var h='<div class="sec">\u{1F4C5} \u9879\u76ee\u7ecf\u7406\u677f\u5757</div>';
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">📅 项目经理板块</div>';
   (b.insights||[]).forEach(function(t){
     h+='<div class="bcard"><h3>'+esc(t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
   });
   if(b.focus&&b.focus.length){
-    h+='<div class="sec">\u{1F4CC} \u672a\u6765\u5173\u6ce8\u91cd\u70b9</div><div class="bcard"><ul>';
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
     b.focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'});
     h+='</ul></div>';
   }
@@ -289,20 +289,20 @@ function renderProj(d){
 
 function renderAction(d){
   var a=d.action_items;
-  if(!a){document.getElementById('content').innerHTML='<div class="bcard"><p>\u6682\u65e0</p></div>';return}
+  if(!a){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无</p></div>';return}
   var h='';
   if(a.tech_selection){
-    h+='<div class="sec">\u{1F527} \u6280\u672f\u9009\u578b</div><div class="bcard"><ul>';
+    h+='<div class="sec">🔧 技术选型</div><div class="bcard"><ul>';
     a.tech_selection.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
     h+='</ul></div>';
   }
   if(a.track_judgment){
-    h+='<div class="sec">\u{1F3AF} \u8d5b\u9053\u5224\u65ad</div><div class="bcard"><ul>';
+    h+='<div class="sec">🎯 赛道判断</div><div class="bcard"><ul>';
     a.track_judgment.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
     h+='</ul></div>';
   }
   if(a.watch_list){
-    h+='<div class="sec">\u{1F440} Watch List</div><div class="bcard"><ul>';
+    h+='<div class="sec">👀 Watch List</div><div class="bcard"><ul>';
     a.watch_list.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
     h+='</ul></div>';
   }
@@ -311,19 +311,19 @@ function renderAction(d){
 
 function renderHermes(d){
   var hb=d.hermes_board;
-  if(!hb){document.getElementById('content').innerHTML='<div class="bcard"><p>\u6682\u65e0 Hermes \u8d44\u8baf</p></div>';return}
-  var h='<div class="sec">\u{1F916} Hermes Agent \u2014 AI \u4ee3\u7406\u5de5\u4f5c\u6d41\u4e0e\u8d44\u8baf</div>';
+  if(!hb){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无 Hermes 资讯</p></div>';return}
+  var h='<div class="sec">🤖 Hermes Agent — AI 代理工作流与资讯</div>';
   (hb.insights||[]).forEach(function(t){
     h+='<div class="bcard"><h3>'+link(t.url||'#',t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
   });
   if(hb.tech_stack&&hb.tech_stack.length){
-    h+='<div class="sec">\u{1F6E0}\uFE0F \u6280\u672f\u6808\u4e0e\u5de5\u5177</div>';
+    h+='<div class="sec">🛠️ 技术栈与工具</div>';
     hb.tech_stack.forEach(function(t){
       h+='<div class="bcard"><h3>'+link(t.url||'#',t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
     });
   }
   if(hb.community&&hb.community.length){
-    h+='<div class="sec">\u{1F310} \u793e\u533a\u52a8\u6001</div>';
+    h+='<div class="sec">🌐 社区动态</div>';
     hb.community.forEach(function(c){
       h+='<div class="bcard"><h3>'+link(c.url||'#',c.title)+'</h3><p>'+esc(c.content)+'</p></div>';
     });
@@ -344,9 +344,9 @@ function filterAll(q){
   var arts=window._allArts||[];
   if(q)arts=arts.filter(function(a){return a.title.toLowerCase().indexOf(q)!==-1||a.summary.toLowerCase().indexOf(q)!==-1||a.category.toLowerCase().indexOf(q)!==-1||a.source.toLowerCase().indexOf(q)!==-1});
   var h='';
-  if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">\u672a\u627e\u5230\u5339\u914d\u8d44\u8baf</div>'}
+  if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">未找到匹配资讯</div>'}
   else{arts.forEach(function(a){
-    h+='<div class="ncard"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' \u00b7 '+a.publish_time+' \u00b7 '+starsStr(a.rating)+'</div></div><div class="right"><span class="cat">'+esc(a.category)+'</span></div></div>';
+    h+='<div class="ncard"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' · '+a.publish_time+' · '+starsStr(a.rating)+'</div></div><div class="right"><span class="cat">'+esc(a.category)+'</span></div></div>';
   })}
   document.getElementById('allList').innerHTML=h;
 }
@@ -356,7 +356,7 @@ async function openSearch(){
   document.getElementById('searchOverlay').classList.add('open');
   var inp=document.getElementById('gSearchInput');
   inp.value='';inp.focus();
-  document.getElementById('gSearchResults').innerHTML='<div class="search-hint">\u8f93\u5165\u5173\u952e\u8bcd\u641c\u7d22\u6240\u6709\u8d44\u8baf\uff08\u81ea\u52a8\u52a0\u8f7d\u6240\u6709\u65e5\u6570\u636e\uff09</div>';
+  document.getElementById('gSearchResults').innerHTML='<div class="search-hint">输入关键词搜索所有资讯（自动加载所有日数据）</div>';
   // Pre-load all days in background
   if(loaded.size<days.length){
     Promise.allSettled(days.map(function(d){return loadData(d)})).then(function(){
@@ -373,7 +373,7 @@ function closeSearch(){
 async function globalSearch(){
   var q=document.getElementById('gSearchInput').value.toLowerCase().trim();
   var res=document.getElementById('gSearchResults');
-  if(!q){res.innerHTML='<div class="search-hint">\u8f93\u5165\u5173\u952e\u8bcd\u641c\u7d22\u6240\u6709\u8d44\u8baf\u00b7\u00b7\u00b7</div>';return}
+  if(!q){res.innerHTML='<div class="search-hint">输入关键词搜索所有资讯···</div>';return}
   // Ensure all data loaded
   await Promise.allSettled(days.map(function(d){return loadData(d)}));
   var items=[];
@@ -382,12 +382,12 @@ async function globalSearch(){
     // Search in hot_topics
     (d.hot_topics||[]).forEach(function(t){
       if(t.title.toLowerCase().indexOf(q)!==-1||t.summary.toLowerCase().indexOf(q)!==-1)
-        items.push({title:t.title,url:t.url,meta:day+' \u00b7 '+t.source+' \u00b7 \u{1F525}\u70ed\u70b9',date:day});
+        items.push({title:t.title,url:t.url,meta:day+' · '+t.source+' · 🔥热点',date:day});
     });
     // Search in raw_articles
     (d.raw_articles||[]).forEach(function(a){
       if(a.title.toLowerCase().indexOf(q)!==-1||a.summary.toLowerCase().indexOf(q)!==-1||a.category.toLowerCase().indexOf(q)!==-1){
-        items.push({title:a.title,url:a.url,meta:a.publish_time+' \u00b7 '+a.source+' \u00b7 '+a.category+' \u00b7 '+starsStr(a.rating),date:a.publish_time||day});
+        items.push({title:a.title,url:a.url,meta:a.publish_time+' · '+a.source+' · '+a.category+' · '+starsStr(a.rating),date:a.publish_time||day});
       }
     });
     // Search in insights (pm, algo, hermes)
@@ -395,13 +395,13 @@ async function globalSearch(){
       var b=d[k];if(!b)return;
       (b.insights||[]).forEach(function(t){
         if(t.title.toLowerCase().indexOf(q)!==-1||t.content.toLowerCase().indexOf(q)!==-1)
-          items.push({title:t.title,url:t.url,meta:day+' \u00b7 \u{1F4CB}\u6536\u5165\u89c6\u89d2',date:day});
+          items.push({title:t.title,url:t.url,meta:day+' · 📋收入视角',date:day});
       });
     });
     var hb=d.hermes_board;if(hb){
       (hb.insights||[]).concat(hb.tech_stack||[]).concat(hb.community||[]).forEach(function(t){
         if(t.title.toLowerCase().indexOf(q)!==-1||t.content.toLowerCase().indexOf(q)!==-1)
-          items.push({title:t.title,url:t.url,meta:day+' \u00b7 \u{1F916} Hermes',date:day});
+          items.push({title:t.title,url:t.url,meta:day+' · 🤖 Hermes',date:day});
       });
     }
   });
@@ -410,8 +410,8 @@ async function globalSearch(){
   items.forEach(function(it){if(!seen[it.title]){seen[it.title]=true;unique.push(it)}});
   unique.sort(function(a,b){return(b.date||'').localeCompare(a.date||'')});
   var h='';
-  if(!unique.length){h='<div class="search-hint">\u672a\u627e\u5230\u5339\u914d\u201c'+esc(q)+'\u201d\u7684\u7ed3\u679c</div>'}
-  else{h='<div style="padding:.3rem .5rem;font-size:.78rem;color:var(--t3)">\u627e\u5230 '+unique.length+' \u6761\u7ed3\u679c</div>';
+  if(!unique.length){h='<div class="search-hint">未找到匹配"'+esc(q)+'"的结果</div>'}
+  else{h='<div style="padding:.3rem .5rem;font-size:.78rem;color:var(--t3)">找到 '+unique.length+' 条结果</div>';
     unique.forEach(function(it){
       h+='<div class="search-item"><h4>'+link(it.url,it.title)+'</h4><div class="nm">'+it.meta+'</div></div>';
     });
@@ -422,9 +422,9 @@ async function globalSearch(){
 /* --- Copy link --- */
 function copyLink(url){
   navigator.clipboard.writeText(url).then(function(){
-    showToast('\u2705 \u94fe\u63a5\u5df2\u590d\u5236');
+    showToast('✅ 链接已复制');
   }).catch(function(){
-    showToast('\u274c \u590d\u5236\u5931\u8d25');
+    showToast('❌ 复制失败');
   });
 }
 
