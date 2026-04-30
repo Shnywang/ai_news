@@ -1,0 +1,413 @@
+{
+  "2026-04-26": {
+    "update_time": "2026-04-26T18:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "DeepSeek-V4 vs GPT-5.5首波实测对决：开源与闭源差距缩至个位数",
+        "source": "新智元/知乎",
+        "url": "https://zhuanlan.zhihu.com/p/2031315666775619044",
+        "summary": "多家机构发布DeepSeek-V4与GPT-5.5同日发布后的首轮横评。V4-Pro在长文本理解和Agent任务上与5.5不相上下，编码方面5.5的SWE-Bench Pro 58.6%仍领先，但V4成本仅为5.5的1/150。招银国际报告指出中美顶尖模型智能差距从20分收窄至个位数，大模型竞争重心转向推理效率与Agent落地。",
+        "category": "算法突破",
+        "rating": 5
+      },
+      {
+        "title": "央视聚焦人形机器人：万亿级风口，智元G2进厂干活成标杆案例",
+        "source": "央视新闻/CCTV",
+        "url": "https://news.cctv.com/2026/04/26/ARTIiyAxB2I6pmaQZylkuvFx260426.shtml",
+        "summary": "央视以\"万亿级大风口\"为题专题报道人形机器人产业。重点呈现智元G2在南昌龙旗科技工厂4台机器人并线生产的实况，单道工序仅需18-20秒，十五五规划将具身智能列为未来产业。报道指出从半马赛场到生产车间，人形机器人正从\"会跳舞\"走向\"能干活\"。",
+        "category": "政策信号",
+        "rating": 5
+      },
+      {
+        "title": "2026北京车展：物理AI成核心关键词，小鹏IRON机器人2026年底量产",
+        "source": "凤凰汽车/太平洋科技",
+        "url": "https://auto.ifeng.com/c/8sbZzAO6pIr",
+        "summary": "北京车展总面积38万平方米，21个国家超2000家企业参展。\"物理AI\"成为核心关键词。小鹏以新集团身份亮相，展出人形机器人IRON(预计年底量产、2027年商业化，先切入门店销售场景)、陆地航母飞行汽车(已获7000订单)。荣耀机器人天团在多家车企展台互动，传递\"AI走出屏幕进入物理世界\"信号。",
+        "category": "企业动态",
+        "rating": 5
+      },
+      {
+        "title": "汉诺威工博会收官：中联重科Z01太极拳惊艳，人形机器人从展示走向实用",
+        "source": "新华社/人民日报",
+        "url": "https://www.news.cn/tech/20260425/f30f9e09e4d24c4d984f2649001bcc9a/c.html",
+        "summary": "2026汉诺威工博会4月24日收官，50多国2900家参展商，人形机器人成核心展品。中联重科Z01人形机器人以太极拳表演征服现场。新华社记者观察：人形机器人从\"会跳舞\"到\"能干活\"仍有距离，但企业正积极推动产线部署，实践经验加速技术成熟。",
+        "category": "企业动态",
+        "rating": 4
+      },
+      {
+        "title": "华为昇腾+寒武纪Day 0适配DeepSeek-V4：国产\"模+芯\"生态加速成型",
+        "source": "财经/经济观察报",
+        "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-24/doc-inhvrnzq4254551.shtml",
+        "summary": "DeepSeek-V4首次在官方技术报告中写入华为昇腾NPU和英伟达GPU双支持。华为昇腾950PR是国内唯一支持mxFP4低精度格式的推理芯片，寒武纪基于vLLM框架通过自研Torch-MLU-Ops完成Day 0适配。DeepSeek明确表示待昇腾950下半年批量上市后V4-Pro价格将进一步下降，国产算力闭环正式形成。",
+        "category": "算法突破",
+        "rating": 4
+      },
+      {
+        "title": "SpaceX 600亿美元收购Cursor期权协议落定：AI编程进入巨头时代",
+        "source": "FT中文网/每经",
+        "url": "https://www.ftchinese.com/interactive/262728",
+        "summary": "SpaceX(已与xAI合并)与Cursor母公司Anysphere正式达成战略协议：获得今年以600亿美元全资收购选择权，若不收购则支付100亿美元合作费。马斯克称目标是\"打造全球最出色的编程与知识工作AI\"。Cursor此前刚完成20亿美元融资，估值500亿美元，英伟达亦参与。",
+        "category": "企业动态",
+        "rating": 4
+      },
+      {
+        "title": "中国AI专利全球占比约60%：世界知识产权日数据发布",
+        "source": "新华网/国家知识产权局",
+        "url": "https://www.news.cn/politics/20260426/b41fbd7f18714466ad60303a12dbbc5b/c.html",
+        "summary": "4月26日世界知识产权日，国家知识产权局发布数据：中国拥有全球约60%的AI专利、约三分之二的机器人相关专利。中国AI专利量质齐升，从论文到产业化的转化能力持续增强，在工业机器人部署量方面位居世界第一。",
+        "category": "政策信号",
+        "rating": 4
+      }
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "小鹏机器人(IRON)",
+          "field": "人形机器人/物理AI",
+          "route": "汽车AI能力迁移至机器人，先切入门店销售场景",
+          "funding": "小鹏集团内部孵化，已上市(XPEV)，计划2026年底量产、2027年商业化",
+          "verdict": "车企切入机器人赛道代表案例，AI汽车+飞行汽车+机器人三位一体布局独特，但商业化节奏需验证"
+        },
+        {
+          "name": "Cursor(Anysphere)",
+          "field": "AI编程工具",
+          "route": "AI原生IDE，底层集成多家大模型",
+          "funding": "20亿美元新轮融资(估值500亿)，SpaceX获600亿收购期权",
+          "verdict": "AI编程赛道绝对头部，马斯克背书+英伟达参投，但Composer 2被曝底层套用Kimi K2.5引发争议"
+        },
+        {
+          "name": "中联重科(机器人业务)",
+          "field": "工业人形机器人",
+          "route": "工程机械+具身智能，Z01人形机器人",
+          "funding": "已上市(000157.SZ)，汉诺威工博会全球首秀",
+          "verdict": "传统工程机械巨头跨界，工业场景理解深厚，但机器人业务尚处早期展示阶段"
+        }
+      ],
+      "trend": "北京车展和汉诺威工博会双展同期，车企(小鹏、荣耀)和工程机械企业(中联重科)跨界入局机器人成为新趋势。AI编程赛道估值飙升至500-600亿美元量级，SpaceX/xAI等科技巨头通过收购加速布局。"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "物理AI时代：产品从屏幕走向真实世界",
+          "content": "北京车展和汉诺威工博会释放明确信号：AI产品正从屏幕交互走向物理世界交互。小鹏IRON先切入门店销售场景(2027年承担10%销售辅助)、荣耀Robot Phone概念、中联重科Z01工业应用，三条路径并行。产品经理需要思考：如何定义\"物理世界产品\"的交互范式——不再是点击和滑动，而是语音、手势、力反馈的多模态融合。"
+        },
+        {
+          "title": "大模型性价比飞跃改写产品成本模型",
+          "content": "DeepSeek-V4成本仅为GPT-5.5的1/150，且Agent能力接近。这意味着此前因成本受限的AI功能(如长文档全文分析、多步骤Agent自动化)现在可以规模化部署。产品经理应重新评估产品中AI功能的成本结构：哪些之前被砍掉的AI特性现在可以回归产品路线图。"
+        }
+      ],
+      "focus": [
+        "跟踪小鹏IRON门店销售场景的用户反馈和商业化数据",
+        "研究DeepSeek-V4极低成本下Agent功能的新产品可能性",
+        "关注北京车展后物理AI概念在消费者端的认知度变化",
+        "留意荣耀Robot Phone后续产品定义和目标人群"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "四强横评格局形成：V4-Pro / GPT-5.5 / GLM-5.1 / Opus 4.7",
+          "content": "2026年4月成为大模型密集发布月。腾讯云开发者社区发布四强横评：DeepSeek-V4-Pro(1.6T MoE，开源)、GPT-5.5(闭源Agent强)、GLM-5.1(智谱4月初发布)、Claude Opus 4.7(编程逻辑推理强)。V4-Pro在长文本和性价比上碾压，5.5在Agent编码领先，Opus 4.7编程测试表现突出。选型建议：按场景混合部署成为最优解。"
+        },
+        {
+          "title": "国产算力生态闭环：DeepSeek-V4首次官方支持昇腾NPU",
+          "content": "V4是首个在官方技术报告中同时写入华为昇腾NPU和英伟达GPU的万亿级开源模型。昇腾950PR的mxFP4低精度推理、寒武纪的Torch-MLU-Ops适配层，为国产算力推理奠定基础。算法工程师需关注：下半年昇腾950批量上市后的推理成本进一步下降空间，以及在CUDA之外的部署方案成熟度。"
+        },
+        {
+          "title": "汉诺威工博会技术观察：人形机器人从展示到实用的关键差距",
+          "content": "新华社记者深度观察指出，当前人形机器人在结构化环境(如固定工位)已达实用水平(智元G2 99.5%成功率)，但非结构化环境的自主性仍有较大差距。具身智能企业普遍认为\"产线部署的实践经验\"是缩短差距的关键路径，sim-to-real迁移效率成为核心瓶颈。"
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "多模型混合部署(MoE of Models)",
+          "status": "成长期",
+          "advice": "四强模型各有长处，建议构建路由层按任务类型分发至最优模型，兼顾能力和成本"
+        },
+        {
+          "direction": "国产算力推理栈(昇腾NPU/寒武纪)",
+          "status": "验证期",
+          "advice": "V4官方支持是重大里程碑，但生产环境稳定性和生态工具链仍需验证，建议小规模试点"
+        },
+        {
+          "direction": "物理AI/具身智能通用模型",
+          "status": "验证期",
+          "advice": "从展示到实用的关键在于结构化到非结构化场景迁移，关注sim-to-real新方法论"
+        },
+        {
+          "direction": "AI编程工具(Cursor/Codex/Grok Code)",
+          "status": "成长期",
+          "advice": "SpaceX收购Cursor标志赛道进入巨头时代，关注开源替代方案和多模型切换能力"
+        }
+      ],
+      "focus": [
+        "深入测试V4-Pro在自有业务场景下的Agent能力表现",
+        "评估华为昇腾950部署方案的可行性和成本模型",
+        "关注四强模型在RAG、Agent、代码生成等垂直场景的细分差异",
+        "跟踪Cursor底层模型切换策略对AI编程生态的影响"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "双展同期(北京车展+汉诺威工博会)：跨界协作项目管理复杂度升级",
+          "content": "本周北京车展和汉诺威工博会同期举办，车企(小鹏)、手机厂(荣耀)、工程机械(中联重科)纷纷跨界展出机器人产品。项目经理面临新挑战：跨行业团队协作(汽车+AI+机器人)、多展会并行筹备、全球化产品发布节奏管控。建议建立\"展会作战室\"机制，明确各线负责人和关键里程碑。"
+        },
+        {
+          "title": "大模型选型决策需要快速迭代：4月四款旗舰模型密集发布",
+          "content": "一个月内V4-Pro、GPT-5.5、GLM-5.1、Opus 4.7密集发布，技术选型决策窗口极短。项目经理需建立\"快速评估-小规模试点-决策\"的敏捷选型流程，避免在旧模型上过度投入。建议设置每月一次的\"模型选型评审会\"，由算法团队主导评估。"
+        },
+        {
+          "title": "国产算力切换项目规划：昇腾部署不是即插即用",
+          "content": "DeepSeek-V4对昇腾的支持打开了去N化路径，但从CUDA迁移至昇腾的工程量不可小觑。项目经理应提前规划：环境搭建(1-2周)→模型适配验证(2-4周)→性能调优(2-4周)→灰度上线(2周)。整体周期约2-3个月，需协调算法、基础架构、运维多团队。"
+        }
+      ],
+      "focus": [
+        "建立大模型选型的敏捷评审机制，适应月级别的模型迭代节奏",
+        "规划国产算力(昇腾)迁移项目的里程碑和资源需求",
+        "为跨界(汽车/手机/工程机械)机器人项目建立协作框架",
+        "关注AI编程工具(Cursor等)在团队研发效率上的落地效果评估"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "启动V4-Pro/GPT-5.5/Opus 4.7三模型混合部署方案评估，按场景分配最优模型",
+        "制定华为昇腾950推理栈小规模试点计划，评估国产算力可行性",
+        "关注Cursor底层模型争议(Kimi K2.5)，评估AI编程工具的模型透明度风险"
+      ],
+      "track_judgment": [
+        "物理AI从概念走向产品：北京车展和汉诺威双展验证了车企/制造业跨界入局的确定性趋势",
+        "大模型竞争进入\"四强争霸\"阶段，中美差距缩至个位数，性价比成为决胜因素",
+        "AI编程赛道估值泡沫化风险：Cursor半年估值翻倍至500亿，收购期权600亿，需警惕"
+      ],
+      "watch_list": [
+        "下半年华为昇腾950超节点批量上市后DeepSeek-V4-Pro降价幅度",
+        "小鹏IRON机器人2026年底量产进度",
+        "SpaceX是否最终行使600亿美元收购Cursor的选择权",
+        "广东省AI应用对接大会(4月27日)的产业对接成果",
+        "中国AI专利60%占比背后的产业化转化效率"
+      ]
+    },
+    "raw_articles": [
+      {
+        "id": 1,
+        "title": "DeepSeek-V4 vs GPT-5.5首波实测对决：结果出人意料",
+        "source": "新智元/知乎",
+        "url": "https://zhuanlan.zhihu.com/p/2031315666775619044",
+        "publish_time": "2026-04-25",
+        "summary": "多家机构发布V4与5.5横评。V4-Pro在长文本和Agent任务上与5.5不相上下，编码5.5仍领先。V4成本仅为5.5的1/150。V4-Flash低至0.2元/百万Token。开源与闭源差距缩至个位数。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "title": "央视专题：万亿级风口！人形机器人超大机遇来了",
+        "source": "央视新闻/CCTV",
+        "url": "https://news.cctv.com/2026/04/26/ARTIiyAxB2I6pmaQZylkuvFx260426.shtml",
+        "publish_time": "2026-04-26",
+        "summary": "央视以万亿级风口为题专题报道人形机器人。重点展示智元G2南昌工厂并线生产、半马超人类纪录、十五五规划将具身智能列为未来产业等。",
+        "category": "政策信号",
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "title": "2026北京车展：物理AI成核心关键词，38万平方米2000+企业参展",
+        "source": "凤凰汽车/网通社",
+        "url": "https://auto.ifeng.com/c/8sbZzAO6pIr",
+        "publish_time": "2026-04-25",
+        "summary": "北京车展物理AI成核心词，21国超2000家企业参展。小鹏展出IRON机器人和陆地航母，荣耀携机器人天团亮相。181款全球首发车型。",
+        "category": "企业动态",
+        "rating": 5
+      },
+      {
+        "id": 4,
+        "title": "小鹏IRON机器人亮相北京车展：2026年底量产，2027年商业化",
+        "source": "太平洋科技/搜狐",
+        "url": "https://news.pconline.com.cn/2137/21374271.html",
+        "publish_time": "2026-04-25",
+        "summary": "小鹏集团从汽车升级为集团，AI汽车+飞行汽车+机器人三大载体布局。IRON机器人先切入门店销售场景，2027年实现约10%销售辅助。陆地航母已获7000订单。",
+        "category": "人形机器人",
+        "rating": 4
+      },
+      {
+        "id": 5,
+        "title": "荣耀机器人天团登陆北京车展：AI破界而出",
+        "source": "腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20260425A085BF00",
+        "publish_time": "2026-04-25",
+        "summary": "荣耀在北京车展展出\"闪电\"、\"元气仔\"和Robot Phone。选择在汽车展展出机器人，传递AI从虚拟走向物理世界的信号。",
+        "category": "人形机器人",
+        "rating": 4
+      },
+      {
+        "id": 6,
+        "title": "汉诺威工博会收官：中联重科Z01太极拳惊艳全场",
+        "source": "新华社/西部网",
+        "url": "https://www.weste.net/2026/04-24/130602.html",
+        "publish_time": "2026-04-24",
+        "summary": "汉诺威工博会4月24日收官。中联重科Z01人形机器人太极拳表演征服现场，展示了工业智能系统实力。50多国2900家参展商，人形机器人成核心展品。",
+        "category": "人形机器人",
+        "rating": 4
+      },
+      {
+        "id": 7,
+        "title": "人形机器人从\"会跳舞\"到\"能干活\"还有多远",
+        "source": "新华社/人民网",
+        "url": "https://finance.people.com.cn/n1/2026/0426/c1004-40708699.html",
+        "publish_time": "2026-04-26",
+        "summary": "新华社驻汉诺威记者深度观察。结论：结构化环境已达实用(智元99.5%)，非结构化环境仍有距离。企业正积极推动产线部署积累经验。",
+        "category": "人形机器人",
+        "rating": 4
+      },
+      {
+        "id": 8,
+        "title": "华为昇腾+寒武纪Day 0适配DeepSeek-V4：国产模芯协作里程碑",
+        "source": "经济观察报/寒武纪开发者",
+        "url": "https://www.eeo.com.cn/2026/0424/850728.shtml",
+        "publish_time": "2026-04-25",
+        "summary": "V4首次在技术报告写入华为昇腾NPU。昇腾950PR为国内唯一支持mxFP4格式推理芯片。寒武纪通过自研Torch-MLU-Ops完成适配。待下半年昇腾950批量上市，V4-Pro价格将进一步下降。",
+        "category": "大模型",
+        "rating": 4
+      },
+      {
+        "id": 9,
+        "title": "SpaceX 600亿美元拿下Cursor收购期权",
+        "source": "FT中文网/每经",
+        "url": "https://www.ftchinese.com/interactive/262728",
+        "publish_time": "2026-04-22",
+        "summary": "SpaceX(已与xAI合并)与Cursor母公司Anysphere达成协议：600亿美元全资收购选择权。若不收购支付100亿美元合作费。目标打造全球最出色编程AI。",
+        "category": "AI Agent",
+        "rating": 4
+      },
+      {
+        "id": 10,
+        "title": "中国AI专利全球占比约60%，机器人专利占三分之二",
+        "source": "新华网/国家知识产权局",
+        "url": "https://www.news.cn/politics/20260426/b41fbd7f18714466ad60303a12dbbc5b/c.html",
+        "publish_time": "2026-04-26",
+        "summary": "世界知识产权日数据：中国拥有全球约60%的AI专利、约三分之二的机器人专利。量质齐升，工业机器人部署量世界第一。",
+        "category": "政策",
+        "rating": 4
+      },
+      {
+        "id": 11,
+        "title": "招银国际：1Q26大模型复盘，Agent化及B端突围成主线",
+        "source": "招银国际/搜狐",
+        "url": "https://www.sohu.com/a/1011365410_121999993",
+        "publish_time": "2026-04-25",
+        "summary": "招银国际报告指出全球大模型迭代加速，中美顶尖差距收窄至个位数。竞争重心从基础能力转向推理效率与Agent落地。B端商业化突围是主线。",
+        "category": "AI Agent",
+        "rating": 3
+      },
+      {
+        "id": 12,
+        "title": "四强横评：V4-Pro / GPT-5.5 / GLM-5.1 / Opus 4.7全维度对比",
+        "source": "腾讯云开发者社区",
+        "url": "https://cloud.tencent.com/developer/article/2660044",
+        "publish_time": "2026-04-25",
+        "summary": "48小时内两款旗舰接连亮相。四强横评：参数、基准、价格、场景全维度对比。V4长文本碾压，5.5 Agent编码领先，Opus 4.7编程逻辑强，GLM-5.1综合均衡。",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "id": 13,
+        "title": "Cursor被曝底层套用Kimi K2.5模型引发争议",
+        "source": "凤凰科技",
+        "url": "https://finance.ifeng.com/c/8sWfLxYvGpo",
+        "summary": "硬核开发者通过拦截代理发现Cursor主打的Composer 2底层微调了月之暗面开源的Kimi K2.5模型，非完全自研。引发社区对AI编程工具模型透明度的讨论。",
+        "publish_time": "2026-04-25",
+        "category": "AI Agent",
+        "rating": 3
+      },
+      {
+        "id": 14,
+        "title": "广东省人工智能应用对接大会4月27日启幕，近200家AI企业参展",
+        "source": "深圳新闻网/人民网广东",
+        "url": "https://www.sznews.com/news/content/2026-04/26/content_32029311.htm",
+        "publish_time": "2026-04-26",
+        "summary": "广东省AI应用对接大会27日在广州启幕，12个子展区覆盖具身智能机器人、国产软硬件等。近200家企业(含华为、腾讯、荣耀)展示300余件展品，涉及130多个细分场景。",
+        "category": "政策",
+        "rating": 3
+      },
+      {
+        "id": 15,
+        "title": "汉诺威工博会主办方：AI正成为工业转型关键驱动力",
+        "source": "新浪财经/新华社",
+        "url": "https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvwmvw8130659.shtml",
+        "publish_time": "2026-04-27",
+        "summary": "汉诺威工博会主办方德意志会展董事会主席科克勒表示，AI正成为与自动化、数字化并列的工业基础技术，推动新一轮产业转型升级。",
+        "category": "企业动态",
+        "rating": 3
+      },
+      {
+        "id": 16,
+        "title": "DeepSeek-V4明确支持华为昇腾950芯片：下半年Pro版本将降价",
+        "source": "36氪/财经杂志",
+        "url": "https://m.36kr.com/p/3780399181878528",
+        "publish_time": "2026-04-25",
+        "summary": "V4适配国产AI芯片在预期之内。DeepSeek明确指出受限于高端算力，当前Pro版吞吐有限，预计下半年昇腾950超节点批量上市后价格进一步下降。",
+        "category": "大模型",
+        "rating": 3
+      }
+    ],
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "Hermes Agent v2.0 发布：自改进 AI 代理框架",
+          "content": "Nous Research 发布 Hermes Agent v2.0，引入自改进技能系统、跨会话持久记忆、20+ LLM 提供商支持。可在终端、Telegram、Discord、微信等 15+ 平台上运行，支持 MCP 服务器集成和浏览器自动化。",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "title": "开源 AI 代理生态爆发：Hermes、Claude Code、Codex 三足鼎立",
+          "content": "2026 年上半年，开源 AI 代理框架进入快速发展期。Hermes Agent 以其多平台网关、技能系统和持久记忆成为开发者首选之一，与 Anthropic Claude Code、OpenAI Codex 形成三足鼎立格局。",
+          "url": "https://hermes-agent.nousresearch.com/docs/"
+        },
+        {
+          "title": "Hermes Skills Hub：数百个社区贡献技能一键安装",
+          "content": "Hermes 技能市场持续扩展，覆盖开发运维、数据处理、创意生成、学术研究等领域。支持通过 'hermes skills install' 一键安装，社区贡献者超过 500 人。",
+          "url": "https://hermes-agent.nousresearch.com/docs/reference/skills-catalog"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "Qwen3.6-35B：国产大模型新标杆",
+          "content": "阿里巴巴通义千问 Qwen3.6-35B 在多项基准测试中表现优异，支持 1M Token 超长上下文，推理速度提升显著。",
+          "url": "https://qwenlm.github.io/blog/qwen3.6/"
+        },
+        {
+          "title": "DeepSeek-V4：万亿参数 MoE 架构",
+          "content": "DeepSeek V4 采用万亿参数 MoE 架构，推理激活约 370 亿参数，全面适配华为昇腾 910B，纯国产算力训练。",
+          "url": "https://github.com/deepseek-ai/DeepSeek-V4"
+        },
+        {
+          "title": "WSL2 + Hermes：Windows 开发者的 AI 代理方案",
+          "content": "在 WSL2 环境下部署 Hermes Agent，结合 Windows 文件系统桥接，实现跨平台文件处理和自动化工作流。",
+          "url": "https://learn.microsoft.com/en-us/windows/wsl/"
+        },
+        {
+          "title": "微信 iLink Bot API 接入 Hermes Gateway",
+          "content": "通过腾讯 iLink Bot API 将 Hermes 接入微信平台，无需预注册，扫码即可登录，实现个人账号的 AI 代理能力。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/messaging/#weixin-wechat-qr-login-no-pre-credentials-needed"
+        }
+      ],
+      "community": [
+        {
+          "title": "Hermes Agent 开发者周报 #42",
+          "content": "本周更新：新增飞书平台适配器、技能市场新增 23 个技能、Gateway 稳定性提升 40%。",
+          "url": "https://github.com/NousResearch/hermes-agent/releases"
+        },
+        {
+          "title": "企业级 AI 代理部署案例分享",
+          "content": "某制造企业使用 Hermes Agent 实现差旅管理、代码审查、数据报表生成全流程自动化，效率提升 3 倍。",
+          "url": "https://github.com/NousResearch/hermes-agent/discussions"
+        },
+        {
+          "title": "开源 AI 代理安全最佳实践",
+          "content": "Hermes Agent 安全团队发布 2026 Q2 安全指南，涵盖凭据管理、命令审批、PII 脱敏等关键安全配置。",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/security-privacy-toggles"
+        }
+      ],
+      "update_time": "2026-04-27T18:00:00+08:00"
+    }
+  }
+}
