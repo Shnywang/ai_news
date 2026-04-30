@@ -66,6 +66,7 @@ const html = `<!DOCTYPE html>
 <meta name="description" content="AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理">
 <meta property="og:title" content="AI+具身智能资讯聚合">
 <meta property="og:description" content="多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理">
+<link rel="alternate" type="application/rss+xml" href="feed.xml" title="AI+具身智能资讯聚合 RSS">
 <title>AI+具身智能资讯聚合</title>
 <style>
 :root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
@@ -79,8 +80,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .ct{max-width:1200px;margin:0 auto;padding:1rem}
 /* Day selector */
 .days{display:flex;gap:.5rem;overflow-x:auto;padding:.5rem 0;margin-bottom:1rem}
+@media(max-width:768px){.days{justify-content:center;gap:.3rem}}
 .day-btn{padding:.4rem 1rem;border-radius:20px;border:1.5px solid var(--border);background:var(--card);color:var(--t2);cursor:pointer;font-size:.82rem;font-weight:500;white-space:nowrap;transition:all .2s}
 .day-btn.a{background:var(--accent);color:#fff;border-color:var(--accent)}
+/* Share bar */
+.share-bar{display:flex;gap:.4rem;margin-left:auto;flex-shrink:0;align-items:center}
+.share-btn{background:none;border:1.5px solid var(--border);border-radius:8px;padding:.2rem .5rem;cursor:pointer;font-size:.75rem;color:var(--t3);transition:all .2s;white-space:nowrap}
+.share-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(99,102,241,.05)}
 /* Board tabs */
 .tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1.2rem;overflow-x:auto}
 .tab{padding:.7rem 1.2rem;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--t2);border-bottom:3px solid transparent;white-space:nowrap;transition:all .2s}
@@ -200,7 +206,7 @@ a{color:inherit}
 </div>
 <!-- Toast -->
 <div class="toast" id="toast"></div>
-<footer class="ftr">由 WorkBuddy 自动生成 ${U.dot} 数据每日更新 ${U.dot} 仅保留近一周数据 ${U.dot} 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> ${U.dot} ${U.copyR} 2026</footer>
+<footer class="ftr">由 WorkBuddy 自动生成 ${U.dot} 数据每日更新 ${U.dot} 仅保留近一周数据 ${U.dot} <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> ${U.dot} 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> ${U.dot} ${U.copyR} 2026</footer>
 <script>
 var days=${safeDays};
 var curDay=days[0]||'';
@@ -274,7 +280,7 @@ async function render(){
 function renderHot(d){
   var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta">'+esc(t.source)+' ${U.dot} '+esc(t.category)+' ${U.dot} <span class="stars">'+starsStr(t.rating)+'</span></div></div></div>';
+    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' ${U.dot} '+esc(t.category)+' ${U.dot} <span class="stars">'+starsStr(t.rating)+'</span></span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">${U.search} 复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -479,13 +485,25 @@ async function globalSearch(){
   res.innerHTML=h;
 }
 
-/* --- Copy link --- */
-function copyLink(url){
+/* --- Share --- */
+function shareUrl(url){
   navigator.clipboard.writeText(url).then(function(){
     showToast('${U.copy} 链接已复制');
   }).catch(function(){
     showToast('${U.error} 复制失败');
   });
+}
+function shareTitleUrl(title,url){
+  if(navigator.share){
+    navigator.share({title:title||'AI+具身智能资讯聚合',url:url,text:title}).catch(function(){});
+  }else{
+    shareUrl(url);
+  }
+}
+
+/* --- Copy link (legacy) --- */
+function copyLink(url){
+  shareUrl(url);
 }
 
 /* --- Theme --- */
@@ -515,4 +533,56 @@ document.addEventListener('DOMContentLoaded',function(){
 </html>`;
 
 fs.writeFileSync(path.join(__dirname, 'site/index.html'), html, 'utf8');
-console.log('Build OK! Days: ' + days.join(', ') + ' | Files in site/data/: ' + files.length);
+
+// ========== RSS Feed ==========
+function xmlEscape(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
+}
+// Collect all articles across all days, sorted by date desc
+const allArticles = [];
+for (const day of days) {
+  const d = allData[day];
+  if (!d) continue;
+  // Hot topics
+  for (const t of (d.hot_topics || [])) {
+    if (t.title && t.summary && t.url) {
+      allArticles.push({ title: t.title, summary: t.summary, url: t.url, source: t.source, pubDate: day });
+    }
+  }
+  // Raw articles
+  for (const a of (d.raw_articles || [])) {
+    if (a.title && a.summary && a.url) {
+      allArticles.push({ title: a.title, summary: a.summary, url: a.url, source: a.source, pubDate: a.publish_time || day });
+    }
+  }
+}
+// Deduplicate by URL, prefer higher date
+const byUrl = {};
+for (const a of allArticles) {
+  if (!byUrl[a.url] || a.pubDate > byUrl[a.url].pubDate) byUrl[a.url] = a;
+}
+const uniqueArticles = Object.values(byUrl).sort((a, b) => b.pubDate.localeCompare(a.pubDate)).slice(0, 50);
+const rssDate = new Date().toUTCString();
+
+const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>AI+具身智能资讯聚合</title>
+  <link>https://shnywang.github.io/ai_news/site/index.html</link>
+  <description>多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</description>
+  <language>zh-CN</language>
+  <lastBuildDate>${rssDate}</lastBuildDate>
+  <atom:link href="https://shnywang.github.io/ai_news/site/feed.xml" rel="self" type="application/rss+xml"/>
+${uniqueArticles.map(a => `  <item>
+    <title>${xmlEscape(a.title)}</title>
+    <link>${xmlEscape(a.url)}</link>
+    <description>${xmlEscape(a.summary)}</description>
+    <source>${xmlEscape(a.source)}</source>
+    <pubDate>${rssDate}</pubDate>
+    <guid>${xmlEscape(a.url)}</guid>
+  </item>`).join('\n')}
+</channel>
+</rss>`;
+
+fs.writeFileSync(path.join(__dirname, 'site/feed.xml'), feed, 'utf8');
+console.log('Build OK! Days: ' + days.join(', ') + ' | Files in site/data/: ' + files.length + ' | RSS items: ' + uniqueArticles.length);
