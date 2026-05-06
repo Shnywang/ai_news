@@ -72,6 +72,21 @@ if (latestDay && allData[latestDay] && allData[latestDay].hot_topics && allData[
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AI+具身智能资讯聚合",
+  "url": "https://shnywang.github.io/ai_news/site/",
+  "description": "AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://shnywang.github.io/ai_news/site/index.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="${seoDesc}">
@@ -232,7 +247,7 @@ a{color:inherit}
 <button class="tbtn" onclick="toggleTheme()" title="切换主题">${U.moon}</button>
 <h1>${U.robot} AI+具身智能资讯聚合</h1>
 <p class="sub">多角色视角 ${U.dot} 每日更新 ${U.dot} 创业 / 产品 / 算法 / 项目管理</p>
-<div class="rating-legend"><span title="评分标准">⭐评分标准：</span><span>1=${U.starEmpty} 低质·来源不明/信息量低</span><span>2=一般·通稿/增量有限</span><span>3=中等·行业参考</span><span>4=高质·独家/深度</span><span>5=${U.star}${U.star} 顶尖·里程碑</span></div>
+<div class="rating-legend"><span title="评分标准">⭐评分标准：</span><span>1=${U.starEmpty} 低质·来源不明/信息量低</span><span>2=一般·通稿/增量有限</span><span>3=中等·行业参考</span><span>4=高质·独家/深度</span><span>5=${U.star}${U.star} 顶尖·里程碑</span></div><div class="kbd-hint">⌨️ 快捷键: ↑↓ 浏览 | Enter 打开 | Ctrl+K 搜索 | 1-8 切换标签</div>
 <p class="ut" id="ut"></p>
 <div class="trend-strip" id="trendStrip" style="margin:.5rem auto 0;max-width:700px;background:rgba(255,255,255,.1);border-radius:10px;padding:.5rem 1rem;font-size:.8rem;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap">
 <span id="yesterdayDelta" style="color:#fef08a"></span>
@@ -270,8 +285,8 @@ a{color:inherit}
 <button class="saved-toggle" onclick="toggleSaved()" title="稍后阅读">
 ${U.save}<span class="badge" id="savedBadge">0</span>
 </button>
-<footer class="ftr">由 WorkBuddy 自动生成 ${U.dot} 数据每日更新 ${U.dot} 仅保留近一周数据 ${U.dot} <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> ${U.dot} 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> ${U.dot} <a href="https://github.com/Shnywang/ai_news/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a>
-<div class="subscribe-box"><input id="subEmail" type="email" placeholder="输入邮箱订阅每日资讯"><button onclick="subscribe()">${U.mail} 订阅</button></div>
+<footer class="ftr">由 WorkBuddy 自动生成 ${U.dot} 数据每日更新 ${U.dot} 仅保留近一周数据 ${U.dot} <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> ${U.dot} 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> ${U.dot} <a href="https://github.com/Shnywang/ai_news/discussions" target="_blank" rel="noopener noreferrer">社区讨论/Giscus</a> ${U.dot} <a href="https://github.com/Shnywang/ai_news/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a>
+<div class="subscribe-box"><form id="subForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:flex;gap:.3rem;align-items:center;justify-content:center;margin-top:.5rem;flex-wrap:wrap"><input type="email" name="email" placeholder="输入邮箱订阅每日资讯" required style="padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.8rem;min-width:180px"><button type="submit" style="padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:.8rem;font-weight:600">${U.mail} 订阅</button></form></div>
 ${U.dot} ${U.copyR} 2026</footer>
 <script>
 var days=${safeDays};
@@ -298,6 +313,13 @@ var catMap={'大模型':'algorithm_breakthrough','算法突破':'algorithm_break
   '开源动态':'open_source','开源':'open_source',
   '学术前沿':'academic','论文':'academic','学术':'academic',
   '其他':'other'
+}
+function sourceRank(src){
+  var high=['MIT Tech Review','Fortune','36氪','人民网','CGTN','China Daily','第一财经','界面新闻','经济观察网'];
+  var mid=['TechXplore','机器之心','赛塔网','多课网','投中网','BraveNewCoin','MIT Technology Review'];
+  if(high.some(function(s){return src.indexOf(s)!==-1}))return '<span style="color:#10b981;font-size:.7rem" title="权威媒体">●权威</span>';
+  if(mid.some(function(s){return src.indexOf(s)!==-1}))return '<span style="color:#f59e0b;font-size:.7rem" title="专业媒体">●专业</span>';
+  return '<span style="color:#9ca3af;font-size:.7rem" title="一般来源">●</span>';
 };
 var catName={policy_signal:'政策信号',algorithm_breakthrough:'算法突破',industry_dynamics:'企业动态',market_data:'市场数据',open_source:'开源动态',hardware:'硬件与机器人',academic:'学术前沿',other:'其他',大模型:'算法突破','大模型':'算法突破','具身智能':'硬件与机器人','人形机器人':'硬件与机器人','市场动态':'市场数据','市场数据':'市场数据','政策信号':'政策信号','政策':'政策信号','重要企业动态':'企业动态','企业动态':'企业动态','行业分析':'行业动态','AI Agent':'AI应用','AI应用':'AI应用','行业展会':'行业动态','开源项目':'开源动态','创业公司':'企业动态','学术论文':'学术前沿'};
 function catLabel(c){return catName[catMap[c]]||c}
@@ -373,8 +395,11 @@ function renderTrend(){
   var yest=dKeys[dKeys.length-2];
   var todayC=dayCounts[today]||0;
   var yestC=dayCounts[yest]||0;
+  var weekAgo=dKeys.length>=7?dKeys[dKeys.length-7]:null;
+  var weekC=weekAgo?(dayCounts[weekAgo]||0):null;
+  var weekStr=weekC!==null?" | 周初"+weekC+"条":"";
   var delta=todayC-yestC;
-  var deltaStr=(delta>=0?"+"+delta:delta)+"条 vs 昨日";
+  var deltaStr=(delta>=0?"+"+delta:delta)+"条 vs 昨日"+weekStr;
   var deltaEl=document.getElementById("yesterdayDelta");
   if(deltaEl)deltaEl.textContent="📊 今日"+todayC+"条 "+deltaStr;
   var barWrap=document.getElementById("trendBars");
@@ -404,9 +429,9 @@ async function render(){
 }
 
 function renderHot(d){
-  var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条)</div>';
+  var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条 · '+(d.raw_articles||[]).length+'篇原始资讯)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' ${U.dot} '+catLabel(t.category)+' ${U.dot} '+starsHTML(t.rating)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
+    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' ${U.dot} '<span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
