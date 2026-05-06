@@ -73,7 +73,8 @@ try {
   run('git add .');
   run(`git commit -m "update: ${today} daily digest"`);
   run('git push origin main');
-  console.log('\n✅ Published to https://shnywang.github.io/ai_news/');
+  const baseUrl = 'https://shnywang.github.io/ai_news';
+  console.log('\n✅ Published to ' + baseUrl + '/');
 } catch (e) {
   console.error('\n❌ Git step failed. You may need to push manually.');
   process.exit(1);

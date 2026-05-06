@@ -35,10 +35,10 @@ data/                       # 每日 JSON 数据文件（YYYY-MM-DD.json）
   "YYYY-MM-DD": {
     "update_time": "ISO 8601 时间戳",
     "hot_topics":      [ { "资讯条目" }, ... ],
-    "startup":         [ { "资讯条目" }, ... ],
-    "pm_view":         [ { "资讯条目" }, ... ],
-    "algo_view":       [ { "资讯条目" }, ... ],
-    "pm_project_view": [ { "资讯条目" }, ... ],
+    "startup_board":    { "创业板块" },
+    "pm_board":         { "产品经理板块" },
+    "algo_board":       { "算法工程师板块" },
+    "projmgr_board":    { "项目经理板块" },
     "action_items":    [ { "资讯条目" }, ... ],
     "hermes_board":    { "资讯聚合", "使用报告", "技术栈", "社区动态" }
   }
@@ -158,7 +158,7 @@ node publish.js
 2. **清理** — 移除超出 7 天滚动窗口的数据文件
 3. **推送** — `git add .` → `git commit` → `git push origin main`
 
-### 6.3 清理历史数据
+### 7.3 清理历史数据
 
 手动清理过期数据：
 
@@ -166,7 +166,7 @@ node publish.js
 node cleanup.js
 ```
 
-## 七、部署
+## 八、部署
 
 本站通过 **GitHub Pages** 部署，`main` 分支推送后自动生效。访问地址：
 
@@ -174,7 +174,7 @@ node cleanup.js
 https://<用户名>.github.io/ai_news/
 ```
 
-## 八、运行环境
+## 九、运行环境
 
 | 依赖       | 版本    |
 |------------|---------|
@@ -183,11 +183,11 @@ https://<用户名>.github.io/ai_news/
 
 无需安装外部 npm 包，管线仅使用 Node.js 内置模块（`fs`、`path`、`child_process`）。
 
-## 九、许可证
+## 十、许可证
 
-[请指定许可证]
+MIT License
 
-## 十、作者
+## 十一、作者
 
 - **Shnywang** — [GitHub](https://github.com/Shnywang)
 - **wyfrest** — [GitHub](https://github.com/wyfrest)

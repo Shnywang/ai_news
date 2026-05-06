@@ -1,0 +1,15 @@
+{
+  "name": "ai-news",
+  "version": "1.0.0",
+  "description": "AI+具身智能资讯聚合 — 多角色视角 · 每日更新",
+  "scripts": {
+    "build": "node build.js",
+    "validate": "node validate.js",
+    "publish": "node publish.js",
+    "cleanup": "node cleanup.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

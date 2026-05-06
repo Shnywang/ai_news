@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+// GitHub Pages base URL — update when username or repo name changes
+const SITE_BASE = 'https://shnywang.github.io/ai_news';
+
 // Read all daily JSON files in data dir (keep only last 7 days)
 const dataDir = path.join(__dirname, 'data');
 const files = fs.readdirSync(dataDir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse().slice(0, 7);
@@ -68,6 +71,7 @@ const html = `<!DOCTYPE html>
 <meta property="og:description" content="多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理">
 <link rel="alternate" type="application/rss+xml" href="feed.xml" title="AI+具身智能资讯聚合 RSS">
 <title>AI+具身智能资讯聚合</title>
+<script>!function(){var t=localStorage.getItem('ai-news-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark');}();</script>
 <style>
 :root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
 [data-theme=dark]{--bg:#0f0f23;--card:#1a1a2e;--text:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--accent:#818cf8;--accent2:#a5b4fc;--border:#334155;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow2:0 8px 24px rgba(0,0,0,.4);--star0:#475569;--ftbg:#0a0a1a}
@@ -200,7 +204,7 @@ a{color:inherit}
 <!-- Search overlay -->
 <div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
 <div class="search-box">
-<input id="gSearchInput" placeholder="搜索所有资讯... (Ctrl+K)" oninput="globalSearch()">
+<input id="gSearchInput" placeholder="搜索所有资讯... (Ctrl+K)" oninput="scheduleSearch()">
 <div class="search-results" id="gSearchResults"></div>
 </div>
 </div>
@@ -418,6 +422,11 @@ function filterAll(q){
 }
 
 /* --- Global Search (Ctrl+K) --- */
+var _searchTimer=null;
+function scheduleSearch(){
+  clearTimeout(_searchTimer);
+  _searchTimer=setTimeout(globalSearch,250);
+}
 async function openSearch(){
   document.getElementById('searchOverlay').classList.add('open');
   var inp=document.getElementById('gSearchInput');
@@ -508,19 +517,17 @@ function copyLink(url){
 
 /* --- Theme --- */
 function toggleTheme(){
-  var dk=document.body.getAttribute('data-theme')==='dark';
-  document.body.setAttribute('data-theme',dk?'light':'dark');
+  var dk=document.documentElement.getAttribute('data-theme')==='dark';
+  document.documentElement.setAttribute('data-theme',dk?'light':'dark');
   document.querySelector('.tbtn').innerHTML=dk?'${U.moon}':'${U.sun}';
   localStorage.setItem('ai-news-theme',dk?'light':'dark');
 }
 
 document.addEventListener('DOMContentLoaded',function(){
-  // Theme: localStorage > system preference > default light
-  var sv=localStorage.getItem('ai-news-theme');
-  if(sv==='dark'||(!sv&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
-    document.body.setAttribute('data-theme','dark');
-    document.querySelector('.tbtn').innerHTML='${U.sun}';
-  }
+  // Theme already applied by inline <head> script (prevents FOUC)
+  // Sync button icon with current theme
+  var isDark=document.documentElement.getAttribute('data-theme')==='dark';
+  document.querySelector('.tbtn').innerHTML=isDark?'${U.sun}':'${U.moon}';
   // Keyboard shortcuts
   document.addEventListener('keydown',function(e){
     if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSearch()}
@@ -568,11 +575,11 @@ const feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>AI+具身智能资讯聚合</title>
-  <link>https://shnywang.github.io/ai_news/site/index.html</link>
+  <link>${SITE_BASE}/site/index.html</link>
   <description>多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</description>
   <language>zh-CN</language>
   <lastBuildDate>${rssDate}</lastBuildDate>
-  <atom:link href="https://shnywang.github.io/ai_news/site/feed.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="${SITE_BASE}/site/feed.xml" rel="self" type="application/rss+xml"/>
 ${uniqueArticles.map(a => `  <item>
     <title>${xmlEscape(a.title)}</title>
     <link>${xmlEscape(a.url)}</link>

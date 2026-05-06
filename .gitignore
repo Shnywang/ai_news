@@ -15,4 +15,3 @@ Thumbs.db
 .vscode/
 .idea/
 
-# 保留 site/ 和 data/ 目录，这是网站要发布的内容
