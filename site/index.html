@@ -272,7 +272,7 @@ async function render(){
 function renderHot(d){
   var h='<div class="sec">🔥 今日热点 ('+(d.hot_topics||[]).length+'条)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · '+catLabel(t.category)+' · '+starsHTML(t.rating)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(''+esc(t.title)+'',''+esc(t.url)+'')" title="收藏">🔖</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
+    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · '+catLabel(t.category)+' · '+starsHTML(t.rating)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">🔖</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -404,7 +404,7 @@ function filterAll(q){
   var h='';
   if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">未找到匹配资讯</div>'}
   else{arts.forEach(function(a){
-    h+='<div class="ncard" tabindex="0"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' · '+a.publish_time+' · '+starsHTML(a.rating)+'</div></div><div class="right"><span class="cat">'+catLabel(a.category)+'</span><div class="share-bar" style="margin-top:.2rem"><button class="share-btn" onclick="saveArticle(''+esc(a.title)+'',''+esc(a.url)+'')" title="收藏">🔖</button></div></div></div>';
+    h+='<div class="ncard" tabindex="0"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' · '+a.publish_time+' · '+starsHTML(a.rating)+'</div></div><div class="right"><span class="cat">'+catLabel(a.category)+'</span><div class="share-bar" style="margin-top:.2rem" data-url="'+esc(a.url)+'" data-title="'+esc(a.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">🔖</button></div></div></div>';
   })}
   document.getElementById('allList').innerHTML=h;
 }
