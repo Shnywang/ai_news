@@ -305,15 +305,6 @@ function starsHTML(r){var tip='';if(r<=1)tip='低质';else if(r===2)tip='一般'
 
 /* Category mapping: Chinese -> English IDs per README */
 var catMap={'大模型':'algorithm_breakthrough','算法突破':'algorithm_breakthrough','模型发布':'algorithm_breakthrough','AI模型':'algorithm_breakthrough','学术论文':'academic','论文':'academic','学术':'academic','市场动态':'market_data','融资':'market_data','财报':'market_data','市场数据':'market_data','具身智能':'hardware','人形机器人':'hardware','机器人':'hardware','硬件':'hardware','政策信号':'policy_signal','政策':'policy_signal','监管':'policy_signal','重要企业动态':'industry_dynamics','企业动态':'industry_dynamics','合作':'industry_dynamics','产品发布':'industry_dynamics','行业分析':'industry_dynamics','AI Agent':'industry_dynamics','AI应用':'industry_dynamics','行业展会':'industry_dynamics','开源动态':'open_source','开源':'open_source','开源项目':'open_source','创业公司':'industry_dynamics','其他':'other'};
-  '大模型':'algorithm_breakthrough','算法突破':'algorithm_breakthrough','模型发布':'algorithm_breakthrough',
-  '市场动态':'market_data','融资':'market_data','财报':'market_data',
-  '具身智能':'hardware','机器人':'hardware','硬件':'hardware',
-  '政策信号':'policy_signal','政策':'policy_signal','监管':'policy_signal',
-  '企业动态':'industry_dynamics','合作':'industry_dynamics','产品发布':'industry_dynamics',
-  '开源动态':'open_source','开源':'open_source',
-  '学术前沿':'academic','论文':'academic','学术':'academic',
-  '其他':'other'
-}
 function sourceRank(src){
   var high=['MIT Tech Review','Fortune','36氪','人民网','CGTN','China Daily','第一财经','界面新闻','经济观察网'];
   var mid=['TechXplore','机器之心','赛塔网','多课网','投中网','BraveNewCoin','MIT Technology Review'];
@@ -431,7 +422,7 @@ async function render(){
 function renderHot(d){
   var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条 · '+(d.raw_articles||[]).length+'篇原始资讯)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' ${U.dot} '<span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
+    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · <span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -691,7 +682,7 @@ function renderSaved(){
   var s=getSaved();
   var h='';
   if(!s.length){h='<div class="saved-empty">暂无收藏，点击资讯旁的 ${U.save} 按钮收藏</div>'}
-  else{s.forEach(function(a){h+='<div class="saved-item"><a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a><span class="rm" onclick="removeSaved(\''+esc(a.url)+'\')" title="移除">&times;</span></div>'})}
+  else{s.forEach(function(a){h+='<div class="saved-item"><a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a><span class="rm" onclick="removeSaved(this.dataset.url)" data-url="'+esc(a.url)+'" title="移除">&times;</span></div>'})}
   document.getElementById('savedList').innerHTML=h;
 }
 function updateSavedBadge(){
