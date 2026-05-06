@@ -56,18 +56,33 @@ const U = {
   arrow: '\u2014',
   dot: '\u00b7',
   copyR: '\u00a9',
+  save: '\u{1F516}',
+  mail: '\u{1F4E7}',
+  up: '\u{2B06}\uFE0F',
+  down: '\u{2B07}\uFE0F',
 };
+
+// Generate dynamic SEO description from latest day's hot topics
+let seoDesc = 'AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理';
+if (latestDay && allData[latestDay] && allData[latestDay].hot_topics && allData[latestDay].hot_topics.length > 0) {
+  const top3 = allData[latestDay].hot_topics.slice(0, 3).map(t => t.title).join('；');
+  seoDesc = `【${latestDay}】${top3}。每日AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号。`;
+}
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理">
-<meta property="og:title" content="AI+具身智能资讯聚合">
-<meta property="og:description" content="多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理">
+<meta name="description" content="${seoDesc}">
+<meta property="og:title" content="AI+具身智能资讯聚合 — ${latestDay}">
+<meta property="og:description" content="${seoDesc}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shnywang.github.io/ai_news/site/index.html">
+<meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/rss+xml" href="feed.xml" title="AI+具身智能资讯聚合 RSS">
-<title>AI+具身智能资讯聚合</title>
+<link rel="canonical" href="https://shnywang.github.io/ai_news/site/index.html">
+<title>AI+具身智能资讯聚合 — ${latestDay}</title>
 <style>
 :root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
 [data-theme=dark]{--bg:#0f0f23;--card:#1a1a2e;--text:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--accent:#818cf8;--accent2:#a5b4fc;--border:#334155;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow2:0 8px 24px rgba(0,0,0,.4);--star0:#475569;--ftbg:#0a0a1a}
@@ -163,6 +178,28 @@ a{color:inherit}
 .loading{text-align:center;padding:3rem;color:var(--t2);font-size:.9rem}
 .loading::after{content:'...';animation:dots 1.5s infinite}
 @keyframes dots{0%,20%{content:'.'}40%,60%{content:'..'}80%,100%{content:'...'}}
+/* Rating hover tooltip */
+.rating-tip{position:relative;cursor:help;border-bottom:1px dotted var(--t3)}
+.rating-tip:hover::after{content:attr(data-tip);position:absolute;bottom:120%;left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:.2rem .6rem;border-radius:6px;font-size:.72rem;white-space:nowrap;z-index:10;pointer-events:none}
+/* Saved articles panel */
+.saved-panel{position:fixed;right:0;top:0;bottom:0;width:320px;background:var(--card);box-shadow:var(--shadow2);z-index:500;transform:translateX(100%);transition:transform .3s;overflow-y:auto;padding:1rem}
+.saved-panel.open{transform:translateX(0)}
+.saved-panel h3{font-size:1rem;margin-bottom:.8rem;padding-bottom:.5rem;border-bottom:2px solid var(--accent)}
+.saved-toggle{position:fixed;right:1rem;bottom:6rem;z-index:501;background:var(--accent);color:#fff;border:none;border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:1.2rem;box-shadow:var(--shadow2);display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.saved-toggle:hover{transform:scale(1.1)}
+.saved-toggle .badge{position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;border-radius:50%;width:18px;height:18px;font-size:.65rem;display:flex;align-items:center;justify-content:center;display:none}
+.saved-item{padding:.6rem;border-bottom:1px solid var(--border);font-size:.82rem}
+.saved-item a{color:var(--text);text-decoration:none}.saved-item a:hover{color:var(--accent)}
+.saved-item .rm{float:right;color:var(--t3);cursor:pointer;font-size:1rem;line-height:1}
+.saved-item .rm:hover{color:var(--red)}
+.saved-empty{text-align:center;color:var(--t3);padding:2rem;font-size:.85rem}
+.card-focus{box-shadow:0 0 0 2px var(--accent),0 8px 24px rgba(0,0,0,.15)!important}
+.subscribe-box{display:flex;gap:.3rem;align-items:center;justify-content:center;margin-top:.5rem;flex-wrap:wrap}
+.subscribe-box input{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.8rem;min-width:180px}
+.subscribe-box button{padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:.8rem;font-weight:600}
+.subscribe-box button:hover{background:var(--accent2)}
+.rating-legend{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:.3rem;font-size:.7rem;opacity:.8}
+.rating-legend span{display:inline-flex;align-items:center;gap:.2rem}
 @media(max-width:768px){
 .hd h1{font-size:1.4rem}.ct{padding:.8rem}
 .htcard{flex-direction:column;gap:.5rem}
@@ -181,6 +218,7 @@ a{color:inherit}
 <button class="tbtn" onclick="toggleTheme()" title="切换主题">${U.moon}</button>
 <h1>${U.robot} AI+具身智能资讯聚合</h1>
 <p class="sub">多角色视角 ${U.dot} 每日更新 ${U.dot} 创业 / 产品 / 算法 / 项目管理</p>
+<div class="rating-legend"><span title="评分标准">⭐评分：</span><span>1=${U.starEmpty} 低 ${U.dot}</span><span>2=一般 ${U.dot}</span><span>3=中等 ${U.dot}</span><span>4=高质 ${U.dot}</span><span>5=${U.star}${U.star} 顶尖</span></div>
 <p class="ut" id="ut"></p>
 </header>
 <div class="ct">
@@ -206,7 +244,17 @@ a{color:inherit}
 </div>
 <!-- Toast -->
 <div class="toast" id="toast"></div>
-<footer class="ftr">由 WorkBuddy 自动生成 ${U.dot} 数据每日更新 ${U.dot} 仅保留近一周数据 ${U.dot} <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> ${U.dot} 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> ${U.dot} ${U.copyR} 2026</footer>
+<!-- Saved Articles Panel -->
+<div class="saved-panel" id="savedPanel">
+<h3>${U.save} 稍后阅读</h3>
+<div id="savedList"><div class="saved-empty">暂无收藏，点击资讯旁的 ${U.save} 按钮收藏</div></div>
+</div>
+<button class="saved-toggle" onclick="toggleSaved()" title="稍后阅读">
+${U.save}<span class="badge" id="savedBadge">0</span>
+</button>
+<footer class="ftr">由 WorkBuddy 自动生成 ${U.dot} 数据每日更新 ${U.dot} 仅保留近一周数据 ${U.dot} <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> ${U.dot} 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> ${U.dot} <a href="https://github.com/Shnywang/ai_news/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a>
+<div class="subscribe-box"><input id="subEmail" type="email" placeholder="输入邮箱订阅每日资讯"><button onclick="subscribe()">${U.mail} 订阅</button></div>
+${U.dot} ${U.copyR} 2026</footer>
 <script>
 var days=${safeDays};
 var curDay=days[0]||'';
@@ -218,6 +266,21 @@ function esc(t){var d=document.createElement('div');d.textContent=t;return d.inn
 function link(url,title){return '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(title)+'</a>'}
 function stars(r){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<r?'var(--star)':'var(--star0)')+'">'+(i<r?'${U.star}':'${U.starEmpty}')+'</span>';return s}
 function starsStr(r){var s='';for(var i=0;i<5;i++)s+=(i<r?'${U.star}':'${U.starEmpty}');return s}
+function starsHTML(r){var tip='';if(r<=1)tip='低质';else if(r===2)tip='一般';else if(r===3)tip='中等';else if(r===4)tip='高质';else tip='顶尖';return '<span class="rating-tip" data-tip="评分'+r+'/5: '+tip+'">'+starsStr(r)+'</span>'}
+
+/* Category mapping: Chinese -> English IDs per README */
+var catMap={
+  '大模型':'algorithm_breakthrough','算法突破':'algorithm_breakthrough','模型发布':'algorithm_breakthrough',
+  '市场动态':'market_data','融资':'market_data','财报':'market_data',
+  '具身智能':'hardware','机器人':'hardware','硬件':'hardware',
+  '政策信号':'policy_signal','政策':'policy_signal','监管':'policy_signal',
+  '企业动态':'industry_dynamics','合作':'industry_dynamics','产品发布':'industry_dynamics',
+  '开源动态':'open_source','开源':'open_source',
+  '学术前沿':'academic','论文':'academic','学术':'academic',
+  '其他':'other'
+};
+var catName={policy_signal:'政策信号',algorithm_breakthrough:'算法突破',industry_dynamics:'企业动态',market_data:'市场数据',open_source:'开源动态',hardware:'硬件与机器人',academic:'学术前沿',other:'其他'};
+function catLabel(c){return catName[catMap[c]]||c}
 
 /* --- Data loading (on-demand from /data/JSON files) --- */
 async function loadData(day){
@@ -280,7 +343,7 @@ async function render(){
 function renderHot(d){
   var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' ${U.dot} '+esc(t.category)+' ${U.dot} <span class="stars">'+starsStr(t.rating)+'</span></span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">${U.search} 复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
+    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' ${U.dot} '+catLabel(t.category)+' ${U.dot} '+starsHTML(t.rating)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(\''+esc(t.title)+'\',\''+esc(t.url)+'\')" title="收藏">${U.save}</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -412,7 +475,7 @@ function filterAll(q){
   var h='';
   if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">未找到匹配资讯</div>'}
   else{arts.forEach(function(a){
-    h+='<div class="ncard"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' ${U.dot} '+a.publish_time+' ${U.dot} '+starsStr(a.rating)+'</div></div><div class="right"><span class="cat">'+esc(a.category)+'</span></div></div>';
+    h+='<div class="ncard" tabindex="0"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' ${U.dot} '+a.publish_time+' ${U.dot} '+starsHTML(a.rating)+'</div></div><div class="right"><span class="cat">'+catLabel(a.category)+'</span><div class="share-bar" style="margin-top:.2rem"><button class="share-btn" onclick="saveArticle(\''+esc(a.title)+'\',\''+esc(a.url)+'\')" title="收藏">${U.save}</button></div></div></div>';
   })}
   document.getElementById('allList').innerHTML=h;
 }
@@ -514,6 +577,72 @@ function toggleTheme(){
   localStorage.setItem('ai-news-theme',dk?'light':'dark');
 }
 
+/* --- Saved Articles (localStorage) --- */
+function getSaved(){try{return JSON.parse(localStorage.getItem('ai-news-saved')||'[]')}catch(e){return[]}}
+function saveArticle(title,url){
+  var s=getSaved();
+  if(s.some(function(a){return a.url===url})){showToast('已收藏');return}
+  s.unshift({title:title,url:url,time:new Date().toISOString()});
+  if(s.length>100)s=s.slice(0,100);
+  localStorage.setItem('ai-news-saved',JSON.stringify(s));
+  showToast('${U.save} 已收藏');
+  updateSavedBadge();
+}
+function removeSaved(url){
+  var s=getSaved().filter(function(a){return a.url!==url});
+  localStorage.setItem('ai-news-saved',JSON.stringify(s));
+  renderSaved();
+  updateSavedBadge();
+}
+function toggleSaved(){
+  var p=document.getElementById('savedPanel');
+  p.classList.toggle('open');
+  if(p.classList.contains('open'))renderSaved();
+}
+function renderSaved(){
+  var s=getSaved();
+  var h='';
+  if(!s.length){h='<div class="saved-empty">暂无收藏，点击资讯旁的 ${U.save} 按钮收藏</div>'}
+  else{s.forEach(function(a){h+='<div class="saved-item"><a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a><span class="rm" onclick="removeSaved(\''+esc(a.url)+'\')" title="移除">&times;</span></div>'})}
+  document.getElementById('savedList').innerHTML=h;
+}
+function updateSavedBadge(){
+  var b=document.getElementById('savedBadge');
+  var n=getSaved().length;
+  b.textContent=n;
+  b.style.display=n>0?'flex':'none';
+}
+
+/* --- Email Subscribe --- */
+function subscribe(){
+  var e=document.getElementById('subEmail').value.trim();
+  if(!e||!/^\S+@\S+\.\S+$/.test(e)){showToast('请输入有效邮箱');return}
+  showToast('订阅功能开发中，请通过RSS或GitHub Watch获取更新通知');
+}
+
+/* --- Keyboard Navigation --- */
+var curCardIdx=-1;
+function getCards(){
+  var ct=document.getElementById('content');
+  return ct?ct.querySelectorAll('.htcard,.ncard,.bcard'):[];
+}
+function focusCard(idx){
+  var cards=getCards();
+  if(!cards.length){curCardIdx=-1;return}
+  if(idx<0)idx=cards.length-1;
+  if(idx>=cards.length)idx=0;
+  curCardIdx=idx;
+  cards.forEach(function(c){c.classList.remove('card-focus')});
+  if(cards[idx]){cards[idx].classList.add('card-focus');cards[idx].scrollIntoView({behavior:'smooth',block:'nearest'})}
+}
+function openFocusedCard(){
+  if(curCardIdx<0)return;
+  var cards=getCards();
+  if(!cards[curCardIdx])return;
+  var a=cards[curCardIdx].querySelector('h3 a, h4 a');
+  if(a){window.open(a.href,'_blank')}
+}
+
 document.addEventListener('DOMContentLoaded',function(){
   // Theme: localStorage > system preference > default light
   var sv=localStorage.getItem('ai-news-theme');
@@ -521,10 +650,20 @@ document.addEventListener('DOMContentLoaded',function(){
     document.body.setAttribute('data-theme','dark');
     document.querySelector('.tbtn').innerHTML='${U.sun}';
   }
+  // Saved badge init
+  updateSavedBadge();
   // Keyboard shortcuts
   document.addEventListener('keydown',function(e){
     if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSearch()}
-    if(e.key==='Escape')closeSearch();
+    if(e.key==='Escape'){closeSearch();document.getElementById('savedPanel').classList.remove('open')}
+    // Arrow key nav for cards
+    if(e.key==='ArrowDown'){e.preventDefault();focusCard(curCardIdx+1)}
+    if(e.key==='ArrowUp'){e.preventDefault();focusCard(curCardIdx-1)}
+    if(e.key==='Enter'&&curCardIdx>=0){e.preventDefault();openFocusedCard()}
+    // Tab switching with number keys (1-8)
+    if(e.ctrlKey||e.metaKey)return;
+    var tabs=document.querySelectorAll('.tab');var nums={'1':0,'2':1,'3':2,'4':3,'5':4,'6':5,'7':6,'8':7};
+    if(nums[e.key]!==undefined&&tabs[nums[e.key]]){e.preventDefault();tabs[nums[e.key]].click()}
   });
   initDays();initTabs();render();
 });
@@ -586,3 +725,30 @@ ${uniqueArticles.map(a => `  <item>
 
 fs.writeFileSync(path.join(__dirname, 'site/feed.xml'), feed, 'utf8');
 console.log('Build OK! Days: ' + days.join(', ') + ' | Files in site/data/: ' + files.length + ' | RSS items: ' + uniqueArticles.length);
+
+// ========== Sitemap ==========
+const siteBase = 'https://shnywang.github.io/ai_news/site/';
+const today = new Date().toISOString().split('T')[0];
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${siteBase}index.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${siteBase}feed.xml</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+${days.map(d => `  <url>
+    <loc>${siteBase}data/${d}.json</loc>
+    <lastmod>${d}</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>`).join('\n')}
+</urlset>`;
+fs.writeFileSync(path.join(__dirname, 'site/sitemap.xml'), sitemap, 'utf8');
+console.log('Sitemap generated with ' + (days.length + 2) + ' URLs');
