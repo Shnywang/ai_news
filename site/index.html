@@ -645,15 +645,15 @@ function handleSubscribe(e){
   var fd=new FormData();
   fd.append('_template','table');
   fd.append('_subject','📧 【AI资讯】新订阅者申请');
-  var ar='<h2 style='color:#1a3a5c'>🚀 欢迎订阅AI资讯！</h2>';
+  var ar='<h2 style="color:#1a3a5c">🚀 欢迎订阅AI资讯！</h2>';
   ar+='<p>你已成功订阅AI资讯每日推送。</p>';
   ar+='<p><strong>你将收到：</strong></p><ul>';
   ar+='<li>每天早上9:00的AI行业最新资讯</li>';
   ar+='<li>包括算法突破、产品动态、市场数据、政策信号等多个维度</li>';
   ar+='<li>每条资讯都由专业评判和分类标注</li>';
   ar+='</ul><p>请将 779284414@qq.com 添加到白名单，以便顺畅收到推送。</p>';
-  ar+='<p>👉 <a href='https://shnywang.github.io/ai_news/site/index.html'>点击浏览当日资讯</a></p>';
-  ar+='<p style='color:#ccc;font-size:11px;margin-top:16px'>如不想再收到推送，请<a href='mailto:779284414@qq.com?subject=取消订阅资讯推送' style='color:#999'>点击此处取消订阅</a></p>';
+  ar+='<p>👉 <a href="https://shnywang.github.io/ai_news/site/index.html">点击浏览当日资讯</a></p>';
+  ar+='<p style="color:#ccc;font-size:11px;margin-top:16px">如不想再收到推送，请<a href="mailto:779284414@qq.com?subject=取消订阅资讯推送" style="color:#999">点击此处取消订阅</a></p>';
   fd.append('_autoresponse',ar);
   fd.append('👤 订阅邮箱',email);
   fd.append('📅 订阅日期',curDay);
