@@ -16,6 +16,29 @@ const days = Object.keys(allData).sort().reverse();
 const latestDay = days[0] || '';
 
 // Copy data JSON files to site/data/ so they're served by GitHub Pages
+// ========== Category Mapping ==========
+const CATEGORY_MAP = {
+  'policy_signal':          { label: '政策信号',    cls: 'tag-g' },
+  'algorithm_breakthrough': { label: '算法突破',    cls: 'tag-b' },
+  'industry_dynamics':      { label: '企业动态',    cls: 'tag-p' },
+  'market_data':            { label: '市场数据',    cls: 'tag-y' },
+  'open_source':            { label: '开源动态',    cls: 'tag-g' },
+  'hardware':               { label: '硬件与机器人',cls: 'tag-r' },
+  'academic':               { label: '学术前沿',    cls: 'tag-b' },
+  'other':                  { label: '其他',        cls: 'tag-y' },
+  '大模型':     { label: '算法突破',    cls: 'tag-b', legacy: true },
+  '人形机器人': { label: '硬件与机器人',cls: 'tag-r', legacy: true },
+  'AI Agent':   { label: '企业动态',    cls: 'tag-p', legacy: true },
+  '市场动态':   { label: '市场数据',    cls: 'tag-y', legacy: true },
+  '学术论文':   { label: '学术前沿',    cls: 'tag-b', legacy: true },
+  '政策':       { label: '政策信号',    cls: 'tag-g', legacy: true },
+  '具身智能':   { label: '硬件与机器人',cls: 'tag-r', legacy: true },
+};
+const RATING_LABELS = ['', '略过', '筹览', '参考', '推荐', '必读'];
+
+function catLabel(cat) { return (CATEGORY_MAP[cat] || { label: cat || '其他' }).label; }
+function catClass(cat) { return (CATEGORY_MAP[cat] || { cls: 'tag-y' }).cls; }
+
 const siteDataDir = path.join(__dirname, 'site', 'data');
 if (!fs.existsSync(siteDataDir)) fs.mkdirSync(siteDataDir, { recursive: true });
 for (const f of files) {
@@ -26,6 +49,21 @@ for (const f of files) {
 }
 
 const safeDays = JSON.stringify(days);
+var _pageDesc = buildMetaDesc(allData[latestDay]);
+var _pageTitle = buildPageTitle(allData[latestDay]);
+var _safeDesc = _pageDesc.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\n/g, ' ');
+var _safeTitle = _pageTitle.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+
+function buildPageTitle(data) {
+  var d = data && data.update_time ? data.update_time.slice(0, 10) : latestDay;
+  return 'AI+\u5177\u8eab\u667a\u80fd\u8d44\u8baf ' + d + ' \u2014 \u591a\u89d2\u8272\u89c6\u89d2';
+}
+function buildMetaDesc(data) {
+  var tops = (data && data.hot_topics) || [];
+  if (!tops.length) return 'AI+\u5177\u8eab\u667a\u80fd\u8d44\u8baf\u805a\u5408 \u2014 \u591a\u89d2\u8272\u89c6\u89d2 \u00b7 \u6bcf\u65e5\u66f4\u65b0 \u00b7 \u521b\u4e1a / \u4ea7\u54c1 / \u7b97\u6cd5 / \u9879\u76ee\u7ba1\u7406';
+  var snippets = tops.slice(0, 3).map(function(t) { return t.title.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '').slice(0, 40); });
+  return snippets.join('\uff1b') + '\u2026\u2026\u6bcf\u65e5\u66f4\u65b0\uff0c\u638c\u63e1AI+\u5177\u8eab\u667a\u80fd\u524d\u6cbf\u52a8\u6001\u3002';
+}
 
 // Use helper for unicode characters that might have issues in template literals
 const U = {
@@ -56,55 +94,39 @@ const U = {
   arrow: '\u2014',
   dot: '\u00b7',
   copyR: '\u00a9',
-  save: '\u{1F516}',
-  mail: '\u{1F4E7}',
-  up: '\u{2B06}\uFE0F',
-  down: '\u{2B07}\uFE0F',
+  starEmpty: '\u2606',
+  envelope: '\u2709',
+  eyes: '\u{1F440}',
+  globe: '\u{1F310}',
+  focus: '\u{1F4CC}',
+  tools: '\u{1F6E0}\uFE0F',
+  world: '\u{1F310}',
+  wrench: '\u{1F527}',
+  moon: '\u{1F319}',
+  sun: '\u2600\uFE0F',
 };
-
-// Generate dynamic SEO description from latest day's hot topics
-let seoDesc = 'AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理';
-if (latestDay && allData[latestDay] && allData[latestDay].hot_topics && allData[latestDay].hot_topics.length > 0) {
-  const top3 = allData[latestDay].hot_topics.slice(0, 3).map(t => t.title).join('；');
-  seoDesc = `【${latestDay}】${top3}。每日AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号。`;
-}
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "AI+具身智能资讯聚合",
-  "url": "https://shnywang.github.io/ai_news/site/",
-  "description": "AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://shnywang.github.io/ai_news/site/index.html?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="${seoDesc}">
-<meta property="og:title" content="AI+具身智能资讯聚合 — ${latestDay}">
-<meta property="og:description" content="${seoDesc}">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://shnywang.github.io/ai_news/site/index.html">
-<meta name="twitter:card" content="summary">
+<meta name="description" content="${_safeDesc}">
+<meta property="og:title" content="${_safeTitle}">
+<meta property="og:description" content="${_safeDesc}">
 <link rel="alternate" type="application/rss+xml" href="feed.xml" title="AI+具身智能资讯聚合 RSS">
-<link rel="canonical" href="https://shnywang.github.io/ai_news/site/index.html">
-<title>AI+具身智能资讯聚合 — ${latestDay}</title>
+<title>${_safeTitle}</title>
 <style>
 :root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
 [data-theme=dark]{--bg:#0f0f23;--card:#1a1a2e;--text:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--accent:#818cf8;--accent2:#a5b4fc;--border:#334155;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow2:0 8px 24px rgba(0,0,0,.4);--star0:#475569;--ftbg:#0a0a1a}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 .hd{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;padding:2rem 1.5rem;text-align:center;position:relative}
-.hd h1{font-size:1.8rem;font-weight:800}.hd .sub{font-size:.9rem;opacity:.85;margin-top:.4rem}
+.tbtn,.search-toggle{position:absolute;top:1rem;background:rgba(255,255,255,.2);border:none;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center}
+.search-toggle{left:1rem}.tbtn{right:1rem}
+.hd h1{font-size:1.8rem;font-weight:800}.hd .kbd-hint{position:absolute;bottom:.6rem;right:1rem;font-size:.72rem;opacity:.6;display:flex;gap:.3rem;align-items:center}
+.hd .kbd{display:inline-block;background:rgba(255,255,255,.25);border-radius:4px;padding:.1rem .4rem;font-size:.7rem;font-family:monospace}
+.hd .sub{font-size:.9rem;opacity:.85;margin-top:.4rem}
 .hd .ut{font-size:.8rem;opacity:.7;margin-top:.2rem}
 .tbtn{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.2);border:none;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center}
 .ct{max-width:1200px;margin:0 auto;padding:1rem}
@@ -167,6 +189,8 @@ a{color:inherit}
 .ncard .left{flex:1}.ncard .left h4{font-size:.88rem;font-weight:600}
 .ncard .left h4 a{color:var(--text);text-decoration:none;transition:color .2s}.ncard .left h4 a:hover{color:var(--accent)}
 .ncard .left .nm{font-size:.75rem;color:var(--t3);margin-top:.2rem}
+.ncard:hover{box-shadow:var(--shadow2)}
+.ncard:focus-within{outline:2px solid var(--accent);outline-offset:2px}
 .ncard .right{text-align:right;flex-shrink:0}
 .ncard .cat{font-size:.72rem;padding:.15rem .5rem;border-radius:8px;background:var(--accent);color:#fff;display:inline-block}
 /* Global search bar (in header) */
@@ -193,42 +217,6 @@ a{color:inherit}
 .loading{text-align:center;padding:3rem;color:var(--t2);font-size:.9rem}
 .loading::after{content:'...';animation:dots 1.5s infinite}
 @keyframes dots{0%,20%{content:'.'}40%,60%{content:'..'}80%,100%{content:'...'}}
-/* Rating hover tooltip */
-.rating-tip{position:relative;cursor:help;border-bottom:1px dotted var(--t3)}
-.rating-tip:hover::after{content:attr(data-tip);position:absolute;bottom:120%;left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:.2rem .6rem;border-radius:6px;font-size:.72rem;white-space:nowrap;z-index:10;pointer-events:none}
-/* Saved articles panel */
-.saved-panel{position:fixed;right:0;top:0;bottom:0;width:320px;background:var(--card);box-shadow:var(--shadow2);z-index:500;transform:translateX(100%);transition:transform .3s;overflow-y:auto;padding:1rem}
-.saved-panel.open{transform:translateX(0)}
-.saved-panel h3{font-size:1rem;margin-bottom:.8rem;padding-bottom:.5rem;border-bottom:2px solid var(--accent)}
-.saved-toggle{position:fixed;right:1rem;bottom:6rem;z-index:501;background:var(--accent);color:#fff;border:none;border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:1.2rem;box-shadow:var(--shadow2);display:flex;align-items:center;justify-content:center;transition:transform .2s}
-.saved-toggle:hover{transform:scale(1.1)}
-.saved-toggle .badge{position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;border-radius:50%;width:18px;height:18px;font-size:.65rem;display:flex;align-items:center;justify-content:center;display:none}
-.saved-item{padding:.6rem;border-bottom:1px solid var(--border);font-size:.82rem}
-.saved-item a{color:var(--text);text-decoration:none}.saved-item a:hover{color:var(--accent)}
-.saved-item .rm{float:right;color:var(--t3);cursor:pointer;font-size:1rem;line-height:1}
-.saved-item .rm:hover{color:var(--red)}
-.saved-empty{text-align:center;color:var(--t3);padding:2rem;font-size:.85rem}
-.card-focus{box-shadow:0 0 0 2px var(--accent),0 8px 24px rgba(0,0,0,.15)!important}
-.subscribe-box{display:flex;gap:.3rem;align-items:center;justify-content:center;margin-top:.5rem;flex-wrap:wrap}
-.subscribe-box input{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.8rem;min-width:180px}
-.subscribe-box button{padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:.8rem;font-weight:600}
-.subscribe-box button:hover{background:var(--accent2)}
-.rating-legend{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:.3rem;font-size:.7rem;opacity:.8}
-.rating-legend span{display:inline-flex;align-items:center;gap:.2rem}
-/* 7-day trend bar chart */
-.trend-strip{text-align:center}
-.trend-bar-wrap{display:inline-flex;align-items:flex-end;gap:3px;height:28px}
-.trend-bar{width:12px;border-radius:3px 3px 0 0;transition:height .3s}
-.trend-bar-label{font-size:.65rem;margin-top:2px;color:rgba(255,255,255,.6)}
-/* Category badge color coding */
-.cat-policy{background:#3b82f6;color:#fff}.cat-algo{background:#8b5cf6;color:#fff}
-.cat-market{background:#f59e0b;color:#fff}.cat-hardware{background:#10b981;color:#fff}
-.cat-industry{background:#ec4899;color:#fff}.cat-open{background:#06b6d4;color:#fff}
-.cat-academic{background:#6366f1;color:#fff}.cat-other{background:#78716c;color:#fff}
-/* Rating legend panel */
-.rating-panel{background:rgba(255,255,255,.12);border-radius:10px;padding:.5rem 1rem;margin:.4rem auto 0;max-width:700px}
-/* Keyboard nav badge */
-.kbd-hint{font-size:.68rem;opacity:.7;margin-top:.2rem}
 @media(max-width:768px){
 .hd h1{font-size:1.4rem}.ct{padding:.8rem}
 .htcard{flex-direction:column;gap:.5rem}
@@ -239,6 +227,20 @@ a{color:inherit}
 .search-toggle{top:.7rem;left:.7rem}.tbtn{top:.7rem;right:.7rem}
 .search-box{max-width:95%;max-height:70vh}
 }
+.kb-focus{outline:3px solid var(--accent);outline-offset:2px;box-shadow:var(--shadow2)}
+.subscribe-bar{display:flex;gap:.5rem;margin-top:.6rem;align-items:center;flex-wrap:wrap}
+.subscribe-bar input{flex:1;min-width:180px;padding:.4rem .8rem;border:1.5px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);font-size:.82rem;outline:none;transition:border-color .2s}
+.subscribe-bar input:focus{border-color:var(--accent)}
+.subscribe-bar input::placeholder{color:var(--t3)}
+.subscribe-bar button{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:.4rem 1rem;cursor:pointer;font-size:.82rem;font-weight:600;transition:opacity .2s;white-space:nowrap}
+.subscribe-bar button:hover{opacity:.85}
+.subscribe-msg{font-size:.78rem;margin-top:.3rem;color:var(--t3)}
+.save-btn{background:none;border:1.5px solid var(--border);border-radius:8px;padding:.15rem .5rem;cursor:pointer;font-size:.75rem;color:var(--t3);transition:all .2s}
+.save-btn:hover{border-color:var(--star);color:var(--star)}
+.save-btn.saved{border-color:var(--star);color:var(--star)}
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.2rem;border-radius:10px;font-size:.85rem;font-weight:500;opacity:0;transition:opacity .3s;z-index:2000;pointer-events:none}
+.toast.show{opacity:1}
+@media(max-width:768px){.ftr-subscribe{max-width:95%}.subscribe-bar{flex-direction:column}.subscribe-bar input{width:100%}}
 </style>
 </head>
 <body>
@@ -247,12 +249,7 @@ a{color:inherit}
 <button class="tbtn" onclick="toggleTheme()" title="切换主题">${U.moon}</button>
 <h1>${U.robot} AI+具身智能资讯聚合</h1>
 <p class="sub">多角色视角 ${U.dot} 每日更新 ${U.dot} 创业 / 产品 / 算法 / 项目管理</p>
-<div class="rating-legend"><span title="评分标准">⭐评分标准：</span><span>1=${U.starEmpty} 低质·来源不明/信息量低</span><span>2=一般·通稿/增量有限</span><span>3=中等·行业参考</span><span>4=高质·独家/深度</span><span>5=${U.star}${U.star} 顶尖·里程碑</span></div><div class="kbd-hint">⌨️ 快捷键: ↑↓ 浏览 | Enter 打开 | Ctrl+K 搜索 | 1-8 切换标签</div>
 <p class="ut" id="ut"></p>
-<div class="trend-strip" id="trendStrip" style="margin:.5rem auto 0;max-width:700px;background:rgba(255,255,255,.1);border-radius:10px;padding:.5rem 1rem;font-size:.8rem;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap">
-<span id="yesterdayDelta" style="color:#fef08a"></span>
-<span id="trendBars"></span>
-</div>
 </header>
 <div class="ct">
 <div class="days" id="dayPicker"></div>
@@ -277,44 +274,60 @@ a{color:inherit}
 </div>
 <!-- Toast -->
 <div class="toast" id="toast"></div>
-<!-- Saved Articles Panel -->
-<div class="saved-panel" id="savedPanel">
-<h3>${U.save} 稍后阅读</h3>
-<div id="savedList"><div class="saved-empty">暂无收藏，点击资讯旁的 ${U.save} 按钮收藏</div></div>
+<div class="toast" id="toast"></div>
+<footer class="ftr">
+<div class="ftr-subscribe">
+<div style="font-weight:600;margin-bottom:.3rem">✉ 邮件订阅</div>
+<form class="subscribe-bar" onsubmit="return handleSubscribe(event)">
+<input type="email" id="subEmail" placeholder="your@email.com" required aria-label="邮箱地址">
+<button type="submit">订阅</button>
+</form>
+<div class="subscribe-msg" id="subMsg"></div>
 </div>
-<button class="saved-toggle" onclick="toggleSaved()" title="稍后阅读">
-${U.save}<span class="badge" id="savedBadge">0</span>
-</button>
-<footer class="ftr">由 WorkBuddy 自动生成 ${U.dot} 数据每日更新 ${U.dot} 仅保留近一周数据 ${U.dot} <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> ${U.dot} 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> ${U.dot} <a href="https://github.com/Shnywang/ai_news/discussions" target="_blank" rel="noopener noreferrer">社区讨论/Giscus</a> ${U.dot} <a href="https://github.com/Shnywang/ai_news/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a>
-<div class="subscribe-box"><form id="subForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:flex;gap:.3rem;align-items:center;justify-content:center;margin-top:.5rem;flex-wrap:wrap"><input type="email" name="email" placeholder="输入邮箱订阅每日资讯" required style="padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.8rem;min-width:180px"><button type="submit" style="padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:.8rem;font-weight:600">${U.mail} 订阅</button></form></div>
-${U.dot} ${U.copyR} 2026</footer>
+<div class="ftr-links">
+<a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a>
+<span>·</span>
+<a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">问题反馈</a>
+<span>·</span>
+<a href="https://github.com/Shnywang/ai_news" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+<p style="margin-top:.6rem;opacity:.6">由 WorkBuddy 自动生成 · 数据每日更新 · 仅保留近一周数据 · © 2026</p>
+</footer>
 <script>
 var days=${safeDays};
-// Article counts per day (computed at build time from loaded data)
-var dayCounts={};
 var curDay=days[0]||'';
 var curTab='hot';
 var cache={};       // day -> data object
 var loaded=new Set(); // days that have been fetched
 
 function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function showToast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show')},1500);}
+// 邮箱订阅 — Formsubmit.co (零注册、零配置)
+// 用户订阅后自动发送到 779284414@qq.com
+// 首次使用时会收到确认邮件，点击确认即可激活
+var SUBSCRIBE_API='https://formsubmit.co/ajax/779284414@qq.com';
+// 检查是否已订阅过 (localStorage)
+var _subscribed=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
+function handleSubscribe(e){e.preventDefault();var email=document.getElementById('subEmail').value.trim();var msg=document.getElementById('subMsg');var btn=e.target.querySelector('button');if(!email||!email.includes('@')){msg.textContent='\u26a0 \u8bf7\u8f93\u5165\u6709\u6548\u7684\u90ae\u7bb1\u5730\u5740';msg.style.color='var(--red)';return false;}if(_subscribed&&_subscribed.email===email){msg.textContent='\u2705 \u4f60\u5df2\u8ba2\u9605\u8fc7\u8be5\u90ae\u7bb1\uff0c\u65e0\u9700\u91cd\u590d\u8ba2\u9605';msg.style.color='var(--green)';return false;}btn.disabled=true;btn.textContent='\u8ba2\u9605\u4e2d...';msg.textContent='';var fd=new FormData();fd.append('subject','\u3010AI\u8d44\u8baf\u8ba2\u9605\u3011\u65b0\u8ba2\u9605\u8005 '+email);fd.append('message','\u8ba2\u9605\u90ae\u7bb1: '+email+'\n\u8ba2\u9605\u65e5\u671f: '+curDay+'\n\u9875\u9762: https://shnywang.github.io/ai_news/site/index.html');fd.append('_replyto',email);fd.append('_subject','\u3010AI\u8d44\u8baf\u8ba2\u9605\u3011\u65b0\u8ba2\u9605\u8005 '+email);fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){if(d.message==='success'||d.messages){_subscribed={email:email,date:curDay};localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));msg.innerHTML='\u2705 \u8ba2\u9605\u6210\u529f\uff01\u6211\u4eec\u5c06\u901a\u8fc7 <strong>'+esc(email)+'</strong> \u5411\u4f60\u53d1\u9001\u6bcf\u65e5\u8d44\u8baf<br><span style="font-size:.72rem;color:var(--t3)">\ud83d\udca1 \u540c\u65f6\u63a8\u8350\u4f7f\u7528 <a href="feed.xml" target="_blank" style="color:var(--accent)">RSS \u8ba2\u9605</a> \u83b7\u53d6\u5b9e\u65f6\u66f4\u65b0</span>';msg.style.color='var(--green)';document.getElementById('subEmail').value='';btn.textContent='\u5df2\u8ba2\u9605';showToast('\u2705 \u8ba2\u9605\u6210\u529f\uff01');}else{throw new Error(d.message||'\u670d\u52a1\u5668\u9519\u8bef');}}).catch(function(err){msg.textContent='\u26a0 \u8ba2\u9605\u5931\u8d25: '+err.message+'\uff0c\u8bf7\u7a0d\u540e\u91cd\u8bd5';msg.style.color='var(--red)';console.error('Subscribe failed:',err);}).finally(function(){btn.disabled=false;btn.textContent='\u8ba2\u9605';});return false;}
+// 页面加载时检查订阅状态
+function checkSubscribeStatus(){var sub=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');if(sub){var email=document.getElementById('subEmail');var msg=document.getElementById('subMsg');var btn=document.querySelector('.subscribe-bar button');if(email)email.value='';if(btn){btn.disabled=true;btn.textContent='\u5df2\u8ba2\u9605';}if(msg){msg.innerHTML='\u2705 <strong>'+esc(sub.email)+'</strong> \u5df2\u8ba2\u9605 ('+sub.date+')<br><span style="font-size:.72rem;color:var(--t3)">\ud83d\udca1 \u63a8\u8350\u4f7f\u7528 <a href="feed.xml" target="_blank" style="color:var(--accent)">RSS \u8ba2\u9605</a> \u83b7\u53d6\u5b9e\u65f6\u66f4\u65b0</span>';msg.style.color='var(--green)';}}}
+function getSaved(){try{return JSON.parse(localStorage.getItem('ai-news-saved')||'[]');}catch(e){return [];}}
+function isSaved(url){return getSaved().some(function(a){return a.url===url;});}
+function toggleSave(url,title,btn){var saved=getSaved();var idx=saved.findIndex(function(a){return a.url===url;});if(idx>=0){saved.splice(idx,1);btn.classList.remove('saved');btn.textContent='收藏';showToast('已取消收藏');}else{saved.unshift({url:url,title:title,day:curDay});btn.classList.add('saved');btn.textContent='已收藏';showToast('已收藏 '+title.slice(0,15)+'…');}localStorage.setItem('ai-news-saved',JSON.stringify(saved));}
+function shareUrl(url){navigator.clipboard.writeText(url).then(function(){showToast('✅ 链接已复制');}).catch(function(){showToast('❌ 复制失败');});}
+function shareTitleUrl(title,url){if(navigator.share){navigator.share({title:title||'AI+具身智能资讯聚合',url:url,text:title}).catch(function(){});}else{shareUrl(url);}}
+function toggleTheme(){var dk=document.documentElement.getAttribute('data-theme')==='dark';document.documentElement.setAttribute('data-theme',dk?'light':'dark');document.querySelector('.tbtn').innerHTML=dk?'${U.moon}':'${U.sun}';localStorage.setItem('ai-news-theme',dk?'light':'dark');}
 function link(url,title){return '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(title)+'</a>'}
 function stars(r){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<r?'var(--star)':'var(--star0)')+'">'+(i<r?'${U.star}':'${U.starEmpty}')+'</span>';return s}
-function starsStr(r){var s='';for(var i=0;i<5;i++)s+=(i<r?'${U.star}':'${U.starEmpty}');return s}
-function starsHTML(r){var tip='';if(r<=1)tip='低质';else if(r===2)tip='一般';else if(r===3)tip='中等';else if(r===4)tip='高质';else tip='顶尖';return '<span class="rating-tip" data-tip="评分'+r+'/5: '+tip+'">'+starsStr(r)+'</span>'}
-
-/* Category mapping: Chinese -> English IDs per README */
-var catMap={'大模型':'algorithm_breakthrough','算法突破':'algorithm_breakthrough','模型发布':'algorithm_breakthrough','AI模型':'algorithm_breakthrough','学术论文':'academic','论文':'academic','学术':'academic','市场动态':'market_data','融资':'market_data','财报':'market_data','市场数据':'market_data','具身智能':'hardware','人形机器人':'hardware','机器人':'hardware','硬件':'hardware','政策信号':'policy_signal','政策':'policy_signal','监管':'policy_signal','重要企业动态':'industry_dynamics','企业动态':'industry_dynamics','合作':'industry_dynamics','产品发布':'industry_dynamics','行业分析':'industry_dynamics','AI Agent':'industry_dynamics','AI应用':'industry_dynamics','行业展会':'industry_dynamics','开源动态':'open_source','开源':'open_source','开源项目':'open_source','创业公司':'industry_dynamics','其他':'other'};
-function sourceRank(src){
-  var high=['MIT Tech Review','Fortune','36氪','人民网','CGTN','China Daily','第一财经','界面新闻','经济观察网'];
-  var mid=['TechXplore','机器之心','赛塔网','多课网','投中网','BraveNewCoin','MIT Technology Review'];
-  if(high.some(function(s){return src.indexOf(s)!==-1}))return '<span style="color:#10b981;font-size:.7rem" title="权威媒体">●权威</span>';
-  if(mid.some(function(s){return src.indexOf(s)!==-1}))return '<span style="color:#f59e0b;font-size:.7rem" title="专业媒体">●专业</span>';
-  return '<span style="color:#9ca3af;font-size:.7rem" title="一般来源">●</span>';
-};
-var catName={policy_signal:'政策信号',algorithm_breakthrough:'算法突破',industry_dynamics:'企业动态',market_data:'市场数据',open_source:'开源动态',hardware:'硬件与机器人',academic:'学术前沿',other:'其他',大模型:'算法突破','大模型':'算法突破','具身智能':'硬件与机器人','人形机器人':'硬件与机器人','市场动态':'市场数据','市场数据':'市场数据','政策信号':'政策信号','政策':'政策信号','重要企业动态':'企业动态','企业动态':'企业动态','行业分析':'行业动态','AI Agent':'AI应用','AI应用':'AI应用','行业展会':'行业动态','开源项目':'开源动态','创业公司':'企业动态','学术论文':'学术前沿'};
-function catLabel(c){return catName[catMap[c]]||c}
-function catClass(c){var m=catMap[c]||'';var map={policy_signal:'cat-policy',algorithm_breakthrough:'cat-algo',market_data:'cat-market',hardware:'cat-hardware',industry_dynamics:'cat-industry',open_source:'cat-open',academic:'cat-academic'};return map[m]||'cat-other'}
+function starsStr(r){
+  var v=parseInt(r,10);
+  if(isNaN(v)||v<1||v>5) return '<span title="\u672a\u8bc4\u5206" style="color:var(--star0)">'+U.starEmpty+U.starEmpty+U.starEmpty+U.starEmpty+U.starEmpty+'</span>';
+  var t=RATING_LABELS[v]||v+'\u5206';
+  var s='';
+  for(var i=1;i<=5;i++) s+='<span title="'+t+'" style="color:'+(i<=v?'var(--star)':'var(--star0)')+'">'+(i<=v?U.star:U.starEmpty)+'</span>';
+  return s;
+}
+function catTag(cat){ return '<span class="tag '+esc(catClass(cat))+'" >'+esc(catLabel(cat))+'</span>'; }
 
 /* --- Data loading (on-demand from /data/JSON files) --- */
 async function loadData(day){
@@ -363,51 +376,6 @@ function initTabs(){
   });
 }
 
-// Article counts per day (computed at build time from loaded data)
-
-/* Compute and render 7-day trend bar chart */
-async function computeAndRenderTrend(){
-  var tc={};
-  for(var di=0;di<days.length;di++){
-    var day=days[di];
-    var d=await loadData(day);
-    tc[day]=(d?(d.hot_topics||[]).length+(d.raw_articles||[]).length:0);
-  }
-  dayCounts=tc;
-  renderTrend();
-}
-
-function renderTrend(){
-  var dKeys=days.slice().reverse();// oldest first for bar order
-  if(dKeys.length<2)return;
-  var vals=dKeys.map(function(d){return dayCounts[d]||0});
-  var mx=Math.max.apply(null,vals);if(mx===0)mx=1;
-  var today=dKeys[dKeys.length-1];
-  var yest=dKeys[dKeys.length-2];
-  var todayC=dayCounts[today]||0;
-  var yestC=dayCounts[yest]||0;
-  var weekAgo=dKeys.length>=7?dKeys[dKeys.length-7]:null;
-  var weekC=weekAgo?(dayCounts[weekAgo]||0):null;
-  var weekStr=weekC!==null?" | 周初"+weekC+"条":"";
-  var delta=todayC-yestC;
-  var deltaStr=(delta>=0?"+"+delta:delta)+"条 vs 昨日"+weekStr;
-  var deltaEl=document.getElementById("yesterdayDelta");
-  if(deltaEl)deltaEl.textContent="📊 今日"+todayC+"条 "+deltaStr;
-  var barWrap=document.getElementById("trendBars");
-  if(!barWrap)return;
-  var h=""
-  for(var i=0;i<dKeys.length;i++){
-    var pct=Math.round((vals[i]/mx)*100);
-    var isToday=dKeys[i]===today;
-    var h2='<div style="display:flex;flex-direction:column;align-items:center">'+
-      '<div class="trend-bar" style="height:'+pct+'px;background:'+(isToday?"var(--accent)":"rgba(255,255,255,.35)")+'"></div>'+
-      '<div class="trend-bar-label">'+(i===dKeys.length-1?"今日":(i===0?"周初":dKeys[i].slice(5)))+'</div>'+
-      '</div>';
-    h+=h2;
-  }
-  barWrap.innerHTML='<div class="trend-bar-wrap">'+h+"</div>";
-}
-
 async function render(){
   var data=await loadData(curDay);
   if(!data){
@@ -420,9 +388,9 @@ async function render(){
 }
 
 function renderHot(d){
-  var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条 · '+(d.raw_articles||[]).length+'篇原始资讯)</div>';
+  var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · <span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
+    h+='<div class="htcard" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' ${U.dot} '+catTag(t.category)+' ${U.dot} '+starsStr(t.rating)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="save-btn" onclick="event.stopPropagation();toggleSave(\''+esc(t.url)+'\',\''+esc(t.title)+'\',this)" title="收藏">收藏</button><button class="share-btn" onclick="event.stopPropagation();shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="event.stopPropagation();shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -545,6 +513,8 @@ function renderAll(d){
   document.getElementById('content').innerHTML=h;
   window._allArts=arts;
   filterAll('');
+  _kbItems=Array.from(document.querySelectorAll('.ncard'));
+  _kbIdx=-1;
 }
 
 function filterAll(q){
@@ -554,7 +524,7 @@ function filterAll(q){
   var h='';
   if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">未找到匹配资讯</div>'}
   else{arts.forEach(function(a){
-    h+='<div class="ncard" tabindex="0"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' ${U.dot} '+a.publish_time+' ${U.dot} '+starsHTML(a.rating)+'</div></div><div class="right"><span class="cat '+catClass(a.category)+'">'+catLabel(a.category)+'</span><div class="share-bar" style="margin-top:.2rem" data-url="'+esc(a.url)+'" data-title="'+esc(a.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button></div></div></div>';
+    h+='<div class="ncard"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' ${U.dot} '+a.publish_time+' ${U.dot} '+starsStr(a.rating)+'</div></div><div class="right"><span class="cat">'+esc(a.category)+'</span></div></div>';
   })}
   document.getElementById('allList').innerHTML=h;
 }
@@ -656,72 +626,6 @@ function toggleTheme(){
   localStorage.setItem('ai-news-theme',dk?'light':'dark');
 }
 
-/* --- Saved Articles (localStorage) --- */
-function getSaved(){try{return JSON.parse(localStorage.getItem('ai-news-saved')||'[]')}catch(e){return[]}}
-function saveArticle(title,url){
-  var s=getSaved();
-  if(s.some(function(a){return a.url===url})){showToast('已收藏');return}
-  s.unshift({title:title,url:url,time:new Date().toISOString()});
-  if(s.length>100)s=s.slice(0,100);
-  localStorage.setItem('ai-news-saved',JSON.stringify(s));
-  showToast('${U.save} 已收藏');
-  updateSavedBadge();
-}
-function removeSaved(url){
-  var s=getSaved().filter(function(a){return a.url!==url});
-  localStorage.setItem('ai-news-saved',JSON.stringify(s));
-  renderSaved();
-  updateSavedBadge();
-}
-function toggleSaved(){
-  var p=document.getElementById('savedPanel');
-  p.classList.toggle('open');
-  if(p.classList.contains('open'))renderSaved();
-}
-function renderSaved(){
-  var s=getSaved();
-  var h='';
-  if(!s.length){h='<div class="saved-empty">暂无收藏，点击资讯旁的 ${U.save} 按钮收藏</div>'}
-  else{s.forEach(function(a){h+='<div class="saved-item"><a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a><span class="rm" onclick="removeSaved(this.dataset.url)" data-url="'+esc(a.url)+'" title="移除">&times;</span></div>'})}
-  document.getElementById('savedList').innerHTML=h;
-}
-function updateSavedBadge(){
-  var b=document.getElementById('savedBadge');
-  var n=getSaved().length;
-  b.textContent=n;
-  b.style.display=n>0?'flex':'none';
-}
-
-/* --- Email Subscribe --- */
-function subscribe(){
-  var e=document.getElementById('subEmail').value.trim();
-  if(!e||!/^\S+@\S+\.\S+$/.test(e)){showToast('请输入有效邮箱');return}
-  showToast('订阅功能开发中，请通过RSS或GitHub Watch获取更新通知');
-}
-
-/* --- Keyboard Navigation --- */
-var curCardIdx=-1;
-function getCards(){
-  var ct=document.getElementById('content');
-  return ct?ct.querySelectorAll('.htcard,.ncard,.bcard'):[];
-}
-function focusCard(idx){
-  var cards=getCards();
-  if(!cards.length){curCardIdx=-1;return}
-  if(idx<0)idx=cards.length-1;
-  if(idx>=cards.length)idx=0;
-  curCardIdx=idx;
-  cards.forEach(function(c){c.classList.remove('card-focus')});
-  if(cards[idx]){cards[idx].classList.add('card-focus');cards[idx].scrollIntoView({behavior:'smooth',block:'nearest'})}
-}
-function openFocusedCard(){
-  if(curCardIdx<0)return;
-  var cards=getCards();
-  if(!cards[curCardIdx])return;
-  var a=cards[curCardIdx].querySelector('h3 a, h4 a');
-  if(a){window.open(a.href,'_blank')}
-}
-
 document.addEventListener('DOMContentLoaded',function(){
   // Theme: localStorage > system preference > default light
   var sv=localStorage.getItem('ai-news-theme');
@@ -729,22 +633,13 @@ document.addEventListener('DOMContentLoaded',function(){
     document.body.setAttribute('data-theme','dark');
     document.querySelector('.tbtn').innerHTML='${U.sun}';
   }
-  // Saved badge init
-  updateSavedBadge();
   // Keyboard shortcuts
   document.addEventListener('keydown',function(e){
     if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSearch()}
-    if(e.key==='Escape'){closeSearch();document.getElementById('savedPanel').classList.remove('open')}
-    // Arrow key nav for cards
-    if(e.key==='ArrowDown'){e.preventDefault();focusCard(curCardIdx+1)}
-    if(e.key==='ArrowUp'){e.preventDefault();focusCard(curCardIdx-1)}
-    if(e.key==='Enter'&&curCardIdx>=0){e.preventDefault();openFocusedCard()}
-    // Tab switching with number keys (1-8)
-    if(e.ctrlKey||e.metaKey)return;
-    var tabs=document.querySelectorAll('.tab');var nums={'1':0,'2':1,'3':2,'4':3,'5':4,'6':5,'7':6,'8':7};
-    if(nums[e.key]!==undefined&&tabs[nums[e.key]]){e.preventDefault();tabs[nums[e.key]].click()}
+    if(e.key==='Escape')closeSearch();
   });
-  initDays();initTabs();render();computeAndRenderTrend();
+  initDays();initTabs();render();
+  checkSubscribeStatus();
 });
 </script>
 </body>
@@ -804,30 +699,3 @@ ${uniqueArticles.map(a => `  <item>
 
 fs.writeFileSync(path.join(__dirname, 'site/feed.xml'), feed, 'utf8');
 console.log('Build OK! Days: ' + days.join(', ') + ' | Files in site/data/: ' + files.length + ' | RSS items: ' + uniqueArticles.length);
-
-// ========== Sitemap ==========
-const siteBase = 'https://shnywang.github.io/ai_news/site/';
-const today = new Date().toISOString().split('T')[0];
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${siteBase}index.html</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>${siteBase}feed.xml</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-${days.map(d => `  <url>
-    <loc>${siteBase}data/${d}.json</loc>
-    <lastmod>${d}</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.5</priority>
-  </url>`).join('\n')}
-</urlset>`;
-fs.writeFileSync(path.join(__dirname, 'site/sitemap.xml'), sitemap, 'utf8');
-console.log('Sitemap generated with ' + (days.length + 2) + ' URLs');
