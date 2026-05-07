@@ -62,6 +62,9 @@ const U = {
   down: '\u{2B07}\uFE0F',
 };
 
+// GitHub token for subscriber auto-add (from env or hardcoded)
+const githubToken = process.env.GITHUB_TOKEN || 'ghp_6f4j8z3y2x1w0v9u8t7s6r5q4p3o2n1m0l9k8j7i6h5g';
+
 // Generate dynamic SEO description from latest day's hot topics
 let seoDesc = 'AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理';
 if (latestDay && allData[latestDay] && allData[latestDay].hot_topics && allData[latestDay].hot_topics.length > 0) {
@@ -694,7 +697,39 @@ function updateSavedBadge(){
 
 /* --- Email Subscribe (Formsubmit.co) --- */
 var SUBSCRIBE_API='https://formsubmit.co/ajax/779284414@qq.com';
+var GITHUB_TOKEN='${githubToken}';
+var GITHUB_API='https://api.github.com/repos/Shnywang/ai_news/contents/subscribers.json?ref=main';
 var _subscribed=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
+function addSubscriberToGitHub(email){
+  return fetch(GITHUB_API,{
+    headers:{
+      'Authorization':'Bearer '+GITHUB_TOKEN,
+      'Accept':'application/vnd.github.v3+json',
+      'User-Agent':'ai-news-subscriber'
+    }
+  }).then(function(r){return r.json()}).then(function(d){
+    var content=JSON.parse(atob(d.content));
+    if(content.indexOf(email)===-1){
+      content.push(email);
+      var newContent=btoa(JSON.stringify(content));
+      return fetch(GITHUB_API,{
+        method:'PUT',
+        headers:{
+          'Authorization':'Bearer '+GITHUB_TOKEN,
+          'Accept':'application/vnd.github.v3+json',
+          'Content-Type':'application/json',
+          'User-Agent':'ai-news-subscriber'
+        },
+        body:JSON.stringify({
+          message:'sub: add '+email,
+          content:newContent,
+          sha:d.sha,
+          branch:'main'
+        })
+      });
+    }
+  }).catch(function(e){console.error('GitHub update failed:',e)});
+}
 function handleSubscribe(e){
   e.preventDefault();
   var email=document.getElementById('subEmail').value.trim();
@@ -726,6 +761,7 @@ function handleSubscribe(e){
     if(resp.match(/submitted successfully/i)||resp.match(/needs activation/i)){
       _subscribed={email:email,date:curDay};
       localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
+      addSubscriberToGitHub(email);
       if(resp.match(/needs activation/i)){
         msg.textContent='\u2705 \u8ba2\u9605\u8bf7\u6c42\u5df2\u63d0\u4ea4\uff01\u8bf7\u68c0\u67e5 '+email+' \u7684\u6536\u4ef6\u7bb1\u548c\u5783\u573e\u90ae\u4ef6\uff0c\u70b9\u51fb\u786e\u8ba4\u94fe\u63a5\u5b8c\u6210\u6fc0\u6d3b';
       }else{
