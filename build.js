@@ -714,8 +714,12 @@ function handleSubscribe(e){
   btn.textContent='\u8ba2\u9605\u4e2d...';
   msg.textContent='';
   var fd=new FormData();
-  fd.append('subject','\u3010AI\u8d44\u8baf\u8ba2\u9605\u3011\u65b0\u8ba2\u9605\u8005 '+email);
-  fd.append('message','\u8ba2\u9605\u90ae\u7bb1: '+email+'\\n\u8ba2\u9605\u65e5\u671f: '+curDay+'\\n\u9875\u9762: https://shnywang.github.io/ai_news/site/index.html');
+  fd.append('_template','table');
+  fd.append('_subject','\ud83d\udce7 \u3010AI\u8d44\u8baf\u3011\u65b0\u8ba2\u9605\u8005\u7533\u8bf7');
+  fd.append('\ud83d\udc64 \u8ba2\u9605\u90ae\u7bb1',email);
+  fd.append('\ud83d\udcc5 \u8ba2\u9605\u65e5\u671f',curDay);
+  fd.append('\ud83c\udf10 \u6765\u81ea\u9875\u9762','https://shnywang.github.io/ai_news/site/index.html');
+  fd.append('\ud83d\udcbb \u8bbe\u5907\u4fe1\u606f',navigator.userAgent.substring(0,80));
   fd.append('_replyto',email);
   fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){
     var resp=d.message||'';
