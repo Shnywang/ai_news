@@ -62,8 +62,7 @@ const U = {
   down: '\u{2B07}\uFE0F',
 };
 
-// GitHub token for subscriber auto-add (from env or hardcoded)
-const githubToken = process.env.GITHUB_TOKEN || 'ghp_6f4j8z3y2x1w0v9u8t7s6r5q4p3o2n1m0l9k8j7i6h5g';
+// GitHub token for subscriber auto-add
 
 // Generate dynamic SEO description from latest day's hot topics
 let seoDesc = 'AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理';
@@ -697,39 +696,7 @@ function updateSavedBadge(){
 
 /* --- Email Subscribe (Formsubmit.co) --- */
 var SUBSCRIBE_API='https://formsubmit.co/ajax/779284414@qq.com';
-var GITHUB_TOKEN='${githubToken}';
-var GITHUB_API='https://api.github.com/repos/Shnywang/ai_news/contents/subscribers.json?ref=main';
 var _subscribed=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
-function addSubscriberToGitHub(email){
-  return fetch(GITHUB_API,{
-    headers:{
-      'Authorization':'Bearer '+GITHUB_TOKEN,
-      'Accept':'application/vnd.github.v3+json',
-      'User-Agent':'ai-news-subscriber'
-    }
-  }).then(function(r){return r.json()}).then(function(d){
-    var content=JSON.parse(atob(d.content));
-    if(content.indexOf(email)===-1){
-      content.push(email);
-      var newContent=btoa(JSON.stringify(content));
-      return fetch(GITHUB_API,{
-        method:'PUT',
-        headers:{
-          'Authorization':'Bearer '+GITHUB_TOKEN,
-          'Accept':'application/vnd.github.v3+json',
-          'Content-Type':'application/json',
-          'User-Agent':'ai-news-subscriber'
-        },
-        body:JSON.stringify({
-          message:'sub: add '+email,
-          content:newContent,
-          sha:d.sha,
-          branch:'main'
-        })
-      });
-    }
-  }).catch(function(e){console.error('GitHub update failed:',e)});
-}
 function handleSubscribe(e){
   e.preventDefault();
   var email=document.getElementById('subEmail').value.trim();
@@ -759,7 +726,7 @@ function handleSubscribe(e){
   ar+='<li>\u6bcf\u6761\u8d44\u8baf\u90fd\u7531\u4e13\u4e1a\u8bc4\u5224\u548c\u5206\u7c7b\u6807\u6ce8</li>';
   ar+='</ul><p>\u8bf7\u5c06 779284414@qq.com \u6dfb\u52a0\u5230\u767d\u540d\u5355\uff0c\u4ee5\u4fbf\u987a\u7545\u6536\u5230\u63a8\u9001\u3002</p>';
   ar+='<p>\ud83d\udc49 <a href=\u0027https://shnywang.github.io/ai_news/site/index.html\u0027>\u70b9\u51fb\u6d4f\u89c8\u5f53\u65e5\u8d44\u8baf</a></p>';
-  ar+='<p style=\u0027color:#999;font-size:12px\u0027>\u6b64\u4e3a\u81ea\u52a8\u53d1\u9001\u7684\u90ae\u4ef6\uff0c\u8bf7\u4e0d\u8981\u76f4\u63a5\u590d\u4ef6</p>';
+  ar+='<p style=\u0027color:#ccc;font-size:11px;margin-top:16px\u0027>\u5982\u4e0d\u60f3\u518d\u6536\u5230\u63a8\u9001\uff0c\u8bf7<a href=\u0027mailto:779284414@qq.com?subject=\u53d6\u6d88\u8ba2\u9605\u8d44\u8baf\u63a8\u9001\u0027 style=\u0027color:#999\u0027>\u70b9\u51fb\u6b64\u5904\u53d6\u6d88\u8ba2\u9605</a></p>';
   fd.append('_autoresponse',ar);
   fd.append('\ud83d\udc64 \u8ba2\u9605\u90ae\u7bb1',email);
   fd.append('\ud83d\udcc5 \u8ba2\u9605\u65e5\u671f',curDay);
@@ -771,7 +738,6 @@ function handleSubscribe(e){
     if(resp.match(/submitted successfully/i)||resp.match(/needs activation/i)){
       _subscribed={email:email,date:curDay};
       localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
-      addSubscriberToGitHub(email);
       if(resp.match(/needs activation/i)){
         msg.textContent='\u2705 \u8ba2\u9605\u8bf7\u6c42\u5df2\u63d0\u4ea4\uff01\u8bf7\u68c0\u67e5 '+email+' \u7684\u6536\u4ef6\u7bb1\u548c\u5783\u573e\u90ae\u4ef6\uff0c\u70b9\u51fb\u786e\u8ba4\u94fe\u63a5\u5b8c\u6210\u6fc0\u6d3b';
       }else{
@@ -801,11 +767,17 @@ function checkSubscribeStatus(){
     var msg=document.getElementById('subMsg');
     var btn=document.getElementById('subBtn');
     if(email)email.value='';
-    if(btn){btn.disabled=true;btn.textContent='\u5df2\u8ba2\u9605';}
-    if(msg){msg.textContent='\u2705 '+sub.email+' \u5df2\u8ba2\u9605 ('+sub.date+')';msg.style.color='var(--green)';}
+    if(btn){btn.disabled=true;btn.textContent='\u5df2\u8ba2\u9605';}\n    if(msg){
+      msg.textContent='\u2705 '+sub.email+' \u5df2\u8ba2\u9605 ('+sub.date+')';\n      msg.style.color='var(--green)';
+      var unbtn=document.createElement('button');
+      unbtn.textContent='\u53d6\u6d88\u8ba2\u9605';
+      unbtn.style.cssText='background:none;border:1px solid var(--red);color:var(--red);padding:2px 8px;border-radius:4px;cursor:pointer;font-size:.75rem;margin-left:6px;margin-top:4px';
+      unbtn.setAttribute('data-email',sub.email);
+      unbtn.addEventListener('click',function(){handleUnsubscribe(this.getAttribute('data-email'))});
+      msg.appendChild(unbtn);
+    }
   }
 }
-
 /* --- Keyboard Navigation --- */
 var curCardIdx=-1;
 function getCards(){
