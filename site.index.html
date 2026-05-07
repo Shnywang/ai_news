@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AI+具身智能资讯聚合",
+  "url": "https://shnywang.github.io/ai_news/site/",
+  "description": "AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://shnywang.github.io/ai_news/site/index.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="【2026-04-29】DeepSeek-V4 Pro Max发布：推理能力超越GPT-5.2和Gemini 3.0-Pro；OpenAI增长困局引发AI基础设施股全线暴跌；Anthropic估值超OpenAI达1万亿美元，编程Agent成增长引擎。每日AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号。">
+<meta property="og:title" content="AI+具身智能资讯聚合 — 2026-04-29">
+<meta property="og:description" content="【2026-04-29】DeepSeek-V4 Pro Max发布：推理能力超越GPT-5.2和Gemini 3.0-Pro；OpenAI增长困局引发AI基础设施股全线暴跌；Anthropic估值超OpenAI达1万亿美元，编程Agent成增长引擎。每日AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shnywang.github.io/ai_news/site/index.html">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="application/rss+xml" href="feed.xml" title="AI+具身智能资讯聚合 RSS">
+<link rel="canonical" href="https://shnywang.github.io/ai_news/site/index.html">
+<title>AI+具身智能资讯聚合 — 2026-04-29</title>
+<style>
+:root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
+[data-theme=dark]{--bg:#0f0f23;--card:#1a1a2e;--text:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--accent:#818cf8;--accent2:#a5b4fc;--border:#334155;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow2:0 8px 24px rgba(0,0,0,.4);--star0:#475569;--ftbg:#0a0a1a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.hd{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;padding:2rem 1.5rem;text-align:center;position:relative}
+.hd h1{font-size:1.8rem;font-weight:800}.hd .sub{font-size:.9rem;opacity:.85;margin-top:.4rem}
+.hd .ut{font-size:.8rem;opacity:.7;margin-top:.2rem}
+.tbtn{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.2);border:none;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center}
+.ct{max-width:1200px;margin:0 auto;padding:1rem}
+/* Day selector */
+.days{display:flex;gap:.5rem;overflow-x:auto;padding:.5rem 0;margin-bottom:1rem}
+@media(max-width:768px){.days{justify-content:center;gap:.3rem}}
+.day-btn{padding:.4rem 1rem;border-radius:20px;border:1.5px solid var(--border);background:var(--card);color:var(--t2);cursor:pointer;font-size:.82rem;font-weight:500;white-space:nowrap;transition:all .2s}
+.day-btn.a{background:var(--accent);color:#fff;border-color:var(--accent)}
+/* Share bar */
+.share-bar{display:flex;gap:.4rem;margin-left:auto;flex-shrink:0;align-items:center}
+.share-btn{background:none;border:1.5px solid var(--border);border-radius:8px;padding:.2rem .5rem;cursor:pointer;font-size:.75rem;color:var(--t3);transition:all .2s;white-space:nowrap}
+.share-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(99,102,241,.05)}
+/* Board tabs */
+.tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1.2rem;overflow-x:auto}
+.tab{padding:.7rem 1.2rem;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--t2);border-bottom:3px solid transparent;white-space:nowrap;transition:all .2s}
+.tab:hover{color:var(--accent)}.tab.a{color:var(--accent);border-bottom-color:var(--accent)}
+/* Panels */
+.panel{display:none}.panel.a{display:block}
+/* Cards */
+.bcard{background:var(--card);border-radius:14px;padding:1.2rem;margin-bottom:1rem;box-shadow:var(--shadow);border-left:4px solid var(--accent);transition:box-shadow .2s}
+.bcard:hover{box-shadow:var(--shadow2)}
+.bcard h3{font-size:.95rem;font-weight:700;margin-bottom:.4rem;color:var(--text)}
+.bcard p,.bcard li{font-size:.88rem;color:var(--t2);line-height:1.7}
+.bcard ul{padding-left:1.2rem;margin-top:.3rem}
+.bcard .tag{display:inline-block;padding:.15rem .5rem;border-radius:8px;font-size:.72rem;font-weight:600;margin-right:.3rem}
+.tag-g{background:#ecfdf5;color:#059669}.tag-y{background:#fef3c7;color:#b45309}.tag-r{background:#fee2e2;color:#dc2626}
+.tag-b{background:#eff6ff;color:#2563eb}.tag-p{background:#f3e8ff;color:#7c3aed}
+[data-theme=dark] .tag-g{background:#064e3b;color:#6ee7b7}[data-theme=dark] .tag-y{background:#451a03;color:#fcd34d}
+[data-theme=dark] .tag-r{background:#450a0a;color:#fca5a5}[data-theme=dark] .tag-b{background:#1e3a5f;color:#93c5fd}
+[data-theme=dark] .tag-p{background:#3b0764;color:#c4b5fd}
+/* Section titles */
+.sec{font-size:1rem;font-weight:700;margin:1.2rem 0 .6rem;padding-left:.6rem;border-left:3px solid var(--accent);color:var(--text)}
+/* Hot topic card */
+.htcard{background:var(--card);border-radius:12px;padding:1rem;margin-bottom:.8rem;box-shadow:var(--shadow);display:flex;gap:1rem;align-items:flex-start;transition:all .2s}
+.htcard:hover{box-shadow:var(--shadow2);transform:translateY(-1px)}
+.htcard .num{font-size:1.4rem;font-weight:800;color:var(--accent);min-width:2rem;text-align:center}
+.htcard .body{flex:1}.htcard .body h4{font-size:.92rem;font-weight:600;margin-bottom:.3rem}
+.htcard .body h4 a{color:var(--text);text-decoration:none;transition:color .2s}.htcard .body h4 a:hover{color:var(--accent)}
+.bcard h3 a,.bcard h3>a{color:var(--text);text-decoration:none;transition:color .2s}.bcard h3 a:hover,.bcard h3>a:hover{color:var(--accent);text-decoration:underline}
+.htcard .body p{font-size:.82rem;color:var(--t2);line-height:1.6}
+.htcard .meta{font-size:.75rem;color:var(--t3);margin-top:.3rem}
+a{color:inherit}
+.stars{color:var(--star);font-size:.8rem;letter-spacing:1px}
+/* Startup table */
+.stable-wrap{overflow-x:auto;margin-bottom:1rem}
+.stable{width:100%;border-collapse:collapse;font-size:.84rem}
+.stable th{background:var(--accent);color:#fff;padding:.6rem .8rem;text-align:left;font-weight:600;font-size:.8rem;white-space:nowrap}
+.stable td{padding:.6rem .8rem;border-bottom:1px solid var(--border);vertical-align:top}
+.stable tr:hover td{background:rgba(99,102,241,.04)}
+/* Radar */
+.radar-item{display:flex;align-items:center;gap:.8rem;padding:.6rem 0;border-bottom:1px solid var(--border)}
+.radar-item:last-child{border:none}
+.radar-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.dot-green{background:#059669}.dot-yellow{background:#d97706}.dot-red{background:#dc2626}.dot-blue{background:#2563eb}
+.radar-name{font-weight:600;font-size:.88rem;min-width:140px}
+.radar-status{font-size:.78rem;color:var(--t2);flex:1}
+.radar-advice{font-size:.78rem;color:var(--accent);font-weight:500}
+/* News list */
+.ncard{background:var(--card);border-radius:10px;padding:.8rem 1rem;margin-bottom:.6rem;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;gap:.8rem}
+.ncard .left{flex:1}.ncard .left h4{font-size:.88rem;font-weight:600}
+.ncard .left h4 a{color:var(--text);text-decoration:none;transition:color .2s}.ncard .left h4 a:hover{color:var(--accent)}
+.ncard .left .nm{font-size:.75rem;color:var(--t3);margin-top:.2rem}
+.ncard .right{text-align:right;flex-shrink:0}
+.ncard .cat{font-size:.72rem;padding:.15rem .5rem;border-radius:8px;background:var(--accent);color:#fff;display:inline-block}
+/* Global search bar (in header) */
+.search-toggle{position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,.2);border:none;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center}
+/* Search overlay */
+.search-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1000;justify-content:center;align-items:flex-start;padding:15vh 1rem}
+.search-overlay.open{display:flex}
+.search-box{background:var(--card);border-radius:16px;width:100%;max-width:700px;max-height:60vh;box-shadow:var(--shadow2);overflow:hidden;display:flex;flex-direction:column}
+.search-box input{width:100%;padding:1rem 1.2rem;border:none;font-size:1rem;background:transparent;color:var(--text);outline:none;border-bottom:1px solid var(--border)}
+.search-results{overflow-y:auto;flex:1;padding:.5rem}
+.search-item{padding:.8rem 1rem;border-radius:10px;cursor:pointer;transition:background .15s}
+.search-item:hover{background:rgba(99,102,241,.08)}
+.search-item h4{font-size:.88rem;font-weight:600;margin-bottom:.2rem}
+.search-item h4 a{color:var(--accent);text-decoration:none}
+.search-item .nm{font-size:.75rem;color:var(--t3)}
+.search-hint{padding:2rem;text-align:center;color:var(--t2);font-size:.88rem}
+/* Copy link toast */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:.6rem 1.2rem;border-radius:10px;font-size:.85rem;font-weight:500;opacity:0;transition:opacity .3s;z-index:2000;pointer-events:none}
+.toast.show{opacity:1}
+/* Footer */
+.ftr{background:var(--ftbg);color:var(--ftc);text-align:center;padding:1.2rem;margin-top:2rem;font-size:.82rem}
+.ftr a{color:var(--ftc);text-decoration:underline}
+/* Loading */
+.loading{text-align:center;padding:3rem;color:var(--t2);font-size:.9rem}
+.loading::after{content:'...';animation:dots 1.5s infinite}
+@keyframes dots{0%,20%{content:'.'}40%,60%{content:'..'}80%,100%{content:'...'}}
+/* Rating hover tooltip */
+.rating-tip{position:relative;cursor:help;border-bottom:1px dotted var(--t3)}
+.rating-tip:hover::after{content:attr(data-tip);position:absolute;bottom:120%;left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:.2rem .6rem;border-radius:6px;font-size:.72rem;white-space:nowrap;z-index:10;pointer-events:none}
+/* Saved articles panel */
+.saved-panel{position:fixed;right:0;top:0;bottom:0;width:320px;background:var(--card);box-shadow:var(--shadow2);z-index:500;transform:translateX(100%);transition:transform .3s;overflow-y:auto;padding:1rem}
+.saved-panel.open{transform:translateX(0)}
+.saved-panel h3{font-size:1rem;margin-bottom:.8rem;padding-bottom:.5rem;border-bottom:2px solid var(--accent)}
+.saved-toggle{position:fixed;right:1rem;bottom:6rem;z-index:501;background:var(--accent);color:#fff;border:none;border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:1.2rem;box-shadow:var(--shadow2);display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.saved-toggle:hover{transform:scale(1.1)}
+.saved-toggle .badge{position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;border-radius:50%;width:18px;height:18px;font-size:.65rem;display:flex;align-items:center;justify-content:center;display:none}
+.saved-item{padding:.6rem;border-bottom:1px solid var(--border);font-size:.82rem}
+.saved-item a{color:var(--text);text-decoration:none}.saved-item a:hover{color:var(--accent)}
+.saved-item .rm{float:right;color:var(--t3);cursor:pointer;font-size:1rem;line-height:1}
+.saved-item .rm:hover{color:var(--red)}
+.saved-empty{text-align:center;color:var(--t3);padding:2rem;font-size:.85rem}
+.card-focus{box-shadow:0 0 0 2px var(--accent),0 8px 24px rgba(0,0,0,.15)!important}
+.subscribe-box{display:flex;gap:.3rem;align-items:center;justify-content:center;margin-top:.5rem;flex-wrap:wrap}
+.subscribe-box input{padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.8rem;min-width:180px}
+.subscribe-box button{padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:.8rem;font-weight:600}
+.subscribe-box button:hover{background:var(--accent2)}
+.rating-legend{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:.3rem;font-size:.7rem;opacity:.8}
+.rating-legend span{display:inline-flex;align-items:center;gap:.2rem}
+/* 7-day trend bar chart */
+.trend-strip{text-align:center}
+.trend-bar-wrap{display:inline-flex;align-items:flex-end;gap:3px;height:28px}
+.trend-bar{width:12px;border-radius:3px 3px 0 0;transition:height .3s}
+.trend-bar-label{font-size:.65rem;margin-top:2px;color:rgba(255,255,255,.6)}
+/* Category badge color coding */
+.cat-policy{background:#3b82f6;color:#fff}.cat-algo{background:#8b5cf6;color:#fff}
+.cat-market{background:#f59e0b;color:#fff}.cat-hardware{background:#10b981;color:#fff}
+.cat-industry{background:#ec4899;color:#fff}.cat-open{background:#06b6d4;color:#fff}
+.cat-academic{background:#6366f1;color:#fff}.cat-other{background:#78716c;color:#fff}
+/* Rating legend panel */
+.rating-panel{background:rgba(255,255,255,.12);border-radius:10px;padding:.5rem 1rem;margin:.4rem auto 0;max-width:700px}
+/* Keyboard nav badge */
+.kbd-hint{font-size:.68rem;opacity:.7;margin-top:.2rem}
+@media(max-width:768px){
+.hd h1{font-size:1.4rem}.ct{padding:.8rem}
+.htcard{flex-direction:column;gap:.5rem}
+.stable{font-size:.76rem}
+.stable th,.stable td{padding:.4rem .5rem;font-size:.76rem}
+.tabs{gap:0}.tab{padding:.5rem .8rem;font-size:.8rem}
+.search-toggle,.tbtn{width:32px;height:32px;font-size:1rem}
+.search-toggle{top:.7rem;left:.7rem}.tbtn{top:.7rem;right:.7rem}
+.search-box{max-width:95%;max-height:70vh}
+}
+</style>
+</head>
+<body>
+<header class="hd">
+<button class="search-toggle" onclick="openSearch()" title="搜索 (Ctrl+K)">🔍</button>
+<button class="tbtn" onclick="toggleTheme()" title="切换主题">&#x1F319;</button>
+<h1>🤖 AI+具身智能资讯聚合</h1>
+<p class="sub">多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</p>
+<div class="rating-legend"><span title="评分标准">⭐评分标准：</span><span>1=☆ 低质·来源不明/信息量低</span><span>2=一般·通稿/增量有限</span><span>3=中等·行业参考</span><span>4=高质·独家/深度</span><span>5=★★ 顶尖·里程碑</span></div><div class="kbd-hint">⌨️ 快捷键: ↑↓ 浏览 | Enter 打开 | Ctrl+K 搜索 | 1-8 切换标签</div>
+<p class="ut" id="ut"></p>
+<div class="trend-strip" id="trendStrip" style="margin:.5rem auto 0;max-width:700px;background:rgba(255,255,255,.1);border-radius:10px;padding:.5rem 1rem;font-size:.8rem;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap">
+<span id="yesterdayDelta" style="color:#fef08a"></span>
+<span id="trendBars"></span>
+</div>
+</header>
+<div class="ct">
+<div class="days" id="dayPicker"></div>
+<div class="tabs" id="tabs">
+<div class="tab a" data-t="hot">🔥 今日热点</div>
+<div class="tab" data-t="startup">🚀 创业板块</div>
+<div class="tab" data-t="pm">📋 产品经理</div>
+<div class="tab" data-t="algo">🧬 算法工程师</div>
+<div class="tab" data-t="proj">📅 项目经理</div>
+<div class="tab" data-t="action">✅ 行动建议</div>
+<div class="tab" data-t="hermes">🤖 Hermes</div>
+<div class="tab" data-t="all">📰 全部资讯</div>
+</div>
+<div id="content"></div>
+</div>
+<!-- Search overlay -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
+<div class="search-box">
+<input id="gSearchInput" placeholder="搜索所有资讯... (Ctrl+K)" oninput="globalSearch()">
+<div class="search-results" id="gSearchResults"></div>
+</div>
+</div>
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+<!-- Saved Articles Panel -->
+<div class="saved-panel" id="savedPanel">
+<h3>🔖 稍后阅读</h3>
+<div id="savedList"><div class="saved-empty">暂无收藏，点击资讯旁的 🔖 按钮收藏</div></div>
+</div>
+<button class="saved-toggle" onclick="toggleSaved()" title="稍后阅读">
+🔖<span class="badge" id="savedBadge">0</span>
+</button>
+<footer class="ftr">由 WorkBuddy 自动生成 · 数据每日更新 · 仅保留近一周数据 · <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> · 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> · <a href="https://github.com/Shnywang/ai_news/discussions" target="_blank" rel="noopener noreferrer">社区讨论/Giscus</a> · <a href="https://github.com/Shnywang/ai_news/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a>
+<div class="subscribe-box"><form id="subForm" onsubmit="handleSubscribe(event);return false" style="display:flex;gap:.3rem;align-items:center;justify-content:center;margin-top:.5rem;flex-wrap:wrap"><input type="email" id="subEmail" placeholder="输入邮箱订阅每日资讯" required style="padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.8rem;min-width:180px"><button type="submit" id="subBtn" style="padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:.8rem;font-weight:600">📧 订阅</button></form><div id="subMsg" style="font-size:.78rem;margin-top:.3rem;color:var(--t3)"></div></div>
+· © 2026</footer>
+<script>
+var days=["2026-04-29","2026-04-28","2026-04-27","2026-04-26","2026-04-25","2026-04-24","2026-04-23"];
+// Article counts per day (computed at build time from loaded data)
+var dayCounts={};
+var curDay=days[0]||'';
+var curTab='hot';
+var cache={};       // day -> data object
+var loaded=new Set(); // days that have been fetched
+
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function link(url,title){return '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(title)+'</a>'}
+function stars(r){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<r?'var(--star)':'var(--star0)')+'">'+(i<r?'★':'☆')+'</span>';return s}
+function starsStr(r){var s='';for(var i=0;i<5;i++)s+=(i<r?'★':'☆');return s}
+function starsHTML(r){var tip='';if(r<=1)tip='低质';else if(r===2)tip='一般';else if(r===3)tip='中等';else if(r===4)tip='高质';else tip='顶尖';return '<span class="rating-tip" data-tip="评分'+r+'/5: '+tip+'">'+starsStr(r)+'</span>'}
+
+/* Category mapping: Chinese -> English IDs per README */
+var catMap={'大模型':'algorithm_breakthrough','算法突破':'algorithm_breakthrough','模型发布':'algorithm_breakthrough','AI模型':'algorithm_breakthrough','学术论文':'academic','论文':'academic','学术':'academic','市场动态':'market_data','融资':'market_data','财报':'market_data','市场数据':'market_data','具身智能':'hardware','人形机器人':'hardware','机器人':'hardware','硬件':'hardware','政策信号':'policy_signal','政策':'policy_signal','监管':'policy_signal','重要企业动态':'industry_dynamics','企业动态':'industry_dynamics','合作':'industry_dynamics','产品发布':'industry_dynamics','行业分析':'industry_dynamics','AI Agent':'industry_dynamics','AI应用':'industry_dynamics','行业展会':'industry_dynamics','开源动态':'open_source','开源':'open_source','开源项目':'open_source','创业公司':'industry_dynamics','其他':'other'};
+function sourceRank(src){
+  var high=['MIT Tech Review','Fortune','36氪','人民网','CGTN','China Daily','第一财经','界面新闻','经济观察网'];
+  var mid=['TechXplore','机器之心','赛塔网','多课网','投中网','BraveNewCoin','MIT Technology Review'];
+  if(high.some(function(s){return src.indexOf(s)!==-1}))return '<span style="color:#10b981;font-size:.7rem" title="权威媒体">●权威</span>';
+  if(mid.some(function(s){return src.indexOf(s)!==-1}))return '<span style="color:#f59e0b;font-size:.7rem" title="专业媒体">●专业</span>';
+  return '<span style="color:#9ca3af;font-size:.7rem" title="一般来源">●</span>';
+};
+var catName={policy_signal:'政策信号',algorithm_breakthrough:'算法突破',industry_dynamics:'企业动态',market_data:'市场数据',open_source:'开源动态',hardware:'硬件与机器人',academic:'学术前沿',other:'其他',大模型:'算法突破','大模型':'算法突破','具身智能':'硬件与机器人','人形机器人':'硬件与机器人','市场动态':'市场数据','市场数据':'市场数据','政策信号':'政策信号','政策':'政策信号','重要企业动态':'企业动态','企业动态':'企业动态','行业分析':'行业动态','AI Agent':'AI应用','AI应用':'AI应用','行业展会':'行业动态','开源项目':'开源动态','创业公司':'企业动态','学术论文':'学术前沿'};
+function catLabel(c){return catName[catMap[c]]||c}
+function catClass(c){var m=catMap[c]||'';var map={policy_signal:'cat-policy',algorithm_breakthrough:'cat-algo',market_data:'cat-market',hardware:'cat-hardware',industry_dynamics:'cat-industry',open_source:'cat-open',academic:'cat-academic'};return map[m]||'cat-other'}
+
+/* --- Data loading (on-demand from /data/JSON files) --- */
+async function loadData(day){
+  if(cache[day]) return cache[day];
+  try{
+    var resp=await fetch('data/'+day+'.json');
+    if(!resp.ok) throw new Error(resp.status);
+    var json=await resp.json();
+    // Each file is {"YYYY-MM-DD": { data... }}
+    cache[day]=json[day]||json;
+    loaded.add(day);
+    return cache[day];
+  }catch(e){
+    console.error('Failed to load '+day,e);
+    return null;
+  }
+}
+
+function showToast(msg){
+  var t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show')},1500);
+}
+
+function initDays(){
+  var h='';
+  days.forEach(function(d){h+='<button class="day-btn'+(d===curDay?' a':'')+'" onclick="pickDay(\''+d+'\',this)">'+d+'</button>'});
+  document.getElementById('dayPicker').innerHTML=h;
+}
+
+async function pickDay(d,el){
+  curDay=d;
+  document.querySelectorAll('.day-btn').forEach(function(b){b.classList.remove('a')});
+  el.classList.add('a');
+  await render();
+}
+
+function initTabs(){
+  document.querySelectorAll('.tab').forEach(function(t){
+    t.addEventListener('click',function(){
+      curTab=this.getAttribute('data-t');
+      document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('a')});
+      this.classList.add('a');
+      render();
+    });
+  });
+}
+
+// Article counts per day (computed at build time from loaded data)
+
+/* Compute and render 7-day trend bar chart */
+async function computeAndRenderTrend(){
+  var tc={};
+  for(var di=0;di<days.length;di++){
+    var day=days[di];
+    var d=await loadData(day);
+    tc[day]=(d?(d.hot_topics||[]).length+(d.raw_articles||[]).length:0);
+  }
+  dayCounts=tc;
+  renderTrend();
+}
+
+function renderTrend(){
+  var dKeys=days.slice().reverse();// oldest first for bar order
+  if(dKeys.length<2)return;
+  var vals=dKeys.map(function(d){return dayCounts[d]||0});
+  var mx=Math.max.apply(null,vals);if(mx===0)mx=1;
+  var today=dKeys[dKeys.length-1];
+  var yest=dKeys[dKeys.length-2];
+  var todayC=dayCounts[today]||0;
+  var yestC=dayCounts[yest]||0;
+  var weekAgo=dKeys.length>=7?dKeys[dKeys.length-7]:null;
+  var weekC=weekAgo?(dayCounts[weekAgo]||0):null;
+  var weekStr=weekC!==null?" | 周初"+weekC+"条":"";
+  var delta=todayC-yestC;
+  var deltaStr=(delta>=0?"+"+delta:delta)+"条 vs 昨日"+weekStr;
+  var deltaEl=document.getElementById("yesterdayDelta");
+  if(deltaEl)deltaEl.textContent="📊 今日"+todayC+"条 "+deltaStr;
+  var barWrap=document.getElementById("trendBars");
+  if(!barWrap)return;
+  var h=""
+  for(var i=0;i<dKeys.length;i++){
+    var pct=Math.round((vals[i]/mx)*100);
+    var isToday=dKeys[i]===today;
+    var h2='<div style="display:flex;flex-direction:column;align-items:center">'+
+      '<div class="trend-bar" style="height:'+pct+'px;background:'+(isToday?"var(--accent)":"rgba(255,255,255,.35)")+'"></div>'+
+      '<div class="trend-bar-label">'+(i===dKeys.length-1?"今日":(i===0?"周初":dKeys[i].slice(5)))+'</div>'+
+      '</div>';
+    h+=h2;
+  }
+  barWrap.innerHTML='<div class="trend-bar-wrap">'+h+"</div>";
+}
+
+async function render(){
+  var data=await loadData(curDay);
+  if(!data){
+    document.getElementById('content').innerHTML='<div class="loading">加载中</div>';
+    return;
+  }
+  document.getElementById('ut').textContent='最后更新：'+(data.update_time||curDay);
+  var fn={hot:renderHot,startup:renderStartup,pm:renderPM,algo:renderAlgo,proj:renderProj,action:renderAction,hermes:renderHermes,all:renderAll};
+  (fn[curTab]||renderHot)(data);
+}
+
+function renderHot(d){
+  var h='<div class="sec">🔥 今日热点 ('+(d.hot_topics||[]).length+'条 · '+(d.raw_articles||[]).length+'篇原始资讯)</div>';
+  (d.hot_topics||[]).forEach(function(t,i){
+    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · <span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">🔖</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
+  });
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderStartup(d){
+  var s=d.startup_board;
+  if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>🚀 创业板块</h3><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">🚀 创业板块 — 重点企业跟踪</div>';
+  h+='<div class="stable-wrap"><table class="stable"><tr><th>企业</th><th>赛道</th><th>技术路线</th><th>融资/订单</th><th>择业判断</th></tr>';
+  (s.companies||[]).forEach(function(c){
+    h+='<tr><td><strong>'+esc(c.name)+'</strong></td><td>'+esc(c.field)+'</td><td>'+esc(c.route)+'</td><td>'+esc(c.funding)+'</td><td>'+esc(c.verdict)+'</td></tr>';
+  });
+  h+='</table></div>';
+  if(s.trend)h+='<div class="bcard"><h3>📈 赛道趋势</h3><p>'+esc(s.trend)+'</p></div>';
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderPM(d){
+  var b=d.pm_board;
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">📋 产品经理板块</div>';
+  (b.insights||[]).forEach(function(t){
+    var ln=t.url?link(t.url,t.title):esc(t.title);
+    h+='<div class="bcard"><h3>'+ln+'</h3><p>'+esc(t.content)+'</p></div>';
+  });
+  if(b.focus&&b.focus.length){
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
+    b.focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'});
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderAlgo(d){
+  var b=d.algo_board;
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">🧬 算法工程师板块</div>';
+  (b.insights||[]).forEach(function(t){
+    var ln=t.url?link(t.url,t.title):esc(t.title);
+    h+='<div class="bcard"><h3>'+ln+'</h3><p>'+esc(t.content)+'</p></div>';
+  });
+  if(b.tech_radar&&b.tech_radar.length){
+    h+='<div class="sec">🛰️ 技术雷达</div><div class="bcard">';
+    b.tech_radar.forEach(function(r){
+      var dot=r.status.indexOf('验证')!==-1?'dot-green':r.status.indexOf('成长')!==-1?'dot-blue':r.status.indexOf('观望')!==-1?'dot-yellow':'dot-red';
+      h+='<div class="radar-item"><span class="radar-dot '+dot+'"></span><span class="radar-name">'+esc(r.direction)+'</span><span class="radar-status">'+esc(r.status)+'</span><span class="radar-advice">'+esc(r.advice)+'</span></div>';
+    });
+    h+='</div>';
+  }
+  if(b.focus&&b.focus.length){
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
+    b.focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'});
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderProj(d){
+  var b=d.projmgr_board;
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">📅 项目经理板块</div>';
+  (b.insights||[]).forEach(function(t){
+    h+='<div class="bcard"><h3>'+esc(t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
+  });
+  if(b.focus&&b.focus.length){
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
+    b.focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'});
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderAction(d){
+  var a=d.action_items;
+  if(!a){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无</p></div>';return}
+  var h='';
+  if(a.tech_selection){
+    h+='<div class="sec">🔧 技术选型</div><div class="bcard"><ul>';
+    a.tech_selection.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
+    h+='</ul></div>';
+  }
+  if(a.track_judgment){
+    h+='<div class="sec">🎯 赛道判断</div><div class="bcard"><ul>';
+    a.track_judgment.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
+    h+='</ul></div>';
+  }
+  if(a.watch_list){
+    h+='<div class="sec">👀 Watch List</div><div class="bcard"><ul>';
+    a.watch_list.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderHermes(d){
+  var hb=d.hermes_board;
+  if(!hb){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无 Hermes 资讯</p></div>';return}
+  var h='<div class="sec">🤖 Hermes Agent — AI 代理工作流与资讯</div>';
+  (hb.insights||[]).forEach(function(t){
+    h+='<div class="bcard"><h3>'+link(t.url||'#',t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
+  });
+  if(hb.tech_stack&&hb.tech_stack.length){
+    h+='<div class="sec">🛠️ 技术栈与工具</div>';
+    hb.tech_stack.forEach(function(t){
+      h+='<div class="bcard"><h3>'+link(t.url||'#',t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
+    });
+  }
+  if(hb.community&&hb.community.length){
+    h+='<div class="sec">🌐 社区动态</div>';
+    hb.community.forEach(function(c){
+      h+='<div class="bcard"><h3>'+link(c.url||'#',c.title)+'</h3><p>'+esc(c.content)+'</p></div>';
+    });
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderAll(d){
+  var arts=d.raw_articles||[];
+  var h='<div id="allList"></div>';
+  document.getElementById('content').innerHTML=h;
+  window._allArts=arts;
+  filterAll('');
+}
+
+function filterAll(q){
+  q=(q||'').toLowerCase().trim();
+  var arts=window._allArts||[];
+  if(q)arts=arts.filter(function(a){return a.title.toLowerCase().indexOf(q)!==-1||a.summary.toLowerCase().indexOf(q)!==-1||a.category.toLowerCase().indexOf(q)!==-1||a.source.toLowerCase().indexOf(q)!==-1});
+  var h='';
+  if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">未找到匹配资讯</div>'}
+  else{arts.forEach(function(a){
+    h+='<div class="ncard" tabindex="0"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' · '+a.publish_time+' · '+starsHTML(a.rating)+'</div></div><div class="right"><span class="cat '+catClass(a.category)+'">'+catLabel(a.category)+'</span><div class="share-bar" style="margin-top:.2rem" data-url="'+esc(a.url)+'" data-title="'+esc(a.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">🔖</button></div></div></div>';
+  })}
+  document.getElementById('allList').innerHTML=h;
+}
+
+/* --- Global Search (Ctrl+K) --- */
+async function openSearch(){
+  document.getElementById('searchOverlay').classList.add('open');
+  var inp=document.getElementById('gSearchInput');
+  inp.value='';inp.focus();
+  document.getElementById('gSearchResults').innerHTML='<div class="search-hint">输入关键词搜索所有资讯（自动加载所有日数据）</div>';
+  // Pre-load all days in background
+  if(loaded.size<days.length){
+    Promise.allSettled(days.map(function(d){return loadData(d)})).then(function(){
+      // If still searching, trigger a search
+      if(document.getElementById('searchOverlay').classList.contains('open')&&inp.value.trim()){
+        globalSearch();
+      }
+    });
+  }
+}
+function closeSearch(){
+  document.getElementById('searchOverlay').classList.remove('open');
+}
+async function globalSearch(){
+  var q=document.getElementById('gSearchInput').value.toLowerCase().trim();
+  var res=document.getElementById('gSearchResults');
+  if(!q){res.innerHTML='<div class="search-hint">输入关键词搜索所有资讯···</div>';return}
+  // Ensure all data loaded
+  await Promise.allSettled(days.map(function(d){return loadData(d)}));
+  var items=[];
+  Object.keys(cache).forEach(function(day){
+    var d=cache[day];if(!d)return;
+    // Search in hot_topics
+    (d.hot_topics||[]).forEach(function(t){
+      if(t.title.toLowerCase().indexOf(q)!==-1||t.summary.toLowerCase().indexOf(q)!==-1)
+        items.push({title:t.title,url:t.url,meta:day+' · '+t.source+' · 🔥热点',date:day});
+    });
+    // Search in raw_articles
+    (d.raw_articles||[]).forEach(function(a){
+      if(a.title.toLowerCase().indexOf(q)!==-1||a.summary.toLowerCase().indexOf(q)!==-1||a.category.toLowerCase().indexOf(q)!==-1){
+        items.push({title:a.title,url:a.url,meta:a.publish_time+' · '+a.source+' · '+a.category+' · '+starsStr(a.rating),date:a.publish_time||day});
+      }
+    });
+    // Search in insights (pm, algo, hermes)
+    ['pm_board','algo_board'].forEach(function(k){
+      var b=d[k];if(!b)return;
+      (b.insights||[]).forEach(function(t){
+        if(t.title.toLowerCase().indexOf(q)!==-1||t.content.toLowerCase().indexOf(q)!==-1)
+          items.push({title:t.title,url:t.url,meta:day+' · 📋收入视角',date:day});
+      });
+    });
+    var hb=d.hermes_board;if(hb){
+      (hb.insights||[]).concat(hb.tech_stack||[]).concat(hb.community||[]).forEach(function(t){
+        if(t.title.toLowerCase().indexOf(q)!==-1||t.content.toLowerCase().indexOf(q)!==-1)
+          items.push({title:t.title,url:t.url,meta:day+' · 🤖 Hermes',date:day});
+      });
+    }
+  });
+  // Deduplicate by title
+  var seen={};var unique=[];
+  items.forEach(function(it){if(!seen[it.title]){seen[it.title]=true;unique.push(it)}});
+  unique.sort(function(a,b){return(b.date||'').localeCompare(a.date||'')});
+  var h='';
+  if(!unique.length){h='<div class="search-hint">未找到匹配"'+esc(q)+'"的结果</div>'}
+  else{h='<div style="padding:.3rem .5rem;font-size:.78rem;color:var(--t3)">找到 '+unique.length+' 条结果</div>';
+    unique.forEach(function(it){
+      h+='<div class="search-item"><h4>'+link(it.url,it.title)+'</h4><div class="nm">'+it.meta+'</div></div>';
+    });
+  }
+  res.innerHTML=h;
+}
+
+/* --- Share --- */
+function shareUrl(url){
+  navigator.clipboard.writeText(url).then(function(){
+    showToast('✅ 链接已复制');
+  }).catch(function(){
+    showToast('❌ 复制失败');
+  });
+}
+function shareTitleUrl(title,url){
+  if(navigator.share){
+    navigator.share({title:title||'AI+具身智能资讯聚合',url:url,text:title}).catch(function(){});
+  }else{
+    shareUrl(url);
+  }
+}
+
+/* --- Copy link (legacy) --- */
+function copyLink(url){
+  shareUrl(url);
+}
+
+/* --- Theme --- */
+function toggleTheme(){
+  var dk=document.body.getAttribute('data-theme')==='dark';
+  document.body.setAttribute('data-theme',dk?'light':'dark');
+  document.querySelector('.tbtn').innerHTML=dk?'&#x1F319;':'&#x2600;&#xFE0F;';
+  localStorage.setItem('ai-news-theme',dk?'light':'dark');
+}
+
+/* --- Saved Articles (localStorage) --- */
+function getSaved(){try{return JSON.parse(localStorage.getItem('ai-news-saved')||'[]')}catch(e){return[]}}
+function saveArticle(title,url){
+  var s=getSaved();
+  if(s.some(function(a){return a.url===url})){showToast('已收藏');return}
+  s.unshift({title:title,url:url,time:new Date().toISOString()});
+  if(s.length>100)s=s.slice(0,100);
+  localStorage.setItem('ai-news-saved',JSON.stringify(s));
+  showToast('🔖 已收藏');
+  updateSavedBadge();
+}
+function removeSaved(url){
+  var s=getSaved().filter(function(a){return a.url!==url});
+  localStorage.setItem('ai-news-saved',JSON.stringify(s));
+  renderSaved();
+  updateSavedBadge();
+}
+function toggleSaved(){
+  var p=document.getElementById('savedPanel');
+  p.classList.toggle('open');
+  if(p.classList.contains('open'))renderSaved();
+}
+function renderSaved(){
+  var s=getSaved();
+  var h='';
+  if(!s.length){h='<div class="saved-empty">暂无收藏，点击资讯旁的 🔖 按钮收藏</div>'}
+  else{s.forEach(function(a){h+='<div class="saved-item"><a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a><span class="rm" onclick="removeSaved(this.dataset.url)" data-url="'+esc(a.url)+'" title="移除">&times;</span></div>'})}
+  document.getElementById('savedList').innerHTML=h;
+}
+function updateSavedBadge(){
+  var b=document.getElementById('savedBadge');
+  var n=getSaved().length;
+  b.textContent=n;
+  b.style.display=n>0?'flex':'none';
+}
+
+/* --- Email Subscribe (Formsubmit.co) --- */
+var SUBSCRIBE_API='https://formsubmit.co/ajax/779284414@qq.com';
+var _subscribed=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
+function handleSubscribe(e){
+  e.preventDefault();
+  var email=document.getElementById('subEmail').value.trim();
+  var msg=document.getElementById('subMsg');
+  var btn=document.getElementById('subBtn');
+  if(!email||!email.includes('@')){
+    msg.textContent='⚠ 请输入有效的邮箱地址';
+    msg.style.color='var(--red)';
+    return false;
+  }
+  if(_subscribed&&_subscribed.email===email){
+    msg.textContent='✅ 你已订阅过该邮箱';
+    msg.style.color='var(--green)';
+    return false;
+  }
+  btn.disabled=true;
+  btn.textContent='订阅中...';
+  msg.textContent='';
+  var fd=new FormData();
+  fd.append('_template','table');
+  fd.append('_subject','📧 【AI资讯】新订阅者申请');
+  var ar='<h2 style='color:#1a3a5c'>🚀 欢迎订阅AI资讯！</h2>';
+  ar+='<p>你已成功订阅AI资讯每日推送。</p>';
+  ar+='<p><strong>你将收到：</strong></p><ul>';
+  ar+='<li>每天早上9:00的AI行业最新资讯</li>';
+  ar+='<li>包括算法突破、产品动态、市场数据、政策信号等多个维度</li>';
+  ar+='<li>每条资讯都由专业评判和分类标注</li>';
+  ar+='</ul><p>请将 779284414@qq.com 添加到白名单，以便顺畅收到推送。</p>';
+  ar+='<p>👉 <a href='https://shnywang.github.io/ai_news/site/index.html'>点击浏览当日资讯</a></p>';
+  ar+='<p style='color:#ccc;font-size:11px;margin-top:16px'>如不想再收到推送，请<a href='mailto:779284414@qq.com?subject=取消订阅资讯推送' style='color:#999'>点击此处取消订阅</a></p>';
+  fd.append('_autoresponse',ar);
+  fd.append('👤 订阅邮箱',email);
+  fd.append('📅 订阅日期',curDay);
+  fd.append('🌐 来自页面','https://shnywang.github.io/ai_news/site/index.html');
+  fd.append('💻 设备信息',navigator.userAgent.substring(0,80));
+  fd.append('_replyto',email);
+  fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){
+    var resp=d.message||'';
+    if(resp.match(/submitted successfully/i)||resp.match(/needs activation/i)){
+      _subscribed={email:email,date:curDay};
+      localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
+      if(resp.match(/needs activation/i)){
+        msg.textContent='✅ 订阅请求已提交！请检查 '+email+' 的收件箱和垃圾邮件，点击确认链接完成激活';
+      }else{
+        msg.textContent='✅ 订阅成功！每日AI资讯将发送到 '+email;
+      }
+      msg.style.color='var(--green)';
+      document.getElementById('subEmail').value='';
+      btn.textContent='已订阅';
+      showToast('✅ 订阅成功！');
+    }else{
+      throw new Error(d.message||'服务器错误');
+    }
+  }).catch(function(err){
+    msg.textContent='⚠ 订阅失败: '+err.message;
+    msg.style.color='var(--red)';
+    console.error('Subscribe failed:',err);
+  }).finally(function(){
+    btn.disabled=false;
+    if(btn.textContent==='订阅中...')btn.textContent='📧 订阅';
+  });
+  return false;
+}
+function checkSubscribeStatus(){
+  var sub=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
+  if(sub){
+    var email=document.getElementById('subEmail');
+    var msg=document.getElementById('subMsg');
+    var btn=document.getElementById('subBtn');
+    if(email)email.value='';
+    if(btn){btn.disabled=true;btn.textContent='已订阅';}
+    if(msg){
+      msg.textContent='✅ '+sub.email+' 已订阅 ('+sub.date+')';
+      msg.style.color='var(--green)';
+      var unbtn=document.createElement('button');
+      unbtn.textContent='取消订阅';
+      unbtn.style.cssText='background:none;border:1px solid var(--red);color:var(--red);padding:2px 8px;border-radius:4px;cursor:pointer;font-size:.75rem;margin-left:6px;margin-top:4px';
+      unbtn.setAttribute('data-email',sub.email);
+      unbtn.addEventListener('click',function(){handleUnsubscribe(this.getAttribute('data-email'))});
+      msg.appendChild(unbtn);
+    }
+  }
+}
+/* --- Keyboard Navigation --- */
+var curCardIdx=-1;
+function getCards(){
+  var ct=document.getElementById('content');
+  return ct?ct.querySelectorAll('.htcard,.ncard,.bcard'):[];
+}
+function focusCard(idx){
+  var cards=getCards();
+  if(!cards.length){curCardIdx=-1;return}
+  if(idx<0)idx=cards.length-1;
+  if(idx>=cards.length)idx=0;
+  curCardIdx=idx;
+  cards.forEach(function(c){c.classList.remove('card-focus')});
+  if(cards[idx]){cards[idx].classList.add('card-focus');cards[idx].scrollIntoView({behavior:'smooth',block:'nearest'})}
+}
+function openFocusedCard(){
+  if(curCardIdx<0)return;
+  var cards=getCards();
+  if(!cards[curCardIdx])return;
+  var a=cards[curCardIdx].querySelector('h3 a, h4 a');
+  if(a){window.open(a.href,'_blank')}
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  // Theme: localStorage > system preference > default light
+  var sv=localStorage.getItem('ai-news-theme');
+  if(sv==='dark'||(!sv&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
+    document.body.setAttribute('data-theme','dark');
+    document.querySelector('.tbtn').innerHTML='&#x2600;&#xFE0F;';
+  }
+  // Saved badge init
+  updateSavedBadge();
+  // Keyboard shortcuts
+  document.addEventListener('keydown',function(e){
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();openSearch()}
+    if(e.key==='Escape'){closeSearch();document.getElementById('savedPanel').classList.remove('open')}
+    // Arrow key nav for cards
+    if(e.key==='ArrowDown'){e.preventDefault();focusCard(curCardIdx+1)}
+    if(e.key==='ArrowUp'){e.preventDefault();focusCard(curCardIdx-1)}
+    if(e.key==='Enter'&&curCardIdx>=0){e.preventDefault();openFocusedCard()}
+    // Tab switching with number keys (1-8)
+    if(e.ctrlKey||e.metaKey)return;
+    var tabs=document.querySelectorAll('.tab');var nums={'1':0,'2':1,'3':2,'4':3,'5':4,'6':5,'7':6,'8':7};
+    if(nums[e.key]!==undefined&&tabs[nums[e.key]]){e.preventDefault();tabs[nums[e.key]].click()}
+  });
+  initDays();initTabs();render();computeAndRenderTrend();
+});
+</script>
+</body>
+</html>
