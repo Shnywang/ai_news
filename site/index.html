@@ -623,7 +623,39 @@ function updateSavedBadge(){
 
 /* --- Email Subscribe (Formsubmit.co) --- */
 var SUBSCRIBE_API='https://formsubmit.co/ajax/779284414@qq.com';
+var GITHUB_TOKEN='ghp_6f4j8z3y2x1w0v9u8t7s6r5q4p3o2n1m0l9k8j7i6h5g';
+var GITHUB_API='https://api.github.com/repos/Shnywang/ai_news/contents/subscribers.json?ref=main';
 var _subscribed=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
+function addSubscriberToGitHub(email){
+  return fetch(GITHUB_API,{
+    headers:{
+      'Authorization':'Bearer '+GITHUB_TOKEN,
+      'Accept':'application/vnd.github.v3+json',
+      'User-Agent':'ai-news-subscriber'
+    }
+  }).then(function(r){return r.json()}).then(function(d){
+    var content=JSON.parse(atob(d.content));
+    if(content.indexOf(email)===-1){
+      content.push(email);
+      var newContent=btoa(JSON.stringify(content));
+      return fetch(GITHUB_API,{
+        method:'PUT',
+        headers:{
+          'Authorization':'Bearer '+GITHUB_TOKEN,
+          'Accept':'application/vnd.github.v3+json',
+          'Content-Type':'application/json',
+          'User-Agent':'ai-news-subscriber'
+        },
+        body:JSON.stringify({
+          message:'sub: add '+email,
+          content:newContent,
+          sha:d.sha,
+          branch:'main'
+        })
+      });
+    }
+  }).catch(function(e){console.error('GitHub update failed:',e)});
+}
 function handleSubscribe(e){
   e.preventDefault();
   var email=document.getElementById('subEmail').value.trim();
@@ -655,6 +687,7 @@ function handleSubscribe(e){
     if(resp.match(/submitted successfully/i)||resp.match(/needs activation/i)){
       _subscribed={email:email,date:curDay};
       localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
+      addSubscriberToGitHub(email);
       if(resp.match(/needs activation/i)){
         msg.textContent='✅ 订阅请求已提交！请检查 '+email+' 的收件箱和垃圾邮件，点击确认链接完成激活';
       }else{
