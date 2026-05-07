@@ -643,8 +643,12 @@ function handleSubscribe(e){
   btn.textContent='订阅中...';
   msg.textContent='';
   var fd=new FormData();
-  fd.append('subject','【AI资讯订阅】新订阅者 '+email);
-  fd.append('message','订阅邮箱: '+email+'\n订阅日期: '+curDay+'\n页面: https://shnywang.github.io/ai_news/site/index.html');
+  fd.append('_template','table');
+  fd.append('_subject','📧 【AI资讯】新订阅者申请');
+  fd.append('👤 订阅邮箱',email);
+  fd.append('📅 订阅日期',curDay);
+  fd.append('🌐 来自页面','https://shnywang.github.io/ai_news/site/index.html');
+  fd.append('💻 设备信息',navigator.userAgent.substring(0,80));
   fd.append('_replyto',email);
   fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){
     var resp=d.message||'';
