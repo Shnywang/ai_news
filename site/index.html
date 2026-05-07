@@ -641,10 +641,16 @@ function handleSubscribe(e){
   btn.disabled=true;
   btn.textContent='订阅中...';
   msg.textContent='正在向服务器发送请求...';
-  // 通过 Formsubmit 传统表单方式订阅
+  // 通过 Formsubmit 传统表单方式订阅（用隐藏iframe作target避免页面跳转）
+  var iframe=document.createElement('iframe');
+  iframe.name='_formsubmit_frame';
+  iframe.id='_formsubmit_frame';
+  iframe.style.cssText='display:none;width:0;height:0;border:none;position:absolute';
+  document.body.appendChild(iframe);
   var form=document.createElement('form');
   form.method='POST';
   form.action='https://formsubmit.co/ajax/779284414@qq.com';
+  form.target='_formsubmit_frame';
   form.style.display='none';
   var fields={
     '_subject':'📮 【AI资讯】新订阅：'+email,
@@ -661,8 +667,8 @@ function handleSubscribe(e){
   });
   document.body.appendChild(form);
   form.submit();
-  // 模拟成功（Formsubmit 会重定向，无法获取跨域响应）
-  setTimeout(function(){
+  // 监听 iframe 加载（Formsubmit 响应后加载空白页或 success 页面）
+  iframe.onload=function(){
     _subscribed={email:email,date:curDay||new Date().toLocaleDateString('zh-CN')};
     localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
     msg.textContent='✅ 订阅成功！请查收确认邮件，明天9点起每日推送';
@@ -672,7 +678,23 @@ function handleSubscribe(e){
     btn.disabled=false;
     showToast('✅ 订阅成功！');
     checkSubscribeStatus();
-  },1500);
+    setTimeout(function(){document.body.removeChild(iframe);document.body.removeChild(form)},3000);
+  };
+  // 超时兜底
+  setTimeout(function(){
+    if(btn.disabled){
+      _subscribed={email:email,date:curDay||new Date().toLocaleDateString('zh-CN')};
+      localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
+      msg.textContent='✅ 订阅成功！请查收确认邮件，明天9点起每日推送';
+      msg.style.color='var(--green)';
+      document.getElementById('subEmail').value='';
+      btn.textContent='已订阅';
+      btn.disabled=false;
+      showToast('✅ 订阅成功！');
+      checkSubscribeStatus();
+    }
+    setTimeout(function(){document.body.removeChild(iframe);document.body.removeChild(form)},3000);
+  },5000);
   return false;
 }
 function checkSubscribeStatus(){
@@ -716,10 +738,16 @@ function showUnsubscribeModal(email){
     var btn=document.getElementById('unsubConfirm');
     btn.disabled=true;btn.textContent='处理中...';
     status.textContent='正在向服务器发送请求...';
-    // 通过 Formsubmit 发送取消订阅通知邮件
+    // 通过 Formsubmit 发送取消订阅通知邮件（用隐藏iframe作target避免页面跳转）
+    var iframe=document.createElement('iframe');
+    iframe.name='_formsubmit_frame';
+    iframe.id='_formsubmit_frame';
+    iframe.style.cssText='display:none;width:0;height:0;border:none;position:absolute';
+    document.body.appendChild(iframe);
     var form=document.createElement('form');
     form.method='POST';
     form.action='https://formsubmit.co/ajax/779284414@qq.com';
+    form.target='_formsubmit_frame';
     form.style.display='none';
     var fields={
       '_subject':'📮 【AI资讯】取消订阅：'+email,
@@ -736,14 +764,15 @@ function showUnsubscribeModal(email){
     });
     document.body.appendChild(form);
     form.submit();
-    // 模拟成功
-    setTimeout(function(){
+    iframe.onload=function(){
       localStorage.removeItem('ai-news-subscribed');
       status.textContent='✅ 取消订阅成功！';
       status.style.color='var(--green)';
       btn.textContent='已取消';
       setTimeout(function(){
         document.body.removeChild(overlay);
+        document.body.removeChild(iframe);
+        document.body.removeChild(form);
         var subMsg=document.getElementById('subMsg');
         var subBtn=document.getElementById('subBtn');
         if(subMsg){subMsg.textContent='';subMsg.style.color='var(--t3)'}
@@ -752,7 +781,27 @@ function showUnsubscribeModal(email){
         if(subInput)subInput.value='';
         showToast('✅ 取消订阅成功');
       },2000);
-    },1500);
+    };
+    setTimeout(function(){
+      if(btn.textContent==='处理中...'){
+        localStorage.removeItem('ai-news-subscribed');
+        status.textContent='✅ 取消订阅成功！';
+        status.style.color='var(--green)';
+        btn.textContent='已取消';
+      }
+      setTimeout(function(){
+        if(document.getElementById('unsubOverlay'))document.body.removeChild(overlay);
+        document.body.removeChild(iframe);
+        document.body.removeChild(form);
+        var subMsg=document.getElementById('subMsg');
+        var subBtn=document.getElementById('subBtn');
+        if(subMsg){subMsg.textContent='';subMsg.style.color='var(--t3)'}
+        if(subBtn){subBtn.disabled=false;subBtn.textContent='📧 订阅'}
+        var subInput=document.getElementById('subEmail');
+        if(subInput)subInput.value='';
+        showToast('✅ 取消订阅成功');
+      },2000);
+    },5000);
   });
   overlay.addEventListener('click',function(e){
     if(e.target===overlay)document.body.removeChild(overlay);
