@@ -751,6 +751,16 @@ function handleSubscribe(e){
   var fd=new FormData();
   fd.append('_template','table');
   fd.append('_subject','\ud83d\udce7 \u3010AI\u8d44\u8baf\u3011\u65b0\u8ba2\u9605\u8005\u7533\u8bf7');
+  var ar='<h2 style=\u0027color:#1a3a5c\u0027>\ud83d\ude80 \u6b22\u8fce\u8ba2\u9605AI\u8d44\u8baf\uff01</h2>';
+  ar+='<p>\u4f60\u5df2\u6210\u529f\u8ba2\u9605AI\u8d44\u8baf\u6bcf\u65e5\u63a8\u9001\u3002</p>';
+  ar+='<p><strong>\u4f60\u5c06\u6536\u5230\uff1a</strong></p><ul>';
+  ar+='<li>\u6bcf\u5929\u65e9\u4e0a9:00\u7684AI\u884c\u4e1a\u6700\u65b0\u8d44\u8baf</li>';
+  ar+='<li>\u5305\u62ec\u7b97\u6cd5\u7a81\u7834\u3001\u4ea7\u54c1\u52a8\u6001\u3001\u5e02\u573a\u6570\u636e\u3001\u653f\u7b56\u4fe1\u53f7\u7b49\u591a\u4e2a\u7ef4\u5ea6</li>';
+  ar+='<li>\u6bcf\u6761\u8d44\u8baf\u90fd\u7531\u4e13\u4e1a\u8bc4\u5224\u548c\u5206\u7c7b\u6807\u6ce8</li>';
+  ar+='</ul><p>\u8bf7\u5c06 779284414@qq.com \u6dfb\u52a0\u5230\u767d\u540d\u5355\uff0c\u4ee5\u4fbf\u987a\u7545\u6536\u5230\u63a8\u9001\u3002</p>';
+  ar+='<p>\ud83d\udc49 <a href=\u0027https://shnywang.github.io/ai_news/site/index.html\u0027>\u70b9\u51fb\u6d4f\u89c8\u5f53\u65e5\u8d44\u8baf</a></p>';
+  ar+='<p style=\u0027color:#999;font-size:12px\u0027>\u6b64\u4e3a\u81ea\u52a8\u53d1\u9001\u7684\u90ae\u4ef6\uff0c\u8bf7\u4e0d\u8981\u76f4\u63a5\u590d\u4ef6</p>';
+  fd.append('_autoresponse',ar);
   fd.append('\ud83d\udc64 \u8ba2\u9605\u90ae\u7bb1',email);
   fd.append('\ud83d\udcc5 \u8ba2\u9605\u65e5\u671f',curDay);
   fd.append('\ud83c\udf10 \u6765\u81ea\u9875\u9762','https://shnywang.github.io/ai_news/site/index.html');
