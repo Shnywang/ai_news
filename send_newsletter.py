@@ -105,6 +105,57 @@ def update_subscribers_on_github(email, new_content):
     
     return data['content']['sha']
 
+def remove_subscriber(email):
+    """从 subscribers.json 移除订阅者"""
+    try:
+        req = urllib.request.Request(SUBSCRIBERS_URL)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            subs = json.loads(resp.read().decode())
+    except:
+        subs = []
+
+    if email not in subs:
+        print(f"  {email} not in subscribers, skipping")
+        return False
+
+    subs.remove(email)
+    new_content = json.dumps(subs, ensure_ascii=False)
+
+    sha = update_subscribers_on_github(email, new_content)
+    print(f"  Removed {email} from subscribers.json (SHA: {sha[:12]})")
+    return True
+
+def send_unsubscribe_confirmation(recipient):
+    """发送取消订阅确认邮件"""
+    html = f"""<html>
+<head>
+<style>
+  body {{ font-family: -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #f8f9fa; margin: 0; padding: 0; }}
+  .container {{ max-width: 600px; margin: 0 auto; background: #fff; }}
+  .header {{ background: linear-gradient(135deg, #1a3a5c, #2980b9); color: #fff; padding: 30px 20px; text-align: center; }}
+  .content {{ padding: 20px; font-size: 14px; color: #333; line-height: 1.6; }}
+  .footer {{ background: #f8f9fa; padding: 20px; text-align: center; font-size: 12px; color: #999; }}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI资讯 — 取消订阅确认</h1>
+  </div>
+  <div class="content">
+    <p>您已成功取消订阅 <strong>{recipient}</strong>，今后将不再收到每日AI资讯推送。</p>
+    <p>感谢您的使用，欢迎随时回来！</p>
+    <p>👉 <a href="{SITE_URL}">重新订阅</a></p>
+  </div>
+  <div class="footer">
+    由 <a href="{SITE_URL}">AI资讯</a> 自动发送
+  </div>
+</div>
+</body>
+</html>"""
+    return send_email(recipient, f"AI资讯 — 已取消订阅 ({datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d')})", html)
+
+
 def add_subscriber(email):
     """添加订阅者到 subscribers.json"""
     # 读取当前列表
@@ -252,10 +303,53 @@ def send_email(recipient, subject, html_content):
 
 def main():
     dry_run = "--dry-run" in sys.argv
-    
+
+    # --- 取消订阅模式 ---
+    if "--unsubscribe" in sys.argv:
+        idx = sys.argv.index("--unsubscribe")
+        email = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else None
+        if not email or "@" not in email:
+            print("用法: python3 send_newsletter.py --unsubscribe <邮箱>")
+            sys.exit(1)
+        print(f"=== 取消订阅 ===\n邮箱: {email}")
+        removed = remove_subscriber(email)
+        if removed:
+            if not dry_run and SMTP_AUTH:
+                print("发送取消确认邮件...", end=" ")
+                ok = send_unsubscribe_confirmation(email)
+                print("OK" if ok else "FAIL")
+            else:
+                print("[DRY RUN] 跳过实际发送")
+        else:
+            print("该邮箱不在订阅列表中")
+        return
+
+    # --- 立即发送模式 ---
+    if "--send-now" in sys.argv:
+        idx = sys.argv.index("--send-now")
+        target_email = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else None
+        if not target_email or "@" not in target_email:
+            print("用法: python3 send_newsletter.py --send-now <邮箱>")
+            sys.exit(1)
+        print(f"=== 立即发送测试邮件 ===\n收件人: {target_email}\n时间: {datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M')}")
+        articles = fetch_feed()
+        recent = articles[:30] if articles else []
+        today = datetime.now(timezone(timedelta(hours=8))).strftime('%Y年%m月%d日')
+        html = build_email_content(recent, today)
+        subject = f"AI资讯日报 - {today} [测试推送]"
+        if dry_run:
+            print(f"[DRY RUN] 将发送 {subject} 给 {target_email}")
+        else:
+            if not SMTP_AUTH:
+                print("ERROR: SMTP_QQ_AUTH_CODE 未设置"); sys.exit(1)
+            ok = send_email(target_email, subject, html)
+            print(f"发送结果: {'OK' if ok else 'FAIL'}")
+        return
+
+    # --- 默认每日推送模式 ---
     print("=== AI资讯日报推送 ===")
     print(f"时间: {datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M')}")
-    
+
     # 1. 获取订阅者列表
     print("\n[1/4] 获取订阅者列表...")
     try:
@@ -265,17 +359,17 @@ def main():
     except Exception as e:
         print(f"  Error fetching subscribers: {e}")
         subscribers = []
-    
+
     print(f"  订阅者数量: {len(subscribers)}")
     if not subscribers:
         print("  暂无订阅者，跳过发送")
         return
-    
+
     # 2. 获取最新资讯
     print("\n[2/4] 获取最新资讯...")
     articles = fetch_feed()
     print(f"  RSS 文章总数: {len(articles)}")
-    
+
     # 取最近的 (按 pubDate 排序，取前 N 天)
     if articles:
         recent = articles[:30]  # 取最新 30 条
@@ -284,15 +378,15 @@ def main():
         recent = []
         print("  无可用资讯")
         return
-    
+
     # 3. 构建邮件
     print("\n[3/4] 构建邮件内容...")
-    today = datetime.now(timezone(timedelta(hours=8))).strftime('%Y年%m月%d日')
-    subject = f"AI资讯日报 - {today}"
-    html = build_email_content(recent, today)
+    today_str = datetime.now(timezone(timedelta(hours=8))).strftime('%Y年%m月%d日')
+    subject = f"AI资讯日报 - {today_str}"
+    html = build_email_content(recent, today_str)
     print(f"  邮件主题: {subject}")
     print(f"  邮件内容: {len(html)} 字符")
-    
+
     # 4. 发送
     print(f"\n[4/4] 发送邮件...")
     if dry_run:
@@ -301,12 +395,12 @@ def main():
             print(f"  [{i+1}/{len(subscribers)}] 将发送给: {email}")
         print("\n=== DRY RUN 完成 ===")
         return
-    
+
     if not SMTP_AUTH:
         print("  ERROR: SMTP_QQ_AUTH_CODE 环境变量未设置")
         print("  请设置: export SMTP_QQ_AUTH_CODE='你的授权码'")
         sys.exit(1)
-    
+
     sent = 0
     failed = 0
     for i, email in enumerate(subscribers):
@@ -320,7 +414,7 @@ def main():
         # 间隔 1-2 秒，避免触发限流
         import time
         time.sleep(1.5)
-    
+
     print(f"\n=== 完成 ===")
     print(f"成功: {sent} | 失败: {failed} | 总计: {len(subscribers)}")
 

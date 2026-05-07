@@ -214,7 +214,7 @@ a{color:inherit}
 <button class="saved-toggle" onclick="toggleSaved()" title="稍后阅读">
 🔖<span class="badge" id="savedBadge">0</span>
 </button>
-<footer class="ftr">由 WorkBuddy 自动生成 · 数据每日更新 · 仅保留近一周数据 · <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> · 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> · <a href="https://github.com/Shnywang/ai_news/discussions" target="_blank" rel="noopener noreferrer">社区讨论/Giscus</a> · <a href="https://github.com/Shnywang/ai_news/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a>
+<footer class="ftr">由 WorkBuddy 自动生成 · 数据每日更新 · 仅保留近一周数据 · <a href="feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a> · 问题反馈: <a href="https://github.com/Shnywang/ai_news/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> · <a href="https://github.com/Shnywang/ai_news/discussions" target="_blank" rel="noopener noreferrer">社区讨论/Giscus</a> · <a href="https://github.com/Shnywang/ai_news/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">贡献指南</a> · <a href="javascript:void(0)" onclick="var sub=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');if(sub&&sub.email)showUnsubscribeModal(sub.email);else{var t=document.getElementById('toast');t.textContent='你还没有订阅';t.classList.add('show');setTimeout(function(){t.classList.remove('show')},1500)}" style="color:#fca5a5;text-decoration:underline;cursor:pointer" id="footerUnsubLink">取消订阅</a>
 <div class="subscribe-box"><form id="subForm" onsubmit="handleSubscribe(event);return false" style="display:flex;gap:.3rem;align-items:center;justify-content:center;margin-top:.5rem;flex-wrap:wrap"><input type="email" id="subEmail" placeholder="输入邮箱订阅每日资讯" required style="padding:.4rem .8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.8rem;min-width:180px"><button type="submit" id="subBtn" style="padding:.4rem 1rem;border-radius:8px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:.8rem;font-weight:600">📧 订阅</button></form><div id="subMsg" style="font-size:.78rem;margin-top:.3rem;color:var(--t3)"></div></div>
 · © 2026</footer>
 <script>
@@ -710,7 +710,7 @@ function checkSubscribeStatus(){
 /* --- Unsubscribe Modal & Logic --- */
 function showUnsubscribeModal(email){
   var overlay=document.createElement('div');
-  overlay.id=' unsubOverlay';
+  overlay.id='unsubOverlay';
   overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:3000;display:flex;justify-content:center;align-items:center;';
   overlay.innerHTML='<div style="background:var(--card);border-radius:16px;padding:2rem;max-width:380px;width:90%;text-align:center;box-shadow:var(--shadow2)">'+
     '<h3 style="font-size:1.1rem;margin-bottom:.5rem">取消订阅</h3>'+
@@ -817,6 +817,7 @@ document.addEventListener('DOMContentLoaded',function(){
     if(nums[e.key]!==undefined&&tabs[nums[e.key]]){e.preventDefault();tabs[nums[e.key]].click()}
   });
   initDays();initTabs();render();computeAndRenderTrend();
+  checkSubscribeStatus();
 });
 </script>
 </body>
