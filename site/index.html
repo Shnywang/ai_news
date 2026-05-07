@@ -702,10 +702,74 @@ function checkSubscribeStatus(){
       unbtn.textContent='取消订阅';
       unbtn.style.cssText='background:none;border:1px solid var(--red);color:var(--red);padding:2px 8px;border-radius:4px;cursor:pointer;font-size:.75rem;margin-left:6px;margin-top:4px';
       unbtn.setAttribute('data-email',sub.email);
-      unbtn.addEventListener('click',function(){handleUnsubscribe(this.getAttribute('data-email'))});
+      unbtn.addEventListener('click',function(){showUnsubscribeModal(sub.email)});
       msg.appendChild(unbtn);
     }
   }
+}
+/* --- Unsubscribe Modal & Logic --- */
+function showUnsubscribeModal(email){
+  var overlay=document.createElement('div');
+  overlay.id=' unsubOverlay';
+  overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:3000;display:flex;justify-content:center;align-items:center;';
+  overlay.innerHTML='<div style="background:var(--card);border-radius:16px;padding:2rem;max-width:380px;width:90%;text-align:center;box-shadow:var(--shadow2)">'+
+    '<h3 style="font-size:1.1rem;margin-bottom:.5rem">取消订阅</h3>'+
+    '<p style="font-size:.85rem;color:var(--t2);margin-bottom:1.2rem">确定要取消订阅 <strong style="color:var(--accent)">'+esc(email)+'</strong> 吗？取消后将不再收到每日AI资讯推送。</p>'+
+    '<div style="display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap">'+
+      '<button id="unsubConfirm" style="background:var(--red);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:600">确认取消</button>'+
+      '<button id="unsubCancel" style="background:var(--border);color:var(--text);border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem">返回</button>'+
+    '</div>'+
+    '<div id="unsubStatus" style="font-size:.8rem;margin-top:1rem;color:var(--t3)"></div>'+
+  '</div>';
+  document.body.appendChild(overlay);
+  document.getElementById('unsubCancel').addEventListener('click',function(){document.body.removeChild(overlay)});
+  document.getElementById('unsubConfirm').addEventListener('click',function(){
+    var status=document.getElementById('unsubStatus');
+    var btn=document.getElementById('unsubConfirm');
+    btn.disabled=true;btn.textContent='处理中...';
+    status.textContent='正在向服务器发送请求...';
+    // 通过 Formsubmit 发送取消订阅请求
+    var fd=new FormData();
+    fd.append('_subject','📮 【AI资讯】取消订阅：'+email);
+    fd.append('👤 取消订阅邮箱',email);
+    fd.append('📅 申请时间',new Date().toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'}));
+    fd.append('_template','table');
+    fd.append('_replyto',email);
+    // 发送到取消订阅专用端点
+    fetch('https://formsubmit.co/ajax/779284414@qq.com',{
+      method:'POST',
+      body:fd
+    }).then(function(r){return r.json()}).then(function(d){
+      var resp=d.message||'';
+      if(resp.match(/submitted successfully/i)||resp.match(/needs activation/i)){
+        // 清理本地订阅记录
+        localStorage.removeItem('ai-news-subscribed');
+        status.textContent='✅ 取消订阅请求已提交！我们将在24小时内处理。';
+        status.style.color='var(--green)';
+        btn.textContent='已提交';
+        setTimeout(function(){
+          document.body.removeChild(overlay);
+          // 重置订阅框状态
+          var subMsg=document.getElementById('subMsg');
+          var subBtn=document.getElementById('subBtn');
+          if(subMsg){subMsg.textContent='';subMsg.style.color='var(--t3)'}
+          if(subBtn){subBtn.disabled=false;subBtn.textContent='📧 订阅'}
+          var subInput=document.getElementById('subEmail');
+          if(subInput)subInput.value='';
+          showToast('✅ 取消订阅成功');
+        },2000);
+      }else{
+        throw new Error(d.message||'服务器错误');
+      }
+    }).catch(function(err){
+      status.textContent='⚠ 请求失败: '+err.message;
+      status.style.color='var(--red)';
+      btn.disabled=false;btn.textContent='确认取消';
+    });
+  });
+  overlay.addEventListener('click',function(e){
+    if(e.target===overlay)document.body.removeChild(overlay);
+  });
 }
 /* --- Keyboard Navigation --- */
 var curCardIdx=-1;
