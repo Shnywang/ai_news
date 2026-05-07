@@ -647,10 +647,15 @@ function handleSubscribe(e){
   fd.append('message','订阅邮箱: '+email+'\n订阅日期: '+curDay+'\n页面: https://shnywang.github.io/ai_news/site/index.html');
   fd.append('_replyto',email);
   fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){
-    if(d.message==='success'||d.messages){
+    var resp=d.message||'';
+    if(resp.match(/submitted successfully/i)||resp.match(/needs activation/i)){
       _subscribed={email:email,date:curDay};
       localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
-      msg.textContent='✅ 订阅成功！我们将发送每日资讯到 '+email;
+      if(resp.match(/needs activation/i)){
+        msg.textContent='✅ 订阅请求已提交！请检查 '+email+' 的收件箱和垃圾邮件，点击确认链接完成激活';
+      }else{
+        msg.textContent='✅ 订阅成功！每日AI资讯将发送到 '+email;
+      }
       msg.style.color='var(--green)';
       document.getElementById('subEmail').value='';
       btn.textContent='已订阅';
