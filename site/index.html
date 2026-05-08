@@ -311,6 +311,7 @@ var catName={policy_signal:'政策信号',algorithm_breakthrough:'算法突破',
 function catLabel(c){return catName[catMap[c]]||c}
 function catClass(c){var m=catMap[c]||'';var map={policy_signal:'cat-policy',algorithm_breakthrough:'cat-algo',market_data:'cat-market',hardware:'cat-hardware',industry_dynamics:'cat-industry',open_source:'cat-open',academic:'cat-academic'};return map[m]||'cat-other'}
 
+var U={save:'收藏'};
 /* --- Data loading (on-demand from /data/JSON files) --- */
 async function loadData(day){
   if(cache[day]) return cache[day];
