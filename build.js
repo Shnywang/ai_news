@@ -66,10 +66,34 @@ const U = {
 
 // Generate dynamic SEO description from latest day's hot topics
 let seoDesc = 'AI+具身智能资讯聚合 — 多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理';
+let ogImageUrl = 'og-image.svg';
 if (latestDay && allData[latestDay] && allData[latestDay].hot_topics && allData[latestDay].hot_topics.length > 0) {
   const top3 = allData[latestDay].hot_topics.slice(0, 3).map(t => t.title).join('；');
   seoDesc = `【${latestDay}】${top3}。每日AI与具身智能领域热点追踪，涵盖大模型、具身智能、市场动态、政策信号。`;
 }
+
+// ========== Generate SVG og:image ==========
+const SITE_URL = 'https://shnywang.github.io/ai_news/site/';
+const ogSvg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="0"/>
+  <text x="80" y="120" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="72" font-weight="800" fill="white">🤖 AI+具身智能</text>
+  <text x="80" y="200" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="48" font-weight="400" fill="rgba(255,255,255,0.9)">资讯聚合 · 多角色视角</text>
+  <line x1="80" y1="240" x2="500" y2="240" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <text x="80" y="300" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" fill="rgba(255,255,255,0.85)">📊 创业 / 产品 / 算法 / 项目管理</text>
+  <text x="80" y="370" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="42" fill="rgba(255,255,255,0.7)">🔥 每日更新 · 聚焦大模型与具身智能</text>
+  <text x="80" y="500" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" fill="rgba(255,255,255,0.6)">${latestDay} · shnywang.github.io/ai_news</text>
+  <rect x="900" y="420" width="220" height="130" rx="12" fill="rgba(255,255,255,0.15)"/>
+  <text x="1010" y="470" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="white" text-anchor="middle">扫码访问</text>
+  <text x="1010" y="520" font-family="system-ui,sans-serif" font-size="22" fill="rgba(255,255,255,0.7)" text-anchor="middle">AI+具身智能资讯</text>
+</svg>`;
+fs.writeFileSync(path.join(__dirname, 'site/og-image.svg'), ogSvg, 'utf8');
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -88,17 +112,62 @@ const html = `<!DOCTYPE html>
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "AI+具身智能资讯聚合 — ${latestDay}",
+  "description": "${seoDesc}",
+  "url": "https://shnywang.github.io/ai_news/site/index.html",
+  "datePublished": "${latestDay}T09:00:00+08:00",
+  "dateModified": "${latestDay}T09:00:00+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "shnywang",
+    url: "https://github.com/Shnywang"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI+具身智能资讯聚合",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://shnywang.github.io/ai_news/site/og-image.svg"
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://shnywang.github.io/ai_news/site/og-image.svg",
+    "width": 1200,
+    "height": 630
+  },
+  "articleSection": "人工智能与具身智能",
+  "keywords": "AI,具身智能,大模型,人工智能,人形机器人,行业动态"
+}
+</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="${seoDesc}">
+<meta name="keywords" content="AI资讯,具身智能,大模型,人工智能,ChatGPT,人形机器人,行业动态,创业投资">
+<meta name="author" content="shnywang">
+<meta name="robots" content="index, follow">
 <meta property="og:title" content="AI+具身智能资讯聚合 — ${latestDay}">
 <meta property="og:description" content="${seoDesc}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://shnywang.github.io/ai_news/site/index.html">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://shnywang.github.io/ai_news/site/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="AI+具身智能资讯聚合">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI+具身智能资讯聚合 — ${latestDay}">
+<meta name="twitter:description" content="${seoDesc}">
+<meta name="twitter:image" content="https://shnywang.github.io/ai_news/site/og-image.svg">
+<meta name="twitter:site" content="@shnywang">
 <link rel="alternate" type="application/rss+xml" href="feed.xml" title="AI+具身智能资讯聚合 RSS">
 <link rel="canonical" href="https://shnywang.github.io/ai_news/site/index.html">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
 <title>AI+具身智能资讯聚合 — ${latestDay}</title>
 <style>
 :root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
@@ -119,6 +188,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .share-bar{display:flex;gap:.4rem;margin-left:auto;flex-shrink:0;align-items:center}
 .share-btn{background:none;border:1.5px solid var(--border);border-radius:8px;padding:.2rem .5rem;cursor:pointer;font-size:.75rem;color:var(--t3);transition:all .2s;white-space:nowrap}
 .share-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(99,102,241,.05)}
+/* Social share buttons */
+.share-btn.weixin{color:#07c160}.share-btn.weixin:hover{border-color:#07c160;background:rgba(7,193,96,.08)}
+.share-btn.weibo{color:#e6162d}.share-btn.weibo:hover{border-color:#e6162d;background:rgba(230,22,45,.08)}
+.share-btn.qq{color:#1296db}.share-btn.qq:hover{border-color:#1296db;background:rgba(18,150,219,.08)}
+/* Weixin QR modal */
+.wx-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:3000;justify-content:center;align-items:center}
+.wx-modal.open{display:flex}
+.wx-modal-box{background:#fff;border-radius:16px;padding:1.5rem;text-align:center;max-width:300px;box-shadow:var(--shadow2)}
+.wx-modal-box h3{font-size:1rem;margin-bottom:.8rem;color:var(--text)}
+.wx-modal-box p{font-size:.78rem;color:var(--t2);margin-bottom:1rem;line-height:1.6}
+.wx-modal-box .close-btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:.4rem 1.2rem;cursor:pointer;font-size:.82rem}
 /* Board tabs */
 .tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:1.2rem;overflow-x:auto}
 .tab{padding:.7rem 1.2rem;cursor:pointer;font-size:.88rem;font-weight:600;color:var(--t2);border-bottom:3px solid transparent;white-space:nowrap;transition:all .2s}
@@ -279,6 +359,16 @@ a{color:inherit}
 </div>
 <!-- Toast -->
 <div class="toast" id="toast"></div>
+<!-- WeChat QR Modal -->
+<div class="wx-modal" id="wxModal" onclick="if(event.target===this)closeWeixinModal()">
+<div class="wx-modal-box">
+<h3>分享到微信</h3>
+<p>用微信扫描二维码<br>或搜索并关注公众号<br><strong>「AI科技前沿」</strong></p>
+<div style="background:#07c160;width:160px;height:160px;margin:0 auto 1rem;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;font-size:3rem">🔍</div>
+<p style="font-size:.72rem;color:var(--t3)">转发给朋友或分享到朋友圈</p>
+<button class="close-btn" onclick="closeWeixinModal()">关闭</button>
+</div>
+</div>
 <!-- Saved Articles Panel -->
 <div class="saved-panel" id="savedPanel">
 <h3>${U.save} 稍后阅读</h3>
@@ -424,7 +514,7 @@ async function render(){
 function renderHot(d){
   var h='<div class="sec">${U.fire} 今日热点 ('+(d.hot_topics||[]).length+'条 · '+(d.raw_articles||[]).length+'篇原始资讯)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · <span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn" onclick="shareTitleUrl(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="分享">分享</button></span></div></div></div>';
+    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · <span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">'+U.save+'</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn weixin" onclick="shareWeixin(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微信">微信</button><button class="share-btn weibo" onclick="shareWeibo(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微博">微博</button><button class="share-btn qq" onclick="shareQQ(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="QQ">QQ</button><button class="share-btn" onclick="shareX(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="X/Twitter">X</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -556,7 +646,7 @@ function filterAll(q){
   var h='';
   if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">未找到匹配资讯</div>'}
   else{arts.forEach(function(a){
-    h+='<div class="ncard" tabindex="0"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' ${U.dot} '+a.publish_time+' ${U.dot} '+starsHTML(a.rating)+'</div></div><div class="right"><span class="cat '+catClass(a.category)+'">'+catLabel(a.category)+'</span><div class="share-bar" style="margin-top:.2rem" data-url="'+esc(a.url)+'" data-title="'+esc(a.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">${U.save}</button></div></div></div>';
+    h+='<div class="ncard" tabindex="0"><div class="left"><h4>'+link(a.url,a.title)+'</h4><div class="nm">'+esc(a.source)+' ${U.dot} '+a.publish_time+' ${U.dot} '+starsHTML(a.rating)+'</div></div><div class="right"><span class="cat '+catClass(a.category)+'">'+catLabel(a.category)+'</span><div class="share-bar" style="margin-top:.2rem" data-url="'+esc(a.url)+'" data-title="'+esc(a.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">'+U.save+'</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn weixin" onclick="shareWeixin(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微信">微信</button><button class="share-btn weibo" onclick="shareWeibo(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微博">微博</button><button class="share-btn qq" onclick="shareQQ(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="QQ">QQ</button><button class="share-btn" onclick="shareX(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="X/Twitter">X</button></div></div></div>';
   })}
   document.getElementById('allList').innerHTML=h;
 }
@@ -643,6 +733,35 @@ function shareTitleUrl(title,url){
   }else{
     shareUrl(url);
   }
+}
+/* --- Social Share (WeChat/Weibo/QQ) --- */
+function shareWeixin(title,url){
+  // Use Web Share API Deep Link as fallback (works on mobile)
+  if(navigator.share){
+    navigator.share({title:title,text:'【'+title+'】来自AI+具身智能资讯聚合 '+url,url:url}).catch(function(){});
+    return;
+  }
+  // Show QR modal for desktop
+  var modal=document.getElementById('wxModal');
+  var box=modal&&modal.querySelector('.wx-modal-box');
+  if(box){
+    box.querySelector('h3').textContent='分享：'+title.slice(0,20)+(title.length>20?'…':'');
+    box.querySelector('p').innerHTML='标题：'+title+'<br><br>复制链接后微信内粘贴分享：<br><input onclick="this.select()" readonly value="'+esc(url)+'" style="width:100%;padding:.3rem;border:1px solid var(--border);border-radius:6px;font-size:.72rem;background:var(--bg);color:var(--text)">';
+  }
+  if(modal)modal.classList.add('open');
+}
+function closeWeixinModal(){var m=document.getElementById('wxModal');if(m)m.classList.remove('open');}
+function shareWeibo(title,url){
+  var wbUrl='https://service.weibo.com/share/share.php?title='+encodeURIComponent('【'+title+'】来自AI+具身智能资讯聚合')+'&url='+encodeURIComponent(url);
+  window.open(wbUrl,'_blank','width=600,height=500,toolbar=no,menubar=no');
+}
+function shareQQ(title,url){
+  var qzUrl='https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title='+encodeURIComponent('【'+title+'】来自AI+具身智能资讯聚合')+'&url='+encodeURIComponent(url);
+  window.open(qzUrl,'_blank','width=600,height=500,toolbar=no,menubar=no');
+}
+function shareX(title,url){
+  var xUrl='https://twitter.com/intent/tweet?text='+encodeURIComponent('【'+title+'】')+'&url='+encodeURIComponent(url)+'&via=shnywang';
+  window.open(xUrl,'_blank','width=600,height=400,toolbar=no,menubar=no');
 }
 
 /* --- Copy link (legacy) --- */
@@ -760,6 +879,46 @@ function handleSubscribe(e){
   });
   return false;
 }
+/* --- Email Unsubscribe --- */
+function handleUnsubscribe(email){
+  if(!confirm("\u786e\u8ba4\u8981\u53d6\u6d88\u8ba2\u9605 "+email+" \u5417\uff1f"))return;
+  var msg=document.getElementById('subMsg');
+  var btn=document.getElementById('subBtn');
+  btn.disabled=true;
+  btn.textContent='\u5904\u7406\u4e2d...';
+  msg.textContent='';
+  var fd=new FormData();
+  fd.append('_template','table');
+  fd.append('_subject','\u274c \u3010AI\u8d44\u8baf\u3011\u53d6\u6d88\u8ba2\u9605\u7533\u8bf7');
+  var ar='<h2 style="color:#5c1a1a">\u274c \u53d6\u6d88\u8ba2\u9605\u6210\u529f</h2>';
+  ar+='<p>\u4f60\u5df2\u53d6\u6d88\u8ba2\u9605AI\u8d44\u8baf\u6bcf\u65e5\u63a8\u9001\u3002</p>';
+  ar+='<p>\u4f60\u5c06\u4e0d\u518d\u6536\u5230\u6bcf\u65e99:00\u7684AI\u884c\u4e1a\u8d44\u8baf\u63a8\u9001\u3002</p>';
+  ar+='<p>\u5982\u679c\u60f3\u91cd\u65b0\u8ba2\u9605\uff0c\u8bf7<a href="https://shnywang.github.io/ai_news/site/index.html" style="color:#6366f1">\u70b9\u51fb\u6b64\u5904\u8fd4\u56de\u9996\u9875</a>\u5e76\u91cd\u65b0\u8f93\u5165\u90ae\u7bb1\u3002</p>';
+  ar+='<p style="color:#ccc;font-size:11px;margin-top:16px">\u611f\u8c22\u4f60\u4e4b\u524d\u7684\u5173\u6ce8\u3002</p>';
+  fd.append('_autoresponse',ar);
+  fd.append('\ud83d\udc64 \u53d6\u6d88\u8ba2\u9605\u90ae\u7bb1',email);
+  fd.append('\ud83d\udcc5 \u53d6\u6d88\u8ba2\u9605\u65e5\u671f',curDay);
+  fd.append('\ud83c\udf10 \u6765\u81ea\u9875\u9762','https://shnywang.github.io/ai_news/site/index.html');
+  fd.append('\ud83d\udcbb \u8bbe\u5907\u4fe1\u606f',navigator.userAgent.substring(0,80));
+  fd.append('_replyto',email);
+  fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){
+    localStorage.removeItem('ai-news-subscribed');
+    _subscribed=null;
+    document.getElementById('subEmail').value='';
+    btn.disabled=false;
+    btn.textContent='${U.mail} \u8ba2\u9605';
+    msg.textContent='\u2705 \u5df2\u53d6\u6d88\u8ba2\u9605 '+email+'\uff0c\u611f\u8c22\u4f60\u7684\u5173\u6ce8';
+    msg.style.color='var(--green)';
+    showToast('\u2705 \u5df2\u53d6\u6d88\u8ba2\u9605');
+  }).catch(function(err){
+    msg.textContent='\u26a0 \u53d6\u6d88\u8ba2\u9605\u5931\u8d25: '+err.message;
+    msg.style.color='var(--red)';
+    console.error('Unsubscribe failed:',err);
+  }).finally(function(){
+    if(btn.textContent==='\u5904\u7406\u4e2d...')btn.disabled=false;btn.textContent='${U.mail} \u8ba2\u9605';
+  });
+}
+
 function checkSubscribeStatus(){
   var sub=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
   if(sub){
@@ -823,7 +982,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var tabs=document.querySelectorAll('.tab');var nums={'1':0,'2':1,'3':2,'4':3,'5':4,'6':5,'7':6,'8':7};
     if(nums[e.key]!==undefined&&tabs[nums[e.key]]){e.preventDefault();tabs[nums[e.key]].click()}
   });
-  initDays();initTabs();render();computeAndRenderTrend();
+  initDays();initTabs();render();computeAndRenderTrend();checkSubscribeStatus();
 });
 </script>
 </body>
