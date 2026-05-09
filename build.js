@@ -407,7 +407,7 @@ var cache={};       // day -> data object
 var loaded=new Set(); // days that have been fetched
 
 function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
-function link(url,title){return '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer" onclick="trackGA(\'article_click\',{article_title:\''+esc(title).replace(/'/g,"\\'").substring(0,80)+'\',article_url:\''+esc(url).substring(0,100)+'\',tab:\''+curTab+'\'})">'+esc(title)+'</a>'}
+function link(url,title){return '<a href="'+esc(url)+'" data-title="'+esc(title)+'" data-url="'+esc(url)+'" target="_blank" rel="noopener noreferrer" onclick="trackGA(\'article_click\',{article_title:this.dataset.title.substring(0,80),article_url:this.dataset.url.substring(0,100),tab:curTab})">'+esc(title)+'</a>'}
 function stars(r){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<r?'var(--star)':'var(--star0)')+'">'+(i<r?'${U.star}':'${U.starEmpty}')+'</span>';return s}
 function starsStr(r){var s='';for(var i=0;i<5;i++)s+=(i<r?'${U.star}':'${U.starEmpty}');return s}
 function starsHTML(r){var tip='';if(r<=1)tip='低质';else if(r===2)tip='一般';else if(r===3)tip='中等';else if(r===4)tip='高质';else tip='顶尖';return '<span class="rating-tip" data-tip="评分'+r+'/5: '+tip+'">'+starsStr(r)+'</span>'}
@@ -450,7 +450,7 @@ function showToast(msg){
 
 function initDays(){
   var h='';
-  days.forEach(function(d){h+='<button class="day-btn'+(d===curDay?' a':'')+'" onclick="pickDay(\\''+d+'\\',this)">'+d+'</button>'});
+  days.forEach(function(d){h+='<button class="day-btn'+(d===curDay?' a':'')+'" data-day="'+d+'" onclick="pickDay(this.dataset.day,this)">'+d+'</button>'});
   document.getElementById('dayPicker').innerHTML=h;
 }
 
