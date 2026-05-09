@@ -382,6 +382,7 @@ ${U.save}<span class="badge" id="savedBadge">0</span>
 ${U.dot} ${U.copyR} 2026</footer>
 <script>
 var days=${safeDays};
+var U={fire:"\u{1F525}",rocket:"\u{1F680}",pm:"\u{1F4CB}",algo:"\u{1F9EC}",proj:"\u{1F4C5}",check:"\u2705",robot:"\u{1F916}",news:"\u{1F4F0}",search:"\uD83D\uDD0D",sun:"&#x2600;&#xFE0F;",moon:"&#x1F319;",rocketBoard:"\u{1F680}",trend:"\u{1F4C8}",focus:"\u{1F4CC}",wrench:"\u{1F527}",globe:"\u{1F3AF}",eyes:"\u{1F440}",radar:"\u{1F6F0}\uFE0F",tools:"\u{1F6E0}\uFE0F",world:"\u{1F310}",star:"\u2605",starEmpty:"\u2606",copy:"\u2705",error:"\u274C",arrow:"\u2014",dot:"\u00b7",copyR:"\u00a9",save:"\u{1F516}",mail:"\u{1F4E7}",up:"\u{2B06}\uFE0F",down:"\u{2B07}\uFE0F"};
 // Article counts per day (computed at build time from loaded data)
 var dayCounts={};
 var curDay=days[0]||'';
