@@ -72,23 +72,6 @@
 <link rel="canonical" href="https://shnywang.github.io/ai_news/site/index.html">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
 <title>AI+具身智能资讯聚合 — 2026-04-29</title>
-
-<!-- Google Analytics 4 — replace G-XXXXXXXXXX with your GA4 Measurement ID
-     Create a GA4 property at https://analytics.google.com to get your ID.
-     The ID format is like: G-XXXXXXXXXX or G-XXXXXXXXX -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX', { 'send_page_view': true, 'language': 'zh-CN' });
-
-// ── Global analytics helper (called from inline onclick/oninput handlers) ──
-function trackGA(event, params) {
-  gtag('event', event, Object.assign({ language: 'zh-CN' }, params));
-}
-</script>
-
 <style>
 :root{--bg:#f0f2f5;--card:#fff;--text:#1a1a2e;--t2:#6b7280;--t3:#9ca3af;--accent:#6366f1;--accent2:#818cf8;--border:#e5e7eb;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow2:0 8px 24px rgba(0,0,0,.1);--g1:#6366f1;--g2:#8b5cf6;--star:#f59e0b;--star0:#d1d5db;--green:#059669;--red:#dc2626;--ftbg:#1e1b4b;--ftc:#c7d2fe}
 [data-theme=dark]{--bg:#0f0f23;--card:#1a1a2e;--text:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--accent:#818cf8;--accent2:#a5b4fc;--border:#334155;--shadow:0 1px 3px rgba(0,0,0,.3);--shadow2:0 8px 24px rgba(0,0,0,.4);--star0:#475569;--ftbg:#0a0a1a}
@@ -310,7 +293,7 @@ var cache={};       // day -> data object
 var loaded=new Set(); // days that have been fetched
 
 function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
-function link(url,title){return '<a href="'+esc(url)+'" data-title="'+esc(title)+'" data-url="'+esc(url)+'" target="_blank" rel="noopener noreferrer" onclick="trackGA('article_click',{article_title:this.dataset.title.substring(0,80),article_url:this.dataset.url.substring(0,100),tab:curTab})">'+esc(title)+'</a>'}
+function link(url,title){return '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(title)+'</a>'}
 function stars(r){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<r?'var(--star)':'var(--star0)')+'">'+(i<r?'★':'☆')+'</span>';return s}
 function starsStr(r){var s='';for(var i=0;i<5;i++)s+=(i<r?'★':'☆');return s}
 function starsHTML(r){var tip='';if(r<=1)tip='低质';else if(r===2)tip='一般';else if(r===3)tip='中等';else if(r===4)tip='高质';else tip='顶尖';return '<span class="rating-tip" data-tip="评分'+r+'/5: '+tip+'">'+starsStr(r)+'</span>'}
@@ -353,7 +336,7 @@ function showToast(msg){
 
 function initDays(){
   var h='';
-  days.forEach(function(d){h+='<button class="day-btn'+(d===curDay?' a':'')+'" data-day="'+d+'" onclick="pickDay(this.dataset.day,this)">'+d+'</button>'});
+  days.forEach(function(d){h+='<button class="day-btn'+(d===curDay?' a':'')+'" onclick="pickDay(\''+d+'\',this)">'+d+'</button>'});
   document.getElementById('dayPicker').innerHTML=h;
 }
 
@@ -362,7 +345,6 @@ async function pickDay(d,el){
   document.querySelectorAll('.day-btn').forEach(function(b){b.classList.remove('a')});
   el.classList.add('a');
   await render();
-  trackGA('switch_day',{day:d});
 }
 
 function initTabs(){
@@ -372,7 +354,6 @@ function initTabs(){
       document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('a')});
       this.classList.add('a');
       render();
-      trackGA('switch_tab',{tab:curTab});
     });
   });
 }
@@ -639,7 +620,6 @@ async function globalSearch(){
     });
   }
   res.innerHTML=h;
-  trackGA('search',{query:q.substring(0,80),result_count:unique.length});
 }
 
 /* --- Share --- */
@@ -651,7 +631,6 @@ function shareUrl(url){
   });
 }
 function shareTitleUrl(title,url){
-  trackGA('share',{method:'native_share',article_title:title.substring(0,80),article_url:url.substring(0,100)});
   if(navigator.share){
     navigator.share({title:title||'AI+具身智能资讯聚合',url:url,text:title}).catch(function(){});
   }else{
@@ -699,7 +678,6 @@ function toggleTheme(){
   document.body.setAttribute('data-theme',dk?'light':'dark');
   document.querySelector('.tbtn').innerHTML=dk?'&#x1F319;':'&#x2600;&#xFE0F;';
   localStorage.setItem('ai-news-theme',dk?'light':'dark');
-  trackGA('toggle_theme',{theme:dk?'light':'dark'});
 }
 
 /* --- Saved Articles (localStorage) --- */
@@ -712,20 +690,17 @@ function saveArticle(title,url){
   localStorage.setItem('ai-news-saved',JSON.stringify(s));
   showToast('🔖 已收藏');
   updateSavedBadge();
-  trackGA('save_article',{article_title:title.substring(0,80),article_url:url.substring(0,100)});
 }
 function removeSaved(url){
   var s=getSaved().filter(function(a){return a.url!==url});
   localStorage.setItem('ai-news-saved',JSON.stringify(s));
   renderSaved();
   updateSavedBadge();
-  trackGA('remove_saved',{article_url:url.substring(0,100)});
 }
 function toggleSaved(){
   var p=document.getElementById('savedPanel');
-  var isOpen=p.classList.toggle('open');
-  if(isOpen)renderSaved();
-  trackGA('toggle_saved',{action:isOpen?'open':'close'});
+  p.classList.toggle('open');
+  if(p.classList.contains('open'))renderSaved();
 }
 function renderSaved(){
   var s=getSaved();
@@ -792,9 +767,8 @@ function handleSubscribe(e){
       }
       msg.style.color='var(--green)';
       document.getElementById('subEmail').value='';
-      btn.textContent='undefined';
-      showToast('🔖 订阅成功！');
-      trackGA('subscribe',{email_domain:email.split('@')[1]||'',subscribe_date:curDay});
+      btn.textContent='已订阅';
+      showToast('✅ 订阅成功！');
     }else{
       throw new Error(d.message||'服务器错误');
     }
