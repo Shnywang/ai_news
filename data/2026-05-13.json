@@ -121,6 +121,175 @@
         "summary": "北京高级别自动驾驶示范区扩展至600平方公里，覆盖500万人口，支持Robotaxi、无人配送、无人环卫等全场景应用。",
         "category": "应用落地"
       }
-    ]
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "OpenAI",
+          "field": "大模型",
+          "route": "Sam Altman确认GPT-6已启动训练",
+          "funding": "年化营收150亿美元",
+          "verdict": "GPT-6将是OpenAI在营收未达标压力下的关键一击，成败影响AI行业格局"
+        },
+        {
+          "name": "华为",
+          "field": "AI芯片",
+          "route": "昇腾910C国内市场份额突破30%",
+          "funding": "自研",
+          "verdict": "在美国芯片管制下，华为昇腾成中国AI芯片自给率提升的最大推手"
+        },
+        {
+          "name": "Anthropic",
+          "field": "大模型",
+          "route": "Claude 4.5 Sonnet，SWE-bench达65%",
+          "funding": "估值1万亿美元",
+          "verdict": "编程能力持续领先，Claude Code生态是企业市场核心壁垒"
+        },
+        {
+          "name": "字节跳动",
+          "field": "大模型/AI应用",
+          "route": "豆包日活突破5亿，超越ChatGPT",
+          "funding": "自研",
+          "verdict": "豆包借助中国市场和东南亚扩张成为全球日活最高的AI应用"
+        }
+      ],
+      "trend": "OpenAI启动GPT-6军备竞赛继续；中国AI芯片自给率突破35%；欧盟强制水印标准2027年生效，全球AI治理进入'执法阶段'"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "GPT-6来了：产品经理的备战清单",
+          "content": "Sam Altman确认GPT-6已启动训练，暗示推理、多模态和Agent能力将有'质的飞跃'。产品经理应：1) 预留架构扩展空间以适应新模型能力；2) 评估GPT-6可能颠覆的产品假设；3) 建立模型能力监控机制以快速切换。"
+        },
+        {
+          "title": "豆包5亿日活的启示：AI产品如何破圈",
+          "content": "字节跳动豆包日活突破5亿超过ChatGPT，关键在于：1) 深度集成到抖音/头条等超级App；2) 免费+增值的定价策略；3) 本土化的AI人格设计。'AI不是独立产品，而是现有产品的增强层'这一策略被验证成功。"
+        },
+        {
+          "title": "AI内容强制水印：产品合规倒计时",
+          "content": "欧盟宣布2027年起所有AI生成内容必须嵌入C2PA水印，违者罚全球营收6%。面向欧洲市场的AI产品需要从现在开始规划水印集成，这不是'可选项'而是'生存条件'。"
+        }
+      ],
+      "focus": [
+        "GPT-6对产品路线图的影响",
+        "AI产品的破圈增长策略",
+        "欧盟AI水印合规准备",
+        "中国AI芯片生态评估"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "Claude 4.5 Sonnet的编程能力突破",
+          "content": "SWE-bench得分65%，新增多文件重构和跨仓库代码理解。技术改进涉及：更大的代码预训练语料+改进的仓库级上下文编码+多文件编辑的规划能力。",
+          "url": "https://www.anthropic.com/news/claude-4-5-sonnet"
+        },
+        {
+          "title": "GPT-6预期：可能的架构演进方向",
+          "content": "基于已知趋势推测GPT-6可能的技术方向：1) 原生多模态(文本+图像+视频+音频统一token化)；2) 超长上下文(百万→千万级)；3) Agent原生能力(工具调用作为一等公民)；4) 推理时间的自适应计算(简单问题少算，难问题多算)。"
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "编程Agent(SWE-bench)",
+          "status": "持续突破(65%)",
+          "advice": "Claude Code领先，开源方案快速追赶"
+        },
+        {
+          "direction": "AI水印(C2PA)",
+          "status": "强制标准化",
+          "advice": "2027年欧盟强制，所有AI产品需提前集成"
+        },
+        {
+          "direction": "中国AI芯片",
+          "status": "自给率35%",
+          "advice": "华为昇腾+壁仞+寒武纪三足鼎立"
+        },
+        {
+          "direction": "人形机器人马拉松",
+          "status": "即将举办",
+          "advice": "北京6月全球首赛，考验机器人综合运动能力"
+        }
+      ],
+      "focus": [
+        "编程Agent评测基准",
+        "AI水印/C2PA实现",
+        "中国AI芯片性能评估",
+        "多模态统一架构"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "GPT-6训练启动=算力需求新一轮暴涨",
+          "content": "GPT-6的训练预计需要数万张H200/B200级别GPU运行数月。项目管理者应：1) 预期2026H2-2027H1算力租赁价格可能上涨；2) 提前锁定长期算力合同；3) 探索国产AI芯片替代方案。"
+        },
+        {
+          "title": "欧盟AI水印2027强制：项目合规路线图",
+          "content": "距2027年1月仅剩8个月——需要：Q2完成技术评估→Q3完成C2PA集成→Q4完成合规测试。任何面向欧洲市场的AI产品都应该将此作为最高优先级的合规项目。"
+        }
+      ],
+      "focus": [
+        "算力资源规划(应对GPT-6)",
+        "欧盟AI水印合规项目",
+        "国产AI芯片替代评估",
+        "人形机器人项目管理"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "编程Agent：Claude 4.5 Sonnet(闭源最强)+开源备选",
+        "AI水印合规：立即评估C2PA集成方案",
+        "国产AI芯片：华为昇腾910C+壁仞BR200",
+        "AI应用：参考豆包的'超级App集成'策略"
+      ],
+      "track_judgment": [
+        "GPT-6将在2026H2/2027H1发布，提前预留架构升级空间",
+        "欧盟AI水印标准将成为事实上的全球标准，提前合规=先发优势",
+        "中国AI芯片自给率将持续提升，2027年可能突破50%"
+      ],
+      "watch_list": [
+        "GPT-6训练进展和发布时间",
+        "欧盟AI水印标准实施细则",
+        "北京人形机器人马拉松结果",
+        "华为昇腾910C生态扩展",
+        "NVIDIA RTX 6090消费级AI算力"
+      ]
+    },
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "GPT-6时代的Agent平台准备",
+          "content": "随着GPT-6等更强模型的到来，AI Agent将进入'高自主性'阶段。Hermes Agent的架构设计(多模型支持+工具调用+skill系统+内存管理)为迎接更强模型做好了准备。"
+        },
+        {
+          "title": "C2PA水印标准与Agent生成内容的合规",
+          "content": "欧盟强制AI水印将影响所有AI Agent平台。Hermes Agent需要考虑在生成内容中嵌入可追溯标识，确保用户使用Agent生成的文本/代码符合未来合规要求。"
+        },
+        {
+          "title": "Hermes Agent的持续进化",
+          "content": "Hermes Agent社区活跃，skill系统日益完善(500+内置技能)，多平台连接能力(TUI/CLI/Telegram/Discord/Slack/WeChat/QQ)领先业界，持续巩固作为'AI Agent操作系统'的定位。"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "C2PA AI内容水印标准",
+          "content": "Adobe/Microsoft/Google等联合制定的AI内容溯源标准，2027年欧盟强制实施。",
+          "url": "https://c2pa.org/"
+        },
+        {
+          "title": "Claude 4.5 Sonnet API",
+          "content": "最新编程Agent能力(SWE-bench 65%)，适合集成到Agent平台的代码生成流程。",
+          "url": "https://www.anthropic.com/news/claude-4-5-sonnet"
+        }
+      ],
+      "community": [
+        {
+          "title": "CoRL 2026投稿量暴涨3倍",
+          "content": "机器人学习顶会投稿量达6000篇，具身智能成最热AI方向，会议扩容至万人规模。",
+          "url": "https://www.corl2026.org/news/submission-record"
+        }
+      ]
+    }
   }
 }

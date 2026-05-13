@@ -106,6 +106,172 @@
         "summary": "WIPO发布2025年度AI专利报告，华为以6800件居首，三星5900件第二，腾讯4800件第三，中国企业包揽前五中的四席。",
         "category": "市场动态"
       }
-    ]
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "Apple",
+          "field": "端侧AI/大模型",
+          "route": "iOS 20集成3B设备端LLM+AI Siri+AI Xcode",
+          "funding": "自研Apple Intelligence平台",
+          "verdict": "WWDC 2026将成Apple AI战略转折点，设备端LLM策略差异化明显"
+        },
+        {
+          "name": "Google DeepMind",
+          "field": "通用AI Agent",
+          "route": "Gato 2单一模型完成600种任务，迈向AGI",
+          "funding": "Alphabet持续投入",
+          "verdict": "Gato 2展示的通用性标志着从'专用AI'向'通用AI'的关键转变"
+        },
+        {
+          "name": "傅利叶智能",
+          "field": "人形机器人",
+          "route": "GR-2完成户外复杂地形2公里自主行走",
+          "funding": "已完成多轮融资",
+          "verdict": "户外复杂地形行走是人形机器人实用化的关键瓶颈，GR-2的突破意义重大"
+        },
+        {
+          "name": "Anthropic",
+          "field": "大模型/企业AI",
+          "route": "Claude企业版私有部署，数据不出企业防火墙",
+          "funding": "估值达1万亿美元",
+          "verdict": "企业合规需求驱动私有部署方案，金融/政府客户将成增长引擎"
+        }
+      ],
+      "trend": "AI竞争进入'端侧+企业+通用'三线并进阶段：Apple主攻端侧，Anthropic深耕企业，Google/DeepMind追求AGI通用性"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "端侧AI将成为消费电子产品的分水岭",
+          "content": "Apple iOS 20的设备端LLM方案标志着一个重要趋势：用户越来越关注AI隐私和离线可用性。产品经理需要思考：如何在端侧算力有限的情况下设计差异化AI体验？离线场景的AI功能设计将成为新课题。"
+        },
+        {
+          "title": "AI伦理从'可选'变成'必选项'",
+          "content": "中国发布全球首个具身智能伦理准则，联合国通过全球AI治理决议。对产品经理而言，AI产品设计必须从一开始就嵌入伦理考量(隐私、可追溯、不伤害)，这不再是'锦上添花'而是市场准入条件。"
+        },
+        {
+          "title": "AI Agent企业化部署的合规挑战",
+          "content": "Anthropic推出私有VPC部署方案、法律AI Harvey估值120亿美元——垂直领域的AI应用必须在'强大功能'与'合规安全'之间找到平衡。产品设计需要考虑数据驻留、审计追溯、权限管控。"
+        }
+      ],
+      "focus": [
+        "端侧AI体验设计",
+        "AI产品伦理合规框架",
+        "垂直行业AI产品化策略",
+        "AI Agent的企业落地路径"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "Gato 2：重新定义'通用'的标准",
+          "content": "DeepMind Gato 2以单一模型完成600种任务(Atari游戏→机器人操作→代码编写)，核心技术突破在于统一的token化表示和多任务联合训练策略。这验证了'通用AI Agent'的技术可行性。",
+          "url": "https://deepmind.google/blog/gato-2/"
+        },
+        {
+          "title": "Qwen-3-VL多模态能力碾压GPT-5",
+          "content": "阿里Qwen-3-VL在文档理解、图表分析、视频问答上超越GPT-5，开源Apache 2.0。技术亮点包括改进的视觉编码器和跨模态对齐策略。",
+          "url": "https://qwenlm.github.io/blog/qwen-3-vl/"
+        },
+        {
+          "title": "AI自主完成数学猜想证明",
+          "content": "DeepMind AlphaProof驱动的AI系统自主完成图论猜想完整证明，经6位数学家审稿确认。技术关键：结合形式化验证(Lean)和强化学习的定理证明策略。"
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "通用AI Agent(Gato范式)",
+          "status": "技术验证",
+          "advice": "关注统一token化表示和多任务联合训练方法"
+        },
+        {
+          "direction": "端侧LLM(3B-7B)",
+          "status": "快速迭代",
+          "advice": "量化+蒸馏+MoE小模型是端侧部署的关键路径"
+        },
+        {
+          "direction": "AI定理证明",
+          "status": "里程碑突破",
+          "advice": "形式化验证(Lean/Coq)与RL结合是突破口"
+        },
+        {
+          "direction": "多模态大模型",
+          "status": "商业化加速",
+          "advice": "视觉-语言对齐质量已接近实用门槛"
+        },
+        {
+          "direction": "AI安全对齐",
+          "status": "持续演进",
+          "advice": "Constitutional AI等自我监督方法降低对齐成本"
+        }
+      ],
+      "focus": [
+        "通用AI Agent架构",
+        "端侧模型推理优化",
+        "多模态对齐技术",
+        "AI数学推理"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "全球AI治理框架化增加了项目合规成本",
+          "content": "联合国通过全球AI治理决议、中国发布具身智能伦理准则——AI项目管理需要新增'合规里程碑'节点，包括伦理审查、安全测试、可追溯性验证等。"
+        },
+        {
+          "title": "AI项目从'技术驱动'转向'价值驱动'",
+          "content": "百度自动驾驶在武汉全域开放(覆盖1100万人)、法律AI Harvey估值120亿美元——这些案例的共同点是：项目的商业价值验证(PMF)远比技术炫技重要。"
+        }
+      ],
+      "focus": [
+        "AI项目合规管理",
+        "具身智能量产交付",
+        "AI产品PMF验证方法"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "端侧部署优先评估Qwen-3-VL等开源方案",
+        "企业AI选型考虑Claude私有部署的合规优势",
+        "通用AI场景关注Gato 2的统一架构思路"
+      ],
+      "track_judgment": [
+        "AI伦理合规从可选项变为必选项，提前布局降低成本",
+        "开源多模态模型(Qwen/VL系列)已具备商用竞争力"
+      ],
+      "watch_list": [
+        "Apple WWDC 2026 AI发布",
+        "Gato 2后续开源计划",
+        "具身智能伦理标准落地进展",
+        "AI治理国际协调进展"
+      ]
+    },
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "Hermes Agent 多平台连接能力持续增强",
+          "content": "Hermes Agent支持Telegram、Discord、Slack、WeChat、QQ等多平台消息互通，AI Agent作为'消息中枢'的定位越来越清晰。结合Claude、GPT等后端模型，可实现跨平台智能问答和任务执行。"
+        },
+        {
+          "title": "AI Agent工作流编排成为效率提升关键",
+          "content": "LangChain完成1.5亿美元融资，CrewAI发布企业版——多Agent协作编排正成为企业AI部署的标准模式。Hermes Agent的skill系统和delegate_task机制与此趋势高度契合。"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "Skill系统：可复用的AI工作流组件",
+          "content": "Hermes Agent的skill机制允许将复杂任务封装为可复用技能，支持create/patch/edit生命周期管理，配合cronjob实现定时自动化。",
+          "url": "https://hermes-agent.nousresearch.com/docs"
+        }
+      ],
+      "community": [
+        {
+          "title": "LangChain获1.5亿美元B轮融资",
+          "content": "AI Agent框架成为基础设施赛道，LangChain的LangGraph月下载破5000万次，验证了Agent编排框架的商业价值。",
+          "url": "https://techcrunch.com/2026/05/05/langchain-150m-series-b/"
+        }
+      ]
+    }
   }
 }

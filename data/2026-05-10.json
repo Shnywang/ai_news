@@ -106,6 +106,167 @@
         "summary": "华为在昇腾AI生态大会上宣布合作伙伴超5000家，自研AI框架MindSpore全球用户突破100万，国产AI生态进入快速发展期。",
         "category": "AI芯片"
       }
-    ]
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "零一万物",
+          "field": "开源大模型",
+          "route": "Yi-3.0 340B MoE，全面对标GPT-5",
+          "funding": "李开复创办，多轮融资",
+          "verdict": "中文开源模型最强选手之一，数学推理能力突出"
+        },
+        {
+          "name": "傅利叶智能",
+          "field": "医疗机器人",
+          "route": "GR-2获FDA认证，全球首款临床级人形康复机器人",
+          "funding": "已完成C轮",
+          "verdict": "FDA认证是人形机器人医疗化的里程碑，打开了全新的百亿美元市场"
+        },
+        {
+          "name": "AMD",
+          "field": "AI芯片",
+          "route": "MI400系列降价40%正面挑战NVIDIA",
+          "funding": "自研+台积电代工",
+          "verdict": "价格战是AMD最有效的武器，CUDA兼容层是破局关键"
+        },
+        {
+          "name": "DeepMind",
+          "field": "AI研究",
+          "route": "AI发现新拓扑不变量+开源Genie 3世界模型",
+          "funding": "Alphabet支持",
+          "verdict": "同时推进基础科学突破和开源工具，DeepMind的'双向战略'日渐清晰"
+        }
+      ],
+      "trend": "AMD发起AI芯片价格战，开源模型进入'性能对标闭源'阶段，人形机器人医疗化开辟新市场"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "AI芯片降价潮：算力成本曲线加速下降",
+          "content": "AMD MI400系列降价40%+AWS自研Trainium 3+Intel Falcon Shores 3入局——AI算力正在从'稀缺资源'变成'竞争性商品'。产品经理应预期推理成本在未来18个月下降50-70%，这会影响AI产品的定价策略。"
+        },
+        {
+          "title": "人形机器人进入医疗：产品设计的新要求",
+          "content": "傅利叶GR-2获FDA认证意味着人形机器人进入高度监管的医疗市场。产品设计需要满足：安全性(失效保护)、有效性(临床证据)、可用性(医护操作简便)。这是完全不同于工厂场景的产品逻辑。"
+        },
+        {
+          "title": "开源模型的'商用就绪'信号",
+          "content": "零一万物Yi-3.0开源且性能对标GPT-5，IBM Granite 4.0全系列开源——开源模型正在从'研究玩具'变成'生产工具'。产品选型时开源方案应从'备选'升级为'首选评估'。"
+        }
+      ],
+      "focus": [
+        "AI算力成本趋势预测",
+        "医疗机器人产品设计",
+        "开源vs闭源模型选型框架",
+        "AI芯片价格战对产品定价的影响"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "Yi-3.0：340B MoE架构的技术路线",
+          "content": "零一万物Yi-3.0采用340B参数MoE架构(激活约45B)，在中文数学推理上尤其突出。关键技术：改进的MoE路由算法+中文语料深度优化+多阶段对齐训练。",
+          "url": "https://www.01.ai/blog/yi-3-2026"
+        },
+        {
+          "title": "DeepMind AI数学发现：AI开始做原创科学",
+          "content": "AI发现全新拓扑不变量被称为'AI不变量'——这是AI在纯数学领域做出的首个原创性贡献。技术关键：结合大规模搜索+符号推理+数学家反馈循环。",
+          "url": "https://www.nature.com/articles/s41586-026-00890-3"
+        },
+        {
+          "title": "Genie 3：世界模型的开放之路",
+          "content": "DeepMind开源Genie 3，从单张图片生成可交互3D世界。底层技术：视频预测模型+动作条件生成+3D隐式表示。对机器人学习和游戏开发有巨大价值。"
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "中文开源大模型",
+          "status": "成熟商用",
+          "advice": "Yi-3.0/Qwen-3已具备替代闭源产品的能力"
+        },
+        {
+          "direction": "AI科学发现(数学/物理)",
+          "status": "原创突破",
+          "advice": "AI开始在纯科学领域做出人类未发现的贡献"
+        },
+        {
+          "direction": "世界模型(Genie/Sora)",
+          "status": "快速迭代",
+          "advice": "从视频生成到可交互3D世界，进步速度惊人"
+        },
+        {
+          "direction": "MoE架构优化",
+          "status": "主流方案",
+          "advice": "MoE已成为千亿级模型的标准架构"
+        }
+      ],
+      "focus": [
+        "MoE路由算法优化",
+        "AI for Math/Science",
+        "世界模型架构",
+        "开源模型商用部署"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "AI芯片价格战=算力成本红利期",
+          "content": "AMD降价40%+AWS自研芯片+AWS Trainium 3——项目经理应抓住这波算力成本下降窗口期，锁定长期算力合同。同时建立多芯片供应商策略，降低单一依赖风险。"
+        },
+        {
+          "title": "医疗机器人项目管理：合规是第一优先级",
+          "content": "傅利叶GR-2获FDA认证的过程为行业提供了模板：临床验证→安全测试→监管沟通→上市后监测。医疗AI项目管理需要预留充足的合规时间(通常12-18个月)。"
+        }
+      ],
+      "focus": [
+        "算力采购策略优化",
+        "医疗AI合规路径",
+        "开源模型部署成本评估"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "中文场景首选Yi-3.0/Qwen-3等开源方案",
+        "AI训练芯片关注AMD MI400降价后的性价比",
+        "世界模型/3D生成关注Genie 3开源生态"
+      ],
+      "track_judgment": [
+        "AI芯片价格战将加速AI应用落地，算力成本不再是最主要瓶颈",
+        "医疗级人形机器人打开了全新的蓝海市场"
+      ],
+      "watch_list": [
+        "AMD MI400实际性能和CUDA兼容性",
+        "Yi-3.0社区生态发展",
+        "FDA后续机器人认证案例",
+        "Apple ACDC AI芯片进展"
+      ]
+    },
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "世界模型开源对Agent的意义",
+          "content": "DeepMind开源Genie 3——可交互3D世界模型对AI Agent的'具身化'训练至关重要。未来Hermes Agent可能通过世界模型进行'想象性规划'(mental simulation)，提升复杂任务的决策质量。"
+        },
+        {
+          "title": "AI for Science成为Agent的新战场",
+          "content": "AI发现新拓扑不变量、AI设计抗癌分子进入临床——这些案例表明AI Agent在科学研究自动化方面有巨大潜力。Hermes Agent的研究类skills可以向'AI科学家'方向演进。"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "Genie 3世界模型",
+          "content": "从单张图片生成可交互3D世界，对Agent的模拟训练和场景理解有重要价值。",
+          "url": "https://deepmind.google/blog/genie-3-open-source/"
+        }
+      ],
+      "community": [
+        {
+          "title": "AI芯片价格战开启",
+          "content": "AMD MI400降价40%，AWS Trainium 3发布，Intel Falcon Shores 3即将入局——AI算力民主化加速。",
+          "url": "https://www.tomshardware.com/news/amd-mi400-price-cut-nvidia"
+        }
+      ]
+    }
   }
 }

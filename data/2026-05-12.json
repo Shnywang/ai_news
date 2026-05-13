@@ -99,6 +99,163 @@
         "summary": "CrewAI发布企业版多Agent框架，支持角色定义、任务编排、Agent间通信，已获300+企业付费客户。",
         "category": "应用落地"
       }
-    ]
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "OpenAI",
+          "field": "大模型",
+          "route": "与News Corp签署每年10亿美元内容授权协议",
+          "funding": "年化营收150亿美元",
+          "verdict": "从'免费抓取'到'付费授权'，OpenAI带头规范训练数据来源"
+        },
+        {
+          "name": "Tesla/Optimus",
+          "field": "人形机器人",
+          "route": "丰田订购500台Optimus，首次外部订单",
+          "funding": "订单排至2028年",
+          "verdict": "从自用到对外销售，Optimus完成了商业化的关键一步"
+        },
+        {
+          "name": "Databricks",
+          "field": "数据+AI平台",
+          "route": "完成100亿美元融资，估值2000亿美元",
+          "funding": "100亿美元融资创AI基础设施纪录",
+          "verdict": "'数据竞赛'叙事获得资本认可，数据质量+AI的飞轮效应"
+        },
+        {
+          "name": "腾讯Robotics X",
+          "field": "双足机器人",
+          "route": "'天鹅'机器人行走能效超越人类",
+          "funding": "腾讯自研",
+          "verdict": "被动动力学设计实现了超低能耗，为长续航双足机器人提供了新思路"
+        }
+      ],
+      "trend": "AI训练数据走向'付费授权'时代；人形机器人开始获外部商业订单；数据平台估值飙升验证'AI从模型竞赛转向数据竞赛'"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "AI训练数据付费化：产品成本的重新计算",
+          "content": "OpenAI每年10亿美元购买新闻内容授权——这标志着AI产品的成本结构将发生根本变化。产品经理需要将'数据授权成本'纳入产品定价模型，特别是涉及新闻、出版、图片等版权密集型领域的AI产品。"
+        },
+        {
+          "title": "Demis Hassabis的AGI预言：产品路线图如何对齐?",
+          "content": "DeepMind CEO预言AGI将在5年内实现。虽然时间线有争议，但产品经理应该开始思考：如果你的产品路线图规划到2031年，假设AGI真的出现，你的产品定位是什么？"
+        },
+        {
+          "title": "AI监管碎片化：全球产品的合规噩梦",
+          "content": "G7未能就AI治理达成统一框架，美欧分歧严重。对于面向全球市场的AI产品，这意味着需要应对多套不同的监管体系，合规成本将大幅上升。"
+        }
+      ],
+      "focus": [
+        "AI训练数据成本模型",
+        "AGI假设下的产品规划",
+        "全球AI监管合规策略",
+        "人形机器人定价策略"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "VASA-2：从照片+音频到超真实视频",
+          "content": "微软VASA-2仅需一张照片和一段音频即可生成超真实说话视频。技术关键：解耦的面部动态建模(表情+唇形+头部姿态独立控制)+扩散模型生成+时序一致性约束。",
+          "url": "https://www.microsoft.com/en-us/research/project/vasa-2/"
+        },
+        {
+          "title": "GraphCast 3：AI天气预报超越传统数值模型",
+          "content": "DeepMind GraphCast 3将10天天气预报准确率提升至超越ECMWF传统模型。技术进化：从确定性预测到概率预测，极端天气预警提前量从3天延长至7天。"
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "AI训练数据合规",
+          "status": "成为必须",
+          "advice": "版权授权协议将成为AI模型训练的标准前置条件"
+        },
+        {
+          "direction": "超真实AI生成视频",
+          "status": "技术突破",
+          "advice": "VASA-2级技术引发深度伪造担忧，需要检测技术跟进"
+        },
+        {
+          "direction": "AI天气预报",
+          "status": "超越传统方法",
+          "advice": "GraphCast 3证明AI在物理模拟上可超越数值方法"
+        },
+        {
+          "direction": "被动动力学机器人",
+          "status": "研究前沿",
+          "advice": "腾讯'天鹅'展示了能效优化的新路径"
+        }
+      ],
+      "focus": [
+        "AI生成内容检测",
+        "AI物理模拟",
+        "机器人能效优化",
+        "数据版权追踪技术"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "AI数据合规成为项目管理新维度",
+          "content": "OpenAI的内容授权协议、欧盟AI水印标准、G7治理分歧——项目经理需要将'数据合规'作为独立的项目工作流来管理，包括数据来源审计、授权追踪、合规报告。"
+        },
+        {
+          "title": "100亿美元融资：AI基础设施项目进入'重资本'时代",
+          "content": "Databricks的100亿美元融资显示AI基础设施项目的资本密集度正在向传统基础设施(电力/交通)看齐。项目管理需要引入大型基建项目的方法论：分阶段交付、风险对冲、长期ROI评估。"
+        }
+      ],
+      "focus": [
+        "AI数据合规管理",
+        "大型AI项目融资策略",
+        "多国监管合规路径",
+        "AI基础设施项目交付方法"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "训练数据合规：优先评估已获授权的数据集",
+        "AI视频生成：关注VASA-2等技术的正面应用(教育/客服)",
+        "天气预报：GraphCast 3已开源，适合气象相关项目"
+      ],
+      "track_judgment": [
+        "AI训练数据从'免费午餐'变为'付费大餐'，预算规划需提前考虑",
+        "人形机器人商业化验证阶段已过，进入规模增长期"
+      ],
+      "watch_list": [
+        "OpenAI下一步版权协议(出版社/图库)",
+        "G7后续AI治理协调",
+        "Optimus丰田工厂交付进展",
+        "Databricks IPO时间表"
+      ]
+    },
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "AI Agent的'数据合规'挑战",
+          "content": "随着AI训练数据走向付费授权，AI Agent(包括Hermes Agent)也需要建立数据来源追踪机制。未来Agent生成的内容可能需要对训练数据来源进行标注和版权归属声明。"
+        },
+        {
+          "title": "AGI时间表对Agent平台的影响",
+          "content": "Demis Hassabis预言AGI 5年内实现——如果成真，Agent平台将从'辅助工具'升级为'主要工作界面'。Hermes Agent应持续提升自主决策和多Agent协作能力以迎接这一转变。"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "AI内容水印/溯源技术",
+          "content": "C2PA标准+区块链溯源将成为AI生成内容的标配，Agent平台需要集成相关能力。",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2345"
+        }
+      ],
+      "community": [
+        {
+          "title": "G7 AI治理分歧",
+          "content": "美欧在AI监管上分歧严重，全球AI治理'碎片化'加剧，企业合规成本上升。",
+          "url": "https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/"
+        }
+      ]
+    }
   }
 }
