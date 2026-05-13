@@ -1,0 +1,104 @@
+{
+  "2026-05-12": {
+    "update_time": "2026-05-12T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "OpenAI与新闻集团达成每年10亿美元内容授权协议：AI训练数据走向合规",
+        "source": "华尔街日报",
+        "url": "https://www.wsj.com/business/media/openai-news-corp-1-billion-license-2026",
+        "summary": "OpenAI与新闻集团(News Corp)签署每年10亿美元的内容授权协议，覆盖《华尔街日报》《泰晤士报》等媒体。标志着AI训练数据从'免费抓取'走向'付费授权'新时代。",
+        "category": "政策监管",
+        "rating": 5
+      },
+      {
+        "title": "特斯拉Optimus首次承接外部订单：丰田订购500台用于工厂",
+        "source": "Nikkei Asia",
+        "url": "https://asia.nikkei.com/Business/Tesla-Optimus-Toyota-order-500-robots",
+        "summary": "特斯拉首次获得人形机器人外部订单——丰田汽车订购500台Optimus Gen 3用于其得州工厂。马斯克称Optimus订单已排至2028年。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "Google DeepMind CEO Demis Hassabis预言：'AGI将在5年内实现'",
+        "source": "The Times",
+        "url": "https://www.thetimes.co.uk/article/demis-hassabis-agi-five-years-deepmind",
+        "summary": "DeepMind CEO Demis Hassabis在接受专访时大胆预言AGI将在5年内（2031年前）实现，并透露DeepMind正在开发'世界模型'作为通往AGI的关键路径。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "全球AI监管碎片化加剧：G7未能就AI治理达成共同框架",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/",
+        "summary": "G7峰会未能就AI全球治理达成共同框架，美欧在监管严格程度上分歧严重。分析认为AI监管'碎片化'将增加企业合规成本并阻碍AI发展。",
+        "category": "政策监管",
+        "rating": 4
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "Canva发布AI设计助手Magic Studio 3.0：一句话生成完整品牌VI",
+        "source": "Canva Blog",
+        "url": "https://www.canva.com/newsroom/news/magic-studio-3/",
+        "summary": "Canva发布Magic Studio 3.0，可通过一句话生成完整的品牌VI（Logo、配色、字体、宣传物料），大幅降低设计门槛。",
+        "category": "应用落地"
+      },
+      {
+        "title": "AI预测极端天气准确率超90%：DeepMind GraphCast 3发布",
+        "source": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/graphcast-3/",
+        "summary": "DeepMind发布GraphCast 3天气预测模型，10天天气预报准确率超过传统数值模型，极端天气预警提前量从3天延长至7天。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "百度地图AI导航采用大模型：实时理解路况并给出人性化建议",
+        "source": "百度地图",
+        "url": "https://map.baidu.com/ai-navigation-2026",
+        "summary": "百度地图全面升级AI导航，基于大模型实时理解路况并给出'前面堵车建议买杯咖啡等10分钟'这样的类人化建议。",
+        "category": "应用落地"
+      },
+      {
+        "title": "微软研究院发布VASA-2：单张照片+音频=超真实说话视频",
+        "source": "Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/project/vasa-2/",
+        "summary": "微软研究院发布VASA-2，仅需一张照片和一段音频即可生成超真实的说话视频，唇形同步、表情和头部动作均自然流畅。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "国内AI大模型'百模大战'进入下半场：市场集中度提升",
+        "source": "艾瑞咨询",
+        "url": "https://www.iresearch.cn/report/ai-foundation-model-2026.html",
+        "summary": "艾瑞咨询报告显示中国AI大模型市场CR5（前五集中度）从2025年的45%提升至2026年的72%，头部效应显现，中小模型厂商面临淘汰。",
+        "category": "市场动态"
+      },
+      {
+        "title": "腾讯Robotics X实验室发布'天鹅'双足机器人：行走能效超人类",
+        "source": "腾讯AI Lab",
+        "url": "https://ai.tencent.com/ailab/zh/news/swan-biped-2026",
+        "summary": "腾讯Robotics X发布'天鹅'双足机器人，采用被动动力学设计，行走能效比(COT)达到0.25，超越人类的0.3，一次充电可走50公里。",
+        "category": "具身智能"
+      },
+      {
+        "title": "Databricks完成100亿美元融资：数据+AI平台估值突破2000亿美元",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-12/databricks-10-billion-funding",
+        "summary": "Databricks完成100亿美元融资，估值达2000亿美元。CEO Ali Ghodsi表示AI正从'模型竞赛'转向'数据竞赛'。",
+        "category": "市场动态"
+      },
+      {
+        "title": "美国国防部发布'负责任AI军事应用'政策：禁止AI自主开火决策",
+        "source": "DoD",
+        "url": "https://www.defense.gov/News/Releases/Release/Article/ai-military-policy-2026/",
+        "summary": "美国国防部发布AI军事应用政策，明确禁止AI做出自主开火决策，要求'人在回路中'(human-in-the-loop)原则。",
+        "category": "政策监管"
+      },
+      {
+        "title": "AI Agent框架CrewAI发布企业版：多Agent协作编排成企业标配",
+        "source": "CrewAI Blog",
+        "url": "https://blog.crewai.com/enterprise-2026",
+        "summary": "CrewAI发布企业版多Agent框架，支持角色定义、任务编排、Agent间通信，已获300+企业付费客户。",
+        "category": "应用落地"
+      }
+    ]
+  }
+}

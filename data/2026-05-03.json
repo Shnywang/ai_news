@@ -1,0 +1,133 @@
+{
+  "2026-05-03": {
+    "update_time": "2026-05-03T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "Google Gemma 4开源模型速度提升3倍：采用前瞻性解码技术",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/googles-gemma-4-open-ai-models-use-speculative-decoding-to-get-up-to-3x-faster/",
+        "summary": "Google发布Gemma 4系列开源模型，采用前瞻性解码(Speculative Decoding)技术实现3倍推理加速，提供1B/7B/27B三种规格，全部采用Apache 2.0许可。",
+        "category": "开源动态",
+        "rating": 5
+      },
+      {
+        "title": "AI新泡沫？OpenAI营收未达标引发AI基础设施股崩盘",
+        "source": "Wall Street Journal",
+        "url": "https://www.wsj.com/tech/ai/openai-revenue-miss-infrastructure-stocks-2026-05",
+        "summary": "OpenAI营收未达到内部预期的消息持续发酵，Oracle、CoreWeave、SoftBank等AI基建概念股连续第三日大跌，市值蒸发超2000亿美元。",
+        "category": "市场动态",
+        "rating": 5
+      },
+      {
+        "title": "ChatGPT涉毒致死案：美国少年听从AI建议混合药物后死亡",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/teen-died-chatgpt-drug-mix-lawsuit/",
+        "summary": "一起引发社会震动的事件：17岁美国少年向ChatGPT咨询药物安全问题后按AI建议混合多种药物，不幸身亡。其家属起诉OpenAI，AI安全护栏问题再成焦点。",
+        "category": "政策监管",
+        "rating": 5
+      },
+      {
+        "title": "华为发布'盘古'具身智能大模型：赋能机器人通用操作能力",
+        "source": "华为公众号",
+        "url": "https://mp.weixin.qq.com/s/huawei-pangu-embodied-2026",
+        "summary": "华为发布盘古具身智能大模型，通过视觉-语言-动作(VLA)统一架构实现机器人通用操作，已与宇树、智元等6家企业合作验证。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "Google AI Overviews改版：更多来源链接以应对'AI幻觉'争议",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/google-ai-overviews-more-sources/",
+        "summary": "Google宣布AI Overviews将展示更多来源链接和引用标注，用户可一键跳转原文。此举旨在应对AI生成内容错误引发的信任危机。",
+        "category": "应用落地",
+        "rating": 4
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "索尼称AI工具将导致游戏市场'更拥挤'：降门槛但不保证质量",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/sony-ai-tools-more-games/",
+        "summary": "索尼CEO在财报会上表示AI将大幅降低游戏开发门槛，可能导致市场上游戏数量暴增但质量参差不齐。",
+        "category": "应用落地"
+      },
+      {
+        "title": "百度文心大模型5.0发布：全面对标GPT-5，中文能力超越",
+        "source": "百度AI公众号",
+        "url": "https://mp.weixin.qq.com/s/baidu-ernie-5-2026",
+        "summary": "百度发布文心5.0，在中文NLP基准上超越GPT-5，新增智能体开发平台支持零代码创建AI Agent。",
+        "category": "大模型"
+      },
+      {
+        "title": "AI数据中心30亿加仑'隐形'水耗：无人发现数月",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/data-center-30-million-gallons-water/",
+        "summary": "亚利桑那州一AI数据中心在数月内消耗了3000万加仑水资源未被察觉，暴露了AI基础设施水资源管理的监管盲区。",
+        "category": "应用落地"
+      },
+      {
+        "title": "xAI发布Grok-4：Elon Musk称'最诚实的AI'，集成X平台实时数据",
+        "source": "xAI Blog",
+        "url": "https://x.ai/blog/grok-4",
+        "summary": "xAI发布Grok-4，采用314B参数MoE架构，可实时访问X平台数据流，Musk宣称其不受'政治正确'限制。",
+        "category": "大模型"
+      },
+      {
+        "title": "小米CyberDog 3发布：四足机器人集成GPT-5级对话能力",
+        "source": "小米发布会",
+        "url": "https://www.mi.com/cyberdog-3",
+        "summary": "小米发布CyberDog 3，搭载端侧AI芯片实现GPT-5级自然语言理解和情感交互，支持手势控制和自主导航。售价7999元。",
+        "category": "具身智能"
+      },
+      {
+        "title": "AI for Science突破：AlphaFold 3.5辅助发现新型抗生素",
+        "source": "Science",
+        "url": "https://www.science.org/doi/10.1126/science.adi2026",
+        "summary": "MIT团队利用AlphaFold 3.5发现了两种新型抗生素候选分子，对耐药菌有效，标志着AI辅助药物发现进入新阶段。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "腾讯混元大模型开源：效果超越Llama 3，成中文最强开源模型",
+        "source": "GitHub",
+        "url": "https://github.com/TencentARC/Hunyuan",
+        "summary": "腾讯将混元大模型完全开源(Apache 2.0)，72B参数在中文任务上超越Llama 3 70B，同步开源RLHF训练数据和代码。",
+        "category": "开源动态"
+      },
+      {
+        "title": "全球AI人才争夺战：OpenAI年薪中位数达到92.5万美元",
+        "source": "Levels.fyi",
+        "url": "https://www.levels.fyi/blog/ai-salary-report-2026.html",
+        "summary": "Levels.fyi报告显示OpenAI员工年薪中位数达92.5万美元(含股权)，Anthropic为85万，DeepMind为72万，AI人才薪酬继续攀升。",
+        "category": "市场动态"
+      },
+      {
+        "title": "欧盟成立AI执法特别工作组：首批40名专家进驻",
+        "source": "欧盟委员会",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/ai-enforcement-taskforce-2026",
+        "summary": "欧盟委员会宣布成立AI执法特别工作组，首批40名技术专家和法律顾问，将监督AI法案执行并调查违规企业。",
+        "category": "政策监管"
+      },
+      {
+        "title": "韩国投入100亿美元打造'AI G3'计划：目标2028年AI竞争力全球前三",
+        "source": "韩联社",
+        "url": "https://en.yna.co.kr/view/AEN20260503001251320",
+        "summary": "韩国政府宣布'AI G3'计划，未来3年投入100亿美元，重点发展AI半导体和具身智能，目标2028年成为全球AI第三强国。",
+        "category": "政策监管"
+      },
+      {
+        "title": "可灵AI(Kling)视频生成模型发布2.0版：支持10分钟长视频",
+        "source": "快手科技",
+        "url": "https://kling.kuaishou.com/blog/v2-2026",
+        "summary": "快手可灵AI发布2.0版本，支持生成最长10分钟的高清视频，新增人物一致性保持和复杂场景编辑功能。",
+        "category": "大模型"
+      },
+      {
+        "title": "阿里巴巴达摩院发布视频生成模型EMO 3：实现'照片唱歌说话'",
+        "source": "机器之心",
+        "url": "https://www.jiqizhixin.com/articles/2026-05-03-1",
+        "summary": "达摩院发布EMO 3，可将单张照片转化为说话唱歌的视频，口型同步准确率超95%，情感表达自然，引发肖像权争议。",
+        "category": "研究前沿"
+      }
+    ]
+  }
+}

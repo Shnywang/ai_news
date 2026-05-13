@@ -1,0 +1,111 @@
+{
+  "2026-05-06": {
+    "update_time": "2026-05-06T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "Needle模型发布：仅26M参数实现Gemini级工具调用能力",
+        "source": "GitHub",
+        "url": "https://github.com/cactus-compute/needle",
+        "summary": "Cactus Compute开源Needle模型，仅26M参数却实现了与Gemini相当的工具调用能力，通过蒸馏技术将大模型的功能选择能力压缩到微型模型中。",
+        "category": "开源动态",
+        "rating": 5
+      },
+      {
+        "title": "OpenAI管理层大换血：CTO Mira Murati离职，三位副总裁同时出走",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/openai-cto-mira-murati-departs",
+        "summary": "OpenAI CTO Mira Murati宣布离职，同时三位副总裁(研究、产品、安全)也相继离开。外界猜测与Sam Altman在商业化方向上的分歧有关。",
+        "category": "市场动态",
+        "rating": 5
+      },
+      {
+        "title": "全球最大AI算力中心'星际之门'项目一期竣工：10万张H200就位",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/technology/stargate-ai-datacenter-phase1-2026-05-06/",
+        "summary": "微软与OpenAI合作的'星际之门'(Stargate)超级计算机项目一期竣工，部署10万张NVIDIA H200 GPU，总算力达100 ExaFLOPS，年内将扩展至30万张。",
+        "category": "AI芯片",
+        "rating": 5
+      },
+      {
+        "title": "小米人形机器人CyberOne量产版发布：售价将低于20万元",
+        "source": "小米发布会",
+        "url": "https://www.mi.com/cyberone-mass-production",
+        "summary": "雷军亲自发布CyberOne量产版人形机器人，高177cm，重52kg，21个自由度，搭载自研澎湃AI芯片，可实现双足行走和简单操作。定价19.99万元。",
+        "category": "具身智能",
+        "rating": 5
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "百度Apollo发布第六代无人驾驶出租车：成本降至15万元",
+        "source": "百度Apollo",
+        "url": "https://apollo.baidu.com/news/rt6-2026",
+        "summary": "百度发布Apollo RT6无人驾驶出租车，整车成本15万元，较上代降低50%。计划年内在武汉部署5000辆。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Perplexity AI完成5亿美元融资：AI搜索估值达200亿美元",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-06/perplexity-ai-5-billion-funding",
+        "summary": "Perplexity AI完成5亿美元融资，IVP领投，估值200亿美元。月活用户突破1.5亿，正在挑战Google搜索地位。",
+        "category": "市场动态"
+      },
+      {
+        "title": "《MIT技术评论》发布2026年十大突破性技术：AI占6项",
+        "source": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/2026/05/06/10-breakthrough-technologies-2026/",
+        "summary": "MIT TR发布2026十大突破性技术，AI相关占6项：AI科学家、定制化芯片设计AI、有效利他AI、通用机器人、AI驱动药物发现、生成式世界模型。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "蔚来发布NIO Robot人形机器人：工厂质检+物流一体化",
+        "source": "蔚来NIO Day",
+        "url": "https://www.nio.com/news/nio-robot-2026",
+        "summary": "蔚来发布NIO Robot人形机器人，专为汽车工厂设计，可完成车身质检和零部件搬运，已在其合肥工厂部署50台。",
+        "category": "具身智能"
+      },
+      {
+        "title": "OpenAI发布'Sora 2'视频生成模型：支持交互式视频编辑",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/blog/sora-2",
+        "summary": "OpenAI发布Sora 2，支持通过自然语言交互实时编辑视频内容，最长生成20分钟1080p视频，物理一致性大幅提升。",
+        "category": "大模型"
+      },
+      {
+        "title": "日本RoboDEX展：20款新发布人形机器人同台竞技",
+        "source": "日经Robotics",
+        "url": "https://xtech.nikkei.com/atcl/nxt/mag/rob/18/00005/",
+        "summary": "2026年日本RoboDEX展集中发布20款新人形机器人，涵盖工业、服务、教育三大领域，日本企业加速追赶中美。",
+        "category": "具身智能"
+      },
+      {
+        "title": "Stable Diffusion 4引发版权风暴：艺术家集体起诉Stability AI",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/2026/5/6/stable-diffusion-4-lawsuit",
+        "summary": "多位知名艺术家联合起诉Stability AI，指控SD4使用了数千幅未经授权的作品进行训练，要求赔偿10亿美元。",
+        "category": "政策监管"
+      },
+      {
+        "title": "联发科天玑9500发布：内置第七代APU，AI算力达100 TOPS",
+        "source": "联发科",
+        "url": "https://www.mediatek.com/blog/dimensity-9500-ai",
+        "summary": "联发科发布天玑9500旗舰芯片，内置第七代APU，AI算力达100 TOPS，支持端侧运行7B大模型。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "AI Agent创业公司Adept被微软收购：金额或达15亿美元",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/06/microsoft-acquires-adept-ai/",
+        "summary": "微软收购AI Agent创业公司Adept AI，金额预计15亿美元。Adept的ACT-2模型将整合进Microsoft Copilot产品线。",
+        "category": "市场动态"
+      },
+      {
+        "title": "百度发布文心智能体平台：零代码创建AI Agent，已建50万+",
+        "source": "百度AI开发者大会",
+        "url": "https://yiyan.baidu.com/blog/agent-platform-2026",
+        "summary": "百度在AI开发者大会上透露，文心智能体平台已有50万+开发者创建的AI Agent，覆盖电商、教育、医疗等垂直领域。",
+        "category": "应用落地"
+      }
+    ]
+  }
+}

@@ -12,7 +12,7 @@
   <line x1="80" y1="240" x2="500" y2="240" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
   <text x="80" y="300" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" fill="rgba(255,255,255,0.85)">📊 创业 / 产品 / 算法 / 项目管理</text>
   <text x="80" y="370" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="42" fill="rgba(255,255,255,0.7)">🔥 每日更新 · 聚焦大模型与具身智能</text>
-  <text x="80" y="500" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" fill="rgba(255,255,255,0.6)">2026-04-29 · shnywang.github.io/ai_news</text>
+  <text x="80" y="500" font-family="system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" fill="rgba(255,255,255,0.6)">2026-05-13 · shnywang.github.io/ai_news</text>
   <rect x="900" y="420" width="220" height="130" rx="12" fill="rgba(255,255,255,0.15)"/>
   <text x="1010" y="470" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="white" text-anchor="middle">扫码访问</text>
   <text x="1010" y="520" font-family="system-ui,sans-serif" font-size="22" fill="rgba(255,255,255,0.7)" text-anchor="middle">AI+具身智能资讯</text>

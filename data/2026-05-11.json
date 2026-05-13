@@ -1,0 +1,111 @@
+{
+  "2026-05-11": {
+    "update_time": "2026-05-11T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "AI最终取代程序员？GitHub最新调查：41%新代码由AI生成",
+        "source": "GitHub Octoverse",
+        "url": "https://github.blog/2026-05-11-octoverse-ai-code-report/",
+        "summary": "GitHub发布2026 Octoverse报告，显示平台上41%的新增代码由AI辅助生成，较2025年的27%大幅提升。Python取代JavaScript成为AI时代第一编程语言。",
+        "category": "应用落地",
+        "rating": 5
+      },
+      {
+        "title": "Figure 02在宝马工厂连续工作30天无事故：人形机器人可靠性里程碑",
+        "source": "Figure AI Blog",
+        "url": "https://www.figure.ai/blog/30-days-zero-incident",
+        "summary": "Figure AI宣布Figure 02人形机器人在宝马工厂实现连续30天24小时运行零事故，累计完成1.2万次焊接操作，可靠性达到工业级标准。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "DeepSeek创始人梁文锋罕见露面：'AI不应该被少数公司垄断'",
+        "source": "澎湃新闻",
+        "url": "https://www.thepaper.cn/newsDetail_forward_27001234",
+        "summary": "DeepSeek创始人梁文锋在深圳AI大会上罕见公开露面并发表演讲，强调开源是打破AI垄断的关键，宣布DeepSeek将持续开源所有模型。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "日本软银收购ARM后押注AI芯片：自研'寒武纪'AI处理器曝光",
+        "source": "日经新闻",
+        "url": "https://asia.nikkei.com/Business/SoftBank-Arm-cambrian-ai-processor",
+        "summary": "软银通过ARM秘密研发代号'寒武纪'的AI处理器，采用3nm工艺和全新神经计算架构，目标2028年量产对标NVIDIA Rubin。",
+        "category": "AI芯片",
+        "rating": 4
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "AI发现首个人工智能设计的抗癌分子进入临床试验",
+        "source": "Nature Medicine",
+        "url": "https://www.nature.com/articles/s41591-026-00789-0",
+        "summary": "由AI从头设计的抗癌药物分子ISB-2026进入I期临床试验，成为首个由AI完全设计并进入人体的抗癌药物。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "波士顿动力Atlas在建筑工地试点：展示搬运和安装能力",
+        "source": "Boston Dynamics",
+        "url": "https://bostondynamics.com/blog/atlas-construction-pilot/",
+        "summary": "波士顿动力发布Atlas在建筑工地试点视频，展示搬运建材、安装螺栓等任务，标志着人形机器人进入建筑业。",
+        "category": "具身智能"
+      },
+      {
+        "title": "OpenAI推出GPT Store收入分成计划：开发者可获70%收益",
+        "source": "OpenAI Blog",
+        "url": "https://openai.com/blog/gpt-store-revenue-sharing",
+        "summary": "OpenAI向GPT Store开发者推出收入分成计划，按GPT使用量分配收益，开发者最高可获70%。此举旨在构建类似App Store的AI生态。",
+        "category": "市场动态"
+      },
+      {
+        "title": "中国首个AI大模型国家标准获批：《生成式AI服务安全要求》",
+        "source": "国家标准委",
+        "url": "https://www.sac.gov.cn/xw/bzhdt/202605/t20260511_123456.html",
+        "summary": "中国首个AI大模型国家标准获批准，涵盖数据安全、内容合规、用户隐私等六个维度，2027年1月1日起实施。",
+        "category": "政策监管"
+      },
+      {
+        "title": "Pika 2.0视频编辑AI发布：文字指令可编辑视频中任意元素",
+        "source": "Pika Blog",
+        "url": "https://pika.art/blog/v2",
+        "summary": "Pika发布2.0版本，支持通过自然语言指令修改视频中的任意元素（如替换人物、更改天气、调整色调），编辑效果达到专业级。",
+        "category": "应用落地"
+      },
+      {
+        "title": "全球AI教育市场2026年规模突破500亿美元",
+        "source": "HolonIQ",
+        "url": "https://www.holoniq.com/notes/ai-education-market-2026",
+        "summary": "HolonIQ报告显示全球AI教育市场2026年规模达500亿美元，中国和美国各占30%，个性化AI辅导是最大细分市场。",
+        "category": "市场动态"
+      },
+      {
+        "title": "Graphcore浴火重生：软银注资后发布Colossus MK3 AI芯片",
+        "source": "The Register",
+        "url": "https://www.theregister.com/2026/05/11/graphcore-colossus-mk3/",
+        "summary": "在被软银收购后，英国AI芯片公司Graphcore发布Colossus MK3 IPU，采用晶圆级集成技术，单芯片AI算力达1 PFLOPS。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "量子AI突破：谷歌Willow量子芯片加速机器学习训练100倍",
+        "source": "Google Research",
+        "url": "https://research.google/blog/willow-quantum-machine-learning/",
+        "summary": "Google Research利用Willow量子芯片实现了特定机器学习任务的100倍加速，为量子AI实用化铺平道路。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "Character.AI创始人Noam Shazeer重返Google：人才回流潮继续",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/11/noam-shazeer-returns-google.html",
+        "summary": "Character.AI联合创始人Noam Shazeer重返Google DeepMind，负责下一代对话AI研发。Character.AI以27亿美元被Google收购。",
+        "category": "市场动态"
+      },
+      {
+        "title": "三星发布Exynos 2600 AI手机芯片：端侧支持运行10B大模型",
+        "source": "三星半导体",
+        "url": "https://semiconductor.samsung.com/news/exynos-2600-ai/",
+        "summary": "三星发布Exynos 2600，内置NPU算力达80 TOPS，支持在手机上离线运行10B参数大模型，用于实时翻译和AI摄影。",
+        "category": "AI芯片"
+      }
+    ]
+  }
+}

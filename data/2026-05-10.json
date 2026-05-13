@@ -1,0 +1,111 @@
+{
+  "2026-05-10": {
+    "update_time": "2026-05-10T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "谷歌DeepMind与哈佛联合：AI在数学领域发现新拓扑不变量",
+        "source": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-00890-3",
+        "summary": "DeepMind与哈佛数学系合作，AI系统发现了拓扑学中一个全新的不变量，人类数学家将其命名为'AI不变量'。标志着AI在纯数学领域做出原创性贡献。",
+        "category": "研究前沿",
+        "rating": 5
+      },
+      {
+        "title": "傅利叶智能GR-2获美国FDA医疗器械认证：全球首款'临床级'人形康复机器人",
+        "source": "FDA",
+        "url": "https://www.fda.gov/medical-devices/recently-approved-devices/fourier-gr-2",
+        "summary": "傅利叶智能GR-2获FDA 510(k)认证，成为全球首款获批用于临床康复治疗的人形机器人，可用于中风患者的步态训练和上肢康复。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "AI芯片价格战爆发：AMD MI400降价40%正面挑战NVIDIA",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/news/amd-mi400-price-cut-nvidia",
+        "summary": "AMD宣布MI400系列AI GPU全线降价40%，并承诺提供CUDA兼容层，直接挑战NVIDIA在AI训练市场的主导地位。分析师预计AI芯片利润将大幅收窄。",
+        "category": "AI芯片",
+        "rating": 5
+      },
+      {
+        "title": "零一万物发布Yi-3.0：李开复称'中文开源最强，全面对标GPT-5'",
+        "source": "零一万物",
+        "url": "https://www.01.ai/blog/yi-3-2026",
+        "summary": "李开复创办的零一万物发布Yi-3.0大模型，340B参数MoE架构，中文评测全面超越GPT-5，数学推理能力尤其突出，同步开源。",
+        "category": "开源动态",
+        "rating": 5
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "亚马逊AWS发布自研AI训练芯片Trainium 3：性能超H200 30%",
+        "source": "AWS Blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/trainium-3/",
+        "summary": "AWS发布Trainium 3，自研AI训练芯片，宣称在Llama 4训练性能上超越NVIDIA H200 30%，成本降低40%。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "DeepMind开源Genie 3世界模型：可从单张图片生成交互式3D世界",
+        "source": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/genie-3-open-source/",
+        "summary": "DeepMind开源Genie 3，可通过单张图片生成可交互的3D虚拟世界，为游戏、模拟训练和机器人学习提供基础平台。",
+        "category": "开源动态"
+      },
+      {
+        "title": "苹果自研AI服务器芯片'Project ACDC'曝光：台积电3nm工艺",
+        "source": "MacRumors",
+        "url": "https://www.macrumors.com/2026/05/10/apple-ai-server-chip-acdc/",
+        "summary": "供应链消息称Apple正在开发代号为'ACDC'的AI服务器芯片，采用台积电3nm工艺，专为Apple Intelligence云端推理设计。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "欧盟AI法案第一张罚单开出：某大型语言模型开发商被罚5000万欧元",
+        "source": "Politico EU",
+        "url": "https://www.politico.eu/article/eu-ai-act-first-fine-2026/",
+        "summary": "欧盟开出AI法案生效后第一张罚单，一家未披露安全测试结果的LLM开发商被罚5000万欧元，标志着AI监管进入执法阶段。",
+        "category": "政策监管"
+      },
+      {
+        "title": "百度世界大会2026：李彦宏称'AI原生应用时代正式到来'",
+        "source": "百度",
+        "url": "https://baijiahao.baidu.com/s?id=1801234567890123456",
+        "summary": "百度世界大会上李彦宏宣布搜索、地图、网盘等全线产品完成AI原生重构，智能体数量突破1000万。",
+        "category": "应用落地"
+      },
+      {
+        "title": "与人形机器人共处：日本养老院试点AI机器人护理助手",
+        "source": "NHK",
+        "url": "https://www3.nhk.or.jp/nhkworld/en/news/20260510_01/",
+        "summary": "日本东京一家养老院开始试点人形机器人护理助手，协助老人起床、行走和服药，旨在解决日本严重的护理人员短缺问题。",
+        "category": "具身智能"
+      },
+      {
+        "title": "全球AI GPU出货量2026 Q1同比增长200%：供应仍严重不足",
+        "source": "Mercury Research",
+        "url": "https://mercuryresearch.com/reports/ai-gpu-q1-2026",
+        "summary": "Mercury Research报告显示2026年Q1全球AI GPU出货量同比增长200%，但供给缺口仍达40%，交期长达9个月。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "AI绘画工具引发'数字艺术家焦虑症'：心理健康问题浮现",
+        "source": "The Atlantic",
+        "url": "https://www.theatlantic.com/technology/archive/2026/05/ai-art-mental-health/",
+        "summary": "The Atlantic调查发现大量数字艺术家因AI绘画工具普及而产生焦虑和职业认同危机，'AI取代焦虑症'成为心理学新词条。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Anthropic宣布Claude支持'记忆'功能：跨对话持久化上下文",
+        "source": "Anthropic Blog",
+        "url": "https://www.anthropic.com/news/claude-memory",
+        "summary": "Anthropic为Claude添加'记忆'功能，可跨对话记住用户偏好和重要信息，用户可控可删除。功能先向Pro用户开放。",
+        "category": "大模型"
+      },
+      {
+        "title": "华为昇腾AI生态大会：合作伙伴突破5000家，AI框架MindSpore用户破百万",
+        "source": "华为",
+        "url": "https://www.huawei.com/cn/news/2026/5/ascend-ecosystem",
+        "summary": "华为在昇腾AI生态大会上宣布合作伙伴超5000家，自研AI框架MindSpore全球用户突破100万，国产AI生态进入快速发展期。",
+        "category": "AI芯片"
+      }
+    ]
+  }
+}

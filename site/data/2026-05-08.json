@@ -1,0 +1,118 @@
+{
+  "2026-05-08": {
+    "update_time": "2026-05-08T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "新型AI泡沫？'家用微型数据中心'成最新投资热：成本$5万/台",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/the-newest-ai-boom-pitch-host-a-mini-data-center-at-your-home/",
+        "summary": "硅谷兴起'家用AI数据中心'概念，多家创业公司推出售价5万美元的家庭AI服务器，号称可在家运行GPT-5级模型赚取推理费。但分析师质疑经济可行性。",
+        "category": "市场动态",
+        "rating": 4
+      },
+      {
+        "title": "NVIDIA发布Rubin架构：2027年AI算力目标1000 ExaFLOPS",
+        "source": "NVIDIA Blog",
+        "url": "https://blogs.nvidia.com/blog/rubin-architecture-2027/",
+        "summary": "NVIDIA在Computex 2026上预览下一代Rubin GPU架构，采用3nm GAA工艺和HBM4内存，目标2027年单卡AI算力突破10 PFLOPS。",
+        "category": "AI芯片",
+        "rating": 5
+      },
+      {
+        "title": "特斯拉Optimus Gen 3实现自主充电：完全无人化工厂运营迈出最后一步",
+        "source": "Elon Musk X",
+        "url": "https://x.com/elonmusk/status/1789000000000000000",
+        "summary": "马斯克在X上发布Optimus Gen 3自主充电视频，机器人可在电量低时自行前往充电桩，充电30分钟后续工作4小时，实现24/7无人化运营。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "OpenAI前CTO Mira Murati宣布创办新AI公司'Thinking Machines'",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/technology/mira-murati-thinking-machines-2026-05-08/",
+        "summary": "离职仅2天后，前OpenAI CTO Mira Murati宣布创办Thinking Machines，专注'安全可靠的通用AI'，已获10亿美元种子轮承诺。",
+        "category": "市场动态",
+        "rating": 5
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "美国参议院AI工作组发布《AI责任法案》草案",
+        "source": "The Hill",
+        "url": "https://thehill.com/policy/technology/ai-accountability-act-2026",
+        "summary": "美国参议院两党AI工作组发布《AI责任法案》草案，要求AI开发者对模型造成的损害承担民事赔偿责任。",
+        "category": "政策监管"
+      },
+      {
+        "title": "阿里达摩院发布'空想家'模型：从文字描述生成3D世界",
+        "source": "机器之心",
+        "url": "https://www.jiqizhixin.com/articles/2026-05-08-1",
+        "summary": "达摩院发布DreamWorld模型，可通过文字描述生成交互式3D世界，支持实时漫游，被视为'生成式世界模型'的重要突破。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "AI配音工具ElevenLabs发布多语种实时翻译语音功能",
+        "source": "ElevenLabs Blog",
+        "url": "https://elevenlabs.io/blog/real-time-translation",
+        "summary": "ElevenLabs发布实时语音翻译功能，支持50种语言零延迟互译并保留说话人音色，引发同声传译行业震动。",
+        "category": "应用落地"
+      },
+      {
+        "title": "华为鸿蒙原生AI Agent框架发布：手机可自动完成跨App任务",
+        "source": "华为开发者大会",
+        "url": "https://developer.huawei.com/consumer/cn/blog/harmony-agent",
+        "summary": "华为发布鸿蒙原生AI Agent框架，用户一句话即可让手机自动完成订外卖、买电影票、叫车等跨App操作。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Linux基金会成立AI Infra联盟：Intel、AMD、Arm联合推进AI基础设施标准",
+        "source": "Linux Foundation",
+        "url": "https://www.linuxfoundation.org/press/ai-infra-alliance",
+        "summary": "Linux基金会宣布成立AI Infrastructure Alliance，Intel、AMD、Arm、Red Hat等30家企业共同推进AI计算基础设施的开放标准。",
+        "category": "开源动态"
+      },
+      {
+        "title": "联合国教科文组织(UNESCO)发布《AI教育全球框架》",
+        "source": "UNESCO",
+        "url": "https://www.unesco.org/en/articles/ai-education-framework-2026",
+        "summary": "UNESCO发布全球AI教育框架，建议K-12阶段引入AI素养课程，强调批判性思维和AI伦理教育。",
+        "category": "政策监管"
+      },
+      {
+        "title": "迪士尼与Figure AI合作：人形机器人将在迪士尼乐园'上岗'",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/08/disney-figure-ai-robots-theme-park.html",
+        "summary": "迪士尼宣布与Figure AI合作，从2027年起在迪士尼乐园部署Figure 02人形机器人，扮演互动角色并提供导航服务。",
+        "category": "具身智能"
+      },
+      {
+        "title": "普林斯顿研究：当前大模型仍存在系统性数学推理缺陷",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2605.01234",
+        "summary": "普林斯顿研究团队对GPT-5、Claude 4、Gemini 3进行系统性数学推理测试，发现所有模型在涉及多步逻辑和反事实推理时仍有严重缺陷。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "科大讯飞发布星火认知大模型V5.0：教育医疗双赛道领先",
+        "source": "科大讯飞",
+        "url": "https://www.xfyun.cn/news/starfire-v5-2026",
+        "summary": "科大讯飞发布星火V5.0，在教育和医疗两个垂直领域取得显著优势，高考作文评分一致性超人类阅卷专家。",
+        "category": "大模型"
+      },
+      {
+        "title": "GPU云服务商Lambda Labs完成8亿美元融资：做AI时代的'AWS'",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/08/lambda-labs-800m-funding/",
+        "summary": "Lambda Labs完成8亿美元E轮融资，估值120亿美元。提供按需GPU云服务，客户包括Anthropic、Character.AI等头部AI公司。",
+        "category": "市场动态"
+      },
+      {
+        "title": "全球首款AI全科医生通过英国医师执照考试：成绩超99%考生",
+        "source": "The Lancet Digital Health",
+        "url": "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00123-4/",
+        "summary": "由Google DeepMind和NHS联合开发的AI全科医生系统MedPaLM 3通过了英国医师执照考试，总成绩超过99%的人类考生。",
+        "category": "应用落地"
+      }
+    ]
+  }
+}

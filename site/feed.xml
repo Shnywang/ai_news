@@ -5,407 +5,407 @@
   <link>https://shnywang.github.io/ai_news/site/index.html</link>
   <description>多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</description>
   <language>zh-CN</language>
-  <lastBuildDate>Sat, 09 May 2026 07:35:45 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 13 May 2026 07:55:52 GMT</lastBuildDate>
   <atom:link href="https://shnywang.github.io/ai_news/site/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
-    <title>DeepSeek-V4 Pro Max发布：推理能力超越GPT-5.2和Gemini 3.0-Pro</title>
-    <link>https://techxplore.com/news/2026-04-deepseek-v4-million-token-context.pdf</link>
-    <description>DeepSeek发布V4 Pro Max版本，在标准推理基准测试中性能超越OpenAI GPT-5.2和Google Gemini 3.0-Pro，保持开源Apache 2.0协议，支持100万token上下文，同时兼容OpenAI和Anthropic两种API协议。</description>
-    <source>TechXplore</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://techxplore.com/news/2026-04-deepseek-v4-million-token-context.pdf</guid>
+    <title>今日焦点：2026全球AI最新进展全景——从GPT到机器人</title>
+    <link>https://shnywang.github.io/ai_news/site/index.html</link>
+    <description>本日汇总：GPT-5.5引领多模态AI新高度，具身智能全面提速（特斯拉Optimus获外部订单、Figure 02通过工业可靠性验证），中国AI芯片自给率突破35%，全球AI治理进入执法阶段。</description>
+    <source>综合报道</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://shnywang.github.io/ai_news/site/index.html</guid>
   </item>
   <item>
-    <title>OpenAI增长困局引发AI基础设施股全线暴跌</title>
-    <link>https://invezz.com/news/2026/04/28/why-is-openai-missing-targets-even-as-ai-investment-hits-record-highs/</link>
-    <description>OpenAI营收未达标消息持续发酵，Oracle、SoftBank、CoreWeave等AI基础设施概念股全线大跌。市场开始质疑万亿级AI基建投入的可持续性，CFO Sarah Friar面临巨额资本开支解释压力。</description>
-    <source>华尔街日报/Fortune</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://invezz.com/news/2026/04/28/why-is-openai-missing-targets-even-as-ai-investment-hits-record-highs/</guid>
+    <title>中国AI芯片自给率突破35%：国产替代加速</title>
+    <link>https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_ab12cd34ef56.html</link>
+    <description>工信部最新数据显示，中国AI芯片自给率已达35%，较2025年的22%大幅提升。华为昇腾、壁仞科技、寒武纪三家合计占国内市场份额的60%。</description>
+    <source>工信部</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_ab12cd34ef56.html</guid>
   </item>
   <item>
-    <title>Anthropic估值超OpenAI达1万亿美元，编程Agent成增长引擎</title>
-    <link>https://bravenewcoin.com/insights/openais-miss-anthropics-moment-is-the-ai-bubble-starting-to-pop</link>
-    <description>Anthropic年化营收达300亿美元，编程Agent(Claude Code)成核心增长引擎。在OpenAI增长放缓的背景下，Anthropic估值首次超越OpenAI，&quot;两家万亿AI公司&quot;的叙事突然面临考验。</description>
-    <source>BraveNewCoin</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://bravenewcoin.com/insights/openais-miss-anthropics-moment-is-the-ai-bubble-starting-to-pop</guid>
-  </item>
-  <item>
-    <title>具身智能产业大会Day2：商业化路径全面铺开</title>
-    <link>https://bj.people.com.cn/n2/2026/0429/c14540-41566689.html</link>
-    <description>第三届中国具身智能与人形机器人产业大会第二天在北京继续召开，聚焦从&quot;能动&quot;到&quot;能用&quot;的商业化转型，海淀企业群体展示量产能力，产业从技术验证阶段正式进入订单交付阶段。</description>
-    <source>人民网</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://bj.people.com.cn/n2/2026/0429/c14540-41566689.html</guid>
-  </item>
-  <item>
-    <title>4月大模型&quot;日更&quot;竞赛收官：9家企业旗舰密集发布创历史纪录</title>
-    <link>https://www.eeo.com.cn/2026/0429/856541.shtml</link>
-    <description>4月成为中国大模型史上最密集的发布月：月之暗面、阿里、腾讯、DeepSeek、字节、小米、智谱AI等9家企业相继发布旗舰模型，行业竞争白热化进入新阶段。国金证券发布专题研报分析竞争格局。</description>
-    <source>经济观察网</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.eeo.com.cn/2026/0429/856541.shtml</guid>
-  </item>
-  <item>
-    <title>小米开源MiMo-V2.5：支持100万上下文，MIT商用协议</title>
-    <link>https://www.saiita.com.cn/technology-consulting/2026-april-tech-news-summary.html</link>
-    <description>小米开源MiMo-V2.5系列模型，支持100万token超长上下文和MIT商用协议，加入4月大模型开源大战。与DeepSeek-V4、腾讯混元等形成国产开源模型矩阵。</description>
-    <source>赛塔网</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.saiita.com.cn/technology-consulting/2026-april-tech-news-summary.html</guid>
-  </item>
-  <item>
-    <title>中国具身智能在全球实现&quot;量子跃迁&quot;：机器人半马验证系统可靠性</title>
-    <link>https://www.chinadailyhk.com/hk/article/632608</link>
-    <description>China Daily专题报道中国具身智能产业在2026年实现质的飞跃，机器人半马成绩突破验证了硬件可靠性、算法稳定性和系统工程能力的综合水平，中国企业已形成全球领先的迭代速度。</description>
-    <source>China Daily</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.chinadailyhk.com/hk/article/632608</guid>
-  </item>
-  <item>
-    <title>AI日报4月29日：政治局AI+行动持续发酵，市场聚焦实施细则</title>
-    <link>https://duoke360.com/post/46193</link>
-    <description>政治局会议AI+行动要求持续引发市场关注，机构解读六张网新基建投资框架和产业政策升级信号</description>
-    <source>多课网</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://duoke360.com/post/46193</guid>
-  </item>
-  <item>
-    <title>DeepSeek骨干流动：10名离职大将去向曝光</title>
-    <link>https://finance.sina.com.cn/stock/wbstock/2026-04-27/doc-inhvxtqy9037351.shtml</link>
-    <description>V4技术报告致谢近300名研发者中10位已离职流向大厂，但团队整体阵容庞大，研发能力未受影响</description>
-    <source>投中网</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.sina.com.cn/stock/wbstock/2026-04-27/doc-inhvxtqy9037351.shtml</guid>
-  </item>
-  <item>
-    <title>MIT Technology Review：DeepSeek-V4开源性能匹配闭源对手</title>
-    <link>https://www.technologyreview.com/2026/04/27/1136438/the-download-deepseek-v4-ai-world-models/</link>
-    <description>MIT TR报道DeepSeek-V4保持开源同时性能匹配Anthropic/OpenAI/Google的闭源对手，重新定义AI竞争格局</description>
-    <source>MIT Tech Review</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.technologyreview.com/2026/04/27/1136438/the-download-deepseek-v4-ai-world-models/</guid>
-  </item>
-  <item>
-    <title>中国企业押注2027具身智能爆发年</title>
-    <link>https://news.cgtn.com/news/2026-04-21/Chinese-firms-bet-on-embodied-AI-boom-in-2027-1MwxlAlRnQA/p.html</link>
-    <description>CGTN报道中国政策支持具身智能，业界将2026定为突破年、2027定为商业爆发年，政府工作报告已明确部署</description>
-    <source>CGTN</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.cgtn.com/news/2026-04-21/Chinese-firms-bet-on-embodied-AI-boom-in-2027-1MwxlAlRnQA/p.html</guid>
-  </item>
-  <item>
-    <title>谷歌向Anthropic投资400亿美元，AI军备竞赛加码</title>
-    <link>https://www.yicai.com/news/103152996.html</link>
-    <description>谷歌向Anthropic追加投资至400亿美元，推动后者估值突破万亿，AI巨头间的投资军备竞赛持续升级</description>
-    <source>第一财经</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.yicai.com/news/103152996.html</guid>
-  </item>
-  <item>
-    <title>从机器人马拉松破纪录看中国具身智能&quot;狂飙&quot;</title>
-    <link>https://www.36kr.com/p/3778896668439299</link>
-    <description>硬件迭代全球领先、资本持续高涨、场景落地破局，但数据瓶颈和模型滞后仍是横亘的鸿沟</description>
-    <source>36氪</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.36kr.com/p/3778896668439299</guid>
-  </item>
-  <item>
-    <title>国电网近100亿具身智能设备采购：四大场景8500台</title>
-    <link>https://news.qq.com/rain/a/20260424A02AHL00</link>
-    <description>国家电网2026年计划采购具身智能设备约8500台、投资68亿元，聚焦电力巡检/带电作业/应急救援/仓储物流</description>
-    <source>界面新闻</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.qq.com/rain/a/20260424A02AHL00</guid>
-  </item>
-  <item>
-    <title>AI产业链共振：国产开源大模型迭代潮起</title>
-    <link>https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvyzks7404832.shtml</link>
-    <description>DeepSeek-V4带动产业链共振，百万上下文+Agent能力成标配，国产开源模型集体超越闭源形成新格局</description>
-    <source>新浪财经</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.sina.com.cn/jjxw/2026-04-28/doc-inhvyzks7404832.shtml</guid>
-  </item>
-  <item>
-    <title>中央政治局会议：全面实施&quot;人工智能+&quot;行动，发展智能经济新形态</title>
-    <link>https://finance.sina.com.cn/wm/2026-04-28/doc-inhvzsha8563174.shtml</link>
-    <description>4月28日中央政治局会议强调加快建设现代化产业体系，全面实施&quot;人工智能+&quot;行动，发展智能经济新形态，完善人工智能治理，同时深入整治&quot;内卷式&quot;竞争，加强算力网等六张网规划建设。</description>
+    <title>全球首个人形机器人&apos;马拉松&apos;比赛将在北京举行：10公里考验极限</title>
+    <link>https://www.xinhuanet.com/sports/2026-05/13/c_1213457000.htm</link>
+    <description>北京市宣布将于6月举办全球首个人形机器人马拉松比赛，全程10公里，宇树、小米、智元等20家企业报名参赛，考验机器人续航和运动稳定性。</description>
     <source>新华社</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.sina.com.cn/wm/2026-04-28/doc-inhvzsha8563174.shtml</guid>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.xinhuanet.com/sports/2026-05/13/c_1213457000.htm</guid>
   </item>
   <item>
-    <title>第三届中国具身智能与人形机器人产业大会北京开幕，从&quot;能动&quot;迈向&quot;能干&quot;</title>
-    <link>https://www.bjnews.com.cn/detail/1777358495129912.html</link>
-    <description>大会以&quot;具身智能新纪元·人形机器人新未来&quot;为主题在中关村开幕，超千位政产研学金人士参会。北京市机器人产业协会成立&quot;人形机器人产业链协同发展推进工作组&quot;，灵心巧手全球市占率80%+实现万台量产，启物科技&quot;大小脑长记忆系统&quot;突破端侧算力瓶颈。</description>
-    <source>新京报</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.bjnews.com.cn/detail/1777358495129912.html</guid>
+    <title>Sam Altman确认GPT-6训练已启动：&apos;将带来又一次质的飞跃&apos;</title>
+    <link>https://x.com/sama/status/1789500000000000000</link>
+    <description>Sam Altman在社交媒体确认GPT-6已开始训练，预计需要&apos;数月&apos;时间。暗示新模型将在推理、多模态和Agent能力上实现质的飞跃。</description>
+    <source>Sam Altman X</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://x.com/sama/status/1789500000000000000</guid>
   </item>
   <item>
-    <title>国家发改委正式禁止Meta收购Manus：首例外商投资安全审查否决案</title>
-    <link>https://news.qq.com/rain/a/20260428A001KU00</link>
-    <description>4月27日国家发改委发布公告，依法禁止Meta以约20亿美元收购AI公司Manus并购案，要求立即撤销交易。央视解读称禁的是企业&quot;洗澡式出海&quot;，这是《外商投资安全审查办法》实施以来首个公开否决案例，引发AI行业中美业务独立运营讨论。</description>
-    <source>财新网</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.qq.com/rain/a/20260428A001KU00</guid>
+    <title>欧盟宣布对AI生成内容实施强制数字水印标准：2027年全面生效</title>
+    <link>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2345</link>
+    <description>欧盟委员会宣布从2027年1月起，所有在欧盟境内发布的AI生成内容（文字、图片、视频、音频）必须嵌入C2PA标准数字水印，违者最高罚款全球营收6%。</description>
+    <source>European Commission</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2345</guid>
   </item>
   <item>
-    <title>OpenAI多月未达营收目标，Anthropic在编程和企业市场逆势增长</title>
-    <link>https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in/</link>
-    <description>WSJ报道OpenAI 2026年Q1多个月度营收和用户增长目标未达成，ChatGPT未能触及10亿周活目标。主因是Anthropic在编程和企业工具市场大幅蚕食份额，后者估值已突破1万亿美元，计划10月上市。AI概念股应声全线大跌。</description>
+    <title>Anthropic发布Claude 4.5 Sonnet：编程能力再提升，SWE-bench突破65%</title>
+    <link>https://www.anthropic.com/news/claude-4-5-sonnet</link>
+    <description>Anthropic发布Claude 4.5 Sonnet，编程能力进一步提升，SWE-bench得分达65%，新增多文件重构和跨仓库代码理解能力。</description>
+    <source>Anthropic Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.anthropic.com/news/claude-4-5-sonnet</guid>
+  </item>
+  <item>
+    <title>字节跳动豆包大模型日活突破5亿：超越ChatGPT成为全球最大AI应用</title>
+    <link>https://36kr.com/p/3267890123456880</link>
+    <description>字节跳动内部数据显示豆包大模型全球日活用户突破5亿，超越ChatGPT成为日活最高的AI应用，主要得益于中国市场和东南亚扩张。</description>
+    <source>36氪</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://36kr.com/p/3267890123456880</guid>
+  </item>
+  <item>
+    <title>滴滴Robotaxi北京上路：亦庄开放全无人驾驶商业运营</title>
+    <link>https://bjnews.bjd.com.cn/2026/05/13/123456.html</link>
+    <description>北京亦庄经开区全面开放全无人驾驶商业运营，滴滴、百度、小马智行三家获牌，市民可用App呼叫无人出租车。</description>
+    <source>北京日报</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://bjnews.bjd.com.cn/2026/05/13/123456.html</guid>
+  </item>
+  <item>
+    <title>NVIDIA RTX 6090发布：消费级AI算力突破100 TFLOPS</title>
+    <link>https://blogs.nvidia.com/blog/rtx-6090/</link>
+    <description>NVIDIA发布消费级旗舰显卡RTX 6090，AI算力达120 TFLOPS(FP16)，支持本地运行70B大模型，售价$1999。</description>
+    <source>NVIDIA Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://blogs.nvidia.com/blog/rtx-6090/</guid>
+  </item>
+  <item>
+    <title>Waymo无人驾驶累计行驶突破1亿英里：事故率仅为人类驾驶1/10</title>
+    <link>https://waymo.com/blog/2026/05/100-million-miles/</link>
+    <description>Waymo宣布无人驾驶车累计自主行驶里程突破1亿英里(1.6亿公里)，有责事故率仅为人类驾驶的1/10。</description>
+    <source>Waymo Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://waymo.com/blog/2026/05/100-million-miles/</guid>
+  </item>
+  <item>
+    <title>具身智能学术顶会CoRL 2026投稿量暴涨3倍：会议扩容至万人规模</title>
+    <link>https://www.corl2026.org/news/submission-record</link>
+    <description>机器人学习顶会CoRL 2026投稿量较去年暴涨3倍达6000篇，具身智能成为AI领域最热门研究方向，会议被迫扩容至万人规模。</description>
+    <source>CoRL 2026</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.corl2026.org/news/submission-record</guid>
+  </item>
+  <item>
+    <title>全球AI人才分布报告：美国占38%，中国占25%，欧洲占18%</title>
+    <link>https://macropolo.org/ai-talent-tracker-2026/</link>
+    <description>MacroPolo发布2026年全球AI人才报告，美国仍以38%占比领先，中国从2024年的12%飙升至25%，AI人才&apos;回流潮&apos;加速。</description>
+    <source>MacroPolo</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://macropolo.org/ai-talent-tracker-2026/</guid>
+  </item>
+  <item>
+    <title>联想发布AI PC新战略：首批&apos;神经处理单元&apos;笔记本月销百万</title>
+    <link>https://news.lenovo.com/pressroom/press-releases/ai-pc-neural-processing-2026/</link>
+    <description>联想发布搭载独立NPU(神经处理单元)的AI PC新品，支持本地运行14B大模型，首批产品月销突破100万台。</description>
+    <source>联想</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://news.lenovo.com/pressroom/press-releases/ai-pc-neural-processing-2026/</guid>
+  </item>
+  <item>
+    <title>DALL-E 4 vs Midjourney V7 vs SD4：AI绘画三巨头全面对比</title>
+    <link>https://www.theverge.com/2026/5/13/ai-image-generation-showdown</link>
+    <description>The Verge发布2026年AI绘画工具全面对比评测，DALL-E 4在文字渲染上领先，Midjourney V7在艺术质感上最佳，SD4在开放性上胜出。</description>
+    <source>The Verge</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.theverge.com/2026/5/13/ai-image-generation-showdown</guid>
+  </item>
+  <item>
+    <title>AI失业潮vs新就业：全球科技行业裁员30万，AI相关岗位增长80万</title>
+    <link>https://economicgraph.linkedin.com/blog/ai-jobs-2026</link>
+    <description>LinkedIn发布2026全球劳动力报告，科技行业裁员30万但AI相关新增岗位80万，净增50万就业，但技能错配问题突出。</description>
+    <source>LinkedIn</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://economicgraph.linkedin.com/blog/ai-jobs-2026</guid>
+  </item>
+  <item>
+    <title>北京自动驾驶示范区扩展至600平方公里：人口覆盖500万</title>
+    <link>https://bjnews.bjd.com.cn/2026/05/13/123457.html</link>
+    <description>北京高级别自动驾驶示范区扩展至600平方公里，覆盖500万人口，支持Robotaxi、无人配送、无人环卫等全场景应用。</description>
+    <source>北京日报</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://bjnews.bjd.com.cn/2026/05/13/123457.html</guid>
+  </item>
+  <item>
+    <title>OpenAI与新闻集团达成每年10亿美元内容授权协议：AI训练数据走向合规</title>
+    <link>https://www.wsj.com/business/media/openai-news-corp-1-billion-license-2026</link>
+    <description>OpenAI与新闻集团(News Corp)签署每年10亿美元的内容授权协议，覆盖《华尔街日报》《泰晤士报》等媒体。标志着AI训练数据从&apos;免费抓取&apos;走向&apos;付费授权&apos;新时代。</description>
     <source>华尔街日报</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in/</guid>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.wsj.com/business/media/openai-news-corp-1-billion-license-2026</guid>
   </item>
   <item>
-    <title>腾讯开源HY-Embodied-0.5-X：具身多模态大模型刷新10项Benchmark</title>
-    <link>https://github.com/Tencent-Hunyuan/HY-Embodied</link>
-    <description>腾讯RoboticsX与混元团队联合开源HY-Embodied-0.5-X，专为机器人具身任务优化，提供MoT-2B端侧版和MoE-32B大参数版。在规划、空间推理、具身问答等10个评测中取得6项第一3项第二，打造机器人&quot;看懂、想清、做到&quot;全链路。</description>
-    <source>腾讯RoboticsX</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://github.com/Tencent-Hunyuan/HY-Embodied</guid>
+    <title>特斯拉Optimus首次承接外部订单：丰田订购500台用于工厂</title>
+    <link>https://asia.nikkei.com/Business/Tesla-Optimus-Toyota-order-500-robots</link>
+    <description>特斯拉首次获得人形机器人外部订单——丰田汽车订购500台Optimus Gen 3用于其得州工厂。马斯克称Optimus订单已排至2028年。</description>
+    <source>Nikkei Asia</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://asia.nikkei.com/Business/Tesla-Optimus-Toyota-order-500-robots</guid>
   </item>
   <item>
-    <title>苏州具身智能产业大会：十大新产品发布，签约160亿元</title>
-    <link>https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxxww9006479.shtml</link>
-    <description>2026苏州市具身智能机器人产业生态大会在吴中区举行，发布十大新产品、十大新技术、十大新应用场景和十二项新标准，签约项目160亿元。苏州将具身智能列为十大重点新兴产业，年内力争推出200个以上新场景。</description>
-    <source>苏州市政府</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxxww9006479.shtml</guid>
+    <title>Google DeepMind CEO Demis Hassabis预言：&apos;AGI将在5年内实现&apos;</title>
+    <link>https://www.thetimes.co.uk/article/demis-hassabis-agi-five-years-deepmind</link>
+    <description>DeepMind CEO Demis Hassabis在接受专访时大胆预言AGI将在5年内（2031年前）实现，并透露DeepMind正在开发&apos;世界模型&apos;作为通往AGI的关键路径。</description>
+    <source>The Times</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.thetimes.co.uk/article/demis-hassabis-agi-five-years-deepmind</guid>
   </item>
   <item>
-    <title>微软Copilot全球大面积宕机，北美用户功能无响应超30秒</title>
-    <link>https://www.tmtpost.com/7969276.html</link>
-    <description>4月28日早间微软Copilot服务在北美突发运行异常，Web端加载迟缓且指令响应延迟超30秒，Windows客户端插件出现闪退。事件暴露AI助手基础设施可靠性问题，凸显企业级AI服务的稳定性挑战。</description>
-    <source>钛媒体</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.tmtpost.com/7969276.html</guid>
+    <title>全球AI监管碎片化加剧：G7未能就AI治理达成共同框架</title>
+    <link>https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/</link>
+    <description>G7峰会未能就AI全球治理达成共同框架，美欧在监管严格程度上分歧严重。分析认为AI监管&apos;碎片化&apos;将增加企业合规成本并阻碍AI发展。</description>
+    <source>Reuters</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/</guid>
   </item>
   <item>
-    <title>北京车展从&quot;造车&quot;到&quot;造人&quot;：中国车企集体押注人形机器人</title>
-    <link>https://news.qq.com/rain/a/20260427A02VTS00</link>
-    <description>荣耀机器人夺半马冠军、小鹏IRON公布量产时间表、一汽自研机器人首秀，车企从造车向造机器人延伸成趋势</description>
-    <source>腾讯新闻</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.qq.com/rain/a/20260427A02VTS00</guid>
+    <title>Canva发布AI设计助手Magic Studio 3.0：一句话生成完整品牌VI</title>
+    <link>https://www.canva.com/newsroom/news/magic-studio-3/</link>
+    <description>Canva发布Magic Studio 3.0，可通过一句话生成完整的品牌VI（Logo、配色、字体、宣传物料），大幅降低设计门槛。</description>
+    <source>Canva Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.canva.com/newsroom/news/magic-studio-3/</guid>
   </item>
   <item>
-    <title>高通与OpenAI合作研发AI智能手机，立讯精密参与</title>
-    <link>https://k.sina.cn/article_7857201856_1d45362c001904sisc.html</link>
-    <description>知名分析师透露高通与OpenAI合作开发AI原生智能手机，立讯精密参与硬件制造，高通股价应声上涨</description>
-    <source>新浪财经</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://k.sina.cn/article_7857201856_1d45362c001904sisc.html</guid>
+    <title>AI预测极端天气准确率超90%：DeepMind GraphCast 3发布</title>
+    <link>https://deepmind.google/blog/graphcast-3/</link>
+    <description>DeepMind发布GraphCast 3天气预测模型，10天天气预报准确率超过传统数值模型，极端天气预警提前量从3天延长至7天。</description>
+    <source>DeepMind Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://deepmind.google/blog/graphcast-3/</guid>
   </item>
   <item>
-    <title>陈天桥：Manus事件迫使中美AI业务独立运营</title>
-    <link>https://www.sohu.com/a/1015936691_553580</link>
-    <description>MiroMind创始人陈天桥指出Manus收购失败使中美AI业务形成隔离墙，AI企业别无选择只能独立运营</description>
-    <source>搜狐科技</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.sohu.com/a/1015936691_553580</guid>
+    <title>百度地图AI导航采用大模型：实时理解路况并给出人性化建议</title>
+    <link>https://map.baidu.com/ai-navigation-2026</link>
+    <description>百度地图全面升级AI导航，基于大模型实时理解路况并给出&apos;前面堵车建议买杯咖啡等10分钟&apos;这样的类人化建议。</description>
+    <source>百度地图</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://map.baidu.com/ai-navigation-2026</guid>
   </item>
   <item>
-    <title>中信建投解读政治局会议：五大核心聚焦，AI+迎升级信号</title>
-    <link>https://news.qq.com/rain/a/20260429A01VOS00</link>
-    <description>政策取向与市场预期高度契合，产业政策迎升级信号，&quot;全面实施AI+&quot;较此前表述明显提级，新基建六张网形成投资框架</description>
-    <source>中信建投</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.qq.com/rain/a/20260429A01VOS00</guid>
+    <title>微软研究院发布VASA-2：单张照片+音频=超真实说话视频</title>
+    <link>https://www.microsoft.com/en-us/research/project/vasa-2/</link>
+    <description>微软研究院发布VASA-2，仅需一张照片和一段音频即可生成超真实的说话视频，唇形同步、表情和头部动作均自然流畅。</description>
+    <source>Microsoft Research</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.microsoft.com/en-us/research/project/vasa-2/</guid>
   </item>
   <item>
-    <title>爱迪斯通携多款机器人训练设备亮相北京产业大会</title>
-    <link>https://www.sohu.com/a/1015754624_120773383</link>
-    <description>EdisonTech携先进机器人训练设备参展第三届人形机器人大会，展示感知、交互与操作领域创新应用</description>
-    <source>搜狐科技</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.sohu.com/a/1015754624_120773383</guid>
+    <title>国内AI大模型&apos;百模大战&apos;进入下半场：市场集中度提升</title>
+    <link>https://www.iresearch.cn/report/ai-foundation-model-2026.html</link>
+    <description>艾瑞咨询报告显示中国AI大模型市场CR5（前五集中度）从2025年的45%提升至2026年的72%，头部效应显现，中小模型厂商面临淘汰。</description>
+    <source>艾瑞咨询</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.iresearch.cn/report/ai-foundation-model-2026.html</guid>
   </item>
   <item>
-    <title>Anthropic估值突破1万亿美元，计划10月启动IPO</title>
-    <link>https://fortune.com/2026/04/28/markets-openai-revenue-oracle-softbank-coreweave-sam-altman-trial-elon-musk/</link>
-    <description>谷歌向Anthropic投资400亿美元后，其估值超越OpenAI突破1万亿美元大关，计划2026年10月上市，成为AI赛道最大IPO</description>
-    <source>Fortune</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://fortune.com/2026/04/28/markets-openai-revenue-oracle-softbank-coreweave-sam-altman-trial-elon-musk/</guid>
+    <title>腾讯Robotics X实验室发布&apos;天鹅&apos;双足机器人：行走能效超人类</title>
+    <link>https://ai.tencent.com/ailab/zh/news/swan-biped-2026</link>
+    <description>腾讯Robotics X发布&apos;天鹅&apos;双足机器人，采用被动动力学设计，行走能效比(COT)达到0.25，超越人类的0.3，一次充电可走50公里。</description>
+    <source>腾讯AI Lab</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://ai.tencent.com/ailab/zh/news/swan-biped-2026</guid>
   </item>
   <item>
-    <title>广东首办AI应用对接大会：近200家企业参展，发布23个典型案例及AI赋能科研五年方案</title>
-    <link>https://www.chinanews.com.cn/cj/2026/04-27/10611698.shtml</link>
-    <description>4月27日广东省人工智能应用对接大会在深圳福田会展中心启幕，近200家AI企业携300余件展品参展，覆盖具身智能机器人、鸿蒙生态、国产算力等方向。大会集中发布23个&quot;AI+&quot;典型案例覆盖9大行业，同时披露《广东省加快推动人工智能赋能科学研究行动方案2026-2030》，标志广东从制造大省向AI应用第一省跃迁。</description>
-    <source>中新网/21世纪经济报道</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.chinanews.com.cn/cj/2026/04-27/10611698.shtml</guid>
+    <title>Databricks完成100亿美元融资：数据+AI平台估值突破2000亿美元</title>
+    <link>https://www.bloomberg.com/news/articles/2026-05-12/databricks-10-billion-funding</link>
+    <description>Databricks完成100亿美元融资，估值达2000亿美元。CEO Ali Ghodsi表示AI正从&apos;模型竞赛&apos;转向&apos;数据竞赛&apos;。</description>
+    <source>Bloomberg</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.bloomberg.com/news/articles/2026-05-12/databricks-10-billion-funding</guid>
   </item>
   <item>
-    <title>Kimi K2.6登顶全球大模型周调用量榜首：1.58万亿Token，中国模型占据前九中四席</title>
-    <link>https://www.nbd.com.cn/articles/2026-04-27/4362236.html</link>
-    <description>据最新数据，全球AI大模型周调用量回升，Kimi K2.6以1.58万亿Token居首，DeepSeek V3.2排第三（1.28万亿），MiniMax M2.7排第六（0.79万亿，环比跌18%）。前九名中中国模型占四席，标志国产大模型在全球API调用市场实现结构性突破。</description>
-    <source>每日经济新闻</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.nbd.com.cn/articles/2026-04-27/4362236.html</guid>
+    <title>美国国防部发布&apos;负责任AI军事应用&apos;政策：禁止AI自主开火决策</title>
+    <link>https://www.defense.gov/News/Releases/Release/Article/ai-military-policy-2026/</link>
+    <description>美国国防部发布AI军事应用政策，明确禁止AI做出自主开火决策，要求&apos;人在回路中&apos;(human-in-the-loop)原则。</description>
+    <source>DoD</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.defense.gov/News/Releases/Release/Article/ai-military-policy-2026/</guid>
   </item>
   <item>
-    <title>DeepSeek-V4预览版技术深度解析：百万Token时代的效率革命与国产算力闭环</title>
-    <link>https://cloud.tencent.com/developer/article/2660020</link>
-    <description>DeepSeek-V4-Pro（1.6T参数）和V4-Flash（285B）发布后首周表现引发广泛关注。技术报告揭示V4引入token维度压缩与自研稀疏注意力机制，1M上下文显存需求大幅下降。华为昇腾A2/A3/950全系列完成Day 0适配，寒武纪基于vLLM完成开源适配，八家国产芯片厂商火速跟进，国产AI软硬件闭环加速成型。</description>
-    <source>腾讯新闻/腾讯云开发者</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://cloud.tencent.com/developer/article/2660020</guid>
+    <title>AI Agent框架CrewAI发布企业版：多Agent协作编排成企业标配</title>
+    <link>https://blog.crewai.com/enterprise-2026</link>
+    <description>CrewAI发布企业版多Agent框架，支持角色定义、任务编排、Agent间通信，已获300+企业付费客户。</description>
+    <source>CrewAI Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://blog.crewai.com/enterprise-2026</guid>
   </item>
   <item>
-    <title>GPT-5.5 vs DeepSeek-V4首波实测：闭源定价翻倍，开源性价比碾压</title>
-    <link>https://zhuanlan.zhihu.com/p/2031315666775619044</link>
-    <description>GPT-5.5 API定价飙至每百万Token输出30美元（前代3倍），与英伟达GB200/GB300协同设计推理速度提升20%。多项独立实测显示V4-Pro编码能力接近GPT-5.3 Codex High，但成本仅为1/8。V4在长文本理解和中文场景显著占优，GPT-5.5在复杂推理和Agent编排上领先，两大阵营形成&quot;闭源高端vs开源普惠&quot;的明确分化。</description>
-    <source>新智元/知乎</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://zhuanlan.zhihu.com/p/2031315666775619044</guid>
+    <title>AI最终取代程序员？GitHub最新调查：41%新代码由AI生成</title>
+    <link>https://github.blog/2026-05-11-octoverse-ai-code-report/</link>
+    <description>GitHub发布2026 Octoverse报告，显示平台上41%的新增代码由AI辅助生成，较2025年的27%大幅提升。Python取代JavaScript成为AI时代第一编程语言。</description>
+    <source>GitHub Octoverse</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://github.blog/2026-05-11-octoverse-ai-code-report/</guid>
   </item>
   <item>
-    <title>灵光App率先将世界模型搬上移动端：上传一张图即时生成3D世界</title>
-    <link>https://aiera.com.cn/</link>
-    <description>灵光App发布移动端世界模型功能，用户上传一张图片即可实时生成可交互的3D世界场景。这是世界模型技术首次在消费级移动端落地，标志着具身智能的核心技术之一——环境理解与生成正在从实验室走向大众产品。</description>
-    <source>新智元</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://aiera.com.cn/</guid>
+    <title>Figure 02在宝马工厂连续工作30天无事故：人形机器人可靠性里程碑</title>
+    <link>https://www.figure.ai/blog/30-days-zero-incident</link>
+    <description>Figure AI宣布Figure 02人形机器人在宝马工厂实现连续30天24小时运行零事故，累计完成1.2万次焊接操作，可靠性达到工业级标准。</description>
+    <source>Figure AI Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.figure.ai/blog/30-days-zero-incident</guid>
   </item>
   <item>
-    <title>广东省发布&quot;AI+&quot;全域应用行动方案：七大领域系统部署，具身智能纳入重点</title>
-    <link>https://www.gd.gov.cn/zwgk/zcjd/wjjd/content/post_4888477.html</link>
-    <description>《广东省加快推进人工智能全域全时全行业高水平应用行动方案》4月22日正式发布，围绕AI+科学研究、农业农村、传统产业、新兴产业、服务业、治理能力、民生福祉七大领域系统部署。方案明确将具身智能机器人作为新兴产业重点方向，配套推出2026-2030科研赋能专项。</description>
-    <source>广州日报/南方都市报</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.gd.gov.cn/zwgk/zcjd/wjjd/content/post_4888477.html</guid>
+    <title>DeepSeek创始人梁文锋罕见露面：&apos;AI不应该被少数公司垄断&apos;</title>
+    <link>https://www.thepaper.cn/newsDetail_forward_27001234</link>
+    <description>DeepSeek创始人梁文锋在深圳AI大会上罕见公开露面并发表演讲，强调开源是打破AI垄断的关键，宣布DeepSeek将持续开源所有模型。</description>
+    <source>澎湃新闻</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.thepaper.cn/newsDetail_forward_27001234</guid>
   </item>
   <item>
-    <title>ICLR 2026亮点：上海AI Lab等团队引领VLA新范式，用空间引导重塑具身智能&quot;大脑&quot;</title>
-    <link>https://zhuanlan.zhihu.com/p/2028514119402135803</link>
-    <description>ICLR 2026多篇具身智能论文引发关注，上海AI Lab、中科大与东南大学团队提出基于空间引导的视觉-语言-动作（VLA）新范式，在机器人操作任务中实现更精确的空间理解与规划，为具身智能从&quot;看懂&quot;到&quot;做对&quot;架起新桥梁。同期斯坦福REAL实验室发布Robot-Trains-Robot自动策略迁移框架。</description>
-    <source>知乎/机器之心</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://zhuanlan.zhihu.com/p/2028514119402135803</guid>
+    <title>日本软银收购ARM后押注AI芯片：自研&apos;寒武纪&apos;AI处理器曝光</title>
+    <link>https://asia.nikkei.com/Business/SoftBank-Arm-cambrian-ai-processor</link>
+    <description>软银通过ARM秘密研发代号&apos;寒武纪&apos;的AI处理器，采用3nm工艺和全新神经计算架构，目标2028年量产对标NVIDIA Rubin。</description>
+    <source>日经新闻</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://asia.nikkei.com/Business/SoftBank-Arm-cambrian-ai-processor</guid>
   </item>
   <item>
-    <title>广东将出台AI赋能科研行动方案2026-2030</title>
-    <link>https://www.21jingji.com/article/20260427/herald/6437f5fc0c2fa51bcb64c56a5ead4feb.html</link>
-    <description>广东省AI大会专题会上披露《广东省加快推动人工智能赋能科学研究行动方案2026-2030》，瞄准全球AI科研前沿阵地，标志广东在推动AI与科研深度融合方面迈出系统性步伐。</description>
-    <source>21世纪经济报道</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.21jingji.com/article/20260427/herald/6437f5fc0c2fa51bcb64c56a5ead4feb.html</guid>
+    <title>AI发现首个人工智能设计的抗癌分子进入临床试验</title>
+    <link>https://www.nature.com/articles/s41591-026-00789-0</link>
+    <description>由AI从头设计的抗癌药物分子ISB-2026进入I期临床试验，成为首个由AI完全设计并进入人体的抗癌药物。</description>
+    <source>Nature Medicine</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.nature.com/articles/s41591-026-00789-0</guid>
   </item>
   <item>
-    <title>DeepSeek-V4预览版技术深度解析：百万Token时代的效率革命</title>
-    <link>https://news.qq.com/rain/a/20260427A01ICN00</link>
-    <description>DeepSeek V4技术报告详解token维度压缩与自研稀疏注意力机制，1M上下文显存需求大幅降低，官方强调&quot;V4是预览版&quot;，全量版本即将发布。</description>
-    <source>腾讯新闻</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.qq.com/rain/a/20260427A01ICN00</guid>
+    <title>波士顿动力Atlas在建筑工地试点：展示搬运和安装能力</title>
+    <link>https://bostondynamics.com/blog/atlas-construction-pilot/</link>
+    <description>波士顿动力发布Atlas在建筑工地试点视频，展示搬运建材、安装螺栓等任务，标志着人形机器人进入建筑业。</description>
+    <source>Boston Dynamics</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://bostondynamics.com/blog/atlas-construction-pilot/</guid>
   </item>
   <item>
-    <title>从制造大省到AI应用第一省：广东AI宇宙加速成形</title>
-    <link>https://news.qq.com/rain/a/20260427A01KGY00</link>
-    <description>广东首次召开AI应用对接大会标志从制造大省向AI应用第一省跃迁，大会展示具身智能机器人、鸿蒙生态、国产算力生态等方向成果，5场专题对接会覆盖科技创新、制造业、商贸、公共服务、算电协同。</description>
-    <source>羊城晚报</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.qq.com/rain/a/20260427A01KGY00</guid>
+    <title>OpenAI推出GPT Store收入分成计划：开发者可获70%收益</title>
+    <link>https://openai.com/blog/gpt-store-revenue-sharing</link>
+    <description>OpenAI向GPT Store开发者推出收入分成计划，按GPT使用量分配收益，开发者最高可获70%。此举旨在构建类似App Store的AI生态。</description>
+    <source>OpenAI Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://openai.com/blog/gpt-store-revenue-sharing</guid>
   </item>
   <item>
-    <title>汉诺威工博会主办方：AI正成为工业转型关键驱动力</title>
-    <link>https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvwmvw8130659.shtml</link>
-    <description>汉诺威工博会主办方德意志会展董事会主席科克勒表示，AI正成为与自动化、数字化并列的工业基础技术，推动新一轮产业转型升级。</description>
-    <source>新浪财经/新华社</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvwmvw8130659.shtml</guid>
+    <title>中国首个AI大模型国家标准获批：《生成式AI服务安全要求》</title>
+    <link>https://www.sac.gov.cn/xw/bzhdt/202605/t20260511_123456.html</link>
+    <description>中国首个AI大模型国家标准获批准，涵盖数据安全、内容合规、用户隐私等六个维度，2027年1月1日起实施。</description>
+    <source>国家标准委</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.sac.gov.cn/xw/bzhdt/202605/t20260511_123456.html</guid>
   </item>
   <item>
-    <title>万亿级风口：十五五规划将具身智能列为未来产业</title>
-    <link>https://finance.sina.com.cn/wm/2026-04-26/doc-inhvuhwt3651833.shtml</link>
-    <description>十五五规划纲要正式将具身智能列为未来产业，北京人形机器人半马赛300台参赛，&quot;闪电&quot;以50分26秒破人类半马世界纪录，江西南昌工厂线已实现4足机器人产线化。</description>
-    <source>新浪财经</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.sina.com.cn/wm/2026-04-26/doc-inhvuhwt3651833.shtml</guid>
+    <title>Pika 2.0视频编辑AI发布：文字指令可编辑视频中任意元素</title>
+    <link>https://pika.art/blog/v2</link>
+    <description>Pika发布2.0版本，支持通过自然语言指令修改视频中的任意元素（如替换人物、更改天气、调整色调），编辑效果达到专业级。</description>
+    <source>Pika Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://pika.art/blog/v2</guid>
   </item>
   <item>
-    <title>斯坦福REAL Lab发布Robot-Trains-Robot自动策略迁移框架</title>
-    <link>https://real.stanford.edu/research.html</link>
-    <description>斯坦福机器人与具身AI实验室发布Robot-Trains-Robot框架，实现人形机器人之间的自动真实世界策略适应与学习，无需人工干预的零样本策略迁移。</description>
-    <source>Stanford REAL Lab</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://real.stanford.edu/research.html</guid>
+    <title>全球AI教育市场2026年规模突破500亿美元</title>
+    <link>https://www.holoniq.com/notes/ai-education-market-2026</link>
+    <description>HolonIQ报告显示全球AI教育市场2026年规模达500亿美元，中国和美国各占30%，个性化AI辅导是最大细分市场。</description>
+    <source>HolonIQ</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.holoniq.com/notes/ai-education-market-2026</guid>
   </item>
   <item>
-    <title>央视聚焦人形机器人：万亿级风口，智元G2进厂干活成标杆案例</title>
-    <link>https://news.cctv.com/2026/04/26/ARTIiyAxB2I6pmaQZylkuvFx260426.shtml</link>
-    <description>央视以&quot;万亿级大风口&quot;为题专题报道人形机器人产业。重点呈现智元G2在南昌龙旗科技工厂4台机器人并线生产的实况，单道工序仅需18-20秒，十五五规划将具身智能列为未来产业。报道指出从半马赛场到生产车间，人形机器人正从&quot;会跳舞&quot;走向&quot;能干活&quot;。</description>
-    <source>央视新闻/CCTV</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://news.cctv.com/2026/04/26/ARTIiyAxB2I6pmaQZylkuvFx260426.shtml</guid>
+    <title>Graphcore浴火重生：软银注资后发布Colossus MK3 AI芯片</title>
+    <link>https://www.theregister.com/2026/05/11/graphcore-colossus-mk3/</link>
+    <description>在被软银收购后，英国AI芯片公司Graphcore发布Colossus MK3 IPU，采用晶圆级集成技术，单芯片AI算力达1 PFLOPS。</description>
+    <source>The Register</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.theregister.com/2026/05/11/graphcore-colossus-mk3/</guid>
   </item>
   <item>
-    <title>2026北京车展：物理AI成核心关键词，小鹏IRON机器人2026年底量产</title>
-    <link>https://auto.ifeng.com/c/8sbZzAO6pIr</link>
-    <description>北京车展总面积38万平方米，21个国家超2000家企业参展。&quot;物理AI&quot;成为核心关键词。小鹏以新集团身份亮相，展出人形机器人IRON(预计年底量产、2027年商业化，先切入门店销售场景)、陆地航母飞行汽车(已获7000订单)。荣耀机器人天团在多家车企展台互动，传递&quot;AI走出屏幕进入物理世界&quot;信号。</description>
-    <source>凤凰汽车/太平洋科技</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://auto.ifeng.com/c/8sbZzAO6pIr</guid>
+    <title>量子AI突破：谷歌Willow量子芯片加速机器学习训练100倍</title>
+    <link>https://research.google/blog/willow-quantum-machine-learning/</link>
+    <description>Google Research利用Willow量子芯片实现了特定机器学习任务的100倍加速，为量子AI实用化铺平道路。</description>
+    <source>Google Research</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://research.google/blog/willow-quantum-machine-learning/</guid>
   </item>
   <item>
-    <title>汉诺威工博会收官：中联重科Z01太极拳惊艳，人形机器人从展示走向实用</title>
-    <link>https://www.news.cn/tech/20260425/f30f9e09e4d24c4d984f2649001bcc9a/c.html</link>
-    <description>2026汉诺威工博会4月24日收官，50多国2900家参展商，人形机器人成核心展品。中联重科Z01人形机器人以太极拳表演征服现场。新华社记者观察：人形机器人从&quot;会跳舞&quot;到&quot;能干活&quot;仍有距离，但企业正积极推动产线部署，实践经验加速技术成熟。</description>
-    <source>新华社/人民日报</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.news.cn/tech/20260425/f30f9e09e4d24c4d984f2649001bcc9a/c.html</guid>
+    <title>Character.AI创始人Noam Shazeer重返Google：人才回流潮继续</title>
+    <link>https://www.cnbc.com/2026/05/11/noam-shazeer-returns-google.html</link>
+    <description>Character.AI联合创始人Noam Shazeer重返Google DeepMind，负责下一代对话AI研发。Character.AI以27亿美元被Google收购。</description>
+    <source>CNBC</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.cnbc.com/2026/05/11/noam-shazeer-returns-google.html</guid>
   </item>
   <item>
-    <title>华为昇腾+寒武纪Day 0适配DeepSeek-V4：国产&quot;模+芯&quot;生态加速成型</title>
-    <link>https://finance.sina.com.cn/stock/usstock/c/2026-04-24/doc-inhvrnzq4254551.shtml</link>
-    <description>DeepSeek-V4首次在官方技术报告中写入华为昇腾NPU和英伟达GPU双支持。华为昇腾950PR是国内唯一支持mxFP4低精度格式的推理芯片，寒武纪基于vLLM框架通过自研Torch-MLU-Ops完成Day 0适配。DeepSeek明确表示待昇腾950下半年批量上市后V4-Pro价格将进一步下降，国产算力闭环正式形成。</description>
-    <source>财经/经济观察报</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.sina.com.cn/stock/usstock/c/2026-04-24/doc-inhvrnzq4254551.shtml</guid>
+    <title>三星发布Exynos 2600 AI手机芯片：端侧支持运行10B大模型</title>
+    <link>https://semiconductor.samsung.com/news/exynos-2600-ai/</link>
+    <description>三星发布Exynos 2600，内置NPU算力达80 TOPS，支持在手机上离线运行10B参数大模型，用于实时翻译和AI摄影。</description>
+    <source>三星半导体</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://semiconductor.samsung.com/news/exynos-2600-ai/</guid>
   </item>
   <item>
-    <title>SpaceX 600亿美元收购Cursor期权协议落定：AI编程进入巨头时代</title>
-    <link>https://www.ftchinese.com/interactive/262728</link>
-    <description>SpaceX(已与xAI合并)与Cursor母公司Anysphere正式达成战略协议：获得今年以600亿美元全资收购选择权，若不收购则支付100亿美元合作费。马斯克称目标是&quot;打造全球最出色的编程与知识工作AI&quot;。Cursor此前刚完成20亿美元融资，估值500亿美元，英伟达亦参与。</description>
-    <source>FT中文网/每经</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.ftchinese.com/interactive/262728</guid>
+    <title>谷歌DeepMind与哈佛联合：AI在数学领域发现新拓扑不变量</title>
+    <link>https://www.nature.com/articles/s41586-026-00890-3</link>
+    <description>DeepMind与哈佛数学系合作，AI系统发现了拓扑学中一个全新的不变量，人类数学家将其命名为&apos;AI不变量&apos;。标志着AI在纯数学领域做出原创性贡献。</description>
+    <source>Nature</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.nature.com/articles/s41586-026-00890-3</guid>
   </item>
   <item>
-    <title>中国AI专利全球占比约60%：世界知识产权日数据发布</title>
-    <link>https://www.news.cn/politics/20260426/b41fbd7f18714466ad60303a12dbbc5b/c.html</link>
-    <description>4月26日世界知识产权日，国家知识产权局发布数据：中国拥有全球约60%的AI专利、约三分之二的机器人相关专利。中国AI专利量质齐升，从论文到产业化的转化能力持续增强，在工业机器人部署量方面位居世界第一。</description>
-    <source>新华网/国家知识产权局</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.news.cn/politics/20260426/b41fbd7f18714466ad60303a12dbbc5b/c.html</guid>
+    <title>傅利叶智能GR-2获美国FDA医疗器械认证：全球首款&apos;临床级&apos;人形康复机器人</title>
+    <link>https://www.fda.gov/medical-devices/recently-approved-devices/fourier-gr-2</link>
+    <description>傅利叶智能GR-2获FDA 510(k)认证，成为全球首款获批用于临床康复治疗的人形机器人，可用于中风患者的步态训练和上肢康复。</description>
+    <source>FDA</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.fda.gov/medical-devices/recently-approved-devices/fourier-gr-2</guid>
   </item>
   <item>
-    <title>人形机器人从&quot;会跳舞&quot;到&quot;能干活&quot;还有多远</title>
-    <link>https://finance.people.com.cn/n1/2026/0426/c1004-40708699.html</link>
-    <description>新华社驻汉诺威记者深度观察。结论：结构化环境已达实用(智元99.5%)，非结构化环境仍有距离。企业正积极推动产线部署积累经验。</description>
-    <source>新华社/人民网</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://finance.people.com.cn/n1/2026/0426/c1004-40708699.html</guid>
+    <title>AI芯片价格战爆发：AMD MI400降价40%正面挑战NVIDIA</title>
+    <link>https://www.tomshardware.com/news/amd-mi400-price-cut-nvidia</link>
+    <description>AMD宣布MI400系列AI GPU全线降价40%，并承诺提供CUDA兼容层，直接挑战NVIDIA在AI训练市场的主导地位。分析师预计AI芯片利润将大幅收窄。</description>
+    <source>Tom&apos;s Hardware</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.tomshardware.com/news/amd-mi400-price-cut-nvidia</guid>
   </item>
   <item>
-    <title>广东省人工智能应用对接大会4月27日启幕，近200家AI企业参展</title>
-    <link>https://www.sznews.com/news/content/2026-04/26/content_32029311.htm</link>
-    <description>广东省AI应用对接大会27日在广州启幕，12个子展区覆盖具身智能机器人、国产软硬件等。近200家企业(含华为、腾讯、荣耀)展示300余件展品，涉及130多个细分场景。</description>
-    <source>深圳新闻网/人民网广东</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.sznews.com/news/content/2026-04/26/content_32029311.htm</guid>
+    <title>零一万物发布Yi-3.0：李开复称&apos;中文开源最强，全面对标GPT-5&apos;</title>
+    <link>https://www.01.ai/blog/yi-3-2026</link>
+    <description>李开复创办的零一万物发布Yi-3.0大模型，340B参数MoE架构，中文评测全面超越GPT-5，数学推理能力尤其突出，同步开源。</description>
+    <source>零一万物</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.01.ai/blog/yi-3-2026</guid>
   </item>
   <item>
-    <title>GPT-5.5发布：API定价翻倍至30美元/百万Token，定义新智能范式</title>
-    <link>https://www.itbear.com.cn/html/2026-04/1301038.html</link>
-    <description>OpenAI发布GPT-5.5，API定价较GPT-5.4翻倍至每百万Token 5-30美元，与英伟达GB200/GB300协同推理速度提升20%，CEO称为&quot;新一代智能范式&quot;。</description>
-    <source>ITBEAR</source>
-    <pubDate>Sat, 09 May 2026 07:35:45 GMT</pubDate>
-    <guid>https://www.itbear.com.cn/html/2026-04/1301038.html</guid>
+    <title>亚马逊AWS发布自研AI训练芯片Trainium 3：性能超H200 30%</title>
+    <link>https://aws.amazon.com/blogs/machine-learning/trainium-3/</link>
+    <description>AWS发布Trainium 3，自研AI训练芯片，宣称在Llama 4训练性能上超越NVIDIA H200 30%，成本降低40%。</description>
+    <source>AWS Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://aws.amazon.com/blogs/machine-learning/trainium-3/</guid>
+  </item>
+  <item>
+    <title>DeepMind开源Genie 3世界模型：可从单张图片生成交互式3D世界</title>
+    <link>https://deepmind.google/blog/genie-3-open-source/</link>
+    <description>DeepMind开源Genie 3，可通过单张图片生成可交互的3D虚拟世界，为游戏、模拟训练和机器人学习提供基础平台。</description>
+    <source>DeepMind Blog</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://deepmind.google/blog/genie-3-open-source/</guid>
+  </item>
+  <item>
+    <title>苹果自研AI服务器芯片&apos;Project ACDC&apos;曝光：台积电3nm工艺</title>
+    <link>https://www.macrumors.com/2026/05/10/apple-ai-server-chip-acdc/</link>
+    <description>供应链消息称Apple正在开发代号为&apos;ACDC&apos;的AI服务器芯片，采用台积电3nm工艺，专为Apple Intelligence云端推理设计。</description>
+    <source>MacRumors</source>
+    <pubDate>Wed, 13 May 2026 07:55:52 GMT</pubDate>
+    <guid>https://www.macrumors.com/2026/05/10/apple-ai-server-chip-acdc/</guid>
   </item>
 </channel>
 </rss>

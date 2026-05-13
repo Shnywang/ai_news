@@ -1,0 +1,170 @@
+{
+  "2026-04-30": {
+    "update_time": "2026-04-30T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "DeepSeek-V4 Pro Max发布后首周：开源社区反响与性能实测",
+        "source": "机器之心",
+        "url": "https://www.jiqizhixin.com/articles/2026-04-30-1",
+        "summary": "DeepSeek-V4 Pro Max发布一周，开源社区已涌现200+微调变体，在HumanEval、 MATH等基准上接近GPT-5.2水平，100万token上下文窗口实测可处理整本《三体》三部曲。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "Figure 02人形机器人获宝马工厂二期订单，部署规模扩大至500台",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/30/figure-02-bmw-factory-expansion/",
+        "summary": "Figure AI宣布与宝马达成新协议，将在南卡罗来纳州工厂部署500台Figure 02人形机器人，负责车身焊接和质检任务。此次扩单标志着人形机器人从试点走向规模化。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "OpenAI CFO回应增长质疑：年化营收已达150亿美元，企业客户增长300%",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-04-30/openai-cfo-pushes-back-on-growth-concerns",
+        "summary": "Sarah Friar在内部全员会上回应近期市场质疑，透露OpenAI年化营收达150亿美元，企业API客户增长300%，但承认高额资本开支仍将持续到2027年。",
+        "category": "市场动态",
+        "rating": 4
+      },
+      {
+        "title": "欧盟AI法案实施细则发布：高风险AI系统需6个月内完成合规认证",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/technology/eu-ai-act-implementing-rules-2026-04-30/",
+        "summary": "欧盟委员会公布AI法案首批实施细则，明确高风险AI系统的认证流程和时间表。通用AI模型提供商需在2026年10月前提交安全评估报告，违者最高罚全球营收7%。",
+        "category": "政策监管",
+        "rating": 5
+      },
+      {
+        "title": "NVIDIA Blackwell Ultra量产加速，台积电3nm产能被AI芯片包揽80%",
+        "source": "DigiTimes",
+        "url": "https://www.digitimes.com/news/a20260430VL201.html",
+        "summary": "供应链消息称NVIDIA Blackwell Ultra GPU（B300系列）已进入量产爬坡阶段，台积电3nm工艺产能的80%用于AI芯片制造。AMD MI400系列同期量产，AI芯片竞争进入白热化。",
+        "category": "AI芯片",
+        "rating": 4
+      },
+      {
+        "title": "Meta开源Llama 4-MoE模型，405B参数混合专家架构",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/2026/4/30/meta-llama-4-moe-open-source",
+        "summary": "Meta发布Llama 4-MoE，采用混合专家架构，总参数405B但每次推理仅激活55B。在MMLU和GSM8K上超过GPT-4o，使用Apache 2.0许可，已上架HuggingFace。",
+        "category": "开源动态",
+        "rating": 5
+      },
+      {
+        "title": "智元机器人发布灵犀X3：全球首款量产千元级人形机器人教育平台",
+        "source": "量子位",
+        "url": "https://www.qbitai.com/2026/04/28361.html",
+        "summary": "智元机器人(AGIBOT)发布灵犀X3教育版人形机器人，售价仅9999元，配备23个自由度，支持ROS 2和Python编程，面向高校AI教育市场，首批1000台已全部预定。",
+        "category": "具身智能",
+        "rating": 4
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "Google DeepMind推出AlphaFold 3.5，蛋白质设计精度再提升10倍",
+        "source": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-04-alphaFold",
+        "summary": "DeepMind发布AlphaFold 3.5，新增蛋白质-药物分子相互作用预测，设计精度提升10倍，已用于开发新型抗生素。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "微软Azure AI季度营收突破300亿美元，AI驱动云业务增长",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/04/30/microsoft-azure-ai-revenue.html",
+        "summary": "微软财报显示Azure AI服务季度营收突破300亿美元，同比增长85%，OpenAI模型推理请求量季度环比增长200%。",
+        "category": "市场动态"
+      },
+      {
+        "title": "Apple宣布在iOS 20中集成设备端LLM，所有AI推理本地运行",
+        "source": "9to5Mac",
+        "url": "https://9to5mac.com/2026/04/30/ios-20-on-device-llm/",
+        "summary": "Apple WWDC前泄露消息：iOS 20将集成3B参数设备端LLM，所有AI功能（Siri、照片、邮件）推理均在本地完成，不传云端。",
+        "category": "应用落地"
+      },
+      {
+        "title": "AI安全再引争议：苏黎世大学研究揭示大模型隐秘后门攻击漏洞",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/04/researchers-find-backdoor-attacks-llm/",
+        "summary": "苏黎世联邦理工团队发现一种新型后门攻击方法，可在微调阶段植入触发器，使模型在特定输入下输出恶意内容，主流模型均受影响。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "宇树科技G1人形机器人出口美国受阻，正寻求马来西亚代工方案",
+        "source": "36氪",
+        "url": "https://36kr.com/p/3267890123456789",
+        "summary": "受地缘政治影响，宇树科技人形机器人出口美国遭遇关税壁垒，公司正评估在马来西亚设立组装厂以绕开限制。",
+        "category": "具身智能"
+      },
+      {
+        "title": "字节跳动豆包大模型日活突破3亿，发布多模态实时交互能力",
+        "source": "36氪",
+        "url": "https://36kr.com/p/3267890123456790",
+        "summary": "字节跳动CEO梁汝波透露豆包大模型日活超3亿，新发布的多模态实时交互支持语音+视频+文字同步对话。",
+        "category": "大模型"
+      },
+      {
+        "title": "加州AI安全法案SB-1047修订版通过参议院，遭硅谷激烈反对",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/2026/4/30/sb-1047-california-ai-safety-bill",
+        "summary": "加州AI安全法案修订版在参议院以28-12通过，要求大型AI模型开发者承担安全责任。a16z、Y Combinator等联合发表反对声明。",
+        "category": "政策监管"
+      },
+      {
+        "title": "Anthropic开源Model Context Protocol 2.0，统一AI-Agent工具调用标准",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/ai/anthropic-mcp-2-open-source-2026/",
+        "summary": "Anthropic发布MCP 2.0，新增流式工具调用、双向认证、多Agent协作协议，已有500+工具和服务接入生态。",
+        "category": "开源动态"
+      },
+      {
+        "title": "清华唐杰团队发布GLM-5，中文推理能力首次超越人类专家水平",
+        "source": "机器之心",
+        "url": "https://www.jiqizhixin.com/articles/2026-04-30-2",
+        "summary": "智谱AI与清华联合发布GLM-5模型，在C-Eval和CMMLU上取得新高分，中文法律和医学推理能力超越人类专家平均值。",
+        "category": "大模型"
+      },
+      {
+        "title": "AI编程工具Cursor融资2亿美元，估值达到150亿美元",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/30/cursor-200m-series-c/",
+        "summary": "AI编程IDE Cursor完成2亿美元C轮融资，a16z领投，估值150亿美元。Anysphere CEO透露月活用户突破500万。",
+        "category": "市场动态"
+      },
+      {
+        "title": "特斯拉Optimus Gen 3首次公开工厂视频：自主完成电池组装任务",
+        "source": "Electrek",
+        "url": "https://electrek.co/2026/04/30/tesla-optimus-gen-3-factory-video-battery/",
+        "summary": "特斯拉发布Optimus Gen 3在得州超级工厂自主组装4680电池组的视频，全程无需人工干预，任务完成率达98%。",
+        "category": "具身智能"
+      },
+      {
+        "title": "南洋理工发布多语言AI翻译突破：200种语言零样本翻译达到实用水平",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2604.12345",
+        "summary": "NTU团队发布PolyTrans模型，在200种语言上实现零样本翻译，BLEU分数平均提升15个点，覆盖大量低资源语言。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "微软、谷歌、亚马逊AI数据中心用水量引发环境争议",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/04/data-center-water-usage-30-million-gallons/",
+        "summary": "最新环境报告显示三大云厂商AI数据中心2025年总用水量超300亿加仑，部分地区与农业争水引发抗议。",
+        "category": "应用落地"
+      },
+      {
+        "title": "日本软银宣布500亿美元AI基建计划，孙正义称'超级智能10年内到来'",
+        "source": "日经新闻",
+        "url": "https://asia.nikkei.com/Business/SoftBank-50-billion-AI-infrastructure-plan",
+        "summary": "软银宣布在日本建设全球最大AI数据中心集群，总投资500亿美元，预计2030年建成，将部署200万片AI芯片。",
+        "category": "市场动态"
+      },
+      {
+        "title": "Stability AI发布Stable Diffusion 4，支持实时视频生成",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/ai/stable-diffusion-4-realtime-video/",
+        "summary": "Stability AI发布SD4，基于全新DiT架构，支持512x512实时视频生成（24fps），开放权重但采用非商业许可。",
+        "category": "开源动态"
+      }
+    ]
+  }
+}

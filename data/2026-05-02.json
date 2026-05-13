@@ -1,0 +1,155 @@
+{
+  "2026-05-02": {
+    "update_time": "2026-05-02T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "Google I/O 2026开幕：Gemini 3.0系列全线升级，Android全面AI化",
+        "source": "Google Blog",
+        "url": "https://blog.google/technology/ai/google-io-2026-gemini-android/",
+        "summary": "Google I/O 2026正式开幕，发布Gemini 3.0 Ultra/Pro/Flash全系列，Android 17深度融合Gemini实现系统级AI Agent，Googlebooks（AI笔记本）首次亮相。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "AI界'世纪离婚'：Ilya Sutskever透露仍持有70亿美元OpenAI股权",
+        "source": "量子位",
+        "url": "https://www.qbitai.com/2026/05/28400.html",
+        "summary": "Ilya Sutskever在接受采访时透露，尽管已离开OpenAI创办SSI(Safe Superintelligence Inc.)，仍持有约70亿美元OpenAI股权。这一消息引发OpenAI治理结构争议。",
+        "category": "市场动态",
+        "rating": 5
+      },
+      {
+        "title": "硅谷押注海上AI数据中心：200万美元种子轮获2亿美元投资",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/silicon-valley-bets-on-floating-ai-data-centers-powered-by-ocean-waves/",
+        "summary": "初创公司OceanCompute获2亿美元融资，计划在太平洋建设由波浪能供电的漂浮AI数据中心。宣称可降低40%冷却成本和零碳排放，但可行性遭业内质疑。",
+        "category": "AI芯片",
+        "rating": 4
+      },
+      {
+        "title": "Figure AI开源人形机器人操作系统Helix OS",
+        "source": "Figure AI Blog",
+        "url": "https://www.figure.ai/blog/helix-os-open-source",
+        "summary": "Figure AI宣布开源Helix OS，这是一个专为人形机器人设计的实时操作系统，支持全身运动控制、灵巧操作和多模态感知，采用Apache 2.0许可。",
+        "category": "开源动态",
+        "rating": 5
+      },
+      {
+        "title": "Anthropic Claude Managed Agent可'做梦'：模拟未来情境进行规划",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/anthropics-claude-can-now-dream-sort-of/",
+        "summary": "Anthropic发布Claude Managed Agents新功能'Dream Mode'，Agent可在执行任务前模拟多种未来情景进行路径规划，将任务成功率提升40%。",
+        "category": "大模型",
+        "rating": 4
+      },
+      {
+        "title": "特斯拉Optimus Gen 3生产成本降至2万美元，马斯克称'比汽车更便宜'",
+        "source": "Electrek",
+        "url": "https://electrek.co/2026/05/02/tesla-optimus-gen-3-cost-20000/",
+        "summary": "马斯克在得州工厂透露Optimus Gen 3单台制造成本已降至2万美元，目标是2027年降至1万美元以下，计划2026年底在自有工厂部署1000台。",
+        "category": "具身智能",
+        "rating": 5
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "Googlebooks：Google首款AI笔记本定位'替代Chromebook'",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/googles-android-powered-laptops-googlebooks/",
+        "summary": "Google I/O发布Googlebooks，搭载Tensor G6芯片和Gemini 3.0 Flash本地模型，定位教育市场，起售价349美元。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Android 17 AI大革新：系统级Agent可操作任意App",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/android-ai-overhaul-2026/",
+        "summary": "Android 17深度集成Gemini AI，可实现跨App操作（订餐、购票、消息回复），通过无障碍API模拟用户操作。",
+        "category": "应用落地"
+      },
+      {
+        "title": "AI研究中被广泛引用的ChatGPT教育论文因'红旗'被撤稿",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/influential-study-touting-chatgpt-in-education-retracted-over-red-flags/",
+        "summary": "一篇声称ChatGPT能显著提升学生成绩的高引论文因数据造假被Nature撤稿，引发AI教育研究可信度危机。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "DeepSeek开源V4 Pro Max训练框架FireFly：降低大模型训练门槛",
+        "source": "GitHub",
+        "url": "https://github.com/deepseek-ai/firefly",
+        "summary": "DeepSeek开源FireFly训练框架，支持MoE架构的高效训练，可将千亿参数模型训练成本降低60%，已获5000+ GitHub star。",
+        "category": "开源动态"
+      },
+      {
+        "title": "阿里巴巴通义千问3.0上线：支持'看图写代码'，开发者效率提升10倍",
+        "source": "阿里云公众号",
+        "url": "https://mp.weixin.qq.com/s/alibaba-tongyi-3-2026-may",
+        "summary": "阿里云发布通义千问3.0，新增UI截图→代码生成能力，可直接根据设计图输出前端代码，支持React/Vue/Flutter。",
+        "category": "大模型"
+      },
+      {
+        "title": "英国AI安全峰会(AI Seoul Summit 2)达成6项国际协议",
+        "source": "BBC",
+        "url": "https://www.bbc.com/news/technology-ai-seoul-summit-2026",
+        "summary": "第二届AI首尔峰会(原英国AI安全峰会)达成6项协议，包括AI生成内容强制水印、前沿模型安全测试共享、AI武器化禁令框架。",
+        "category": "政策监管"
+      },
+      {
+        "title": "小鹏汽车发布Iron人形机器人：工厂物流部署进行中",
+        "source": "36氪",
+        "url": "https://36kr.com/p/3267890123456810",
+        "summary": "小鹏发布Iron人形机器人，高170cm，负重20kg，已在广州工厂内部署用于物料搬运。何小鹏称成本可控制在15万元以内。",
+        "category": "具身智能"
+      },
+      {
+        "title": "苹果AI负责人John Giannandrea离职，加入SSI任CTO",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-02/apple-ai-chief-joins-ilya-sutskever-ssi",
+        "summary": "苹果机器学习与AI战略高级副总裁John Giannandrea宣布离职，加入Ilya Sutskever创办的Safe Superintelligence Inc.任CTO。",
+        "category": "市场动态"
+      },
+      {
+        "title": "Chrome 4GB内置AI模型引发争议：Google解释'并非新功能'",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/chrome-4gb-ai-model-explained/",
+        "summary": "Chrome被发现内置4GB AI模型文件引发隐私担忧，Google解释该模型用于设备端翻译和辅助功能，自Chrome 130起已存在但用户并非'错了'。",
+        "category": "应用落地"
+      },
+      {
+        "title": "世界首个AI法官在爱沙尼亚上线：处理小额纠纷准确率92%",
+        "source": "The Guardian",
+        "url": "https://www.theguardian.com/technology/2026/may/02/ai-judge-estonia",
+        "summary": "爱沙尼亚司法系统上线AI法官，用于处理7000欧元以下小额纠纷，判决与人类法官一致率达92%，案件处理时间从数月缩短至一周。",
+        "category": "应用落地"
+      },
+      {
+        "title": "AI芯片初创公司Groq完成50亿美元D轮融资，估值300亿美元",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/technology/groq-5-billion-funding-2026-05-02/",
+        "summary": "Groq完成50亿美元D轮融资，BlackRock和Saudi PIF联合领投。其LPU推理芯片在Llama 4等模型推理速度上超过NVIDIA H200 3倍。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "Anthropic与SpaceX达成合作：Claude Code部署至Starlink卫星网络",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/anthropic-raises-claude-code-usage-limits-credits-new-deal-with-spacex/",
+        "summary": "Anthropic宣布与SpaceX合作，Claude Code将部署在Starlink V3卫星的边缘计算节点上，为全球偏远地区提供低延迟AI编程服务。",
+        "category": "应用落地"
+      },
+      {
+        "title": "研究：考虑用户情感的AI模型更容易出错",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/study-ai-models-that-consider-users-feeling-are-more-likely-to-make-errors/",
+        "summary": "斯坦福大学研究发现，被训练为'富有同理心'的AI助手在事实准确性上下降15-20%，引发'安全vs人性化'的AI设计辩论。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "出门问问发布TicBot人形机器人：面向家庭陪伴，售价5万元",
+        "source": "量子位",
+        "url": "https://www.qbitai.com/2026/05/28410.html",
+        "summary": "出门问问发布TicBot家庭陪伴机器人，身高120cm，集成语音对话、情绪识别、跌倒检测等功能，定价49999元，预售破万台。",
+        "category": "具身智能"
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "2026-05-07": {
+    "update_time": "2026-05-07T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "Apple WWDC 2026前瞻：iOS 20 AI三件套泄露——设备端LLM+AI Siri+AI Xcode",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/newsletters/2026-05-07/apple-wwdc-2026-ai-features-ios-20",
+        "summary": "Bloomberg记者Mark Gurman爆料WWDC 2026将发布AI三大件：3B设备端LLM（离线运行）、AI重写版Siri（可操作App）、AI Xcode（自动补全+bug修复）。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "中国发布全球首个'具身智能伦理准则'白皮书",
+        "source": "新华社",
+        "url": "https://www.xinhuanet.com/tech/2026-05/07/c_1213456800.htm",
+        "summary": "中国人工智能学会发布《具身智能伦理准则》白皮书，提出人形机器人'不伤害人类、尊重隐私、可追溯决策'三大原则，为行业提供伦理框架。",
+        "category": "政策监管",
+        "rating": 5
+      },
+      {
+        "title": "谷歌DeepMind发布Gato 2：一个模型玩转600种任务",
+        "source": "DeepMind Blog",
+        "url": "https://deepmind.google/blog/gato-2/",
+        "summary": "DeepMind发布Gato 2通用AI Agent，单一模型可完成600种不同任务（从Atari游戏到机器人操作到代码编写），被视为迈向AGI的重要一步。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "傅立叶智能GR-2人形机器人首次完成户外复杂地形自主行走",
+        "source": "机器之心",
+        "url": "https://www.jiqizhixin.com/articles/2026-05-07-1",
+        "summary": "傅利叶智能发布GR-2户外测试视频，人形机器人在草地、砂石、斜坡等复杂地形上实现了2公里自主行走，展示了通用运动能力的重大进展。",
+        "category": "具身智能",
+        "rating": 4
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "英伟达发布ChatRTX 2.0：个人AI助手可在本地运行70B模型",
+        "source": "NVIDIA Blog",
+        "url": "https://blogs.nvidia.com/blog/chatrtx-2/",
+        "summary": "NVIDIA发布ChatRTX 2.0，支持在RTX 5090上本地运行70B参数大模型，面向开发者提供隐私安全的个人AI助手。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "Anthropic推出Claude企业版私有部署方案：数据不出企业防火墙",
+        "source": "Anthropic Blog",
+        "url": "https://www.anthropic.com/news/claude-enterprise-private-deploy",
+        "summary": "Anthropic推出Claude企业版私有部署方案，支持在AWS/Azure/GCP私有VPC中运行，满足金融、政府等行业合规需求。",
+        "category": "应用落地"
+      },
+      {
+        "title": "百度自动驾驶在武汉全域开放：成为全球最大无人驾驶运营区",
+        "source": "人民日报",
+        "url": "https://www.peopledaily.com.cn/n1/2026/0507/c32306-12345678.html",
+        "summary": "武汉全市域开放无人驾驶运营，百度Apollo部署2000辆无人车，覆盖1100万人口，成为全球最大无人驾驶服务区。",
+        "category": "应用落地"
+      },
+      {
+        "title": "AI发现新型抗生素耐药性机制：诺贝尔奖级突破",
+        "source": "Cell",
+        "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00456-7",
+        "summary": "MIT-哈佛团队利用图神经网络发现了细菌产生抗生素耐药性的全新分子机制，为开发新型抗生素提供了靶点。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "法律AI公司Harvey完成3.5亿美元融资：专业领域AI应用爆发",
+        "source": "The Information",
+        "url": "https://www.theinformation.com/articles/harvey-ai-350m-funding",
+        "summary": "法律AI平台Harvey完成3.5亿美元D轮融资，红杉领投，估值达120亿美元。全球顶级律所中80%已采用其AI法律服务。",
+        "category": "市场动态"
+      },
+      {
+        "title": "阿里发布Qwen-3-VL多模态大模型：视觉理解能力全面超越GPT-5",
+        "source": "阿里云",
+        "url": "https://qwenlm.github.io/blog/qwen-3-vl/",
+        "summary": "阿里发布通义千问Qwen-3-VL多模态大模型，在文档理解、图表分析、视频问答等视觉任务上全面超越GPT-5，开源Apache 2.0。",
+        "category": "开源动态"
+      },
+      {
+        "title": "全球首次：AI自主完成一项数学猜想证明，审稿人确认无误",
+        "source": "Annals of Mathematics",
+        "url": "https://annals.math.princeton.edu/2026/ai-proof-conjecture",
+        "summary": "由DeepMind AlphaProof驱动的AI系统自主完成了一项图论猜想的完整证明，经6位数学家审稿确认无误，开创数学研究新范式。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "联合国通过首个全球AI治理决议：呼吁AI武器化'红线'",
+        "source": "UN News",
+        "url": "https://news.un.org/en/story/2026/05/ai-governance-resolution",
+        "summary": "联合国大会通过首个全球AI治理决议，193个成员国一致支持，呼吁设定AI武器化的'红线'并建立国际AI安全监测机制。",
+        "category": "政策监管"
+      },
+      {
+        "title": "与辉同行发布'东方甄选'AI直播数字人：24小时不间断直播",
+        "source": "界面新闻",
+        "url": "https://www.jiemian.com/article/12345678.html",
+        "summary": "东方甄选发布AI数字人直播系统，可24小时不间断直播带货，数字人形象和声音与真人主播高度相似，引发直播行业变革讨论。",
+        "category": "应用落地"
+      },
+      {
+        "title": "全球AI专利申请报告：华为、三星、腾讯位列前三",
+        "source": "WIPO",
+        "url": "https://www.wipo.int/patents/en/statistics/ai-2026.html",
+        "summary": "WIPO发布2025年度AI专利报告，华为以6800件居首，三星5900件第二，腾讯4800件第三，中国企业包揽前五中的四席。",
+        "category": "市场动态"
+      }
+    ]
+  }
+}

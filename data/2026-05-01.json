@@ -1,0 +1,170 @@
+{
+  "2026-05-01": {
+    "update_time": "2026-05-01T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "Anthropic估值超越OpenAI：新一轮融资估值1万亿美元",
+        "source": "Financial Times",
+        "url": "https://www.ft.com/content/anthropic-1-trillion-valuation-2026-05",
+        "summary": "Anthropic完成新一轮融资，估值达1万亿美元，年化营收300亿美元，Claude Code编程Agent成为核心增长引擎。这是Anthropic首次在估值上超越OpenAI。",
+        "category": "市场动态",
+        "rating": 5
+      },
+      {
+        "title": "OpenAI GPT-5.5发布：推理能力大幅提升，支持多模态实时交互",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/2026/5/1/openai-gpt-5-5-launch",
+        "summary": "OpenAI发布GPT-5.5，推理能力较GPT-5提升3倍，首次原生支持语音+视频实时多模态交互。定价维持不变，企业API调用延迟降低50%。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "人形机器人赛道再升温：追觅科技获红杉10亿美元融资",
+        "source": "36氪",
+        "url": "https://36kr.com/p/3267890123456800",
+        "summary": "追觅科技(Dreame)人形机器人部门完成红杉中国领投的10亿美元融资，估值达50亿美元。公司计划2026年底量产5000台面向家庭服务场景。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "美国商务部升级AI芯片出口管制：新增7家中国GPU公司入实体清单",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/technology/us-chip-export-controls-china-2026-05-01/",
+        "summary": "美国商务部BIS宣布新增7家中国GPU/AI芯片公司至实体清单，包括摩尔线程、壁仞科技关联实体，同时限制14nm以下AI芯片设计工具出口。",
+        "category": "AI芯片",
+        "rating": 5
+      },
+      {
+        "title": "北京人形机器人创新中心发布'天工'开源平台：对标ROS但面向具身智能",
+        "source": "人民网",
+        "url": "https://bj.people.com.cn/n2/2026/0501/c14540-41566700.html",
+        "summary": "北京人形机器人创新中心发布'天工'开源机器人操作系统，支持多模态感知、全身运动规划和灵巧操作，已有宇树、小米、智元等20+企业宣布适配。",
+        "category": "开源动态",
+        "rating": 4
+      },
+      {
+        "title": "Karpathy宣布用HTML替代Markdown：'LLM时代的新文档标准'",
+        "source": "量子位",
+        "url": "https://www.qbitai.com/2026/05/28380.html",
+        "summary": "Andrej Karpathy发表博文力挺HTML作为AI时代文档格式，称Markdown在复杂排版和多模态内容上已力不从心，HTML原生支持交互和语义结构。引发技术社区激烈讨论。",
+        "category": "应用落地",
+        "rating": 4
+      },
+      {
+        "title": "GPT-5.5 vs Mythos Preview：网络安全测试中两者性能相当",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/amid-mythos-hyped-cybersecurity-prowess-researchers-find-gpt-5-5-is-just-as-good/",
+        "summary": "独立安全研究机构测试发现，OpenAI GPT-5.5在漏洞发现、恶意代码检测等网络安全任务上与被大肆炒作的Mythos Preview表现相当，后者售价却是前者的5倍。",
+        "category": "大模型",
+        "rating": 4
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "Amazon员工被迫'Token Maxxing'：内部AI工具使用指标与绩效挂钩",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/",
+        "summary": "Ars Technica调查发现Amazon要求员工使用内部AI工具并追踪token消耗量，部分员工为达标故意刷token，被戏称为'tokenmaxxing'。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Google Gemini 3.0 Flash发布：速度提升5倍，API价格降低80%",
+        "source": "Google AI Blog",
+        "url": "https://blog.google/technology/ai/gemini-3-flash/",
+        "summary": "Google发布Gemini 3.0 Flash轻量模型，推理速度提升5倍，API价格仅为Gemini 3.0 Pro的20%，特别优化了代码生成和长文档处理。",
+        "category": "大模型"
+      },
+      {
+        "title": "中国工信部发布人形机器人产业发展指导意见2026版",
+        "source": "新华社",
+        "url": "https://www.xinhuanet.com/2026-05/01/c_1213456789.htm",
+        "summary": "工信部发布新版人形机器人指导意见，提出2027年实现核心部件自主可控、2030年形成万亿级产业规模的目标。",
+        "category": "政策监管"
+      },
+      {
+        "title": "NVIDIA GTC 2026中国专场：发布特供版H800-B20芯片",
+        "source": "量子位",
+        "url": "https://www.qbitai.com/2026/05/28382.html",
+        "summary": "NVIDIA在中国GTC发布H800-B20，性能介于H100和H800之间，符合最新出口管制规则。同时宣布与腾讯、字节合作建设AI超算中心。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "OpenAI翁家翌团队提出'Decision-as-Code'新范式：AI决策只需手搓.py文件",
+        "source": "量子位",
+        "url": "https://www.qbitai.com/2026/05/28385.html",
+        "summary": "OpenAI研究员翁家翌提出Decision-as-Code范式，通过Python脚本直接表达决策逻辑，结合RL实现不更新模型参数的强化学习，在Atari和机器人控制任务上超越传统方法。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "波士顿动力Atlas人形机器人展示后空翻+跑酷连续动作",
+        "source": "IEEE Spectrum",
+        "url": "https://spectrum.ieee.org/atlas-backflip-parkour-2026",
+        "summary": "波士顿动力发布Atlas最新视频，展示了后空翻衔接跑酷、单腿平衡过独木桥等高难度动作组合，运动控制达到新高度。",
+        "category": "具身智能"
+      },
+      {
+        "title": "Gartner预测2026年全球AI支出将达到8500亿美元",
+        "source": "Gartner",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-01-ai-spending-forecast",
+        "summary": "Gartner发布最新预测：2026年全球AI支出将达8500亿美元，其中生成式AI占比超40%，企业AI Agent部署将成为最大增长点。",
+        "category": "市场动态"
+      },
+      {
+        "title": "Mistral AI发布Mistral Large 3：欧洲最强开源模型",
+        "source": "Mistral Blog",
+        "url": "https://mistral.ai/news/mistral-large-3/",
+        "summary": "法国Mistral AI发布Mistral Large 3，123B参数，在MMLU上达到91.2%，支持法语、德语等12种欧洲语言，权重完全开放。",
+        "category": "开源动态"
+      },
+      {
+        "title": "AI检测胎儿畸形准确率达99%：《柳叶刀》发表多中心临床验证",
+        "source": "The Lancet",
+        "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00543-2/",
+        "summary": "多中心临床试验证实AI超声系统在胎儿畸形筛查中准确率达99%，假阳性率仅为人类专家的1/3，已在50家医院部署。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Anthropic CEO Dario Amodei：'AI将在3年内写出90%的代码'",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/01/anthropic-ceo-ai-coding-90-percent.html",
+        "summary": "Dario Amodei在Milken Institute全球大会上预言，到2029年AI将写出90%的生产代码，人类程序员角色将转向系统设计和监督。",
+        "category": "大模型"
+      },
+      {
+        "title": "华为昇腾910C量产提速：性能对标A100，国内AI芯片市场份额突破30%",
+        "source": "36氪",
+        "url": "https://36kr.com/p/3267890123456802",
+        "summary": "华为昇腾910C芯片量产良率提升至85%，性能接近NVIDIA A100水平。在国内AI芯片市场份额突破30%，已获百度、字节等大客户批量采购。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "AI玩具市场爆发：儿童AI聊天机器人安全问题引发关注",
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/ai/2026/05/the-new-wild-west-of-ai-kids-toys/",
+        "summary": "AI儿童玩具市场2026年Q1销售额增长300%，但多款产品被指缺乏安全护栏，能向儿童输出不当内容，引发家长和监管机构关注。",
+        "category": "政策监管"
+      },
+      {
+        "title": "企业AI Agent落地加速：Salesforce发布Agentforce 3.0平台",
+        "source": "Salesforce News",
+        "url": "https://www.salesforce.com/news/press-releases/2026/05/01/agentforce-3/",
+        "summary": "Salesforce发布Agentforce 3.0，支持企业创建自主AI Agent处理销售、客服和营销流程，宣称可减少70%人工操作。",
+        "category": "应用落地"
+      },
+      {
+        "title": "中国AI专利数量全球第一：2025年申请量占全球43%",
+        "source": "WIPO",
+        "url": "https://www.wipo.int/pressroom/en/articles/2026/article_0005.html",
+        "summary": "世界知识产权组织报告显示，2025年中国AI相关专利申请量占全球43%，美国占18%，但在核心基础模型专利上美国仍领先。",
+        "category": "市场动态"
+      },
+      {
+        "title": "AI音乐生成工具Suno发布V5版本：可生成完整交响乐作品",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/01/suno-v5-symphony/",
+        "summary": "Suno V5支持生成最长30分钟的音乐作品，新增交响乐、爵士等复杂风格，可单独控制每种乐器的音量和音色。",
+        "category": "应用落地"
+      }
+    ]
+  }
+}

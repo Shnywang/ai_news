@@ -1,0 +1,104 @@
+{
+  "2026-05-09": {
+    "update_time": "2026-05-09T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "中国发布全球首个人形机器人'驾照'标准：分5个等级考核",
+        "source": "新华社",
+        "url": "https://www.xinhuanet.com/2026-05/09/c_1213456900.htm",
+        "summary": "中国机器人产业联盟发布《人形机器人能力等级评定规范》，将机器人能力分为L1-L5五级，L5要求完全自主在开放环境中完成复杂任务。宇树G1首批通过L3认证。",
+        "category": "具身智能",
+        "rating": 5
+      },
+      {
+        "title": "Anthropic出让Claude API利润的20%给内容创作者：AI版权新模式",
+        "source": "Anthropic Blog",
+        "url": "https://www.anthropic.com/news/revenue-sharing-creators",
+        "summary": "Anthropic开创性地推出'Creator Fund'计划，将Claude API 20%的利润分配给训练数据中被引用的内容创作者，被视为AI版权争议的破局方案。",
+        "category": "政策监管",
+        "rating": 5
+      },
+      {
+        "title": "月之暗面Kimi发布超大上下文2.0：1000万token可处理整部百科全书",
+        "source": "量子位",
+        "url": "https://www.qbitai.com/2026/05/28500.html",
+        "summary": "月之暗面Kimi发布超大上下文2.0版本，支持1000万token上下文窗口，可一次性处理整部大英百科全书，长文本理解准确率达95%。",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "Intel发布Falcon Shores 3 AI芯片：正面挑战NVIDIA，CEO称'不成功便成仁'",
+        "source": "Intel Newsroom",
+        "url": "https://www.intel.com/content/www/us/en/newsroom/news/falcon-shores-3-ai-chip.html",
+        "summary": "Intel发布Falcon Shores 3 AI加速芯片，采用Intel 18A工艺和Chiplet设计，AI训练性能对标H200。新CEO陈立武称这是Intel AI战场的'生死之战'。",
+        "category": "AI芯片",
+        "rating": 5
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "Microsoft 365 Copilot用户突破2亿：企业AI助手成标配",
+        "source": "Microsoft Blog",
+        "url": "https://blogs.microsoft.com/blog/2026/05/09/copilot-200-million-users/",
+        "summary": "微软宣布Microsoft 365 Copilot月活用户突破2亿，包括中国在内的全球市场平均每个企业用户每天使用AI功能8次。",
+        "category": "应用落地"
+      },
+      {
+        "title": "AI发现宇宙新物理现象：LHC数据中检测到新粒子信号?",
+        "source": "CERN",
+        "url": "https://home.cern/news/news/physics/ai-discovers-new-particle-signal-2026",
+        "summary": "CERN物理学家利用AI分析LHC最新数据，发现了一种可能的新粒子信号（3.5σ显著性），若证实将是标准模型以外的新物理。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "滴滴自动驾驶与广汽合作：量产Robotaxi成本降至18万元",
+        "source": "36氪",
+        "url": "https://36kr.com/p/3267890123456850",
+        "summary": "滴滴自动驾驶与广汽埃安合作发布量产Robotaxi车型，整车成本18万元，计划2027年在广州部署1万辆。",
+        "category": "应用落地"
+      },
+      {
+        "title": "IBM发布Granite 4.0系列企业AI模型：全部开源",
+        "source": "IBM Research",
+        "url": "https://research.ibm.com/blog/granite-4-open-source",
+        "summary": "IBM发布Granite 4.0系列，包括代码、语言、时间序列等多个专用模型，全部采用Apache 2.0许可，特别优化了企业合规场景。",
+        "category": "开源动态"
+      },
+      {
+        "title": "英伟达反垄断调查扩大：中国和欧盟同时启动",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-09/nvidia-antitrust-probe-eu-china",
+        "summary": "中国市场监管总局和欧盟委员会同时宣布对NVIDIA在AI芯片市场的主导地位展开反垄断调查，关注其CUDA生态的排他性。",
+        "category": "政策监管"
+      },
+      {
+        "title": "斯坦福HAI发布2026 AI Index：中国在AI专利和机器人部署上全面领先",
+        "source": "Stanford HAI",
+        "url": "https://hai.stanford.edu/news/ai-index-2026",
+        "summary": "斯坦福HAI发布2026年度AI Index报告，中国在AI专利数量和工业机器人部署量上领先，美国在基础模型和顶级AI人才上保持优势。",
+        "category": "研究前沿"
+      },
+      {
+        "title": "字节发布'即梦'3D生成模型：文字描述直接生成可打印3D模型",
+        "source": "机器之心",
+        "url": "https://www.jiqizhixin.com/articles/2026-05-09-1",
+        "summary": "字节跳动发布即梦3D生成模型，可从文字描述直接生成3D模型文件，支持导出STL格式进行3D打印。",
+        "category": "应用落地"
+      },
+      {
+        "title": "AI视频分析公司Voxel51获1.2亿美元融资：视觉AI从安防走向工业",
+        "source": "VentureBeat",
+        "url": "https://venturebeat.com/ai/voxel51-120m-series-c/",
+        "summary": "Voxel51完成1.2亿美元C轮融资，其视觉AI平台从安防扩展到工业质检和零售分析，年营收增长200%。",
+        "category": "市场动态"
+      },
+      {
+        "title": "GitHub Copilot X功能全面开放：AI可读整个代码仓库",
+        "source": "GitHub Blog",
+        "url": "https://github.blog/2026-05-09-copilot-x-ga/",
+        "summary": "GitHub Copilot X全面开放，AI可理解整个代码仓库上下文，支持跨文件重构、自动生成PR描述和代码审查意见。",
+        "category": "应用落地"
+      }
+    ]
+  }
+}
