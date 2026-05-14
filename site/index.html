@@ -266,9 +266,9 @@ a{color:inherit}
 <div class="wx-modal" id="wxModal" onclick="if(event.target===this)closeWeixinModal()">
 <div class="wx-modal-box">
 <h3>分享到微信</h3>
-<p>用微信扫描二维码<br>或搜索并关注公众号<br><strong>「AI科技前沿」</strong></p>
-<div style="background:#07c160;width:160px;height:160px;margin:0 auto 1rem;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;font-size:3rem">🔍</div>
-<p style="font-size:.72rem;color:var(--t3)">转发给朋友或分享到朋友圈</p>
+<p id="wxModalTitle">用微信扫描下方二维码</p>
+<div id="wxQrCode" style="width:160px;height:160px;margin:0.5rem auto;border-radius:12px;overflow:hidden"></div>
+<p id="wxModalUrl" style="font-size:.72rem;color:var(--t3);word-break:break-all;max-width:260px;margin:0.5rem auto;padding:.3rem;background:var(--bg);border-radius:6px;cursor:pointer" onclick="this.select()"></p>
 <button class="close-btn" onclick="closeWeixinModal()">关闭</button>
 </div>
 </div>
@@ -645,13 +645,11 @@ function shareWeixin(title,url){
     navigator.share({title:title,text:'【'+title+'】来自AI+具身智能资讯聚合 '+url,url:url}).catch(function(){});
     return;
   }
-  // Show QR modal for desktop
+  // Show QR modal with real QR code
   var modal=document.getElementById('wxModal');
-  var box=modal&&modal.querySelector('.wx-modal-box');
-  if(box){
-    box.querySelector('h3').textContent='分享：'+title.slice(0,20)+(title.length>20?'…':'');
-    box.querySelector('p').innerHTML='标题：'+title+'<br><br>复制链接后微信内粘贴分享：<br><input onclick="this.select()" readonly value="'+esc(url)+'" style="width:100%;padding:.3rem;border:1px solid var(--border);border-radius:6px;font-size:.72rem;background:var(--bg);color:var(--text)">';
-  }
+  document.getElementById('wxModalTitle').textContent='分享：'+title.slice(0,30)+(title.length>30?'…':'');
+  document.getElementById('wxQrCode').innerHTML='<img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data='+encodeURIComponent(url)+'" alt="QR" style="width:100%;height:100%;object-fit:contain">';
+  document.getElementById('wxModalUrl').textContent=url;
   if(modal)modal.classList.add('open');
 }
 function closeWeixinModal(){var m=document.getElementById('wxModal');if(m)m.classList.remove('open');}
@@ -717,12 +715,14 @@ function updateSavedBadge(){
   b.style.display=n>0?'flex':'none';
 }
 
-/* --- Email Subscribe (Formsubmit.co) --- */
-var SUBSCRIBE_API='https://formsubmit.co/ajax/779284414@qq.com';
+/* --- Email Subscribe (Worker API) --- */
 var _subscribed=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
+function apiPost(path,body){
+  return fetch(WORKER_API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json()});
+}
 function handleSubscribe(e){
   e.preventDefault();
-  var email=document.getElementById('subEmail').value.trim();
+  var email=document.getElementById('subEmail').value.trim().toLowerCase();
   var msg=document.getElementById('subMsg');
   var btn=document.getElementById('subBtn');
   if(!email||!email.includes('@')){
@@ -738,37 +738,14 @@ function handleSubscribe(e){
   btn.disabled=true;
   btn.textContent='订阅中...';
   msg.textContent='';
-  var fd=new FormData();
-  fd.append('_template','table');
-  fd.append('_subject','📧 【AI资讯】新订阅者申请');
-  var ar='<h2 style="color:#1a3a5c">🚀 欢迎订阅AI资讯！</h2>';
-  ar+='<p>你已成功订阅AI资讯每日推送。</p>';
-  ar+='<p><strong>你将收到：</strong></p><ul>';
-  ar+='<li>每天早上9:00的AI行业最新资讯</li>';
-  ar+='<li>包括算法突破、产品动态、市场数据、政策信号等多个维度</li>';
-  ar+='<li>每条资讯都由专业评判和分类标注</li>';
-  ar+='</ul><p>请将 779284414@qq.com 添加到白名单，以便顺畅收到推送。</p>';
-  ar+='<p>👉 <a href="https://shnywang.github.io/ai_news/site/index.html">点击浏览当日资讯</a></p>';
-  ar+='<p style="color:#ccc;font-size:11px;margin-top:16px">如不想再收到推送，请<a href="mailto:779284414@qq.com?subject=取消订阅资讯推送" style="color:#999">点击此处取消订阅</a></p>';
-  fd.append('_autoresponse',ar);
-  fd.append('👤 订阅邮箱',email);
-  fd.append('📅 订阅日期',curDay);
-  fd.append('🌐 来自页面','https://shnywang.github.io/ai_news/site/index.html');
-  fd.append('💻 设备信息',navigator.userAgent.substring(0,80));
-  fd.append('_replyto',email);
-  fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){
-    var resp=d.message||'';
-    if(resp.match(/submitted successfully/i)||resp.match(/needs activation/i)){
+  apiPost('/subscribe',{email:email}).then(function(d){
+    if(d.success){
       _subscribed={email:email,date:curDay};
       localStorage.setItem('ai-news-subscribed',JSON.stringify(_subscribed));
-      if(resp.match(/needs activation/i)){
-        msg.textContent='✅ 订阅请求已提交！请检查 '+email+' 的收件箱和垃圾邮件，点击确认链接完成激活';
-      }else{
-        msg.textContent='✅ 订阅成功！每日AI资讯将发送到 '+email;
-      }
+      msg.textContent='✅ 订阅成功！欢迎邮件已发送到 '+email;
       msg.style.color='var(--green)';
       document.getElementById('subEmail').value='';
-      btn.textContent='已订阅';
+      checkSubscribeStatus();
       showToast('✅ 订阅成功！');
     }else{
       throw new Error(d.message||'服务器错误');
@@ -779,68 +756,50 @@ function handleSubscribe(e){
     console.error('Subscribe failed:',err);
   }).finally(function(){
     btn.disabled=false;
-    if(btn.textContent==='订阅中...')btn.textContent='📧 订阅';
+    btn.textContent=U.mail+' 订阅';
   });
   return false;
 }
-/* --- Email Unsubscribe --- */
+/* --- Email Unsubscribe (Worker API) --- */
 function handleUnsubscribe(email){
   if(!confirm("确认要取消订阅 "+email+" 吗？"))return;
   var msg=document.getElementById('subMsg');
-  var btn=document.getElementById('subBtn');
-  btn.disabled=true;
-  btn.textContent='处理中...';
-  msg.textContent='';
-  var fd=new FormData();
-  fd.append('_template','table');
-  fd.append('_subject','❌ 【AI资讯】取消订阅申请');
-  var ar='<h2 style="color:#5c1a1a">❌ 取消订阅成功</h2>';
-  ar+='<p>你已取消订阅AI资讯每日推送。</p>';
-  ar+='<p>你将不再收到每早9:00的AI行业资讯推送。</p>';
-  ar+='<p>如果想重新订阅，请<a href="https://shnywang.github.io/ai_news/site/index.html" style="color:#6366f1">点击此处返回首页</a>并重新输入邮箱。</p>';
-  ar+='<p style="color:#ccc;font-size:11px;margin-top:16px">感谢你之前的关注。</p>';
-  fd.append('_autoresponse',ar);
-  fd.append('👤 取消订阅邮箱',email);
-  fd.append('📅 取消订阅日期',curDay);
-  fd.append('🌐 来自页面','https://shnywang.github.io/ai_news/site/index.html');
-  fd.append('💻 设备信息',navigator.userAgent.substring(0,80));
-  fd.append('_replyto',email);
-  fetch(SUBSCRIBE_API,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){
-    localStorage.removeItem('ai-news-subscribed');
-    _subscribed=null;
-    document.getElementById('subEmail').value='';
-    btn.disabled=false;
-    btn.textContent='📧 订阅';
-    msg.textContent='✅ 已取消订阅 '+email+'，感谢你的关注';
-    msg.style.color='var(--green)';
-    showToast('✅ 已取消订阅');
+  msg.textContent='处理中...';
+  msg.style.color='var(--t2)';
+  apiPost('/unsubscribe',{email:email}).then(function(d){
+    if(d.success){
+      localStorage.removeItem('ai-news-subscribed');
+      _subscribed=null;
+      msg.textContent='✅ 已取消订阅 '+email+'，感谢你的关注';
+      msg.style.color='var(--green)';
+      checkSubscribeStatus();
+      showToast('✅ 已取消订阅');
+    }else{
+      throw new Error(d.message||'服务器错误');
+    }
   }).catch(function(err){
     msg.textContent='⚠ 取消订阅失败: '+err.message;
     msg.style.color='var(--red)';
     console.error('Unsubscribe failed:',err);
-  }).finally(function(){
-    if(btn.textContent==='处理中...')btn.disabled=false;btn.textContent='📧 订阅';
   });
 }
 
 function checkSubscribeStatus(){
   var sub=JSON.parse(localStorage.getItem('ai-news-subscribed')||'null');
-  if(sub){
-    var email=document.getElementById('subEmail');
-    var msg=document.getElementById('subMsg');
-    var btn=document.getElementById('subBtn');
+  var email=document.getElementById('subEmail');
+  var msg=document.getElementById('subMsg');
+  var btn=document.getElementById('subBtn');
+  if(sub&&sub.email){
     if(email)email.value='';
     if(btn){btn.disabled=true;btn.textContent='已订阅';}
     if(msg){
-      msg.textContent='✅ '+sub.email+' 已订阅 ('+sub.date+')';
+      msg.innerHTML='✅ '+sub.email+' 已订阅 ('+sub.date+')<button class="unsub-btn" data-email="'+sub.email+'">取消订阅</button>';
       msg.style.color='var(--green)';
-      var unbtn=document.createElement('button');
-      unbtn.textContent='取消订阅';
-      unbtn.style.cssText='background:none;border:1px solid var(--red);color:var(--red);padding:2px 8px;border-radius:4px;cursor:pointer;font-size:.75rem;margin-left:6px;margin-top:4px';
-      unbtn.setAttribute('data-email',sub.email);
-      unbtn.addEventListener('click',function(){handleUnsubscribe(this.getAttribute('data-email'))});
-      msg.appendChild(unbtn);
+      msg.querySelector('.unsub-btn').addEventListener('click',function(){handleUnsubscribe(this.getAttribute('data-email'))});
     }
+  }else if(msg){
+    msg.textContent='';
+    if(btn){btn.disabled=false;btn.textContent=U.mail+' 订阅';}
   }
 }
 /* --- Keyboard Navigation --- */

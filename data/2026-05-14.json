@@ -57,6 +57,126 @@
         "summary": "Anthropic将非交互式Agent使用从订阅中剥离，预示着AI Agent经济模式的根本转变。第三方Agent平台、自动化工具将不再享受用户订阅带来的免费额度，AI Agent的'免费午餐'时代正在结束。",
         "category": "市场动态",
         "rating": 5
+      },
+      {
+        "title": "AI invades Princeton, where 30% of students cheat—but peers won't snitch",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/tech-policy/2026/05/ai-driven-cheating-widespread-even-at-elite-schools-like-princeton/",
+        "summary": "",
+        "category": "其他",
+        "rating": 4
+      },
+      {
+        "title": "Altman forced to confront claims at OpenAI trial that he's a prolific liar",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "Anthropic blames dystopian sci-fi for training AI models to act “evil”",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/ai/2026/05/anthropic-blames-dystopian-sci-fi-for-training-ai-models-to-act-evil/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 4
+      },
+      {
+        "title": "Rivian adds a new onboard AI assistant to its latest software update",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/cars/2026/05/rivian-adds-a-new-onboard-ai-assistant-to-its-latest-software-update/",
+        "summary": "",
+        "category": "具身智能",
+        "rating": 4
+      },
+      {
+        "title": "The newest AI boom pitch: Host a mini data center at your home",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/ai/2026/05/the-newest-ai-boom-pitch-host-a-mini-data-center-at-your-home/",
+        "summary": "",
+        "category": "AI芯片",
+        "rating": 4
+      },
+      {
+        "title": "“Will I be OK?” Teen died after ChatGPT pushed deadly mix of drugs, lawsuit says",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/tech-policy/2026/05/will-i-be-ok-teen-died-after-chatgpt-pushed-deadly-mix-of-drugs-lawsuit-says/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 5
+      },
+      {
+        "title": "Google's Android-powered laptops are called Googlebooks, and they're coming this year",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/gadgets/2026/05/googles-android-powered-laptops-are-called-googlebooks-and-theyre-coming-this-year/",
+        "summary": "",
+        "category": "AI芯片",
+        "rating": 4
+      },
+      {
+        "title": "Android is getting a big AI overhaul in 2026",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/gadgets/2026/05/google-says-android-is-getting-a-big-ai-overhaul-in-2026/",
+        "summary": "",
+        "category": "应用落地",
+        "rating": 4
+      },
+      {
+        "title": "Amazon employees are \"tokenmaxxing\" due to pressure to use AI tools",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/",
+        "summary": "",
+        "category": "其他",
+        "rating": 4
+      },
+      {
+        "title": "Data center guzzled 30 million gallons of water, and nobody noticed for months",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/tech-policy/2026/05/data-center-used-30-million-gallons-of-water-without-initially-paying/",
+        "summary": "",
+        "category": "AI芯片",
+        "rating": 4
+      },
+      {
+        "title": "The new Wild West of AI kids’ toys",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/ai/2026/05/the-new-wild-west-of-ai-kids-toys/",
+        "summary": "",
+        "category": "其他",
+        "rating": 4
+      },
+      {
+        "title": "Sony says \"efficient\" AI tools will lead to even more games flooding the market",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/gaming/2026/05/sony-says-efficient-ai-tools-will-lead-to-even-more-games-flooding-the-market/",
+        "summary": "",
+        "category": "其他",
+        "rating": 4
+      },
+      {
+        "title": "Course correction: Google to link more sources in AI Overviews",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+        "summary": "",
+        "category": "其他",
+        "rating": 4
+      },
+      {
+        "title": "Chrome's 4GB AI model isn't new, but you're not wrong for being confused",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 4
+      },
+      {
+        "title": "Mozilla says 271 vulnerabilities found by Mythos have \"almost no false positives\"",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 4
       }
     ],
     "raw_articles": [
@@ -143,6 +263,166 @@
         "url": "https://personalaisafety.com/p/the-other-half-of-ai-safety",
         "summary": "当前AI安全讨论过度集中于社会层面，个人AI数据安全和隐私保护成为被忽视的另一半议题。",
         "category": "研究前沿"
+      },
+      {
+        "title": "Who decides what AI tells you? Campbell Brown, once Meta’s news chief, has thoughts",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/who-decides-what-ai-tells-you-campbell-brown-once-metas-news-chief-has-thoughts/",
+        "summary": "",
+        "category": "其他",
+        "rating": 3
+      },
+      {
+        "title": "Clio’s $500M milestone arrives just as Anthropic ups the ante",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/clios-500m-milestone-arrives-just-as-anthropic-ups-the-ante/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Notion just turned its workspace into a hub for AI agents",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/",
+        "summary": "",
+        "category": "应用落地",
+        "rating": 3
+      },
+      {
+        "title": "Anthropic’s Cat Wu says that, in the future, AI will anticipate your needs before you know what they are",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Who trusts Sam Altman?",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/who-trusts-sam-altman/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Origin Lab raises $8M to help video game companies sell data to world-model builders",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/origin-lab-raises-8m-to-help-video-game-companies-sell-data-to-world-model-builders/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Amazon launches an AI shopping assistant for the search bar, powered by Alexa+",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/",
+        "summary": "",
+        "category": "AI芯片",
+        "rating": 3
+      },
+      {
+        "title": "Introducing the 6 stages at TechCrunch Disrupt 2026 — built for today’s tougher startup market",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/introducing-the-6-stages-of-techcrunch-disrupt-2026-built-for-todays-tougher-startup-market/",
+        "summary": "",
+        "category": "其他",
+        "rating": 3
+      },
+      {
+        "title": "WhatsApp adds an incognito mode in Meta AI chats",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/whatsapp-adds-an-incognito-mode-in-meta-ai-chats/",
+        "summary": "",
+        "category": "应用落地",
+        "rating": 3
+      },
+      {
+        "title": "Anthropic now has more business customers than OpenAI, according to Ramp data",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Poppy debuts a proactive AI assistant to help organize your digital life",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/poppy-debuts-a-proactive-ai-assistant-to-help-organize-your-digital-life/",
+        "summary": "",
+        "category": "应用落地",
+        "rating": 3
+      },
+      {
+        "title": "Adaption aims big with AutoScientist, an AI tool that helps models train themselves",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/13/adaption-aims-big-with-autoscientist-an-ai-tool-that-helps-models-train-themselves/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Medicare’s new payment model is built for AI, and most of the tech world has no idea",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Musk mulled handing OpenAI to his children, Altman testifies",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "Anthropic warns investors against secondary platforms offering access to its shares",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/12/anthropic-warns-investors-against-secondary-platforms-offering-access-to-its-shares/",
+        "summary": "",
+        "category": "大模型",
+        "rating": 3
+      },
+      {
+        "title": "X launches a History tab for bookmarks, likes, videos, and articles",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/13/x-launches-a-history-tab-for-bookmarks-likes-videos-and-articles/",
+        "summary": "",
+        "category": "其他",
+        "rating": 3
+      },
+      {
+        "title": "Instagram’s new ‘Instants’ feature combines elements from Snapchat and BeReal",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/13/instagrams-new-instants-feature-combines-elements-from-snapchat-and-bereal/",
+        "summary": "",
+        "category": "其他",
+        "rating": 3
+      },
+      {
+        "title": "Ransomware hackers claim breach at Foxconn, a major electronics manufacturer for Apple, Google, and Nvidia",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/13/ransomware-hackers-claim-breach-at-foxconn-a-major-electronics-manufacturer-for-apple-google-and-nvidia/",
+        "summary": "",
+        "category": "其他",
+        "rating": 3
+      },
+      {
+        "title": "Anduril raises $5B, doubles valuation to $61B",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/",
+        "summary": "",
+        "category": "具身智能",
+        "rating": 3
+      },
+      {
+        "title": "r/WallStreetBets really hates the SEC’s proposal to weaken quarterly reporting",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/13/r-wallstreetbets-really-hates-the-secs-proposal-to-weaken-quarterly-reporting/",
+        "summary": "",
+        "category": "其他",
+        "rating": 3
       }
     ],
     "startup_board": {
