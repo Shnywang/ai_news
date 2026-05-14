@@ -5,22 +5,102 @@
   <link>https://shnywang.github.io/ai_news/site/index.html</link>
   <description>多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 13 May 2026 08:11:14 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 14 May 2026 01:53:27 GMT</lastBuildDate>
   <atom:link href="https://shnywang.github.io/ai_news/site/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
-    <title>今日焦点：2026全球AI最新进展全景——从GPT到机器人</title>
+    <title>Anthropic重大调整：Claude订阅拆分，非交互式Agent使用单独计费</title>
+    <link>https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch</link>
+    <description>Anthropic将Claude订阅分为交互式和���交互式两类，第三方Agent调用不再包含在月度订阅中。此举直接影响所有使用Claude API的Agent平台，包括OpenClaw、Cursor、Copilot等，开发者需单独购买API额度。</description>
+    <source>VentureBeat</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch</guid>
+  </item>
+  <item>
+    <title>中国宣布监管数字人：禁止向儿童提供成瘾性服务</title>
+    <link>https://www.reuters.com/world/china/china-moves-regulate-digital-humans-bans-addictive-services-children-2026-04-03/</link>
+    <description>中国政府发布数字人监管新规，要求数字人服务提供者进行备案，禁止向未成年人提供可能导致成瘾的数字人互动服务。这是中国继生成式AI管理办法后又一重要AI监管举措。</description>
+    <source>Reuters</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://www.reuters.com/world/china/china-moves-regulate-digital-humans-bans-addictive-services-children-2026-04-03/</guid>
+  </item>
+  <item>
+    <title>AI安全的另一半：被忽视的个人AI隐私风险</title>
+    <link>https://personalaisafety.com/p/the-other-half-of-ai-safety</link>
+    <description>深度分析AI安全的盲区——人们过于关注AI对社会的威胁，却忽视了AI对个人隐私和数据的系统性风险。文章指出个人AI数据被滥用、AI模型记忆用户隐私等问题已被严重低估。</description>
+    <source>Personal AI Safety</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://personalaisafety.com/p/the-other-half-of-ai-safety</guid>
+  </item>
+  <item>
+    <title>GitHub Copilot CLI助力游戏开发：10行代码构建Roguelike</title>
+    <link>https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/</link>
+    <description>GitHub展示如何使用Copilot CLI快速构建程序化生成的Roguelike游戏，展示了AI辅助编程在游戏开发中的应用前景。同时介绍了10个开源Roguelike项目，AI正在降低游戏开发门槛。</description>
+    <source>GitHub Blog</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/</guid>
+  </item>
+  <item>
+    <title>Abliteration：为分类器和评测定制的合成训练数据生成工具</title>
+    <link>https://abliteration.ai/use-cases/synthetic-data</link>
+    <description>Abliteration工具通过差分方法来训练数据——针对分类器和评测集，自动生成边缘案例训练数据。这是AI评测和数据合成的一个新思路，可直接集成到MLOps流程中。</description>
+    <source>HackerNews</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://abliteration.ai/use-cases/synthetic-data</guid>
+  </item>
+  <item>
+    <title>Claude-pee：绕过程序化使用额度的Claude CLI工具</title>
+    <link>https://github.com/sbhattap/claude-pee/tree/main</link>
+    <description>社区开发者推出Claude-pee工具，允许开发者在不消耗程序化API额度的情况下使用Claude的headless模式。在Anthropic调整订阅政策的背景下，这类工具反映了开发者的应对策略。</description>
+    <source>GitHub</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://github.com/sbhattap/claude-pee/tree/main</guid>
+  </item>
+  <item>
+    <title>AI Agent经济模型变革：从免费额度到按量付费</title>
     <link>https://shnywang.github.io/ai_news/site/index.html</link>
-    <description>本日汇总：GPT-5.5引领多模态AI新高度，具身智能全面提速（特斯拉Optimus获外部订单、Figure 02通过工业可靠性验证），中国AI芯片自给率突破35%，全球AI治理进入执法阶段。</description>
-    <source>综合报道</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <description>Anthropic将非交互式Agent使用从订阅中剥离，预示着AI Agent经济模式的根本转变。第三方Agent平台、自动化工具将不再享受用户订阅带来的免费额度，AI Agent的&apos;免费午餐&apos;时代正在结束。</description>
+    <source>综合分析</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://shnywang.github.io/ai_news/site/index.html</guid>
+  </item>
+  <item>
+    <title>Claude headless模式限制：无法使用Max级别额度</title>
+    <link>https://news.ycombinator.com/item?id=48129944</link>
+    <description>Claude的headless（无头）模式将被限制在API计划额度下，无法使用订阅Max级别的资源，进一步收紧对自动化调用的控制。</description>
+    <source>HackerNews</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://news.ycombinator.com/item?id=48129944</guid>
+  </item>
+  <item>
+    <title>10个永不死亡的开源Roguelike游戏</title>
+    <link>https://github.blog/open-source/gaming/dungeons-desktops-10-roguelikes-that-never-die-because-their-communities-wont-let-them/</link>
+    <description>GitHub介绍10个拥有活跃社区的开源Roguelike项目，展示开源游戏开发的持久生命力。</description>
+    <source>GitHub Blog</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://github.blog/open-source/gaming/dungeons-desktops-10-roguelikes-that-never-die-because-their-communities-wont-let-them/</guid>
+  </item>
+  <item>
+    <title>Cisco宣布新一轮裁员：AI转型加速</title>
+    <link>https://blogs.cisco.com/news/our-path-forward</link>
+    <description>Cisco宣布 workforce reduction 计划，加速向AI驱动的网络和基础设施转型。</description>
+    <source>Cisco Blog</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://blogs.cisco.com/news/our-path-forward</guid>
+  </item>
+  <item>
+    <title>Kubernetes Dashboard用React 19和Go重构完成</title>
+    <link>https://kubernetes-dashboard.com/</link>
+    <description>社区用React 19和Go重构了已归档的Kubernetes Dashboard，展示了开源社区的自我修复能力。</description>
+    <source>Kubernetes</source>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <guid>https://kubernetes-dashboard.com/</guid>
   </item>
   <item>
     <title>中国AI芯片自给率突破35%：国产替代加速</title>
     <link>https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_ab12cd34ef56.html</link>
     <description>工信部最新数据显示，中国AI芯片自给率已达35%，较2025年的22%大幅提升。华为昇腾、壁仞科技、寒武纪三家合计占国内市场份额的60%。</description>
     <source>工信部</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_ab12cd34ef56.html</guid>
   </item>
   <item>
@@ -28,7 +108,7 @@
     <link>https://www.xinhuanet.com/sports/2026-05/13/c_1213457000.htm</link>
     <description>北京市宣布将于6月举办全球首个人形机器人马拉松比赛，全程10公里，宇树、小米、智元等20家企业报名参赛，考验机器人续航和运动稳定性。</description>
     <source>新华社</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.xinhuanet.com/sports/2026-05/13/c_1213457000.htm</guid>
   </item>
   <item>
@@ -36,7 +116,7 @@
     <link>https://x.com/sama/status/1789500000000000000</link>
     <description>Sam Altman在社交媒体确认GPT-6已开始训练，预计需要&apos;数月&apos;时间。暗示新模型将在推理、多模态和Agent能力上实现质的飞跃。</description>
     <source>Sam Altman X</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://x.com/sama/status/1789500000000000000</guid>
   </item>
   <item>
@@ -44,7 +124,7 @@
     <link>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2345</link>
     <description>欧盟委员会宣布从2027年1月起，所有在欧盟境内发布的AI生成内容（文字、图片、视频、音频）必须嵌入C2PA标准数字水印，违者最高罚款全球营收6%。</description>
     <source>European Commission</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2345</guid>
   </item>
   <item>
@@ -52,7 +132,7 @@
     <link>https://www.anthropic.com/news/claude-4-5-sonnet</link>
     <description>Anthropic发布Claude 4.5 Sonnet，编程能力进一步提升，SWE-bench得分达65%，新增多文件重构和跨仓库代码理解能力。</description>
     <source>Anthropic Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.anthropic.com/news/claude-4-5-sonnet</guid>
   </item>
   <item>
@@ -60,7 +140,7 @@
     <link>https://36kr.com/p/3267890123456880</link>
     <description>字节跳动内部数据显示豆包大模型全球日活用户突破5亿，超越ChatGPT成为日活最高的AI应用，主要得益于中国市场和东南亚扩张。</description>
     <source>36氪</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://36kr.com/p/3267890123456880</guid>
   </item>
   <item>
@@ -68,7 +148,7 @@
     <link>https://bjnews.bjd.com.cn/2026/05/13/123456.html</link>
     <description>北京亦庄经开区全面开放全无人驾驶商业运营，滴滴、百度、小马智行三家获牌，市民可用App呼叫无人出租车。</description>
     <source>北京日报</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://bjnews.bjd.com.cn/2026/05/13/123456.html</guid>
   </item>
   <item>
@@ -76,7 +156,7 @@
     <link>https://blogs.nvidia.com/blog/rtx-6090/</link>
     <description>NVIDIA发布消费级旗舰显卡RTX 6090，AI算力达120 TFLOPS(FP16)，支持本地运行70B大模型，售价$1999。</description>
     <source>NVIDIA Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://blogs.nvidia.com/blog/rtx-6090/</guid>
   </item>
   <item>
@@ -84,7 +164,7 @@
     <link>https://waymo.com/blog/2026/05/100-million-miles/</link>
     <description>Waymo宣布无人驾驶车累计自主行驶里程突破1亿英里(1.6亿公里)，有责事故率仅为人类驾驶的1/10。</description>
     <source>Waymo Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://waymo.com/blog/2026/05/100-million-miles/</guid>
   </item>
   <item>
@@ -92,7 +172,7 @@
     <link>https://www.corl2026.org/news/submission-record</link>
     <description>机器人学习顶会CoRL 2026投稿量较去年暴涨3倍达6000篇，具身智能成为AI领域最热门研究方向，会议被迫扩容至万人规模。</description>
     <source>CoRL 2026</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.corl2026.org/news/submission-record</guid>
   </item>
   <item>
@@ -100,7 +180,7 @@
     <link>https://macropolo.org/ai-talent-tracker-2026/</link>
     <description>MacroPolo发布2026年全球AI人才报告，美国仍以38%占比领先，中国从2024年的12%飙升至25%，AI人才&apos;回流潮&apos;加速。</description>
     <source>MacroPolo</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://macropolo.org/ai-talent-tracker-2026/</guid>
   </item>
   <item>
@@ -108,7 +188,7 @@
     <link>https://news.lenovo.com/pressroom/press-releases/ai-pc-neural-processing-2026/</link>
     <description>联想发布搭载独立NPU(神经处理单元)的AI PC新品，支持本地运行14B大模型，首批产品月销突破100万台。</description>
     <source>联想</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://news.lenovo.com/pressroom/press-releases/ai-pc-neural-processing-2026/</guid>
   </item>
   <item>
@@ -116,7 +196,7 @@
     <link>https://www.theverge.com/2026/5/13/ai-image-generation-showdown</link>
     <description>The Verge发布2026年AI绘画工具全面对比评测，DALL-E 4在文字渲染上领先，Midjourney V7在艺术质感上最佳，SD4在开放性上胜出。</description>
     <source>The Verge</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.theverge.com/2026/5/13/ai-image-generation-showdown</guid>
   </item>
   <item>
@@ -124,7 +204,7 @@
     <link>https://economicgraph.linkedin.com/blog/ai-jobs-2026</link>
     <description>LinkedIn发布2026全球劳动力报告，科技行业裁员30万但AI相关新增岗位80万，净增50万就业，但技能错配问题突出。</description>
     <source>LinkedIn</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://economicgraph.linkedin.com/blog/ai-jobs-2026</guid>
   </item>
   <item>
@@ -132,7 +212,7 @@
     <link>https://bjnews.bjd.com.cn/2026/05/13/123457.html</link>
     <description>北京高级别自动驾驶示范区扩展至600平方公里，覆盖500万人口，支持Robotaxi、无人配送、无人环卫等全场景应用。</description>
     <source>北京日报</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://bjnews.bjd.com.cn/2026/05/13/123457.html</guid>
   </item>
   <item>
@@ -140,7 +220,7 @@
     <link>https://www.wsj.com/business/media/openai-news-corp-1-billion-license-2026</link>
     <description>OpenAI与新闻集团(News Corp)签署每年10亿美元的内容授权协议，覆盖《华尔街日报》《泰晤士报》等媒体。标志着AI训练数据从&apos;免费抓取&apos;走向&apos;付费授权&apos;新时代。</description>
     <source>华尔街日报</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.wsj.com/business/media/openai-news-corp-1-billion-license-2026</guid>
   </item>
   <item>
@@ -148,7 +228,7 @@
     <link>https://asia.nikkei.com/Business/Tesla-Optimus-Toyota-order-500-robots</link>
     <description>特斯拉首次获得人形机器人外部订单——丰田汽车订购500台Optimus Gen 3用于其得州工厂。马斯克称Optimus订单已排至2028年。</description>
     <source>Nikkei Asia</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://asia.nikkei.com/Business/Tesla-Optimus-Toyota-order-500-robots</guid>
   </item>
   <item>
@@ -156,7 +236,7 @@
     <link>https://www.thetimes.co.uk/article/demis-hassabis-agi-five-years-deepmind</link>
     <description>DeepMind CEO Demis Hassabis在接受专访时大胆预言AGI将在5年内（2031年前）实现，并透露DeepMind正在开发&apos;世界模型&apos;作为通往AGI的关键路径。</description>
     <source>The Times</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.thetimes.co.uk/article/demis-hassabis-agi-five-years-deepmind</guid>
   </item>
   <item>
@@ -164,7 +244,7 @@
     <link>https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/</link>
     <description>G7峰会未能就AI全球治理达成共同框架，美欧在监管严格程度上分歧严重。分析认为AI监管&apos;碎片化&apos;将增加企业合规成本并阻碍AI发展。</description>
     <source>Reuters</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/</guid>
   </item>
   <item>
@@ -172,7 +252,7 @@
     <link>https://www.canva.com/newsroom/news/magic-studio-3/</link>
     <description>Canva发布Magic Studio 3.0，可通过一句话生成完整的品牌VI（Logo、配色、字体、宣传物料），大幅降低设计门槛。</description>
     <source>Canva Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.canva.com/newsroom/news/magic-studio-3/</guid>
   </item>
   <item>
@@ -180,7 +260,7 @@
     <link>https://deepmind.google/blog/graphcast-3/</link>
     <description>DeepMind发布GraphCast 3天气预测模型，10天天气预报准确率超过传统数值模型，极端天气预警提前量从3天延长至7天。</description>
     <source>DeepMind Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://deepmind.google/blog/graphcast-3/</guid>
   </item>
   <item>
@@ -188,7 +268,7 @@
     <link>https://map.baidu.com/ai-navigation-2026</link>
     <description>百度地图全面升级AI导航，基于大模型实时理解路况并给出&apos;前面堵车建议买杯咖啡等10分钟&apos;这样的类人化建议。</description>
     <source>百度地图</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://map.baidu.com/ai-navigation-2026</guid>
   </item>
   <item>
@@ -196,7 +276,7 @@
     <link>https://www.microsoft.com/en-us/research/project/vasa-2/</link>
     <description>微软研究院发布VASA-2，仅需一张照片和一段音频即可生成超真实的说话视频，唇形同步、表情和头部动作均自然流畅。</description>
     <source>Microsoft Research</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.microsoft.com/en-us/research/project/vasa-2/</guid>
   </item>
   <item>
@@ -204,7 +284,7 @@
     <link>https://www.iresearch.cn/report/ai-foundation-model-2026.html</link>
     <description>艾瑞咨询报告显示中国AI大模型市场CR5（前五集中度）从2025年的45%提升至2026年的72%，头部效应显现，中小模型厂商面临淘汰。</description>
     <source>艾瑞咨询</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.iresearch.cn/report/ai-foundation-model-2026.html</guid>
   </item>
   <item>
@@ -212,7 +292,7 @@
     <link>https://ai.tencent.com/ailab/zh/news/swan-biped-2026</link>
     <description>腾讯Robotics X发布&apos;天鹅&apos;双足机器人，采用被动动力学设计，行走能效比(COT)达到0.25，超越人类的0.3，一次充电可走50公里。</description>
     <source>腾讯AI Lab</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://ai.tencent.com/ailab/zh/news/swan-biped-2026</guid>
   </item>
   <item>
@@ -220,7 +300,7 @@
     <link>https://www.bloomberg.com/news/articles/2026-05-12/databricks-10-billion-funding</link>
     <description>Databricks完成100亿美元融资，估值达2000亿美元。CEO Ali Ghodsi表示AI正从&apos;模型竞赛&apos;转向&apos;数据竞赛&apos;。</description>
     <source>Bloomberg</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.bloomberg.com/news/articles/2026-05-12/databricks-10-billion-funding</guid>
   </item>
   <item>
@@ -228,7 +308,7 @@
     <link>https://www.defense.gov/News/Releases/Release/Article/ai-military-policy-2026/</link>
     <description>美国国防部发布AI军事应用政策，明确禁止AI做出自主开火决策，要求&apos;人在回路中&apos;(human-in-the-loop)原则。</description>
     <source>DoD</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.defense.gov/News/Releases/Release/Article/ai-military-policy-2026/</guid>
   </item>
   <item>
@@ -236,7 +316,7 @@
     <link>https://blog.crewai.com/enterprise-2026</link>
     <description>CrewAI发布企业版多Agent框架，支持角色定义、任务编排、Agent间通信，已获300+企业付费客户。</description>
     <source>CrewAI Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://blog.crewai.com/enterprise-2026</guid>
   </item>
   <item>
@@ -244,7 +324,7 @@
     <link>https://github.blog/2026-05-11-octoverse-ai-code-report/</link>
     <description>GitHub发布2026 Octoverse报告，显示平台上41%的新增代码由AI辅助生成，较2025年的27%大幅提升。Python取代JavaScript成为AI时代第一编程语言。</description>
     <source>GitHub Octoverse</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://github.blog/2026-05-11-octoverse-ai-code-report/</guid>
   </item>
   <item>
@@ -252,7 +332,7 @@
     <link>https://www.figure.ai/blog/30-days-zero-incident</link>
     <description>Figure AI宣布Figure 02人形机器人在宝马工厂实现连续30天24小时运行零事故，累计完成1.2万次焊接操作，可靠性达到工业级标准。</description>
     <source>Figure AI Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.figure.ai/blog/30-days-zero-incident</guid>
   </item>
   <item>
@@ -260,7 +340,7 @@
     <link>https://www.thepaper.cn/newsDetail_forward_27001234</link>
     <description>DeepSeek创始人梁文锋在深圳AI大会上罕见公开露面并发表演讲，强调开源是打破AI垄断的关键，宣布DeepSeek将持续开源所有模型。</description>
     <source>澎湃新闻</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.thepaper.cn/newsDetail_forward_27001234</guid>
   </item>
   <item>
@@ -268,7 +348,7 @@
     <link>https://asia.nikkei.com/Business/SoftBank-Arm-cambrian-ai-processor</link>
     <description>软银通过ARM秘密研发代号&apos;寒武纪&apos;的AI处理器，采用3nm工艺和全新神经计算架构，目标2028年量产对标NVIDIA Rubin。</description>
     <source>日经新闻</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://asia.nikkei.com/Business/SoftBank-Arm-cambrian-ai-processor</guid>
   </item>
   <item>
@@ -276,7 +356,7 @@
     <link>https://www.nature.com/articles/s41591-026-00789-0</link>
     <description>由AI从头设计的抗癌药物分子ISB-2026进入I期临床试验，成为首个由AI完全设计并进入人体的抗癌药物。</description>
     <source>Nature Medicine</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.nature.com/articles/s41591-026-00789-0</guid>
   </item>
   <item>
@@ -284,7 +364,7 @@
     <link>https://bostondynamics.com/blog/atlas-construction-pilot/</link>
     <description>波士顿动力发布Atlas在建筑工地试点视频，展示搬运建材、安装螺栓等任务，标志着人形机器人进入建筑业。</description>
     <source>Boston Dynamics</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://bostondynamics.com/blog/atlas-construction-pilot/</guid>
   </item>
   <item>
@@ -292,7 +372,7 @@
     <link>https://openai.com/blog/gpt-store-revenue-sharing</link>
     <description>OpenAI向GPT Store开发者推出收入分成计划，按GPT使用量分配收益，开发者最高可获70%。此举旨在构建类似App Store的AI生态。</description>
     <source>OpenAI Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://openai.com/blog/gpt-store-revenue-sharing</guid>
   </item>
   <item>
@@ -300,7 +380,7 @@
     <link>https://www.sac.gov.cn/xw/bzhdt/202605/t20260511_123456.html</link>
     <description>中国首个AI大模型国家标准获批准，涵盖数据安全、内容合规、用户隐私等六个维度，2027年1月1日起实施。</description>
     <source>国家标准委</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.sac.gov.cn/xw/bzhdt/202605/t20260511_123456.html</guid>
   </item>
   <item>
@@ -308,7 +388,7 @@
     <link>https://pika.art/blog/v2</link>
     <description>Pika发布2.0版本，支持通过自然语言指令修改视频中的任意元素（如替换人物、更改天气、调整色调），编辑效果达到专业级。</description>
     <source>Pika Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://pika.art/blog/v2</guid>
   </item>
   <item>
@@ -316,7 +396,7 @@
     <link>https://www.holoniq.com/notes/ai-education-market-2026</link>
     <description>HolonIQ报告显示全球AI教育市场2026年规模达500亿美元，中国和美国各占30%，个性化AI辅导是最大细分市场。</description>
     <source>HolonIQ</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.holoniq.com/notes/ai-education-market-2026</guid>
   </item>
   <item>
@@ -324,88 +404,8 @@
     <link>https://www.theregister.com/2026/05/11/graphcore-colossus-mk3/</link>
     <description>在被软银收购后，英国AI芯片公司Graphcore发布Colossus MK3 IPU，采用晶圆级集成技术，单芯片AI算力达1 PFLOPS。</description>
     <source>The Register</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
+    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
     <guid>https://www.theregister.com/2026/05/11/graphcore-colossus-mk3/</guid>
-  </item>
-  <item>
-    <title>量子AI突破：谷歌Willow量子芯片加速机器学习训练100倍</title>
-    <link>https://research.google/blog/willow-quantum-machine-learning/</link>
-    <description>Google Research利用Willow量子芯片实现了特定机器学习任务的100倍加速，为量子AI实用化铺平道路。</description>
-    <source>Google Research</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://research.google/blog/willow-quantum-machine-learning/</guid>
-  </item>
-  <item>
-    <title>Character.AI创始人Noam Shazeer重返Google：人才回流潮继续</title>
-    <link>https://www.cnbc.com/2026/05/11/noam-shazeer-returns-google.html</link>
-    <description>Character.AI联合创始人Noam Shazeer重返Google DeepMind，负责下一代对话AI研发。Character.AI以27亿美元被Google收购。</description>
-    <source>CNBC</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://www.cnbc.com/2026/05/11/noam-shazeer-returns-google.html</guid>
-  </item>
-  <item>
-    <title>三星发布Exynos 2600 AI手机芯片：端侧支持运行10B大模型</title>
-    <link>https://semiconductor.samsung.com/news/exynos-2600-ai/</link>
-    <description>三星发布Exynos 2600，内置NPU算力达80 TOPS，支持在手机上离线运行10B参数大模型，用于实时翻译和AI摄影。</description>
-    <source>三星半导体</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://semiconductor.samsung.com/news/exynos-2600-ai/</guid>
-  </item>
-  <item>
-    <title>谷歌DeepMind与哈佛联合：AI在数学领域发现新拓扑不变量</title>
-    <link>https://www.nature.com/articles/s41586-026-00890-3</link>
-    <description>DeepMind与哈佛数学系合作，AI系统发现了拓扑学中一个全新的不变量，人类数学家将其命名为&apos;AI不变量&apos;。标志着AI在纯数学领域做出原创性贡献。</description>
-    <source>Nature</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://www.nature.com/articles/s41586-026-00890-3</guid>
-  </item>
-  <item>
-    <title>傅利叶智能GR-2获美国FDA医疗器械认证：全球首款&apos;临床级&apos;人形康复机器人</title>
-    <link>https://www.fda.gov/medical-devices/recently-approved-devices/fourier-gr-2</link>
-    <description>傅利叶智能GR-2获FDA 510(k)认证，成为全球首款获批用于临床康复治疗的人形机器人，可用于中风患者的步态训练和上肢康复。</description>
-    <source>FDA</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://www.fda.gov/medical-devices/recently-approved-devices/fourier-gr-2</guid>
-  </item>
-  <item>
-    <title>AI芯片价格战爆发：AMD MI400降价40%正面挑战NVIDIA</title>
-    <link>https://www.tomshardware.com/news/amd-mi400-price-cut-nvidia</link>
-    <description>AMD宣布MI400系列AI GPU全线降价40%，并承诺提供CUDA兼容层，直接挑战NVIDIA在AI训练市场的主导地位。分析师预计AI芯片利润将大幅收窄。</description>
-    <source>Tom&apos;s Hardware</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://www.tomshardware.com/news/amd-mi400-price-cut-nvidia</guid>
-  </item>
-  <item>
-    <title>零一万物发布Yi-3.0：李开复称&apos;中文开源最强，全面对标GPT-5&apos;</title>
-    <link>https://www.01.ai/blog/yi-3-2026</link>
-    <description>李开复创办的零一万物发布Yi-3.0大模型，340B参数MoE架构，中文评测全面超越GPT-5，数学推理能力尤其突出，同步开源。</description>
-    <source>零一万物</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://www.01.ai/blog/yi-3-2026</guid>
-  </item>
-  <item>
-    <title>亚马逊AWS发布自研AI训练芯片Trainium 3：性能超H200 30%</title>
-    <link>https://aws.amazon.com/blogs/machine-learning/trainium-3/</link>
-    <description>AWS发布Trainium 3，自研AI训练芯片，宣称在Llama 4训练性能上超越NVIDIA H200 30%，成本降低40%。</description>
-    <source>AWS Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://aws.amazon.com/blogs/machine-learning/trainium-3/</guid>
-  </item>
-  <item>
-    <title>DeepMind开源Genie 3世界模型：可从单张图片生成交互式3D世界</title>
-    <link>https://deepmind.google/blog/genie-3-open-source/</link>
-    <description>DeepMind开源Genie 3，可通过单张图片生成可交互的3D虚拟世界，为游戏、模拟训练和机器人学习提供基础平台。</description>
-    <source>DeepMind Blog</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://deepmind.google/blog/genie-3-open-source/</guid>
-  </item>
-  <item>
-    <title>苹果自研AI服务器芯片&apos;Project ACDC&apos;曝光：台积电3nm工艺</title>
-    <link>https://www.macrumors.com/2026/05/10/apple-ai-server-chip-acdc/</link>
-    <description>供应链消息称Apple正在开发代号为&apos;ACDC&apos;的AI服务器芯片，采用台积电3nm工艺，专为Apple Intelligence云端推理设计。</description>
-    <source>MacRumors</source>
-    <pubDate>Wed, 13 May 2026 08:11:14 GMT</pubDate>
-    <guid>https://www.macrumors.com/2026/05/10/apple-ai-server-chip-acdc/</guid>
   </item>
 </channel>
 </rss>
