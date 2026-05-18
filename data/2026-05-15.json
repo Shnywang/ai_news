@@ -1,0 +1,362 @@
+{
+  "2026-05-15": {
+    "update_time": "2026-05-15T10:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "OpenAI launches ChatGPT for personal finance, will let you connect bank accounts",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+        "summary": "ChatGPT个人理财功能上线可连银行账户，AI入金融。",
+        "category": "政策监管",
+        "rating": 10
+      },
+      {
+        "title": "Musk v. Altman week 3: Elon Musk and Sam Altman traded blows over each other’s credibility. Now the jury will pick a side.",
+        "source": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
+        "summary": "Altman庭审被迫面对说谎指控，案件进入关键阶段。",
+        "category": "大模型",
+        "rating": 10
+      },
+      {
+        "title": "Tesla reveals two Robotaxi crashes involving teleoperators",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/15/tesla-reveals-two-robotaxi-crashes-involving-teleoperators/",
+        "summary": "特斯拉Robotaxi事故涉远程操作员安全性质疑。",
+        "category": "具身智能",
+        "rating": 8
+      },
+      {
+        "title": "Runway started by helping filmmakers — now it wants to beat Google at AI",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+        "summary": "Runway从电影起步挑战Google AI领先地位。",
+        "category": "应用落地",
+        "rating": 7
+      },
+      {
+        "title": "The Download: China’s AI drama factory and the WHO’s missing health targets",
+        "source": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/2026/05/15/1137341/the-download-china-short-drama-ai-who-health-targets/",
+        "summary": "中国短剧成AI内容机器，制作工业化。",
+        "category": "大模型",
+        "rating": 7
+      },
+      {
+        "title": "US orders travelers on Air Force One to throw away gifts, pins, and burner phones after China trip",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/15/us-orders-travelers-on-air-force-one-to-throw-away-gifts-pins-and-burner-phones-after-china-trip/",
+        "summary": "中国短剧成AI内容机器，制作工业化。",
+        "category": "大模型",
+        "rating": 7
+      },
+      {
+        "title": "Android is getting a big AI overhaul in 2026",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/gadgets/2026/05/google-says-android-is-getting-a-big-ai-overhaul-in-2026/",
+        "summary": "Android 2026大规模AI改造，系统级智能全面升级。",
+        "category": "应用落地",
+        "rating": 7
+      },
+      {
+        "title": "Silicon Valley’s vacationland needs a new energy provider just as AI is driving prices up",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/",
+        "summary": "硅谷度假地需新能源供应商，AI推高能源价。",
+        "category": "应用落地",
+        "rating": 5
+      }
+    ],
+    "raw_articles": [
+      {
+        "title": "Silicon Valley’s vacationland needs a new energy provider just as AI is driving prices up",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/",
+        "summary": "硅谷度假地需新能源供应商，AI推高能源价。",
+        "category": "应用落地"
+      },
+      {
+        "title": "OpenAI launches ChatGPT for personal finance, will let you connect bank accounts",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+        "summary": "ChatGPT个人理财功能上线可连银行账户，AI入金融。",
+        "category": "政策监管"
+      },
+      {
+        "title": "Runway started by helping filmmakers — now it wants to beat Google at AI",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+        "summary": "Runway从电影起步挑战Google AI领先地位。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Osaurus brings both local and cloud AI models to your Mac",
+        "source": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/",
+        "summary": "Osaurus为Mac带来本地+云端AI模型自由切换。",
+        "category": "大模型"
+      },
+      {
+        "title": "Musk v. Altman week 3: Elon Musk and Sam Altman traded blows over each other’s credibility. Now the jury will pick a side.",
+        "source": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
+        "summary": "Altman庭审被迫面对说谎指控，案件进入关键阶段。",
+        "category": "大模型"
+      },
+      {
+        "title": "The Download: China’s AI drama factory and the WHO’s missing health targets",
+        "source": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/2026/05/15/1137341/the-download-china-short-drama-ai-who-health-targets/",
+        "summary": "中国短剧成AI内容机器，制作工业化。",
+        "category": "大模型"
+      },
+      {
+        "title": "The world is on track to miss its health targets",
+        "source": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/2026/05/15/1137270/the-world-is-on-track-to-miss-its-health-targets/",
+        "summary": "全球或无法实现健康目标，AI医疗潜力局限。",
+        "category": "大模型"
+      },
+      {
+        "title": "How Chinese short dramas became AI content machines",
+        "source": "MIT Tech Review",
+        "url": "https://www.technologyreview.com/2026/05/15/1137326/chinese-short-dramas-ai/",
+        "summary": "引发行业广泛关注。",
+        "category": "大模型"
+      },
+      {
+        "title": "General Catalyst posted VC rage bait and it worked, especially on a16z",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/15/general-catalyst-posted-vc-rage-bait-and-it-worked-especially-on-a16z/",
+        "summary": "General Catalyst VC愤怒策略引a16z反响。",
+        "category": "大模型"
+      },
+      {
+        "title": "A hotel check-in system left a million passports and driver’s licenses open for anyone to see",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/",
+        "summary": "酒店漏洞百万护照驾照暴露数据安全。",
+        "category": "大模型"
+      },
+      {
+        "title": "Tesla reveals two Robotaxi crashes involving teleoperators",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/15/tesla-reveals-two-robotaxi-crashes-involving-teleoperators/",
+        "summary": "特斯拉Robotaxi事故涉远程操作员安全性质疑。",
+        "category": "具身智能"
+      },
+      {
+        "title": "US orders travelers on Air Force One to throw away gifts, pins, and burner phones after China trip",
+        "source": "TechCrunch main",
+        "url": "https://techcrunch.com/2026/05/15/us-orders-travelers-on-air-force-one-to-throw-away-gifts-pins-and-burner-phones-after-china-trip/",
+        "summary": "中国短剧成AI内容机器，制作工业化。",
+        "category": "大模型"
+      },
+      {
+        "title": "Android is getting a big AI overhaul in 2026",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/gadgets/2026/05/google-says-android-is-getting-a-big-ai-overhaul-in-2026/",
+        "summary": "Android 2026大规模AI改造，系统级智能全面升级。",
+        "category": "应用落地"
+      },
+      {
+        "title": "Amazon employees are \"tokenmaxxing\" due to pressure to use AI tools",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/",
+        "summary": "亚马逊员工'tokenmaxxing'压力，企业AI应用引讨论。",
+        "category": "大模型"
+      },
+      {
+        "title": "Data center guzzled 30 million gallons of water, and nobody noticed for months",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/tech-policy/2026/05/data-center-used-30-million-gallons-of-water-without-initially-paying/",
+        "summary": "数据中心月耗3000万加仑水未被发现，水资源问题凸显。",
+        "category": "AI芯片"
+      },
+      {
+        "title": "The new Wild West of AI kids’ toys",
+        "source": "Ars Technica AI",
+        "url": "https://arstechnica.com/ai/2026/05/the-new-wild-west-of-ai-kids-toys/",
+        "summary": "AI儿童玩具新'狂野西部'，监管滞后隐私安全担忧。",
+        "category": "应用落地"
+      }
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "OpenAI",
+          "field": "大模型/Agent",
+          "route": "技术迭代",
+          "funding": "",
+          "verdict": "稳健"
+        },
+        {
+          "name": "Google",
+          "field": "大模型/操作系统",
+          "route": "技术迭代",
+          "funding": "",
+          "verdict": "稳健"
+        },
+        {
+          "name": "Runway",
+          "field": "AI视频",
+          "route": "技术迭代",
+          "funding": "",
+          "verdict": "稳健"
+        },
+        {
+          "name": "Osaurus",
+          "field": "AI开发工具",
+          "route": "技术迭代",
+          "funding": "",
+          "verdict": "稳健"
+        },
+        {
+          "name": "Tesla",
+          "field": "自动驾驶",
+          "route": "技术迭代",
+          "funding": "",
+          "verdict": "稳健"
+        }
+      ],
+      "trend": "AI芯片赛道持续火爆，Cerebras IPO开创新局。大模型领域OpenAI和Anthropic同时面临组织调整和版权挑战。自动驾驶和机器人方向融资活跃，但特斯拉Robotaxi事故提醒行业安全仍是底线。"
+    },
+    "pm_board": {
+      "insights": [
+        {
+          "title": "监管不确定性增加产品决策难度",
+          "content": "Musk诉Altman庭审进入关键阶段，AI行业监管框架或将重塑。产品经理需关注政策变动对产品路线图的影响，特别是在内容审核和数据合规方面。",
+          "url": ""
+        },
+        {
+          "title": "学术内容质量管控趋势",
+          "content": "arXiv禁止AI生成内容提交，预示着内容质量管控将成为行业标配。产品设计需考虑内容来源透明度和可信度机制。",
+          "url": ""
+        },
+        {
+          "title": "AI安全红线持续下移",
+          "content": "从医疗AI到儿童玩具，安全红线不断下移。产品设计必须将安全性作为核心考量，而非事后补救。",
+          "url": ""
+        },
+        {
+          "title": "系统级AI成为差异化关键",
+          "content": "苹果Siri重塑和Android AI改造表明，系统级智能能力正成为消费产品的核心差异化因素。",
+          "url": ""
+        }
+      ],
+      "focus": [
+        "AI监管政策变化",
+        "用户隐私与数据安全",
+        "系统级AI集成",
+        "内容质量与可信度"
+      ]
+    },
+    "algo_board": {
+      "insights": [
+        {
+          "title": "多模态AI持续进化",
+          "content": "从Runway的视频生成到AI短剧工业化，多模态AI正在改变内容创作流程。",
+          "url": ""
+        }
+      ],
+      "tech_radar": [
+        {
+          "direction": "专用AI芯片设计",
+          "status": "快速迭代",
+          "advice": "关注Cerebras等新兴架构"
+        },
+        {
+          "direction": "Agentic AI框架",
+          "status": "技术验证",
+          "advice": "跟进OpenAI和Anthropic的Agent产品路线"
+        },
+        {
+          "direction": "本地部署大模型",
+          "status": "快速迭代",
+          "advice": "Osaurus等工具降低本地AI门槛"
+        },
+        {
+          "direction": "AI编程辅助",
+          "status": "已实现",
+          "advice": "Codex/Claude Code已成开发标配"
+        }
+      ],
+      "focus": [
+        "模型效率优化",
+        "多模态融合",
+        "Agent架构设计",
+        "AI安全对齐"
+      ]
+    },
+    "projmgr_board": {
+      "insights": [
+        {
+          "title": "AI基础设施资源约束加剧",
+          "content": "AI基础设施资源约束加剧，项目需关注可持续性。"
+        },
+        {
+          "title": "AI项目风险管理的必要性",
+          "content": "从特斯拉Robotaxi事故到ChatGPT安全隐患，AI项目需要在速度和安全之间找到平衡。",
+          "url": ""
+        }
+      ],
+      "focus": [
+        "跨部门AI协作流程",
+        "项目风险与安全评估",
+        "资源可持续性规划",
+        "团队稳定性管理"
+      ]
+    },
+    "action_items": {
+      "tech_selection": [
+        "关注Cerebras等AI芯片新架构，评估专用芯片vs通用GPU的TCO",
+        "跟进Claude Code和OpenAI Codex的API更新，评估团队开发效率提升空间",
+        "评估本地部署AI方案的可行性，特别是Osaurus等Mac工具链"
+      ],
+      "track_judgment": [
+        "AI监管政策变化可能重塑产品合规要求，建议密切关注庭审结果",
+        "arXiv内容管控趋势可能扩展到更多学术和商业内容平台",
+        "系统级AI集成（Siri/Android）正成为消费电子差异化关键"
+      ],
+      "watch_list": [
+        "OpenAI组织调整后续影响",
+        "特斯拉Robotaxi安全事件处理",
+        "中国AI短剧工业化模式",
+        "AI儿童玩具监管进展"
+      ]
+    },
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "AI Agent工具链持续完善",
+          "content": "多个AI辅助开发工具发布更新，Agent开发工具链日趋成熟。",
+          "url": ""
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "Osaurus - Mac本地AI开发环境",
+          "content": "支持本地和云端AI模型的Mac开发工具，为Agent开发提供灵活的部署选项。",
+          "url": ""
+        },
+        {
+          "title": "Runway AI视频工具",
+          "content": "Runway从电影制作工具发展为通用AI平台，视频生成能力值得Agent开发者关注。",
+          "url": ""
+        }
+      ],
+      "community": [
+        {
+          "title": "AI开发者工具生态快速增长",
+          "content": "从Clawdmeter到Osaurus，AI开发者工具生态正在快速增长，社区贡献度提升。",
+          "url": ""
+        },
+        {
+          "title": "开源AI安全讨论升温",
+          "content": "从Meta员工抗议到Anthropic版权争议，AI安全话题在开发者社区引发广泛讨论。",
+          "url": ""
+        }
+      ]
+    }
+  }
+}

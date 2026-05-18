@@ -5,14 +5,382 @@
   <link>https://shnywang.github.io/ai_news/site/index.html</link>
   <description>多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 14 May 2026 01:53:27 GMT</lastBuildDate>
+  <lastBuildDate>Mon, 18 May 2026 02:05:26 GMT</lastBuildDate>
   <atom:link href="https://shnywang.github.io/ai_news/site/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Why trust is a big question at the Elon Musk-OpenAI trial</title>
+    <link>https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/</link>
+    <description>Musk与OpenAI庭审信任成核心争议点。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/</guid>
+  </item>
+  <item>
+    <title>OpenAI feels “burned” by Apple’s crappy ChatGPT integration, insiders say</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/openai-feels-burned-by-apples-crappy-chatgpt-integration-insiders-say/</link>
+    <description>OpenAI不满Apple的ChatGPT集成效果，双方合作出现裂痕。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/openai-feels-burned-by-apples-crappy-chatgpt-integration-insiders-say/</guid>
+  </item>
+  <item>
+    <title>Desperate Trump taps &quot;Tim Apple,&quot; Jensen Huang, Elon Musk to attend Xi summit</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/</link>
+    <description>特朗普邀苹果CEO、黄仁勋、马斯克参加中国峰会。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/</guid>
+  </item>
+  <item>
+    <title>For Eclipse, the $2.5B Cerebras win is just the start of realizing its physical-world thesis</title>
+    <link>https://techcrunch.com/2026/05/17/for-eclipse-the-2-5b-cerebras-win-is-just-the-start-of-realizing-its-physical-world-thesis/</link>
+    <description>Cerebras 55亿美元融资股价飙升108%，2026首场重磅IPO。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/17/for-eclipse-the-2-5b-cerebras-win-is-just-the-start-of-realizing-its-physical-world-thesis/</guid>
+  </item>
+  <item>
+    <title>Anthropic’s $1.5B copyright settlement is getting messy as judge delays approval</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/authors-fight-for-higher-payouts-from-anthropics-1-5b-copyright-settlement/</link>
+    <description>Anthropic 15亿美元版权和解案遇阻，法官推迟批准，作者要求更高赔偿。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/authors-fight-for-higher-payouts-from-anthropics-1-5b-copyright-settlement/</guid>
+  </item>
+  <item>
+    <title>Claude Code&apos;s product lead talks usage limits, transparency, and the &quot;lean harness&quot;</title>
+    <link>https://arstechnica.com/ai/2026/05/claude-codes-product-lead-talks-usage-limits-transparency-and-the-lean-harness/</link>
+    <description>Anthropic Claude Code产品负责人谈使用限制、透明度与&apos;轻量&apos;理念。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/ai/2026/05/claude-codes-product-lead-talks-usage-limits-transparency-and-the-lean-harness/</guid>
+  </item>
+  <item>
+    <title>Apple’s Siri revamp could include auto-deleting chats</title>
+    <link>https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/</link>
+    <description>苹果重塑Siri或自动删聊天记录，提升隐私保护。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/</guid>
+  </item>
+  <item>
+    <title>Send the arXiv AI-generated slop, get a yearlong vacation from submissions</title>
+    <link>https://arstechnica.com/science/2026/05/preprint-server-arxiv-will-ban-submitters-of-ai-generated-hallucinations/</link>
+    <description>arXiv宣布禁止AI生成内容提交，违规者一年禁令维护学术质量。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/science/2026/05/preprint-server-arxiv-will-ban-submitters-of-ai-generated-hallucinations/</guid>
+  </item>
+  <item>
+    <title>If you’re giving a commencement speech in 2026, maybe don’t mention AI</title>
+    <link>https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/</link>
+    <description>2026毕业典礼避谈AI，社会AI话题疲劳。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/</guid>
+  </item>
+  <item>
+    <title>TechCrunch Mobility: The AI skills arms race is coming for automotive</title>
+    <link>https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/</link>
+    <description>AI军备竞赛向汽车行业蔓延，自动驾驶竞争焦点。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/</guid>
+  </item>
+  <item>
+    <title>Marketing operating system Nectar Social raises $30M Series A led by Menlo</title>
+    <link>https://techcrunch.com/2026/05/16/marketing-operating-system-nectar-social-raises-30m-series-a-in-round-led-by-menlo/</link>
+    <description>Nectar Social获Menlo领投3000万A轮。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/16/marketing-operating-system-nectar-social-raises-30m-series-a-in-round-led-by-menlo/</guid>
+  </item>
+  <item>
+    <title>The US is betting on AI to catch insider trading in prediction markets</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/the-us-is-betting-on-ai-to-catch-insider-trading-in-prediction-markets/</link>
+    <description>美国利用AI技术分析预测市场数据捕捉内幕交易，AI金融监管新里程碑。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/the-us-is-betting-on-ai-to-catch-insider-trading-in-prediction-markets/</guid>
+  </item>
+  <item>
+    <title>Pennsylvanians use town hall meeting to rail against data center boom</title>
+    <link>https://arstechnica.com/ai/2026/05/pennsylvanians-use-town-hall-meeting-to-rail-against-data-center-boom/</link>
+    <description>宾州居民听证会集体反对数据中心建设热潮，能耗环境成焦点。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/ai/2026/05/pennsylvanians-use-town-hall-meeting-to-rail-against-data-center-boom/</guid>
+  </item>
+  <item>
+    <title>Energy supplier abandons Lake Tahoe residents to serve data centers</title>
+    <link>https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/</link>
+    <description>能源供应商放弃太浩湖居民供电数据中心，社区抗议升级。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/</guid>
+  </item>
+  <item>
+    <title>Your doctor’s AI notetaker may be making things up, Ontario audit finds</title>
+    <link>https://arstechnica.com/health/2026/05/your-doctors-ai-notetaker-may-be-making-things-up-ontario-audit-finds/</link>
+    <description>安大略审计发现医生AI笔记工具或编造内容，医疗AI准确性受关注。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/health/2026/05/your-doctors-ai-notetaker-may-be-making-things-up-ontario-audit-finds/</guid>
+  </item>
+  <item>
+    <title>AI invades Princeton, where 30% of students cheat—but peers won&apos;t snitch</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/ai-driven-cheating-widespread-even-at-elite-schools-like-princeton/</link>
+    <description>普林斯顿30%学生用AI作弊同学不举报，学术诚信挑战。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/ai-driven-cheating-widespread-even-at-elite-schools-like-princeton/</guid>
+  </item>
+  <item>
+    <title>OpenAI co-founder Greg Brockman takes charge of product strategy</title>
+    <link>https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/</link>
+    <description>Greg Brockman接管OpenAI产品战略，重大架构调整。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/</guid>
+  </item>
+  <item>
+    <title>The OpenAI trial wraps up, and the Musk founder machine keeps spinning</title>
+    <link>https://techcrunch.com/podcast/the-openai-trial-wraps-up-and-the-musk-founder-machine-keeps-spinning/</link>
+    <description>OpenAI庭审结束进入陪审团审议，Musk纷争持续。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/podcast/the-openai-trial-wraps-up-and-the-musk-founder-machine-keeps-spinning/</guid>
+  </item>
+  <item>
+    <title>Altman forced to confront claims at OpenAI trial that he&apos;s a prolific liar</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/</link>
+    <description>Altman庭审被迫面对说谎指控，案件进入关键阶段。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/</guid>
+  </item>
+  <item>
+    <title>$60B AI chip darling Cerebras almost died early on, burning $8M a month</title>
+    <link>https://techcrunch.com/2026/05/16/60b-ai-chip-darling-cerebras-almost-died-early-on-burning-8m-a-month/</link>
+    <description>Cerebras 55亿美元融资股价飙升108%，2026首场重磅IPO。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/16/60b-ai-chip-darling-cerebras-almost-died-early-on-burning-8m-a-month/</guid>
+  </item>
+  <item>
+    <title>Anthropic blames dystopian sci-fi for training AI models to act “evil”</title>
+    <link>https://arstechnica.com/ai/2026/05/anthropic-blames-dystopian-sci-fi-for-training-ai-models-to-act-evil/</link>
+    <description>Anthropic称反乌托邦科幻导致AI学会&apos;邪恶&apos;，训练数据来源引讨论。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/ai/2026/05/anthropic-blames-dystopian-sci-fi-for-training-ai-models-to-act-evil/</guid>
+  </item>
+  <item>
+    <title>Research repository ArXiv will ban authors for a year if they let AI do all the work</title>
+    <link>https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/</link>
+    <description>arXiv宣布禁止AI生成内容提交，违规者一年禁令维护学术质量。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/</guid>
+  </item>
+  <item>
+    <title>Rivian adds a new onboard AI assistant to its latest software update</title>
+    <link>https://arstechnica.com/cars/2026/05/rivian-adds-a-new-onboard-ai-assistant-to-its-latest-software-update/</link>
+    <description>Rivian更新添加车载AI助手提升自动驾驶体验。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/cars/2026/05/rivian-adds-a-new-onboard-ai-assistant-to-its-latest-software-update/</guid>
+  </item>
+  <item>
+    <title>Google&apos;s Android-powered laptops are called Googlebooks, and they&apos;re coming this year</title>
+    <link>https://arstechnica.com/gadgets/2026/05/googles-android-powered-laptops-are-called-googlebooks-and-theyre-coming-this-year/</link>
+    <description>谷歌Android笔记本&apos;Googlebooks&apos;今年上市，AI深度集成。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/gadgets/2026/05/googles-android-powered-laptops-are-called-googlebooks-and-theyre-coming-this-year/</guid>
+  </item>
+  <item>
+    <title>The haves and have nots of the AI gold rush</title>
+    <link>https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/</link>
+    <description>AI淘金潮资源鸿沟扩大，中小企业挑战严峻。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/</guid>
+  </item>
+  <item>
+    <title>The offline desk gadget that actually got me to sit up straight</title>
+    <link>https://techcrunch.com/2026/05/16/the-offline-desk-gadget-that-actually-got-me-to-sit-up-straight/</link>
+    <description>离线桌面小工具让你坐直。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/16/the-offline-desk-gadget-that-actually-got-me-to-sit-up-straight/</guid>
+  </item>
+  <item>
+    <title>Users turn to jailbreaking their older Kindles as Amazon ends support</title>
+    <link>https://techcrunch.com/2026/05/16/users-turn-to-jailbreaking-their-older-kindles-as-amazon-ends-support/</link>
+    <description>亚马逊员工&apos;tokenmaxxing&apos;压力，企业AI应用引讨论。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/16/users-turn-to-jailbreaking-their-older-kindles-as-amazon-ends-support/</guid>
+  </item>
+  <item>
+    <title>RJ Scaringe has raised more than $12B across three startups and investors still want more</title>
+    <link>https://techcrunch.com/2026/05/15/rj-scaringe-has-raised-more-than-12-billion-across-three-startups-and-investors-still-want-more/</link>
+    <description>RJ Scaringe三创融资超120亿。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/rj-scaringe-has-raised-more-than-12-billion-across-three-startups-and-investors-still-want-more/</guid>
+  </item>
+  <item>
+    <title>The newest AI boom pitch: Host a mini data center at your home</title>
+    <link>https://arstechnica.com/ai/2026/05/the-newest-ai-boom-pitch-host-a-mini-data-center-at-your-home/</link>
+    <description>AI新热点：家用微型数据中心，基础设施向家庭延伸。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/ai/2026/05/the-newest-ai-boom-pitch-host-a-mini-data-center-at-your-home/</guid>
+  </item>
+  <item>
+    <title>“Will I be OK?” Teen died after ChatGPT pushed deadly mix of drugs, lawsuit says</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/will-i-be-ok-teen-died-after-chatgpt-pushed-deadly-mix-of-drugs-lawsuit-says/</link>
+    <description>ChatGPT推荐危险药物致青少年死亡诉讼，AI医疗安全受关注。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/will-i-be-ok-teen-died-after-chatgpt-pushed-deadly-mix-of-drugs-lawsuit-says/</guid>
+  </item>
+  <item>
+    <title>OpenAI launches ChatGPT for personal finance, will let you connect bank accounts</title>
+    <link>https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/</link>
+    <description>ChatGPT个人理财功能上线可连银行账户，AI入金融。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/</guid>
+  </item>
+  <item>
+    <title>Musk v. Altman week 3: Elon Musk and Sam Altman traded blows over each other’s credibility. Now the jury will pick a side.</title>
+    <link>https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/</link>
+    <description>Altman庭审被迫面对说谎指控，案件进入关键阶段。</description>
+    <source>MIT Tech Review</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/</guid>
+  </item>
+  <item>
+    <title>Tesla reveals two Robotaxi crashes involving teleoperators</title>
+    <link>https://techcrunch.com/2026/05/15/tesla-reveals-two-robotaxi-crashes-involving-teleoperators/</link>
+    <description>特斯拉Robotaxi事故涉远程操作员安全性质疑。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/tesla-reveals-two-robotaxi-crashes-involving-teleoperators/</guid>
+  </item>
+  <item>
+    <title>Runway started by helping filmmakers — now it wants to beat Google at AI</title>
+    <link>https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/</link>
+    <description>Runway从电影起步挑战Google AI领先地位。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/</guid>
+  </item>
+  <item>
+    <title>The Download: China’s AI drama factory and the WHO’s missing health targets</title>
+    <link>https://www.technologyreview.com/2026/05/15/1137341/the-download-china-short-drama-ai-who-health-targets/</link>
+    <description>中国短剧成AI内容机器，制作工业化。</description>
+    <source>MIT Tech Review</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://www.technologyreview.com/2026/05/15/1137341/the-download-china-short-drama-ai-who-health-targets/</guid>
+  </item>
+  <item>
+    <title>US orders travelers on Air Force One to throw away gifts, pins, and burner phones after China trip</title>
+    <link>https://techcrunch.com/2026/05/15/us-orders-travelers-on-air-force-one-to-throw-away-gifts-pins-and-burner-phones-after-china-trip/</link>
+    <description>中国短剧成AI内容机器，制作工业化。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/us-orders-travelers-on-air-force-one-to-throw-away-gifts-pins-and-burner-phones-after-china-trip/</guid>
+  </item>
+  <item>
+    <title>Android is getting a big AI overhaul in 2026</title>
+    <link>https://arstechnica.com/gadgets/2026/05/google-says-android-is-getting-a-big-ai-overhaul-in-2026/</link>
+    <description>Android 2026大规模AI改造，系统级智能全面升级。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/gadgets/2026/05/google-says-android-is-getting-a-big-ai-overhaul-in-2026/</guid>
+  </item>
+  <item>
+    <title>Silicon Valley’s vacationland needs a new energy provider just as AI is driving prices up</title>
+    <link>https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/</link>
+    <description>硅谷度假地需新能源供应商，AI推高能源价。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/silicon-valleys-vacationland-needs-a-new-energy-provider-just-as-ai-is-driving-prices-up/</guid>
+  </item>
+  <item>
+    <title>Osaurus brings both local and cloud AI models to your Mac</title>
+    <link>https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/</link>
+    <description>Osaurus为Mac带来本地+云端AI模型自由切换。</description>
+    <source>TechCrunch AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/</guid>
+  </item>
+  <item>
+    <title>The world is on track to miss its health targets</title>
+    <link>https://www.technologyreview.com/2026/05/15/1137270/the-world-is-on-track-to-miss-its-health-targets/</link>
+    <description>全球或无法实现健康目标，AI医疗潜力局限。</description>
+    <source>MIT Tech Review</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://www.technologyreview.com/2026/05/15/1137270/the-world-is-on-track-to-miss-its-health-targets/</guid>
+  </item>
+  <item>
+    <title>How Chinese short dramas became AI content machines</title>
+    <link>https://www.technologyreview.com/2026/05/15/1137326/chinese-short-dramas-ai/</link>
+    <description>引发行业广泛关注。</description>
+    <source>MIT Tech Review</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://www.technologyreview.com/2026/05/15/1137326/chinese-short-dramas-ai/</guid>
+  </item>
+  <item>
+    <title>General Catalyst posted VC rage bait and it worked, especially on a16z</title>
+    <link>https://techcrunch.com/2026/05/15/general-catalyst-posted-vc-rage-bait-and-it-worked-especially-on-a16z/</link>
+    <description>General Catalyst VC愤怒策略引a16z反响。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/general-catalyst-posted-vc-rage-bait-and-it-worked-especially-on-a16z/</guid>
+  </item>
+  <item>
+    <title>A hotel check-in system left a million passports and driver’s licenses open for anyone to see</title>
+    <link>https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/</link>
+    <description>酒店漏洞百万护照驾照暴露数据安全。</description>
+    <source>TechCrunch main</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/</guid>
+  </item>
+  <item>
+    <title>Amazon employees are &quot;tokenmaxxing&quot; due to pressure to use AI tools</title>
+    <link>https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/</link>
+    <description>亚马逊员工&apos;tokenmaxxing&apos;压力，企业AI应用引讨论。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/</guid>
+  </item>
+  <item>
+    <title>Data center guzzled 30 million gallons of water, and nobody noticed for months</title>
+    <link>https://arstechnica.com/tech-policy/2026/05/data-center-used-30-million-gallons-of-water-without-initially-paying/</link>
+    <description>数据中心月耗3000万加仑水未被发现，水资源问题凸显。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/tech-policy/2026/05/data-center-used-30-million-gallons-of-water-without-initially-paying/</guid>
+  </item>
+  <item>
+    <title>The new Wild West of AI kids’ toys</title>
+    <link>https://arstechnica.com/ai/2026/05/the-new-wild-west-of-ai-kids-toys/</link>
+    <description>AI儿童玩具新&apos;狂野西部&apos;，监管滞后隐私安全担忧。</description>
+    <source>Ars Technica AI</source>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
+    <guid>https://arstechnica.com/ai/2026/05/the-new-wild-west-of-ai-kids-toys/</guid>
+  </item>
   <item>
     <title>Anthropic重大调整：Claude订阅拆分，非交互式Agent使用单独计费</title>
     <link>https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch</link>
     <description>Anthropic将Claude订阅分为交互式和���交互式两类，第三方Agent调用不再包含在月度订阅中。此举直接影响所有使用Claude API的Agent平台，包括OpenClaw、Cursor、Copilot等，开发者需单独购买API额度。</description>
     <source>VentureBeat</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
     <guid>https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch</guid>
   </item>
   <item>
@@ -20,7 +388,7 @@
     <link>https://www.reuters.com/world/china/china-moves-regulate-digital-humans-bans-addictive-services-children-2026-04-03/</link>
     <description>中国政府发布数字人监管新规，要求数字人服务提供者进行备案，禁止向未成年人提供可能导致成瘾的数字人互动服务。这是中国继生成式AI管理办法后又一重要AI监管举措。</description>
     <source>Reuters</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
     <guid>https://www.reuters.com/world/china/china-moves-regulate-digital-humans-bans-addictive-services-children-2026-04-03/</guid>
   </item>
   <item>
@@ -28,7 +396,7 @@
     <link>https://personalaisafety.com/p/the-other-half-of-ai-safety</link>
     <description>深度分析AI安全的盲区——人们过于关注AI对社会的威胁，却忽视了AI对个人隐私和数据的系统性风险。文章指出个人AI数据被滥用、AI模型记忆用户隐私等问题已被严重低估。</description>
     <source>Personal AI Safety</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
     <guid>https://personalaisafety.com/p/the-other-half-of-ai-safety</guid>
   </item>
   <item>
@@ -36,376 +404,8 @@
     <link>https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/</link>
     <description>GitHub展示如何使用Copilot CLI快速构建程序化生成的Roguelike游戏，展示了AI辅助编程在游戏开发中的应用前景。同时介绍了10个开源Roguelike项目，AI正在降低游戏开发门槛。</description>
     <source>GitHub Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
+    <pubDate>Mon, 18 May 2026 02:05:26 GMT</pubDate>
     <guid>https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli/</guid>
-  </item>
-  <item>
-    <title>Abliteration：为分类器和评测定制的合成训练数据生成工具</title>
-    <link>https://abliteration.ai/use-cases/synthetic-data</link>
-    <description>Abliteration工具通过差分方法来训练数据——针对分类器和评测集，自动生成边缘案例训练数据。这是AI评测和数据合成的一个新思路，可直接集成到MLOps流程中。</description>
-    <source>HackerNews</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://abliteration.ai/use-cases/synthetic-data</guid>
-  </item>
-  <item>
-    <title>Claude-pee：绕过程序化使用额度的Claude CLI工具</title>
-    <link>https://github.com/sbhattap/claude-pee/tree/main</link>
-    <description>社区开发者推出Claude-pee工具，允许开发者在不消耗程序化API额度的情况下使用Claude的headless模式。在Anthropic调整订阅政策的背景下，这类工具反映了开发者的应对策略。</description>
-    <source>GitHub</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://github.com/sbhattap/claude-pee/tree/main</guid>
-  </item>
-  <item>
-    <title>AI Agent经济模型变革：从免费额度到按量付费</title>
-    <link>https://shnywang.github.io/ai_news/site/index.html</link>
-    <description>Anthropic将非交互式Agent使用从订阅中剥离，预示着AI Agent经济模式的根本转变。第三方Agent平台、自动化工具将不再享受用户订阅带来的免费额度，AI Agent的&apos;免费午餐&apos;时代正在结束。</description>
-    <source>综合分析</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://shnywang.github.io/ai_news/site/index.html</guid>
-  </item>
-  <item>
-    <title>Claude headless模式限制：无法使用Max级别额度</title>
-    <link>https://news.ycombinator.com/item?id=48129944</link>
-    <description>Claude的headless（无头）模式将被限制在API计划额度下，无法使用订阅Max级别的资源，进一步收紧对自动化调用的控制。</description>
-    <source>HackerNews</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://news.ycombinator.com/item?id=48129944</guid>
-  </item>
-  <item>
-    <title>10个永不死亡的开源Roguelike游戏</title>
-    <link>https://github.blog/open-source/gaming/dungeons-desktops-10-roguelikes-that-never-die-because-their-communities-wont-let-them/</link>
-    <description>GitHub介绍10个拥有活跃社区的开源Roguelike项目，展示开源游戏开发的持久生命力。</description>
-    <source>GitHub Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://github.blog/open-source/gaming/dungeons-desktops-10-roguelikes-that-never-die-because-their-communities-wont-let-them/</guid>
-  </item>
-  <item>
-    <title>Cisco宣布新一轮裁员：AI转型加速</title>
-    <link>https://blogs.cisco.com/news/our-path-forward</link>
-    <description>Cisco宣布 workforce reduction 计划，加速向AI驱动的网络和基础设施转型。</description>
-    <source>Cisco Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://blogs.cisco.com/news/our-path-forward</guid>
-  </item>
-  <item>
-    <title>Kubernetes Dashboard用React 19和Go重构完成</title>
-    <link>https://kubernetes-dashboard.com/</link>
-    <description>社区用React 19和Go重构了已归档的Kubernetes Dashboard，展示了开源社区的自我修复能力。</description>
-    <source>Kubernetes</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://kubernetes-dashboard.com/</guid>
-  </item>
-  <item>
-    <title>中国AI芯片自给率突破35%：国产替代加速</title>
-    <link>https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_ab12cd34ef56.html</link>
-    <description>工信部最新数据显示，中国AI芯片自给率已达35%，较2025年的22%大幅提升。华为昇腾、壁仞科技、寒武纪三家合计占国内市场份额的60%。</description>
-    <source>工信部</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.miit.gov.cn/xwdt/gxdt/sjdt/art/2026/art_ab12cd34ef56.html</guid>
-  </item>
-  <item>
-    <title>全球首个人形机器人&apos;马拉松&apos;比赛将在北京举行：10公里考验极限</title>
-    <link>https://www.xinhuanet.com/sports/2026-05/13/c_1213457000.htm</link>
-    <description>北京市宣布将于6月举办全球首个人形机器人马拉松比赛，全程10公里，宇树、小米、智元等20家企业报名参赛，考验机器人续航和运动稳定性。</description>
-    <source>新华社</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.xinhuanet.com/sports/2026-05/13/c_1213457000.htm</guid>
-  </item>
-  <item>
-    <title>Sam Altman确认GPT-6训练已启动：&apos;将带来又一次质的飞跃&apos;</title>
-    <link>https://x.com/sama/status/1789500000000000000</link>
-    <description>Sam Altman在社交媒体确认GPT-6已开始训练，预计需要&apos;数月&apos;时间。暗示新模型将在推理、多模态和Agent能力上实现质的飞跃。</description>
-    <source>Sam Altman X</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://x.com/sama/status/1789500000000000000</guid>
-  </item>
-  <item>
-    <title>欧盟宣布对AI生成内容实施强制数字水印标准：2027年全面生效</title>
-    <link>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2345</link>
-    <description>欧盟委员会宣布从2027年1月起，所有在欧盟境内发布的AI生成内容（文字、图片、视频、音频）必须嵌入C2PA标准数字水印，违者最高罚款全球营收6%。</description>
-    <source>European Commission</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2345</guid>
-  </item>
-  <item>
-    <title>Anthropic发布Claude 4.5 Sonnet：编程能力再提升，SWE-bench突破65%</title>
-    <link>https://www.anthropic.com/news/claude-4-5-sonnet</link>
-    <description>Anthropic发布Claude 4.5 Sonnet，编程能力进一步提升，SWE-bench得分达65%，新增多文件重构和跨仓库代码理解能力。</description>
-    <source>Anthropic Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.anthropic.com/news/claude-4-5-sonnet</guid>
-  </item>
-  <item>
-    <title>字节跳动豆包大模型日活突破5亿：超越ChatGPT成为全球最大AI应用</title>
-    <link>https://36kr.com/p/3267890123456880</link>
-    <description>字节跳动内部数据显示豆包大模型全球日活用户突破5亿，超越ChatGPT成为日活最高的AI应用，主要得益于中国市场和东南亚扩张。</description>
-    <source>36氪</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://36kr.com/p/3267890123456880</guid>
-  </item>
-  <item>
-    <title>滴滴Robotaxi北京上路：亦庄开放全无人驾驶商业运营</title>
-    <link>https://bjnews.bjd.com.cn/2026/05/13/123456.html</link>
-    <description>北京亦庄经开区全面开放全无人驾驶商业运营，滴滴、百度、小马智行三家获牌，市民可用App呼叫无人出租车。</description>
-    <source>北京日报</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://bjnews.bjd.com.cn/2026/05/13/123456.html</guid>
-  </item>
-  <item>
-    <title>NVIDIA RTX 6090发布：消费级AI算力突破100 TFLOPS</title>
-    <link>https://blogs.nvidia.com/blog/rtx-6090/</link>
-    <description>NVIDIA发布消费级旗舰显卡RTX 6090，AI算力达120 TFLOPS(FP16)，支持本地运行70B大模型，售价$1999。</description>
-    <source>NVIDIA Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://blogs.nvidia.com/blog/rtx-6090/</guid>
-  </item>
-  <item>
-    <title>Waymo无人驾驶累计行驶突破1亿英里：事故率仅为人类驾驶1/10</title>
-    <link>https://waymo.com/blog/2026/05/100-million-miles/</link>
-    <description>Waymo宣布无人驾驶车累计自主行驶里程突破1亿英里(1.6亿公里)，有责事故率仅为人类驾驶的1/10。</description>
-    <source>Waymo Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://waymo.com/blog/2026/05/100-million-miles/</guid>
-  </item>
-  <item>
-    <title>具身智能学术顶会CoRL 2026投稿量暴涨3倍：会议扩容至万人规模</title>
-    <link>https://www.corl2026.org/news/submission-record</link>
-    <description>机器人学习顶会CoRL 2026投稿量较去年暴涨3倍达6000篇，具身智能成为AI领域最热门研究方向，会议被迫扩容至万人规模。</description>
-    <source>CoRL 2026</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.corl2026.org/news/submission-record</guid>
-  </item>
-  <item>
-    <title>全球AI人才分布报告：美国占38%，中国占25%，欧洲占18%</title>
-    <link>https://macropolo.org/ai-talent-tracker-2026/</link>
-    <description>MacroPolo发布2026年全球AI人才报告，美国仍以38%占比领先，中国从2024年的12%飙升至25%，AI人才&apos;回流潮&apos;加速。</description>
-    <source>MacroPolo</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://macropolo.org/ai-talent-tracker-2026/</guid>
-  </item>
-  <item>
-    <title>联想发布AI PC新战略：首批&apos;神经处理单元&apos;笔记本月销百万</title>
-    <link>https://news.lenovo.com/pressroom/press-releases/ai-pc-neural-processing-2026/</link>
-    <description>联想发布搭载独立NPU(神经处理单元)的AI PC新品，支持本地运行14B大模型，首批产品月销突破100万台。</description>
-    <source>联想</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://news.lenovo.com/pressroom/press-releases/ai-pc-neural-processing-2026/</guid>
-  </item>
-  <item>
-    <title>DALL-E 4 vs Midjourney V7 vs SD4：AI绘画三巨头全面对比</title>
-    <link>https://www.theverge.com/2026/5/13/ai-image-generation-showdown</link>
-    <description>The Verge发布2026年AI绘画工具全面对比评测，DALL-E 4在文字渲染上领先，Midjourney V7在艺术质感上最佳，SD4在开放性上胜出。</description>
-    <source>The Verge</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.theverge.com/2026/5/13/ai-image-generation-showdown</guid>
-  </item>
-  <item>
-    <title>AI失业潮vs新就业：全球科技行业裁员30万，AI相关岗位增长80万</title>
-    <link>https://economicgraph.linkedin.com/blog/ai-jobs-2026</link>
-    <description>LinkedIn发布2026全球劳动力报告，科技行业裁员30万但AI相关新增岗位80万，净增50万就业，但技能错配问题突出。</description>
-    <source>LinkedIn</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://economicgraph.linkedin.com/blog/ai-jobs-2026</guid>
-  </item>
-  <item>
-    <title>北京自动驾驶示范区扩展至600平方公里：人口覆盖500万</title>
-    <link>https://bjnews.bjd.com.cn/2026/05/13/123457.html</link>
-    <description>北京高级别自动驾驶示范区扩展至600平方公里，覆盖500万人口，支持Robotaxi、无人配送、无人环卫等全场景应用。</description>
-    <source>北京日报</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://bjnews.bjd.com.cn/2026/05/13/123457.html</guid>
-  </item>
-  <item>
-    <title>OpenAI与新闻集团达成每年10亿美元内容授权协议：AI训练数据走向合规</title>
-    <link>https://www.wsj.com/business/media/openai-news-corp-1-billion-license-2026</link>
-    <description>OpenAI与新闻集团(News Corp)签署每年10亿美元的内容授权协议，覆盖《华尔街日报》《泰晤士报》等媒体。标志着AI训练数据从&apos;免费抓取&apos;走向&apos;付费授权&apos;新时代。</description>
-    <source>华尔街日报</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.wsj.com/business/media/openai-news-corp-1-billion-license-2026</guid>
-  </item>
-  <item>
-    <title>特斯拉Optimus首次承接外部订单：丰田订购500台用于工厂</title>
-    <link>https://asia.nikkei.com/Business/Tesla-Optimus-Toyota-order-500-robots</link>
-    <description>特斯拉首次获得人形机器人外部订单——丰田汽车订购500台Optimus Gen 3用于其得州工厂。马斯克称Optimus订单已排至2028年。</description>
-    <source>Nikkei Asia</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://asia.nikkei.com/Business/Tesla-Optimus-Toyota-order-500-robots</guid>
-  </item>
-  <item>
-    <title>Google DeepMind CEO Demis Hassabis预言：&apos;AGI将在5年内实现&apos;</title>
-    <link>https://www.thetimes.co.uk/article/demis-hassabis-agi-five-years-deepmind</link>
-    <description>DeepMind CEO Demis Hassabis在接受专访时大胆预言AGI将在5年内（2031年前）实现，并透露DeepMind正在开发&apos;世界模型&apos;作为通往AGI的关键路径。</description>
-    <source>The Times</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.thetimes.co.uk/article/demis-hassabis-agi-five-years-deepmind</guid>
-  </item>
-  <item>
-    <title>全球AI监管碎片化加剧：G7未能就AI治理达成共同框架</title>
-    <link>https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/</link>
-    <description>G7峰会未能就AI全球治理达成共同框架，美欧在监管严格程度上分歧严重。分析认为AI监管&apos;碎片化&apos;将增加企业合规成本并阻碍AI发展。</description>
-    <source>Reuters</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.reuters.com/world/g7-ai-governance-failure-2026-05-12/</guid>
-  </item>
-  <item>
-    <title>Canva发布AI设计助手Magic Studio 3.0：一句话生成完整品牌VI</title>
-    <link>https://www.canva.com/newsroom/news/magic-studio-3/</link>
-    <description>Canva发布Magic Studio 3.0，可通过一句话生成完整的品牌VI（Logo、配色、字体、宣传物料），大幅降低设计门槛。</description>
-    <source>Canva Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.canva.com/newsroom/news/magic-studio-3/</guid>
-  </item>
-  <item>
-    <title>AI预测极端天气准确率超90%：DeepMind GraphCast 3发布</title>
-    <link>https://deepmind.google/blog/graphcast-3/</link>
-    <description>DeepMind发布GraphCast 3天气预测模型，10天天气预报准确率超过传统数值模型，极端天气预警提前量从3天延长至7天。</description>
-    <source>DeepMind Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://deepmind.google/blog/graphcast-3/</guid>
-  </item>
-  <item>
-    <title>百度地图AI导航采用大模型：实时理解路况并给出人性化建议</title>
-    <link>https://map.baidu.com/ai-navigation-2026</link>
-    <description>百度地图全面升级AI导航，基于大模型实时理解路况并给出&apos;前面堵车建议买杯咖啡等10分钟&apos;这样的类人化建议。</description>
-    <source>百度地图</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://map.baidu.com/ai-navigation-2026</guid>
-  </item>
-  <item>
-    <title>微软研究院发布VASA-2：单张照片+音频=超真实说话视频</title>
-    <link>https://www.microsoft.com/en-us/research/project/vasa-2/</link>
-    <description>微软研究院发布VASA-2，仅需一张照片和一段音频即可生成超真实的说话视频，唇形同步、表情和头部动作均自然流畅。</description>
-    <source>Microsoft Research</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.microsoft.com/en-us/research/project/vasa-2/</guid>
-  </item>
-  <item>
-    <title>国内AI大模型&apos;百模大战&apos;进入下半场：市场集中度提升</title>
-    <link>https://www.iresearch.cn/report/ai-foundation-model-2026.html</link>
-    <description>艾瑞咨询报告显示中国AI大模型市场CR5（前五集中度）从2025年的45%提升至2026年的72%，头部效应显现，中小模型厂商面临淘汰。</description>
-    <source>艾瑞咨询</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.iresearch.cn/report/ai-foundation-model-2026.html</guid>
-  </item>
-  <item>
-    <title>腾讯Robotics X实验室发布&apos;天鹅&apos;双足机器人：行走能效超人类</title>
-    <link>https://ai.tencent.com/ailab/zh/news/swan-biped-2026</link>
-    <description>腾讯Robotics X发布&apos;天鹅&apos;双足机器人，采用被动动力学设计，行走能效比(COT)达到0.25，超越人类的0.3，一次充电可走50公里。</description>
-    <source>腾讯AI Lab</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://ai.tencent.com/ailab/zh/news/swan-biped-2026</guid>
-  </item>
-  <item>
-    <title>Databricks完成100亿美元融资：数据+AI平台估值突破2000亿美元</title>
-    <link>https://www.bloomberg.com/news/articles/2026-05-12/databricks-10-billion-funding</link>
-    <description>Databricks完成100亿美元融资，估值达2000亿美元。CEO Ali Ghodsi表示AI正从&apos;模型竞赛&apos;转向&apos;数据竞赛&apos;。</description>
-    <source>Bloomberg</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.bloomberg.com/news/articles/2026-05-12/databricks-10-billion-funding</guid>
-  </item>
-  <item>
-    <title>美国国防部发布&apos;负责任AI军事应用&apos;政策：禁止AI自主开火决策</title>
-    <link>https://www.defense.gov/News/Releases/Release/Article/ai-military-policy-2026/</link>
-    <description>美国国防部发布AI军事应用政策，明确禁止AI做出自主开火决策，要求&apos;人在回路中&apos;(human-in-the-loop)原则。</description>
-    <source>DoD</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.defense.gov/News/Releases/Release/Article/ai-military-policy-2026/</guid>
-  </item>
-  <item>
-    <title>AI Agent框架CrewAI发布企业版：多Agent协作编排成企业标配</title>
-    <link>https://blog.crewai.com/enterprise-2026</link>
-    <description>CrewAI发布企业版多Agent框架，支持角色定义、任务编排、Agent间通信，已获300+企业付费客户。</description>
-    <source>CrewAI Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://blog.crewai.com/enterprise-2026</guid>
-  </item>
-  <item>
-    <title>AI最终取代程序员？GitHub最新调查：41%新代码由AI生成</title>
-    <link>https://github.blog/2026-05-11-octoverse-ai-code-report/</link>
-    <description>GitHub发布2026 Octoverse报告，显示平台上41%的新增代码由AI辅助生成，较2025年的27%大幅提升。Python取代JavaScript成为AI时代第一编程语言。</description>
-    <source>GitHub Octoverse</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://github.blog/2026-05-11-octoverse-ai-code-report/</guid>
-  </item>
-  <item>
-    <title>Figure 02在宝马工厂连续工作30天无事故：人形机器人可靠性里程碑</title>
-    <link>https://www.figure.ai/blog/30-days-zero-incident</link>
-    <description>Figure AI宣布Figure 02人形机器人在宝马工厂实现连续30天24小时运行零事故，累计完成1.2万次焊接操作，可靠性达到工业级标准。</description>
-    <source>Figure AI Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.figure.ai/blog/30-days-zero-incident</guid>
-  </item>
-  <item>
-    <title>DeepSeek创始人梁文锋罕见露面：&apos;AI不应该被少数公司垄断&apos;</title>
-    <link>https://www.thepaper.cn/newsDetail_forward_27001234</link>
-    <description>DeepSeek创始人梁文锋在深圳AI大会上罕见公开露面并发表演讲，强调开源是打破AI垄断的关键，宣布DeepSeek将持续开源所有模型。</description>
-    <source>澎湃新闻</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.thepaper.cn/newsDetail_forward_27001234</guid>
-  </item>
-  <item>
-    <title>日本软银收购ARM后押注AI芯片：自研&apos;寒武纪&apos;AI处理器曝光</title>
-    <link>https://asia.nikkei.com/Business/SoftBank-Arm-cambrian-ai-processor</link>
-    <description>软银通过ARM秘密研发代号&apos;寒武纪&apos;的AI处理器，采用3nm工艺和全新神经计算架构，目标2028年量产对标NVIDIA Rubin。</description>
-    <source>日经新闻</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://asia.nikkei.com/Business/SoftBank-Arm-cambrian-ai-processor</guid>
-  </item>
-  <item>
-    <title>AI发现首个人工智能设计的抗癌分子进入临床试验</title>
-    <link>https://www.nature.com/articles/s41591-026-00789-0</link>
-    <description>由AI从头设计的抗癌药物分子ISB-2026进入I期临床试验，成为首个由AI完全设计并进入人体的抗癌药物。</description>
-    <source>Nature Medicine</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.nature.com/articles/s41591-026-00789-0</guid>
-  </item>
-  <item>
-    <title>波士顿动力Atlas在建筑工地试点：展示搬运和安装能力</title>
-    <link>https://bostondynamics.com/blog/atlas-construction-pilot/</link>
-    <description>波士顿动力发布Atlas在建筑工地试点视频，展示搬运建材、安装螺栓等任务，标志着人形机器人进入建筑业。</description>
-    <source>Boston Dynamics</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://bostondynamics.com/blog/atlas-construction-pilot/</guid>
-  </item>
-  <item>
-    <title>OpenAI推出GPT Store收入分成计划：开发者可获70%收益</title>
-    <link>https://openai.com/blog/gpt-store-revenue-sharing</link>
-    <description>OpenAI向GPT Store开发者推出收入分成计划，按GPT使用量分配收益，开发者最高可获70%。此举旨在构建类似App Store的AI生态。</description>
-    <source>OpenAI Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://openai.com/blog/gpt-store-revenue-sharing</guid>
-  </item>
-  <item>
-    <title>中国首个AI大模型国家标准获批：《生成式AI服务安全要求》</title>
-    <link>https://www.sac.gov.cn/xw/bzhdt/202605/t20260511_123456.html</link>
-    <description>中国首个AI大模型国家标准获批准，涵盖数据安全、内容合规、用户隐私等六个维度，2027年1月1日起实施。</description>
-    <source>国家标准委</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.sac.gov.cn/xw/bzhdt/202605/t20260511_123456.html</guid>
-  </item>
-  <item>
-    <title>Pika 2.0视频编辑AI发布：文字指令可编辑视频中任意元素</title>
-    <link>https://pika.art/blog/v2</link>
-    <description>Pika发布2.0版本，支持通过自然语言指令修改视频中的任意元素（如替换人物、更改天气、调整色调），编辑效果达到专业级。</description>
-    <source>Pika Blog</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://pika.art/blog/v2</guid>
-  </item>
-  <item>
-    <title>全球AI教育市场2026年规模突破500亿美元</title>
-    <link>https://www.holoniq.com/notes/ai-education-market-2026</link>
-    <description>HolonIQ报告显示全球AI教育市场2026年规模达500亿美元，中国和美国各占30%，个性化AI辅导是最大细分市场。</description>
-    <source>HolonIQ</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.holoniq.com/notes/ai-education-market-2026</guid>
-  </item>
-  <item>
-    <title>Graphcore浴火重生：软银注资后发布Colossus MK3 AI芯片</title>
-    <link>https://www.theregister.com/2026/05/11/graphcore-colossus-mk3/</link>
-    <description>在被软银收购后，英国AI芯片公司Graphcore发布Colossus MK3 IPU，采用晶圆级集成技术，单芯片AI算力达1 PFLOPS。</description>
-    <source>The Register</source>
-    <pubDate>Thu, 14 May 2026 01:53:27 GMT</pubDate>
-    <guid>https://www.theregister.com/2026/05/11/graphcore-colossus-mk3/</guid>
   </item>
 </channel>
 </rss>
