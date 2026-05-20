@@ -208,97 +208,140 @@
         "category": "政策合规"
       },
       {
-        "title": "中科院提出按需搜索方法解决长程任务目标偏离",
-        "source": "中科院/环球网",
-        "url": "https://news.qq.com/rain/a/20260514A05OXA00",
-        "summary": "面向长程任务的按需搜索方法，将目标偏移视为采样系统性误差，LIBERO-Long基准成功率97.6%。",
-        "category": "算法突破"
-      },
-      {
-        "title": "2026年国内具身智能投资超577亿元已超去年全年",
-        "source": "经济参考报/证券时报",
-        "url": "https://www.stcn.com/article/detail/3906003.html",
-        "summary": "截至5月11日，2026年国内具身智能领域投资218起、超577亿元，已超2025年全年。资本关注重点从技术故事转向落地实绩。",
-        "category": "市场动态"
-      },
-      {
-        "title": "上海交大/复旦/清华联合提出DeFI框架：机器人先想后动",
-        "source": "科技行者/ICLR 2026",
-        "url": "https://www.techwalker.com/2026/0506/3185806.shtml",
-        "summary": "DeFI框架将机器人操作学习拆解为前向动态预测和逆向动作推断，CALVIN长程任务平均完成长度4.51，真实机器人操作成功率81.3%。",
-        "category": "算法突破"
-      },
-      {
-        "title": "LangForce：让VLA不再忽视语言指令",
-        "source": "arXiv",
-        "url": "https://arxiv.org/abs/2605.09",
-        "summary": "LangForce通过对数似然比损失强化VLA对语言指令的依赖，在分布外场景泛化提升显著，解决VLA微调后语言能力退化问题。",
-        "category": "算法突破"
-      },
-      {
-        "title": "杭州出台全国首部具身智能产业法规",
-        "source": "杭州市政府",
-        "url": "",
-        "summary": "杭州发布全国首部具身智能产业发展条例，明确监管框架、数据安全和伦理边界，为行业合规提供先例。",
-        "category": "政策法规"
-      },
-      {
-        "title": "特斯拉Optimus Gen-3启动量产准备",
-        "source": "Reuters/Tesla IR",
-        "url": "",
-        "summary": "特斯拉Optimus Gen-3进入量产准备阶段，目标2026年底前在弗里蒙特工厂实现小批量试产。",
+        "title": "宇树科技发布全球首款量产载人变形机甲GD01",
+        "source": "新华社/经济参考报",
+        "url": "https://www.news.cn/tech/20260518/f128571c910841bb8d44085c08fd438b/c.html",
+        "summary": "宇树科技发布全球首款量产载人变形机甲GD01，载人后整机约500公斤，可在数秒内切换双足与四足模式，搭载自研高扭矩密度伺服电机，成本较传统液压方案降低80%以上。",
         "category": "量产突破"
       },
       {
-        "title": "星动纪元M7在中国邮政正式上岗",
-        "source": "星动纪元/中国邮政",
-        "url": "",
-        "summary": "星动纪元星动M7已在中国邮政物流中心上岗执行分拣任务，3月完成10亿战略轮后又完成超2亿美元新轮。",
+        "title": "OpenAI Agents SDK新增沙盒执行与模型原生运行时",
+        "source": "OpenAI/TURION.AI",
+        "url": "https://turion.ai/blog/ai-agent-platform-updates-may-2026",
+        "summary": "OpenAI Agents SDK新增原生沙盒执行和模型原生运行时(model-native harness)，将规划、工具选择和自纠正内置于模型推理链，减少畸形工具调用和Agent循环卡死问题。",
+        "category": "AI Agent"
+      },
+      {
+        "title": "Anthropic发布Claude Opus 4.7，Agent SDK专用额度上线",
+        "source": "Anthropic/Gigazine",
+        "url": "https://www.ai.jp.net/topic/sdk?lang=zh_TW",
+        "summary": "Anthropic发布Claude Opus 4.7，CursorBench提升12个百分点；同时推出Agent SDK专用月度额度，6月15日起将自动化Agent使用与交互式使用分离计费，解决第三方工具资源消耗问题。",
+        "category": "AI Agent"
+      },
+      {
+        "title": "Google I/O 2026：Gemini Spark 24/7 Agent助手+Gmail Live语音交互",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026",
+        "summary": "Google I/O 2026发布Gemini Spark 24/7 Agent助手，深度集成Gmail；Gmail Live支持自然语言语音查询收件箱；AI设计工具Pics对标Canva和Claude Design。",
+        "category": "大模型"
+      },
+      {
+        "title": "NVIDIA携手ServiceNow推出企业AI代理框架",
+        "source": "NVIDIA/ServiceNow",
+        "url": "https://life.tw/article/nvidia%E6%94%9C%E6%89%8Bservicenow%E6%8E%A8%E4%BC%81%E6%A5%ADai%E4%BB%A3%E7%90%86%E6%A1%86%E6%9E%B6-%E7%94%9F%E6%88%90-3030047",
+        "summary": "NVIDIA与ServiceNow合作推出企业AI代理框架，整合Nemotron模型、NeMo代理工具与NIM微服务，企业可直接建立具备推理与任务执行能力的AI代理人。",
+        "category": "AI Agent"
+      },
+      {
+        "title": "腾讯云与Stream合作加速实时多模态AI Agent开发",
+        "source": "PR Newswire",
+        "url": "https://en.prnasia.com/releases/apac/tencent-cloud-and-stream-partner-to-accelerate-the-development-of-real-time-multimodal-ai-agents-533497.shtml",
+        "summary": "腾讯云与Stream合作，腾讯RTC成为Vision Agents开源框架的官方边缘传输插件，为全球开发者提供低延迟多模态AI Agent开发路径，端到端延迟低于500ms。",
+        "category": "AI Agent"
+      },
+      {
+        "title": "宇树科技G1机器人在东京羽田机场投入运营",
+        "source": "证券时报/新华网",
+        "url": "https://www.stcn.com/article/detail/3904067.html",
+        "summary": "宇树科技G1机器人在东京羽田机场试点投入地面运维服务，中国制造机器人在复杂场景的实用性获海外市场认可。2025年宇树人形机器人出货量超5500台，全球市占率32.4%。",
         "category": "应用落地"
       },
       {
-        "title": "加速进化完成近10亿融资，聚焦通用操作",
-        "source": "36氪/加速进化",
-        "url": "",
-        "summary": "加速进化完成近10亿元融资，聚焦通用操作能力，产品已在多个工业场景完成验证。",
-        "category": "融资动态"
+        "title": "腾讯Robotics X开源RoboFusion机器人本体互连技术",
+        "source": "南方+/深圳AI展",
+        "url": "https://www.sfccn.com/2026/5-15/0OMDE0NzNfMjE0Mzg0OA.html",
+        "summary": "腾讯Robotics X联合福田实验室开源RoboFusion，业界首个「一线到底」全栈IP化机器人本体互连方案，采用汽车以太网技术，显著降低布线复杂度和故障风险。",
+        "category": "开源生态"
+      },
+      {
+        "title": "湖北发布人形机器人动作大模型MotionMaster+UniAct",
+        "source": "证券时报",
+        "url": "https://www.stcn.com/article/detail/3912872.html",
+        "summary": "湖北人形机器人创新中心联合北大武汉院发布动作大模型，虚拟动作生成器MotionMaster+真机执行引擎UniAct，实现「指令输入-动作生成-真机执行」闭环，多品牌机器人通用。",
+        "category": "算法突破"
+      },
+      {
+        "title": "百度Create2026：百舸6.0+LoongForge开源+Agent安全中心",
+        "source": "中国日报网",
+        "url": "https://caijing.chinadaily.com.cn/a/202605/14/WS6a054222a310942cc49ac2d8.html",
+        "summary": "百度AI开发者大会发布百舸6.0AI计算平台、开源全模态训练框架LoongForge、Agent安全中心，李彦宏提出AI度量衡从DAU转向DAA(日活智能体数)。",
+        "category": "大模型"
+      },
+      {
+        "title": "LangChain推出企业级Runtime平台，AI代理框架竞争升温",
+        "source": "民眾日報/LangChain",
+        "url": "https://life.tw/article/%E9%96%8B%E6%BA%90%E4%BB%A3%E7%90%86%E6%A1%86%E6%9E%B6%E5%B8%82%E5%A0%B4%E5%8D%87%E6%BA%AB-langchain%E6%8E%A8%E5%87%BA%E4%BC%81%E6%A5%AD%E7%B4%9Arunti-3026598",
+        "summary": "LangChain发布企业级Runtime平台，强化Agent记忆管理、多步骤任务处理、自动工具调用及跨模型协作能力，AI市场竞争从模型能力转向代理框架与工作流平台。",
+        "category": "AI Agent"
+      },
+      {
+        "title": "人形机器人量产元年开启：一季度出口113.2亿元",
+        "source": "中国证券报",
+        "url": "https://www.stcn.com/article/detail/3904067.html",
+        "summary": "2026年人形机器人量产元年开启，特斯拉Optimus Gen-3弗里蒙特工厂下线，宇树科技UniStore应用商城上线，一季度中国机器人出口113.2亿元，工业机器人出口同比增长42%。",
+        "category": "市场动态"
       }
     ],
     "hermes_board": {
       "insights": [
         {
-          "title": "具身智能Agent自主替换：Figure 03故障自恢复范式",
-          "content": "Figure AI物流分拣直播中，3台Figure 03轮换作业87小时，故障时自主请求替换、无需人类干预。这是Agent自主性的里程碑——从单任务执行进化到多Agent协作与自愈，对未来Agent工作流设计有重要启发。",
-          "url": ""
+          "title": "Agent SDK大战升温：OpenAI沙盒化 vs Anthropic额度分离 vs Google Spark",
+          "content": "5月Agent开发工具链密集更新：OpenAI Agents SDK新增原生沙盒执行和模型原生运行时，将Agent控制循环从Python侧ReAct迁移到模型内部；Anthropic推出Agent SDK专用月度额度解决第三方工具资源消耗问题；Google发布Gemini Spark 24/7 Agent助手。Agent开发正从「拼能力」转向「拼基础设施」，沙盒安全、计费清晰度、长期运行可靠性成为核心竞争维度。",
+          "url": "https://turion.ai/blog/ai-agent-platform-updates-may-2026"
         },
         {
-          "title": "VLA→世界模型的架构迁移对Agent开发的影响",
-          "content": "流形拓扑世界模型和Pelican-Unify统一模型的同时出现，意味着具身Agent的底层架构正在从VLA端到端转向世界模型+VLA分层架构。Agent开发者需要关注规划层和执行层的解耦设计。",
+          "title": "具身Agent架构迁移：VLA端到端→世界模型+VLA分层",
+          "content": "成都流形拓扑世界模型和北京Pelican-Unify统一模型同时出现，意味着具身Agent底层架构正在从VLA端到端转向「世界模型做规划层+VLA做执行层」的分层架构。Agent开发者需关注规划层与执行层的解耦设计，以及物理一致性约束如何在Agent工作流中传递。",
           "url": ""
         }
       ],
       "tech_stack": [
         {
-          "title": "Pelican-Unify 1.0：4B参数统一具身基础模型",
-          "content": "首个在理解-推理-想象-行动四维度同时登顶的统一模型，4B参数量级适合部署到边缘设备，对Agent端侧推理有实际意义。",
-          "url": "https://arxiv.org/pdf/2605.15153"
+          "title": "OpenAI Agents SDK v0.17：沙盒执行+模型原生运行时",
+          "content": "新增类Unix隔离工作空间，支持代码执行、Shell命令、文件系统操作、外部存储挂载(S3/GCS/R2)。模型原生运行时负责工具分发、多步骤执行和状态持久化，控制平面(harness)与执行平面(sandbox)解耦。默认模型升级为gpt-5.4-mini。",
+          "url": "https://www.agentupdate.ai/releases/openai-agents-sdk"
         },
         {
-          "title": "流形拓扑保持世界模型：物理一致性规划新范式",
-          "content": "将高维物理状态映射到低维流形空间，保证规划路径严格符合物理规律。对Agent在真实物理环境的可靠性至关重要。",
-          "url": ""
+          "title": "Claude Opus 4.7 + Agent SDK专用额度",
+          "content": "Opus 4.7 CursorBench 70%（前代58%），工具错误减少2/3。Agent SDK专用月度额度6月15日生效，将自动化claude -p和Agent SDK使用与交互式使用分离计费，Premium用户$200基线额度。",
+          "url": "https://www.ai.jp.net/topic/sdk?lang=zh_TW"
+        },
+        {
+          "title": "腾讯RTC × Vision Agents：低延迟多模态Agent开发",
+          "content": "腾讯RTC成为Vision Agents开源框架官方边缘传输插件，3200+全球节点，端到端延迟<500ms，支持音视频双通道，适用于语音Agent、视频Agent和多模态场景（游戏助手、虚拟人、运动教练、机器人）。",
+          "url": "https://en.prnasia.com/releases/apac/tencent-cloud-and-stream-partner-to-accelerate-the-development-of-real-time-multimodal-ai-agents-533497.shtml"
+        },
+        {
+          "title": "LangChain企业级Runtime平台",
+          "content": "强化Agent记忆管理、多步骤任务处理、自动工具调用和跨模型协作，强调可观测性与部署管理能力，帮助企业在生产环境稳定管理大量Agent和商业流程。",
+          "url": "https://life.tw/article/%E9%96%8B%E6%BA%90%E4%BB%A3%E7%90%86%E6%A1%86%E6%9E%B6%E5%B8%82%E5%A0%B4%E5%8D%87%E6%BA%AB-langchain%E6%8E%A8%E5%87%BA%E4%BC%81%E6%A5%AD%E7%B4%9Arunti-3026598"
         }
       ],
       "community": [
         {
-          "title": "具身智能合规备案开启Agent商业化新阶段",
-          "content": "智元WITA完成首个合规备案，意味着具身Agent从技术Demo进入合规商用阶段。开发者在构建Agent时需提前考虑合规框架。",
+          "title": "AI Agent平台竞争从模型能力转向基础设施",
+          "content": "OpenAI/Anthropic/Google/NVIDIA同时推出Agent基础设施更新，行业共识正在形成：Agent的核心竞争力不再是模型参数，而是沙盒安全、计费清晰、长期运行可靠性和企业级治理。这个转向对独立Agent开发者意味着选型压力增大。",
           "url": ""
         },
         {
-          "title": "量产元年Agent工具链需求爆发",
-          "content": "Figure/智元/特斯拉三家同时推进量产，从单机控制到多Agent协作的工具链需求正在爆发，相关开源项目和商业机会值得关注。",
-          "url": ""
+          "title": "宇树科技UniStore上线：机器人应用生态初具雏形",
+          "content": "宇树科技UniStore机器人应用商城上线，用户可像手机App一样自主开发或下载机器人应用程序一键部署。机器人从「功能机」向「智能机」时代跨越的关键一步，对Agent开发者意味着机器人端的应用分发渠道正在建立。",
+          "url": "https://www.stcn.com/article/detail/3904067.html"
+        },
+        {
+          "title": "百度提出DAA替代DAU：AI时代的度量衡变革",
+          "content": "李彦宏在Create2026提出AI度量衡从DAU(日活用户数)转向DAA(日活智能体数)，这一概念将深刻影响Agent产品的商业化和估值逻辑。Agent开发者需要重新思考产品指标体系。",
+          "url": "https://caijing.chinadaily.com.cn/a/202605/14/WS6a054222a310942cc49ac2d8.html"
         }
       ]
     },
