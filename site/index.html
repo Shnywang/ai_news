@@ -418,7 +418,16 @@ async function render(){
 function renderHot(d){
   var h='<div class="sec">🔥 今日热点 ('+(d.hot_topics||[]).length+'条 · '+(d.raw_articles||[]).length+'篇原始资讯)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p><div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · <span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">'+U.save+'</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn weixin" onclick="shareWeixin(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微信">微信</button><button class="share-btn weibo" onclick="shareWeibo(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微博">微博</button><button class="share-btn qq" onclick="shareQQ(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="QQ">QQ</button><button class="share-btn" onclick="shareX(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="X/Twitter">X</button></span></div></div></div>';
+    h+='<div class="htcard" tabindex="0"><div class="num">'+(i+1)+'</div><div class="body"><h4>'+link(t.url,t.title)+'</h4><p>'+esc(t.summary)+'</p>';
+    if(t.philosophy_insight){
+      var pi=t.philosophy_insight;
+      h+='<div style="margin-top:.5rem;padding:.5rem .7rem;background:rgba(99,102,241,.08);border-radius:8px;border-left:3px solid var(--accent)">';
+      h+='<div style="font-size:.78rem;font-weight:700;color:var(--accent);margin-bottom:.3rem">🔍 哲学洞察 · '+esc(pi.framework||'')+'</div>';
+      h+='<p style="font-size:.82rem;color:var(--t2);line-height:1.7">'+esc(pi.analysis||'')+'</p>';
+      if(pi.verdict) h+='<div style="margin-top:.3rem;font-size:.82rem;font-weight:600;color:var(--text)">💡 '+esc(pi.verdict)+'</div>';
+      h+='</div>';
+    }
+    h+='<div class="meta" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem"><span>'+esc(t.source)+' · <span class="cat '+catClass(t.category)+'">'+catLabel(t.category)+'</span> '+starsHTML(t.rating)+' '+sourceRank(t.source)+'</span><span class="share-bar" data-url="'+esc(t.url)+'" data-title="'+esc(t.title)+'"><button class="share-btn" onclick="saveArticle(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="收藏">'+U.save+'</button><button class="share-btn" onclick="shareUrl(this.parentNode.dataset.url)" title="复制链接">复制</button><button class="share-btn weixin" onclick="shareWeixin(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微信">微信</button><button class="share-btn weibo" onclick="shareWeibo(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="微博">微博</button><button class="share-btn qq" onclick="shareQQ(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="QQ">QQ</button><button class="share-btn" onclick="shareX(this.parentNode.dataset.title,this.parentNode.dataset.url)" title="X/Twitter">X</button></span></div></div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -427,9 +436,9 @@ function renderStartup(d){
   var s=d.startup_board;
   if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>🚀 创业板块</h3><p>暂无新动态</p></div>';return}
   var h='<div class="sec">🚀 创业板块 — 重点企业跟踪</div>';
-  h+='<div class="stable-wrap"><table class="stable"><tr><th>企业</th><th>赛道</th><th>技术路线</th><th>融资/订单</th><th>择业判断</th></tr>';
+  h+='<div class="stable-wrap"><table class="stable"><tr><th>企业</th><th>赛道</th><th>技术路线</th><th>融资/订单</th><th>择业判断</th><th>哲学标签</th></tr>';
   (s.companies||[]).forEach(function(c){
-    h+='<tr><td><strong>'+esc(c.name)+'</strong></td><td>'+esc(c.field)+'</td><td>'+esc(c.route)+'</td><td>'+esc(c.funding)+'</td><td>'+esc(c.verdict)+'</td></tr>';
+    h+='<tr><td><strong>'+esc(c.name)+'</strong></td><td>'+esc(c.field)+'</td><td>'+esc(c.route)+'</td><td>'+esc(c.funding)+'</td><td>'+esc(c.verdict)+'</td><td>'+(c.philosophy_tag?'<span class="tag tag-p">'+esc(c.philosophy_tag)+'</span>':'')+'</td></tr>';
   });
   h+='</table></div>';
   if(s.trend)h+='<div class="bcard"><h3>📈 赛道趋势</h3><p>'+esc(s.trend)+'</p></div>';
@@ -440,9 +449,17 @@ function renderPM(d){
   var b=d.pm_board;
   if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
   var h='<div class="sec">📋 产品经理板块</div>';
-  (b.insights||[]).forEach(function(t){
-    var ln=t.url?link(t.url,t.title):esc(t.title);
-    h+='<div class="bcard"><h3>'+ln+'</h3><p>'+esc(t.content)+'</p></div>';
+  // Support new format: product_insights[].topic/analysis/philosophy_lens/action
+  var items=b.product_insights||b.insights||[];
+  items.forEach(function(t){
+    var title=t.topic||t.title||'';
+    var ln=t.url?link(t.url,title):esc(title);
+    h+='<div class="bcard"><h3>'+ln+'</h3>';
+    if(t.analysis||t.content) h+='<p>'+(t.analysis?esc(t.analysis):esc(t.content))+'</p>';
+    if(t.philosophy_lens) h+='<p style="margin-top:.4rem;padding:.4rem .6rem;background:var(--accent);background:rgba(99,102,241,.08);border-radius:8px;font-size:.82rem"><strong>🔍 哲学视角：</strong>'+esc(t.philosophy_lens)+'</p>';
+    if(t.action) h+='<p style="margin-top:.4rem;font-size:.84rem"><strong>📌 行动建议：</strong>'+esc(t.action)+'</p>';
+    if(!t.analysis&&!t.content&&t.content) h+='<p>'+esc(t.content)+'</p>';
+    h+='</div>';
   });
   if(b.focus&&b.focus.length){
     h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
@@ -456,9 +473,16 @@ function renderAlgo(d){
   var b=d.algo_board;
   if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
   var h='<div class="sec">🧬 算法工程师板块</div>';
-  (b.insights||[]).forEach(function(t){
-    var ln=t.url?link(t.url,t.title):esc(t.title);
-    h+='<div class="bcard"><h3>'+ln+'</h3><p>'+esc(t.content)+'</p></div>';
+  // Support new format: tech_deep_dives[].topic/key_insight/philosophy_framework/implication
+  var items=b.tech_deep_dives||b.insights||[];
+  items.forEach(function(t){
+    var title=t.topic||t.title||'';
+    var ln=t.url?link(t.url,title):esc(title);
+    h+='<div class="bcard"><h3>'+ln+'</h3>';
+    if(t.key_insight||t.content) h+='<p>'+(t.key_insight?esc(t.key_insight):esc(t.content))+'</p>';
+    if(t.philosophy_framework) h+='<p style="margin-top:.4rem;padding:.4rem .6rem;background:rgba(99,102,241,.08);border-radius:8px;font-size:.82rem"><strong>🔍 哲学框架：</strong>'+esc(t.philosophy_framework)+'</p>';
+    if(t.implication) h+='<p style="margin-top:.4rem;font-size:.84rem"><strong>📌 工程启示：</strong>'+esc(t.implication)+'</p>';
+    h+='</div>';
   });
   if(b.tech_radar&&b.tech_radar.length){
     h+='<div class="sec">🛰️ 技术雷达</div><div class="bcard">';
@@ -480,8 +504,15 @@ function renderProj(d){
   var b=d.projmgr_board;
   if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
   var h='<div class="sec">📅 项目经理板块</div>';
-  (b.insights||[]).forEach(function(t){
-    h+='<div class="bcard"><h3>'+esc(t.title)+'</h3><p>'+esc(t.content)+'</p></div>';
+  // Support new format: project_signals[].signal/impact/framework/recommendation
+  var items=b.project_signals||b.insights||[];
+  items.forEach(function(t){
+    var title=t.signal||t.title||'';
+    h+='<div class="bcard"><h3>'+esc(title)+'</h3>';
+    if(t.impact||t.content) h+='<p>'+(t.impact?esc(t.impact):esc(t.content))+'</p>';
+    if(t.framework) h+='<p style="margin-top:.4rem;padding:.4rem .6rem;background:rgba(99,102,241,.08);border-radius:8px;font-size:.82rem"><strong>🔍 哲学框架：</strong>'+esc(t.framework)+'</p>';
+    if(t.recommendation) h+='<p style="margin-top:.4rem;font-size:.84rem"><strong>📌 建议：</strong>'+esc(t.recommendation)+'</p>';
+    h+='</div>';
   });
   if(b.focus&&b.focus.length){
     h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
@@ -495,20 +526,33 @@ function renderAction(d){
   var a=d.action_items;
   if(!a){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无</p></div>';return}
   var h='';
-  if(a.tech_selection){
-    h+='<div class="sec">🔧 技术选型</div><div class="bcard"><ul>';
-    a.tech_selection.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
-    h+='</ul></div>';
-  }
-  if(a.track_judgment){
-    h+='<div class="sec">🎯 赛道判断</div><div class="bcard"><ul>';
-    a.track_judgment.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
-    h+='</ul></div>';
-  }
-  if(a.watch_list){
-    h+='<div class="sec">👀 Watch List</div><div class="bcard"><ul>';
-    a.watch_list.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
-    h+='</ul></div>';
+  // Support new format: flat array [{priority, action, rationale, deadline}]
+  if(Array.isArray(a)&&a.length&&a[0].priority!==undefined){
+    h+='<div class="sec">✅ 行动建议</div>';
+    a.forEach(function(t){
+      var pClass=t.priority==='P0'?'tag-r':t.priority==='P1'?'tag-y':'tag-b';
+      h+='<div class="bcard"><h3><span class="tag '+pClass+'">'+esc(t.priority)+'</span> '+esc(t.action)+'</h3>';
+      if(t.rationale) h+='<p>💡 '+esc(t.rationale)+'</p>';
+      if(t.deadline) h+='<p style="font-size:.82rem;color:var(--t3)">⏰ 截止：'+esc(t.deadline)+'</p>';
+      h+='</div>';
+    });
+  } else {
+    // Legacy format: {tech_selection:[], track_judgment:[], watch_list:[]}
+    if(a.tech_selection){
+      h+='<div class="sec">🔧 技术选型</div><div class="bcard"><ul>';
+      a.tech_selection.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
+      h+='</ul></div>';
+    }
+    if(a.track_judgment){
+      h+='<div class="sec">🎯 赛道判断</div><div class="bcard"><ul>';
+      a.track_judgment.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
+      h+='</ul></div>';
+    }
+    if(a.watch_list){
+      h+='<div class="sec">👀 Watch List</div><div class="bcard"><ul>';
+      a.watch_list.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
+      h+='</ul></div>';
+    }
   }
   document.getElementById('content').innerHTML=h;
 }
