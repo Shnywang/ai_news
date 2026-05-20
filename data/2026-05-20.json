@@ -178,6 +178,130 @@
         }
       ]
     },
+    "raw_articles": [
+      {
+        "title": "Figure AI 24倍产能跃升：从日产1台到每小时1台",
+        "source": "Figure AI/X平台",
+        "url": "https://www.figure.ai/",
+        "summary": "Figure AI在120天内将Figure 03产线产能从每天1台提升至每小时1台，累计下线超350台，良品率突破80%。5月13日物流分拣直播，3台Figure 03轮换作业超87小时，分拣超10.8万件包裹。",
+        "category": "量产突破"
+      },
+      {
+        "title": "Pelican-Unify 1.0登顶WorldArena：全球首个理解-推理-想象-行动统一模型",
+        "source": "北京人形机器人创新中心/arXiv",
+        "url": "https://arxiv.org/pdf/2605.15153",
+        "summary": "北京人形发布首个大一统具身基础模型Pelican-Unify 1.0，8个VLM Benchmark同级别性能第一，突破传统模块化方案语义鸿沟瓶颈。",
+        "category": "算法突破"
+      },
+      {
+        "title": "成都发布全国首个流形拓扑保持机器人世界模型",
+        "source": "成都人形机器人创新中心/科技日报",
+        "url": "https://www.stdaily.com/web/gdxw/2026-05/14/content_516344.html",
+        "summary": "中国首个基于流形拓扑保持的机器人世界模型，将高维物理世界状态映射到低维流形空间，解决VLA物理幻觉问题。",
+        "category": "算法突破"
+      },
+      {
+        "title": "智元WITA完成全国首个具身智能交互大模型合规备案",
+        "source": "上海市网信办/证券时报",
+        "url": "https://www.stcn.com/article/detail/3914630.html",
+        "summary": "智元WITA成为全国首款完成合规备案的具身智能交互大模型，精灵G2产线8小时连续作业成功率100%，全球首个万台量产验证。",
+        "category": "政策合规"
+      },
+      {
+        "title": "中科院提出按需搜索方法解决长程任务目标偏离",
+        "source": "中科院/环球网",
+        "url": "https://news.qq.com/rain/a/20260514A05OXA00",
+        "summary": "面向长程任务的按需搜索方法，将目标偏移视为采样系统性误差，LIBERO-Long基准成功率97.6%。",
+        "category": "算法突破"
+      },
+      {
+        "title": "2026年国内具身智能投资超577亿元已超去年全年",
+        "source": "经济参考报/证券时报",
+        "url": "https://www.stcn.com/article/detail/3906003.html",
+        "summary": "截至5月11日，2026年国内具身智能领域投资218起、超577亿元，已超2025年全年。资本关注重点从技术故事转向落地实绩。",
+        "category": "市场动态"
+      },
+      {
+        "title": "上海交大/复旦/清华联合提出DeFI框架：机器人先想后动",
+        "source": "科技行者/ICLR 2026",
+        "url": "https://www.techwalker.com/2026/0506/3185806.shtml",
+        "summary": "DeFI框架将机器人操作学习拆解为前向动态预测和逆向动作推断，CALVIN长程任务平均完成长度4.51，真实机器人操作成功率81.3%。",
+        "category": "算法突破"
+      },
+      {
+        "title": "LangForce：让VLA不再忽视语言指令",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2605.09",
+        "summary": "LangForce通过对数似然比损失强化VLA对语言指令的依赖，在分布外场景泛化提升显著，解决VLA微调后语言能力退化问题。",
+        "category": "算法突破"
+      },
+      {
+        "title": "杭州出台全国首部具身智能产业法规",
+        "source": "杭州市政府",
+        "url": "",
+        "summary": "杭州发布全国首部具身智能产业发展条例，明确监管框架、数据安全和伦理边界，为行业合规提供先例。",
+        "category": "政策法规"
+      },
+      {
+        "title": "特斯拉Optimus Gen-3启动量产准备",
+        "source": "Reuters/Tesla IR",
+        "url": "",
+        "summary": "特斯拉Optimus Gen-3进入量产准备阶段，目标2026年底前在弗里蒙特工厂实现小批量试产。",
+        "category": "量产突破"
+      },
+      {
+        "title": "星动纪元M7在中国邮政正式上岗",
+        "source": "星动纪元/中国邮政",
+        "url": "",
+        "summary": "星动纪元星动M7已在中国邮政物流中心上岗执行分拣任务，3月完成10亿战略轮后又完成超2亿美元新轮。",
+        "category": "应用落地"
+      },
+      {
+        "title": "加速进化完成近10亿融资，聚焦通用操作",
+        "source": "36氪/加速进化",
+        "url": "",
+        "summary": "加速进化完成近10亿元融资，聚焦通用操作能力，产品已在多个工业场景完成验证。",
+        "category": "融资动态"
+      }
+    ],
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "具身智能Agent自主替换：Figure 03故障自恢复范式",
+          "content": "Figure AI物流分拣直播中，3台Figure 03轮换作业87小时，故障时自主请求替换、无需人类干预。这是Agent自主性的里程碑——从单任务执行进化到多Agent协作与自愈，对未来Agent工作流设计有重要启发。",
+          "url": ""
+        },
+        {
+          "title": "VLA→世界模型的架构迁移对Agent开发的影响",
+          "content": "流形拓扑世界模型和Pelican-Unify统一模型的同时出现，意味着具身Agent的底层架构正在从VLA端到端转向世界模型+VLA分层架构。Agent开发者需要关注规划层和执行层的解耦设计。",
+          "url": ""
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "Pelican-Unify 1.0：4B参数统一具身基础模型",
+          "content": "首个在理解-推理-想象-行动四维度同时登顶的统一模型，4B参数量级适合部署到边缘设备，对Agent端侧推理有实际意义。",
+          "url": "https://arxiv.org/pdf/2605.15153"
+        },
+        {
+          "title": "流形拓扑保持世界模型：物理一致性规划新范式",
+          "content": "将高维物理状态映射到低维流形空间，保证规划路径严格符合物理规律。对Agent在真实物理环境的可靠性至关重要。",
+          "url": ""
+        }
+      ],
+      "community": [
+        {
+          "title": "具身智能合规备案开启Agent商业化新阶段",
+          "content": "智元WITA完成首个合规备案，意味着具身Agent从技术Demo进入合规商用阶段。开发者在构建Agent时需提前考虑合规框架。",
+          "url": ""
+        },
+        {
+          "title": "量产元年Agent工具链需求爆发",
+          "content": "Figure/智元/特斯拉三家同时推进量产，从单机控制到多Agent协作的工具链需求正在爆发，相关开源项目和商业机会值得关注。",
+          "url": ""
+        }
+      ]
+    },
     "action_items": [
       {
         "priority": "P0",
