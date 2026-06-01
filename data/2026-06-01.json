@@ -1,0 +1,388 @@
+{
+  "2026-06-01": {
+    "update_time": "2026-06-01T18:00:00+08:00",
+    "hot_topics": [
+      {
+        "title": "宇树科技6月1日科创板IPO上会：全球人形机器人出货第一+自研WVLA2.0大模型，冲刺「具身智能第一股」",
+        "source": "证券时报/证券日报/上交所公告",
+        "url": "https://finance.eastmoney.com/a/202605313755230958.html",
+        "summary": "上交所公告宇树科技6月1日上会审议科创板IPO。宇树2025年营收约17亿元，毛利率60.13%，核心零部件自研自产率超90%。5月25日发布WVLA2.0具身大模型，G1机器人实现会议室自主整理全流程，无需远程操控。这是A股「具身智能第一股」的关键时刻，也是国产机器人从一级市场融资驱动迈入二级市场独立定价的标志。",
+        "category": "资本化里程碑",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "否定之否定 + 语言游戏",
+          "analysis": "✅正题：宇树IPO代表国产机器人从「融资输血」到「市场造血」的质变，2025年出货全球第一+17亿营收证明商业可行性。❌反题：宇树Q1净利润下滑信号需要正视，毛利率60%在量产扩大后是否可持续？二级市场定价与一级市场估值的剪刀差如何收敛？💡合题：IPO不是终点而是新起点，二级市场将用更严苛的盈利指标替代一级市场的故事指标，真正的考验从上市开始。语言游戏视角：「具身智能第一股」是资本语境下的标签，上市后投资者会用PE/PS而非融资轮次来定义这家公司，叙事逻辑将彻底切换。",
+          "verdict": "IPO是从讲故事到交答卷的制度性拐点，但二级市场的考卷比一级市场严格十倍"
+        }
+      },
+      {
+        "title": "自变量机器人发布全球首个「事件级预测」世界模型WALL-WM：终结VLA逐帧时代",
+        "source": "每日经济新闻/ChooseAI",
+        "url": "https://m.nbd.com.cn/articles/2026-05-29/4412643.html",
+        "summary": "自变量机器人5月29日发布全球首个具备「事件级预测能力」的世界模型WALL-WM，不再逐帧预测画面，而是以抓取、归置等语义事件为预测单元，跳过无效中间帧。该方法解决了文本-视觉-动作三类信息时间尺度不统一导致VLA真机落地远不及理论的根本问题。自变量4月底刚完成近20亿元B轮融资，由小米战投与红杉中国联合领投，是国内唯一同时获字节、美团、阿里、小米四巨头投资的具身智能企业。",
+        "category": "算法突破",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "扬弃 + 证伪主义",
+          "analysis": "扬弃分析：WALL-WM扬弃了VLA逐帧训练范式的三个核心缺陷——取消均匀时间采样（大部分中间帧无物理语义）、保留多模态理解的框架、提升为以语义事件为单位的推理范式。这是从「像素级模仿」到「事件级理解」的认知跃迁。证伪检验：该主张可证伪性极高——如果WALL-WM在跨物体/跨场景泛化测试中未能显著超越逐帧基线，即被证伪。但目前缺乏第三方独立评测和开源复现，认知价值需要等待社区验证。",
+          "verdict": "事件级预测是VLA训练范式的正确升级方向，但需要独立benchmark验证才能确认不是又一个「Demo式突破」"
+        }
+      },
+      {
+        "title": "宇树WVLA2.0：量产数据反哺大模型，G1机器人实现会议室自主整理",
+        "source": "证券时报/中国工业报",
+        "url": "https://www.stcn.com/article/detail/3927155.html",
+        "summary": "宇树科技5月25日测试发布WVLA2.0具身大模型，核心升级：自主决策、抗干扰运行、多任务协同。搭载WVLA2.0的G1机器人在外部干扰环境下，无需远程操控独立完成会议室整理全流程——识别散落文件、分类收纳办公用品、调整桌椅位置。宇树2025年全球出货第一带来海量真实场景训练数据，WVLA2.0是量产数据反哺大模型的典型路径。",
+        "category": "量产验证",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "具身认知 + 否定之否定",
+          "analysis": "具身认知视角：WVLA2.0验证了一个核心命题——智能不在大脑而在回路。宇树的优势不是算法最前沿，而是全球最大出货量带来的真实场景数据回路，这恰恰是具身认知理论的核心：智能通过身体与环境的交互涌现。否定之否定：✅量产数据反哺是行业公认的最佳路径；❌但「会议室整理」仍属半结构化场景，开放世界长尾任务的泛化能力才是天花板；💡量产数据反哺从0到1已通，但从1到100需要解决长尾分布问题。",
+          "verdict": "量产数据飞轮是宇树的护城河，但开放世界长尾任务仍是当前所有大模型的天花板"
+        }
+      },
+      {
+        "title": "特斯拉弗里蒙特工厂正式转产Optimus：Model S/X停产，人形机器人专用产线设计年产能100万台",
+        "source": "华夏基金/连线新能源/新浪财经",
+        "url": "https://finance.sina.com.cn/wm/2026-05-07/doc-inhxanxf5030293.shtml",
+        "summary": "5月21日特斯拉Model S/X最后一批签名版下线，弗里蒙特工厂产线改造为Optimus专属产线。Optimus Gen-3全身45个自由度，灵巧手22自由度，指尖精度0.08mm，行走速度1.2m/s，最大负载20kg，续航8-10小时，搭载FSD芯片可自主学习超3500种操作，单机成本约2万美元。上海超级工厂已部署50台Gen-3用于汽车总装，德州工厂2027年投产二代产线，远期目标1000万台/年。",
+        "category": "量产突破",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "对立与统一 + 目的论vs机械论",
+          "analysis": "核心矛盾对：汽车业务(现金牛) vs 机器人业务(未来赌注)。马斯克停产S/X转产Optimus，是对立统一的极端表现——用确定的汽车利润赌不确定的机器人未来。目的论vs机械论：Optimus Gen-3的3500种操作能力是涌现的还是设计的？FSD芯片+人类行为观察学习的路线暗示弱涌现，但操作种类数量来自训练数据的设计意图。关键问题：2万美元成本是否已越过劳动力成本交叉点？",
+          "verdict": "停产豪车转产机器人是战略豪赌，2万美元定价意味着成本拐点可能比预期更近"
+        }
+      },
+      {
+        "title": "上海官宣「十五五」末10万台人形机器人进工厂：国内首个量化落地政策",
+        "source": "证券时报/IndustrySourcing",
+        "url": "https://www.industrysourcing.cn/article/476522",
+        "summary": "5月18日上海正式官宣，力争「十五五」末推动10万台人形机器人进工厂，规上工业企业智能体应用普及率超80%。这是国内首次从地方政策层面给出人形机器人市场的具体量化落地目标。叠加特斯拉Optimus Gen-3量产、Figure 03连续规模化作业，人形机器人产业叙事正从技术验证全面转向国内大规模场景落地和订单兑现的确定性阶段。",
+        "category": "政策驱动",
+        "rating": 4,
+        "philosophy_insight": {
+          "framework": "语言游戏 + 否定之否定",
+          "analysis": "语言游戏分析：「10万台」这个数字在政策语境下是目标而非承诺，政策语言的游戏规则是方向指引而非法律约束。但量化目标本身就是信号——它告诉产业链「政府会配套资源」，这比数字本身更重要。否定之否定：✅政策量化目标释放强烈信号，加速产业链投资信心；❌10万台的目标与当前年出货量6.25万台的差距仍然巨大，实现路径不清晰；💡政策的价值不在于数字精确性，而在于方向确定性和配套资源的动员力。",
+          "verdict": "量化政策是方向信号不是承诺书，但它确实加速了产业链的投资决策节奏"
+        }
+      },
+      {
+        "title": "Claude Opus 4.8发布：SWE-Bench Pro 69.2%超越GPT-5.5，速度2.5倍+成本降至1/3",
+        "source": "Chinaz/AIbase",
+        "url": "https://www.chinaz.com/ainews/28444.shtml",
+        "summary": "Anthropic 5月29日发布Claude Opus 4.8，SWE-Bench Pro 69.2%超越GPT-5.5和Gemini 3.1 Pro。核心升级：代码缺陷率降至前代1/4，快速模式速度2.5倍+成本仅1/3，新增「努力程度」控制功能。Agent编程能力显著提升，在计划不合理时主动提出异议并标出不确定性。AI编程智能体竞争进入白热化阶段。",
+        "category": "大模型",
+        "rating": 4,
+        "philosophy_insight": {
+          "framework": "证伪主义 + 扬弃",
+          "analysis": "证伪主义分析：Opus 4.8的核心主张「代码缺陷率降至1/4」是高度可证伪的——任何开发者日常使用中发现明显退化即证伪，这是真正有认知价值的技术主张。扬弃分析：Anthropic扬弃了单纯追求benchmark分数的路线，取消了「更快更强」的单一维度，保留了推理深度，提升了成本效率和自主质量校验。加量降本是当前AI模型的竞争范式转变。",
+          "verdict": "加量降本+自主校验是AI模型竞争的范式转变，单纯刷榜时代正在结束"
+        }
+      },
+      {
+        "title": "极佳视界「双金字塔」体系：世界模型+VLA+强化学习三榜全球第一，冲刺物理AGI",
+        "source": "腾讯新闻/极佳视界官网",
+        "url": "https://news.qq.com/rain/a/20260522A0B2DM00",
+        "summary": "极佳视界发布物理AGI「双金字塔」体系。算法金字塔三层：世界模拟(GigaWorld-1，WorldArena全球第一)、动作对齐(GigaBrain-0系列RoboChallenge第一+GigaWorld-Policy RoboCasa365第一)、经验强化(GigaBrain-0.5M*世界模型+强化学习自我进化)。数据金字塔：GigaWorld-0开源世界模型框架，实现「数据放大」。国内唯一同时在三个方向拿到全球权威评测第一的团队。",
+        "category": "算法突破",
+        "rating": 4,
+        "philosophy_insight": {
+          "framework": "扬弃 + 具身认知",
+          "analysis": "扬弃分析：双金字塔体系扬弃了单一技术路线的局限——取消对VLA或世界模型单一方向的依赖，保留各路线核心优势，提升为三层递进的数据-算法闭环。这暗示具身智能的终态不是「选VLA还是世界模型」，而是两者在数据飞轮中协同进化。具身认知视角：三层结构（感知-生成→操作→自我进化）对应了从低级认知到高级认知的发展路径，但关键问题是「经验强化层」的自我进化是否真的涌现还是工程设计的产物。",
+          "verdict": "三榜第一证明技术体系完整性，但榜单≠真机泛化，需要开放场景验证"
+        }
+      },
+      {
+        "title": "GPT-5 Agent Mode正式发布：最长24小时自主任务，AI编程智能体大战白热化",
+        "source": "CSDN/腾讯云开发者社区",
+        "url": "https://blog.csdn.net/qq_31142761/article/details/161358696",
+        "summary": "OpenAI 5月16日发布GPT-5 Agent Mode，从对话式助手进化为自主执行者：用户设定目标→AI自主规划→自动调用工具→执行多步操作→交付结果，可运行长达24小时。同期Anthropic Claude Code推出提速模式，双方展开「补贴大战」。AI编程智能体竞争从模型能力转向基础设施和成本效率。",
+        "category": "AI Agent",
+        "rating": 4,
+        "philosophy_insight": {
+          "framework": "目的论vs机械论",
+          "analysis": "目的论vs机械论分析：GPT-5 Agent Mode的24小时自主任务执行，是目的论行为的典型案例——AI不是被动响应，而是主动追求用户设定的目标。但这种目的性是设计的（目标来自用户输入）还是涌现的（AI自主规划和调整策略）？当前阶段答案在设计端，但Agent的自纠正能力正在向涌现端移动。当Agent开始质疑用户目标是否合理时，目的论vs机械论的边界将变得模糊。",
+          "verdict": "Agent Mode标志着AI从工具向执行者的角色转变，但自主性与可控性的张力将长期存在"
+        }
+      }
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "宇树科技",
+          "field": "人形机器人/全栈+大模型",
+          "route": "WVLA2.0发布+G1会议室自主整理+6月1日科创板IPO上会，2025年出货全球第一",
+          "funding": "2025年营收17亿，毛利率60.13%，核心自研率超90%",
+          "verdict": "量产数据飞轮+资本化双领先，但Q1净利润下滑需关注",
+          "philosophy_tag": "否定之否定"
+        },
+        {
+          "name": "自变量机器人",
+          "field": "世界模型/事件级预测",
+          "route": "WALL-WM全球首个事件级预测世界模型，4月B轮近20亿（小米+红杉联合领投）",
+          "funding": "国内唯一获字节+美团+阿里+小米四巨头投资的具身智能企业",
+          "verdict": "技术路线创新+资本加持双强，但需要独立评测验证WALL-WM泛化能力",
+          "philosophy_tag": "扬弃"
+        },
+        {
+          "name": "极佳视界",
+          "field": "世界模型+VLA+强化学习",
+          "route": "双金字塔体系三榜全球第一（WorldArena/RoboChallenge/RoboCasa365），再融10亿",
+          "funding": "B1轮完成，定位「物理世界的OpenAI」",
+          "verdict": "技术体系最完整的具身智能公司，但榜单≠真机泛化，家庭场景验证是下一关",
+          "philosophy_tag": "具身认知"
+        },
+        {
+          "name": "天机智能",
+          "field": "力控人形双臂/关节模组",
+          "route": "10亿B轮+B+轮融资，投后估值近百亿，4个月交付力控双臂2000+台",
+          "funding": "高瓴创投+美团战投领投，腾讯+高榕等跟投",
+          "verdict": "全球首家力控人形双臂量产交付出货量最大，Q1在手订单破万台",
+          "philosophy_tag": "对立统一"
+        }
+      ]
+    },
+    "pm_board": {
+      "product_insights": [
+        {
+          "topic": "从技术指标到经济指标：量产元年的PM度量衡切换",
+          "analysis": "智元万台下线+宇树IPO+特斯拉转产，标志着行业从技术验证期进入量产交付期。PM的指标体系需要全面切换：从自由度、成功率、续航等技术指标，转向MTBF、单位工时成本、ROI回收期、客户复购率等经济指标。上海10万台进厂政策意味着政府采购和工厂订单将成为PM关注的重点客户群体。",
+          "philosophy_lens": "否定之否定——技术指标的统治正在被经济指标否定，但两者终将合成为「技术经济综合指标」",
+          "action": "建立产品经济模型：计算单台机器人的投资回收期，对标人工成本构建ROI量化框架"
+        },
+        {
+          "topic": "Agent操作系统化：腾讯马维斯+Google Spark的入口争夺战",
+          "analysis": "5月腾讯推出马维斯(Marvis)操作系统级AI助手，Google推出Gemini Spark 24/7 Agent。Agent正在从应用层下沉到操作系统层，这意味着Agent产品不再只是聊天窗口，而是系统级入口。PM需要重新思考Agent产品的定位——是做应用还是做平台？是垂直深耕还是横向整合？",
+          "philosophy_lens": "扬弃——Agent从应用级扬弃为系统级：取消单一功能窗口，保留AI交互核心，提升为系统入口级能力",
+          "action": "评估自身Agent产品的系统级整合可能性，制定从垂直应用到平台入口的演进路线图"
+        }
+      ]
+    },
+    "algo_board": {
+      "tech_deep_dives": [
+        {
+          "topic": "世界模型的三条路线分化：事件级预测 vs 流形拓扑保持 vs Diffusion Transformer",
+          "key_insight": "自变量WALL-WM（事件级预测）、成都流形拓扑保持、优必选Thinker-WM（Diffusion Transformer）三种世界模型路线同时出现，核心分歧在于「如何编码物理世界的动态规律」。WALL-WM用语义事件抽象时间维度，流形拓扑用几何约束编码物理规律，Thinker-WM用扩散模型生成未来状态。三条路线不是互斥的，未来可能融合：事件级预测做高层规划+几何约束做中层校验+扩散生成做低层执行。",
+          "philosophy_framework": "对立与统一",
+          "implication": "算法工程师不应只关注一条路线，而应理解三种编码方式的互补性，为融合架构做准备"
+        },
+        {
+          "topic": "HiF-VLA (CVPR 2026)：Motion为中心的「边想边做」世界动作模型",
+          "key_insight": "西湖大学+阿里达摩院提出HiF-VLA，以低维Motion向量替代像素级输入，构建Hindsight-Insight-Foresight双向时空推理框架。核心突破：抛弃冗余视觉背景，用Motion捕捉物理世界动态演变最本质的表征，在CALVIN和LIBERO-LONG长程任务上显著超越SOTA。0.9B参数量的Evo-Depth也证明了轻量化隐式深度编码的可行性。",
+          "philosophy_framework": "扬弃",
+          "implication": "Motion为中心的表征学习是VLA轻量化的关键方向，0.9B参数跑出90%真机成功率说明参数效率比参数规模更重要"
+        },
+        {
+          "topic": "Goal-VLA (ICRA 2026)：图像生成式VLM化身世界模型，零样本机器人操作",
+          "key_insight": "NUS邵林团队提出Goal-VLA，将图像生成式VLM作为「以物体为中心的世界模型」，在无需任务特定微调和成对动作数据的情况下实现零样本机器人操作。解耦式分层框架：高层VLM生成目标图像→低层策略网络对齐动作。这意味着通用VLM的视觉想象能力可以直接迁移为机器人的规划能力。",
+          "philosophy_framework": "目的论vs机械论",
+          "implication": "Goal-VLA的目标图像生成机制暗示了一种弱目的论——行为由「想象的目标状态」驱动而非纯机械的条件反射，这为VLA注入了目的性"
+        }
+      ]
+    },
+    "projmgr_board": {
+      "project_signals": [
+        {
+          "signal": "宇树IPO上会+智元万台下线+特斯拉转产：量产元年的三重验证同时到位",
+          "impact": "产业叙事从「能不能做」转向「做得有多便宜」，项目KPI需要从技术验收切换到经济验收",
+          "framework": "否定之否定",
+          "recommendation": "项目里程碑增加经济验收节点：单台成本下降曲线、客户复购率、MTBF指标"
+        },
+        {
+          "signal": "上海10万台进厂+全国首个人形机器人全生命周期管理平台上线：政策配套从方向指引转向制度基建",
+          "impact": "机器人获「数字身份证」，意味着项目交付需要增加合规和追溯模块，产品需要适配管理平台接口",
+          "framework": "语言游戏",
+          "recommendation": "评估产品与管理平台的对接需求，在路线图中增加合规适配和数字身份证集成模块"
+        }
+      ]
+    },
+    "raw_articles": [
+      {
+        "title": "宇树科技6月1日科创板IPO上会，冲刺「具身智能第一股」",
+        "source": "证券时报/证券日报",
+        "url": "https://finance.eastmoney.com/a/202605313755230958.html",
+        "summary": "上交所公告宇树科技6月1日上会审议科创板IPO。2025年营收17亿，毛利率60.13%，核心自研率超90%。WVLA2.0大模型同步发布。",
+        "category": "资本化"
+      },
+      {
+        "title": "自变量机器人发布全球首个事件级预测世界模型WALL-WM",
+        "source": "每日经济新闻",
+        "url": "https://m.nbd.com.cn/articles/2026-05-29/4412643.html",
+        "summary": "以语义事件替代时间帧作为预测基本单位，解决VLA逐帧训练三大缺陷。自变量4月B轮近20亿，国内唯一四巨头投资企业。",
+        "category": "算法突破"
+      },
+      {
+        "title": "宇树科技WVLA2.0具身大模型发布，G1机器人实现会议室自主整理",
+        "source": "证券时报/中国工业报",
+        "url": "https://www.stcn.com/article/detail/3927155.html",
+        "summary": "WVLA2.0核心升级自主决策、抗干扰、多任务协同。量产数据反哺大模型迭代。",
+        "category": "量产验证"
+      },
+      {
+        "title": "特斯拉弗里蒙特工厂停产Model S/X转产Optimus机器人",
+        "source": "连线新能源/华夏基金",
+        "url": "https://finance.sina.com.cn/wm/2026-05-07/doc-inhxanxf5030293.shtml",
+        "summary": "Model S/X产线改造为Optimus专属产线，设计年产能100万台。Gen-3单机成本约2万美元，上海工厂已部署50台。",
+        "category": "量产突破"
+      },
+      {
+        "title": "上海官宣「十五五」末10万台人形机器人进工厂",
+        "source": "证券时报",
+        "url": "https://www.industrysourcing.cn/article/476522",
+        "summary": "国内首个地方政策层面量化落地目标，规上企业智能体应用普及率超80%。",
+        "category": "政策驱动"
+      },
+      {
+        "title": "Claude Opus 4.8发布：SWE-Bench Pro 69.2%超越GPT-5.5",
+        "source": "AIbase/Chinaz",
+        "url": "https://www.chinaz.com/ainews/28444.shtml",
+        "summary": "代码缺陷率降至1/4，快速模式2.5倍速+成本1/3，新增努力程度控制。加量降本新范式。",
+        "category": "大模型"
+      },
+      {
+        "title": "GPT-5 Agent Mode发布：最长24小时自主任务执行",
+        "source": "CSDN",
+        "url": "https://blog.csdn.net/qq_31142761/article/details/161358696",
+        "summary": "AI从对话式助手进化为自主执行者，可浏览网页、编码、执行多步复杂任务。编程智能体大战白热化。",
+        "category": "AI Agent"
+      },
+      {
+        "title": "极佳视界双金字塔体系：三榜全球第一",
+        "source": "腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20260522A0B2DM00",
+        "summary": "WorldArena/RoboChallenge/RoboCasa365三个权威评测全球第一，国内唯一同时在三个方向登顶的团队。",
+        "category": "算法突破"
+      },
+      {
+        "title": "优必选Thinker-WM登顶Libero榜单，世界模型开源在即",
+        "source": "深圳新闻网",
+        "url": "https://www.sznews.com/news/content/2026-05/06/content_32036752.htm",
+        "summary": "Diffusion Transformer统一多模态空间架构，攻克长程任务执行。计划在Thinker-Cosmos社区开源。",
+        "category": "算法突破"
+      },
+      {
+        "title": "BEYOND Expo 2026澳门：具身智能从实验室到量产的密集信号",
+        "source": "证券时报",
+        "url": "https://stock.stockstar.com/IG2026052900032502.shtml",
+        "summary": "近800家国际企业参展，众擎T800跳跃升龙拳、智平方爱宝智魔方消费场景落地、腾讯RoboFusion+Tairos完整矩阵。",
+        "category": "行业展会"
+      },
+      {
+        "title": "腾讯马维斯Marvis：操作系统级AI助手三端同步上线",
+        "source": "腾讯新闻",
+        "url": "https://new.qq.com/rain/a/20260601A04BL500",
+        "summary": "Windows/macOS/安卓三端同步，6个7x24专项Agent，主Agent统筹+专项Agent并行执行。Agent从应用下沉到OS层。",
+        "category": "AI Agent"
+      },
+      {
+        "title": "天机智能完成10亿B轮融资，投后估值近百亿",
+        "source": "腾讯新闻",
+        "url": "https://new.qq.com/rain/a/20260525A0684J00",
+        "summary": "高瓴创投+美团战投领投，全球首家力控人形双臂量产交付最大，Q1在手订单破万台。",
+        "category": "融资"
+      },
+      {
+        "title": "天津智博会具身智能首次独立设馆：80余企业150种机器人集中亮相",
+        "source": "未来新质产业",
+        "url": "https://wv.video.qq.com/export/UzFfBgAAxNCjWH4efX7FjMzT4DBZDY7Kn-rStQRvBJW3avX6fyw",
+        "summary": "具身智能展区首次独立设馆，占地1700㎡机器人小镇，宇树GD01击穿砖墙演示。",
+        "category": "行业展会"
+      },
+      {
+        "title": "全国首个人形机器人全生命周期管理平台在北京上线",
+        "source": "未来新质产业/21经济网",
+        "url": "https://www.21jingji.com/article/20260526/herald/8c7fd6ba36bf794c7099f21e45640f28.html",
+        "summary": "2.8万台机器人获数字身份证，生产-销售-使用-维护-报废全流程可追溯。",
+        "category": "政策基建"
+      },
+      {
+        "title": "智元远征A3万台下线：15个月从千台到万台的十倍产能跨越",
+        "source": "极客网/搜狐",
+        "url": "https://news.fromgeek.com/tech/160-241179.html",
+        "summary": "产线效率30分钟/台，已部署3C制造、汽车产线、物流仓库。RaaS模式降低中小企业使用门槛。",
+        "category": "量产突破"
+      },
+      {
+        "title": "HiF-VLA (CVPR 2026)：Motion为中心的「边想边做」世界动作模型",
+        "source": "腾讯新闻",
+        "url": "https://new.qq.com/rain/a/20260522A04L0000",
+        "summary": "低维Motion向量替代像素级输入，Hindsight-Insight-Foresight双向推理，CALVIN/LIBERO-LONG显著超越SOTA。代码已开源。",
+        "category": "算法突破"
+      }
+    ],
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "世界模型路线三分天下：事件级预测 vs 流形拓扑 vs Diffusion Transformer",
+          "content": "5月世界模型赛道同时出现三条技术路线：自变量WALL-WM（事件级预测，以语义事件替代时间帧）、成都流形拓扑保持（几何约束编码物理规律）、优必选Thinker-WM（Diffusion Transformer生成未来状态）。三条路线的核心分歧在于「如何编码物理世界的动态规律」——时间语义抽象、几何拓扑约束、概率生成采样。这暗示世界模型的终态可能是三种编码方式的融合架构。",
+          "url": "https://m.nbd.com.cn/articles/2026-05-29/4412643.html"
+        },
+        {
+          "title": "Agent操作系统化：从应用到入口的生态位跃迁",
+          "content": "5月Agent领域最关键的信号不是模型能力提升，而是生态位跃迁：腾讯马维斯（OS级AI助手）、Google Gemini Spark（24/7云上Agent）、OpenAI GPT-5 Agent Mode（24小时自主任务）。Agent正在从「聊天窗口」下沉到「操作系统层」，这意味着Agent不再只是工具，而是用户与数字世界交互的入口。对开发者的影响：Agent SDK选型不再只是看模型能力，更要看生态整合深度。",
+          "url": "https://new.qq.com/rain/a/20260601A04BL500"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "宇树WVLA2.0：量产数据反哺大模型的工程验证",
+          "content": "WVLA2.0的核心不是算法突破而是工程验证——全球最大出货量带来的真实场景数据回路，使大模型可以在干扰环境中稳定执行半结构化任务。会议室自主整理验证了量产数据飞轮的可行性，但开放世界长尾任务仍是天花板。",
+          "url": "https://www.stcn.com/article/detail/3927155.html"
+        },
+        {
+          "title": "Claude Opus 4.8 + 努力程度控制：AI模型的可调控性升级",
+          "content": "Opus 4.8新增「努力程度」控制功能，用户可在卓越质量与极致速度间切换。快速模式2.5倍速+成本1/3。SWE-Bench Pro 69.2%。代码缺陷率降至1/4。加量降本是模型竞争的新范式。",
+          "url": "https://www.chinaz.com/ainews/28444.shtml"
+        },
+        {
+          "title": "GigaWorld-1：世界模型评测WorldArena全球第一",
+          "content": "极佳视界GigaWorld-1在WorldArena以62.34分击败Wan、CogVideoX、Veo 3.1、Cosmos-Predict，首个突破60分大关的具身世界模型。配套GigaBrain-0系列在RoboChallenge以51.67%成功率全球第一，GigaWorld-Policy在RoboCasa365击败NVIDIA GR00T N1.5与π0.5登顶。",
+          "url": "https://news.qq.com/rain/a/20260522A0B2DM00"
+        },
+        {
+          "title": "Evo-Depth：0.9B参数实现90%真机成功率的VLA空间感知增强",
+          "content": "上海交大MINT团队提出Evo-Depth，从多视角RGB提取隐式深度表征，轻量融入VLA。0.9B参数、3.2GB显存、12.3Hz推理频率。仿真端Meta-World 84.4%、LIBERO 95.4%；真机约90%成功率。代码权重训练脚本全面开源。参数效率>参数规模的又一例证。",
+          "url": "https://www.36kr.com/p/3825744462353280"
+        }
+      ],
+      "community": [
+        {
+          "title": "量产元年的资本化加速：一二级市场同步活跃",
+          "content": "宇树6月1日IPO上会、天机智能10亿融资估值近百亿、星海图20亿B+轮估值破200亿。2026Q1人形机器人赛道融资681亿超2025年全年。但华泰证券提醒：板块进入消化估值、等待基本面验证阶段。从讲故事到交答卷的拐点正在发生。",
+          "url": "https://www.iheima.com/article-397870.html"
+        },
+        {
+          "title": "机器人获数字身份证：全国首个全生命周期管理平台上线",
+          "content": "北京上线全国首个人形机器人全生命周期管理平台，2.8万台机器人获数字身份证，生产-销售-使用-维护-报废全程可追溯。这为人形机器人进工厂提供了制度基建，也给产业链企业提出了合规适配的新要求。",
+          "url": "https://www.21jingji.com/article/20260526/herald/8c7fd6ba36bf794c7099f21e45640f28.html"
+        },
+        {
+          "title": "PE/VC加码机器人赛道：头部引领+中小跟进的投资格局形成",
+          "content": "红杉中国、IDG资本等头部机构Q1均有机器人赛道投资，中小PE/VC聚焦细分赛道「小而美」企业。产业资本加速介入：三菱电机投资鹿明机器人、美团+腾讯参投天机智能。产业资本意味着场景协同而非纯财务回报，这对被投企业的商业化验证提出了更高要求。",
+          "url": "https://www.financialnews.com.cn/2026-05/25/content_449629.html"
+        }
+      ]
+    },
+    "action_items": [
+      {
+        "priority": "P0",
+        "action": "跟踪宇树IPO结果及二级市场反应，作为行业估值锚点重新评估赛道投资逻辑",
+        "rationale": "宇树IPO是从一级融资驱动到二级市场定价的拐点事件，直接影响全赛道估值体系",
+        "deadline": "2026-06-05"
+      },
+      {
+        "priority": "P1",
+        "action": "评估世界模型三条路线（事件级/流形拓扑/DiT）的融合可行性，输出技术选型报告",
+        "rationale": "WALL-WM+流形拓扑+Thinker-WM三条路线同时出现，融合信号强烈",
+        "deadline": "2026-06-15"
+      },
+      {
+        "priority": "P2",
+        "action": "推进哲学深挖计划Day 5：证伪主义——用波普尔框架检验量产元年的技术主张",
+        "rationale": "量产元年的主张密集（万台下线/10万台进厂/100万台设计产能），哪些是可证伪的？哪些是不可证伪的营销话术？",
+        "deadline": "2026-06-08"
+      }
+    ]
+  }
+}
