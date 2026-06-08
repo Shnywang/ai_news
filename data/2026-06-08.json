@@ -1,0 +1,260 @@
+{
+  "2026-06-08": {
+    "update_time": "2026-06-08T09:30:00+08:00",
+    "hot_topics": [
+      {
+        "title": "英伟达Isaac GR00T开源人形机器人参考设计:31自由度宇树H2 Plus+22自由度灵巧手+2070 TFLOPS算力",
+        "source": "NVIDIA官方/搜狐/雪球",
+        "url": "https://www.nvidia.com/",
+        "summary": "6-1前后英伟达GTC大会揭晓业界首款开源人形机器人参考设计NVIDIA Isaac GR00T,采用宇树H2 Plus(1.83米,31自由度)+Sharpa Wave触觉五指灵巧手(22自由度)+Jetson AGX Thor T5000模组(2070 FP4 TFLOPS本地算力)。苏黎世联邦理工/斯坦福机器人中心/UCSD等顶尖机构将率先采用,2026年底由宇树正式上市。黄仁勋:人形机器人将为全球工业开启数万亿美元经济机遇。",
+        "category": "硬件与机器人",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "否定之否定 + 目的论 vs 机械论",
+          "analysis": "✅正题:开源参考设计=具身智能从'各家自研碎片化'到'标准底盘+场景应用'的范式跃迁,英伟达用Blackwell架构+Isaac Sim/Lab全栈工具链,让研究者从'重新造轮子'解放到'聚焦场景创新',类似当年Android统一智能手机。❌反题:开源≠免费午餐,2070 TFLOPS算力的Jetson Thor模组单价数万美元,中小企业门槛极高;且'参考设计'实际是把'话语权'从本体厂商转移到英伟达,中国机器人公司是否会沦为'英伟达硬件的组装商'?宇树科技虽深度参与,核心算法路线仍受英伟达Isaac GR00T软件生态约束。💡合题:英伟达的策略是'物质基础决定上层建筑'——自研芯片+仿真平台+本体参考+开发工具链四位一体,把具身智能的'水电煤'基础设施握在手中。对中国玩家既是机会(借船出海)也是风险(失去底层议价权),真正的解法是'英伟达+本土VLA算法+本土数据飞轮'的复合能力,而不是单纯依赖一个开源参考。",
+          "verdict": "英伟达在具身智能的'水电煤'布局比宇树IPO更具结构性影响:它把'具身时代的Android'定义权抢到了手里,中国玩家的护城河只能是'数据+场景+本地化算法'"
+        }
+      },
+      {
+        "title": "ICRA 2026维也纳首日VLA碾压全场:5+ Workshop聚焦+RL4IL登顶互动榜首+Dexora开源36自由度双臂灵巧VLA",
+        "source": "雷锋网/ICRA 2026官方/深蓝具身智能",
+        "url": "https://arxiv.org/pdf/2605.18722",
+        "summary": "6-1 ICRA 2026于维也纳开幕,首日Workshop密集:至少5个聚焦VLA/机器人学习,焦点从'VLA能不能用'转向'VLA怎么做更好'。Jason Ma的RL4IL特邀talk互动数据全场第一,Jeannette Bohg的VLA触觉任务解析紧随其后。中国Booster Robotics T2人形机器人选择ICRA作为全球首秀。同期开源Dexora:首个36自由度双臂灵巧操作VLA(2×6自由度机械臂+2×12自由度XHAND灵巧手),基础任务89.6%成功率,远超GR00T N1(82.1%)和π0(50.4%)。",
+        "category": "算法突破",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "扬弃 + 证伪主义",
+          "analysis": "✅扬弃:Dexora扬弃了VLA范式的'三选一'困境——过去VLA要么'能双手不精细'(双臂低自由度夹爪)、要么'能精细不双手'(单臂高自由度灵巧手),Dexora取消了这个分裂,保留双臂协同+精细操作的统一表征,在仿真预训练→真实微调三阶段范式下用扩散Transformer+质量判别器解决了'高维动作训练不稳定'的痛点。✅证伪主义:Dexora的主张'89.6%基础任务+66.7%灵巧任务'高度可证伪——任何独立实验室用相同硬件+数据复现,误差超过2%即被证伪,这正是好科学的标准。基础任务接近90%的成功率意味着具身智能在'结构化场景'已经过了可用门槛,真正难的是'非结构化长尾'——这才是下一轮否定的起点。值得注意的是,Dexora的灵巧任务(66.7%)与基础任务(89.6%)的23%gap,正反映了当前VLA的'具身认知深度'仍主要在'看到→行动'层面,距离'理解接触→柔顺操作'还有显著距离。",
+          "verdict": "VLA从'炫技benchmark'转向'实用化工程'的拐点已经到来:Dexora代表的高维+双臂+开源,加上LLaVA-VLA(轻量)、FD-VLA(力觉)、LIBERO-X(鲁棒性)三篇ICRA论文,意味着VLA研究范式从'单点突破'全面进入'系统工程'阶段"
+        }
+      },
+      {
+        "title": "京东×腾讯AI Agent战略合作:供应链+入口+A2A协议,华为/OPPO/荣耀终端同步接入",
+        "source": "观点网/企鹅号/财联社",
+        "url": "https://news.qq.com/",
+        "summary": "6-7据媒体报道,京东与腾讯已联手围绕AI Agent展开合作:京东的商品供应链+履约服务体系对接腾讯生态入口,共同打造跨场景智能化服务范式。京东AI Agent已与华为/OPPO/荣耀等多家终端厂商通过A2A(Agent to Agent)协议对接,用户可在各终端原生智能体内提出购物需求,京东负责承接履约。形成从'意图识别→商品匹配→服务保障'完整体验闭环。",
+        "category": "企业动态",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "对立统一 + 语言游戏",
+          "analysis": "✅对立面:腾讯是'流量入口+社交关系链',京东是'供应链+履约能力'——两家本来在不同维度竞争(腾讯电商多次尝试自营,京东也有自己的APP流量),但AI Agent时代让它们在'用户意图承接'上找到公约数。✅统一面:双方都在用'Agent'这个新语言替换'App'这个旧语言。'入口'从'下载App'变成'唤起Agent','购物'从'搜索→下单'变成'对话→完成','履约'从'仓库发货'变成'Agent调度资源池'。这背后是话语权的重新分配:腾讯的'连接一切'升级为'Agent连接一切',京东的'多快好省'升级为'供应链即Agent基础设施'。对立统一的更深含义:在大模型公司(字节/阿里/百度)既做模型又做Agent又做入口的'大一统'路径之外,另一种'生态分工'模式正在崛起——专业Agent(京东) + 入口Agent(腾讯) + 终端Agent(华为/OPPO/荣耀)的分层架构,可能比任何单家公司的'超级App'更有韧性。",
+          "verdict": "京东×腾讯的'供应链+入口'组合是AI Agent商业化的'非大模型公司路径'范本:它证明Agent时代的胜负手不是'模型大小',而是'任务完成度+履约闭环',这是Anthropic ARR从90亿到400亿故事在中国市场的本土化版本"
+        }
+      },
+      {
+        "title": "Anthropic 650亿H轮融资+9650亿估值反超OpenAI+5年2000亿Google TPU算力协议:AI公司'模型+工具+算力+生态'四层封锁",
+        "source": "Reuters/36氪/开源中国AI研报",
+        "url": "https://www.reuters.com/",
+        "summary": "5-28 Anthropic宣布完成650亿美元H轮融资,投后估值9650亿美元,首次超越OpenAI成为全球估值最高AI公司,ARR达到470亿美元。同日披露与Google达成未来5年累计2000亿美元TPU算力协议,锁定多gigawatt级算力供给。本月Anthropic还以3亿美元收购Stainless(SDK自动生成),发布Claude Opus 4.8(诚实性提升4倍)+'动态工作流'多sub-agent机制。资本+算力+生态三层同步封锁。",
+        "category": "企业动态",
+        "rating": 5,
+        "philosophy_insight": {
+          "framework": "目的论 vs 机械论 + 扬弃",
+          "analysis": "✅目的论视角:Anthropic的所有动作都指向一个清晰的设计意图——做'企业级AI操作系统'。模型层(Opus 4.8)是核心,工具层(收购Stainless)是肌肉,生态层(2000亿TPU算力+Amazon/Micron/Samsung/SK Hynix战略投资)是大动脉。这不是涌现,这是极度自觉的战略。✅机械论视角:ARR从90亿到470亿(5倍增长)不是设计出来的,是Anthropic的'诚实性+企业级可靠性'被市场反馈出来的涌现属性——开发者社区的口碑比任何营销都更有效地推高了采用率。✅扬弃关系:Anthropic扬弃了OpenAI的'消费级通才'路径(取消纯ChatGPT式对话+保留模型底层能力+提升到'企业工作流操作系统'),用'金融垂直Agent+Claude Code+SDK自动生成'重新定义AI公司的价值锚点。Stainless收购更关键——Anthropic将'API→SDK生成'这条OpenAI/Google共同依赖的'基础设施命脉'内部化,直接卡住了竞争对手的脖子。",
+          "verdict": "Anthropic的'模型+工具+算力+生态'四层同步布局,是AI公司从'卖token'到'卖操作系统'的范式跃迁:CIO采购决策从此不再只是'选哪个模型',而是'选哪个AI操作系统供应商',Anthropic+Google的组合正在把这个新标准的定义权抢到手里"
+        }
+      },
+      {
+        "title": "字节跳动扣子Coze 3.0正式上线:多Agent协作+行业技能包+Claude Code/Codex CLI一键接入",
+        "source": "财联社/企鹅号",
+        "url": "https://www.coze.cn/",
+        "summary": "6-3字节跳动旗下AI Agent平台扣子(Coze)3.0全新版本正式上线,支持多人多Agent协作、金融/自媒体/医疗/法律/科研等行业技能包、一键加载、多端同步。Claude Code/Codex CLI/Openclaw等主流编程Agent可一键接入Coze。浙商证券分析师:2026年AI Agent技术演进及商业化进入新拐点,Agent范式从'自动化'走向'自主性'。B端路径较清晰,C端巨头进入'抢入口'白热化阶段。",
+        "category": "企业动态",
+        "rating": 4,
+        "philosophy_insight": {
+          "framework": "语言游戏 + 对立统一",
+          "analysis": "✅语言游戏:Coze 3.0的'多Agent协作'+'行业技能包'两个术语,标志着AI Agent话语从'单个智能体'切换到'智能体生态'。一个Agent是工具,多个Agent协作是'工作流',这是话语升维。✅对立统一:Coze作为字节系产品,同时支持'Claude Code/Codex CLI/Openclaw'等竞品Agent接入,体现了一种'反垄断的开放策略'——通过接纳所有主流Agent,Coze自己变成'Agent的Agent'(Meta-Agent),这是用开放对抗封闭。Anthropic在垂直深井,Google在TPU生态,字节在Meta层接入,三者各占一层。对中小开发者意义:不必选边,可以把所有Agent塞进Coze做编排,这是一种'操作系统式'的中间层战略。",
+          "verdict": "Coze 3.0是字节在Agent时代的'Android'野心:不押注单模型,而是做Agent的运行时+编排层,这与Anthropic收购Stainless做SDK基础设施、Google做A2A协议形成三层互补的Agent基础设施"
+        }
+      },
+      {
+        "title": "MTPRWM世界模型:成都人形机器人创新中心发布全国首个流形拓扑保持模型,从'猜未来'到'算未来'",
+        "source": "东方财富网/每日经济新闻",
+        "url": "https://www.nbd.com.cn/",
+        "summary": "6-3天府新区企业成都人形机器人创新中心发布全国首个基于流形拓扑保持的机器人世界模型(MTPRWM)。核心突破:让机器人从'猜未来'转向'算未来',消除'穿墙穿物体'等物理幻觉,在动态避障/居家服务/工业协作/特种巡检场景测试中显著提升可靠性。优先应用于工业制造/家庭服务/特种作业三大场景,为通用人形机器人提供跨场景底层智能支撑。",
+        "category": "算法突破",
+        "rating": 4,
+        "philosophy_insight": {
+          "framework": "对立统一 + 具身认知",
+          "analysis": "✅对立面:传统生成式具身模型'像素级感知' vs 物理世界的'拓扑连续性'——把场景拆成孤立像素,机器人会'看见'但'不理解'空间关系,出现'穿墙'等违反物理规律的错误。MTPRWM的'流形拓扑保持'把高维非线性现实映射为低维连续光滑流形,保留物理连接与拓扑结构,让机器人具备类人'空间直觉'。✅统一面:感知与认知统一——过去VLA范式把'看见'和'理解'分成两个模块(感知编码器+语言模型),MTPRWM的拓扑保持相当于'把理解能力编织进感知本身',这是梅洛-庞蒂具身认知的工程化实现:认知不是后处理,而是与身体-环境交互同时发生。✅落地意义:对工业制造/家庭服务/特种作业三大场景,MTPRWM解决的'物理幻觉'是当前VLA落地最大的拦路虎——再准的抓取模型遇到'穿墙'也白搭。这是从'Demo能力'到'实用能力'的关键一环。",
+          "verdict": "MTPRWM是'世界模型'在具身智能中的中国式回答:不走Nvidia Cosmos的纯仿真路线,而是用拓扑数学让'看见'本身就携带'理解',这是把具身认知理论工程化的重要尝试"
+        }
+      },
+      {
+        "title": "Cerebras 55.5亿IPO+美光市值首破1万亿:AI算力基础设施进入'晶圆级+HBM'双寡头时代",
+        "source": "Reuters/TechCrunch/开源中国AI研报",
+        "url": "https://www.cerebras.net/",
+        "summary": "5-14 AI芯片公司Cerebras Systems以55.5亿美元完成IPO(每股185美元),完全稀释估值564亿美元,首日股价涨超100%,市值近700亿。订单认购规模超发行量20倍。5-26美光科技市值首破1万亿美元(UBS将目标价从535美元上调至1625美元,预测2027-2029年产生超4000亿美元自由现金流)。'推理侧晶圆级芯片'+'训练侧HBM'形成算力双寡头。",
+        "category": "市场数据",
+        "rating": 4,
+        "philosophy_insight": {
+          "framework": "扬弃 + 目的论 vs 机械论",
+          "analysis": "✅扬弃:Cerebras扬弃了'GPU堆叠'的传统扩展路径(取消分布式训练的通信瓶颈),保留'大算力+高带宽'的核心价值,提升到'整片晶圆即单芯片'的新范式——这是从'横向扩展'到'纵向集成'的扬弃。美光HBM则扬弃了'DRAM通用路线'(取消以容量为中心的传统内存设计),保留'高带宽低延迟'的本质需求,提升到'以HBM为AI数据中心新水电煤'的战略层级。✅目的论视角:这两家公司的共同特点是极强的'设计意图'——Cerebras早就押注'推理侧晶圆级',黄仁勋说'GPU不够'的论断被Cerebras用7年研发证实;美光则精准卡位'AI算力的存储瓶颈'。这背后是深度学习和Hinton/LeCun们2012年以来的理论铺垫+企业级采购者的真实需求——一切都是设计的结果。✅对具身智能启示:具身智能的算力瓶颈正在从'训练'向'推理'转移(每个机器人都是推理节点),Cerebras+美光的双寡头格局将决定具身智能公司的硬件成本结构。",
+          "verdict": "算力基础设施的'晶圆级推理+HBM存储'双寡头格局,意味着具身智能玩家必须重新设计'算力采购+模型蒸馏+本地推理'的组合策略,单纯依赖云端GPU的范式将快速被淘汰"
+        }
+      }
+    ],
+    "startup_board": {
+      "companies": [
+        {
+          "name": "英伟达+宇树科技联合体",
+          "field": "人形机器人参考设计+计算平台",
+          "route": "Isaac GR00T开源+宇树H2 Plus本体+Jetson AGX Thor模组",
+          "funding": "英伟达市值3.5万亿美金,宇树IPO募资42亿(420亿估值)",
+          "verdict": "具身智能时代的'Android+OEM'组合,定义权之争开始",
+          "philosophy_tag": "目的论 vs 机械论"
+        },
+        {
+          "name": "Anthropic",
+          "field": "企业级AI Agent+操作系统",
+          "route": "Claude Opus 4.8+10个金融垂直Agent+收购Stainless+2000亿Google TPU协议",
+          "funding": "650亿H轮融资,9650亿估值,ARR 470亿",
+          "verdict": "AI公司从'卖token'到'卖操作系统'的范式跃迁",
+          "philosophy_tag": "扬弃"
+        },
+        {
+          "name": "字节跳动(扣子Coze)",
+          "field": "Meta-Agent平台+多Agent协作",
+          "route": "Coze 3.0+Claude Code/Codex CLI一键接入+行业技能包",
+          "funding": "字节母公司估值超3000亿美金,扣子战略级投入",
+          "verdict": "字节在Agent时代的'Android'野心,Meta层战略",
+          "philosophy_tag": "语言游戏"
+        },
+        {
+          "name": "Dexora团队(北大-银河通用+智源)",
+          "field": "高自由度双臂灵巧VLA",
+          "route": "36自由度双臂灵巧手+扩散Transformer+质量判别器+仿真预训练三阶段",
+          "funding": "开源项目,论文arXiv:2605.18722",
+          "verdict": "ICRA 2026开源明星,灵巧VLA的中国突破",
+          "philosophy_tag": "证伪主义"
+        },
+        {
+          "name": "成都人形机器人创新中心",
+          "field": "世界模型+具身认知",
+          "route": "MTPRWM流形拓扑保持世界模型+工业/家庭/特种三大场景",
+          "funding": "天府新区政府支持,定位全国首个国家级人形机器人创新中心",
+          "verdict": "世界模型的中国式回答,把具身认知理论工程化",
+          "philosophy_tag": "具身认知"
+        }
+      ]
+    },
+    "pm_board": {
+      "product_insights": [
+        {
+          "topic": "京东×腾讯Agent合作:产品经理的'生态接入'能力成为新核心",
+          "analysis": "京东Agent已与华为/OPPO/荣耀终端通过A2A协议对接,意味着'Agent即服务'正在从单点工具升级为生态级产品。对产品经理:Agent PRD需要新增'A2A协议兼容度'和'终端覆盖度'两个关键指标——这比'功能完整度'更决定产品能否进入主流入口。",
+          "philosophy_lens": "语言游戏——'Agent'这个新术语正在替换'App'的旧生态位,产品定位也要从'做一个App'切换到'做一个Agent生态节点'",
+          "action": "在PRD中新增'Agent生态接入矩阵'章节:覆盖A2A/MCP/Anthropic SDK等主流协议,明确哪些协议是必选/可选/差异化"
+        },
+        {
+          "topic": "VLA实用化:产品经理需要从'成功率'转向'鲁棒性退化曲线'",
+          "analysis": "ICRA 2026 Dexora/LLaVA-VLA/LIBERO-X/FD-VLA四篇论文共同释放信号:VLA评测从'平均成功率'转向'扰动下的鲁棒性退化曲线'。背景变化/物体干扰/桌面高度变化/语言改写/长程任务,每一维扰动都会让VLA掉点。PM的新指标体系:R1(简单场景成功率)、R2(扰动场景鲁棒性)、R3(长程任务保持率)。",
+          "philosophy_lens": "证伪主义——'平均99%成功率'是营销语言,'扰动后能保持多少'才是认知价值。Dexora基础任务89.6% vs 灵巧任务66.7%的23%gap就是'真实落差'",
+          "action": "建立VLA产品三级评测卡:基础任务(可控场景)、鲁棒性(扰动场景)、泛化性(未见场景),每级独立报告+独立阈值"
+        }
+      ]
+    },
+    "algo_board": {
+      "tech_deep_dives": [
+        {
+          "topic": "Dexora:扩散Transformer+质量判别器解决高维灵巧VLA训练不稳定",
+          "key_insight": "Dexora架构核心是'解码器only扩散Transformer'+'离线质量判别器'。前者用T5编码语言+SigLip编码图像+交替注入Transformer块,通过去噪预测36自由度连续动作;后者以冻结预训练策略为基准,预测轨迹质量得分(0-1),把得分转化为训练权重,过滤掉'运动抖动+任务失败'的低质量遥操作数据。三阶段训练:10万仿真轨迹预训练→高质量真实数据训练判别器→全部真实数据微调策略。结果:基础任务89.6%成功率(超GR00T N1 7.5%),灵巧任务66.7%成功率(超基线15个百分点),并可零样本迁移到单臂/双臂夹爪等低维设备。",
+          "philosophy_framework": "扬弃——'扩散式连续动作生成'扬弃了'离散动作token'的精度瓶颈,'质量感知训练'扬弃了'数据越多越好'的迷信,'高维训练+低维部署'扬弃了'一个模型对应一个形态'的绑定",
+          "implication": "对算法工程师:灵巧操作的VLA关键不是'模型更大',而是'数据质量+动作表示+形态解耦'三件套;Dexora开源(论文+项目页)可直接复现并适配自己的灵巧手硬件"
+        },
+        {
+          "topic": "MTPRWM:用流形拓扑保持消除VLA的物理幻觉",
+          "key_insight": "MTPRWM(Multi-scale Topological Preserving Robot World Model)把高维非线性的现实世界映射为连续光滑的低维流形空间,完整保留物理连接与拓扑结构。四个能力升级:①'看懂真实空间距离'(消除穿墙穿物体幻觉);②'清晰感知障碍物'(动态环境稳定判断);③'行动前先在脑内模拟推演'(像人做事前'想一想');④'思考范围更聚焦'(不用盲目试错)。在动态避障/居家服务/工业协作/特种巡检场景测试,物理幻觉大幅消除,环境泛化能力显著增强。",
+          "philosophy_framework": "对立统一+具身认知——'像素化感知'与'拓扑化理解'本是对立面,MTPRWM用数学方法让两者统一在低维流形空间。具身认知理论中'认知在身体-环境回路中'的核心命题,在MTPRWM里被实现为'理解能力内嵌进感知表征'",
+          "implication": "对算法工程师:VLA的'世界模型'模块不再是'像素级视频预测',而应该是'拓扑级物理推理'。MTPRWM代表的方向是'世界模型+具身认知+拓扑数学'的复合工程,值得作为下一代VLA架构的内核候选"
+        }
+      ]
+    },
+    "projmgr_board": {
+      "project_signals": [
+        {
+          "signal": "6-1 NVIDIA Isaac GR00T开源+ICRA VLA范式转向+Anthropic ARR 470亿,具身智能+Agent进入'基础设施标准化'阶段",
+          "impact": "项目经理的资源分配需要从'自研基础设施'转向'接入标准生态':英伟达Isaac GR00T+Coze Agent编排+MCP协议+A2A协议构成新的'水电煤',自研这些基础设施的ROI急剧下降,真正的差异化应该在'场景数据+产品体验+商业闭环'。项目风险清单也要扩展:除了'技术风险',新增'生态绑定风险'(被英伟达/字节锁定的可能性)。",
+          "framework": "否定之否定——'自研一切'的单点思维被生态分工否定,新合题是'借生态之力+建自己护城河'。这跟云计算时代'不必自建IDC'的逻辑同构",
+          "recommendation": "把项目里程碑从'自研能力清单'切换到'生态接入矩阵+差异化壁垒清单'双轨:第一阶段接入英伟达/Coze/MCP等基础设施,第二阶段在'数据飞轮+产品深度+客户关系'建立不可替代的壁垒"
+        }
+      ]
+    },
+    "hermes_board": {
+      "insights": [
+        {
+          "title": "VLA进入'实用化范式':ICRA 2026四篇关键论文(Dexora/LLaVA-VLA/FD-VLA/LIBERO-X)",
+          "content": "VLA研究焦点从'benchmark刷榜'全面转向'真实部署':①Dexora(高维双臂+开源)、②LLaVA-VLA(轻量基线+跨本体)、③FD-VLA(力觉蒸馏+接触丰富操作)、④LIBERO-X(五级鲁棒性诊断)。共同信号:VLA的竞争点是'低成本训练+跨本体适配+真实扰动评测+移动操作落地'。",
+          "url": "https://arxiv.org/pdf/2605.18722"
+        },
+        {
+          "title": "Cerebras晶圆级推理芯片+美光HBM:AI算力基础设施进入新阶段",
+          "content": "Cerebras 55.5亿IPO+美光万亿市值,共同信号是'推理侧晶圆级芯片'与'训练侧HBM存储'的双寡头格局形成。对Agent/具身智能公司:算力采购策略需从'纯云端GPU'转向'云端训练+本地推理'组合,边缘推理硬件选型变得关键。",
+          "url": "https://www.cerebras.net/"
+        }
+      ],
+      "tech_stack": [
+        {
+          "title": "NVIDIA Isaac GR00T + Jetson AGX Thor:开源人形机器人参考设计+2070 TFLOPS本地算力",
+          "content": "Jetson AGX Thor T5000模组基于Blackwell架构,提供2070 FP4 TFLOPS本地AI算力,可让机器人在脱离云端时实时处理复杂感知与决策。配套Isaac Sim/Lab全栈仿真训练+Isaac GR00T开发者平台,2026年底由宇树科技正式上市。",
+          "url": "https://www.nvidia.com/"
+        },
+        {
+          "title": "Coze 3.0:字节跳动Meta-Agent平台,支持Claude Code/Codex CLI一键接入",
+          "content": "扣子3.0全新支持多人多Agent协作+金融/自媒体/医疗/法律/科研等行业技能包+多端同步。可作为Agent编排层,聚合所有主流编程/垂直Agent。",
+          "url": "https://www.coze.cn/"
+        }
+      ],
+      "community": [
+        {
+          "title": "ICRA 2026维也纳:中国具身智能军团ICRA首秀,Booster Robotics T2全球首发",
+          "content": "中国创业公司Booster Robotics选择ICRA 2026作为T2人形机器人全球首发舞台,引发国际机器人社区对国产人形机器人高度关注。同期英伟达Isaac GR00T发布+宇树科创板过会,一周内多个标志性事件叠加,人形机器人竞赛进入新阶段。",
+          "url": "https://www.nvidia.com/"
+        },
+        {
+          "title": "京东×腾讯AI Agent战略合作:供应链+入口+A2A协议三层闭环",
+          "content": "6-7京东与腾讯已联手围绕AI Agent展开合作,京东AI Agent已与华为/OPPO/荣耀等终端厂商通过A2A协议对接,形成从意图识别→商品匹配→履约的完整体验闭环。",
+          "url": "https://news.qq.com/"
+        }
+      ]
+    },
+    "action_items": [
+      {
+        "priority": "P0",
+        "action": "精读Dexora论文+ICRA 2026四篇VLA实用化论文,建立'VLA选型评估卡'",
+        "rationale": "VLA范式从'炫技'转向'实用化',作为AI Agent/具身智能开发者必须理解:①Dexora的扩散Transformer+质量判别器架构;②LLaVA-VLA的轻量基线;③FD-VLA的力觉蒸馏;④LIBERO-X的鲁棒性评测体系。这直接关系到自己项目的VLA选型与二次开发方向。",
+        "deadline": "2026-06-15"
+      },
+      {
+        "priority": "P1",
+        "action": "调研英伟达Isaac GR00T参考设计:评估'接入标准底盘'vs'自研差异化'的取舍",
+        "rationale": "英伟达Isaac GR00T开源+宇树H2 Plus本体即将上市,这是具身智能的'Android时刻'。如果未来3-6个月要启动具身智能相关项目,必须先评估'是直接接入英伟达生态'还是'坚持自研差异化',两条路径的资源投入和护城河完全不同。",
+        "deadline": "2026-06-22"
+      },
+      {
+        "priority": "P2",
+        "action": "推进哲学深挖计划Day 5(证伪主义):用Dexora论文+MTPRWM世界模型作为案例",
+        "rationale": "Day 5 证伪主义跟今日VLA实用化趋势高度相关:Dexora的'89.6%基础+66.7%灵巧'23%gap、MTPRWM'从猜到算'的物理幻觉消除,都是证伪主义在算法工程中的具体应用。趁热打铁完成'框架改变了什么判断'的输出,形成可复用的技术判断方法论。",
+        "deadline": "2026-06-15"
+      }
+    ],
+    "raw_articles": [
+      {"title": "英伟达Isaac GR00T开源人形机器人参考设计:宇树H2 Plus+Jetson Thor+Sharpa Wave灵巧手", "source": "NVIDIA官方/搜狐", "url": "https://www.nvidia.com/", "summary": "6-1前后英伟达GTC大会揭晓Isaac GR00T开源参考设计,31自由度宇树H2 Plus+22自由度灵巧手+2070 FPLOPS Jetson Thor,2026年底由宇树正式上市。", "category": "硬件与机器人", "rating": 5},
+      {"title": "ICRA 2026维也纳首日VLA碾压全场:5+ Workshop聚焦+RL4IL登顶", "source": "雷锋网/ICRA 2026", "url": "https://arxiv.org/pdf/2605.18722", "summary": "6-1 ICRA 2026开幕首日,VLA成为最高频关键词,焦点从'能不能用'转向'怎么做更好',RL4IL特邀talk互动数据全场第一。", "category": "算法突破", "rating": 5},
+      {"title": "Dexora开源:首个36自由度双臂灵巧操作VLA,基础任务89.6%成功率", "source": "深蓝具身智能/arXiv", "url": "https://arxiv.org/pdf/2605.18722", "summary": "双臂6自由度+2×12自由度灵巧手=36 DoF,扩散Transformer+质量判别器,基础任务89.6%远超GR00T N1 82.1%和π0 50.4%。", "category": "算法突破", "rating": 5},
+      {"title": "京东×腾讯AI Agent战略合作:供应链+入口+A2A协议,华为/OPPO/荣耀同步接入", "source": "观点网/企鹅号", "url": "https://news.qq.com/", "summary": "6-7京东与腾讯联手围绕AI Agent合作,京东AI Agent已与多家终端厂商通过A2A协议对接,形成意图→商品→履约闭环。", "category": "企业动态", "rating": 5},
+      {"title": "Anthropic 650亿H轮融资+9650亿估值反超OpenAI", "source": "Reuters/36氪", "url": "https://www.reuters.com/", "summary": "5-28 Anthropic完成650亿美元H轮融资,投后估值9650亿美元,首次超越OpenAI成为全球估值最高AI公司,ARR达470亿。", "category": "企业动态", "rating": 5},
+      {"title": "Anthropic-Google 5年2000亿TPU算力协议:多gigawatt级算力锁定", "source": "Yahoo Finance/开源中国AI研报", "url": "https://www.anthropic.com/", "summary": "Anthropic与Google达成未来5年累计2000亿美元TPU算力协议,锁定多gigawatt级算力供给,支撑Claude训练与推理扩展。", "category": "企业动态", "rating": 5},
+      {"title": "字节跳动扣子Coze 3.0上线:多Agent协作+行业技能包+Claude Code接入", "source": "财联社/企鹅号", "url": "https://www.coze.cn/", "summary": "6-3字节扣子3.0正式上线,支持多人多Agent协作+行业技能包+多端同步+Claude Code/Codex CLI一键接入。", "category": "企业动态", "rating": 4},
+      {"title": "MTPRWM世界模型:成都人形机器人创新中心发布流形拓扑保持模型", "source": "东方财富网/每日经济新闻", "url": "https://www.nbd.com.cn/", "summary": "6-3成都人形机器人创新中心发布全国首个流形拓扑保持世界模型MTPRWM,让机器人从'猜未来'到'算未来',消除物理幻觉。", "category": "算法突破", "rating": 4},
+      {"title": "Cerebras 55.5亿IPO+美光万亿:AI算力基础设施双寡头", "source": "Reuters/TechCrunch", "url": "https://www.cerebras.net/", "summary": "5-14 Cerebras 55.5亿IPO市值近700亿,5-26美光市值首破1万亿(UBS目标价上调至1625美元),'晶圆级推理+HBM存储'双寡头形成。", "category": "市场数据", "rating": 4},
+      {"title": "原华为盘古大模型负责人创业,AI Agent公司首轮融资估值1亿美元", "source": "搜狐娱乐", "url": "https://www.sohu.com/", "summary": "原华为盘古大模型核心技术负责人离职创业两个月公司完成首轮融资,投后估值1亿美元,主攻AI Agent方向。", "category": "企业动态", "rating": 3},
+      {"title": "Cognition 10亿美元D轮融资 估值260亿:Devin加速企业级AI编程", "source": "TechCrunch", "url": "https://www.cognition.ai/", "summary": "5-27 AI编程Agent公司Cognition完成10亿美元D轮融资,投后估值260亿,年化营收4.92亿,被Mercedes/NASA/GS等机构使用。", "category": "企业动态", "rating": 4},
+      {"title": "Visa战略投资Replit:AI Agent自主支付能力落地", "source": "TechCrunch/PR Newswire", "url": "https://replit.com/", "summary": "5-28 Visa战略投资Replit并建立长期合作,接入Visa Intelligent Commerce与Trusted Agent Protocol,使AI Agent能直接发起支付。", "category": "企业动态", "rating": 3},
+      {"title": "LLaVA-VLA/FD-VLA/LIBERO-X:ICRA 2026 VLA实用化三篇关键论文", "source": "雷峰网/企鹅号", "url": "https://arxiv.org/", "summary": "ICRA 2026 VLA实用化代表:①LLaVA-VLA轻量基线+跨本体;②FD-VLA力觉蒸馏+接触丰富操作;③LIBERO-X五级鲁棒性诊断。", "category": "算法突破", "rating": 4},
+      {"title": "Booster Robotics T2人形机器人ICRA 2026全球首秀", "source": "雷峰网", "url": "https://www.booster-robotics.com/", "summary": "中国创业公司Booster Robotics选择ICRA 2026维也纳作为T2人形机器人全球首发地,引发国际机器人社区对国产人形机器人高度关注。", "category": "硬件与机器人", "rating": 4},
+      {"title": "OpenAI GPT-5.5 Instant+实时语音三件套:多模态Agent基座升级", "source": "OpenAI官方/开源中国AI研报", "url": "https://openai.com/", "summary": "5-5 OpenAI发布GPT-5.5 Instant(医疗/法律/金融事实性错误率下降52.5%),5-7发布GPT-Realtime-2/Translate/Whisper三件套,128K上下文窗口。", "category": "算法突破", "rating": 3},
+      {"title": "阿里Qwen3.7-Max发布:万亿参数MoE+实时多语言翻译", "source": "通义千问官方", "url": "https://qwen.ai/", "summary": "5-20阿里发布Qwen3.7-Max(万亿参数MoE)+Qwen3.7-Plus-Preview,默认开启推理模式,强化代码生成+办公生产力+长链路自主执行。", "category": "算法突破", "rating": 3}
+    ]
+  }
+}
