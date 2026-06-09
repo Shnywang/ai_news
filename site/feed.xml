@@ -5,14 +5,94 @@
   <link>https://shnywang.github.io/ai_news/site/index.html</link>
   <description>多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</description>
   <language>zh-CN</language>
-  <lastBuildDate>Mon, 08 Jun 2026 02:26:04 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 09 Jun 2026 01:48:55 GMT</lastBuildDate>
   <atom:link href="https://shnywang.github.io/ai_news/site/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>工信部+国资委联合发布人形机器人实景实训专项行动:到2026年底万台级规模落地,具身智能进入&quot;政策驱动规模化&quot;新阶段</title>
+    <link>https://www.nbd.com.cn/</link>
+    <description>6-8工业和信息化部办公厅、国务院国资委办公厅联合发布关于开展2026年度人形机器人与具身智能实景实训专项行动的通知。明确到2026年底,人形机器人等重点产品在一批代表性场景中率先完成应用验证和常态部署,凝练形成百个以上高价值应用场景,带动形成万台级规模落地能力。各省级地区选取重点场景单元不少于20个,覆盖工业/服务/特种领域中至少两类;各央企选取不少于10个。鼓励&quot;人形机器人即服务&quot;模式,通过按效用付费、经营性租赁降低用户投入门槛。这是具身智能首次从&quot;产业政策&quot;升级为&quot;跨部门+央企+地方&quot;的协同行动。</description>
+    <source>人民财讯/IT之家/界面新闻</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.nbd.com.cn/</guid>
+  </item>
+  <item>
+    <title>GuidedVLA被RSS 2026接收:复旦+上交+港大OpenDriveLab联合,首个VLA&quot;可控可解释&quot;中国式突破,在π0基础上平均提升15-20%</title>
+    <link>https://arxiv.org/abs/2605.12369</link>
+    <description>复旦大学可信具身智能研究院联合上海交通大学、香港大学OpenDriveLab提出GuidedVLA,被Robotics: Science and Systems(RSS)2026接收,论文+项目+代码+权重+数据集全开源。核心思路:在VLA动作生成中加入显式引导,把任务相关因素拆成Object Head(目标)+Skill Head(阶段)+Depth Head(空间)三类可检查分工,采用类似ControlNet的零初始化残差适配。LIBERO-Plus 7类扰动下π0 68.2%→GuidedVLA 75.4%;RoboTwin 2.0 8个未见任务77.38%→90.63%;真实双臂平台Base Policy 55.8%→75.8%。自动因子标注流水线92% episodes无需人工修正,50 episodes标注从43.5分钟降到4分钟。</description>
+    <source>雷峰网/复旦大学/上海交大/港大OpenDriveLab</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://arxiv.org/abs/2605.12369</guid>
+  </item>
+  <item>
+    <title>天工3.0规模化量产:H2开启交付,搭载地瓜机器人旭日S600芯片,整机综合成本降幅超50%</title>
+    <link>https://www.jiemian.com/</link>
+    <description>6-8北京人形机器人创新中心(北京人形)与地瓜机器人正式公布产业化合作:双方协同打造的全尺寸通用人形机器人天工3.0将于2026年下半年开启规模化量产交付。该机型搭载地瓜机器人旭日S600具身智能大算力芯片,广泛应用于工业制造、商业服务、3D复杂场景作业。整机综合成本预计降幅超50%,投入产线作业、仓储物流、智能服务、特殊环境运维等实景应用。天工3.0配备高扭矩一体化关节,肢体爆发力可翻越1米障碍,操作精度毫米级。</description>
+    <source>界面新闻/IT之家/北京人形机器人创新中心</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.jiemian.com/</guid>
+  </item>
+  <item>
+    <title>微信AI Agent生态密集接入:同程旅行+得物App+京东腾讯,OTA/电商/品质鉴别全场景Agent化</title>
+    <link>https://news.qq.com/</link>
+    <description>6-8同程旅行宣布全面接入微信AI智能体生态,成为首批接入微信AI生态的OTA平台,机票/火车票/酒店/门票/度假等核心产品+艺龙+万达3200+酒店同步接入;6-9得物App率先接入微信AI Agent生态,用户可通过微信Agent直接调用场景导购、商品鉴别、购买下单、品质履约等服务。这是微信AI Agent生态首次在OTA(旅行)+电商(得物)+综合(京东腾讯)三大场景同时落地。腾讯近期接近启动微信AI助手开发测试,微信正与华为/小米/OPPO/vivo等手机厂商推进A2A合作。</description>
+    <source>钛媒体/CNMO/财联社/企鹅号</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://news.qq.com/</guid>
+  </item>
+  <item>
+    <title>苹果WWDC 2026:Xcode 27+Core AI框架+Foundation Models支持图像输入,智能体AI应用&apos;最佳场所&apos;</title>
+    <link>https://www.apple.com/</link>
+    <description>6-9苹果WWDC 2026开幕,推出Xcode 27编码助手升级到智能体式编码工作流,新能力覆盖应用本地化、与模拟设备交互、测试与调试等环节。同步推出Core AI框架,新版Foundation Models框架支持图像输入(图片+文本多模态),开发者可让应用直接处理更丰富多模态任务。苹果软件工程高级副总裁Craig Federighi称Xcode已成为构建智能体AI应用的&apos;最佳场所&apos;。新框架可与智能体编码工具深度协同,为开发者提供更灵活的设备端AI能力调用方式。</description>
+    <source>IT之家/苹果官方/Craig Federighi</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.apple.com/</guid>
+  </item>
+  <item>
+    <title>普渡PUDU D7工业级类人形机器人+PuduFM 1.0+PuduAgent任务大脑:&apos;一脑多形&apos;进入工业智能体时代</title>
+    <link>https://www.pudu.com/</link>
+    <description>6-1普渡机器人发布工业级类人形机器人PUDU D7,基于自研PuduFM 1.0具身智能大模型,聚焦工厂真实作业需求。整机支持14kg大承重+2米作业高度,搭载高精度触觉传感器实现毫米级力控+柔性双臂精密微力控制,支持自主换电实现24小时连续作业。PuduAgent作为&apos;任务大脑&apos;,能理解用户任务目标、自主拆解复杂流程、动态调用导航/操作/感知等模块,协同多个机器人完成跨区域长程任务。普渡已构建&apos;具身导航+具身操作+具身交互&apos;三大具身智能技术栈,实现&apos;一脑多形&apos;架构,完成专用/类人形/人形机器人全形态布局,累计出货超13万台。</description>
+    <source>普渡机器人/工业机器人/服务机器人媒体</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.pudu.com/</guid>
+  </item>
+  <item>
+    <title>Anthropic万字长文《AI正在成为自己的造物主》:Claude写80%代码+任务时长4个月翻倍,递归式自我改进时间表提前</title>
+    <link>https://www.anthropic.com/</link>
+    <description>6-9 Anthropic Institute发布万字长文,披露AI加速AI开发的内部数据:截至2026年5月,Anthropic合并进生产环境的代码中,超过80%出自Claude;典型工程师每天合并代码量是2024年的8倍;AI系统能可靠独立完成的任务时长,已从早期每7个月翻一倍加速到每4个月翻一倍——2024年3月Claude Opus 3能做4分钟任务,2026年5月Claude Opus 4.6已能完成12小时任务,按此趋势2027年AI或将胜任数周级任务。文章同时发布三种未来情景:①能力停滞但广泛扩散;②AI实验室获得复利式效率提升;③AI系统获得完全递归式自我改进能力。</description>
+    <source>Anthropic Institute/腾讯科技编译/36氪</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.anthropic.com/</guid>
+  </item>
+  <item>
+    <title>卧安机器人荣获恰佩克奖+中标深圳具身智能数据中心4495万元:家庭具身智能商业化路线持续验证</title>
+    <link>https://www.zhitongcaijing.com/</link>
+    <description>6-5卧安机器人获恰佩克奖·年度技术创新产品奖,此前5月入选LeadeRobot TOP50+中标深圳具身智能数据中心4495万元。OneModel 1.7 FrontoStria-RL+一脑多形产品矩阵。</description>
+    <source>智通财经/港股研究</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.zhitongcaijing.com/</guid>
+  </item>
+  <item>
+    <title>比亚迪人形机器人&apos;尧舜禹&apos;2026年内部部署2万台:造车全链条优势开启第二增长曲线</title>
+    <link>https://www.ofweek.com/</link>
+    <description>6-3比亚迪执行副总裁李柯证实自研人形机器人,代号&apos;尧舜禹&apos;,2026年计划内部部署2万台,四百多人研发团队+四千名上下游工程师协同。</description>
+    <source>OFweek/界面新闻</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.ofweek.com/</guid>
+  </item>
+  <item>
+    <title>物理AI:推动机器人技术根本性变革,英伟达Cosmos+智元1万台部署构筑数据护城河</title>
+    <link>https://www.cls.cn/</link>
+    <description>黄仁勋在CES宣告&apos;物理AI的ChatGPT时刻已经到来&apos;,行业从&apos;会说话&apos;到&apos;会做事&apos;演进。英伟达Cosmos基于2000万小时真实数据训练,智元完成1万台机器人量产部署构筑数据护城河。</description>
+    <source>科技日报/汇正财经</source>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
+    <guid>https://www.cls.cn/</guid>
+  </item>
   <item>
     <title>英伟达Isaac GR00T开源人形机器人参考设计:31自由度宇树H2 Plus+22自由度灵巧手+2070 TFLOPS算力</title>
     <link>https://www.nvidia.com/</link>
     <description>6-1前后英伟达GTC大会揭晓业界首款开源人形机器人参考设计NVIDIA Isaac GR00T,采用宇树H2 Plus(1.83米,31自由度)+Sharpa Wave触觉五指灵巧手(22自由度)+Jetson AGX Thor T5000模组(2070 FP4 TFLOPS本地算力)。苏黎世联邦理工/斯坦福机器人中心/UCSD等顶尖机构将率先采用,2026年底由宇树正式上市。黄仁勋:人形机器人将为全球工业开启数万亿美元经济机遇。</description>
     <source>NVIDIA官方/搜狐/雪球</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.nvidia.com/</guid>
   </item>
   <item>
@@ -20,23 +100,15 @@
     <link>https://arxiv.org/pdf/2605.18722</link>
     <description>6-1 ICRA 2026于维也纳开幕,首日Workshop密集:至少5个聚焦VLA/机器人学习,焦点从&apos;VLA能不能用&apos;转向&apos;VLA怎么做更好&apos;。Jason Ma的RL4IL特邀talk互动数据全场第一,Jeannette Bohg的VLA触觉任务解析紧随其后。中国Booster Robotics T2人形机器人选择ICRA作为全球首秀。同期开源Dexora:首个36自由度双臂灵巧操作VLA(2×6自由度机械臂+2×12自由度XHAND灵巧手),基础任务89.6%成功率,远超GR00T N1(82.1%)和π0(50.4%)。</description>
     <source>雷锋网/ICRA 2026官方/深蓝具身智能</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://arxiv.org/pdf/2605.18722</guid>
-  </item>
-  <item>
-    <title>京东×腾讯AI Agent战略合作:供应链+入口+A2A协议,华为/OPPO/荣耀终端同步接入</title>
-    <link>https://news.qq.com/</link>
-    <description>6-7据媒体报道,京东与腾讯已联手围绕AI Agent展开合作:京东的商品供应链+履约服务体系对接腾讯生态入口,共同打造跨场景智能化服务范式。京东AI Agent已与华为/OPPO/荣耀等多家终端厂商通过A2A(Agent to Agent)协议对接,用户可在各终端原生智能体内提出购物需求,京东负责承接履约。形成从&apos;意图识别→商品匹配→服务保障&apos;完整体验闭环。</description>
-    <source>观点网/企鹅号/财联社</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://news.qq.com/</guid>
   </item>
   <item>
     <title>Anthropic 650亿H轮融资+9650亿估值反超OpenAI+5年2000亿Google TPU算力协议:AI公司&apos;模型+工具+算力+生态&apos;四层封锁</title>
     <link>https://www.reuters.com/</link>
     <description>5-28 Anthropic宣布完成650亿美元H轮融资,投后估值9650亿美元,首次超越OpenAI成为全球估值最高AI公司,ARR达到470亿美元。同日披露与Google达成未来5年累计2000亿美元TPU算力协议,锁定多gigawatt级算力供给。本月Anthropic还以3亿美元收购Stainless(SDK自动生成),发布Claude Opus 4.8(诚实性提升4倍)+&apos;动态工作流&apos;多sub-agent机制。资本+算力+生态三层同步封锁。</description>
     <source>Reuters/36氪/开源中国AI研报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.reuters.com/</guid>
   </item>
   <item>
@@ -44,39 +116,23 @@
     <link>https://www.coze.cn/</link>
     <description>6-3字节跳动旗下AI Agent平台扣子(Coze)3.0全新版本正式上线,支持多人多Agent协作、金融/自媒体/医疗/法律/科研等行业技能包、一键加载、多端同步。Claude Code/Codex CLI/Openclaw等主流编程Agent可一键接入Coze。浙商证券分析师:2026年AI Agent技术演进及商业化进入新拐点,Agent范式从&apos;自动化&apos;走向&apos;自主性&apos;。B端路径较清晰,C端巨头进入&apos;抢入口&apos;白热化阶段。</description>
     <source>财联社/企鹅号</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.coze.cn/</guid>
-  </item>
-  <item>
-    <title>MTPRWM世界模型:成都人形机器人创新中心发布全国首个流形拓扑保持模型,从&apos;猜未来&apos;到&apos;算未来&apos;</title>
-    <link>https://www.nbd.com.cn/</link>
-    <description>6-3天府新区企业成都人形机器人创新中心发布全国首个基于流形拓扑保持的机器人世界模型(MTPRWM)。核心突破:让机器人从&apos;猜未来&apos;转向&apos;算未来&apos;,消除&apos;穿墙穿物体&apos;等物理幻觉,在动态避障/居家服务/工业协作/特种巡检场景测试中显著提升可靠性。优先应用于工业制造/家庭服务/特种作业三大场景,为通用人形机器人提供跨场景底层智能支撑。</description>
-    <source>东方财富网/每日经济新闻</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://www.nbd.com.cn/</guid>
   </item>
   <item>
     <title>Cerebras 55.5亿IPO+美光市值首破1万亿:AI算力基础设施进入&apos;晶圆级+HBM&apos;双寡头时代</title>
     <link>https://www.cerebras.net/</link>
     <description>5-14 AI芯片公司Cerebras Systems以55.5亿美元完成IPO(每股185美元),完全稀释估值564亿美元,首日股价涨超100%,市值近700亿。订单认购规模超发行量20倍。5-26美光科技市值首破1万亿美元(UBS将目标价从535美元上调至1625美元,预测2027-2029年产生超4000亿美元自由现金流)。&apos;推理侧晶圆级芯片&apos;+&apos;训练侧HBM&apos;形成算力双寡头。</description>
     <source>Reuters/TechCrunch/开源中国AI研报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.cerebras.net/</guid>
-  </item>
-  <item>
-    <title>Anthropic-Google 5年2000亿TPU算力协议:多gigawatt级算力锁定</title>
-    <link>https://www.anthropic.com/</link>
-    <description>Anthropic与Google达成未来5年累计2000亿美元TPU算力协议,锁定多gigawatt级算力供给,支撑Claude训练与推理扩展。</description>
-    <source>Yahoo Finance/开源中国AI研报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://www.anthropic.com/</guid>
   </item>
   <item>
     <title>原华为盘古大模型负责人创业,AI Agent公司首轮融资估值1亿美元</title>
     <link>https://www.sohu.com/</link>
     <description>原华为盘古大模型核心技术负责人离职创业两个月公司完成首轮融资,投后估值1亿美元,主攻AI Agent方向。</description>
     <source>搜狐娱乐</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.sohu.com/</guid>
   </item>
   <item>
@@ -84,7 +140,7 @@
     <link>https://www.cognition.ai/</link>
     <description>5-27 AI编程Agent公司Cognition完成10亿美元D轮融资,投后估值260亿,年化营收4.92亿,被Mercedes/NASA/GS等机构使用。</description>
     <source>TechCrunch</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.cognition.ai/</guid>
   </item>
   <item>
@@ -92,7 +148,7 @@
     <link>https://replit.com/</link>
     <description>5-28 Visa战略投资Replit并建立长期合作,接入Visa Intelligent Commerce与Trusted Agent Protocol,使AI Agent能直接发起支付。</description>
     <source>TechCrunch/PR Newswire</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://replit.com/</guid>
   </item>
   <item>
@@ -100,7 +156,7 @@
     <link>https://arxiv.org/</link>
     <description>ICRA 2026 VLA实用化代表:①LLaVA-VLA轻量基线+跨本体;②FD-VLA力觉蒸馏+接触丰富操作;③LIBERO-X五级鲁棒性诊断。</description>
     <source>雷峰网/企鹅号</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://arxiv.org/</guid>
   </item>
   <item>
@@ -108,7 +164,7 @@
     <link>https://www.booster-robotics.com/</link>
     <description>中国创业公司Booster Robotics选择ICRA 2026维也纳作为T2人形机器人全球首发地,引发国际机器人社区对国产人形机器人高度关注。</description>
     <source>雷峰网</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.booster-robotics.com/</guid>
   </item>
   <item>
@@ -116,7 +172,7 @@
     <link>https://openai.com/</link>
     <description>5-5 OpenAI发布GPT-5.5 Instant(医疗/法律/金融事实性错误率下降52.5%),5-7发布GPT-Realtime-2/Translate/Whisper三件套,128K上下文窗口。</description>
     <source>OpenAI官方/开源中国AI研报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://openai.com/</guid>
   </item>
   <item>
@@ -124,7 +180,7 @@
     <link>https://qwen.ai/</link>
     <description>5-20阿里发布Qwen3.7-Max(万亿参数MoE)+Qwen3.7-Plus-Preview,默认开启推理模式,强化代码生成+办公生产力+长链路自主执行。</description>
     <source>通义千问官方</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://qwen.ai/</guid>
   </item>
   <item>
@@ -132,7 +188,7 @@
     <link>https://finance.eastmoney.com/a/202605313755230958.html</link>
     <description>上交所公告宇树科技6月1日上会审议科创板IPO。宇树2025年营收约17亿元，毛利率60.13%，核心零部件自研自产率超90%。5月25日发布WVLA2.0具身大模型，G1机器人实现会议室自主整理全流程，无需远程操控。这是A股「具身智能第一股」的关键时刻，也是国产机器人从一级市场融资驱动迈入二级市场独立定价的标志。</description>
     <source>证券时报/证券日报/上交所公告</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://finance.eastmoney.com/a/202605313755230958.html</guid>
   </item>
   <item>
@@ -140,7 +196,7 @@
     <link>https://m.nbd.com.cn/articles/2026-05-29/4412643.html</link>
     <description>自变量机器人5月29日发布全球首个具备「事件级预测能力」的世界模型WALL-WM，不再逐帧预测画面，而是以抓取、归置等语义事件为预测单元，跳过无效中间帧。该方法解决了文本-视觉-动作三类信息时间尺度不统一导致VLA真机落地远不及理论的根本问题。自变量4月底刚完成近20亿元B轮融资，由小米战投与红杉中国联合领投，是国内唯一同时获字节、美团、阿里、小米四巨头投资的具身智能企业。</description>
     <source>每日经济新闻/ChooseAI</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://m.nbd.com.cn/articles/2026-05-29/4412643.html</guid>
   </item>
   <item>
@@ -148,7 +204,7 @@
     <link>https://www.stcn.com/article/detail/3927155.html</link>
     <description>宇树科技5月25日测试发布WVLA2.0具身大模型，核心升级：自主决策、抗干扰运行、多任务协同。搭载WVLA2.0的G1机器人在外部干扰环境下，无需远程操控独立完成会议室整理全流程——识别散落文件、分类收纳办公用品、调整桌椅位置。宇树2025年全球出货第一带来海量真实场景训练数据，WVLA2.0是量产数据反哺大模型的典型路径。</description>
     <source>证券时报/中国工业报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.stcn.com/article/detail/3927155.html</guid>
   </item>
   <item>
@@ -156,7 +212,7 @@
     <link>https://finance.sina.com.cn/wm/2026-05-07/doc-inhxanxf5030293.shtml</link>
     <description>5月21日特斯拉Model S/X最后一批签名版下线，弗里蒙特工厂产线改造为Optimus专属产线。Optimus Gen-3全身45个自由度，灵巧手22自由度，指尖精度0.08mm，行走速度1.2m/s，最大负载20kg，续航8-10小时，搭载FSD芯片可自主学习超3500种操作，单机成本约2万美元。上海超级工厂已部署50台Gen-3用于汽车总装，德州工厂2027年投产二代产线，远期目标1000万台/年。</description>
     <source>华夏基金/连线新能源/新浪财经</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://finance.sina.com.cn/wm/2026-05-07/doc-inhxanxf5030293.shtml</guid>
   </item>
   <item>
@@ -164,7 +220,7 @@
     <link>https://www.industrysourcing.cn/article/476522</link>
     <description>5月18日上海正式官宣，力争「十五五」末推动10万台人形机器人进工厂，规上工业企业智能体应用普及率超80%。这是国内首次从地方政策层面给出人形机器人市场的具体量化落地目标。叠加特斯拉Optimus Gen-3量产、Figure 03连续规模化作业，人形机器人产业叙事正从技术验证全面转向国内大规模场景落地和订单兑现的确定性阶段。</description>
     <source>证券时报/IndustrySourcing</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.industrysourcing.cn/article/476522</guid>
   </item>
   <item>
@@ -172,7 +228,7 @@
     <link>https://www.chinaz.com/ainews/28444.shtml</link>
     <description>Anthropic 5月29日发布Claude Opus 4.8，SWE-Bench Pro 69.2%超越GPT-5.5和Gemini 3.1 Pro。核心升级：代码缺陷率降至前代1/4，快速模式速度2.5倍+成本仅1/3，新增「努力程度」控制功能。Agent编程能力显著提升，在计划不合理时主动提出异议并标出不确定性。AI编程智能体竞争进入白热化阶段。</description>
     <source>Chinaz/AIbase</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.chinaz.com/ainews/28444.shtml</guid>
   </item>
   <item>
@@ -180,7 +236,7 @@
     <link>https://news.qq.com/rain/a/20260522A0B2DM00</link>
     <description>极佳视界发布物理AGI「双金字塔」体系。算法金字塔三层：世界模拟(GigaWorld-1，WorldArena全球第一)、动作对齐(GigaBrain-0系列RoboChallenge第一+GigaWorld-Policy RoboCasa365第一)、经验强化(GigaBrain-0.5M*世界模型+强化学习自我进化)。数据金字塔：GigaWorld-0开源世界模型框架，实现「数据放大」。国内唯一同时在三个方向拿到全球权威评测第一的团队。</description>
     <source>腾讯新闻/极佳视界官网</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://news.qq.com/rain/a/20260522A0B2DM00</guid>
   </item>
   <item>
@@ -188,7 +244,7 @@
     <link>https://blog.csdn.net/qq_31142761/article/details/161358696</link>
     <description>OpenAI 5月16日发布GPT-5 Agent Mode，从对话式助手进化为自主执行者：用户设定目标→AI自主规划→自动调用工具→执行多步操作→交付结果，可运行长达24小时。同期Anthropic Claude Code推出提速模式，双方展开「补贴大战」。AI编程智能体竞争从模型能力转向基础设施和成本效率。</description>
     <source>CSDN/腾讯云开发者社区</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://blog.csdn.net/qq_31142761/article/details/161358696</guid>
   </item>
   <item>
@@ -196,7 +252,7 @@
     <link>https://www.sznews.com/news/content/2026-05/06/content_32036752.htm</link>
     <description>Diffusion Transformer统一多模态空间架构，攻克长程任务执行。计划在Thinker-Cosmos社区开源。</description>
     <source>深圳新闻网</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.sznews.com/news/content/2026-05/06/content_32036752.htm</guid>
   </item>
   <item>
@@ -204,7 +260,7 @@
     <link>https://stock.stockstar.com/IG2026052900032502.shtml</link>
     <description>近800家国际企业参展，众擎T800跳跃升龙拳、智平方爱宝智魔方消费场景落地、腾讯RoboFusion+Tairos完整矩阵。</description>
     <source>证券时报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://stock.stockstar.com/IG2026052900032502.shtml</guid>
   </item>
   <item>
@@ -212,7 +268,7 @@
     <link>https://new.qq.com/rain/a/20260601A04BL500</link>
     <description>Windows/macOS/安卓三端同步，6个7x24专项Agent，主Agent统筹+专项Agent并行执行。Agent从应用下沉到OS层。</description>
     <source>腾讯新闻</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://new.qq.com/rain/a/20260601A04BL500</guid>
   </item>
   <item>
@@ -220,7 +276,7 @@
     <link>https://new.qq.com/rain/a/20260525A0684J00</link>
     <description>高瓴创投+美团战投领投，全球首家力控人形双臂量产交付最大，Q1在手订单破万台。</description>
     <source>腾讯新闻</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://new.qq.com/rain/a/20260525A0684J00</guid>
   </item>
   <item>
@@ -228,7 +284,7 @@
     <link>https://wv.video.qq.com/export/UzFfBgAAxNCjWH4efX7FjMzT4DBZDY7Kn-rStQRvBJW3avX6fyw</link>
     <description>具身智能展区首次独立设馆，占地1700㎡机器人小镇，宇树GD01击穿砖墙演示。</description>
     <source>未来新质产业</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://wv.video.qq.com/export/UzFfBgAAxNCjWH4efX7FjMzT4DBZDY7Kn-rStQRvBJW3avX6fyw</guid>
   </item>
   <item>
@@ -236,7 +292,7 @@
     <link>https://www.21jingji.com/article/20260526/herald/8c7fd6ba36bf794c7099f21e45640f28.html</link>
     <description>2.8万台机器人获数字身份证，生产-销售-使用-维护-报废全流程可追溯。</description>
     <source>未来新质产业/21经济网</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.21jingji.com/article/20260526/herald/8c7fd6ba36bf794c7099f21e45640f28.html</guid>
   </item>
   <item>
@@ -244,7 +300,7 @@
     <link>https://news.fromgeek.com/tech/160-241179.html</link>
     <description>产线效率30分钟/台，已部署3C制造、汽车产线、物流仓库。RaaS模式降低中小企业使用门槛。</description>
     <source>极客网/搜狐</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://news.fromgeek.com/tech/160-241179.html</guid>
   </item>
   <item>
@@ -252,7 +308,7 @@
     <link>https://new.qq.com/rain/a/20260522A04L0000</link>
     <description>低维Motion向量替代像素级输入，Hindsight-Insight-Foresight双向推理，CALVIN/LIBERO-LONG显著超越SOTA。代码已开源。</description>
     <source>腾讯新闻</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://new.qq.com/rain/a/20260522A04L0000</guid>
   </item>
   <item>
@@ -260,7 +316,7 @@
     <link>https://www.figure.ai/</link>
     <description>Figure AI在120天内将Figure 03产线产能从每天1台提升至每小时1台，累计下线超350台，良品率突破80%。5月13日开启物流分拣直播，3台Figure 03轮换作业超87小时，分拣超10.8万件包裹，单台连续工作3-4小时，故障时自主请求替换，无需人类干预。人形机器人从实验室Demo正式迈入流水线量产阶段。</description>
     <source>Figure AI/X平台/华龙证券</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.figure.ai/</guid>
   </item>
   <item>
@@ -268,7 +324,7 @@
     <link>https://arxiv.org/pdf/2605.15153</link>
     <description>北京人形发布首个大一统具身基础模型Pelican-Unify 1.0，在WorldArena登顶，8个VLM Benchmark同级别(4B以内)性能第一，RoboTwin VLA评测稳居前列。该模型首次在理解、推理、想象、行动四维度同时达到全球顶尖水平，突破传统模块化方案的语义鸿沟瓶颈。</description>
     <source>北京人形机器人创新中心/arXiv</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://arxiv.org/pdf/2605.15153</guid>
   </item>
   <item>
@@ -276,7 +332,7 @@
     <link>https://www.stdaily.com/web/gdxw/2026-05/14/content_516344.html</link>
     <description>成都人形机器人创新中心发布中国首个基于流形拓扑保持的机器人世界模型，将高维物理世界状态映射到低维流形空间进行编码，使机器人在隐空间规划中严格符合物理规律，解决VLA模型常见的物理碰撞、穿越、重叠等幻觉问题。这是世界模型替代VLA路线的重大技术信号。</description>
     <source>成都人形机器人创新中心/科技日报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.stdaily.com/web/gdxw/2026-05/14/content_516344.html</guid>
   </item>
   <item>
@@ -284,7 +340,7 @@
     <link>https://www.stcn.com/article/detail/3914630.html</link>
     <description>智元WITA(硅光动语)大模型成为全国首款完成合规备案的具身智能交互大模型，标志着中国具身智能从技术验证进入合规商用新阶段。智元已宣布2026年为「部署态元年」，精灵G2在龙旗南昌产线完成8小时连续作业，成功率100%，全球首个万台量产验证。</description>
     <source>上海市网信办/证券时报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.stcn.com/article/detail/3914630.html</guid>
   </item>
   <item>
@@ -292,7 +348,7 @@
     <link>https://news.qq.com/rain/a/20260514A05OXA00</link>
     <description>中科院重庆研究院提出面向长程任务的按需搜索方法，将目标偏移视为采样系统性误差，通过轨迹重采样与一致性校验降低局部最优决策风险。LIBERO-Long基准成功率97.6%，RoboTwin 1.0较π0提升15.2%，RoboTwin 2.0较RDT提升31.6%。</description>
     <source>中科院/环球网</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://news.qq.com/rain/a/20260514A05OXA00</guid>
   </item>
   <item>
@@ -300,7 +356,7 @@
     <link>https://www.stcn.com/article/detail/3906003.html</link>
     <description>截至5月11日，2026年国内具身智能领域投资218起、超577亿元，已超2025年全年。单笔10亿元+融资超10起。资本关注重点从技术故事转向落地实绩，复购率、连续运行时长成为硬指标。星动纪元3月完成10亿战略轮后又完成超2亿美元新一轮，加速进化近10亿融资。</description>
     <source>经济参考报/证券时报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.stcn.com/article/detail/3906003.html</guid>
   </item>
   <item>
@@ -308,7 +364,7 @@
     <link>https://www.techwalker.com/2026/0506/3185806.shtml</link>
     <description>上海交大、复旦、清华联合提出DeFI框架，将机器人操作学习拆解为前向动态预测和逆向动作推断两个独立模块，分别在海量无标注人类视频和机器人演示数据上预训练再合体精调。CALVIN长程任务平均完成长度4.51，真实机器人操作成功率81.3%，显著优于现有VLA方法。</description>
     <source>科技行者/ICLR 2026</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.techwalker.com/2026/0506/3185806.shtml</guid>
   </item>
   <item>
@@ -316,7 +372,7 @@
     <link>https://www.news.cn/tech/20260518/f128571c910841bb8d44085c08fd438b/c.html</link>
     <description>宇树科技发布全球首款量产载人变形机甲GD01，载人后整机约500公斤，可在数秒内切换双足与四足模式，搭载自研高扭矩密度伺服电机，成本较传统液压方案降低80%以上。</description>
     <source>新华社/经济参考报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.news.cn/tech/20260518/f128571c910841bb8d44085c08fd438b/c.html</guid>
   </item>
   <item>
@@ -324,7 +380,7 @@
     <link>https://turion.ai/blog/ai-agent-platform-updates-may-2026</link>
     <description>OpenAI Agents SDK新增原生沙盒执行和模型原生运行时(model-native harness)，将规划、工具选择和自纠正内置于模型推理链，减少畸形工具调用和Agent循环卡死问题。</description>
     <source>OpenAI/TURION.AI</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://turion.ai/blog/ai-agent-platform-updates-may-2026</guid>
   </item>
   <item>
@@ -332,7 +388,7 @@
     <link>https://www.ai.jp.net/topic/sdk?lang=zh_TW</link>
     <description>Anthropic发布Claude Opus 4.7，CursorBench提升12个百分点；同时推出Agent SDK专用月度额度，6月15日起将自动化Agent使用与交互式使用分离计费，解决第三方工具资源消耗问题。</description>
     <source>Anthropic/Gigazine</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://www.ai.jp.net/topic/sdk?lang=zh_TW</guid>
   </item>
   <item>
@@ -340,7 +396,7 @@
     <link>https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026</link>
     <description>Google I/O 2026发布Gemini Spark 24/7 Agent助手，深度集成Gmail；Gmail Live支持自然语言语音查询收件箱；AI设计工具Pics对标Canva和Claude Design。</description>
     <source>TechCrunch</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026</guid>
   </item>
   <item>
@@ -348,64 +404,8 @@
     <link>https://life.tw/article/nvidia%E6%94%9C%E6%89%8Bservicenow%E6%8E%A8%E4%BC%81%E6%A5%ADai%E4%BB%A3%E7%90%86%E6%A1%86%E6%9E%B6-%E7%94%9F%E6%88%90-3030047</link>
     <description>NVIDIA与ServiceNow合作推出企业AI代理框架，整合Nemotron模型、NeMo代理工具与NIM微服务，企业可直接建立具备推理与任务执行能力的AI代理人。</description>
     <source>NVIDIA/ServiceNow</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
+    <pubDate>Tue, 09 Jun 2026 01:48:55 GMT</pubDate>
     <guid>https://life.tw/article/nvidia%E6%94%9C%E6%89%8Bservicenow%E6%8E%A8%E4%BC%81%E6%A5%ADai%E4%BB%A3%E7%90%86%E6%A1%86%E6%9E%B6-%E7%94%9F%E6%88%90-3030047</guid>
-  </item>
-  <item>
-    <title>腾讯云与Stream合作加速实时多模态AI Agent开发</title>
-    <link>https://en.prnasia.com/releases/apac/tencent-cloud-and-stream-partner-to-accelerate-the-development-of-real-time-multimodal-ai-agents-533497.shtml</link>
-    <description>腾讯云与Stream合作，腾讯RTC成为Vision Agents开源框架的官方边缘传输插件，为全球开发者提供低延迟多模态AI Agent开发路径，端到端延迟低于500ms。</description>
-    <source>PR Newswire</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://en.prnasia.com/releases/apac/tencent-cloud-and-stream-partner-to-accelerate-the-development-of-real-time-multimodal-ai-agents-533497.shtml</guid>
-  </item>
-  <item>
-    <title>宇树科技G1机器人在东京羽田机场投入运营</title>
-    <link>https://www.stcn.com/article/detail/3904067.html</link>
-    <description>宇树科技G1机器人在东京羽田机场试点投入地面运维服务，中国制造机器人在复杂场景的实用性获海外市场认可。2025年宇树人形机器人出货量超5500台，全球市占率32.4%。</description>
-    <source>证券时报/新华网</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://www.stcn.com/article/detail/3904067.html</guid>
-  </item>
-  <item>
-    <title>腾讯Robotics X开源RoboFusion机器人本体互连技术</title>
-    <link>https://www.sfccn.com/2026/5-15/0OMDE0NzNfMjE0Mzg0OA.html</link>
-    <description>腾讯Robotics X联合福田实验室开源RoboFusion，业界首个「一线到底」全栈IP化机器人本体互连方案，采用汽车以太网技术，显著降低布线复杂度和故障风险。</description>
-    <source>南方+/深圳AI展</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://www.sfccn.com/2026/5-15/0OMDE0NzNfMjE0Mzg0OA.html</guid>
-  </item>
-  <item>
-    <title>湖北发布人形机器人动作大模型MotionMaster+UniAct</title>
-    <link>https://www.stcn.com/article/detail/3912872.html</link>
-    <description>湖北人形机器人创新中心联合北大武汉院发布动作大模型，虚拟动作生成器MotionMaster+真机执行引擎UniAct，实现「指令输入-动作生成-真机执行」闭环，多品牌机器人通用。</description>
-    <source>证券时报</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://www.stcn.com/article/detail/3912872.html</guid>
-  </item>
-  <item>
-    <title>百度Create2026：百舸6.0+LoongForge开源+Agent安全中心</title>
-    <link>https://caijing.chinadaily.com.cn/a/202605/14/WS6a054222a310942cc49ac2d8.html</link>
-    <description>百度AI开发者大会发布百舸6.0AI计算平台、开源全模态训练框架LoongForge、Agent安全中心，李彦宏提出AI度量衡从DAU转向DAA(日活智能体数)。</description>
-    <source>中国日报网</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://caijing.chinadaily.com.cn/a/202605/14/WS6a054222a310942cc49ac2d8.html</guid>
-  </item>
-  <item>
-    <title>LangChain推出企业级Runtime平台，AI代理框架竞争升温</title>
-    <link>https://life.tw/article/%E9%96%8B%E6%BA%90%E4%BB%A3%E7%90%86%E6%A1%86%E6%9E%B6%E5%B8%82%E5%A0%B4%E5%8D%87%E6%BA%AB-langchain%E6%8E%A8%E5%87%BA%E4%BC%81%E6%A5%AD%E7%B4%9Arunti-3026598</link>
-    <description>LangChain发布企业级Runtime平台，强化Agent记忆管理、多步骤任务处理、自动工具调用及跨模型协作能力，AI市场竞争从模型能力转向代理框架与工作流平台。</description>
-    <source>民眾日報/LangChain</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://life.tw/article/%E9%96%8B%E6%BA%90%E4%BB%A3%E7%90%86%E6%A1%86%E6%9E%B6%E5%B8%82%E5%A0%B4%E5%8D%87%E6%BA%AB-langchain%E6%8E%A8%E5%87%BA%E4%BC%81%E6%A5%AD%E7%B4%9Arunti-3026598</guid>
-  </item>
-  <item>
-    <title>Why trust is a big question at the Elon Musk-OpenAI trial</title>
-    <link>https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/</link>
-    <description>Musk与OpenAI庭审信任成核心争议点。</description>
-    <source>TechCrunch AI</source>
-    <pubDate>Mon, 08 Jun 2026 02:26:04 GMT</pubDate>
-    <guid>https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/</guid>
   </item>
 </channel>
 </rss>
