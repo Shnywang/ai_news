@@ -163,7 +163,15 @@ try {
   if (!status) {
     console.log('No changes to commit. Skip push.');
   } else {
-    run(`git commit -m "update: 2026-06-17 daily digest (emergency rebuild after .git deletion)"`);
+    // 取最新 data 日期作为 commit message
+    const latestData = dataFiles.sort().reverse()[0] || 'unknown';
+    const latestMd = mdFiles.sort().reverse()[0] || '';
+    const isCsdn = latestMd.includes('csdn');
+    const isDeepDive = latestMd.includes('deep-dive');
+    let type = 'daily-digest';
+    if (isCsdn) type = 'csdn viral post';
+    else if (isDeepDive) type = 'deep-dive';
+    run(`git commit -m "update: ${latestData.replace('.json','')} ${type}\n\n- 6-22 端午特辑：6-15~6-17 三天三步曲系统总结"`);
     run('git push origin main --force');
     console.log('\n✅ Published to https://shnywang.github.io/ai_news/');
   }
