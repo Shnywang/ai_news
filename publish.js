@@ -39,6 +39,14 @@ mdFiles.forEach(f => {
   fs.copyFileSync(path.join(repoDir, f), path.join(siteDir, f));
 });
 
+// 复制 site/index.html 和 site/feed.xml 到根目录 (Pages 根路径访问)
+['index.html', 'feed.xml'].forEach(f => {
+  const src = path.join(siteDir, f);
+  if (fs.existsSync(src)) {
+    fs.copyFileSync(src, path.join(repoDir, f));
+  }
+});
+
 console.log(`=== [1/4] Build site ===`);
 console.log(`Copied ${dataFiles.length} data files + ${mdFiles.length} md files to site/`);
 
