@@ -50,83 +50,27 @@ mdFiles.forEach(f => {
 console.log(`=== [1/4] Build site ===`);
 console.log(`Copied ${dataFiles.length} data files + ${mdFiles.length} md files to site/`);
 
-// ========== 2. 生成最简 site/index.html ==========
-const days = dataFiles.map(f => f.replace('.json', '')).sort().reverse();
-const recentDays = days.slice(0, 7); // 7天窗口
+// ========== 2. 用 build.js 生成完整 site/index.html ==========
+console.log(`=== [2/4] Running build.js for full SPA ===`);
+try {
+  execSync('node build.js', { cwd: repoDir, stdio: 'inherit', encoding: 'utf8' });
+} catch (e) {
+  console.error('build.js failed, using fallback');
+}
+console.log(`Recent days: ${dataFiles.map(f=>f.replace('.json','')).sort().reverse().slice(0,7).join(', ')}`);
 
-// 解析每个 day 的 JSON
+// ========== 3. 生成 RSS feed ==========
+const daysForFeed = dataFiles.map(f => f.replace('.json', '')).sort().reverse();
+const recentDaysForFeed = daysForFeed.slice(0, 7);
 const dayData = {};
-recentDays.forEach(d => {
+recentDaysForFeed.forEach(d => {
   try {
     const content = JSON.parse(fs.readFileSync(path.join(dataDir, `${d}.json`), 'utf8'));
     dayData[d] = content[d] || {};
-  } catch (e) {
-    console.error(`Failed to parse ${d}.json: ${e.message}`);
-  }
+  } catch (e) {}
 });
-
-const indexHtml = `<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI+具身智能日报 | shnywang</title>
-  <meta name="description" content="每日 AI 具身智能行业日报 + 深度技术拆解">
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #fafafa; color: #222; }
-    h1 { color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 10px; }
-    .day { background: white; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    .day h2 { color: #1a1a1a; margin-top: 0; }
-    .topic { padding: 12px 0; border-bottom: 1px solid #eee; }
-    .topic:last-child { border-bottom: none; }
-    .topic h3 { margin: 0 0 8px 0; font-size: 17px; }
-    .topic p { color: #555; font-size: 14px; line-height: 1.6; margin: 4px 0; }
-    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-right: 6px; }
-    .rating5 { background: #d32f2f; color: white; }
-    .rating4 { background: #f57c00; color: white; }
-    .rating3 { background: #fbc02d; color: white; }
-    .cat { background: #e0e0e0; color: #333; }
-    footer { text-align: center; color: #999; padding: 20px; font-size: 13px; }
-    a { color: #1976d2; text-decoration: none; }
-  </style>
-</head>
-<body>
-  <h1>AI+具身智能日报</h1>
-  <p style="color:#666;">7 天滚动窗口 · 哲学深度 + 独家解读 + 硬数据 · 每日 18:00 更新</p>
-  ${recentDays.map(d => {
-    const data = dayData[d];
-    if (!data || !data.hot_topics) return '';
-    const updateTime = data.update_time || d;
-    return `
-    <div class="day">
-      <h2>📅 ${d} <span style="font-size:13px;color:#999;">${updateTime}</span></h2>
-      ${(data.hot_topics || []).map(t => `
-      <div class="topic">
-        <h3>
-          <span class="badge rating${t.rating || 3}">★${t.rating || 3}</span>
-          <span class="badge cat">${t.category || '其他'}</span>
-          <a href="#${d}-${t.title.slice(0,20)}">${t.title}</a>
-        </h3>
-        <p>${(t.summary || '').slice(0, 200)}...</p>
-      </div>
-      `).join('')}
-    </div>
-    `;
-  }).join('')}
-  <footer>
-    <p>由 Mavis 自动生成 · <a href="https://github.com/Shnywang/ai_news">GitHub</a></p>
-    <p>哲学框架：对立统一 / 否定之否定 / 扬弃 / 具身认知 / 证伪主义 / 语言游戏 / 目的论 vs 机械论</p>
-  </footer>
-</body>
-</html>`;
-
-fs.writeFileSync(path.join(siteDir, 'index.html'), indexHtml, 'utf8');
-console.log(`=== [2/4] Generated site/index.html ===`);
-console.log(`Recent days: ${recentDays.join(', ')}`);
-
-// ========== 3. 生成 RSS feed ==========
 const rssItems = [];
-recentDays.forEach(d => {
+recentDaysForFeed.forEach(d => {
   const data = dayData[d];
   if (!data || !data.hot_topics) return;
   (data.hot_topics || []).forEach(t => {
