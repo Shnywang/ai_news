@@ -59,6 +59,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 [data-theme=dark] .tag-r{background:#450a0a;color:#fca5a5}
 [data-theme=dark] .tag-b{background:#1e3a5f;color:#93c5fd}
 [data-theme=dark] .tag-p{background:#3b0764;color:#c4b5fd}
+/* Philosophy insight (purple left border) */
+.phil{background:var(--card);border-radius:10px;padding:.8rem 1rem;margin-top:.6rem;border-left:3px solid var(--accent2);box-shadow:var(--shadow)}
+.phil .fw{display:inline-block;padding:.1rem .5rem;border-radius:6px;background:#f3e8ff;color:#7c3aed;font-size:.72rem;font-weight:600;margin-bottom:.4rem}
+[data-theme=dark] .phil .fw{background:#3b0764;color:#c4b5fd}
+.phil .verdict{font-weight:600;color:var(--text);margin-top:.5rem;font-size:.85rem;padding-top:.4rem;border-top:1px dashed var(--border)}
+/* Hermes section */
+.hermes-sec{margin-bottom:1.2rem}
+.hermes-sec h3{font-size:.95rem;font-weight:700;margin-bottom:.6rem;padding:.4rem .8rem;background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:8px;color:#fff;display:inline-block}
 /* Section titles */
 .sec{font-size:1rem;font-weight:700;margin:1.2rem 0 .6rem;padding-left:.6rem;border-left:3px solid var(--accent);color:var(--text)}
 /* Hot topic card */
@@ -115,6 +123,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 <div class="tab" data-t="algo">\u{1F9EC} \u7b97\u6cd5\u5de5\u7a0b\u5e08</div>
 <div class="tab" data-t="proj">\u{1F4C5} \u9879\u76ee\u7ecf\u7406</div>
 <div class="tab" data-t="action">\u{2705} \u884c\u52a8\u5efa\u8bae</div>
+<div class="tab" data-t="hermes">\uD83D\uDCE3 Hermes \u4fe1\u4f7f</div>
+<div class="tab" data-t="phil">\uD83E\uDDE0 \u54f2\u5b66\u6d1e\u5bdf</div>
 <div class="tab" data-t="all">\u{1F4F0} \u5168\u90e8\u8d44\u8baf</div>
 </div>
 <div id="content"></div>
@@ -158,14 +168,21 @@ function render(){
   var data=W[curDay];
   if(!data){document.getElementById('content').innerHTML='<div style="text-align:center;padding:3rem;color:var(--t2)">\u6682\u65e0\u8be5\u65e5\u6570\u636e</div>';return}
   document.getElementById('ut').textContent='\u6700\u540e\u66f4\u65b0\uff1a'+(data.update_time||curDay);
-  var fn={hot:renderHot,startup:renderStartup,pm:renderPM,algo:renderAlgo,proj:renderProj,action:renderAction,all:renderAll};
+  var fn={hot:renderHot,startup:renderStartup,pm:renderPM,algo:renderAlgo,proj:renderProj,action:renderAction,hermes:renderHermes,phil:renderPhil,all:renderAll};
   (fn[curTab]||renderHot)(data);
 }
 
 function renderHot(d){
   var h='<div class="sec">\u{1F525} \u4eca\u65e5\u70ed\u70b9 ('+(d.hot_topics||[]).length+'\u6761)</div>';
   (d.hot_topics||[]).forEach(function(t,i){
-    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4><a href="'+esc(t.url)+'" target="_blank">'+esc(t.title)+'</a></h4><p>'+esc(t.summary)+'</p><div class="meta">'+esc(t.source)+' \u00b7 '+esc(t.category)+' \u00b7 <span class="stars">'+starsStr(t.rating)+'</span></div></div></div>';
+    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4><a href="'+esc(t.url)+'" target="_blank">'+esc(t.title)+'</a></h4><p>'+esc(t.summary)+'</p><div class="meta">'+esc(t.source)+' \\u00b7 '+esc(t.category)+' \\u00b7 <span class="stars">'+starsStr(t.rating)+'</span></div>';
+    if(t.philosophy_insight){
+      var p=t.philosophy_insight;
+      h+='<div class="phil"><span class="fw">'+esc(p.framework||'')+'</span><p>'+esc(p.analysis||'')+'</p>';
+      if(p.verdict)h+='<div class="verdict">'+esc(p.verdict)+'</div>';
+      h+='</div>';
+    }
+    h+='</div></div>';
   });
   document.getElementById('content').innerHTML=h;
 }
@@ -256,6 +273,54 @@ function renderAction(d){
     a.watch_list.forEach(function(t){h+='<li>'+esc(t)+'</li>'});
     h+='</ul></div>';
   }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderHermes(d){
+  var hb=d.hermes_board;
+  if(!hb||(!hb.insights&&!hb.tech_stack&&!hb.community)){
+    document.getElementById('content').innerHTML='<div class="bcard"><h3>\uD83D\uDCE3 Hermes \u4fe1\u4f7f</h3><p>\u6682\u65e0\u5185\u5bb9</p></div>';return;
+  }
+  var h='<div class="sec">\uD83D\uDCE3 Hermes \u4fe1\u4f7f</div>';
+  if(hb.insights&&hb.insights.length){
+    h+='<div class="hermes-sec"><h3>\uD83D\uDCA1 \u6d1e\u5bdf</h3>';
+    hb.insights.forEach(function(item){
+      h+='<div class="bcard"><h3>'+esc(item.title)+'</h3><p>'+esc(item.content)+'</p>';
+      if(item.url)h+='<div style="margin-top:.3rem"><a href="'+esc(item.url)+'" target="_blank" style="color:var(--accent);font-size:.8rem">\u{1F517} \u6765\u6e90</a></div>';
+      h+='</div>';
+    });
+    h+='</div>';
+  }
+  if(hb.tech_stack&&hb.tech_stack.length){
+    h+='<div class="hermes-sec"><h3>\u{1F528} \u6280\u672f\u6808</h3>';
+    hb.tech_stack.forEach(function(item){
+      h+='<div class="bcard"><h3>'+esc(item.title)+'</h3><p>'+esc(item.content)+'</p></div>';
+    });
+    h+='</div>';
+  }
+  if(hb.community&&hb.community.length){
+    h+='<div class="hermes-sec"><h3>\uD83C\uDF10 \u793e\u533a\u8d44\u6e90</h3>';
+    hb.community.forEach(function(item){
+      h+='<div class="bcard"><h3>'+esc(item.title)+'</h3><p>'+esc(item.content)+'</p></div>';
+    });
+    h+='</div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderPhil(d){
+  var topics=(d.hot_topics||[]).filter(function(t){return t.philosophy_insight});
+  if(!topics.length){
+    document.getElementById('content').innerHTML='<div class="bcard"><h3>\uD83E\uDDE0 \u54f2\u5b66\u6d1e\u5bdf</h3><p>\u6682\u65e0\u5185\u5bb9</p></div>';return;
+  }
+  var h='<div class="sec">\uD83E\uDDE0 \u54f2\u5b66\u6d1e\u5bdf ('+topics.length+'\u6761)</div>';
+  topics.forEach(function(t){
+    var p=t.philosophy_insight;
+    h+='<div class="bcard" style="border-left-color:var(--accent2)"><h3>'+esc(t.title)+'</h3>';
+    h+='<div class="phil"><span class="fw">'+esc(p.framework||'')+'</span><p>'+esc(p.analysis||'')+'</p>';
+    if(p.verdict)h+='<div class="verdict">'+esc(p.verdict)+'</div>';
+    h+='</div></div>';
+  });
   document.getElementById('content').innerHTML=h;
 }
 
