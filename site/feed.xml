@@ -6,6 +6,62 @@
     <description>每日 AI 具身智能行业日报</description>
     <language>zh-cn</language>
         <item>
+      <title>宇树科技科创板IPO注册获批：A股「人形机器人第一股」即将诞生，机器人指数暴涨4.26%</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月2日证监会同意宇树科技科创板IPO注册申请，拟募资42.02亿元。从3月20日受理到7月1日注册生效仅104天，创科创板预先审阅机制最快纪录。招股书显示2025年营收16.99亿元(同比+333%)，扣非净利润5.9亿元，2025年人形机器人出货超5500台。7月3日中证机器人指数大涨4.26%，绿的谐波涨超12%，凯龙高科20CM涨停，丰光精密涨超16%，贝斯特涨超14%。核心零部件自研率超95%、国产化率超85%。募资近半投向模型研发(WMA+VLA双路线)。宇树R1降价至2.99万元。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-宇树科技科创板IPO注册获批：A股「人形机器人第一股」即将诞生，机器人指数暴涨4.26%</guid>
+    </item>
+    <item>
+      <title>图灵奖得主Richard Sutton空降北京人形机器人创新中心：强化学习与具身智能历史性握手</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>「强化学习之父」、图灵奖得主Richard Sutton时隔五年再访中国，首站直奔北京人形机器人创新中心。天工3.0全尺寸人形机器人作为展厅讲解员全程自主导览，展示高难度运动控制。「具身天工」平台支持37种异构传感器接入、12类关节动力学模型热插拔，预留脑机接口协议层——被称为「正在长出神经系统的活体智能体」。「慧思开物」平台18个月自主生成超41万条跨场景泛化策略(如用扫帚柄撬快递柜门/断电厨房组合微波炉+手机闪光灯应急照明)。Sutton指出具身智能是实现AGI的关键路径，强化学习与具身智能深度融合是未来突破方向。他山科技+北京人形+Sutton的OpenMind团队共建「机器人幼儿园」项目。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-图灵奖得主Richard Sutton空降北京人形机器人创新中心：强化学习与具身智能历史性握手</guid>
+    </item>
+    <item>
+      <title>扎克伯格承认Meta AI智能体开发未达预期：裁员10%+转岗7000人后四个月进展缓慢，股价暴跌5%</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月3日扎克伯格在Meta内部全员大会承认，过去四个月AI智能体开发「没有像预期的那样加速」，触发股价收跌4.9%。3月Meta裁员约8000人(10%)，7000名员工转岗至AI业务，今年资本开支指引1250-1450亿美元(同比近翻倍)。扎克伯格曾承诺以人力成本换取AI加速，四个月后亲口承认加速未发生。前一日Meta因「对外出售富余算力」消息涨8.8%，次日几乎全部回吐。Meta内部还限制工程师使用Claude和Codex，担忧模型蒸馏风险。扎克伯格仍预计3-6个月内看到更明显AI投资收益。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-扎克伯格承认Meta AI智能体开发未达预期：裁员10%+转岗7000人后四个月进展缓慢，股价暴跌5</guid>
+    </item>
+    <item>
+      <title>DeepSeek V4正式版7月中旬上线：引入峰谷定价，高峰时段API价格翻倍，国产大模型首夺定价权</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>DeepSeek V4正式版7月中旬上线，同步引入峰谷定价：每日9-12点/14-18点高峰时段API价格翻倍。V4 Pro输出从6元涨至12元/百万tokens，V4 Flash输出从2元涨至4元。非高峰维持5月永久降价后价格。DeepSeek成首个引入峰谷定价的国产大模型，用价格杠杆引导非紧急任务至低峰期，预计高峰期算力消耗可降25-30%。2026年以来DeepSeek因2亿用户花式消耗算力导致18次宕机，封禁12万恶意账号、关闭3000违规API。500亿融资中70%用于国产算力集群(乌兰察布10万P昇腾芯片)。DSpark推理加速框架将生成速度提升60-85%。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-DeepSeek V4正式版7月中旬上线：引入峰谷定价，高峰时段API价格翻倍，国产大模型首夺定价权</guid>
+    </item>
+    <item>
+      <title>小雨智造发布首款具身智能焊接机器人：16.98万起售，3分钟上岗，已落地十余家一线工厂</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月2日全球数字经济大会上，小雨智造发布业内首款面向工业的具身智能焊接机器人「小雨未来机器人」，标准版起售16.98万元。三大底层技术：①小雨润物世界模型(4D世界模型，推演动作后物理环境演化，超10万小时真实工业数据)；②小雨息壤硬件平台；③定位笔(手机级UI，新手3分钟上岗)。搭载英伟达Orin平台，同时与地瓜机器人达成战略合作搭载旭日S600国产算力。已在十余家一线工厂落地，覆盖建筑钢构/船舶制造/桥梁。中建科工联合开发高柔性智能焊接方案。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-小雨智造发布首款具身智能焊接机器人：16.98万起售，3分钟上岗，已落地十余家一线工厂</guid>
+    </item>
+    <item>
+      <title>Together AI获8亿美元C轮融资估值83亿：NVIDIA参投，开源模型使用量一年增三倍</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月3日开源AI云服务商Together AI完成8亿美元C轮融资，估值83亿美元(16个月前B轮估值33亿)。Aramco Ventures领投，Vista Equity/NVIDIA/General Catalyst等参投。年度预订额超11.5亿美元，拥有数千名付费客户(Cursor/Cognition/Decagon)。宣称过去一年开源模型使用量增长三倍。Neocloud(新型云)服务商成风投热门——企业提供开源模型推理服务，成本远低于封闭前沿模型。Cursor/Cognition等AI Coding工具使用Together AI的GPU集群。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-Together AI获8亿美元C轮融资估值83亿：NVIDIA参投，开源模型使用量一年增三倍</guid>
+    </item>
+    <item>
+      <title>日本公布2.3万亿美元「主权AI」计划：2040年18个行业部署1000万台AI机器人+国产多模态模型</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月3日日本政府披露国家增长战略：计划到2040年在18个行业部署约1000万台AI机器人，开发国产多模态基础模型，未来五年提供最高1万亿日元财政支持。背景：美国对Anthropic Fable 5/Mythos 5出口管制引发各国对AI技术主权的担忧。加拿大总理卡尼表示「只有一个选择绝非好事」，法国追加6.55亿欧元AI投资。AI技术主权成为多国国家战略焦点。日本计划覆盖制造业/医疗/农业/物流/服务业等18个行业，打造国产AI+机器人全栈能力。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-日本公布2.3万亿美元「主权AI」计划：2040年18个行业部署1000万台AI机器人+国产多模态模</guid>
+    </item>
+    <item>
+      <title>Claude Code创造者披露工作流：每天并行15个AI写代码，6个月未手写SQL，占GitHub提交4%</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月3日Claude Code核心开发者Boris Cherny披露工作流：同时运行15个AI代理协同写代码，已6个月未手写SQL。Claude Code占GitHub公开提交量4%。Anthropic万人调查显示35%用户预计AI一年内完成大部分工作，重度AI委托者更乐观。但Linux创始人Linus Torvalds同日公开回应「99%代码由AI写」观点，反问「编译器写了100%，你咋不说？」。Meta内部限制工程师使用Claude/Codex，担忧模型蒸馏风险。AI Coding赛道分化：Claude Code(终端原生)/Codex(模型原生)/Cursor(IDE原生)三架构竞争。</description>
+      <pubDate>Fri, 03 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-03-Claude Code创造者披露工作流：每天并行15个AI写代码，6个月未手写SQL，占GitHub</guid>
+    </item>
+    <item>
       <title>首届上海国际具身智能产业博览会(CIEI 2026)开幕：宇树/智元/优必选等60+企业全阵容亮相，产业链从「单点展示」进入「全链协作出海」</title>
       <link>https://shnywang.github.io/ai_news/</link>
       <description>7月2日-4日，首届上海国际具身智能产业博览会(CIEI 2026)在国家会展中心(上海)举行。宇树、智元、加速进化、乐聚、中科新松、七腾、珞石、云深处等60余家企业全阵容亮相，集中展示人形整机、灵巧手、关节模组及具身大模型。商务部外贸发展事务局主办「全球具身智能产业链协作出海对接会」，已收集欧洲和东南亚地区电力、物流、康养、城市管理等多领域采购需求。叠加8月19-23日北京世界机器人大会(WRC 2026)预热，6-8月形成「超级催化窗口」。</description>

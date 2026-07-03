@@ -6,6 +6,62 @@
     <description>每日 AI 具身智能行业日报</description>
     <language>zh-cn</language>
         <item>
+      <title>首届上海国际具身智能产业博览会(CIEI 2026)开幕：宇树/智元/优必选等60+企业全阵容亮相，产业链从「单点展示」进入「全链协作出海」</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月2日-4日，首届上海国际具身智能产业博览会(CIEI 2026)在国家会展中心(上海)举行。宇树、智元、加速进化、乐聚、中科新松、七腾、珞石、云深处等60余家企业全阵容亮相，集中展示人形整机、灵巧手、关节模组及具身大模型。商务部外贸发展事务局主办「全球具身智能产业链协作出海对接会」，已收集欧洲和东南亚地区电力、物流、康养、城市管理等多领域采购需求。叠加8月19-23日北京世界机器人大会(WRC 2026)预热，6-8月形成「超级催化窗口」。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-首届上海国际具身智能产业博览会(CIEI 2026)开幕：宇树/智元/优必选等60+企业全阵容亮相，</guid>
+    </item>
+    <item>
+      <title>Anthropic发布Claude Sonnet 5：性能逼近旗舰Opus 4.8，SWE-bench Pro超越GPT-5.5，价格仅Opus的40%</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月1日Anthropic发布Claude Sonnet 5(代号Fennec)，SWE-bench Pro得分63.2%超越GPT-5.5的58.6%，Terminal-Bench 2.1得分80.4%，OSWorld-Verified 81.2%。「人类最后的考试」57.4%仅落后Opus 4.8的0.5个百分点。GDPval-AA v2知识工作1618分反超Opus 4.8的1615分。浏览器注入防御攻击成功率仅0.93%反超全家族旗舰。推广期(至8月31日)定价输入2美元/输出10美元，恢复后3美元/15美元，为Opus 4.8(5/25美元)的40-60%。成为Free和Pro用户默认模型。同日美国商务部解除对Claude Fable 5和Mythos 5的出口管制。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-Anthropic发布Claude Sonnet 5：性能逼近旗舰Opus 4.8，SWE-benc</guid>
+    </item>
+    <item>
+      <title>马斯克晒Optimus V3产线大合照：弗里蒙特改造完成，7月底-8月启动量产，野村上调年化产能至7万台</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月1日马斯克在X平台发布与近30位员工的大合照，配文「在弗里蒙特工厂参观Optimus机器人生产线」。原Model S/X装配线已改造成Optimus V3专用产线，第一条产线已运抵并进行验收测试最后阶段，2-3天可安装一条生产线。野村证券研报将Optimus V3弗里蒙特产线年化产能目标从5万台上调至7万台，计划2028年奥斯汀新增7万台，长期合计产能指向150万台。得州超级工厂规划年产1000万台。马斯克确认7月下旬或8月投产但初期产量「相当缓慢」，10000个独特零部件，今年产量「根本不可能预测」。9月单周产量目标有望跃升至约1000台。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-马斯克晒Optimus V3产线大合照：弗里蒙特改造完成，7月底-8月启动量产，野村上调年化产能至7</guid>
+    </item>
+    <item>
+      <title>ChatGPT全球市场份额首次跌破50%至46.4%：Gemini(27.7%)+Claude(10.3%)快速追赶，AI助手市场从垄断进入三国杀</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>Sensor Tower 2026年《State of AI》报告显示，ChatGPT全球AI助手市场份额首次跌破50%至46.4%(2024年3月曾达81%)。Gemini以27.7%快速追赶，Claude从一年前默默无闻到10.3%(同比增长640%)，Meta AI暴涨973%。ChatGPT月活超11亿同比增62%，绝对体量仍在扩张但市场膨胀速度更快。2026上半年全球AI应用下载量23亿次，用户时间从172亿小时翻倍到360亿小时，消费支出从18.3亿美元跃升至42亿美元。微软推出7款MAI系列模型(含MAI-Code-1-Flash)减少对OpenAI依赖。微软CEO呼吁打破巨头垄断，考虑采用DeepSeek V4等开源模型降低成本。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-ChatGPT全球市场份额首次跌破50%至46.4%：Gemini(27.7%)+Claude(10</guid>
+    </item>
+    <item>
+      <title>可灵AI完成30亿美元融资估值180亿：腾讯参投，快手计划12个月内港股IPO，AI视频最大单笔融资</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月2日，快手旗下AI视频生成业务「可灵AI」即将完成30亿美元(约204亿人民币)融资，投后估值180亿美元(约1223亿人民币)，腾讯参投。较4月200亿美元目标缩水20亿美元，但融资额从20亿提高至30亿美元。2026年Q1营收超6.5亿元同比增300%+，ARR接近5亿美元(同比4倍增长)，约七成收入来自海外。全球用户突破1亿，累计生成超6亿个视频。可灵3.0支持全模态输入输出、15秒视频生成，已参与《太平年》《大卫王朝》等影视制作。快手预计12个月内启动港股IPO，募资用于算力和数据中心建设。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-可灵AI完成30亿美元融资估值180亿：腾讯参投，快手计划12个月内港股IPO，AI视频最大单笔融资</guid>
+    </item>
+    <item>
+      <title>Etched发布首份进展报告：融资8亿美元估值50亿，Sohu芯片流片成功，声称吞吐量达H100的160倍</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>6月30日AI芯片初创Etched「出隐身」：三位哈佛辍生创立，累计融资8亿美元(投后估值50亿美元)，Sohu芯片采用台积电N4P 4nm工艺，首次投片即成功(A0 spin)。搭载144GB HBM3E，将Transformer注意力机制直接固化在芯片电路层面。官方声称单台8芯片Sohu服务器Llama 70B推理吞吐量超50万token/秒，是H100的20倍(每美元性能140倍)，运行1T稀疏MoE模型算力效率超80%。已签署超10亿美元预售合同，今夏出货。投资方含辛顿、李飞飞、Karpathy、Peter Thiel、台积电关联基金、Jane Street等。团队超400人主要来自NVIDIA/Broadcom/Google TPU。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-Etched发布首份进展报告：融资8亿美元估值50亿，Sohu芯片流片成功，声称吞吐量达H100的1</guid>
+    </item>
+    <item>
+      <title>中国具身智能产业发展报告：2026年市场规模1.09万亿，CAGR 22-23%，制造成本较国外低30-50%</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月2日《中国具身智能产业发展报告(2026)》在上海发布。中国从2018年约2133亿元增长至2026年预计1.09万亿元，年均复合增长率22-23%。中国拥有全球唯一且最完整的全链条产业配套，从核心传感器、伺服电机、谐波减速器到整机组装、算法适配形成高度集聚产业集群。长三角、珠三角零部件配套集聚效应使新品迭代速度大幅领先欧美。中国制造成本较国外低30-50%。2025年中国人形机器人出货量占全球84.7%，宇树(5500台)、智元(5168台)分列全球前二。摩根士丹利年内二次上调预测：2026年中国出货量从2.8万台上调至5万台(同比增247%)，2030年达44.6万台(CAGR 106%)。IDC预计2026年全球智能机器人硬件市场接近300亿美元，中国突破110亿美元。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-中国具身智能产业发展报告：2026年市场规模1.09万亿，CAGR 22-23%，制造成本较国外低3</guid>
+    </item>
+    <item>
+      <title>全球数字经济大会北京开幕+人形机器人板块暴涨：三瑞智能/宏昌科技20%涨停，7-8月「机器人主题月」催化密集</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月2日，2026全球数字经济大会在北京国家会议中心开幕(至7月5日)，近20项数字经济行业规则标准出炉，涵盖数据跨境流动、AI治理等方向。同日A股人形机器人概念强势拉升：三瑞智能、宏昌科技20%涨停，集智股份、三协电机、步科股份涨超10%。机器人ETF(560770)涨超1.76%。交银国际认为下半年催化剂密集：特斯拉Optimus V3量产概率大、本土机器人企业(乐聚/云深处/宇树)IPO提速。万联证券指出人形机器人正从技术突破迈向规模化商业化的「破晓时刻」。宇树R1降价至2.99万元，优必选发布Walker C1商用服务机器人。</description>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 GMT</pubDate>
+      <guid>2026-07-02-全球数字经济大会北京开幕+人形机器人板块暴涨：三瑞智能/宏昌科技20%涨停，7-8月「机器人主题月」</guid>
+    </item>
+    <item>
       <title>优必选发布超仿生人形机器人U1系列：订单破1.3万台，11.98万元起售，人形机器人正式进入消费市场</title>
       <link>https://shnywang.github.io/ai_news/</link>
       <description>6月30日，优必选在深圳举办2026年度全球发布会，发布消费级品牌「优世界」首款全尺寸超仿生人形机器人U1系列（Lite/Pro/Ultra三款），售价11.98万/16.98万/88-99万元。搭载Resonance-LM情感共鸣大模型、Bio-Express仿生表达系统（19个主动自由度驱动画肌）、Memory Agent跨时空记忆系统。全渠道订单累计突破13361台，为2025年B端全年销量1079台的12倍。周剑提出「人机共生」三步演进战略：替代高危劳动→渗透生活陪伴→人机深度融合。成立AI伦理委员会并启动100台定制仿生机器人「人机伴独工程」。</description>
