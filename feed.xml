@@ -6,6 +6,62 @@
     <description>每日 AI 具身智能行业日报</description>
     <language>zh-cn</language>
         <item>
+      <title>清华火神队卫冕RoboCup 2026人形机器人世界杯冠军：6:2击败中国农大，两支决赛队均用国产Booster T1平台</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月5日，2026 RoboCup机器人世界杯在韩国仁川落幕。清华大学火神队搭载国产松灵Booster T1机器人，决赛6:2击败中国农业大学山海队，成功卫冕人形机器人大型组(Large Size)世界冠军。两支决赛队伍均使用国产Booster T1平台。RoboCup 2026(6月30日-7月6日)汇集全球3000+选手和15000+观众。这是中国具身智能算法在国际机器人赛事中视觉感知与多智能体协作突破的标志性事件，证明国产机器人平台已具备支撑世界级算法的硬件能力。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-清华火神队卫冕RoboCup 2026人形机器人世界杯冠军：6:2击败中国农大，两支决赛队均用国产B</guid>
+    </item>
+    <item>
+      <title>阿里巴巴全面禁用Claude全家桶：后门代码专盯中国时区+中国科技公司域名，7月10日生效</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月3日阿里内部宣布全面禁用Anthropic旗下Claude全系列产品(Sonnet/Opus/Fable/Claude Code)，7月10日生效，推荐自研Qoder替代。导火索：Reddit有人逆向Claude Code 2.1.91版本，发现XOR加密混淆代码：①读本地时区而非IP，命中Asia/Shanghai/Asia/Urumqi进观察名单；②内置147个域名黑名单(阿里/字节/百度/美团/网易+API中转商)；③标记编入系统提示词日期格式和Unicode字符回传服务器。Anthropic承认是3月上线的「实验机制」防蒸馏。此前Anthropic指控阿里4-6月用2.5万虚假账号跑2800万次交互进行「工业级模型蒸馏攻击」。阿里安全团队评估后列入高风险软件名单。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-阿里巴巴全面禁用Claude全家桶：后门代码专盯中国时区+中国科技公司域名，7月10日生效</guid>
+    </item>
+    <item>
+      <title>具身智能上半年融资935亿同比暴增5倍：322笔交易日均1.3起，星动纪元两月融25亿国资密集入场</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>2026上半年国内具身智能赛道融资达935亿元(同比增5倍)，322笔交易(同比增137%)，日均1.3起，创硬科技赛道史无前例的「资金虹吸效应」。星动纪元(清华唯一直接持股的具身智能企业)两个月连融三轮近25亿：3月10亿估值破百亿→4月2亿美元顺丰领投→7月诚通基金领投10亿，国家级国资平台首次密集阵容出现。乐享科技完成5亿Pre-A(蚂蚁集团领投)，3万台在手订单上半年营收同比增600%。泉智博完成A+++轮(高瓴领投+智元/灵心巧手战投)，关节模组占整机成本30-60%是量产「生死线」。全国仅8家估值破200亿，七成资金集中在前20家，马太效应明显。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-具身智能上半年融资935亿同比暴增5倍：322笔交易日均1.3起，星动纪元两月融25亿国资密集入场</guid>
+    </item>
+    <item>
+      <title>李飞飞×英伟达Jim Fan联合发布T-Rex架构：触觉-视觉频率解耦，精细操作成功率提至65%，触觉传感器成灵巧手标配</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>李飞飞与英伟达Jim Fan联合发布T-Rex架构，提出触觉-视觉频率解耦方案。核心创新：将触觉传感器(高频~1000Hz)和视觉传感器(低频~30Hz)的信号处理解耦，各自匹配最优控制频率，避免传统方案中低频视觉拖累高频触觉响应。机器人精细操作成功率从~40%提升至65%。触觉传感器将成为灵巧手的标配。同期灵心巧手推3999元入门级灵巧手+动作技能数据库，建类App Store技能调用体系。光轮智能SimFoundry缩小虚实物理差异，降低sim-to-real迁移成本。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-李飞飞×英伟达Jim Fan联合发布T-Rex架构：触觉-视觉频率解耦，精细操作成功率提至65%，触</guid>
+    </item>
+    <item>
+      <title>Meta放弃Llama转投Muse Spark：150亿美元战略大转向，开源AI史上最重大反转</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>Meta将整个AI路线图从开源权重Llama系列转向完全专有模型Muse Spark，由新成立的Meta超级智能实验室(MSL)打造。背景：Llama 4灾难性表现——Maverick在Intelligence Index仅得18分(低于训练预算一半的模型)，触发benchmark作弊指控。扎克伯格此前承认AI智能体开发四个月未达预期(7月3日股价跌5%)。Muse Spark采用完全闭源路线，Meta从「开源AI旗手」变为「闭源追随者」。同时Meta限制工程师使用Claude/Codex，担忧模型蒸馏风险。150亿美元投入的Llama系列正式被放弃。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-Meta放弃Llama转投Muse Spark：150亿美元战略大转向，开源AI史上最重大反转</guid>
+    </item>
+    <item>
+      <title>北大团队研制全球首款相变忆阻器神经动力学芯片：登Science，较GPU提速最高478倍，利好脑机接口</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>北京大学杨玉超团队研制出基于相变忆阻器的毫秒级神经动力学系统芯片，登《Science》。40nm工艺，存内计算+步长漂移阵列面积约0.28mm²，运行频率50MHz。单步运算时延压缩至2.12ms。在脑皮层表面重建等任务中，较NVIDIA A100 GPU提速50.38-478.18倍，较当前先进ASIC提速3.82-36.27倍且功耗降低11.75-24.73倍。核心突破：把「存储器件的物理特性」变成「计算能力」，减少数据搬运，解决冯·诺依曼架构延迟和功耗瓶颈。应用方向：神经动力学、脑机接口、脑数字孪生、术中神经导航、医学影像重建、物理世界建模。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-北大团队研制全球首款相变忆阻器神经动力学芯片：登Science，较GPU提速最高478倍，利好脑机接</guid>
+    </item>
+    <item>
+      <title>Anthropic启动自研AI芯片：挖角OpenAI核心工程师，拟采用三星2nm工艺</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>据The Information报道，Anthropic已启动自研AI芯片早期开发，与三星电子就潜在制造合作展开洽谈，考虑采用三星2nm制程及先进封装技术。项目仍处于方案规划阶段，尚未确定芯片功能定位、算力规格及部署方式。Anthropic已从OpenAI挖来初代自研芯片团队核心成员Clive Chan加强芯片设计能力。三星电子自研AI芯片(ASIC)订单逼近50万亿韩元，Meta、Anthropic评估用其2nm工艺开发定制AI芯片。Anthropic回应称短期内仍依托NVIDIA/Google/Amazon多元化算力体系。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-Anthropic启动自研AI芯片：挖角OpenAI核心工程师，拟采用三星2nm工艺</guid>
+    </item>
+    <item>
+      <title>全球数字经济大会80+前沿新品首秀：导盲犬机器人「途途」+焊接机器人+小君医生2.0，技术从实验室走向大市场</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月3-5日全球数字经济大会首发首秀平台集中发布80余项前沿新技术/新产品。高德发布具身导盲犬机器人「途途」——四足机器人+牵引杆，融合高德自研具身导航模型+交通大数据+机器视觉，能自主判断跨越或绕行坑洼，理解视障人士意图。小雨智造焊接机器人3分钟上岗(16.98万起售)。松延动力秀出「布米」消费级人形机器人(98cm/17kg，AI交互+运动控制+编程教育)。新石器慧通L4级无人配送机器人能自己乘电梯送快递。小君医生2.0大模型可一次性处理完整颅脑CT，自动生成涵盖94种颅脑疾病/11个解剖部位/1232个诊断术语的结构化报告。80+前沿新品标志技术从实验室走向大市场。</description>
+      <pubDate>Mon, 06 Jul 2026 03:30:00 GMT</pubDate>
+      <guid>2026-07-06-全球数字经济大会80+前沿新品首秀：导盲犬机器人「途途」+焊接机器人+小君医生2.0，技术从实验室走</guid>
+    </item>
+    <item>
       <title>宇树科技科创板IPO注册获批：A股「人形机器人第一股」即将诞生，机器人指数暴涨4.26%</title>
       <link>https://shnywang.github.io/ai_news/</link>
       <description>7月2日证监会同意宇树科技科创板IPO注册申请，拟募资42.02亿元。从3月20日受理到7月1日注册生效仅104天，创科创板预先审阅机制最快纪录。招股书显示2025年营收16.99亿元(同比+333%)，扣非净利润5.9亿元，2025年人形机器人出货超5500台。7月3日中证机器人指数大涨4.26%，绿的谐波涨超12%，凯龙高科20CM涨停，丰光精密涨超16%，贝斯特涨超14%。核心零部件自研率超95%、国产化率超85%。募资近半投向模型研发(WMA+VLA双路线)。宇树R1降价至2.99万元。</description>

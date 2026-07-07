@@ -6,6 +6,62 @@
     <description>每日 AI 具身智能行业日报</description>
     <language>zh-cn</language>
         <item>
+      <title>MACHINA 2026巴黎物理AI峰会开幕：特斯拉Optimus Gen3+波士顿动力Atlas+Figure 02同台欧洲首秀</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月7日，欧洲首届专注物理AI与具身智能的行业峰会MACHINA Summit在法国巴黎Station F举办。四大主题分论坛：Humanoid人形机器人/Industrial工业自主智能/Training机器人训练体系/Integration软硬件集成。特斯拉Optimus Gen3(欧洲首秀行走/抓取/交互演示)、波士顿动力新一代Atlas(负重/跳跃/工地作业)、Figure 02、1X NEO、Apptronik Astra同台真机演示。英伟达Jetson Thor人形专用计算平台欧洲宣讲，Google DeepMind具身大模型+端到端控制方案，AMD Instinct MI300X物理AI推理加速。优必选/智元作为中国唯一万台量产企业登上欧洲主场。产业+投资闭门对接面向创始人/高管/VC。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-MACHINA 2026巴黎物理AI峰会开幕：特斯拉Optimus Gen3+波士顿动力Atlas+</guid>
+    </item>
+    <item>
+      <title>三星Q2营业利润飙升18倍创历史新高：AI驱动存储芯片超级周期，Q3计划DRAM再涨20%</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>7月7日三星电子发布2026年Q2初步业绩：营业利润89.4万亿韩元(约584亿美元)，同比飙升1810%(18倍)，超预期87.3万亿，连续三季度创纪录，超过2023-2025三年利润总和。营收171万亿韩元同比增129%。AI需求从HBM扩展至传统DRAM和NAND，Q2 DRAM均价环比涨44%、NAND涨53%。三星正推动Q3 DRAM均价再涨20%，LPDDR涨幅或超20%。HBM产能快速扩张挤压传统内存供给，客户寻求长期供应协议。A股存储龙头江波龙预计H1净利92-110亿元同比增622-743倍，营收220-250亿元。科创芯片ETF汇添富连续两日净申购超10亿。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-三星Q2营业利润飙升18倍创历史新高：AI驱动存储芯片超级周期，Q3计划DRAM再涨20%</guid>
+    </item>
+    <item>
+      <title>谷歌Gemini 3.5 Pro定档7月17日：废弃旧基座从头重训，200万上下文+深度思考，前端碾压Fable 5</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>谷歌DeepMind将Gemini 3.5 Pro发布推迟至7月17日，原因：废弃Gemini 2.5 Pro旧基座，从头重新预训练(非微调/非放大版)。200万Token上下文窗口(Flash版100万的两倍，Claude Fable 5的8倍)，全新「深度思考」推理模式(生成前多轮内部推理+自我修正)。泄露信息显示：前端/SVG生成/视觉代码能力「mogging」(彻底压制)Fable 5；但智能体任务/仓储级工程/长链路推理仍落后Fable 5和GPT-5.6。同步开发Nano Banana Pro图像模型剑指GPT-Image 2。7月17日恰逢DeepSeek V4正式版发布窗口，中外旗舰同台竞技。谷歌I/O大会跳票后核心AI研究员离职投奔竞争对手，团队士气一度跌至冰点。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-谷歌Gemini 3.5 Pro定档7月17日：废弃旧基座从头重训，200万上下文+深度思考，前端碾</guid>
+    </item>
+    <item>
+      <title>GPT-5.6 Sol预计今日全面开放：白宫AI标准框架即将发布，OpenAI从政府限制定向走向标准共建</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>OpenAI计划7月7-9日窗口内向公众全面开放GPT-5.6 Sol旗舰模型，最可能即7月7日(抓住假期后客户回流窗口)。此前6月27日发布时被美国政府要求限制为「trusted partner limited preview」，仅约20家审批合作方可访问。GPT-5.6 Sol Terminal-Bench 2.1标准模式88.8%超越Claude Mythos 5的88.0%，Ultra模式91.9%。1.5M上下文，Cerebras晶圆级推理750 tokens/秒(约GPT-5.5的15倍)。三模型(Sol/Terra/Luna)全部标High Risk(网络安全+生物安全)，Sol网络安全挑战96.7%、病毒学55.5%远超31%专家级基线。白宫AI标准框架即将发布，OpenAI从被政府限制转向参与标准共建。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-GPT-5.6 Sol预计今日全面开放：白宫AI标准框架即将发布，OpenAI从政府限制定向走向标准</guid>
+    </item>
+    <item>
+      <title>Sanctuary AI发布Phoenix Gen 7人形机器人：24小时内学会新任务，液压驱动+Carbon认知系统</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>加拿大温哥华Sanctuary AI发布Phoenix Gen 7通用人形机器人平台，核心突破：新任务学习时间从数周压缩至24小时以内。液压驱动设计接近人类级力量和柔性，手部工程化实现接近人类灵巧度(区别于多数竞品的平行夹爪)。搭载自研Carbon认知系统AI控制栈。累计融资超1.4亿美元。从Gen 6到Gen 8原型快速迭代(2023-2024每代提升灵巧性/液压驱动/板载AI推理)。定位通用工业平台而非单一重复动作。技术评论人Ronald van Loon(@Ronald_vanLoon，X上最有影响力的AI评论者之一)7月4日分享演示视频放大传播。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-Sanctuary AI发布Phoenix Gen 7人形机器人：24小时内学会新任务，液压驱动+C</guid>
+    </item>
+    <item>
+      <title>VAST完成超10亿元A3轮融资：AI 3D世界模型赛道升温，吉利/巨人/成都科创投等齐聚</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>北京三启万物科技有限公司(VAST)宣布完成超10亿元A3战略轮融资，累计融资超4亿美元(6轮)。专注AI 3D大模型与通用世界模型研发。投资阵容：吉利资本领投+4399/贪玩游戏/巨人网络(游戏厂商)+亦邦国投/基石资本/毅达资本/成都科创投/策源资本(机构+地方基金)+老股东渊策资本/元生资本追加。客户覆盖阿里/腾讯/网易/拓竹/优必选。应用场景：游戏/XR/3D打印/汽车座舱/工业设计。AI 3D资产从「锦上添花」变为「稀缺资源」。成都科创投此次投资是四川社保科创基金(50.65亿规模)首笔投资交割。策源资本管理规模超200亿参与组建超2000亿产业基金群。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-VAST完成超10亿元A3轮融资：AI 3D世界模型赛道升温，吉利/巨人/成都科创投等齐聚</guid>
+    </item>
+    <item>
+      <title>6月机器人赛道59起融资27起过亿：世航智能10亿A轮创海洋机器人纪录，朱啸虎连续五轮追投</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>6月机器人赛道共59起融资，27起金额过亿。世航智能完成超10亿元A轮融资(全球海洋机器人最大单轮)，朱啸虎金沙江创投连续五轮追投(继滴滴/小红书后再次连续押注)。世航专注0-10000米全海深全自由度海洋机器人，虎鲸系列(船舶清洗效率全球第一，已在上千艘船舶规模化应用)+虎鲨系列(水面高速巡逻/环境监测)。2026年上半年获超10亿订单。4月发布海洋具身大模型「沧穹CEORION」。投资方含淡马锡Vertex Growth/中信农业产业基金/大洋电机/上河动量基金(摩尔线程/昆仑芯产业方)。朱啸虎此前公开退出人形机器人赛道，称商业化路径不清晰，但对海洋机器人连续追投。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-6月机器人赛道59起融资27起过亿：世航智能10亿A轮创海洋机器人纪录，朱啸虎连续五轮追投</guid>
+    </item>
+    <item>
+      <title>Anthropic自研芯片深度解析：440亿ARR但71%烧在算力，三星2nm是生存战而非战略选择</title>
+      <link>https://shnywang.github.io/ai_news/</link>
+      <description>Anthropic自研AI芯片深度分析：年化经常性收入(ARR)约440亿美元，但算力成本占收入比约71%(行业估算)——每赚1美元烧掉71美分算力。台积电2026年先进制程涨价5-10%，英伟达产能扩张有上限，需求非线性增长碰上供给线性扩张。OpenAI Jalapeño已发布(6月)2026H2部署，竞争对手已开始锁定制程和产能。项目仍处方案规划极早期，芯片用途和性能目标未确定。三星2nm制程+先进封装洽谈中，从OpenAI挖来初代自研芯片核心Clive Chan。Anthropic称现有NVIDIA/Google/Amazon算力「仍将是核心」，自研为补充。台积电涨价+英伟达排队+OpenAI已出牌=自研是财务必答题。</description>
+      <pubDate>Tue, 07 Jul 2026 03:00:00 GMT</pubDate>
+      <guid>2026-07-07-Anthropic自研芯片深度解析：440亿ARR但71%烧在算力，三星2nm是生存战而非战略选择</guid>
+    </item>
+    <item>
       <title>清华火神队卫冕RoboCup 2026人形机器人世界杯冠军：6:2击败中国农大，两支决赛队均用国产Booster T1平台</title>
       <link>https://shnywang.github.io/ai_news/</link>
       <description>7月5日，2026 RoboCup机器人世界杯在韩国仁川落幕。清华大学火神队搭载国产松灵Booster T1机器人，决赛6:2击败中国农业大学山海队，成功卫冕人形机器人大型组(Large Size)世界冠军。两支决赛队伍均使用国产Booster T1平台。RoboCup 2026(6月30日-7月6日)汇集全球3000+选手和15000+观众。这是中国具身智能算法在国际机器人赛事中视觉感知与多智能体协作突破的标志性事件，证明国产机器人平台已具备支撑世界级算法的硬件能力。</description>
@@ -312,48 +368,6 @@
       <description>6-17 资本+生态成熟:① 证监会科创板第五套标准扩大至 AI 大模型行业(A 股 AI 大模型 IPO 通道正式打开);② 阿里发布首个具身大模型 Qwen-Robot 三连发+'一个模型控制手脚腰身'全身协同精细操作(国内互联网巨头首个正式发布的具身大模型);③ DeepSeek 500 亿首轮融资敲定(梁文锋个人出资 200 亿+腾讯 100 亿+宁德 50 亿,中国 AI 创业史上前所未有的'创始人决心'事件);④ 松延动力 OpenHarmony 消费级人形机器人 N2+'百人百机'开发者共创+10 亿创业扶持基金;⑤ 硅基流动超 20 亿元新一轮融资(国产 AI 推理芯片成熟);⑥ 智源天工 AI Matrix-Game 3.5 世界模型新进展。五件套同时成熟=系统性反超的'最后一公里'。</description>
       <pubDate>Mon, 22 Jun 2026 01:15:00 GMT</pubDate>
       <guid>2026-06-22-6-17 步:资本+生态成熟——证监会科创板第五套标准扩大至 AI 大模型+阿里 Qwen-Robo</guid>
-    </item>
-    <item>
-      <title>证监会:科创板第五套标准扩大至人工智能大模型行业,A股AI大模型IPO通道正式打开</title>
-      <link>https://shnywang.github.io/ai_news/</link>
-      <description>6-17 2026陆家嘴论坛开幕式上,证监会主席吴清宣布:科创板将第五套标准适用范围扩大至人工智能大模型行业——A股AI大模型IPO通道正式打开。叠加 6-1 宇树科创板过会(机器人)+6-16 燧原科创板IPO获上市委会议通过(AI芯片),'科创板三件套'(机器人+AI芯片+AI大模型)完整落地。AI大模型行业继机器人+AI芯片之后,正式进入科创板资本通道,意味着 2026 H2-2027 H1 将出现 AI 大模型公司 IPO 密集窗口。</description>
-      <pubDate>Wed, 17 Jun 2026 03:10:00 GMT</pubDate>
-      <guid>2026-06-17-证监会:科创板第五套标准扩大至人工智能大模型行业,A股AI大模型IPO通道正式打开</guid>
-    </item>
-    <item>
-      <title>阿里发布首个具身大模型 Qwen-Robot 三连发+'一个模型控制手脚腰身'全身协同精细操作,具身智能'国产基座+全身协同'双线突破</title>
-      <link>https://shnywang.github.io/ai_news/</link>
-      <description>6-17 阿里发布首个具身大模型 Qwen-Robot 系列三连发,'边走、边看、边思考',实现从'语言模型'到'具身智能体'的全栈布局。同时量子位报道'一个模型控制手脚腰身,机器人终于学会全身协同干精细活了'——'手的问题,其实不在手'。阿里 Qwen-Robot + 全身协同精细操作,共同标志 6-17 具身智能'国产基座+全身协同'双线突破。叠加 6-12 大晓 Kairos 4 大评测开源+6-3 千寻 Spirit v1.5 开源+6-16 智平方 NeuroVLA 类脑认知,中国具身智能'基座+全身协同'双轨并行。</description>
-      <pubDate>Wed, 17 Jun 2026 03:10:00 GMT</pubDate>
-      <guid>2026-06-17-阿里发布首个具身大模型 Qwen-Robot 三连发+'一个模型控制手脚腰身'全身协同精细操作,具身</guid>
-    </item>
-    <item>
-      <title>DeepSeek 500 亿首轮融资敲定:梁文锋个人 200 亿+腾讯 100 亿+宁德时代 50 亿,'AI 大模型+港股 IPO+创始人个人出资'三件套历史性突破</title>
-      <link>https://shnywang.github.io/ai_news/</link>
-      <description>6-17 DeepSeek 首轮融资目前或已敲定 500 亿元:创始人梁文锋个人出资约 200 亿元(本轮最大单一出资方)+腾讯出资约 100 亿元+宁德时代体系出资约 50 亿元(宁德时代+溥泉资本)+网易+京东+Monolith 砺思等跟投。梁文锋'创始人不套现+全仓 AI'的'200 亿个人出资'是中国 AI 创业史上前所未有的'创始人决心'——这意味着 DeepSeek'不只是公司,是梁文锋个人的 AI 使命'。叠加 6-12 大晓+6-3 千寻+6-16 智平方+6-17 阿里 Qwen-Robot,中国 AI 产业进入'基座+应用+资本+创始人决心'四维成熟期。</description>
-      <pubDate>Wed, 17 Jun 2026 03:10:00 GMT</pubDate>
-      <guid>2026-06-17-DeepSeek 500 亿首轮融资敲定:梁文锋个人 200 亿+腾讯 100 亿+宁德时代 50 </guid>
-    </item>
-    <item>
-      <title>松延动力发布 OpenHarmony 消费级人形机器人 N2+'百人百机'开发者共创计划+10 亿创业扶持,具身智能'开源鸿蒙+消费级+开发者生态'三件套落地</title>
-      <link>https://shnywang.github.io/ai_news/</link>
-      <description>6-17 松延动力发布基于 OpenHarmony 的消费级人形机器人 N2 配套开发软件,启动'百人百机'开发者共创计划,开放底层运动控制源码。同时松延联合凯辉基金推出 10 亿元创业扶持计划,面向人形机器人软件开发者开放资金+算力支持。叠加 6-16 松延首款'开源鸿蒙消费级人形机器人'+ 6-2 优必选消费级预售+ 6-1 宇树科创板过会,2026 年 6 月'开源鸿蒙+消费级人形机器人+开发者生态+10 亿扶持基金'四件套在松延动力上同时落地。</description>
-      <pubDate>Wed, 17 Jun 2026 03:10:00 GMT</pubDate>
-      <guid>2026-06-17-松延动力发布 OpenHarmony 消费级人形机器人 N2+'百人百机'开发者共创计划+10 亿创</guid>
-    </item>
-    <item>
-      <title>AI 早报 6-17:AI 版支付宝正式发布+OpenAI 去年支出 340 亿美元+高通洽谈收购 Tenstorrent,AI 应用+AI 算力+AI 芯片三轨同时爆发</title>
-      <link>https://shnywang.github.io/ai_news/</link>
-      <description>6-17 AI 早报三件套:①支付宝推出 AI 版'AI 支付',记者实测'与原版本有何不同'——AI 与支付结合,'AI 支付将成为行业趋势';②OpenAI 去年支出高达 340 亿美元(收入 130 亿美元,亏损 130 亿美元)——AI 公司'烧钱'规模巨大;③高通据悉洽谈收购 AI 芯片初创企业 Tenstorrent——'AI 芯片+高通'的全球算力军备竞赛。三件套同时爆发,标志'AI 应用(AI 支付)+AI 算力(OpenAI 烧钱)+AI 芯片(高通收购)'三轨进入'加速期'。</description>
-      <pubDate>Wed, 17 Jun 2026 03:10:00 GMT</pubDate>
-      <guid>2026-06-17-AI 早报 6-17:AI 版支付宝正式发布+OpenAI 去年支出 340 亿美元+高通洽谈收购 </guid>
-    </item>
-    <item>
-      <title>张江具身智能开发者大会 6-16~17+硅基流动 6-16 完成超 20 亿融资+智源天工 AI Matrix-Game 3.5:具身智能'开发者大会+国产芯片+世界模型'三轨同时落地</title>
-      <link>https://shnywang.github.io/ai_news/</link>
-      <description>6-16~17 张江具身智能开发者大会在上海举办(张江集团+国地共建人形机器人创新中心主办),主题'具身智能,链铸未来'——结合近期产业政策+龙头企业量产节奏,人形机器人产业链协同+生态聚合。6-16 硅基流动完成新一轮超 20 亿元融资(AI 推理芯片公司)。智源天工 AI 公布 Matrix-Game 3.5 最新技术突破(世界模型+交互式生成视频)。三件套同时落地,标志'具身智能开发者大会+国产 AI 芯片融资+世界模型新进展'三轨同时爆发。</description>
-      <pubDate>Wed, 17 Jun 2026 03:10:00 GMT</pubDate>
-      <guid>2026-06-17-张江具身智能开发者大会 6-16~17+硅基流动 6-16 完成超 20 亿融资+智源天工 AI M</guid>
     </item>
   </channel>
 </rss>
