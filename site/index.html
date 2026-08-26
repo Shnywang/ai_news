@@ -4977,9 +4977,14 @@ function renderStartup(d){
   var s=d.startup_board;
   if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>🚀 创业板块</h3><p>暂无新动态</p></div>';return}
   var h='<div class="sec">🚀 创业板块 — 重点企业跟踪</div>';
-  h+='<table class="stable"><tr><th>企业</th><th>赛道</th><th>技术路线</th><th>融资/订单</th><th>择业判断</th></tr>';
+  h+='<table class="stable"><tr><th>企业</th><th>事件</th><th>金额</th><th>轮次</th><th>亮点</th></tr>';
   (s.companies||[]).forEach(function(c){
-    h+='<tr><td><strong>'+esc(c.name)+'</strong></td><td>'+esc(c.field)+'</td><td>'+esc(c.route)+'</td><td>'+esc(c.funding)+'</td><td>'+esc(c.verdict)+'</td></tr>';
+    var name=c.name||c.company||'';
+    var evt=c.event||c.funding||'';
+    var amt=c.amount||c.field||'';
+    var stage=c.stage||c.route||'';
+    var hl=c.highlight||c.verdict||'';
+    h+='<tr><td><strong>'+esc(name)+'</strong></td><td>'+esc(evt)+'</td><td>'+esc(amt)+'</td><td>'+esc(stage)+'</td><td>'+esc(hl)+'</td></tr>';
   });
   h+='</table>';
   if(s.trend)h+='<div class="bcard"><h3>📈 赛道趋势</h3><p>'+esc(s.trend)+'</p></div>';
@@ -5012,8 +5017,9 @@ function renderAlgo(d){
   if(b.tech_radar&&b.tech_radar.length){
     h+='<div class="sec">🛰️ 技术雷达</div><div class="bcard">';
     b.tech_radar.forEach(function(r){
-      var dot=r.status.indexOf('验证')!==-1?'dot-green':r.status.indexOf('成长')!==-1?'dot-blue':r.status.indexOf('观望')!==-1?'dot-yellow':'dot-red';
-      h+='<div class="radar-item"><span class="radar-dot '+dot+'"></span><span class="radar-name">'+esc(r.direction)+'</span><span class="radar-status">'+esc(r.status)+'</span><span class="radar-advice">'+esc(r.advice)+'</span></div>';
+      var st=r.status||r.maturity||'';
+      var dot=st.indexOf('验证')!==-1?'dot-green':st.indexOf('成长')!==-1?'dot-blue':st.indexOf('观望')!==-1?'dot-yellow':'dot-red';
+      h+='<div class="radar-item"><span class="radar-dot '+dot+'"></span><span class="radar-name">'+esc(r.direction||r.tech||'')+'</span><span class="radar-status">'+esc(st)+'</span><span class="radar-advice">'+esc(r.advice||r.note||'')+'</span></div>';
     });
     h+='</div>';
   }
