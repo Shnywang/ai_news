@@ -93,7 +93,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 <header class="hd">
 <button class="tbtn" onclick="toggleTheme()">&#x1F319;</button>
 <h1>&#x1F916; AI+具身智能资讯聚合</h1>
-<p class="sub">多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理</p>
+<p class="sub">多角色视角 · 每日更新 · 创业 / 产品 / 算法 / 项目管理 · <a href="https://shnywang.github.io/humanoid-robot-supply-chain/" target="_blank" style="color:#fbbf24;text-decoration:none;font-weight:600;">🤖 供应链决策中心 ↗</a></p>
 <p id="ut" class="ut">2026-08-27 11:27 更新</p>
 </header>
 <div class="ct">
@@ -5266,6 +5266,12 @@ function renderSupply(d){
   var s=d.supply_chain_board;
   if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>🔗 供应链深度</h3><p>暂无数据</p></div>';return}
   var h='<div class="sec">🔗 供应链深度挖掘</div>';
+  h+='<div style="background:linear-gradient(135deg,#0b2545,#1e4a7a);border-radius:12px;padding:16px 20px;margin-bottom:1rem;color:#f0f6ff;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">';
+  h+='<span style="font-size:24px;">🤖</span>';
+  h+='<div style="flex:1;min-width:200px;"><div style="font-size:.9rem;font-weight:700;margin-bottom:2px;">人形机器人供应链决策中心</div>';
+  h+='<div style="font-size:.78rem;opacity:.85;">六大P0环节供应商首选 · 国产vs进口成本对比 · 消费者购买指南</div></div>';
+  h+='<a href="https://shnywang.github.io/humanoid-robot-supply-chain/" target="_blank" style="background:rgba(232,199,102,.2);color:#e8c766;text-decoration:none;font-size:.8rem;font-weight:600;padding:8px 18px;border-radius:20px;white-space:nowrap;border:1px solid rgba(232,199,102,.4);">查看完整决策报告 ↗</a>';
+  h+='</div>';
   h+='<div class="bcard"><h3>'+esc(s.title||'')+'</h3><p>'+esc(s.summary||'')+'</p></div>';
   if(s.key_components&&s.key_components.length){
     h+='<div class="bcard"><h4>核心零部件动态</h4>';
