@@ -4411,6 +4411,336 @@ var W = {
   }
 };
 
+var curDay=days[0],curTab='hot';
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function starsStr(n){n=parseInt(n)||0;var s='';for(var i=0;i<5;i++){s+='<span class="'+(i<n?'star':'star0')+'">&#x2605;</span>'}return s}
+function fmtDate(s){var m=s.match(/(\d{4})-(\d{2})-(\d{2})/);if(!m)return s;return m[2]+'/'+m[3]}
+function initDays(){
+  var dp=document.getElementById('dayPicker');
+  var h='';
+  days.forEach(function(d){
+    h+='<button class="day-btn'+(d===curDay?' a':'')+'" onclick="selDay(\''+d+'\')">'+fmtDate(d)+'</button>';
+  });
+  dp.innerHTML=h;
+}
+function selDay(d){curDay=d;document.querySelectorAll('.day-btn').forEach(function(b){b.className='day-btn'+(b.textContent===fmtDate(d)?' a':'')});render()}
+function initTabs(){
+  document.querySelectorAll('.tab').forEach(function(t){
+    t.onclick=function(){
+      document.querySelectorAll('.tab').forEach(function(x){x.className='tab'});
+      this.className='tab a';
+      curTab=this.getAttribute('data-t');
+      render();
+    }
+  });
+}
+function render(){
+  var data=W[curDay];
+  if(!data){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无数据</p></div>';return}
+  var fn={hot:renderHot,startup:renderStartup,pm:renderPM,algo:renderAlgo,proj:renderProj,action:renderAction,hermes:renderHermes,phil:renderPhil,supply:renderSupply,all:renderAll};
+  (fn[curTab]||renderHot)(data);
+  var ut=document.getElementById('ut');
+  if(ut&&data.update_time){
+    var t=data.update_time.replace('T',' ').replace(/\+.*/,'');
+    ut.textContent='数据更新：'+t+' · 窗口 '+days[0]+' ~ '+days[days.length-1];
+  }
+}
+
+function renderHot(d){
+  var h='<div class="sec">🔥 今日热点 ('+(d.hot_topics||[]).length+'条)</div>';
+  (d.hot_topics||[]).forEach(function(t,i){
+    h+='<div class="htcard"><div class="num">'+(i+1)+'</div><div class="body"><h4><a href="'+esc(t.url)+'" target="_blank">'+esc(t.title)+'</a></h4><p>'+esc(t.summary)+'</p><div class="meta">'+esc(t.source)+' \u00b7 '+esc(t.category)+' \u00b7 <span class="stars">'+starsStr(t.rating)+'</span></div>';
+    if(t.philosophy_insight){
+      var p=t.philosophy_insight;
+      h+='<div class="phil"><span class="fw">'+esc(p.framework||'')+'</span><p>'+esc(p.analysis||'')+'</p>';
+      if(p.verdict)h+='<div class="verdict">'+esc(p.verdict)+'</div>';
+      h+='</div>';
+    }
+    h+='</div></div>';
+  });
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderStartup(d){
+  var s=d.startup_board;
+  if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>🚀 创业板块</h3><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">🚀 创业板块 — 重点企业跟踪</div>';
+  var companies=s.companies||s.company||[];
+  if(companies.length){
+    h+='<table class="stable"><tr><th>企业</th><th>事件</th><th>金额</th><th>轮次</th><th>亮点</th></tr>';
+    companies.forEach(function(c){
+      var name=c.name||c.company||'';
+      var evt=c.event||c.funding||'';
+      var amt=c.amount||c.field||'';
+      var stage=c.stage||c.route||'';
+      var hl=c.highlight||c.verdict||'';
+      h+='<tr><td><strong>'+esc(name)+'</strong></td><td>'+esc(evt)+'</td><td>'+esc(amt)+'</td><td>'+esc(stage)+'</td><td>'+esc(hl)+'</td></tr>';
+    });
+    h+='</table>';
+  }
+  if(s.trend)h+='<div class="bcard"><h3>📈 赛道趋势</h3><p>'+esc(s.trend)+'</p></div>';
+  if(s.summary)h+='<div class="bcard"><p>'+esc(s.summary)+'</p></div>';
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderPM(d){
+  var b=d.pm_board||d.pm_perspective;
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">📋 产品经理板块</div>';
+  var insights=b.insights||b.perspectives||[];
+  insights.forEach(function(t){
+    var title=t.title||t.topic||'';
+    var content=t.content||t.insight||'';
+    h+='<div class="bcard"><h3>'+esc(title)+'</h3><p>'+esc(content)+'</p></div>';
+  });
+  var focus=b.focus;
+  if(focus){
+    h+='<div class="sec">📌 未来关注重点</div>';
+    h+='<div class="bcard"><ul>';
+    if(Array.isArray(focus)){focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'})}
+    else{h+='<li>'+esc(focus)+'</li>'}
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderAlgo(d){
+  var b=d.algo_board;
+  if(!b){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return}
+  var h='<div class="sec">🧬 算法工程师板块</div>';
+  var insights=b.insights||b.breakthroughs||[];
+  insights.forEach(function(t){
+    var title=t.title||t.topic||'';
+    var content=t.content||t.insight||t.detail||'';
+    h+='<div class="bcard"><h3>'+esc(title)+'</h3><p>'+esc(content)+'</p></div>';
+  });
+  var radar=b.tech_radar||[];
+  if(radar.length){
+    h+='<div class="sec">🛰️ 技术雷达</div><div class="bcard">';
+    radar.forEach(function(r){
+      var st=r.status||r.maturity||'';
+      var dot=st.indexOf('验证')!==-1?'dot-green':st.indexOf('成长')!==-1?'dot-blue':st.indexOf('观望')!==-1?'dot-yellow':'dot-red';
+      h+='<div class="radar-item"><span class="radar-dot '+dot+'"></span><span class="radar-name">'+esc(r.direction||r.tech||'')+'</span><span class="radar-status">'+esc(st)+'</span><span class="radar-advice">'+esc(r.advice||r.note||'')+'</span></div>';
+    });
+    h+='</div>';
+  }
+  var focus=b.focus;
+  if(focus){
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
+    if(Array.isArray(focus)){focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'})}
+    else{h+='<li>'+esc(focus)+'</li>'}
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderProj(d){
+  var b=d.projmgr_board;
+  if(!b){
+    var projects=d.projects;
+    if(projects&&projects.length){
+      var h='<div class="sec">📅 项目经理板块</div>';
+      projects.forEach(function(p){
+        h+='<div class="bcard"><h3>'+esc(p.name||p.title||'')+'</h3><p>'+esc(p.detail||p.content||'')+'</p></div>';
+      });
+      document.getElementById('content').innerHTML=h;
+      return;
+    }
+    document.getElementById('content').innerHTML='<div class="bcard"><p>暂无新动态</p></div>';return
+  }
+  var h='<div class="sec">📅 项目经理板块</div>';
+  var insights=b.insights||[];
+  insights.forEach(function(t){
+    var title=t.title||t.topic||'';
+    var content=t.content||t.insight||'';
+    h+='<div class="bcard"><h3>'+esc(title)+'</h3><p>'+esc(content)+'</p></div>';
+  });
+  var focus=b.focus;
+  if(focus){
+    h+='<div class="sec">📌 未来关注重点</div><div class="bcard"><ul>';
+    if(Array.isArray(focus)){focus.forEach(function(f){h+='<li>'+esc(f)+'</li>'})}
+    else{h+='<li>'+esc(focus)+'</li>'}
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderAction(d){
+  var a=d.action_items;
+  if(!a){document.getElementById('content').innerHTML='<div class="bcard"><p>暂无</p></div>';return}
+  var h='';
+  if(a.tech_selection){
+    h+='<div class="sec">🔧 技术选型</div><div class="bcard">';
+    if(Array.isArray(a.tech_selection)){
+      h+='<ul>';a.tech_selection.forEach(function(t){h+='<li>'+esc(t)+'</li>'});h+='</ul>';
+    }else{
+      h+='<p><strong>优先：</strong>'+esc(a.tech_selection.priority||a.tech_selection.reason||'')+'</p>';
+      if(a.tech_selection.reason)h+='<p><strong>理由：</strong>'+esc(a.tech_selection.reason)+'</p>';
+      if(a.tech_selection.alternatives)h+='<p><strong>备选：</strong>'+esc(a.tech_selection.alternatives)+'</p>';
+    }
+    h+='</div>';
+  }
+  if(a.track_judgment){
+    h+='<div class="sec">🎯 赛道判断</div><div class="bcard">';
+    if(Array.isArray(a.track_judgment)){
+      h+='<ul>';a.track_judgment.forEach(function(t){h+='<li>'+esc(t)+'</li>'});h+='</ul>';
+    }else{
+      if(a.track_judgment.continue){h+='<p><strong>继续推进：</strong>'+esc(a.track_judgment.continue.join(' · '))+'</p>'}
+      if(a.track_judgment.pivot){h+='<p><strong>需要转向：</strong>'+esc(a.track_judgment.pivot.join(' · '))+'</p>'}
+      if(a.track_judgment.watch){h+='<p><strong>持续观察：</strong>'+esc(a.track_judgment.watch.join(' · '))+'</p>'}
+    }
+    h+='</div>';
+  }
+  if(a.watch_list){
+    h+='<div class="sec">👀 Watch List</div><div class="bcard"><ul>';
+    if(Array.isArray(a.watch_list)){a.watch_list.forEach(function(t){h+='<li>'+esc(t)+'</li>'})}
+    else{h+='<li>'+esc(a.watch_list)+'</li>'}
+    h+='</ul></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderHermes(d){
+  var hb=d.hermes_board||d.hermes;
+  if(!hb){
+    document.getElementById('content').innerHTML='<div class="bcard"><h3>📣 Hermes 信使</h3><p>暂无内容</p></div>';return;
+  }
+  var h='<div class="sec">📣 Hermes 信使</div>';
+  var insights=hb.insights||hb.updates||[];
+  if(insights.length){
+    h+='<div class="hermes-sec"><h3>💡 洞察</h3>';
+    insights.forEach(function(item){
+      var title=item.title||item.signal||'';
+      var content=item.content||item.impact||'';
+      h+='<div class="bcard"><h3>'+esc(title)+'</h3><p>'+esc(content)+'</p>';
+      if(item.url)h+='<div style="margin-top:.3rem"><a href="'+esc(item.url)+'" target="_blank" style="color:var(--accent);font-size:.8rem">🔗 来源</a></div>';
+      h+='</div>';
+    });
+    h+='</div>';
+  }
+  var ts=hb.tech_stack;
+  if(ts){
+    h+='<div class="hermes-sec"><h3>🔨 技术栈</h3>';
+    if(Array.isArray(ts)){
+      ts.forEach(function(item){
+        var title=item.title||item.name||'';
+        var content=item.content||item.detail||'';
+        h+='<div class="bcard"><h3>'+esc(title)+'</h3><p>'+esc(content)+'</p></div>';
+      });
+    }else{
+      if(ts.hot&&ts.hot.length)h+='<div class="bcard"><h3>🔥 Hot</h3><p>'+esc(ts.hot.join(' · '))+'</p></div>';
+      if(ts.emerging&&ts.emerging.length)h+='<div class="bcard"><h3>✨ Emerging</h3><p>'+esc(ts.emerging.join(' · '))+'</p></div>';
+      if(ts.cooling&&ts.cooling.length)h+='<div class="bcard"><h3>❄️ Cooling</h3><p>'+esc(ts.cooling.join(' · '))+'</p></div>';
+    }
+    h+='</div>';
+  }
+  var comm=hb.community;
+  if(comm){
+    h+='<div class="hermes-sec"><h3>🌐 社区热点</h3>';
+    if(Array.isArray(comm)){
+      comm.forEach(function(item){
+        var title=item.title||item.name||'';
+        var content=item.content||item.detail||'';
+        h+='<div class="bcard"><h3>'+esc(title)+'</h3><p>'+esc(content)+'</p></div>';
+      });
+    }else{
+      h+='<div class="bcard"><p>'+esc(comm)+'</p></div>';
+    }
+    h+='</div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderPhil(d){
+  var topics=(d.hot_topics||[]).filter(function(t){return t.philosophy_insight});
+  if(!topics.length){
+    document.getElementById('content').innerHTML='<div class="bcard"><h3>🧠 哲学洞察</h3><p>暂无内容</p></div>';return;
+  }
+  var h='<div class="sec">🧠 哲学洞察 ('+topics.length+'条)</div>';
+  topics.forEach(function(t){
+    var p=t.philosophy_insight;
+    h+='<div class="bcard" style="border-left-color:var(--accent2)"><h3>'+esc(t.title)+'</h3>';
+    h+='<div class="phil"><span class="fw">'+esc(p.framework||'')+'</span><p>'+esc(p.analysis||'')+'</p>';
+    if(p.verdict)h+='<div class="verdict">'+esc(p.verdict)+'</div>';
+    h+='</div></div>';
+  });
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderSupply(d){
+  var s=d.supply_chain_board;
+  if(!s){document.getElementById('content').innerHTML='<div class="bcard"><h3>🔗 供应链深度</h3><p>暂无数据</p></div>';return}
+  var h='<div class="sec">🔗 供应链深度挖掘</div>';
+  h+='<div style="background:linear-gradient(135deg,#0b2545,#1e4a7a);border-radius:12px;padding:16px 20px;margin-bottom:1rem;color:#f0f6ff;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">';
+  h+='<span style="font-size:24px;">🤖</span>';
+  h+='<div style="flex:1;min-width:200px;"><div style="font-size:.9rem;font-weight:700;margin-bottom:2px;">人形机器人供应链决策中心</div>';
+  h+='<div style="font-size:.78rem;opacity:.85;">六大P0环节供应商首选 · 国产vs进口成本对比 · 消费者购买指南</div></div>';
+  h+='<a href="https://shnywang.github.io/humanoid-robot-supply-chain/" target="_blank" style="background:rgba(232,199,102,.2);color:#e8c766;text-decoration:none;font-size:.8rem;font-weight:600;padding:8px 18px;border-radius:20px;white-space:nowrap;border:1px solid rgba(232,199,102,.4);">查看完整决策报告 ↗</a>';
+  h+='</div>';
+  if(s.title)h+='<div class="bcard"><h3>'+esc(s.title)+'</h3><p>'+esc(s.summary||'')+'</p></div>';
+  if(s.key_components&&s.key_components.length){
+    h+='<div class="bcard"><h4>核心零部件动态</h4>';
+    h+='<table class="stable"><tr><th>零部件</th><th>状态</th><th>关键企业</th><th>趋势</th></tr>';
+    s.key_components.forEach(function(c){
+      h+='<tr><td><strong>'+esc(c.component||'')+'</strong></td><td>'+esc(c.status||'')+'</td><td>'+esc(c.key_players||'')+'</td><td>'+esc(c.trend||'')+'</td></tr>';
+    });
+    h+='</table></div>';
+  }
+  if(s.analysis){
+    h+='<div class="bcard"><h4>辩证分析</h4>';
+    if(typeof s.analysis==='string'){
+      h+='<p>'+esc(s.analysis)+'</p>';
+    }else{
+      if(s.analysis.thesis)h+='<p><strong>正题：</strong>'+esc(s.analysis.thesis)+'</p>';
+      if(s.analysis.antithesis)h+='<p><strong>反题：</strong>'+esc(s.analysis.antithesis)+'</p>';
+      if(s.analysis.synthesis)h+='<p><strong>合题：</strong>'+esc(s.analysis.synthesis)+'</p>';
+    }
+    h+='</div>';
+  }
+  if(s.investment_insight){
+    h+='<div class="bcard" style="border-left:4px solid var(--accent)"><h4>投资洞察</h4><p>'+esc(s.investment_insight)+'</p></div>';
+  }
+  document.getElementById('content').innerHTML=h;
+}
+
+function renderAll(d){
+  var arts=d.raw_articles||[];
+  var h='<div class="search-bar"><span class="ico">\uD83D\uDD0D</span><input id="sInput" placeholder="\u641c\u7d22\u6807\u9898\u6216\u6458\u8981..." oninput="filterAll()"></div>';
+  h+='<div id="allList"></div>';
+  document.getElementById('content').innerHTML=h;
+  window._allArts=arts;
+  filterAll();
+}
+
+function filterAll(){
+  var q=(document.getElementById('sInput')||{}).value||'';
+  q=q.toLowerCase().trim();
+  var arts=window._allArts||[];
+  if(q)arts=arts.filter(function(a){return(a.title||'').toLowerCase().indexOf(q)!==-1||(a.summary||'').toLowerCase().indexOf(q)!==-1});
+  var h='';
+  if(!arts.length){h='<div style="text-align:center;padding:2rem;color:var(--t2)">\u672a\u627e\u5230\u5339\u914d\u8d44\u8baf</div>'}
+  else{arts.forEach(function(a){
+    h+='<div class="ncard"><div class="left"><h4><a href="'+esc(a.url)+'" target="_blank">'+esc(a.title)+'</a></h4><div class="nm">'+esc(a.source)+' \u00b7 '+esc(a.publish_time)+' \u00b7 '+starsStr(a.rating)+'</div></div><div class="right"><span class="cat">'+esc(a.category)+'</span></div></div>';
+  })}
+  document.getElementById('allList').innerHTML=h;
+}
+
+function toggleTheme(){
+  var dk=document.body.getAttribute('data-theme')==='dark';
+  document.body.setAttribute('data-theme',dk?'light':'dark');
+  document.querySelector('.tbtn').innerHTML=dk?'&#x1F319;':'&#x2600;&#xFE0F;';
+  localStorage.setItem('ai-news-theme',dk?'light':'dark');
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  var sv=localStorage.getItem('ai-news-theme');
+  if(sv==='dark'||(!sv&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
+    document.body.setAttribute('data-theme','dark');
+    document.querySelector('.tbtn').innerHTML='&#x2600;&#xFE0F;';
+  }
+  initDays();initTabs();render();
+});
+
 </script>
 
 </body>
