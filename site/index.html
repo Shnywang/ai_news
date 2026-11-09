@@ -4294,7 +4294,7 @@ var W = {
     ]
   }
 };
-
+var curDay=days[0],curTab='hot';
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function starsStr(n){n=parseInt(n)||0;var s='';for(var i=0;i<5;i++){s+='<span class="'+(i<n?'star':'star0')+'">&#x2605;</span>'}return s}
 function fmtDate(s){var m=s.match(/(\d{4})-(\d{2})-(\d{2})/);if(!m)return s;return m[2]+'/'+m[3]}
